@@ -1,0 +1,430 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>LastCommitWins (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="LastCommitWins (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/LastCommitWins.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/IdentifyAllConflict.html" title="class in org.ihtsdo.otf.tcc.api.contradiction.strategy"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/VersionDateOrderSortComparator.html" title="class in org.ihtsdo.otf.tcc.api.contradiction.strategy"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/ihtsdo/otf/tcc/api/contradiction/strategy/LastCommitWins.html" target="_top">Frames</a></li>
+<li><a href="LastCommitWins.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_org.ihtsdo.otf.tcc.api.contradiction.strategy.ContradictionManagementStrategy">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.api.contradiction.strategy</div>
+<h2 title="Class LastCommitWins" class="title">Class LastCommitWins</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/ContradictionManagementStrategy.html" title="class in org.ihtsdo.otf.tcc.api.contradiction.strategy">org.ihtsdo.otf.tcc.api.contradiction.strategy.ContradictionManagementStrategy</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.api.contradiction.strategy.LastCommitWins</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html" title="interface in org.ihtsdo.otf.tcc.api.contradiction">ContradictionManagerBI</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">LastCommitWins</span>
+extends <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/ContradictionManagementStrategy.html" title="class in org.ihtsdo.otf.tcc.api.contradiction.strategy">ContradictionManagementStrategy</a>
+implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></pre>
+<div class="block">"Last commit wins" implementation of a conflict resolution strategy.
+ Specifically this resolution
+ strategy will resolve conflict by choosing the part or tuple of an entity
+ with the latest
+ commit time regardless of path.
+ 
+ "In conflict" is rare for this strategy. As the latest part of any given
+ entity
+ is chosen, and the differences between latest state on different paths is of
+ little importance the only
+ way to achieve a conflict is for two parts to have the same effective time.
+ This is rare, but
+ if it occurs will be considered a conflict.
+ 
+ When in conflict the "resolve" methods will arbitrarily return one of the
+ parts with the most
+ recent commit time.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>Dion</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../../serialized-form.html#org.ihtsdo.otf.tcc.api.contradiction.strategy.LastCommitWins">Serialized Form</a></dd><DT>&nbsp;</DT><DD><map name="umlmap143W0H0"><area shape="rect" coords="6,379,129,396" href="http://www.yworks.com/" alt=""><area shape="rect" coords="258,145,422,171" href="#" alt=""><area shape="rect" coords="10,172,145,188" href="#LastCommitWins()" alt=""><area shape="rect" coords="10,189,181,205" href="#getDescription()" alt=""><area shape="rect" coords="10,205,192,221" href="#getDisplayName()" alt=""><area shape="rect" coords="10,221,284,237" href="#getPolicy()" alt=""><area shape="rect" coords="10,237,652,253" href="#resolveVersions(java.util.List)" alt=""><area shape="rect" coords="10,253,625,269" href="#resolveVersions(T, T)" alt=""><area shape="rect" coords="2,119,280,136" href="package-summary.html" alt=""><area shape="rect" coords="202,37,479,61" href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/ContradictionManagementStrategy.html" alt=""><area shape="rect" coords="189,11,467,29" href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/package-summary.html" alt=""></map>
+<map name="umlmap143W1H0"><area shape="rect" coords="-229,145,-65,171" href="#" alt=""><area shape="rect" coords="-478,172,-343,188" href="#LastCommitWins()" alt=""><area shape="rect" coords="-478,189,-307,205" href="#getDescription()" alt=""><area shape="rect" coords="-478,205,-296,221" href="#getDisplayName()" alt=""><area shape="rect" coords="-478,221,-204,237" href="#getPolicy()" alt=""><area shape="rect" coords="-478,237,164,253" href="#resolveVersions(java.util.List)" alt=""><area shape="rect" coords="-478,253,137,269" href="#resolveVersions(T, T)" alt=""><area shape="rect" coords="-486,119,-208,136" href="package-summary.html" alt=""><area shape="rect" coords="-285,37,-8,61" href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/ContradictionManagementStrategy.html" alt=""><area shape="rect" coords="-298,11,-20,29" href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/package-summary.html" alt=""><area shape="rect" coords="62,33,154,56" href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html" alt=""><area shape="rect" coords="33,2,85,20" href="http://docs.oracle.com/javase/7/docs/api/java/io/package-summary.html" alt=""><area shape="rect" coords="250,145,304,168" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="241,119,308,136" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="264,236,329,260" href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html" alt=""><area shape="rect" coords="241,206,300,224" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="252,328,473,351" href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerPolicy.html" alt=""><area shape="rect" coords="241,302,463,320" href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="LastCommitWinsW0H0.png" WIDTH="488" HEIGHT="405" USEMAP="#umlmap143W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="LastCommitWinsW1H0.png" WIDTH="487" HEIGHT="405" USEMAP="#umlmap143W1H0" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.ihtsdo.otf.tcc.api.contradiction.strategy.ContradictionManagementStrategy">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.ihtsdo.otf.tcc.api.contradiction.strategy.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/ContradictionManagementStrategy.html" title="class in org.ihtsdo.otf.tcc.api.contradiction.strategy">ContradictionManagementStrategy</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/ContradictionManagementStrategy.html#ec">ec</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/ContradictionManagementStrategy.html#vc">vc</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/LastCommitWins.html#LastCommitWins()">LastCommitWins</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/LastCommitWins.html#getDescription()">getDescription</a></strong>()</code>
+<div class="block">Method to get a description of this conflict resolution strategy.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/LastCommitWins.html#getDisplayName()">getDisplayName</a></strong>()</code>
+<div class="block">Method to get the display name of this conflict resolution strategy.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerPolicy.html" title="enum in org.ihtsdo.otf.tcc.api.contradiction">ContradictionManagerPolicy</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/LastCommitWins.html#getPolicy()">getPolicy</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentVersionBI</a>&gt;&nbsp;<br><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/LastCommitWins.html#resolveVersions(java.util.List)">resolveVersions</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;T&gt;&nbsp;tuples)</code>
+<div class="block">Resolves the supplied versions, which may be from more than one entity,
+ to a conflict resolved latest state.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentVersionBI</a>&gt;&nbsp;<br><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/LastCommitWins.html#resolveVersions(T, T)">resolveVersions</a></strong>(T&nbsp;part1,
+               T&nbsp;part2)</code>
+<div class="block">Resolves the supplied parts to a conflict resolved latest state.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.contradiction.strategy.ContradictionManagementStrategy">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.ihtsdo.otf.tcc.api.contradiction.strategy.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/ContradictionManagementStrategy.html" title="class in org.ihtsdo.otf.tcc.api.contradiction.strategy">ContradictionManagementStrategy</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/ContradictionManagementStrategy.html#equals(java.lang.Object)">equals</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/ContradictionManagementStrategy.html#getEditCoordinate()">getEditCoordinate</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/ContradictionManagementStrategy.html#getViewCoordinate()">getViewCoordinate</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/ContradictionManagementStrategy.html#hashCode()">hashCode</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/ContradictionManagementStrategy.html#setEditCoordinate(org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate)">setEditCoordinate</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/ContradictionManagementStrategy.html#setViewCoordinate(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">setViewCoordinate</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/ContradictionManagementStrategy.html#toString()">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="LastCommitWins()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>LastCommitWins</h4>
+<pre>public&nbsp;LastCommitWins()</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getDescription()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDescription</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDescription()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html#getDescription()">ContradictionManagerBI</a></code></strong></div>
+<div class="block">Method to get a description of this conflict resolution strategy.
+ Note that this is intended to be something meaningful to an end user
+ attempting to choose a conflict resolution strategy. This content
+ may contain XHTML markup for readability.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html#getDescription()">getDescription</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html" title="interface in org.ihtsdo.otf.tcc.api.contradiction">ContradictionManagerBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>The display name of this conflict resolution strategy</dd></dl>
+</li>
+</ul>
+<a name="getDisplayName()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDisplayName</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDisplayName()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html#getDisplayName()">ContradictionManagerBI</a></code></strong></div>
+<div class="block">Method to get the display name of this conflict resolution strategy.
+ Note that this is intended to be something meaningful to an end user
+ attempting to choose a conflict resolution strategy.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html#getDisplayName()">getDisplayName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html" title="interface in org.ihtsdo.otf.tcc.api.contradiction">ContradictionManagerBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>The display name of this conflict resolution strategy</dd></dl>
+</li>
+</ul>
+<a name="resolveVersions(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>resolveVersions</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentVersionBI</a>&gt;&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;T&gt;&nbsp;resolveVersions(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;T&gt;&nbsp;tuples)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html#resolveVersions(java.util.List)">ContradictionManagerBI</a></code></strong></div>
+<div class="block">Resolves the supplied versions, which may be from more than one entity,
+ to a conflict resolved latest state.
+ <p>
+ Best case this will resolve to one tuple, however this will depend upon
+ the data and the resolution strategy in use.
+ <p>
+ Note that the input list of tuples will not be modified by this method.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html#resolveVersions(java.util.List)">resolveVersions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html" title="interface in org.ihtsdo.otf.tcc.api.contradiction">ContradictionManagerBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>tuples resolved as per the resolution strategy</dd></dl>
+</li>
+</ul>
+<a name="resolveVersions(org.ihtsdo.otf.tcc.api.chronicle.ComponentVersionBI,org.ihtsdo.otf.tcc.api.chronicle.ComponentVersionBI)">
+<!--   -->
+</a><a name="resolveVersions(T, T)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>resolveVersions</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentVersionBI</a>&gt;&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;T&gt;&nbsp;resolveVersions(T&nbsp;part1,
+                                                     T&nbsp;part2)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html#resolveVersions(T, T)">ContradictionManagerBI</a></code></strong></div>
+<div class="block">Resolves the supplied parts to a conflict resolved latest state.
+ <p>
+ Best case this will resolve to one part, however this will depend upon
+ the data and the resolution strategy in use.
+ <p>
+ Note that the input list of parts will not be modified by this method.
+ <p>
+ <strong> NB This method requires that all the parts are from the same
+ entity! If they are not there is no way for this method to determine that
+ and resolution will take place assuming they are all from the same
+ entity. </strong></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html#resolveVersions(T, T)">resolveVersions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html" title="interface in org.ihtsdo.otf.tcc.api.contradiction">ContradictionManagerBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>parts resolved as per the resolution strategy</dd></dl>
+</li>
+</ul>
+<a name="getPolicy()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getPolicy</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerPolicy.html" title="enum in org.ihtsdo.otf.tcc.api.contradiction">ContradictionManagerPolicy</a>&nbsp;getPolicy()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html#getPolicy()">getPolicy</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html" title="interface in org.ihtsdo.otf.tcc.api.contradiction">ContradictionManagerBI</a></code></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/LastCommitWins.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/IdentifyAllConflict.html" title="class in org.ihtsdo.otf.tcc.api.contradiction.strategy"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/VersionDateOrderSortComparator.html" title="class in org.ihtsdo.otf.tcc.api.contradiction.strategy"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/ihtsdo/otf/tcc/api/contradiction/strategy/LastCommitWins.html" target="_top">Frames</a></li>
+<li><a href="LastCommitWins.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_org.ihtsdo.otf.tcc.api.contradiction.strategy.ContradictionManagementStrategy">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

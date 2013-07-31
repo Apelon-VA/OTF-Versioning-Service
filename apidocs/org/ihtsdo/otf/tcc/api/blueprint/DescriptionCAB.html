@@ -1,0 +1,796 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>DescriptionCAB (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="DescriptionCAB (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/DescriptionCAB.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html" target="_top">Frames</a></li>
+<li><a href="DescriptionCAB.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.api.blueprint</div>
+<h2 title="Class DescriptionCAB" class="title">Class DescriptionCAB</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">org.ihtsdo.otf.tcc.api.blueprint.CreateOrAmendBlueprint</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.api.blueprint.DescriptionCAB</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/7/docs/api/java/beans/PropertyChangeListener.html?is-external=true" title="class or interface in java.beans">PropertyChangeListener</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/EventListener.html?is-external=true" title="class or interface in java.util">EventListener</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">DescriptionCAB</span>
+extends <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">CreateOrAmendBlueprint</a></pre>
+<div class="block">The Class DescriptionCAB contains methods for creating a description
+ blueprint. This blueprint can be constructed into a type of
+ <code>DescriptionChronicleBI</code>. This is the preferred method for
+ updating or creating new descriptions.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint"><code>TerminologyBuilderBI</code></a>, 
+<a href="../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.description"><code>DescriptionChronicleBI</code></a></dd><DT>&nbsp;</DT><DD><map name="umlmap211W0H0"><area shape="rect" coords="6,505,129,522" href="http://www.yworks.com/" alt=""><area shape="rect" coords="499,136,648,162" href="#" alt=""><area shape="rect" coords="140,163,339,179" href="#descSpecNamespace" alt=""><area shape="rect" coords="140,179,351,195" href="#initialCaseSignificant" alt=""><area shape="rect" coords="140,195,236,211" href="#lang" alt=""><area shape="rect" coords="140,211,235,227" href="#text" alt=""><area shape="rect" coords="140,228,578,244" href="#DescriptionCAB(int, int, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)" alt=""><area shape="rect" coords="140,244,915,260" href="#DescriptionCAB(int, int, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="140,260,982,276" href="#DescriptionCAB(java.util.UUID, java.util.UUID, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, java.util.UUID, org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="140,276,608,292" href="#DescriptionCAB(java.util.UUID, java.util.UUID, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)" alt=""><area shape="rect" coords="140,292,945,308" href="#DescriptionCAB(java.util.UUID, java.util.UUID, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="140,309,292,325" href="#getConceptNid()" alt=""><area shape="rect" coords="140,325,314,341" href="#getConceptUuid()" alt=""><area shape="rect" coords="140,341,270,357" href="#getLang()" alt=""><area shape="rect" coords="140,357,268,373" href="#getText()" alt=""><area shape="rect" coords="140,373,270,389" href="#getTypeNid()" alt=""><area shape="rect" coords="140,389,292,405" href="#getTypeUuid()" alt=""><area shape="rect" coords="140,405,371,421" href="#isInitialCaseSignificant()" alt=""><area shape="rect" coords="140,421,304,437" href="#recomputeUuid()" alt=""><area shape="rect" coords="140,437,339,453" href="#setConceptUuid(java.util.UUID)" alt=""><area shape="rect" coords="140,453,293,469" href="#setText(java.lang.String)" alt=""><area shape="rect" coords="140,469,411,485" href="#validate(org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI)" alt=""><area shape="rect" coords="132,110,327,127" href="package-summary.html" alt=""><area shape="rect" coords="474,28,672,52" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" alt=""><area shape="rect" coords="463,2,658,20" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="11,136,65,159" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="2,110,69,127" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="19,223,62,246" href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html" alt=""><area shape="rect" coords="11,197,70,215" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""></map>
+<map name="umlmap211W1H0"><area shape="rect" coords="-60,136,88,162" href="#" alt=""><area shape="rect" coords="-420,163,-221,179" href="#descSpecNamespace" alt=""><area shape="rect" coords="-420,179,-209,195" href="#initialCaseSignificant" alt=""><area shape="rect" coords="-420,195,-324,211" href="#lang" alt=""><area shape="rect" coords="-420,211,-325,227" href="#text" alt=""><area shape="rect" coords="-420,228,18,244" href="#DescriptionCAB(int, int, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)" alt=""><area shape="rect" coords="-420,244,355,260" href="#DescriptionCAB(int, int, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="-420,260,422,276" href="#DescriptionCAB(java.util.UUID, java.util.UUID, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, java.util.UUID, org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="-420,276,48,292" href="#DescriptionCAB(java.util.UUID, java.util.UUID, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)" alt=""><area shape="rect" coords="-420,292,385,308" href="#DescriptionCAB(java.util.UUID, java.util.UUID, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="-420,309,-268,325" href="#getConceptNid()" alt=""><area shape="rect" coords="-420,325,-246,341" href="#getConceptUuid()" alt=""><area shape="rect" coords="-420,341,-290,357" href="#getLang()" alt=""><area shape="rect" coords="-420,357,-292,373" href="#getText()" alt=""><area shape="rect" coords="-420,373,-290,389" href="#getTypeNid()" alt=""><area shape="rect" coords="-420,389,-268,405" href="#getTypeUuid()" alt=""><area shape="rect" coords="-420,405,-189,421" href="#isInitialCaseSignificant()" alt=""><area shape="rect" coords="-420,421,-256,437" href="#recomputeUuid()" alt=""><area shape="rect" coords="-420,437,-221,453" href="#setConceptUuid(java.util.UUID)" alt=""><area shape="rect" coords="-420,453,-267,469" href="#setText(java.lang.String)" alt=""><area shape="rect" coords="-420,469,-149,485" href="#validate(org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI)" alt=""><area shape="rect" coords="-428,110,-233,127" href="package-summary.html" alt=""><area shape="rect" coords="-85,28,112,52" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" alt=""><area shape="rect" coords="-96,2,98,20" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="515,169,633,192" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" alt=""><area shape="rect" coords="514,136,603,159" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" alt=""><area shape="rect" coords="505,110,700,127" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="515,256,643,279" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" alt=""><area shape="rect" coords="505,230,713,248" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="606,348,1015,371" href="../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" alt=""><area shape="rect" coords="505,317,715,335" href="../../../../../../org/ihtsdo/otf/tcc/api/description/package-summary.html" alt=""><area shape="rect" coords="515,440,632,463" href="../../../../../../org/ihtsdo/otf/tcc/api/lang/LanguageCode.html" alt=""><area shape="rect" coords="505,414,672,432" href="../../../../../../org/ihtsdo/otf/tcc/api/lang/package-summary.html" alt=""></map>
+<map name="umlmap211W2H0"><area shape="rect" coords="-44,169,73,192" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" alt=""><area shape="rect" coords="-45,136,43,159" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" alt=""><area shape="rect" coords="-54,110,140,127" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="-44,256,83,279" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" alt=""><area shape="rect" coords="-54,230,153,248" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="46,348,455,371" href="../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" alt=""><area shape="rect" coords="-54,317,155,335" href="../../../../../../org/ihtsdo/otf/tcc/api/description/package-summary.html" alt=""><area shape="rect" coords="-44,440,72,463" href="../../../../../../org/ihtsdo/otf/tcc/api/lang/LanguageCode.html" alt=""><area shape="rect" coords="-54,414,112,432" href="../../../../../../org/ihtsdo/otf/tcc/api/lang/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="DescriptionCABW0H0.png" WIDTH="560" HEIGHT="531" USEMAP="#umlmap211W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="DescriptionCABW1H0.png" WIDTH="560" HEIGHT="531" USEMAP="#umlmap211W1H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="DescriptionCABW2H0.png" WIDTH="560" HEIGHT="531" USEMAP="#umlmap211W2H0" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#descSpecNamespace">descSpecNamespace</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#initialCaseSignificant">initialCaseSignificant</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#lang">lang</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#text">text</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.ihtsdo.otf.tcc.api.blueprint.CreateOrAmendBlueprint">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.ihtsdo.otf.tcc.api.blueprint.<a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">CreateOrAmendBlueprint</a></h3>
+<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#idDirective">idDirective</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#pcs">pcs</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#properties">properties</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#referencedComponent">referencedComponent</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#refexDirective">refexDirective</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#DescriptionCAB(int, int, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">DescriptionCAB</a></strong>(int&nbsp;conceptNid,
+              int&nbsp;typeNid,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/lang/LanguageCode.html" title="enum in org.ihtsdo.otf.tcc.api.lang">LanguageCode</a>&nbsp;langCode,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text,
+              boolean&nbsp;initialCaseSignificant,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&nbsp;descriptionVersion,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)</code>
+<div class="block">Instantiates a new description blueprint using nid values and a given
+ <code>descriptionVersion</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#DescriptionCAB(int, int, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)">DescriptionCAB</a></strong>(int&nbsp;conceptNid,
+              int&nbsp;typeNid,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/lang/LanguageCode.html" title="enum in org.ihtsdo.otf.tcc.api.lang">LanguageCode</a>&nbsp;langCode,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text,
+              boolean&nbsp;initialCaseSignificant,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective)</code>
+<div class="block">Instantiates a new description blueprint using nids values.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#DescriptionCAB(java.util.UUID, java.util.UUID, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">DescriptionCAB</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;conceptUuid,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;typeUuid,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/lang/LanguageCode.html" title="enum in org.ihtsdo.otf.tcc.api.lang">LanguageCode</a>&nbsp;langCode,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text,
+              boolean&nbsp;initialCaseSignificant,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&nbsp;descriptionVersion,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)</code>
+<div class="block">Instantiates a new description blueprint using uuid values and a given
+ <code>descriptionVersion</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#DescriptionCAB(java.util.UUID, java.util.UUID, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)">DescriptionCAB</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;conceptUuid,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;typeUuid,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/lang/LanguageCode.html" title="enum in org.ihtsdo.otf.tcc.api.lang">LanguageCode</a>&nbsp;langCode,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text,
+              boolean&nbsp;initialCaseSignificant,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective)</code>
+<div class="block">Instantiates a new description blueprint using uuid values.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#DescriptionCAB(java.util.UUID, java.util.UUID, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, java.util.UUID, org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">DescriptionCAB</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;conceptUuid,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;typeUuid,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/lang/LanguageCode.html" title="enum in org.ihtsdo.otf.tcc.api.lang">LanguageCode</a>&nbsp;langCode,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text,
+              boolean&nbsp;initialCaseSignificant,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;componentUuid,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&nbsp;descriptionVersion,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)</code>
+<div class="block">Instantiates a new description blueprint using uuid values and a given
+ <code>descriptionVersion</code>.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#getConceptNid()">getConceptNid</a></strong>()</code>
+<div class="block">Gets the enclosing concept nid associated with this description
+ blueprint.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#getConceptUuid()">getConceptUuid</a></strong>()</code>
+<div class="block">Gets the enclosing concept uuid associated with this description
+ blueprint.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#getLang()">getLang</a></strong>()</code>
+<div class="block">Gets a two character abbreviation of language of this description
+ blueprint.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#getText()">getText</a></strong>()</code>
+<div class="block">Gets the text of the description blueprint.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#getTypeNid()">getTypeNid</a></strong>()</code>
+<div class="block">Gets the description type nid associated with this description blueprint.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#getTypeUuid()">getTypeUuid</a></strong>()</code>
+<div class="block">Gets the description type uuid associated with this description
+ blueprint.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#isInitialCaseSignificant()">isInitialCaseSignificant</a></strong>()</code>
+<div class="block">Checks if this description blueprint is marked as initial case
+ significant.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#recomputeUuid()">recomputeUuid</a></strong>()</code>
+<div class="block">Computes the uuid for this description based on the enclosing concept
+ uuid, description type uuid, language, and description text.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#setConceptUuid(java.util.UUID)">setConceptUuid</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;enclosingConceptUuid)</code>
+<div class="block">Sets the enclosing concept for this description blueprint based on the
+ given
+ <code>enclosingConceptUuid</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#setText(java.lang.String)">setText</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newText)</code>
+<div class="block">Sets the description text for this description blueprint.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#validate(org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI)">validate</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&nbsp;descriptionVersion)</code>
+<div class="block">Validates this description blueprint's fields against the given
+ <code>descriptionVersion</code>.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.blueprint.CreateOrAmendBlueprint">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.ihtsdo.otf.tcc.api.blueprint.<a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">CreateOrAmendBlueprint</a></h3>
+<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addAnnotationBlueprint(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)">addAnnotationBlueprint</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addExtraUuid(java.util.UUID, int)">addExtraUuid</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addLongId(java.lang.Long, int)">addLongId</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addPropertyChangeListener(java.beans.PropertyChangeListener)">addPropertyChangeListener</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addPropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener)">addPropertyChangeListener</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addStringId(java.lang.String, int)">addStringId</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getAnnotationBlueprints()">getAnnotationBlueprints</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getComponentNid()">getComponentNid</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getComponentUuid()">getComponentUuid</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getComponentUUID(java.util.UUID, org.ihtsdo.otf.tcc.api.chronicle.ComponentVersionBI, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)">getComponentUUID</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getIdMap()">getIdMap</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getInt(org.ihtsdo.otf.tcc.api.blueprint.ComponentProperty)">getInt</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getPrimoridalUuidString(int)">getPrimoridalUuidString</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getPrimoridalUuidString(java.util.UUID)">getPrimoridalUuidString</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getProperties()">getProperties</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getReferencedComponent()">getReferencedComponent</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getStatus()">getStatus</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getUuid(org.ihtsdo.otf.tcc.api.blueprint.ComponentProperty)">getUuid</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#propertyChange(java.beans.PropertyChangeEvent)">propertyChange</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#removePropertyChangeListener(java.beans.PropertyChangeListener)">removePropertyChangeListener</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#removePropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener)">removePropertyChangeListener</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#replaceAnnotationBlueprints(java.util.List)">replaceAnnotationBlueprints</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setComponentUuid(java.util.UUID)">setComponentUuid</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setComponentUuidNoRecompute(java.util.UUID)">setComponentUuidNoRecompute</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setCurrent()">setCurrent</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setReferencedComponent(org.ihtsdo.otf.tcc.api.chronicle.ComponentChronicleBI)">setReferencedComponent</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setRetired()">setRetired</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setStatus(org.ihtsdo.otf.tcc.api.coordinate.Status)">setStatus</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="descSpecNamespace">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>descSpecNamespace</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a> descSpecNamespace</pre>
+</li>
+</ul>
+<a name="lang">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lang</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> lang</pre>
+</li>
+</ul>
+<a name="text">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>text</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> text</pre>
+</li>
+</ul>
+<a name="initialCaseSignificant">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>initialCaseSignificant</h4>
+<pre>public&nbsp;boolean initialCaseSignificant</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="DescriptionCAB(int, int, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DescriptionCAB</h4>
+<pre>public&nbsp;DescriptionCAB(int&nbsp;conceptNid,
+              int&nbsp;typeNid,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/lang/LanguageCode.html" title="enum in org.ihtsdo.otf.tcc.api.lang">LanguageCode</a>&nbsp;langCode,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text,
+              boolean&nbsp;initialCaseSignificant,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective)
+               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                      <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                      <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block">Instantiates a new description blueprint using nids values.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>conceptNid</code> - the nid of the enclosing concept</dd><dd><code>typeNid</code> - the nid of the description type</dd><dd><code>langCode</code> - the lang code representing the language of the
+ description</dd><dd><code>text</code> - the text of the description</dd><dd><code>initialCaseSignificant</code> - set to <code>true</code> to mark the
+ description as initial case significant</dd><dd><code>idDirective</code> - </dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a
+ view coordinate</dd></dl>
+</li>
+</ul>
+<a name="DescriptionCAB(java.util.UUID, java.util.UUID, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DescriptionCAB</h4>
+<pre>public&nbsp;DescriptionCAB(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;conceptUuid,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;typeUuid,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/lang/LanguageCode.html" title="enum in org.ihtsdo.otf.tcc.api.lang">LanguageCode</a>&nbsp;langCode,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text,
+              boolean&nbsp;initialCaseSignificant,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective)
+               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                      <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                      <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block">Instantiates a new description blueprint using uuid values.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>conceptUuid</code> - the uuid of the enclosing concept</dd><dd><code>typeUuid</code> - the uuid of the description type</dd><dd><code>langCode</code> - the lang code representing the language of the
+ description</dd><dd><code>text</code> - the lang code representing the language of the description</dd><dd><code>initialCaseSignificant</code> - set to <code>true</code> to mark the
+ description as initial case significant</dd><dd><code>idDirective</code> - </dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a
+ view coordinate</dd></dl>
+</li>
+</ul>
+<a name="DescriptionCAB(int, int, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DescriptionCAB</h4>
+<pre>public&nbsp;DescriptionCAB(int&nbsp;conceptNid,
+              int&nbsp;typeNid,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/lang/LanguageCode.html" title="enum in org.ihtsdo.otf.tcc.api.lang">LanguageCode</a>&nbsp;langCode,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text,
+              boolean&nbsp;initialCaseSignificant,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&nbsp;descriptionVersion,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)
+               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                      <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                      <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block">Instantiates a new description blueprint using nid values and a given
+ <code>descriptionVersion</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>conceptNid</code> - the nid of the enclosing concept</dd><dd><code>typeNid</code> - the nid of the description type</dd><dd><code>langCode</code> - the lang code representing the language of the
+ description</dd><dd><code>text</code> - the lang code representing the language of the description</dd><dd><code>initialCaseSignificant</code> - set to <code>true</code> to mark the
+ description as initial case significant</dd><dd><code>descriptionVersion</code> - the description version to use as a pattern</dd><dd><code>viewCoordinate</code> - the view coordinate specifying which versions are
+ active and inactive</dd><dd><code>idDirective</code> - </dd><dd><code>refexDirective</code> - </dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a
+ view coordinate</dd></dl>
+</li>
+</ul>
+<a name="DescriptionCAB(java.util.UUID, java.util.UUID, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DescriptionCAB</h4>
+<pre>public&nbsp;DescriptionCAB(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;conceptUuid,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;typeUuid,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/lang/LanguageCode.html" title="enum in org.ihtsdo.otf.tcc.api.lang">LanguageCode</a>&nbsp;langCode,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text,
+              boolean&nbsp;initialCaseSignificant,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&nbsp;descriptionVersion,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)
+               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                      <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                      <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block">Instantiates a new description blueprint using uuid values and a given
+ <code>descriptionVersion</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>conceptUuid</code> - the uuid of the enclosing concept</dd><dd><code>typeUuid</code> - the uuid of the description type</dd><dd><code>langCode</code> - the lang code representing the language of the
+ description</dd><dd><code>text</code> - the lang code representing the language of the description</dd><dd><code>initialCaseSignificant</code> - set to <code>true</code> to mark the
+ description as initial case significant</dd><dd><code>descriptionVersion</code> - the description version to use as a pattern</dd><dd><code>viewCoordinate</code> - the view coordinate specifying which versions are
+ active and inactive</dd><dd><code>idDirective</code> - </dd><dd><code>refexDirective</code> - </dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a
+ view coordinate</dd></dl>
+</li>
+</ul>
+<a name="DescriptionCAB(java.util.UUID, java.util.UUID, org.ihtsdo.otf.tcc.api.lang.LanguageCode, java.lang.String, boolean, java.util.UUID, org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>DescriptionCAB</h4>
+<pre>public&nbsp;DescriptionCAB(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;conceptUuid,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;typeUuid,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/lang/LanguageCode.html" title="enum in org.ihtsdo.otf.tcc.api.lang">LanguageCode</a>&nbsp;langCode,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text,
+              boolean&nbsp;initialCaseSignificant,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;componentUuid,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&nbsp;descriptionVersion,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)
+               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                      <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                      <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block">Instantiates a new description blueprint using uuid values and a given
+ <code>descriptionVersion</code>. Can specify the uuid to be associated
+ with the new description.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>conceptUuid</code> - the uuid of the enclosing concept</dd><dd><code>typeUuid</code> - the uuid of the description type</dd><dd><code>langCode</code> - the lang code representing the language of the
+ description</dd><dd><code>text</code> - the lang code representing the language of the description</dd><dd><code>initialCaseSignificant</code> - set to <code>true</code> to mark the
+ description as initial case significant</dd><dd><code>componentUuid</code> - the uuid representing the new description</dd><dd><code>descriptionVersion</code> - the description version to use as a pattern</dd><dd><code>viewCoordinate</code> - the view coordinate specifying which versions are
+ active and inactive</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a
+ view coordinate</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="recomputeUuid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>recomputeUuid</h4>
+<pre>public&nbsp;void&nbsp;recomputeUuid()
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/security/NoSuchAlgorithmException.html?is-external=true" title="class or interface in java.security">NoSuchAlgorithmException</a>,
+                          <a href="http://docs.oracle.com/javase/7/docs/api/java/io/UnsupportedEncodingException.html?is-external=true" title="class or interface in java.io">UnsupportedEncodingException</a>,
+                          <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                          <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                          <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block">Computes the uuid for this description based on the enclosing concept
+ uuid, description type uuid, language, and description text. Recomputes
+ the uuids for dependent annotations.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#recomputeUuid()">recomputeUuid</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">CreateOrAmendBlueprint</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/security/NoSuchAlgorithmException.html?is-external=true" title="class or interface in java.security">NoSuchAlgorithmException</a></code> - indicates a no such algorithm exception
+ has occurred</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/UnsupportedEncodingException.html?is-external=true" title="class or interface in java.io">UnsupportedEncodingException</a></code> - indicates an unsupported encoding
+ exception has occurred</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a
+ given position or view coordinate</dd></dl>
+</li>
+</ul>
+<a name="getTypeUuid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTypeUuid</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;getTypeUuid()</pre>
+<div class="block">Gets the description type uuid associated with this description
+ blueprint.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the description type uuid</dd></dl>
+</li>
+</ul>
+<a name="getTypeNid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTypeNid</h4>
+<pre>public&nbsp;int&nbsp;getTypeNid()
+               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Gets the description type nid associated with this description blueprint.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the description type nid</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd></dl>
+</li>
+</ul>
+<a name="getConceptNid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConceptNid</h4>
+<pre>public&nbsp;int&nbsp;getConceptNid()
+                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Gets the enclosing concept nid associated with this description
+ blueprint.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the enclosing concept nid</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd></dl>
+</li>
+</ul>
+<a name="getConceptUuid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConceptUuid</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;getConceptUuid()</pre>
+<div class="block">Gets the enclosing concept uuid associated with this description
+ blueprint.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the enclosing concept uuid</dd></dl>
+</li>
+</ul>
+<a name="isInitialCaseSignificant()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isInitialCaseSignificant</h4>
+<pre>public&nbsp;boolean&nbsp;isInitialCaseSignificant()</pre>
+<div class="block">Checks if this description blueprint is marked as initial case
+ significant.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd><code>true</code>, if this description blueprint is initial case
+ significant</dd></dl>
+</li>
+</ul>
+<a name="getLang()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLang</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getLang()</pre>
+<div class="block">Gets a two character abbreviation of language of this description
+ blueprint.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a two character abbreviation of the description language</dd></dl>
+</li>
+</ul>
+<a name="getText()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getText</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getText()</pre>
+<div class="block">Gets the text of the description blueprint.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the description text</dd></dl>
+</li>
+</ul>
+<a name="setConceptUuid(java.util.UUID)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setConceptUuid</h4>
+<pre>protected&nbsp;void&nbsp;setConceptUuid(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;enclosingConceptUuid)</pre>
+<div class="block">Sets the enclosing concept for this description blueprint based on the
+ given
+ <code>enclosingConceptUuid</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>enclosingConceptUuid</code> - the uuid of the enclosing concept</dd></dl>
+</li>
+</ul>
+<a name="setText(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setText</h4>
+<pre>public&nbsp;void&nbsp;setText(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newText)</pre>
+<div class="block">Sets the description text for this description blueprint.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>newText</code> - the description text</dd></dl>
+</li>
+</ul>
+<a name="validate(org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>validate</h4>
+<pre>public&nbsp;boolean&nbsp;validate(<a href="../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&nbsp;descriptionVersion)
+                 throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Validates this description blueprint's fields against the given
+ <code>descriptionVersion</code>. Compares the status nid, component nid,
+ enclosing concept nid, description type nid, language, and text.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>descriptionVersion</code> - the description version to use for validation</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code>, if this description blueprint's fields are
+ equal to the specified description version</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/DescriptionCAB.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html" target="_top">Frames</a></li>
+<li><a href="DescriptionCAB.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

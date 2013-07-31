@@ -1,0 +1,617 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>TtkRefexUuidMemberChronicle (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="TtkRefexUuidMemberChronicle (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/TtkRefexUuidMemberChronicle.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../../index.html?org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html" target="_top">Frames</a></li>
+<li><a href="TtkRefexUuidMemberChronicle.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.dto.component.refex.type_uuid</div>
+<h2 title="Class TtkRefexUuidMemberChronicle" class="title">Class TtkRefexUuidMemberChronicle</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component">org.ihtsdo.otf.tcc.dto.component.TtkRevision</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component">org.ihtsdo.otf.tcc.dto.component.TtkComponentChronicle</a>&lt;V&gt;</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex">org.ihtsdo.otf.tcc.dto.component.refex.TtkRefexAbstractMemberChronicle</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid">TtkRefexUuidRevision</a>&gt;</li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.dto.component.refex.type_uuid.TtkRefexUuidMemberChronicle</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ExternalStampBI.html" title="interface in org.ihtsdo.otf.tcc.api.coordinate">ExternalStampBI</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">TtkRefexUuidMemberChronicle</span>
+extends <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex">TtkRefexAbstractMemberChronicle</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid">TtkRefexUuidRevision</a>&gt;</pre>
+<dl><DT>&nbsp;</DT><DD><map name="umlmap355W0H0"><area shape="rect" coords="282,136,572,162" href="#" alt=""><area shape="rect" coords="131,163,292,179" href="#serialVersionUID" alt=""><area shape="rect" coords="131,179,227,195" href="#uuid1" alt=""><area shape="rect" coords="131,196,353,212" href="#TtkRefexUuidMemberChronicle()" alt=""><area shape="rect" coords="131,212,435,228" href="#TtkRefexUuidMemberChronicle(java.io.DataInput, int)" alt=""><area shape="rect" coords="131,228,457,244" href="#TtkRefexUuidMemberChronicle(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)" alt=""><area shape="rect" coords="131,244,706,260" href="#TtkRefexUuidMemberChronicle(org.ihtsdo.otf.tcc.dto.component.refex.type_uuid.TtkRefexUuidMemberChronicle, org.ihtsdo.otf.tcc.dto.component.transformer.ComponentTransformerBI)" alt=""><area shape="rect" coords="131,261,307,277" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="131,277,444,293" href="#getRevisionList()" alt=""><area shape="rect" coords="131,293,292,309" href="#getType()" alt=""><area shape="rect" coords="131,309,260,325" href="#getUuid1()" alt=""><area shape="rect" coords="131,325,252,341" href="#hashCode()" alt=""><area shape="rect" coords="131,341,617,357" href="#makeTransform(org.ihtsdo.otf.tcc.dto.component.transformer.ComponentTransformerBI)" alt=""><area shape="rect" coords="131,357,362,373" href="#readExternal(java.io.DataInput, int)" alt=""><area shape="rect" coords="131,373,285,389" href="#setUuid1(java.util.UUID)" alt=""><area shape="rect" coords="131,389,260,405" href="#toString()" alt=""><area shape="rect" coords="131,405,354,421" href="#writeExternal(java.io.DataOutput)" alt=""><area shape="rect" coords="123,110,432,127" href="package-summary.html" alt=""><area shape="rect" coords="199,28,655,52" href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html" alt=""><area shape="rect" coords="184,2,431,20" href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/package-summary.html" alt=""><area shape="rect" coords="10,136,53,159" href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html" alt=""><area shape="rect" coords="2,110,61,127" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""></map>
+<map name="umlmap355W1H0"><area shape="rect" coords="-165,136,124,162" href="#" alt=""><area shape="rect" coords="-317,163,-156,179" href="#serialVersionUID" alt=""><area shape="rect" coords="-317,179,-221,195" href="#uuid1" alt=""><area shape="rect" coords="-317,196,-95,212" href="#TtkRefexUuidMemberChronicle()" alt=""><area shape="rect" coords="-317,212,-13,228" href="#TtkRefexUuidMemberChronicle(java.io.DataInput, int)" alt=""><area shape="rect" coords="-317,228,9,244" href="#TtkRefexUuidMemberChronicle(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)" alt=""><area shape="rect" coords="-317,244,258,260" href="#TtkRefexUuidMemberChronicle(org.ihtsdo.otf.tcc.dto.component.refex.type_uuid.TtkRefexUuidMemberChronicle, org.ihtsdo.otf.tcc.dto.component.transformer.ComponentTransformerBI)" alt=""><area shape="rect" coords="-317,261,-141,277" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-317,277,-4,293" href="#getRevisionList()" alt=""><area shape="rect" coords="-317,293,-156,309" href="#getType()" alt=""><area shape="rect" coords="-317,309,-188,325" href="#getUuid1()" alt=""><area shape="rect" coords="-317,325,-196,341" href="#hashCode()" alt=""><area shape="rect" coords="-317,341,169,357" href="#makeTransform(org.ihtsdo.otf.tcc.dto.component.transformer.ComponentTransformerBI)" alt=""><area shape="rect" coords="-317,357,-86,373" href="#readExternal(java.io.DataInput, int)" alt=""><area shape="rect" coords="-317,373,-163,389" href="#setUuid1(java.util.UUID)" alt=""><area shape="rect" coords="-317,389,-188,405" href="#toString()" alt=""><area shape="rect" coords="-317,405,-94,421" href="#writeExternal(java.io.DataOutput)" alt=""><area shape="rect" coords="-325,110,-16,127" href="package-summary.html" alt=""><area shape="rect" coords="-248,28,207,52" href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html" alt=""><area shape="rect" coords="-263,2,-16,20" href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/package-summary.html" alt=""><area shape="rect" coords="362,183,455,206" href="http://docs.oracle.com/javase/7/docs/api/java/io/DataOutput.html" alt=""><area shape="rect" coords="359,140,440,163" href="http://docs.oracle.com/javase/7/docs/api/java/io/DataInput.html" alt=""><area shape="rect" coords="333,110,385,127" href="http://docs.oracle.com/javase/7/docs/api/java/io/package-summary.html" alt=""><area shape="rect" coords="342,308,396,331" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="342,275,399,298" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="333,249,400,267" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""></map>
+<map name="umlmap355W2H0"><area shape="rect" coords="-84,183,8,206" href="http://docs.oracle.com/javase/7/docs/api/java/io/DataOutput.html" alt=""><area shape="rect" coords="-87,140,-6,163" href="http://docs.oracle.com/javase/7/docs/api/java/io/DataInput.html" alt=""><area shape="rect" coords="-113,110,-61,127" href="http://docs.oracle.com/javase/7/docs/api/java/io/package-summary.html" alt=""></map>
+<map name="umlmap355W0H1"><area shape="rect" coords="6,328,129,345" href="http://www.yworks.com/" alt=""><area shape="rect" coords="282,-218,572,-191" href="#" alt=""><area shape="rect" coords="131,-190,292,-174" href="#serialVersionUID" alt=""><area shape="rect" coords="131,-174,227,-158" href="#uuid1" alt=""><area shape="rect" coords="131,-157,353,-141" href="#TtkRefexUuidMemberChronicle()" alt=""><area shape="rect" coords="131,-141,435,-125" href="#TtkRefexUuidMemberChronicle(java.io.DataInput, int)" alt=""><area shape="rect" coords="131,-125,457,-109" href="#TtkRefexUuidMemberChronicle(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)" alt=""><area shape="rect" coords="131,-109,706,-93" href="#TtkRefexUuidMemberChronicle(org.ihtsdo.otf.tcc.dto.component.refex.type_uuid.TtkRefexUuidMemberChronicle, org.ihtsdo.otf.tcc.dto.component.transformer.ComponentTransformerBI)" alt=""><area shape="rect" coords="131,-92,307,-76" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="131,-76,444,-60" href="#getRevisionList()" alt=""><area shape="rect" coords="131,-60,292,-44" href="#getType()" alt=""><area shape="rect" coords="131,-44,260,-28" href="#getUuid1()" alt=""><area shape="rect" coords="131,-28,252,-12" href="#hashCode()" alt=""><area shape="rect" coords="131,-12,617,3" href="#makeTransform(org.ihtsdo.otf.tcc.dto.component.transformer.ComponentTransformerBI)" alt=""><area shape="rect" coords="131,3,362,19" href="#readExternal(java.io.DataInput, int)" alt=""><area shape="rect" coords="131,19,285,35" href="#setUuid1(java.util.UUID)" alt=""><area shape="rect" coords="131,35,260,51" href="#toString()" alt=""><area shape="rect" coords="131,51,354,67" href="#writeExternal(java.io.DataOutput)" alt=""><area shape="rect" coords="123,-244,432,-226" href="package-summary.html" alt=""></map>
+<map name="umlmap355W1H1"><area shape="rect" coords="-165,-218,124,-191" href="#" alt=""><area shape="rect" coords="-317,-190,-156,-174" href="#serialVersionUID" alt=""><area shape="rect" coords="-317,-174,-221,-158" href="#uuid1" alt=""><area shape="rect" coords="-317,-157,-95,-141" href="#TtkRefexUuidMemberChronicle()" alt=""><area shape="rect" coords="-317,-141,-13,-125" href="#TtkRefexUuidMemberChronicle(java.io.DataInput, int)" alt=""><area shape="rect" coords="-317,-125,9,-109" href="#TtkRefexUuidMemberChronicle(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)" alt=""><area shape="rect" coords="-317,-109,258,-93" href="#TtkRefexUuidMemberChronicle(org.ihtsdo.otf.tcc.dto.component.refex.type_uuid.TtkRefexUuidMemberChronicle, org.ihtsdo.otf.tcc.dto.component.transformer.ComponentTransformerBI)" alt=""><area shape="rect" coords="-317,-92,-141,-76" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-317,-76,-4,-60" href="#getRevisionList()" alt=""><area shape="rect" coords="-317,-60,-156,-44" href="#getType()" alt=""><area shape="rect" coords="-317,-44,-188,-28" href="#getUuid1()" alt=""><area shape="rect" coords="-317,-28,-196,-12" href="#hashCode()" alt=""><area shape="rect" coords="-317,-12,169,3" href="#makeTransform(org.ihtsdo.otf.tcc.dto.component.transformer.ComponentTransformerBI)" alt=""><area shape="rect" coords="-317,3,-86,19" href="#readExternal(java.io.DataInput, int)" alt=""><area shape="rect" coords="-317,19,-163,35" href="#setUuid1(java.util.UUID)" alt=""><area shape="rect" coords="-317,35,-188,51" href="#toString()" alt=""><area shape="rect" coords="-317,51,-94,67" href="#writeExternal(java.io.DataOutput)" alt=""><area shape="rect" coords="-325,-244,-16,-226" href="package-summary.html" alt=""><area shape="rect" coords="356,46,421,69" href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html" alt=""><area shape="rect" coords="333,15,392,33" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="342,181,429,204" href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexType.html" alt=""><area shape="rect" coords="426,143,798,166" href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" alt=""><area shape="rect" coords="333,112,506,130" href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/package-summary.html" alt=""><area shape="rect" coords="386,272,584,296" href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/transformer/ComponentTransformerBI.html" alt=""><area shape="rect" coords="333,242,621,260" href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/transformer/package-summary.html" alt=""></map>
+<map name="umlmap355W2H1"><area shape="rect" coords="-113,15,-54,33" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="-20,143,351,166" href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" alt=""><area shape="rect" coords="-113,112,59,130" href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/package-summary.html" alt=""><area shape="rect" coords="-60,272,137,296" href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/transformer/ComponentTransformerBI.html" alt=""><area shape="rect" coords="-113,242,174,260" href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/transformer/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="TtkRefexUuidMemberChronicleW0H0.png" WIDTH="448" HEIGHT="354" USEMAP="#umlmap355W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="TtkRefexUuidMemberChronicleW1H0.png" WIDTH="447" HEIGHT="354" USEMAP="#umlmap355W1H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="TtkRefexUuidMemberChronicleW2H0.png" WIDTH="447" HEIGHT="354" USEMAP="#umlmap355W2H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="TtkRefexUuidMemberChronicleW0H1.png" WIDTH="448" HEIGHT="354" USEMAP="#umlmap355W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="TtkRefexUuidMemberChronicleW1H1.png" WIDTH="447" HEIGHT="354" USEMAP="#umlmap355W1H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="TtkRefexUuidMemberChronicleW2H1.png" WIDTH="447" HEIGHT="354" USEMAP="#umlmap355W2H1" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html#serialVersionUID">serialVersionUID</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html#uuid1">uuid1</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.ihtsdo.otf.tcc.dto.component.refex.TtkRefexAbstractMemberChronicle">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.ihtsdo.otf.tcc.dto.component.refex.<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex">TtkRefexAbstractMemberChronicle</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html#componentUuid">componentUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html#refexExtensionUuid">refexExtensionUuid</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.ihtsdo.otf.tcc.dto.component.TtkComponentChronicle">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.ihtsdo.otf.tcc.dto.component.<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component">TtkComponentChronicle</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#additionalIds">additionalIds</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#annotations">annotations</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#primordialUuid">primordialUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#revisions">revisions</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.ihtsdo.otf.tcc.dto.component.TtkRevision">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.ihtsdo.otf.tcc.dto.component.<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component">TtkRevision</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#authorUuid">authorUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#moduleUuid">moduleUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#pathUuid">pathUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#status">status</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#time">time</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#unspecifiedModuleUuid">unspecifiedModuleUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#unspecifiedUserUuid">unspecifiedUserUuid</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html#TtkRefexUuidMemberChronicle()">TtkRefexUuidMemberChronicle</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html#TtkRefexUuidMemberChronicle(java.io.DataInput, int)">TtkRefexUuidMemberChronicle</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;in,
+                           int&nbsp;dataVersion)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html#TtkRefexUuidMemberChronicle(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)">TtkRefexUuidMemberChronicle</a></strong>(<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexChronicleBI</a>&nbsp;another)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html#TtkRefexUuidMemberChronicle(org.ihtsdo.otf.tcc.dto.component.refex.type_uuid.TtkRefexUuidMemberChronicle, org.ihtsdo.otf.tcc.dto.component.transformer.ComponentTransformerBI)">TtkRefexUuidMemberChronicle</a></strong>(<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid">TtkRefexUuidMemberChronicle</a>&nbsp;another,
+                           <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/transformer/ComponentTransformerBI.html" title="interface in org.ihtsdo.otf.tcc.dto.component.transformer">ComponentTransformerBI</a>&nbsp;transformer)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>
+<div class="block">Compares this object to the specified object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid">TtkRefexUuidRevision</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html#getRevisionList()">getRevisionList</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexType.html" title="enum in org.ihtsdo.otf.tcc.api.refex">RefexType</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html#getType()">getType</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html#getUuid1()">getUuid1</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html#hashCode()">hashCode</a></strong>()</code>
+<div class="block">Returns a hash code for this <code>ERefsetCidMember</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid">TtkRefexUuidMemberChronicle</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html#makeTransform(org.ihtsdo.otf.tcc.dto.component.transformer.ComponentTransformerBI)">makeTransform</a></strong>(<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/transformer/ComponentTransformerBI.html" title="interface in org.ihtsdo.otf.tcc.dto.component.transformer">ComponentTransformerBI</a>&nbsp;transformer)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html#readExternal(java.io.DataInput, int)">readExternal</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;in,
+            int&nbsp;dataVersion)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html#setUuid1(java.util.UUID)">setUuid1</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uuid1)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html#toString()">toString</a></strong>()</code>
+<div class="block">Returns a string representation of the object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html#writeExternal(java.io.DataOutput)">writeExternal</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/DataOutput.html?is-external=true" title="class or interface in java.io">DataOutput</a>&nbsp;out)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.dto.component.refex.TtkRefexAbstractMemberChronicle">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.ihtsdo.otf.tcc.dto.component.refex.<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex">TtkRefexAbstractMemberChronicle</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html#getComponentUuid()">getComponentUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html#getRefexExtensionUuid()">getRefexExtensionUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html#setComponentUuid(java.util.UUID)">setComponentUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html#setRefexExtensionUuid(java.util.UUID)">setRefexExtensionUuid</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.dto.component.TtkComponentChronicle">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.ihtsdo.otf.tcc.dto.component.<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component">TtkComponentChronicle</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#getAdditionalIdComponents()">getAdditionalIdComponents</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#getAnnotations()">getAnnotations</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#getEIdentifiers()">getEIdentifiers</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#getIdComponentCount()">getIdComponentCount</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#getPrimordialComponentUuid()">getPrimordialComponentUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#getRevisions()">getRevisions</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#getUuids()">getUuids</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#getVersionCount()">getVersionCount</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#setAdditionalIdComponents(java.util.List)">setAdditionalIdComponents</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#setAnnotations(java.util.List)">setAnnotations</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#setPrimordialComponentUuid(java.util.UUID)">setPrimordialComponentUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#setRevisions(java.util.List)">setRevisions</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.dto.component.TtkRevision">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.ihtsdo.otf.tcc.dto.component.<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component">TtkRevision</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#getAuthorUuid()">getAuthorUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#getModuleUuid()">getModuleUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#getPathUuid()">getPathUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#getStatus()">getStatus</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#getTime()">getTime</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#informAboutUuid(java.util.UUID)">informAboutUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#setAuthorUuid(java.util.UUID)">setAuthorUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#setModuleUuid(java.util.UUID)">setModuleUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#setPathUuid(java.util.UUID)">setPathUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#setStatus(org.ihtsdo.otf.tcc.api.coordinate.Status)">setStatus</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#setTime(long)">setTime</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="serialVersionUID">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>serialVersionUID</h4>
+<pre>public static final&nbsp;long serialVersionUID</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../../../constant-values.html#org.ihtsdo.otf.tcc.dto.component.refex.type_uuid.TtkRefexUuidMemberChronicle.serialVersionUID">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="uuid1">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>uuid1</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a> uuid1</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="TtkRefexUuidMemberChronicle(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TtkRefexUuidMemberChronicle</h4>
+<pre>public&nbsp;TtkRefexUuidMemberChronicle(<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexChronicleBI</a>&nbsp;another)
+                            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="TtkRefexUuidMemberChronicle()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TtkRefexUuidMemberChronicle</h4>
+<pre>public&nbsp;TtkRefexUuidMemberChronicle()</pre>
+</li>
+</ul>
+<a name="TtkRefexUuidMemberChronicle(java.io.DataInput, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TtkRefexUuidMemberChronicle</h4>
+<pre>public&nbsp;TtkRefexUuidMemberChronicle(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;in,
+                           int&nbsp;dataVersion)
+                            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                   <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></code></dd></dl>
+</li>
+</ul>
+<a name="TtkRefexUuidMemberChronicle(org.ihtsdo.otf.tcc.dto.component.refex.type_uuid.TtkRefexUuidMemberChronicle, org.ihtsdo.otf.tcc.dto.component.transformer.ComponentTransformerBI)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>TtkRefexUuidMemberChronicle</h4>
+<pre>public&nbsp;TtkRefexUuidMemberChronicle(<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid">TtkRefexUuidMemberChronicle</a>&nbsp;another,
+                           <a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/transformer/ComponentTransformerBI.html" title="interface in org.ihtsdo.otf.tcc.dto.component.transformer">ComponentTransformerBI</a>&nbsp;transformer)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<div class="block">Compares this object to the specified object. The result is <tt>true</tt>
+ if and only if the argument is not <tt>null</tt>, is a
+ <tt>ERefsetCidMember</tt> object, and contains the same values, field by field,
+ as this <tt>ERefsetCidMember</tt>.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html#equals(java.lang.Object)">equals</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex">TtkRefexAbstractMemberChronicle</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid">TtkRefexUuidRevision</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>obj</code> - the object to compare with.</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code> if the objects are the same;
+         <code>false</code> otherwise.</dd></dl>
+</li>
+</ul>
+<a name="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">Returns a hash code for this <code>ERefsetCidMember</code>.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html#hashCode()">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex">TtkRefexAbstractMemberChronicle</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid">TtkRefexUuidRevision</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a hash code value for this <tt>ERefsetCidMember</tt>.</dd></dl>
+</li>
+</ul>
+<a name="makeTransform(org.ihtsdo.otf.tcc.dto.component.transformer.ComponentTransformerBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeTransform</h4>
+<pre>public&nbsp;<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid">TtkRefexUuidMemberChronicle</a>&nbsp;makeTransform(<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/transformer/ComponentTransformerBI.html" title="interface in org.ihtsdo.otf.tcc.dto.component.transformer">ComponentTransformerBI</a>&nbsp;transformer)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html#makeTransform(org.ihtsdo.otf.tcc.dto.component.transformer.ComponentTransformerBI)">makeTransform</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component">TtkRevision</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="readExternal(java.io.DataInput, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readExternal</h4>
+<pre>public&nbsp;void&nbsp;readExternal(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;in,
+                int&nbsp;dataVersion)
+                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#readExternal(java.io.DataInput, int)">TtkComponentChronicle</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html#readExternal(java.io.DataInput, int)">readExternal</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex">TtkRefexAbstractMemberChronicle</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid">TtkRefexUuidRevision</a>&gt;</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></code></dd></dl>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Returns a string representation of the object.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html#toString()">toString</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex">TtkRefexAbstractMemberChronicle</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid">TtkRefexUuidRevision</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="writeExternal(java.io.DataOutput)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeExternal</h4>
+<pre>public&nbsp;void&nbsp;writeExternal(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/DataOutput.html?is-external=true" title="class or interface in java.io">DataOutput</a>&nbsp;out)
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#writeExternal(java.io.DataOutput)">TtkComponentChronicle</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html#writeExternal(java.io.DataOutput)">writeExternal</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex">TtkRefexAbstractMemberChronicle</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid">TtkRefexUuidRevision</a>&gt;</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getUuid1()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUuid1</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;getUuid1()</pre>
+</li>
+</ul>
+<a name="getRevisionList()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRevisionList</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid">TtkRefexUuidRevision</a>&gt;&nbsp;getRevisionList()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#getRevisionList()">TtkComponentChronicle</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html#getRevisionList()">getRevisionList</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkComponentChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component">TtkComponentChronicle</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid">TtkRefexUuidRevision</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getType</h4>
+<pre>public&nbsp;<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexType.html" title="enum in org.ihtsdo.otf.tcc.api.refex">RefexType</a>&nbsp;getType()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html#getType()">getType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex">TtkRefexAbstractMemberChronicle</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid">TtkRefexUuidRevision</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="setUuid1(java.util.UUID)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setUuid1</h4>
+<pre>public&nbsp;void&nbsp;setUuid1(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uuid1)</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/TtkRefexUuidMemberChronicle.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_uuid"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../../index.html?org/ihtsdo/otf/tcc/dto/component/refex/type_uuid/TtkRefexUuidMemberChronicle.html" target="_top">Frames</a></li>
+<li><a href="TtkRefexUuidMemberChronicle.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

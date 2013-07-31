@@ -1,0 +1,626 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>BdbTermBuilder (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="BdbTermBuilder (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/BdbTermBuilder.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbPathManager.html" title="class in org.ihtsdo.otf.tcc.datastore"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTerminologyStore.html" title="class in org.ihtsdo.otf.tcc.datastore"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html" target="_top">Frames</a></li>
+<li><a href="BdbTermBuilder.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.datastore</div>
+<h2 title="Class BdbTermBuilder" class="title">Class BdbTermBuilder</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.datastore.BdbTermBuilder</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint">TerminologyBuilderBI</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">BdbTermBuilder</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint">TerminologyBuilderBI</a></pre>
+<dl><DT>&nbsp;</DT><DD><map name="umlmap570W0H0"><area shape="rect" coords="451,145,605,171" href="#" alt=""><area shape="rect" coords="285,172,612,188" href="#BdbTermBuilder(org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="285,189,683,205" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)" alt=""><area shape="rect" coords="285,205,576,221" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.ConceptCB)" alt=""><area shape="rect" coords="285,221,620,237" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.DescriptionCAB)" alt=""><area shape="rect" coords="285,237,554,253" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.MediaCAB)" alt=""><area shape="rect" coords="285,253,578,269" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)" alt=""><area shape="rect" coords="285,269,632,285" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.RelationshipCAB)" alt=""><area shape="rect" coords="285,285,758,301" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)" alt=""><area shape="rect" coords="285,301,651,317" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.ConceptCB)" alt=""><area shape="rect" coords="285,317,695,333" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.DescriptionCAB)" alt=""><area shape="rect" coords="285,333,629,349" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.MediaCAB)" alt=""><area shape="rect" coords="285,349,653,365" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)" alt=""><area shape="rect" coords="285,365,707,381" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.RelationshipCAB)" alt=""><area shape="rect" coords="285,381,632,397" href="#getConAttr(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)" alt=""><area shape="rect" coords="285,397,534,413" href="#getEditCoordinate()" alt=""><area shape="rect" coords="277,119,458,136" href="package-summary.html" alt=""><area shape="rect" coords="12,178,140,201" href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" alt=""><area shape="rect" coords="12,145,135,168" href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html" alt=""><area shape="rect" coords="2,119,210,136" href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""></map>
+<map name="umlmap570W1H0"><area shape="rect" coords="-12,145,141,171" href="#" alt=""><area shape="rect" coords="-179,172,148,188" href="#BdbTermBuilder(org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-179,189,219,205" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)" alt=""><area shape="rect" coords="-179,205,112,221" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.ConceptCB)" alt=""><area shape="rect" coords="-179,221,156,237" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.DescriptionCAB)" alt=""><area shape="rect" coords="-179,237,90,253" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.MediaCAB)" alt=""><area shape="rect" coords="-179,253,114,269" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)" alt=""><area shape="rect" coords="-179,269,168,285" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.RelationshipCAB)" alt=""><area shape="rect" coords="-179,285,294,301" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)" alt=""><area shape="rect" coords="-179,301,187,317" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.ConceptCB)" alt=""><area shape="rect" coords="-179,317,231,333" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.DescriptionCAB)" alt=""><area shape="rect" coords="-179,333,165,349" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.MediaCAB)" alt=""><area shape="rect" coords="-179,349,189,365" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)" alt=""><area shape="rect" coords="-179,365,243,381" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.RelationshipCAB)" alt=""><area shape="rect" coords="-179,381,168,397" href="#getConAttr(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)" alt=""><area shape="rect" coords="-179,397,70,413" href="#getEditCoordinate()" alt=""><area shape="rect" coords="-187,119,-6,136" href="package-summary.html" alt=""><area shape="rect" coords="36,37,93,61" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="27,11,94,29" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="177,33,341,56" href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" alt=""><area shape="rect" coords="131,2,326,20" href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="376,310,506,333" href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/RelationshipCAB.html" alt=""><area shape="rect" coords="375,277,455,300" href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" alt=""><area shape="rect" coords="375,244,456,267" href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html" alt=""><area shape="rect" coords="376,211,501,234" href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html" alt=""><area shape="rect" coords="375,178,466,201" href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptCB.html" alt=""><area shape="rect" coords="376,145,539,168" href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html" alt=""><area shape="rect" coords="366,119,561,136" href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="423,402,639,425" href="../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeChronicleBI.html" alt=""><area shape="rect" coords="366,371,552,389" href="../../../../../org/ihtsdo/otf/tcc/api/conattr/package-summary.html" alt=""><area shape="rect" coords="408,499,559,522" href="../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" alt=""><area shape="rect" coords="366,468,557,486" href="../../../../../org/ihtsdo/otf/tcc/api/concept/package-summary.html" alt=""></map>
+<map name="umlmap570W2H0"><area shape="rect" coords="-87,310,42,333" href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/RelationshipCAB.html" alt=""><area shape="rect" coords="-88,277,-8,300" href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" alt=""><area shape="rect" coords="-88,244,-7,267" href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html" alt=""><area shape="rect" coords="-87,211,37,234" href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html" alt=""><area shape="rect" coords="-88,178,2,201" href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptCB.html" alt=""><area shape="rect" coords="-87,145,75,168" href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html" alt=""><area shape="rect" coords="-97,119,97,136" href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="-40,402,175,425" href="../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeChronicleBI.html" alt=""><area shape="rect" coords="-97,371,88,389" href="../../../../../org/ihtsdo/otf/tcc/api/conattr/package-summary.html" alt=""><area shape="rect" coords="-55,499,95,522" href="../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" alt=""><area shape="rect" coords="-97,468,93,486" href="../../../../../org/ihtsdo/otf/tcc/api/concept/package-summary.html" alt=""></map>
+<map name="umlmap570W0H1"><area shape="rect" coords="6,501,129,518" href="http://www.yworks.com/" alt=""><area shape="rect" coords="451,-383,605,-356" href="#" alt=""><area shape="rect" coords="285,-355,612,-339" href="#BdbTermBuilder(org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="285,-338,683,-322" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)" alt=""><area shape="rect" coords="285,-322,576,-306" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.ConceptCB)" alt=""><area shape="rect" coords="285,-306,620,-290" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.DescriptionCAB)" alt=""><area shape="rect" coords="285,-290,554,-274" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.MediaCAB)" alt=""><area shape="rect" coords="285,-274,578,-258" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)" alt=""><area shape="rect" coords="285,-258,632,-242" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.RelationshipCAB)" alt=""><area shape="rect" coords="285,-242,758,-226" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)" alt=""><area shape="rect" coords="285,-226,651,-210" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.ConceptCB)" alt=""><area shape="rect" coords="285,-210,695,-194" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.DescriptionCAB)" alt=""><area shape="rect" coords="285,-194,629,-178" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.MediaCAB)" alt=""><area shape="rect" coords="285,-178,653,-162" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)" alt=""><area shape="rect" coords="285,-162,707,-146" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.RelationshipCAB)" alt=""><area shape="rect" coords="285,-146,632,-130" href="#getConAttr(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)" alt=""><area shape="rect" coords="285,-130,534,-114" href="#getEditCoordinate()" alt=""><area shape="rect" coords="277,-409,458,-391" href="package-summary.html" alt=""></map>
+<map name="umlmap570W1H1"><area shape="rect" coords="-12,-383,141,-356" href="#" alt=""><area shape="rect" coords="-179,-355,148,-339" href="#BdbTermBuilder(org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-179,-338,219,-322" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)" alt=""><area shape="rect" coords="-179,-322,112,-306" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.ConceptCB)" alt=""><area shape="rect" coords="-179,-306,156,-290" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.DescriptionCAB)" alt=""><area shape="rect" coords="-179,-290,90,-274" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.MediaCAB)" alt=""><area shape="rect" coords="-179,-274,114,-258" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)" alt=""><area shape="rect" coords="-179,-258,168,-242" href="#construct(org.ihtsdo.otf.tcc.api.blueprint.RelationshipCAB)" alt=""><area shape="rect" coords="-179,-242,294,-226" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)" alt=""><area shape="rect" coords="-179,-226,187,-210" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.ConceptCB)" alt=""><area shape="rect" coords="-179,-210,231,-194" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.DescriptionCAB)" alt=""><area shape="rect" coords="-179,-194,165,-178" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.MediaCAB)" alt=""><area shape="rect" coords="-179,-178,189,-162" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)" alt=""><area shape="rect" coords="-179,-162,243,-146" href="#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.RelationshipCAB)" alt=""><area shape="rect" coords="-179,-146,168,-130" href="#getConAttr(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)" alt=""><area shape="rect" coords="-179,-130,70,-114" href="#getEditCoordinate()" alt=""><area shape="rect" coords="-187,-409,-6,-391" href="package-summary.html" alt=""><area shape="rect" coords="408,-28,559,-5" href="../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" alt=""><area shape="rect" coords="366,-59,557,-41" href="../../../../../org/ihtsdo/otf/tcc/api/concept/package-summary.html" alt=""><area shape="rect" coords="413,67,587,91" href="../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionChronicleBI.html" alt=""><area shape="rect" coords="366,37,576,55" href="../../../../../org/ihtsdo/otf/tcc/api/description/package-summary.html" alt=""><area shape="rect" coords="405,164,540,187" href="../../../../../org/ihtsdo/otf/tcc/api/media/MediaChronicleBI.html" alt=""><area shape="rect" coords="366,133,545,151" href="../../../../../org/ihtsdo/otf/tcc/api/media/package-summary.html" alt=""><area shape="rect" coords="459,261,831,284" href="../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" alt=""><area shape="rect" coords="366,230,539,248" href="../../../../../org/ihtsdo/otf/tcc/api/refex/package-summary.html" alt=""><area shape="rect" coords="415,358,596,381" href="../../../../../org/ihtsdo/otf/tcc/api/relationship/RelationshipChronicleBI.html" alt=""><area shape="rect" coords="366,327,579,345" href="../../../../../org/ihtsdo/otf/tcc/api/relationship/package-summary.html" alt=""><area shape="rect" coords="376,449,527,473" href="../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" alt=""><area shape="rect" coords="366,423,604,441" href="../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/package-summary.html" alt=""></map>
+<map name="umlmap570W2H1"><area shape="rect" coords="-55,-28,95,-5" href="../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" alt=""><area shape="rect" coords="-97,-59,93,-41" href="../../../../../org/ihtsdo/otf/tcc/api/concept/package-summary.html" alt=""><area shape="rect" coords="-50,67,123,91" href="../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionChronicleBI.html" alt=""><area shape="rect" coords="-97,37,112,55" href="../../../../../org/ihtsdo/otf/tcc/api/description/package-summary.html" alt=""><area shape="rect" coords="-58,164,76,187" href="../../../../../org/ihtsdo/otf/tcc/api/media/MediaChronicleBI.html" alt=""><area shape="rect" coords="-97,133,81,151" href="../../../../../org/ihtsdo/otf/tcc/api/media/package-summary.html" alt=""><area shape="rect" coords="-4,261,367,284" href="../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" alt=""><area shape="rect" coords="-97,230,75,248" href="../../../../../org/ihtsdo/otf/tcc/api/refex/package-summary.html" alt=""><area shape="rect" coords="-48,358,132,381" href="../../../../../org/ihtsdo/otf/tcc/api/relationship/RelationshipChronicleBI.html" alt=""><area shape="rect" coords="-97,327,115,345" href="../../../../../org/ihtsdo/otf/tcc/api/relationship/package-summary.html" alt=""><area shape="rect" coords="-87,449,63,473" href="../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" alt=""><area shape="rect" coords="-97,423,140,441" href="../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="BdbTermBuilderW0H0.png" WIDTH="464" HEIGHT="528" USEMAP="#umlmap570W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="BdbTermBuilderW1H0.png" WIDTH="464" HEIGHT="528" USEMAP="#umlmap570W1H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="BdbTermBuilderW2H0.png" WIDTH="463" HEIGHT="528" USEMAP="#umlmap570W2H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="BdbTermBuilderW0H1.png" WIDTH="464" HEIGHT="527" USEMAP="#umlmap570W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="BdbTermBuilderW1H1.png" WIDTH="464" HEIGHT="527" USEMAP="#umlmap570W1H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="BdbTermBuilderW2H1.png" WIDTH="463" HEIGHT="527" USEMAP="#umlmap570W2H1" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html#BdbTermBuilder(org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">BdbTermBuilder</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">EditCoordinate</a>&nbsp;ec,
+              <a href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeChronicleBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html#construct(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)">construct</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">ConceptAttributeAB</a>&nbsp;blueprint)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html#construct(org.ihtsdo.otf.tcc.api.blueprint.ConceptCB)">construct</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptCB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">ConceptCB</a>&nbsp;blueprint)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionChronicleBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html#construct(org.ihtsdo.otf.tcc.api.blueprint.DescriptionCAB)">construct</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">DescriptionCAB</a>&nbsp;blueprint)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/ihtsdo/otf/tcc/api/media/MediaChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.media">MediaChronicleBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html#construct(org.ihtsdo.otf.tcc.api.blueprint.MediaCAB)">construct</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">MediaCAB</a>&nbsp;blueprint)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexChronicleBI</a>&lt;?&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html#construct(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)">construct</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RefexCAB</a>&nbsp;blueprint)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/ihtsdo/otf/tcc/api/relationship/RelationshipChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.relationship">RelationshipChronicleBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html#construct(org.ihtsdo.otf.tcc.api.blueprint.RelationshipCAB)">construct</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/RelationshipCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RelationshipCAB</a>&nbsp;blueprint)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeChronicleBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)">constructIfNotCurrent</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">ConceptAttributeAB</a>&nbsp;blueprint)</code>
+<div class="block">This method incurs an extra cost to determine if a current version already meets the specification.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.ConceptCB)">constructIfNotCurrent</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptCB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">ConceptCB</a>&nbsp;blueprint)</code>
+<div class="block">This method incurs an extra cost to determine if a current version 
+  already meets the specification.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionChronicleBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.DescriptionCAB)">constructIfNotCurrent</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">DescriptionCAB</a>&nbsp;blueprint)</code>
+<div class="block">This method incurs an extra cost to determine if a current version already meets the specification.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/ihtsdo/otf/tcc/api/media/MediaChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.media">MediaChronicleBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.MediaCAB)">constructIfNotCurrent</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">MediaCAB</a>&nbsp;blueprint)</code>
+<div class="block">This method incurs an extra cost to determine if a current version already meets the specification.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexChronicleBI</a>&lt;?&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)">constructIfNotCurrent</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RefexCAB</a>&nbsp;blueprint)</code>
+<div class="block">This method incurs an extra cost to determine if a current version already meets the specification.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/ihtsdo/otf/tcc/api/relationship/RelationshipChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.relationship">RelationshipChronicleBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.RelationshipCAB)">constructIfNotCurrent</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/RelationshipCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RelationshipCAB</a>&nbsp;blueprint)</code>
+<div class="block">This method incurs an extra cost to determine if a current version already meets the specification.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html#getConAttr(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)">getConAttr</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">ConceptAttributeAB</a>&nbsp;blueprint)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">EditCoordinate</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html#getEditCoordinate()">getEditCoordinate</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="BdbTermBuilder(org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>BdbTermBuilder</h4>
+<pre>public&nbsp;BdbTermBuilder(<a href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">EditCoordinate</a>&nbsp;ec,
+              <a href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="construct(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>construct</h4>
+<pre>public&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexChronicleBI</a>&lt;?&gt;&nbsp;construct(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RefexCAB</a>&nbsp;blueprint)
+                              throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                     <a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                                     <a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#construct(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)">construct</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint">TerminologyBuilderBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>A <code>RefexChronicleBI</code> if the <code>blueprint</code> 
+ regardless of if the RefexChronicleBI was modified.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getConAttr(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConAttr</h4>
+<pre>public&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&nbsp;getConAttr(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">ConceptAttributeAB</a>&nbsp;blueprint)
+                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                    <a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code></dd></dl>
+</li>
+</ul>
+<a name="constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>constructIfNotCurrent</h4>
+<pre>public&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexChronicleBI</a>&lt;?&gt;&nbsp;constructIfNotCurrent(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RefexCAB</a>&nbsp;blueprint)
+                                          throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                                 <a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                                                 <a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)">TerminologyBuilderBI</a></code></strong></div>
+<div class="block">This method incurs an extra cost to determine if a current version already meets the specification.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)">constructIfNotCurrent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint">TerminologyBuilderBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>A <code>RefexChronicleBI</code> if the <code>blueprint</code> 
+ regardless of if the RefexChronicleBI was modified.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code></dd></dl>
+</li>
+</ul>
+<a name="construct(org.ihtsdo.otf.tcc.api.blueprint.RelationshipCAB)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>construct</h4>
+<pre>public&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/api/relationship/RelationshipChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.relationship">RelationshipChronicleBI</a>&nbsp;construct(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/RelationshipCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RelationshipCAB</a>&nbsp;blueprint)
+                                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                         <a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                                         <a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#construct(org.ihtsdo.otf.tcc.api.blueprint.RelationshipCAB)">construct</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint">TerminologyBuilderBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>A <code>RelationshipChronicleBI</code> if the <code>blueprint</code> 
+ regardless of if the RelationshipChronicleBI was modified.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code></dd></dl>
+</li>
+</ul>
+<a name="constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.RelationshipCAB)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>constructIfNotCurrent</h4>
+<pre>public&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/api/relationship/RelationshipChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.relationship">RelationshipChronicleBI</a>&nbsp;constructIfNotCurrent(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/RelationshipCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RelationshipCAB</a>&nbsp;blueprint)
+                                              throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                                     <a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                                                     <a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.RelationshipCAB)">TerminologyBuilderBI</a></code></strong></div>
+<div class="block">This method incurs an extra cost to determine if a current version already meets the specification.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.RelationshipCAB)">constructIfNotCurrent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint">TerminologyBuilderBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>A <code>RelationshipChronicleBI</code> if the 
+ <code>blueprint</code> regardless of if the RelationshipChronicleBI was modified.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code></dd></dl>
+</li>
+</ul>
+<a name="constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.DescriptionCAB)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>constructIfNotCurrent</h4>
+<pre>public&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionChronicleBI</a>&nbsp;constructIfNotCurrent(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">DescriptionCAB</a>&nbsp;blueprint)
+                                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                                    <a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                                                    <a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.DescriptionCAB)">TerminologyBuilderBI</a></code></strong></div>
+<div class="block">This method incurs an extra cost to determine if a current version already meets the specification.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.DescriptionCAB)">constructIfNotCurrent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint">TerminologyBuilderBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>A <code>DescriptionChronicleBI</code> if the
+ <code>blueprint</code> regardless of if the DescriptionChronicleBI was modified.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code></dd></dl>
+</li>
+</ul>
+<a name="construct(org.ihtsdo.otf.tcc.api.blueprint.DescriptionCAB)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>construct</h4>
+<pre>public&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionChronicleBI</a>&nbsp;construct(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">DescriptionCAB</a>&nbsp;blueprint)
+                                 throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                        <a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                                        <a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#construct(org.ihtsdo.otf.tcc.api.blueprint.DescriptionCAB)">construct</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint">TerminologyBuilderBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>A <code>DescriptionChronicleBI</code> if the <code>blueprint</code> 
+ regardless of if the DescriptionChronicleBI was modified.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code></dd></dl>
+</li>
+</ul>
+<a name="constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.MediaCAB)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>constructIfNotCurrent</h4>
+<pre>public&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/api/media/MediaChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.media">MediaChronicleBI</a>&nbsp;constructIfNotCurrent(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">MediaCAB</a>&nbsp;blueprint)
+                                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                              <a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                                              <a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.MediaCAB)">TerminologyBuilderBI</a></code></strong></div>
+<div class="block">This method incurs an extra cost to determine if a current version already meets the specification.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.MediaCAB)">constructIfNotCurrent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint">TerminologyBuilderBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>A <code>MediaChronicleBI</code> if the <code>blueprint</code> 
+         regardless of if the MediaChronicleBI was modified.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code></dd></dl>
+</li>
+</ul>
+<a name="construct(org.ihtsdo.otf.tcc.api.blueprint.MediaCAB)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>construct</h4>
+<pre>public&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/api/media/MediaChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.media">MediaChronicleBI</a>&nbsp;construct(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">MediaCAB</a>&nbsp;blueprint)
+                           throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                  <a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                                  <a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#construct(org.ihtsdo.otf.tcc.api.blueprint.MediaCAB)">construct</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint">TerminologyBuilderBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>A <code>MediaChronicleBI</code> if the <code>blueprint</code> 
+ regardless of if the MediaChronicleBI was modified.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code></dd></dl>
+</li>
+</ul>
+<a name="constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.ConceptCB)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>constructIfNotCurrent</h4>
+<pre>public&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;constructIfNotCurrent(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptCB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">ConceptCB</a>&nbsp;blueprint)
+                                         throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                                <a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                                                <a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.ConceptCB)">TerminologyBuilderBI</a></code></strong></div>
+<div class="block">This method incurs an extra cost to determine if a current version 
+  already meets the specification.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.ConceptCB)">constructIfNotCurrent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint">TerminologyBuilderBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>A <code>ConceptChronicleBI</code> if the <code>blueprint</code> 
+          regardless of if the ConceptChronicleBI was modified.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code></dd></dl>
+</li>
+</ul>
+<a name="construct(org.ihtsdo.otf.tcc.api.blueprint.ConceptCB)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>construct</h4>
+<pre>public&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;construct(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptCB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">ConceptCB</a>&nbsp;blueprint)
+                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                    <a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                                    <a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#construct(org.ihtsdo.otf.tcc.api.blueprint.ConceptCB)">construct</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint">TerminologyBuilderBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>A <code>ConceptChronicleBI</code> if the <code>blueprint</code> 
+          regardless of if the ConceptChronicleBI was modified.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code></dd></dl>
+</li>
+</ul>
+<a name="construct(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>construct</h4>
+<pre>public&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeChronicleBI</a>&nbsp;construct(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">ConceptAttributeAB</a>&nbsp;blueprint)
+                                      throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                             <a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                                             <a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#construct(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)">construct</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint">TerminologyBuilderBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>A <code>ConceptAttributeChronicleBI</code> if the <code>blueprint</code> regardless of if the ConceptAttributeChronicleBI was modified.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code></dd></dl>
+</li>
+</ul>
+<a name="constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>constructIfNotCurrent</h4>
+<pre>public&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeChronicleBI</a>&nbsp;constructIfNotCurrent(<a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">ConceptAttributeAB</a>&nbsp;blueprint)
+                                                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                                         <a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)">TerminologyBuilderBI</a></code></strong></div>
+<div class="block">This method incurs an extra cost to determine if a current version already meets the specification.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#constructIfNotCurrent(org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB)">constructIfNotCurrent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint">TerminologyBuilderBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>A <code>ConceptAttributeChronicleBI</code> if the <code>blueprint</code> regardless of if the ConceptAttributeChronicleBI was modified.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code></dd></dl>
+</li>
+</ul>
+<a name="getEditCoordinate()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getEditCoordinate</h4>
+<pre>public&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">EditCoordinate</a>&nbsp;getEditCoordinate()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html#getEditCoordinate()">getEditCoordinate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint">TerminologyBuilderBI</a></code></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/BdbTermBuilder.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbPathManager.html" title="class in org.ihtsdo.otf.tcc.datastore"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTerminologyStore.html" title="class in org.ihtsdo.otf.tcc.datastore"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/ihtsdo/otf/tcc/datastore/BdbTermBuilder.html" target="_top">Frames</a></li>
+<li><a href="BdbTermBuilder.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

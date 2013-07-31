@@ -1,0 +1,472 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>TimeHelper (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="TimeHelper (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/TimeHelper.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/time/TimeHelper.html" target="_top">Frames</a></li>
+<li><a href="TimeHelper.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.api.time</div>
+<h2 title="Class TimeHelper" class="title">Class TimeHelper</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.api.time.TimeHelper</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">TimeHelper</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>kec</dd>
+<DT>&nbsp;</DT><DD><map name="umlmap153W0H0"><area shape="rect" coords="6,425,129,442" href="http://www.yworks.com/" alt=""><area shape="rect" coords="439,136,551,162" href="#" alt=""><area shape="rect" coords="291,163,638,179" href="#localDateFormat" alt=""><area shape="rect" coords="291,179,658,195" href="#localLongFileFormat" alt=""><area shape="rect" coords="291,195,662,211" href="#localShortFileFormat" alt=""><area shape="rect" coords="291,212,394,228" href="#TimeHelper()" alt=""><area shape="rect" coords="291,229,689,245" href="#formatDate(java.util.Date, java.lang.ThreadLocal)" alt=""><area shape="rect" coords="291,245,468,261" href="#formatDate(long)" alt=""><area shape="rect" coords="291,261,685,277" href="#formatDate(long, java.lang.ThreadLocal)" alt=""><area shape="rect" coords="291,277,509,293" href="#formatDateForFile(long)" alt=""><area shape="rect" coords="291,293,545,309" href="#getDateFormat()" alt=""><area shape="rect" coords="291,309,532,325" href="#getElapsedTimeString(long)" alt=""><area shape="rect" coords="291,325,566,341" href="#getFileDateFormat()" alt=""><area shape="rect" coords="291,341,664,357" href="#getFormatter(java.lang.String)" alt=""><area shape="rect" coords="291,357,591,373" href="#getRemainingTimeString(int, int, long)" alt=""><area shape="rect" coords="291,373,599,389" href="#getShortFileDateFormat()" alt=""><area shape="rect" coords="291,389,636,405" href="#getTimeFromString(java.lang.String, java.text.SimpleDateFormat)" alt=""><area shape="rect" coords="283,110,451,127" href="package-summary.html" alt=""><area shape="rect" coords="467,28,524,52" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="458,2,525,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="91,136,223,159" href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html" alt=""><area shape="rect" coords="81,110,148,127" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="13,223,221,246" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html" alt=""><area shape="rect" coords="2,197,130,215" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/package-summary.html" alt=""></map>
+<map name="umlmap153W1H0"><area shape="rect" coords="-27,136,84,162" href="#" alt=""><area shape="rect" coords="-176,163,171,179" href="#localDateFormat" alt=""><area shape="rect" coords="-176,179,191,195" href="#localLongFileFormat" alt=""><area shape="rect" coords="-176,195,195,211" href="#localShortFileFormat" alt=""><area shape="rect" coords="-176,212,-73,228" href="#TimeHelper()" alt=""><area shape="rect" coords="-176,229,222,245" href="#formatDate(java.util.Date, java.lang.ThreadLocal)" alt=""><area shape="rect" coords="-176,245,1,261" href="#formatDate(long)" alt=""><area shape="rect" coords="-176,261,218,277" href="#formatDate(long, java.lang.ThreadLocal)" alt=""><area shape="rect" coords="-176,277,42,293" href="#formatDateForFile(long)" alt=""><area shape="rect" coords="-176,293,78,309" href="#getDateFormat()" alt=""><area shape="rect" coords="-176,309,65,325" href="#getElapsedTimeString(long)" alt=""><area shape="rect" coords="-176,325,99,341" href="#getFileDateFormat()" alt=""><area shape="rect" coords="-176,341,197,357" href="#getFormatter(java.lang.String)" alt=""><area shape="rect" coords="-176,357,124,373" href="#getRemainingTimeString(int, int, long)" alt=""><area shape="rect" coords="-176,373,132,389" href="#getShortFileDateFormat()" alt=""><area shape="rect" coords="-176,389,169,405" href="#getTimeFromString(java.lang.String, java.text.SimpleDateFormat)" alt=""><area shape="rect" coords="-184,110,-16,127" href="package-summary.html" alt=""><area shape="rect" coords="0,28,57,52" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="-8,2,58,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="300,136,354,159" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="291,110,358,127" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="302,223,453,246" href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html" alt=""><area shape="rect" coords="291,197,357,215" href="http://docs.oracle.com/javase/7/docs/api/java/text/package-summary.html" alt=""><area shape="rect" coords="300,310,345,333" href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html" alt=""><area shape="rect" coords="291,284,350,302" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="TimeHelperW0H0.png" WIDTH="467" HEIGHT="451" USEMAP="#umlmap153W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="TimeHelperW1H0.png" WIDTH="466" HEIGHT="451" USEMAP="#umlmap153W1H0" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/time/TimeHelper.html#localDateFormat">localDateFormat</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/time/TimeHelper.html#localLongFileFormat">localLongFileFormat</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/time/TimeHelper.html#localShortFileFormat">localShortFileFormat</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/time/TimeHelper.html#TimeHelper()">TimeHelper</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/time/TimeHelper.html#formatDate(java.util.Date, java.lang.ThreadLocal)">formatDate</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date,
+          <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt;&nbsp;formatter)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/time/TimeHelper.html#formatDate(long)">formatDate</a></strong>(long&nbsp;time)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/time/TimeHelper.html#formatDate(long, java.lang.ThreadLocal)">formatDate</a></strong>(long&nbsp;time,
+          <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt;&nbsp;formatter)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/time/TimeHelper.html#formatDateForFile(long)">formatDateForFile</a></strong>(long&nbsp;time)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/time/TimeHelper.html#getDateFormat()">getDateFormat</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/time/TimeHelper.html#getElapsedTimeString(long)">getElapsedTimeString</a></strong>(long&nbsp;elapsed)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/time/TimeHelper.html#getFileDateFormat()">getFileDateFormat</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/time/TimeHelper.html#getFormatter(java.lang.String)">getFormatter</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/time/TimeHelper.html#getRemainingTimeString(int, int, long)">getRemainingTimeString</a></strong>(int&nbsp;completedCount,
+                      int&nbsp;totalCount,
+                      long&nbsp;elapsed)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/time/TimeHelper.html#getShortFileDateFormat()">getShortFileDateFormat</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/time/TimeHelper.html#getTimeFromString(java.lang.String, java.text.SimpleDateFormat)">getTimeFromString</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;time,
+                 <a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&nbsp;formatter)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="localDateFormat">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>localDateFormat</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt; localDateFormat</pre>
+</li>
+</ul>
+<a name="localLongFileFormat">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>localLongFileFormat</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt; localLongFileFormat</pre>
+</li>
+</ul>
+<a name="localShortFileFormat">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>localShortFileFormat</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt; localShortFileFormat</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="TimeHelper()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>TimeHelper</h4>
+<pre>public&nbsp;TimeHelper()</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="formatDate(long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>formatDate</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;formatDate(long&nbsp;time)</pre>
+</li>
+</ul>
+<a name="formatDate(java.util.Date, java.lang.ThreadLocal)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>formatDate</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;formatDate(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date,
+                <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt;&nbsp;formatter)</pre>
+</li>
+</ul>
+<a name="formatDate(long, java.lang.ThreadLocal)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>formatDate</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;formatDate(long&nbsp;time,
+                <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt;&nbsp;formatter)</pre>
+</li>
+</ul>
+<a name="formatDateForFile(long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>formatDateForFile</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;formatDateForFile(long&nbsp;time)</pre>
+</li>
+</ul>
+<a name="getDateFormat()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDateFormat</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&nbsp;getDateFormat()</pre>
+</li>
+</ul>
+<a name="getElapsedTimeString(long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getElapsedTimeString</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getElapsedTimeString(long&nbsp;elapsed)</pre>
+</li>
+</ul>
+<a name="getFileDateFormat()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFileDateFormat</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&nbsp;getFileDateFormat()</pre>
+</li>
+</ul>
+<a name="getFormatter(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFormatter</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt;&nbsp;getFormatter(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern)</pre>
+</li>
+</ul>
+<a name="getRemainingTimeString(int, int, long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRemainingTimeString</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getRemainingTimeString(int&nbsp;completedCount,
+                            int&nbsp;totalCount,
+                            long&nbsp;elapsed)</pre>
+</li>
+</ul>
+<a name="getShortFileDateFormat()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getShortFileDateFormat</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&nbsp;getShortFileDateFormat()</pre>
+</li>
+</ul>
+<a name="getTimeFromString(java.lang.String, java.text.SimpleDateFormat)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getTimeFromString</h4>
+<pre>public static&nbsp;long&nbsp;getTimeFromString(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;time,
+                     <a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&nbsp;formatter)
+                              throws <a href="http://docs.oracle.com/javase/7/docs/api/java/text/ParseException.html?is-external=true" title="class or interface in java.text">ParseException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/text/ParseException.html?is-external=true" title="class or interface in java.text">ParseException</a></code></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/TimeHelper.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/time/TimeHelper.html" target="_top">Frames</a></li>
+<li><a href="TimeHelper.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

@@ -1,0 +1,752 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>MediaCAB (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="MediaCAB (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/MediaCAB.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/PathCB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html" target="_top">Frames</a></li>
+<li><a href="MediaCAB.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.api.blueprint</div>
+<h2 title="Class MediaCAB" class="title">Class MediaCAB</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">org.ihtsdo.otf.tcc.api.blueprint.CreateOrAmendBlueprint</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.api.blueprint.MediaCAB</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/7/docs/api/java/beans/PropertyChangeListener.html?is-external=true" title="class or interface in java.beans">PropertyChangeListener</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/EventListener.html?is-external=true" title="class or interface in java.util">EventListener</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">MediaCAB</span>
+extends <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">CreateOrAmendBlueprint</a></pre>
+<div class="block">The Class MediaCAB contains methods for creating a media blueprint. This
+ blueprint can be constructed into a type of
+ <code>MediaChronicleBI</code>. This is the preferred method for updating or
+ creating new descriptions.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint"><code>TerminologyBuilderBI</code></a>, 
+<a href="../../../../../../org/ihtsdo/otf/tcc/api/media/MediaChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.media"><code>MediaChronicleBI</code></a></dd><DT>&nbsp;</DT><DD><map name="umlmap214W0H0"><area shape="rect" coords="6,489,129,506" href="http://www.yworks.com/" alt=""><area shape="rect" coords="455,136,552,162" href="#" alt=""><area shape="rect" coords="140,163,347,179" href="#mediaSpecNamespace" alt=""><area shape="rect" coords="140,179,276,195" href="#dataBytes" alt=""><area shape="rect" coords="140,195,251,211" href="#format" alt=""><area shape="rect" coords="140,211,305,227" href="#textDescription" alt=""><area shape="rect" coords="140,228,476,244" href="#MediaCAB(int, int, java.lang.String, java.lang.String, byte[], org.ihtsdo.otf.tcc.api.blueprint.IdDirective)" alt=""><area shape="rect" coords="140,244,780,260" href="#MediaCAB(int, int, java.lang.String, java.lang.String, byte[], org.ihtsdo.otf.tcc.api.media.MediaVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="140,260,847,276" href="#MediaCAB(java.util.UUID, java.util.UUID, java.lang.String, java.lang.String, byte[], java.util.UUID, org.ihtsdo.otf.tcc.api.media.MediaVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="140,276,506,292" href="#MediaCAB(java.util.UUID, java.util.UUID, java.lang.String, java.lang.String, byte[], org.ihtsdo.otf.tcc.api.blueprint.IdDirective)" alt=""><area shape="rect" coords="140,292,810,308" href="#MediaCAB(java.util.UUID, java.util.UUID, java.lang.String, java.lang.String, byte[], org.ihtsdo.otf.tcc.api.media.MediaVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="140,309,292,325" href="#getConceptNid()" alt=""><area shape="rect" coords="140,325,314,341" href="#getConceptUuid()" alt=""><area shape="rect" coords="140,341,308,357" href="#getDataBytes()" alt=""><area shape="rect" coords="140,357,285,373" href="#getFormat()" alt=""><area shape="rect" coords="140,373,338,389" href="#getTextDescription()" alt=""><area shape="rect" coords="140,389,270,405" href="#getTypeNid()" alt=""><area shape="rect" coords="140,405,292,421" href="#getTypeUuid()" alt=""><area shape="rect" coords="140,421,304,437" href="#recomputeUuid()" alt=""><area shape="rect" coords="140,437,339,453" href="#setConceptUuid(java.util.UUID)" alt=""><area shape="rect" coords="140,453,378,469" href="#validate(org.ihtsdo.otf.tcc.api.media.MediaVersionBI)" alt=""><area shape="rect" coords="132,110,327,127" href="package-summary.html" alt=""><area shape="rect" coords="405,28,603,52" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" alt=""><area shape="rect" coords="394,2,589,20" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="11,136,65,159" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="2,110,69,127" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="19,223,62,246" href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html" alt=""><area shape="rect" coords="11,197,70,215" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""></map>
+<map name="umlmap214W1H0"><area shape="rect" coords="-20,136,76,162" href="#" alt=""><area shape="rect" coords="-336,163,-129,179" href="#mediaSpecNamespace" alt=""><area shape="rect" coords="-336,179,-200,195" href="#dataBytes" alt=""><area shape="rect" coords="-336,195,-225,211" href="#format" alt=""><area shape="rect" coords="-336,211,-171,227" href="#textDescription" alt=""><area shape="rect" coords="-336,228,0,244" href="#MediaCAB(int, int, java.lang.String, java.lang.String, byte[], org.ihtsdo.otf.tcc.api.blueprint.IdDirective)" alt=""><area shape="rect" coords="-336,244,304,260" href="#MediaCAB(int, int, java.lang.String, java.lang.String, byte[], org.ihtsdo.otf.tcc.api.media.MediaVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="-336,260,371,276" href="#MediaCAB(java.util.UUID, java.util.UUID, java.lang.String, java.lang.String, byte[], java.util.UUID, org.ihtsdo.otf.tcc.api.media.MediaVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="-336,276,30,292" href="#MediaCAB(java.util.UUID, java.util.UUID, java.lang.String, java.lang.String, byte[], org.ihtsdo.otf.tcc.api.blueprint.IdDirective)" alt=""><area shape="rect" coords="-336,292,334,308" href="#MediaCAB(java.util.UUID, java.util.UUID, java.lang.String, java.lang.String, byte[], org.ihtsdo.otf.tcc.api.media.MediaVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="-336,309,-184,325" href="#getConceptNid()" alt=""><area shape="rect" coords="-336,325,-162,341" href="#getConceptUuid()" alt=""><area shape="rect" coords="-336,341,-168,357" href="#getDataBytes()" alt=""><area shape="rect" coords="-336,357,-191,373" href="#getFormat()" alt=""><area shape="rect" coords="-336,373,-138,389" href="#getTextDescription()" alt=""><area shape="rect" coords="-336,389,-206,405" href="#getTypeNid()" alt=""><area shape="rect" coords="-336,405,-184,421" href="#getTypeUuid()" alt=""><area shape="rect" coords="-336,421,-172,437" href="#recomputeUuid()" alt=""><area shape="rect" coords="-336,437,-137,453" href="#setConceptUuid(java.util.UUID)" alt=""><area shape="rect" coords="-336,453,-98,469" href="#validate(org.ihtsdo.otf.tcc.api.media.MediaVersionBI)" alt=""><area shape="rect" coords="-344,110,-149,127" href="package-summary.html" alt=""><area shape="rect" coords="-70,28,127,52" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" alt=""><area shape="rect" coords="-81,2,113,20" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="459,169,577,192" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" alt=""><area shape="rect" coords="459,136,548,159" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" alt=""><area shape="rect" coords="450,110,645,127" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="460,256,588,279" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" alt=""><area shape="rect" coords="450,230,658,248" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="533,348,864,371" href="../../../../../../org/ihtsdo/otf/tcc/api/media/MediaVersionBI.html" alt=""><area shape="rect" coords="450,317,629,335" href="../../../../../../org/ihtsdo/otf/tcc/api/media/package-summary.html" alt=""></map>
+<map name="umlmap214W2H0"><area shape="rect" coords="-16,169,101,192" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" alt=""><area shape="rect" coords="-16,136,72,159" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" alt=""><area shape="rect" coords="-25,110,169,127" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="-15,256,112,279" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" alt=""><area shape="rect" coords="-25,230,182,248" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="57,348,388,371" href="../../../../../../org/ihtsdo/otf/tcc/api/media/MediaVersionBI.html" alt=""><area shape="rect" coords="-25,317,153,335" href="../../../../../../org/ihtsdo/otf/tcc/api/media/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="MediaCABW0H0.png" WIDTH="476" HEIGHT="515" USEMAP="#umlmap214W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="MediaCABW1H0.png" WIDTH="476" HEIGHT="515" USEMAP="#umlmap214W1H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="MediaCABW2H0.png" WIDTH="475" HEIGHT="515" USEMAP="#umlmap214W2H0" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>byte[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#dataBytes">dataBytes</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#format">format</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#mediaSpecNamespace">mediaSpecNamespace</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#textDescription">textDescription</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.ihtsdo.otf.tcc.api.blueprint.CreateOrAmendBlueprint">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.ihtsdo.otf.tcc.api.blueprint.<a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">CreateOrAmendBlueprint</a></h3>
+<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#idDirective">idDirective</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#pcs">pcs</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#properties">properties</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#referencedComponent">referencedComponent</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#refexDirective">refexDirective</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#MediaCAB(int, int, java.lang.String, java.lang.String, byte[], org.ihtsdo.otf.tcc.api.blueprint.IdDirective)">MediaCAB</a></strong>(int&nbsp;conceptNid,
+        int&nbsp;typeNid,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;textDescription,
+        byte[]&nbsp;dataBytes,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective)</code>
+<div class="block">Instantiates a new media blueprint using nid values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#MediaCAB(int, int, java.lang.String, java.lang.String, byte[], org.ihtsdo.otf.tcc.api.media.MediaVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">MediaCAB</a></strong>(int&nbsp;conceptNid,
+        int&nbsp;typeNid,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;textDescription,
+        byte[]&nbsp;dataBytes,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/media/MediaVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.media">MediaVersionBI</a>&nbsp;mediaVersion,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)</code>
+<div class="block">Instantiates a new media blueprint using nid values and a given
+ <code>mediaVersion</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#MediaCAB(java.util.UUID, java.util.UUID, java.lang.String, java.lang.String, byte[], org.ihtsdo.otf.tcc.api.blueprint.IdDirective)">MediaCAB</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;conceptUuid,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;typeUuid,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;textDescription,
+        byte[]&nbsp;dataBytes,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective)</code>
+<div class="block">Instantiates a new media blueprint using uuid values.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#MediaCAB(java.util.UUID, java.util.UUID, java.lang.String, java.lang.String, byte[], org.ihtsdo.otf.tcc.api.media.MediaVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">MediaCAB</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;conceptUuid,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;typeUuid,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;textDescription,
+        byte[]&nbsp;dataBytes,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/media/MediaVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.media">MediaVersionBI</a>&nbsp;mediaVersion,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)</code>
+<div class="block">Instantiates a new media blueprint using uuid values and a given
+ <code>mediaVersion</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#MediaCAB(java.util.UUID, java.util.UUID, java.lang.String, java.lang.String, byte[], java.util.UUID, org.ihtsdo.otf.tcc.api.media.MediaVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">MediaCAB</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;conceptUuid,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;typeUuid,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;textDescription,
+        byte[]&nbsp;dataBytes,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;componentUuid,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/media/MediaVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.media">MediaVersionBI</a>&nbsp;mediaVersion,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)</code>
+<div class="block">Instantiates a new media blueprint using uuid values and a given
+ <code>mediaVersion</code>.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#getConceptNid()">getConceptNid</a></strong>()</code>
+<div class="block">Gets the enclosing concept nid associated with this media blueprint.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#getConceptUuid()">getConceptUuid</a></strong>()</code>
+<div class="block">Gets the enclosing concept uuid associated with this media blueprint.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>byte[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#getDataBytes()">getDataBytes</a></strong>()</code>
+<div class="block">Gets the data bytes representing the media associated with this media type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#getFormat()">getFormat</a></strong>()</code>
+<div class="block">Gets the string representing the format associated with this media type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#getTextDescription()">getTextDescription</a></strong>()</code>
+<div class="block">Gets a text description of the media associated with this media blueprint.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#getTypeNid()">getTypeNid</a></strong>()</code>
+<div class="block">Gets the media type nid associated with this media blueprint.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#getTypeUuid()">getTypeUuid</a></strong>()</code>
+<div class="block">Gets the media type uuid associated with this media blueprint.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#recomputeUuid()">recomputeUuid</a></strong>()</code>
+<div class="block">Computes the uuid for this media based on the enclosing concept uuid and
+ the data bytes.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#setConceptUuid(java.util.UUID)">setConceptUuid</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;conceptNewUuid)</code>
+<div class="block">Sets the enclosing concept uuid associated with this media blueprint.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#validate(org.ihtsdo.otf.tcc.api.media.MediaVersionBI)">validate</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/media/MediaVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.media">MediaVersionBI</a>&nbsp;mediaVersion)</code>
+<div class="block">Validates this media blueprint's fields against the given
+ <code>mediaVersion</code>.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.blueprint.CreateOrAmendBlueprint">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.ihtsdo.otf.tcc.api.blueprint.<a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">CreateOrAmendBlueprint</a></h3>
+<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addAnnotationBlueprint(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)">addAnnotationBlueprint</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addExtraUuid(java.util.UUID, int)">addExtraUuid</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addLongId(java.lang.Long, int)">addLongId</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addPropertyChangeListener(java.beans.PropertyChangeListener)">addPropertyChangeListener</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addPropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener)">addPropertyChangeListener</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addStringId(java.lang.String, int)">addStringId</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getAnnotationBlueprints()">getAnnotationBlueprints</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getComponentNid()">getComponentNid</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getComponentUuid()">getComponentUuid</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getComponentUUID(java.util.UUID, org.ihtsdo.otf.tcc.api.chronicle.ComponentVersionBI, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)">getComponentUUID</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getIdMap()">getIdMap</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getInt(org.ihtsdo.otf.tcc.api.blueprint.ComponentProperty)">getInt</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getPrimoridalUuidString(int)">getPrimoridalUuidString</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getPrimoridalUuidString(java.util.UUID)">getPrimoridalUuidString</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getProperties()">getProperties</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getReferencedComponent()">getReferencedComponent</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getStatus()">getStatus</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getUuid(org.ihtsdo.otf.tcc.api.blueprint.ComponentProperty)">getUuid</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#propertyChange(java.beans.PropertyChangeEvent)">propertyChange</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#removePropertyChangeListener(java.beans.PropertyChangeListener)">removePropertyChangeListener</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#removePropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener)">removePropertyChangeListener</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#replaceAnnotationBlueprints(java.util.List)">replaceAnnotationBlueprints</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setComponentUuid(java.util.UUID)">setComponentUuid</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setComponentUuidNoRecompute(java.util.UUID)">setComponentUuidNoRecompute</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setCurrent()">setCurrent</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setReferencedComponent(org.ihtsdo.otf.tcc.api.chronicle.ComponentChronicleBI)">setReferencedComponent</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setRetired()">setRetired</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setStatus(org.ihtsdo.otf.tcc.api.coordinate.Status)">setStatus</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="mediaSpecNamespace">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mediaSpecNamespace</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a> mediaSpecNamespace</pre>
+</li>
+</ul>
+<a name="format">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>format</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> format</pre>
+</li>
+</ul>
+<a name="textDescription">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>textDescription</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> textDescription</pre>
+</li>
+</ul>
+<a name="dataBytes">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>dataBytes</h4>
+<pre>public&nbsp;byte[] dataBytes</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="MediaCAB(int, int, java.lang.String, java.lang.String, byte[], org.ihtsdo.otf.tcc.api.blueprint.IdDirective)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MediaCAB</h4>
+<pre>public&nbsp;MediaCAB(int&nbsp;conceptNid,
+        int&nbsp;typeNid,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;textDescription,
+        byte[]&nbsp;dataBytes,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective)
+         throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block">Instantiates a new media blueprint using nid values.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>conceptNid</code> - the nid of the enclosing concept</dd><dd><code>typeNid</code> - the nid representing the type of media</dd><dd><code>format</code> - a string describing the media format</dd><dd><code>textDescription</code> - a string describing the media</dd><dd><code>dataBytes</code> - the data bytes representing the media</dd><dd><code>idDirective</code> - </dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a
+ given position or view coordinate</dd></dl>
+</li>
+</ul>
+<a name="MediaCAB(java.util.UUID, java.util.UUID, java.lang.String, java.lang.String, byte[], org.ihtsdo.otf.tcc.api.blueprint.IdDirective)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MediaCAB</h4>
+<pre>public&nbsp;MediaCAB(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;conceptUuid,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;typeUuid,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;textDescription,
+        byte[]&nbsp;dataBytes,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective)
+         throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block">Instantiates a new media blueprint using uuid values.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>conceptUuid</code> - the uuid of the enclosing concept</dd><dd><code>typeUuid</code> - the uuid representing the type of media</dd><dd><code>format</code> - a string describing the media format</dd><dd><code>textDescription</code> - a string describing the media</dd><dd><code>dataBytes</code> - the data bytes representing the media</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a
+ given position or view coordinate</dd></dl>
+</li>
+</ul>
+<a name="MediaCAB(int, int, java.lang.String, java.lang.String, byte[], org.ihtsdo.otf.tcc.api.media.MediaVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MediaCAB</h4>
+<pre>public&nbsp;MediaCAB(int&nbsp;conceptNid,
+        int&nbsp;typeNid,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;textDescription,
+        byte[]&nbsp;dataBytes,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/media/MediaVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.media">MediaVersionBI</a>&nbsp;mediaVersion,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)
+         throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block">Instantiates a new media blueprint using nid values and a given
+ <code>mediaVersion</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>conceptNid</code> - the nid of the enclosing concept</dd><dd><code>typeNid</code> - the nid representing the type of media</dd><dd><code>format</code> - a string describing the media format</dd><dd><code>textDescription</code> - a string describing the media</dd><dd><code>dataBytes</code> - the data bytes representing the media</dd><dd><code>mediaVersion</code> - the media version to use as a pattern</dd><dd><code>viewCoordinate</code> - the view coordinate specifying which versions are
+ active and inactive</dd><dd><code>idDirective</code> - </dd><dd><code>refexDirective</code> - </dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a
+ given position or view coordinate</dd></dl>
+</li>
+</ul>
+<a name="MediaCAB(java.util.UUID, java.util.UUID, java.lang.String, java.lang.String, byte[], org.ihtsdo.otf.tcc.api.media.MediaVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MediaCAB</h4>
+<pre>public&nbsp;MediaCAB(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;conceptUuid,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;typeUuid,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;textDescription,
+        byte[]&nbsp;dataBytes,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/media/MediaVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.media">MediaVersionBI</a>&nbsp;mediaVersion,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)
+         throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block">Instantiates a new media blueprint using uuid values and a given
+ <code>mediaVersion</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>conceptUuid</code> - the uuid of the enclosing concept</dd><dd><code>typeUuid</code> - the uuid representing the type of media</dd><dd><code>format</code> - a string describing the media format</dd><dd><code>textDescription</code> - a string describing the media</dd><dd><code>dataBytes</code> - the data bytes representing the media</dd><dd><code>mediaVersion</code> - the media version to use as a pattern</dd><dd><code>viewCoordinate</code> - the view coordinate specifying which versions are
+ active and inactive</dd><dd><code>idDirective</code> - </dd><dd><code>refexDirective</code> - </dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a
+ given position or view coordinate</dd></dl>
+</li>
+</ul>
+<a name="MediaCAB(java.util.UUID, java.util.UUID, java.lang.String, java.lang.String, byte[], java.util.UUID, org.ihtsdo.otf.tcc.api.media.MediaVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>MediaCAB</h4>
+<pre>public&nbsp;MediaCAB(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;conceptUuid,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;typeUuid,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;format,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;textDescription,
+        byte[]&nbsp;dataBytes,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;componentUuid,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/media/MediaVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.media">MediaVersionBI</a>&nbsp;mediaVersion,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)
+         throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block">Instantiates a new media blueprint using uuid values and a given
+ <code>mediaVersion</code>. Can specify a uuid to represent the media
+ component.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>conceptUuid</code> - the uuid of the enclosing concept</dd><dd><code>typeUuid</code> - the uuid representing the type of media</dd><dd><code>format</code> - a string describing the media format</dd><dd><code>textDescription</code> - a string describing the media</dd><dd><code>dataBytes</code> - the data bytes representing the media</dd><dd><code>componentUuid</code> - the uuid to represent the media component</dd><dd><code>mediaVersion</code> - the media version to use as a pattern</dd><dd><code>viewCoordinate</code> - the view coordinate specifying which versions are
+ active and inactive</dd><dd><code>idDirective</code> - </dd><dd><code>refexDirective</code> - </dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a
+ given position or view coordinate</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="recomputeUuid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>recomputeUuid</h4>
+<pre>public&nbsp;void&nbsp;recomputeUuid()
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/security/NoSuchAlgorithmException.html?is-external=true" title="class or interface in java.security">NoSuchAlgorithmException</a>,
+                          <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                          <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                          <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block">Computes the uuid for this media based on the enclosing concept uuid and
+ the data bytes. Recomputes the uuids for dependent annotations.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#recomputeUuid()">recomputeUuid</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">CreateOrAmendBlueprint</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/security/NoSuchAlgorithmException.html?is-external=true" title="class or interface in java.security">NoSuchAlgorithmException</a></code> - indicates a no such algorithm exception
+ has occurred</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/UnsupportedEncodingException.html?is-external=true" title="class or interface in java.io">UnsupportedEncodingException</a></code> - indicates an unsupported encoding
+ exception has occurred</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a
+ given position or view coordinate</dd></dl>
+</li>
+</ul>
+<a name="getTypeUuid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTypeUuid</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;getTypeUuid()</pre>
+<div class="block">Gets the media type uuid associated with this media blueprint.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the media type uuid</dd></dl>
+</li>
+</ul>
+<a name="getTypeNid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTypeNid</h4>
+<pre>public&nbsp;int&nbsp;getTypeNid()
+               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Gets the media type nid associated with this media blueprint.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the media type nid</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd></dl>
+</li>
+</ul>
+<a name="getConceptNid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConceptNid</h4>
+<pre>public&nbsp;int&nbsp;getConceptNid()
+                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Gets the enclosing concept nid associated with this media blueprint.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the enclosing concept nid</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd></dl>
+</li>
+</ul>
+<a name="getConceptUuid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConceptUuid</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;getConceptUuid()</pre>
+<div class="block">Gets the enclosing concept uuid associated with this media blueprint.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the enclosing concept uuid</dd></dl>
+</li>
+</ul>
+<a name="getDataBytes()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDataBytes</h4>
+<pre>public&nbsp;byte[]&nbsp;getDataBytes()</pre>
+<div class="block">Gets the data bytes representing the media associated with this media type.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the media data bytes</dd></dl>
+</li>
+</ul>
+<a name="getFormat()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFormat</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getFormat()</pre>
+<div class="block">Gets the string representing the format associated with this media type.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the media format</dd></dl>
+</li>
+</ul>
+<a name="getTextDescription()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTextDescription</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getTextDescription()</pre>
+<div class="block">Gets a text description of the media associated with this media blueprint.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the text description of the media</dd></dl>
+</li>
+</ul>
+<a name="setConceptUuid(java.util.UUID)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setConceptUuid</h4>
+<pre>protected&nbsp;void&nbsp;setConceptUuid(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;conceptNewUuid)</pre>
+<div class="block">Sets the enclosing concept uuid associated with this media blueprint.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>conceptNewUuid</code> - the enclosing concept uuid</dd></dl>
+</li>
+</ul>
+<a name="validate(org.ihtsdo.otf.tcc.api.media.MediaVersionBI)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>validate</h4>
+<pre>public&nbsp;boolean&nbsp;validate(<a href="../../../../../../org/ihtsdo/otf/tcc/api/media/MediaVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.media">MediaVersionBI</a>&nbsp;mediaVersion)
+                 throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Validates this media blueprint's fields against the given
+ <code>mediaVersion</code>. Compares the status nid, component nid,
+ enclosing concept nid, media type nid, format, description, and bytes.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>mediaVersion</code> - the media version to use for validation</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code>, if this media blueprint's fields are
+ equal to the specified media version</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/MediaCAB.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/PathCB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html" target="_top">Frames</a></li>
+<li><a href="MediaCAB.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

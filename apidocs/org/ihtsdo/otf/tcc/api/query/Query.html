@@ -1,0 +1,592 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>Query (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Query (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Query.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/ParentClause.html" title="class in org.ihtsdo.otf.tcc.api.query"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/QueryFromJaxb.html" title="class in org.ihtsdo.otf.tcc.api.query"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/query/Query.html" target="_top">Frames</a></li>
+<li><a href="Query.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.api.query</div>
+<h2 title="Class Query" class="title">Class Query</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.api.query.Query</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/QueryFromJaxb.html" title="class in org.ihtsdo.otf.tcc.api.query">QueryFromJaxb</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public abstract class <span class="strong">Query</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>kec</dd>
+<DT>&nbsp;</DT><DD><map name="umlmap118W0H0"><area shape="rect" coords="531,136,593,157" href="#" alt=""><area shape="rect" coords="328,175,496,191" href="#Query(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="328,192,469,208" href="#And(org.ihtsdo.otf.tcc.api.query.Clause...)" alt=""><area shape="rect" coords="328,208,778,224" href="#ChangedFromPreviousVersion(java.lang.String)" alt=""><area shape="rect" coords="328,224,509,240" href="#compute()" alt=""><area shape="rect" coords="328,240,700,256" href="#ConceptForComponent(org.ihtsdo.otf.tcc.api.query.Clause)" alt=""><area shape="rect" coords="328,256,620,272" href="#ConceptIsChildOf(java.lang.String)" alt=""><area shape="rect" coords="328,272,708,288" href="#ConceptIsDescendentOf(java.lang.String)" alt=""><area shape="rect" coords="328,288,612,304" href="#ConceptIsKindOf(java.lang.String)" alt=""><area shape="rect" coords="328,304,761,320" href="#ConceptIsMemberOfRefset(java.lang.String)" alt=""><area shape="rect" coords="328,320,784,336" href="#DescriptionActiveLuceneMatch(java.lang.String)" alt=""><area shape="rect" coords="328,336,778,352" href="#DescriptionActiveRegexMatch(java.lang.String)" alt=""><area shape="rect" coords="328,352,708,368" href="#DescriptionLuceneMatch(java.lang.String)" alt=""><area shape="rect" coords="328,368,702,384" href="#DescriptionRegexMatch(java.lang.String)" alt=""><area shape="rect" coords="328,384,475,400" href="#For()" alt=""><area shape="rect" coords="328,400,695,416" href="#getComputePhases()" alt=""><area shape="rect" coords="328,416,517,432" href="#getForSet()" alt=""><area shape="rect" coords="328,432,651,448" href="#getLetDeclarations()" alt=""><area shape="rect" coords="328,448,589,464" href="#getViewCoordinate()" alt=""><area shape="rect" coords="328,464,519,480" href="#Intersection(org.ihtsdo.otf.tcc.api.query.Clause...)" alt=""><area shape="rect" coords="328,480,417,495" href="#Let()" alt=""><area shape="rect" coords="328,495,498,511" href="#let(java.lang.String, java.lang.Object)" alt=""><area shape="rect" coords="328,511,458,527" href="#Not(org.ihtsdo.otf.tcc.api.query.Clause)" alt=""><area shape="rect" coords="328,527,453,543" href="#Or(org.ihtsdo.otf.tcc.api.query.Clause...)" alt=""><area shape="rect" coords="328,543,472,559" href="#Union(org.ihtsdo.otf.tcc.api.query.Clause...)" alt=""><area shape="rect" coords="328,559,454,575" href="#Where()" alt=""><area shape="rect" coords="320,110,496,127" href="package-summary.html" alt=""><area shape="rect" coords="534,28,591,52" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="525,2,592,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="12,169,134,192" href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html" alt=""><area shape="rect" coords="14,136,258,159" href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumSet.html" alt=""><area shape="rect" coords="2,110,61,127" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="55,256,183,279" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" alt=""><area shape="rect" coords="45,230,253,248" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="128,348,236,371" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" alt=""><area shape="rect" coords="96,317,255,335" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/package-summary.html" alt=""></map>
+<map name="umlmap118W1H0"><area shape="rect" coords="-29,136,32,157" href="#" alt=""><area shape="rect" coords="-233,175,-65,191" href="#Query(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-233,192,-92,208" href="#And(org.ihtsdo.otf.tcc.api.query.Clause...)" alt=""><area shape="rect" coords="-233,208,217,224" href="#ChangedFromPreviousVersion(java.lang.String)" alt=""><area shape="rect" coords="-233,224,-52,240" href="#compute()" alt=""><area shape="rect" coords="-233,240,139,256" href="#ConceptForComponent(org.ihtsdo.otf.tcc.api.query.Clause)" alt=""><area shape="rect" coords="-233,256,59,272" href="#ConceptIsChildOf(java.lang.String)" alt=""><area shape="rect" coords="-233,272,147,288" href="#ConceptIsDescendentOf(java.lang.String)" alt=""><area shape="rect" coords="-233,288,51,304" href="#ConceptIsKindOf(java.lang.String)" alt=""><area shape="rect" coords="-233,304,200,320" href="#ConceptIsMemberOfRefset(java.lang.String)" alt=""><area shape="rect" coords="-233,320,223,336" href="#DescriptionActiveLuceneMatch(java.lang.String)" alt=""><area shape="rect" coords="-233,336,217,352" href="#DescriptionActiveRegexMatch(java.lang.String)" alt=""><area shape="rect" coords="-233,352,147,368" href="#DescriptionLuceneMatch(java.lang.String)" alt=""><area shape="rect" coords="-233,368,141,384" href="#DescriptionRegexMatch(java.lang.String)" alt=""><area shape="rect" coords="-233,384,-86,400" href="#For()" alt=""><area shape="rect" coords="-233,400,134,416" href="#getComputePhases()" alt=""><area shape="rect" coords="-233,416,-44,432" href="#getForSet()" alt=""><area shape="rect" coords="-233,432,90,448" href="#getLetDeclarations()" alt=""><area shape="rect" coords="-233,448,28,464" href="#getViewCoordinate()" alt=""><area shape="rect" coords="-233,464,-42,480" href="#Intersection(org.ihtsdo.otf.tcc.api.query.Clause...)" alt=""><area shape="rect" coords="-233,480,-144,495" href="#Let()" alt=""><area shape="rect" coords="-233,495,-63,511" href="#let(java.lang.String, java.lang.Object)" alt=""><area shape="rect" coords="-233,511,-103,527" href="#Not(org.ihtsdo.otf.tcc.api.query.Clause)" alt=""><area shape="rect" coords="-233,527,-108,543" href="#Or(org.ihtsdo.otf.tcc.api.query.Clause...)" alt=""><area shape="rect" coords="-233,543,-89,559" href="#Union(org.ihtsdo.otf.tcc.api.query.Clause...)" alt=""><area shape="rect" coords="-233,559,-107,575" href="#Where()" alt=""><area shape="rect" coords="-241,110,-65,127" href="package-summary.html" alt=""><area shape="rect" coords="-26,28,30,52" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="-35,2,31,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="303,169,357,192" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="303,136,360,159" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="294,110,361,127" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="303,355,329,378" href="../../../../../../org/ihtsdo/otf/tcc/api/query/Or.html" alt=""><area shape="rect" coords="303,322,339,345" href="../../../../../../org/ihtsdo/otf/tcc/api/query/Not.html" alt=""><area shape="rect" coords="303,289,360,312" href="../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html" alt=""><area shape="rect" coords="303,256,339,279" href="../../../../../../org/ihtsdo/otf/tcc/api/query/And.html" alt=""><area shape="rect" coords="294,230,470,248" href="../../../../../../org/ihtsdo/otf/tcc/api/query/package-summary.html" alt=""><area shape="rect" coords="294,416,520,434" href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/package-summary.html" alt=""></map>
+<map name="umlmap118W0H1"><area shape="rect" coords="6,382,129,399" href="http://www.yworks.com/" alt=""><area shape="rect" coords="531,-273,593,-251" href="#" alt=""><area shape="rect" coords="328,-233,496,-217" href="#Query(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="328,-216,469,-200" href="#And(org.ihtsdo.otf.tcc.api.query.Clause...)" alt=""><area shape="rect" coords="328,-200,778,-184" href="#ChangedFromPreviousVersion(java.lang.String)" alt=""><area shape="rect" coords="328,-184,509,-168" href="#compute()" alt=""><area shape="rect" coords="328,-168,700,-152" href="#ConceptForComponent(org.ihtsdo.otf.tcc.api.query.Clause)" alt=""><area shape="rect" coords="328,-152,620,-136" href="#ConceptIsChildOf(java.lang.String)" alt=""><area shape="rect" coords="328,-136,708,-120" href="#ConceptIsDescendentOf(java.lang.String)" alt=""><area shape="rect" coords="328,-120,612,-104" href="#ConceptIsKindOf(java.lang.String)" alt=""><area shape="rect" coords="328,-104,761,-88" href="#ConceptIsMemberOfRefset(java.lang.String)" alt=""><area shape="rect" coords="328,-88,784,-72" href="#DescriptionActiveLuceneMatch(java.lang.String)" alt=""><area shape="rect" coords="328,-72,778,-56" href="#DescriptionActiveRegexMatch(java.lang.String)" alt=""><area shape="rect" coords="328,-56,708,-40" href="#DescriptionLuceneMatch(java.lang.String)" alt=""><area shape="rect" coords="328,-40,702,-24" href="#DescriptionRegexMatch(java.lang.String)" alt=""><area shape="rect" coords="328,-24,475,-8" href="#For()" alt=""><area shape="rect" coords="328,-8,695,7" href="#getComputePhases()" alt=""><area shape="rect" coords="328,7,517,23" href="#getForSet()" alt=""><area shape="rect" coords="328,23,651,39" href="#getLetDeclarations()" alt=""><area shape="rect" coords="328,39,589,55" href="#getViewCoordinate()" alt=""><area shape="rect" coords="328,55,519,71" href="#Intersection(org.ihtsdo.otf.tcc.api.query.Clause...)" alt=""><area shape="rect" coords="328,71,417,86" href="#Let()" alt=""><area shape="rect" coords="328,86,498,102" href="#let(java.lang.String, java.lang.Object)" alt=""><area shape="rect" coords="328,102,458,118" href="#Not(org.ihtsdo.otf.tcc.api.query.Clause)" alt=""><area shape="rect" coords="328,118,453,134" href="#Or(org.ihtsdo.otf.tcc.api.query.Clause...)" alt=""><area shape="rect" coords="328,134,472,150" href="#Union(org.ihtsdo.otf.tcc.api.query.Clause...)" alt=""><area shape="rect" coords="328,150,454,166" href="#Where()" alt=""><area shape="rect" coords="320,-299,496,-281" href="package-summary.html" alt=""></map>
+<map name="umlmap118W1H1"><area shape="rect" coords="-29,-273,32,-251" href="#" alt=""><area shape="rect" coords="-233,-233,-65,-217" href="#Query(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-233,-216,-92,-200" href="#And(org.ihtsdo.otf.tcc.api.query.Clause...)" alt=""><area shape="rect" coords="-233,-200,217,-184" href="#ChangedFromPreviousVersion(java.lang.String)" alt=""><area shape="rect" coords="-233,-184,-52,-168" href="#compute()" alt=""><area shape="rect" coords="-233,-168,139,-152" href="#ConceptForComponent(org.ihtsdo.otf.tcc.api.query.Clause)" alt=""><area shape="rect" coords="-233,-152,59,-136" href="#ConceptIsChildOf(java.lang.String)" alt=""><area shape="rect" coords="-233,-136,147,-120" href="#ConceptIsDescendentOf(java.lang.String)" alt=""><area shape="rect" coords="-233,-120,51,-104" href="#ConceptIsKindOf(java.lang.String)" alt=""><area shape="rect" coords="-233,-104,200,-88" href="#ConceptIsMemberOfRefset(java.lang.String)" alt=""><area shape="rect" coords="-233,-88,223,-72" href="#DescriptionActiveLuceneMatch(java.lang.String)" alt=""><area shape="rect" coords="-233,-72,217,-56" href="#DescriptionActiveRegexMatch(java.lang.String)" alt=""><area shape="rect" coords="-233,-56,147,-40" href="#DescriptionLuceneMatch(java.lang.String)" alt=""><area shape="rect" coords="-233,-40,141,-24" href="#DescriptionRegexMatch(java.lang.String)" alt=""><area shape="rect" coords="-233,-24,-86,-8" href="#For()" alt=""><area shape="rect" coords="-233,-8,134,7" href="#getComputePhases()" alt=""><area shape="rect" coords="-233,7,-44,23" href="#getForSet()" alt=""><area shape="rect" coords="-233,23,90,39" href="#getLetDeclarations()" alt=""><area shape="rect" coords="-233,39,28,55" href="#getViewCoordinate()" alt=""><area shape="rect" coords="-233,55,-42,71" href="#Intersection(org.ihtsdo.otf.tcc.api.query.Clause...)" alt=""><area shape="rect" coords="-233,71,-144,86" href="#Let()" alt=""><area shape="rect" coords="-233,86,-63,102" href="#let(java.lang.String, java.lang.Object)" alt=""><area shape="rect" coords="-233,102,-103,118" href="#Not(org.ihtsdo.otf.tcc.api.query.Clause)" alt=""><area shape="rect" coords="-233,118,-108,134" href="#Or(org.ihtsdo.otf.tcc.api.query.Clause...)" alt=""><area shape="rect" coords="-233,134,-89,150" href="#Union(org.ihtsdo.otf.tcc.api.query.Clause...)" alt=""><area shape="rect" coords="-233,150,-107,166" href="#Where()" alt=""><area shape="rect" coords="-241,-299,-65,-281" href="package-summary.html" alt=""><area shape="rect" coords="305,331,490,355" href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionRegexMatch.html" alt=""><area shape="rect" coords="305,298,498,321" href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionLuceneMatch.html" alt=""><area shape="rect" coords="306,265,538,288" href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionActiveRegexMatch.html" alt=""><area shape="rect" coords="306,232,546,255" href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionActiveLuceneMatch.html" alt=""><area shape="rect" coords="304,199,436,222" href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptIsKindOf.html" alt=""><area shape="rect" coords="305,166,495,189" href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptIsDescendentOf.html" alt=""><area shape="rect" coords="304,133,441,156" href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptIsChildOf.html" alt=""><area shape="rect" coords="305,100,490,123" href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptForComponent.html" alt=""><area shape="rect" coords="306,66,542,90" href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ComponentIsMemberOfRefset.html" alt=""><area shape="rect" coords="306,33,540,56" href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ChangedFromPreviousVersion.html" alt=""><area shape="rect" coords="294,7,520,25" href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="QueryW0H0.png" WIDTH="561" HEIGHT="409" USEMAP="#umlmap118W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="QueryW1H0.png" WIDTH="560" HEIGHT="409" USEMAP="#umlmap118W1H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="QueryW0H1.png" WIDTH="561" HEIGHT="408" USEMAP="#umlmap118W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="QueryW1H1.png" WIDTH="560" HEIGHT="408" USEMAP="#umlmap118W1H1" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#Query(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">Query</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/ihtsdo/otf/tcc/api/query/And.html" title="class in org.ihtsdo.otf.tcc.api.query">And</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#And(org.ihtsdo.otf.tcc.api.query.Clause...)">And</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html" title="class in org.ihtsdo.otf.tcc.api.query">Clause</a>...&nbsp;clauses)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ChangedFromPreviousVersion.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">ChangedFromPreviousVersion</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#ChangedFromPreviousVersion(java.lang.String)">ChangedFromPreviousVersion</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;previousCoordinateKey)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#compute()">compute</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptForComponent.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">ConceptForComponent</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#ConceptForComponent(org.ihtsdo.otf.tcc.api.query.Clause)">ConceptForComponent</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html" title="class in org.ihtsdo.otf.tcc.api.query">Clause</a>&nbsp;child)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptIsChildOf.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">ConceptIsChildOf</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#ConceptIsChildOf(java.lang.String)">ConceptIsChildOf</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;refsetSpecKey)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptIsDescendentOf.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">ConceptIsDescendentOf</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#ConceptIsDescendentOf(java.lang.String)">ConceptIsDescendentOf</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;conceptSpecKey)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptIsKindOf.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">ConceptIsKindOf</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#ConceptIsKindOf(java.lang.String)">ConceptIsKindOf</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;conceptSpecKey)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ComponentIsMemberOfRefset.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">ComponentIsMemberOfRefset</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#ConceptIsMemberOfRefset(java.lang.String)">ConceptIsMemberOfRefset</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;refsetSpecKey)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionActiveLuceneMatch.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">DescriptionActiveLuceneMatch</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#DescriptionActiveLuceneMatch(java.lang.String)">DescriptionActiveLuceneMatch</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;queryTextKey)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionActiveRegexMatch.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">DescriptionActiveRegexMatch</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#DescriptionActiveRegexMatch(java.lang.String)">DescriptionActiveRegexMatch</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;regexKey)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionLuceneMatch.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">DescriptionLuceneMatch</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#DescriptionLuceneMatch(java.lang.String)">DescriptionLuceneMatch</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;queryTextKey)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionRegexMatch.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">DescriptionRegexMatch</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#DescriptionRegexMatch(java.lang.String)">DescriptionRegexMatch</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;regexKey)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#For()">For</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumSet.html?is-external=true" title="class or interface in java.util">EnumSet</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/ClauseComputeType.html" title="enum in org.ihtsdo.otf.tcc.api.query">ClauseComputeType</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#getComputePhases()">getComputePhases</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#getForSet()">getForSet</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#getLetDeclarations()">getLetDeclarations</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#getViewCoordinate()">getViewCoordinate</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/ihtsdo/otf/tcc/api/query/And.html" title="class in org.ihtsdo.otf.tcc.api.query">And</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#Intersection(org.ihtsdo.otf.tcc.api.query.Clause...)">Intersection</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html" title="class in org.ihtsdo.otf.tcc.api.query">Clause</a>...&nbsp;clauses)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#Let()">Let</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#let(java.lang.String, java.lang.Object)">let</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+   <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Not.html" title="class in org.ihtsdo.otf.tcc.api.query">Not</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#Not(org.ihtsdo.otf.tcc.api.query.Clause)">Not</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html" title="class in org.ihtsdo.otf.tcc.api.query">Clause</a>&nbsp;clause)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Or.html" title="class in org.ihtsdo.otf.tcc.api.query">Or</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#Or(org.ihtsdo.otf.tcc.api.query.Clause...)">Or</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html" title="class in org.ihtsdo.otf.tcc.api.query">Clause</a>...&nbsp;clauses)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Or.html" title="class in org.ihtsdo.otf.tcc.api.query">Or</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#Union(org.ihtsdo.otf.tcc.api.query.Clause...)">Union</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html" title="class in org.ihtsdo.otf.tcc.api.query">Clause</a>...&nbsp;clauses)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected abstract <a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html" title="class in org.ihtsdo.otf.tcc.api.query">Clause</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#Where()">Where</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="Query(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Query</h4>
+<pre>public&nbsp;Query(<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getLetDeclarations()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLetDeclarations</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;getLetDeclarations()</pre>
+</li>
+</ul>
+<a name="getComputePhases()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getComputePhases</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumSet.html?is-external=true" title="class or interface in java.util">EnumSet</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/ClauseComputeType.html" title="enum in org.ihtsdo.otf.tcc.api.query">ClauseComputeType</a>&gt;&nbsp;getComputePhases()</pre>
+</li>
+</ul>
+<a name="For()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>For</h4>
+<pre>protected abstract&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;For()
+                              throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="Let()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Let</h4>
+<pre>protected abstract&nbsp;void&nbsp;Let()
+                     throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="Where()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Where</h4>
+<pre>protected abstract&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html" title="class in org.ihtsdo.otf.tcc.api.query">Clause</a>&nbsp;Where()</pre>
+</li>
+</ul>
+<a name="let(java.lang.String, java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>let</h4>
+<pre>public&nbsp;void&nbsp;let(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)
+         throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="compute()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>compute</h4>
+<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;compute()
+                      throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                             <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="getViewCoordinate()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getViewCoordinate</h4>
+<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;getViewCoordinate()</pre>
+</li>
+</ul>
+<a name="ConceptIsKindOf(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConceptIsKindOf</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptIsKindOf.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">ConceptIsKindOf</a>&nbsp;ConceptIsKindOf(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;conceptSpecKey)</pre>
+</li>
+</ul>
+<a name="DescriptionRegexMatch(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DescriptionRegexMatch</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionRegexMatch.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">DescriptionRegexMatch</a>&nbsp;DescriptionRegexMatch(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;regexKey)</pre>
+</li>
+</ul>
+<a name="DescriptionActiveRegexMatch(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DescriptionActiveRegexMatch</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionActiveRegexMatch.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">DescriptionActiveRegexMatch</a>&nbsp;DescriptionActiveRegexMatch(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;regexKey)</pre>
+</li>
+</ul>
+<a name="ConceptForComponent(org.ihtsdo.otf.tcc.api.query.Clause)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConceptForComponent</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptForComponent.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">ConceptForComponent</a>&nbsp;ConceptForComponent(<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html" title="class in org.ihtsdo.otf.tcc.api.query">Clause</a>&nbsp;child)</pre>
+</li>
+</ul>
+<a name="ConceptIsDescendentOf(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConceptIsDescendentOf</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptIsDescendentOf.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">ConceptIsDescendentOf</a>&nbsp;ConceptIsDescendentOf(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;conceptSpecKey)</pre>
+</li>
+</ul>
+<a name="ConceptIsMemberOfRefset(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConceptIsMemberOfRefset</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ComponentIsMemberOfRefset.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">ComponentIsMemberOfRefset</a>&nbsp;ConceptIsMemberOfRefset(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;refsetSpecKey)</pre>
+</li>
+</ul>
+<a name="ConceptIsChildOf(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConceptIsChildOf</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptIsChildOf.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">ConceptIsChildOf</a>&nbsp;ConceptIsChildOf(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;refsetSpecKey)</pre>
+</li>
+</ul>
+<a name="DescriptionActiveLuceneMatch(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DescriptionActiveLuceneMatch</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionActiveLuceneMatch.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">DescriptionActiveLuceneMatch</a>&nbsp;DescriptionActiveLuceneMatch(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;queryTextKey)</pre>
+</li>
+</ul>
+<a name="DescriptionLuceneMatch(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DescriptionLuceneMatch</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionLuceneMatch.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">DescriptionLuceneMatch</a>&nbsp;DescriptionLuceneMatch(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;queryTextKey)</pre>
+</li>
+</ul>
+<a name="And(org.ihtsdo.otf.tcc.api.query.Clause...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>And</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/And.html" title="class in org.ihtsdo.otf.tcc.api.query">And</a>&nbsp;And(<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html" title="class in org.ihtsdo.otf.tcc.api.query">Clause</a>...&nbsp;clauses)</pre>
+</li>
+</ul>
+<a name="Intersection(org.ihtsdo.otf.tcc.api.query.Clause...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Intersection</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/And.html" title="class in org.ihtsdo.otf.tcc.api.query">And</a>&nbsp;Intersection(<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html" title="class in org.ihtsdo.otf.tcc.api.query">Clause</a>...&nbsp;clauses)</pre>
+</li>
+</ul>
+<a name="Not(org.ihtsdo.otf.tcc.api.query.Clause)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Not</h4>
+<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Not.html" title="class in org.ihtsdo.otf.tcc.api.query">Not</a>&nbsp;Not(<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html" title="class in org.ihtsdo.otf.tcc.api.query">Clause</a>&nbsp;clause)</pre>
+</li>
+</ul>
+<a name="getForSet()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getForSet</h4>
+<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;getForSet()</pre>
+</li>
+</ul>
+<a name="Or(org.ihtsdo.otf.tcc.api.query.Clause...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Or</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Or.html" title="class in org.ihtsdo.otf.tcc.api.query">Or</a>&nbsp;Or(<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html" title="class in org.ihtsdo.otf.tcc.api.query">Clause</a>...&nbsp;clauses)</pre>
+</li>
+</ul>
+<a name="Union(org.ihtsdo.otf.tcc.api.query.Clause...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Union</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Or.html" title="class in org.ihtsdo.otf.tcc.api.query">Or</a>&nbsp;Union(<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html" title="class in org.ihtsdo.otf.tcc.api.query">Clause</a>...&nbsp;clauses)</pre>
+</li>
+</ul>
+<a name="ChangedFromPreviousVersion(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ChangedFromPreviousVersion</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ChangedFromPreviousVersion.html" title="class in org.ihtsdo.otf.tcc.api.query.clauses">ChangedFromPreviousVersion</a>&nbsp;ChangedFromPreviousVersion(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;previousCoordinateKey)</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Query.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/ParentClause.html" title="class in org.ihtsdo.otf.tcc.api.query"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/query/QueryFromJaxb.html" title="class in org.ihtsdo.otf.tcc.api.query"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/query/Query.html" target="_top">Frames</a></li>
+<li><a href="Query.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

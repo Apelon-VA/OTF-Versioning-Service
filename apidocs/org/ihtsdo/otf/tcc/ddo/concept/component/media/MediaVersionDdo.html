@@ -1,0 +1,532 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>MediaVersionDdo (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="MediaVersionDdo (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/MediaVersionDdo.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaChronicleDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component.media"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../../index.html?org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html" target="_top">Frames</a></li>
+<li><a href="MediaVersionDdo.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.ddo.concept.component.media</div>
+<h2 title="Class MediaVersionDdo" class="title">Class MediaVersionDdo</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component">org.ihtsdo.otf.tcc.ddo.concept.component.VersionDdo</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/ComponentVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component">org.ihtsdo.otf.tcc.ddo.concept.component.ComponentVersionDdo</a>&lt;V,T&gt;</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/TypedComponentVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component">org.ihtsdo.otf.tcc.ddo.concept.component.TypedComponentVersionDdo</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaChronicleDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component.media">MediaChronicleDdo</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component.media">MediaVersionDdo</a>&gt;</li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.ddo.concept.component.media.MediaVersionDdo</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">MediaVersionDdo</span>
+extends <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/TypedComponentVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component">TypedComponentVersionDdo</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaChronicleDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component.media">MediaChronicleDdo</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component.media">MediaVersionDdo</a>&gt;</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../../../serialized-form.html#org.ihtsdo.otf.tcc.ddo.concept.component.media.MediaVersionDdo">Serialized Form</a></dd><DT>&nbsp;</DT><DD><map name="umlmap255W0H0"><area shape="rect" coords="6,500,129,517" href="http://www.yworks.com/" alt=""><area shape="rect" coords="434,136,600,162" href="#" alt=""><area shape="rect" coords="253,163,414,179" href="#serialVersionUID" alt=""><area shape="rect" coords="253,180,394,196" href="#MediaVersionDdo()" alt=""><area shape="rect" coords="253,196,766,212" href="#MediaVersionDdo(org.ihtsdo.otf.tcc.ddo.concept.component.media.MediaChronicleDdo, org.ihtsdo.otf.tcc.api.store.TerminologySnapshotDI, org.ihtsdo.otf.tcc.api.media.MediaVersionBI)" alt=""><area shape="rect" coords="253,213,429,229" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="253,229,421,245" href="#getDataBytes()" alt=""><area shape="rect" coords="253,245,398,261" href="#getFormat()" alt=""><area shape="rect" coords="253,261,451,277" href="#getTextDescription()" alt=""><area shape="rect" coords="253,277,476,293" href="#setTextDescription(java.lang.String)" alt=""><area shape="rect" coords="253,293,577,309" href="#textDescriptionProperty()" alt=""><area shape="rect" coords="253,309,382,325" href="#toString()" alt=""><area shape="rect" coords="245,110,554,127" href="package-summary.html" alt=""><area shape="rect" coords="251,28,782,52" href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/TypedComponentVersionDdo.html" alt=""><area shape="rect" coords="235,2,503,20" href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/package-summary.html" alt=""></map>
+<map name="umlmap255W1H0"><area shape="rect" coords="-12,136,153,162" href="#" alt=""><area shape="rect" coords="-194,163,-33,179" href="#serialVersionUID" alt=""><area shape="rect" coords="-194,180,-53,196" href="#MediaVersionDdo()" alt=""><area shape="rect" coords="-194,196,319,212" href="#MediaVersionDdo(org.ihtsdo.otf.tcc.ddo.concept.component.media.MediaChronicleDdo, org.ihtsdo.otf.tcc.api.store.TerminologySnapshotDI, org.ihtsdo.otf.tcc.api.media.MediaVersionBI)" alt=""><area shape="rect" coords="-194,213,-18,229" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-194,229,-26,245" href="#getDataBytes()" alt=""><area shape="rect" coords="-194,245,-49,261" href="#getFormat()" alt=""><area shape="rect" coords="-194,261,4,277" href="#getTextDescription()" alt=""><area shape="rect" coords="-194,277,29,293" href="#setTextDescription(java.lang.String)" alt=""><area shape="rect" coords="-194,293,130,309" href="#textDescriptionProperty()" alt=""><area shape="rect" coords="-194,309,-65,325" href="#toString()" alt=""><area shape="rect" coords="-202,110,107,127" href="package-summary.html" alt=""><area shape="rect" coords="-195,28,335,52" href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/TypedComponentVersionDdo.html" alt=""><area shape="rect" coords="-211,2,56,20" href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/package-summary.html" alt=""><area shape="rect" coords="401,169,455,192" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="401,136,458,159" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="392,110,459,127" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="475,261,806,284" href="../../../../../../../../org/ihtsdo/otf/tcc/api/media/MediaVersionBI.html" alt=""><area shape="rect" coords="392,230,571,248" href="../../../../../../../../org/ihtsdo/otf/tcc/api/media/package-summary.html" alt=""><area shape="rect" coords="441,357,623,380" href="../../../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologySnapshotDI.html" alt=""><area shape="rect" coords="392,326,566,344" href="../../../../../../../../org/ihtsdo/otf/tcc/api/store/package-summary.html" alt=""><area shape="rect" coords="402,449,553,472" href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaChronicleDdo.html" alt=""><area shape="rect" coords="392,423,701,441" href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/package-summary.html" alt=""></map>
+<map name="umlmap255W2H0"><area shape="rect" coords="-45,169,8,192" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="-45,136,11,159" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="-54,110,12,127" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="28,261,359,284" href="../../../../../../../../org/ihtsdo/otf/tcc/api/media/MediaVersionBI.html" alt=""><area shape="rect" coords="-54,230,124,248" href="../../../../../../../../org/ihtsdo/otf/tcc/api/media/package-summary.html" alt=""><area shape="rect" coords="-5,357,176,380" href="../../../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologySnapshotDI.html" alt=""><area shape="rect" coords="-54,326,119,344" href="../../../../../../../../org/ihtsdo/otf/tcc/api/store/package-summary.html" alt=""><area shape="rect" coords="-44,449,106,472" href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaChronicleDdo.html" alt=""><area shape="rect" coords="-54,423,254,441" href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="MediaVersionDdoW0H0.png" WIDTH="447" HEIGHT="526" USEMAP="#umlmap255W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="MediaVersionDdoW1H0.png" WIDTH="447" HEIGHT="526" USEMAP="#umlmap255W1H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="MediaVersionDdoW2H0.png" WIDTH="446" HEIGHT="526" USEMAP="#umlmap255W2H0" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== PROPERTY SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="property_summary">
+<!--   -->
+</a>
+<h3>Property Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Property Summary table, listing properties, and an explanation">
+<caption><span>Properties</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Type</th>
+<th class="colLast" scope="col">Property and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javafx.beans.property.SimpleStringProperty</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html#textDescriptionProperty">textDescription</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="properties_inherited_from_class_org.ihtsdo.otf.tcc.ddo.concept.component.TypedComponentVersionDdo">
+<!--   -->
+</a>
+<h3>Properties inherited from class&nbsp;org.ihtsdo.otf.tcc.ddo.concept.component.<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/TypedComponentVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component">TypedComponentVersionDdo</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/TypedComponentVersionDdo.html#typeReferenceProperty">typeReferenceProperty</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="properties_inherited_from_class_org.ihtsdo.otf.tcc.ddo.concept.component.VersionDdo">
+<!--   -->
+</a>
+<h3>Properties inherited from class&nbsp;org.ihtsdo.otf.tcc.ddo.concept.component.<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component">VersionDdo</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#authorReferenceProperty">authorReferenceProperty</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#fxTimeProperty">fxTimeProperty</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#moduleReferenceProperty">moduleReferenceProperty</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#pathReferenceProperty">pathReferenceProperty</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#statusReferenceProperty">statusReferenceProperty</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html#serialVersionUID">serialVersionUID</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.ihtsdo.otf.tcc.ddo.concept.component.TypedComponentVersionDdo">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.ihtsdo.otf.tcc.ddo.concept.component.<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/TypedComponentVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component">TypedComponentVersionDdo</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/TypedComponentVersionDdo.html#typeReferenceProperty">typeReferenceProperty</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.ihtsdo.otf.tcc.ddo.concept.component.ComponentVersionDdo">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.ihtsdo.otf.tcc.ddo.concept.component.<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/ComponentVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component">ComponentVersionDdo</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/ComponentVersionDdo.html#chronicle">chronicle</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.ihtsdo.otf.tcc.ddo.concept.component.VersionDdo">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.ihtsdo.otf.tcc.ddo.concept.component.<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component">VersionDdo</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#unspecifiedUserUuid">unspecifiedUserUuid</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html#MediaVersionDdo()">MediaVersionDdo</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html#MediaVersionDdo(org.ihtsdo.otf.tcc.ddo.concept.component.media.MediaChronicleDdo, org.ihtsdo.otf.tcc.api.store.TerminologySnapshotDI, org.ihtsdo.otf.tcc.api.media.MediaVersionBI)">MediaVersionDdo</a></strong>(<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaChronicleDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component.media">MediaChronicleDdo</a>&nbsp;chronicle,
+               <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologySnapshotDI.html" title="interface in org.ihtsdo.otf.tcc.api.store">TerminologySnapshotDI</a>&nbsp;ss,
+               <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/media/MediaVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.media">MediaVersionBI</a>&nbsp;another)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>
+<div class="block">Compares this object to the specified object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>byte[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html#getDataBytes()">getDataBytes</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html#getFormat()">getFormat</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html#getTextDescription()">getTextDescription</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html#setTextDescription(java.lang.String)">setTextDescription</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;textDescription)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javafx.beans.property.SimpleStringProperty</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html#textDescriptionProperty()">textDescriptionProperty</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html#toString()">toString</a></strong>()</code>
+<div class="block">Returns a string representation of the object.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.ddo.concept.component.TypedComponentVersionDdo">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.ihtsdo.otf.tcc.ddo.concept.component.<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/TypedComponentVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component">TypedComponentVersionDdo</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/TypedComponentVersionDdo.html#getTypeReference()">getTypeReference</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/TypedComponentVersionDdo.html#setTypeReference(org.ihtsdo.otf.tcc.ddo.ComponentReference)">setTypeReference</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/TypedComponentVersionDdo.html#typeReferenceProperty()">typeReferenceProperty</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.ddo.concept.component.ComponentVersionDdo">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.ihtsdo.otf.tcc.ddo.concept.component.<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/ComponentVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component">ComponentVersionDdo</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/ComponentVersionDdo.html#afterUnmarshal(javax.xml.bind.Unmarshaller, java.lang.Object)">afterUnmarshal</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/ComponentVersionDdo.html#getAdditionalIds()">getAdditionalIds</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/ComponentVersionDdo.html#getAnnotations()">getAnnotations</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/ComponentVersionDdo.html#getChronicle()">getChronicle</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/ComponentVersionDdo.html#getComponentNid()">getComponentNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/ComponentVersionDdo.html#getConcept()">getConcept</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/ComponentVersionDdo.html#getIdCount()">getIdCount</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/ComponentVersionDdo.html#getPrimordialComponentUuid()">getPrimordialComponentUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/ComponentVersionDdo.html#getUuids()">getUuids</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/ComponentVersionDdo.html#getVersionCount()">getVersionCount</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/ComponentVersionDdo.html#getVersions()">getVersions</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.ddo.concept.component.VersionDdo">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.ihtsdo.otf.tcc.ddo.concept.component.<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component">VersionDdo</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#authorReferenceProperty()">authorReferenceProperty</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#fxTimeProperty()">fxTimeProperty</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#getAuthorReference()">getAuthorReference</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#getFxTime()">getFxTime</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#getModuleReference()">getModuleReference</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#getPathReference()">getPathReference</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#getStatus()">getStatus</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#getViewCoordinateUuid()">getViewCoordinateUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#informAboutUuid(java.util.UUID)">informAboutUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#moduleReferenceProperty()">moduleReferenceProperty</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#pathReferenceProperty()">pathReferenceProperty</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#setAuthorReference(org.ihtsdo.otf.tcc.ddo.ComponentReference)">setAuthorReference</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#setFxTime(org.ihtsdo.otf.tcc.ddo.TimeReference)">setFxTime</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#setModuleReference(org.ihtsdo.otf.tcc.ddo.ComponentReference)">setModuleReference</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#setPathReference(org.ihtsdo.otf.tcc.ddo.ComponentReference)">setPathReference</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#setStatus(org.ihtsdo.otf.tcc.api.coordinate.Status)">setStatus</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#setViewCoordinateUuid(java.util.UUID)">setViewCoordinateUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/VersionDdo.html#statusReferenceProperty()">statusReferenceProperty</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ PROPERTY DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="property_detail">
+<!--   -->
+</a>
+<h3>Property Detail</h3>
+<a name="textDescriptionProperty">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>textDescription</h4>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="serialVersionUID">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>serialVersionUID</h4>
+<pre>public static final&nbsp;long serialVersionUID</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../../../constant-values.html#org.ihtsdo.otf.tcc.ddo.concept.component.media.MediaVersionDdo.serialVersionUID">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="MediaVersionDdo()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MediaVersionDdo</h4>
+<pre>public&nbsp;MediaVersionDdo()</pre>
+</li>
+</ul>
+<a name="MediaVersionDdo(org.ihtsdo.otf.tcc.ddo.concept.component.media.MediaChronicleDdo, org.ihtsdo.otf.tcc.api.store.TerminologySnapshotDI, org.ihtsdo.otf.tcc.api.media.MediaVersionBI)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>MediaVersionDdo</h4>
+<pre>public&nbsp;MediaVersionDdo(<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaChronicleDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component.media">MediaChronicleDdo</a>&nbsp;chronicle,
+               <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologySnapshotDI.html" title="interface in org.ihtsdo.otf.tcc.api.store">TerminologySnapshotDI</a>&nbsp;ss,
+               <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/media/MediaVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.media">MediaVersionBI</a>&nbsp;another)
+                throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                       <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<div class="block">Compares this object to the specified object. The result is <tt>true</tt>
+ if and only if the argument is not <tt>null</tt>, is a
+ <tt>EImageVersion</tt> object, and contains the same values, field by field,
+ as this <tt>EImageVersion</tt>.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/TypedComponentVersionDdo.html#equals(java.lang.Object)">equals</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/TypedComponentVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component">TypedComponentVersionDdo</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaChronicleDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component.media">MediaChronicleDdo</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component.media">MediaVersionDdo</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>obj</code> - the object to compare with.</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code> if the objects are the same;
+         <code>false</code> otherwise.</dd></dl>
+</li>
+</ul>
+<a name="textDescriptionProperty()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>textDescriptionProperty</h4>
+<pre>public&nbsp;javafx.beans.property.SimpleStringProperty&nbsp;textDescriptionProperty()</pre>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Returns a string representation of the object.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/TypedComponentVersionDdo.html#toString()">toString</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/TypedComponentVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component">TypedComponentVersionDdo</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaChronicleDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component.media">MediaChronicleDdo</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component.media">MediaVersionDdo</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTextDescription()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTextDescription</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getTextDescription()</pre>
+</li>
+</ul>
+<a name="setTextDescription(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTextDescription</h4>
+<pre>public&nbsp;void&nbsp;setTextDescription(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;textDescription)</pre>
+</li>
+</ul>
+<a name="getDataBytes()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDataBytes</h4>
+<pre>public&nbsp;byte[]&nbsp;getDataBytes()</pre>
+</li>
+</ul>
+<a name="getFormat()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getFormat</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getFormat()</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/MediaVersionDdo.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../../org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaChronicleDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component.media"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../../index.html?org/ihtsdo/otf/tcc/ddo/concept/component/media/MediaVersionDdo.html" target="_top">Frames</a></li>
+<li><a href="MediaVersionDdo.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

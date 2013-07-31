@@ -1,0 +1,476 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>ConceptAttributeAB (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ConceptAttributeAB (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ConceptAttributeAB.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ComponentProperty.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptCB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html" target="_top">Frames</a></li>
+<li><a href="ConceptAttributeAB.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.api.blueprint</div>
+<h2 title="Class ConceptAttributeAB" class="title">Class ConceptAttributeAB</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">org.ihtsdo.otf.tcc.api.blueprint.CreateOrAmendBlueprint</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.api.blueprint.ConceptAttributeAB</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/7/docs/api/java/beans/PropertyChangeListener.html?is-external=true" title="class or interface in java.beans">PropertyChangeListener</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/EventListener.html?is-external=true" title="class or interface in java.util">EventListener</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">ConceptAttributeAB</span>
+extends <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">CreateOrAmendBlueprint</a></pre>
+<div class="block">The Class ConceptAttributeAB contains methods for creating a concept
+ attribute blueprint. This blueprint can be constructed into a type of
+ <code>ConceptAttributeChronicleBI</code>. This is the preferred method for
+ creating new concepts. This class of blueprint can only be used to amend
+ existing concepts, use ConceptCB to create a new concept.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/TerminologyBuilderBI.html" title="interface in org.ihtsdo.otf.tcc.api.blueprint"><code>TerminologyBuilderBI</code></a>, 
+<a href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr"><code>ConceptAttributeChronicleBI</code></a>, 
+<a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptCB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint"><code>ConceptCB</code></a></dd><DT>&nbsp;</DT><DD><map name="umlmap208W0H0"><area shape="rect" coords="6,491,129,508" href="http://www.yworks.com/" alt=""><area shape="rect" coords="267,136,460,162" href="#" alt=""><area shape="rect" coords="10,163,140,179" href="#defined" alt=""><area shape="rect" coords="10,180,335,196" href="#ConceptAttributeAB(int, boolean, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="10,196,683,212" href="#ConceptAttributeAB(int, boolean, org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)" alt=""><area shape="rect" coords="10,212,698,228" href="#ConceptAttributeAB(java.util.UUID, boolean, org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)" alt=""><area shape="rect" coords="10,229,174,245" href="#recomputeUuid()" alt=""><area shape="rect" coords="10,245,317,261" href="#validate(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI)" alt=""><area shape="rect" coords="2,110,197,127" href="package-summary.html" alt=""><area shape="rect" coords="265,28,463,52" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" alt=""><area shape="rect" coords="254,2,449,20" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""></map>
+<map name="umlmap208W1H0"><area shape="rect" coords="-237,136,-44,162" href="#" alt=""><area shape="rect" coords="-495,163,-365,179" href="#defined" alt=""><area shape="rect" coords="-495,180,-170,196" href="#ConceptAttributeAB(int, boolean, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="-495,196,178,212" href="#ConceptAttributeAB(int, boolean, org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)" alt=""><area shape="rect" coords="-495,212,193,228" href="#ConceptAttributeAB(java.util.UUID, boolean, org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)" alt=""><area shape="rect" coords="-495,229,-331,245" href="#recomputeUuid()" alt=""><area shape="rect" coords="-495,245,-188,261" href="#validate(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI)" alt=""><area shape="rect" coords="-503,110,-308,127" href="package-summary.html" alt=""><area shape="rect" coords="280,136,323,159" href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html" alt=""><area shape="rect" coords="271,110,330,127" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="281,256,399,279" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" alt=""><area shape="rect" coords="280,223,369,246" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" alt=""><area shape="rect" coords="271,197,466,215" href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="392,348,885,371" href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" alt=""><area shape="rect" coords="271,317,457,335" href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/package-summary.html" alt=""><area shape="rect" coords="281,440,409,463" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" alt=""><area shape="rect" coords="271,414,479,432" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""></map>
+<map name="umlmap208W2H0"><area shape="rect" coords="-111,348,381,371" href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" alt=""><area shape="rect" coords="-232,317,-46,335" href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/package-summary.html" alt=""><area shape="rect" coords="-232,414,-24,432" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="ConceptAttributeABW0H0.png" WIDTH="505" HEIGHT="517" USEMAP="#umlmap208W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ConceptAttributeABW1H0.png" WIDTH="504" HEIGHT="517" USEMAP="#umlmap208W1H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ConceptAttributeABW2H0.png" WIDTH="504" HEIGHT="517" USEMAP="#umlmap208W2H0" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html#defined">defined</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.ihtsdo.otf.tcc.api.blueprint.CreateOrAmendBlueprint">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.ihtsdo.otf.tcc.api.blueprint.<a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">CreateOrAmendBlueprint</a></h3>
+<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#idDirective">idDirective</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#pcs">pcs</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#properties">properties</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#referencedComponent">referencedComponent</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#refexDirective">refexDirective</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html#ConceptAttributeAB(int, boolean, org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)">ConceptAttributeAB</a></strong>(int&nbsp;conceptNid,
+                  boolean&nbsp;defined,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeVersionBI</a>&nbsp;conceptAttributeVersion,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective)</code>
+<div class="block">Instantiates a new concept attribute blueprint using nid values and a
+ given
+ <code>conceptAttributeVersion</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html#ConceptAttributeAB(int, boolean, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">ConceptAttributeAB</a></strong>(int&nbsp;conceptNid,
+                  boolean&nbsp;defined,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)</code>
+<div class="block">Instantiates a new concept attribute blueprint using nid values.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html#ConceptAttributeAB(java.util.UUID, boolean, org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)">ConceptAttributeAB</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;componentUuid,
+                  boolean&nbsp;defined,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeVersionBI</a>&nbsp;conceptAttributeVersion,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective)</code>
+<div class="block">Instantiates a new concept attribute blueprint using uuid values.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html#recomputeUuid()">recomputeUuid</a></strong>()</code>
+<div class="block">The UUID for ConAttrAB is set when the enclosing concept is created.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html#validate(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI)">validate</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeVersionBI</a>&nbsp;conceptAttributeVersion)</code>
+<div class="block">Validates this concept attribute blueprint's fields against the given
+ <code>conceptAttributeVersion</code>.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.blueprint.CreateOrAmendBlueprint">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.ihtsdo.otf.tcc.api.blueprint.<a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">CreateOrAmendBlueprint</a></h3>
+<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addAnnotationBlueprint(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)">addAnnotationBlueprint</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addExtraUuid(java.util.UUID, int)">addExtraUuid</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addLongId(java.lang.Long, int)">addLongId</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addPropertyChangeListener(java.beans.PropertyChangeListener)">addPropertyChangeListener</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addPropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener)">addPropertyChangeListener</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#addStringId(java.lang.String, int)">addStringId</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getAnnotationBlueprints()">getAnnotationBlueprints</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getComponentNid()">getComponentNid</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getComponentUuid()">getComponentUuid</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getComponentUUID(java.util.UUID, org.ihtsdo.otf.tcc.api.chronicle.ComponentVersionBI, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)">getComponentUUID</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getIdMap()">getIdMap</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getInt(org.ihtsdo.otf.tcc.api.blueprint.ComponentProperty)">getInt</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getPrimoridalUuidString(int)">getPrimoridalUuidString</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getPrimoridalUuidString(java.util.UUID)">getPrimoridalUuidString</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getProperties()">getProperties</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getReferencedComponent()">getReferencedComponent</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getStatus()">getStatus</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#getUuid(org.ihtsdo.otf.tcc.api.blueprint.ComponentProperty)">getUuid</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#propertyChange(java.beans.PropertyChangeEvent)">propertyChange</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#removePropertyChangeListener(java.beans.PropertyChangeListener)">removePropertyChangeListener</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#removePropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener)">removePropertyChangeListener</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#replaceAnnotationBlueprints(java.util.List)">replaceAnnotationBlueprints</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setComponentUuid(java.util.UUID)">setComponentUuid</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setComponentUuidNoRecompute(java.util.UUID)">setComponentUuidNoRecompute</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setCurrent()">setCurrent</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setReferencedComponent(org.ihtsdo.otf.tcc.api.chronicle.ComponentChronicleBI)">setReferencedComponent</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setRetired()">setRetired</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#setStatus(org.ihtsdo.otf.tcc.api.coordinate.Status)">setStatus</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="defined">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>defined</h4>
+<pre>public&nbsp;boolean defined</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="ConceptAttributeAB(int, boolean, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConceptAttributeAB</h4>
+<pre>public&nbsp;ConceptAttributeAB(int&nbsp;conceptNid,
+                  boolean&nbsp;defined,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                          <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                          <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block">Instantiates a new concept attribute blueprint using nid values.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>conceptNid</code> - the enclosing concept nid</dd><dd><code>defined</code> - set to <code>true</code> to mark the concept as defined</dd><dd><code>refexDirective</code> - </dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a
+ given position or view coordinate</dd></dl>
+</li>
+</ul>
+<a name="ConceptAttributeAB(int, boolean, org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConceptAttributeAB</h4>
+<pre>public&nbsp;ConceptAttributeAB(int&nbsp;conceptNid,
+                  boolean&nbsp;defined,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeVersionBI</a>&nbsp;conceptAttributeVersion,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective)
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                          <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                          <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block">Instantiates a new concept attribute blueprint using nid values and a
+ given
+ <code>conceptAttributeVersion</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>conceptNid</code> - the enclosing concept nid</dd><dd><code>defined</code> - set to <code>true</code> to mark the concept as defined</dd><dd><code>conceptAttributeVersion</code> - the concept attribute version to use as a
+ pattern</dd><dd><code>viewCoordinate</code> - the view coordinate specifying which versions are
+ active and inactive</dd><dd><code>refexDirective</code> - </dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a
+ given position or view coordinate</dd></dl>
+</li>
+</ul>
+<a name="ConceptAttributeAB(java.util.UUID, boolean, org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective, org.ihtsdo.otf.tcc.api.blueprint.IdDirective)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ConceptAttributeAB</h4>
+<pre>public&nbsp;ConceptAttributeAB(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;componentUuid,
+                  boolean&nbsp;defined,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeVersionBI</a>&nbsp;conceptAttributeVersion,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective,
+                  <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective)
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                          <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                          <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block">Instantiates a new concept attribute blueprint using uuid values.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>componentUuid</code> - the uuid associated with concept</dd><dd><code>defined</code> - set to <code>true</code> to mark the concept as defined</dd><dd><code>conceptAttributeVersion</code> - the concept attribute version to use as a
+ pattern</dd><dd><code>viewCoordinate</code> - the view coordinate specifying which versions are
+ active and inactive</dd><dd><code>refexDirective</code> - </dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a
+ given position or view coordinate</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="validate(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>validate</h4>
+<pre>public&nbsp;boolean&nbsp;validate(<a href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeVersionBI</a>&nbsp;conceptAttributeVersion)
+                 throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Validates this concept attribute blueprint's fields against the given
+ <code>conceptAttributeVersion</code>. Compares the status nid, component
+ nid, and boolean value for defined.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>conceptAttributeVersion</code> - the concept attribute version to use for
+ validation</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code>, if this concept attribute blueprint's fields
+ are equal to the specified concept attribute version</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd></dl>
+</li>
+</ul>
+<a name="recomputeUuid()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>recomputeUuid</h4>
+<pre>public&nbsp;void&nbsp;recomputeUuid()
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/security/NoSuchAlgorithmException.html?is-external=true" title="class or interface in java.security">NoSuchAlgorithmException</a>,
+                          <a href="http://docs.oracle.com/javase/7/docs/api/java/io/UnsupportedEncodingException.html?is-external=true" title="class or interface in java.io">UnsupportedEncodingException</a>,
+                          <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                          <a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                          <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block">The UUID for ConAttrAB is set when the enclosing concept is created. Throws an
+ <code>InvalidCAB</code> if called.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#recomputeUuid()">recomputeUuid</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">CreateOrAmendBlueprint</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/security/NoSuchAlgorithmException.html?is-external=true" title="class or interface in java.security">NoSuchAlgorithmException</a></code> - indicates a no such algorithm exception
+ has occurred</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/UnsupportedEncodingException.html?is-external=true" title="class or interface in java.io">UnsupportedEncodingException</a></code> - indicates an unsupported encoding
+ exception has occurred</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a
+ given position or view coordinate</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ConceptAttributeAB.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ComponentProperty.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptCB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html" target="_top">Frames</a></li>
+<li><a href="ConceptAttributeAB.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

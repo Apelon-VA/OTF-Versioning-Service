@@ -1,0 +1,652 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>Position (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Position (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Position.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" title="class in org.ihtsdo.otf.tcc.api.coordinate"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Precedence.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/coordinate/Position.html" target="_top">Frames</a></li>
+<li><a href="Position.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.api.coordinate</div>
+<h2 title="Class Position" class="title">Class Position</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.api.coordinate.Position</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Externalizable.html?is-external=true" title="class or interface in java.io">Externalizable</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">Position</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Externalizable.html?is-external=true" title="class or interface in java.io">Externalizable</a></pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../serialized-form.html#org.ihtsdo.otf.tcc.api.coordinate.Position">Serialized Form</a></dd><DT>&nbsp;</DT><DD><map name="umlmap96W0H0"><area shape="rect" coords="501,145,585,171" href="#" alt=""><area shape="rect" coords="285,172,367,188" href="#Position()" alt=""><area shape="rect" coords="285,188,428,204" href="#Position(long, org.ihtsdo.otf.tcc.api.coordinate.Path)" alt=""><area shape="rect" coords="285,205,786,221" href="#checkAntecedentOrEqualToOrigins(java.util.Collection)" alt=""><area shape="rect" coords="285,221,461,237" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="285,237,468,253" href="#equals(long, int)" alt=""><area shape="rect" coords="285,253,469,269" href="#equals(org.ihtsdo.otf.tcc.api.coordinate.Position)" alt=""><area shape="rect" coords="285,269,593,285" href="#getBarriers()" alt=""><area shape="rect" coords="285,285,417,301" href="#getDepth(int)" alt=""><area shape="rect" coords="285,301,625,317" href="#getIntersections()" alt=""><area shape="rect" coords="285,317,587,333" href="#getOrigins()" alt=""><area shape="rect" coords="285,333,406,349" href="#getPath()" alt=""><area shape="rect" coords="285,349,405,365" href="#getTime()" alt=""><area shape="rect" coords="285,365,406,381" href="#hashCode()" alt=""><area shape="rect" coords="285,381,571,397" href="#isAntecedentOrEqualTo(long, int)" alt=""><area shape="rect" coords="285,397,572,413" href="#isAntecedentOrEqualTo(org.ihtsdo.otf.tcc.api.coordinate.Position)" alt=""><area shape="rect" coords="285,413,573,429" href="#isSubsequentOrEqualTo(long, int)" alt=""><area shape="rect" coords="285,429,574,445" href="#isSubsequentOrEqualTo(org.ihtsdo.otf.tcc.api.coordinate.Position)" alt=""><area shape="rect" coords="285,445,505,461" href="#readExternal(java.io.ObjectInput)" alt=""><area shape="rect" coords="285,461,572,477" href="#readPosition(java.io.ObjectInputStream)" alt=""><area shape="rect" coords="285,477,634,493" href="#readPositionSet(java.io.ObjectInputStream)" alt=""><area shape="rect" coords="285,493,431,508" href="#setPath(org.ihtsdo.otf.tcc.api.coordinate.Path)" alt=""><area shape="rect" coords="285,508,430,524" href="#setTime(long)" alt=""><area shape="rect" coords="285,524,414,540" href="#toString()" alt=""><area shape="rect" coords="285,540,519,556" href="#writeExternal(java.io.ObjectOutput)" alt=""><area shape="rect" coords="285,556,619,572" href="#writePosition(java.io.ObjectOutputStream, org.ihtsdo.otf.tcc.api.coordinate.Position)" alt=""><area shape="rect" coords="285,572,681,588" href="#writePositionSet(java.io.ObjectOutputStream, java.util.Set)" alt=""><area shape="rect" coords="277,119,485,136" href="package-summary.html" alt=""><area shape="rect" coords="514,37,571,61" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="505,11,572,29" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="65,145,216,168" href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html" alt=""><area shape="rect" coords="55,119,121,136" href="http://docs.oracle.com/javase/7/docs/api/java/text/package-summary.html" alt=""><area shape="rect" coords="11,232,55,255" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" alt=""><area shape="rect" coords="2,206,210,224" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""></map>
+<map name="umlmap96W1H0"><area shape="rect" coords="-23,145,60,171" href="#" alt=""><area shape="rect" coords="-240,172,-158,188" href="#Position()" alt=""><area shape="rect" coords="-240,188,-97,204" href="#Position(long, org.ihtsdo.otf.tcc.api.coordinate.Path)" alt=""><area shape="rect" coords="-240,205,261,221" href="#checkAntecedentOrEqualToOrigins(java.util.Collection)" alt=""><area shape="rect" coords="-240,221,-64,237" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-240,237,-57,253" href="#equals(long, int)" alt=""><area shape="rect" coords="-240,253,-56,269" href="#equals(org.ihtsdo.otf.tcc.api.coordinate.Position)" alt=""><area shape="rect" coords="-240,269,68,285" href="#getBarriers()" alt=""><area shape="rect" coords="-240,285,-108,301" href="#getDepth(int)" alt=""><area shape="rect" coords="-240,301,100,317" href="#getIntersections()" alt=""><area shape="rect" coords="-240,317,62,333" href="#getOrigins()" alt=""><area shape="rect" coords="-240,333,-119,349" href="#getPath()" alt=""><area shape="rect" coords="-240,349,-120,365" href="#getTime()" alt=""><area shape="rect" coords="-240,365,-119,381" href="#hashCode()" alt=""><area shape="rect" coords="-240,381,46,397" href="#isAntecedentOrEqualTo(long, int)" alt=""><area shape="rect" coords="-240,397,47,413" href="#isAntecedentOrEqualTo(org.ihtsdo.otf.tcc.api.coordinate.Position)" alt=""><area shape="rect" coords="-240,413,48,429" href="#isSubsequentOrEqualTo(long, int)" alt=""><area shape="rect" coords="-240,429,49,445" href="#isSubsequentOrEqualTo(org.ihtsdo.otf.tcc.api.coordinate.Position)" alt=""><area shape="rect" coords="-240,445,-20,461" href="#readExternal(java.io.ObjectInput)" alt=""><area shape="rect" coords="-240,461,47,477" href="#readPosition(java.io.ObjectInputStream)" alt=""><area shape="rect" coords="-240,477,109,493" href="#readPositionSet(java.io.ObjectInputStream)" alt=""><area shape="rect" coords="-240,493,-94,508" href="#setPath(org.ihtsdo.otf.tcc.api.coordinate.Path)" alt=""><area shape="rect" coords="-240,508,-95,524" href="#setTime(long)" alt=""><area shape="rect" coords="-240,524,-111,540" href="#toString()" alt=""><area shape="rect" coords="-240,540,-6,556" href="#writeExternal(java.io.ObjectOutput)" alt=""><area shape="rect" coords="-240,556,94,572" href="#writePosition(java.io.ObjectOutputStream, org.ihtsdo.otf.tcc.api.coordinate.Position)" alt=""><area shape="rect" coords="-240,572,156,588" href="#writePositionSet(java.io.ObjectOutputStream, java.util.Set)" alt=""><area shape="rect" coords="-248,119,-40,136" href="package-summary.html" alt=""><area shape="rect" coords="-10,37,46,61" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="-19,11,47,29" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="118,33,229,56" href="http://docs.oracle.com/javase/7/docs/api/java/io/Externalizable.html" alt=""><area shape="rect" coords="85,2,137,20" href="http://docs.oracle.com/javase/7/docs/api/java/io/package-summary.html" alt=""><area shape="rect" coords="344,263,511,286" href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectOutputStream.html" alt=""><area shape="rect" coords="366,225,471,248" href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectOutput.html" alt=""><area shape="rect" coords="344,187,496,210" href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectInputStream.html" alt=""><area shape="rect" coords="363,149,456,172" href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectInput.html" alt=""><area shape="rect" coords="334,119,386,136" href="http://docs.oracle.com/javase/7/docs/api/java/io/package-summary.html" alt=""><area shape="rect" coords="334,324,401,342" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""></map>
+<map name="umlmap96W0H1"><area shape="rect" coords="6,295,129,312" href="http://www.yworks.com/" alt=""><area shape="rect" coords="501,-177,585,-150" href="#" alt=""><area shape="rect" coords="285,-149,367,-133" href="#Position()" alt=""><area shape="rect" coords="285,-133,428,-117" href="#Position(long, org.ihtsdo.otf.tcc.api.coordinate.Path)" alt=""><area shape="rect" coords="285,-116,786,-100" href="#checkAntecedentOrEqualToOrigins(java.util.Collection)" alt=""><area shape="rect" coords="285,-100,461,-84" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="285,-84,468,-68" href="#equals(long, int)" alt=""><area shape="rect" coords="285,-68,469,-52" href="#equals(org.ihtsdo.otf.tcc.api.coordinate.Position)" alt=""><area shape="rect" coords="285,-52,593,-36" href="#getBarriers()" alt=""><area shape="rect" coords="285,-36,417,-20" href="#getDepth(int)" alt=""><area shape="rect" coords="285,-20,625,-4" href="#getIntersections()" alt=""><area shape="rect" coords="285,-4,587,11" href="#getOrigins()" alt=""><area shape="rect" coords="285,11,406,27" href="#getPath()" alt=""><area shape="rect" coords="285,27,405,43" href="#getTime()" alt=""><area shape="rect" coords="285,43,406,59" href="#hashCode()" alt=""><area shape="rect" coords="285,59,571,75" href="#isAntecedentOrEqualTo(long, int)" alt=""><area shape="rect" coords="285,75,572,91" href="#isAntecedentOrEqualTo(org.ihtsdo.otf.tcc.api.coordinate.Position)" alt=""><area shape="rect" coords="285,91,573,107" href="#isSubsequentOrEqualTo(long, int)" alt=""><area shape="rect" coords="285,107,574,123" href="#isSubsequentOrEqualTo(org.ihtsdo.otf.tcc.api.coordinate.Position)" alt=""><area shape="rect" coords="285,123,505,139" href="#readExternal(java.io.ObjectInput)" alt=""><area shape="rect" coords="285,139,572,155" href="#readPosition(java.io.ObjectInputStream)" alt=""><area shape="rect" coords="285,155,634,171" href="#readPositionSet(java.io.ObjectInputStream)" alt=""><area shape="rect" coords="285,171,431,186" href="#setPath(org.ihtsdo.otf.tcc.api.coordinate.Path)" alt=""><area shape="rect" coords="285,186,430,202" href="#setTime(long)" alt=""><area shape="rect" coords="285,202,414,218" href="#toString()" alt=""><area shape="rect" coords="285,218,519,234" href="#writeExternal(java.io.ObjectOutput)" alt=""><area shape="rect" coords="285,234,619,250" href="#writePosition(java.io.ObjectOutputStream, org.ihtsdo.otf.tcc.api.coordinate.Position)" alt=""><area shape="rect" coords="285,250,681,266" href="#writePositionSet(java.io.ObjectOutputStream, java.util.Set)" alt=""><area shape="rect" coords="277,-203,485,-185" href="package-summary.html" alt=""></map>
+<map name="umlmap96W1H1"><area shape="rect" coords="-23,-177,60,-150" href="#" alt=""><area shape="rect" coords="-240,-149,-158,-133" href="#Position()" alt=""><area shape="rect" coords="-240,-133,-97,-117" href="#Position(long, org.ihtsdo.otf.tcc.api.coordinate.Path)" alt=""><area shape="rect" coords="-240,-116,261,-100" href="#checkAntecedentOrEqualToOrigins(java.util.Collection)" alt=""><area shape="rect" coords="-240,-100,-64,-84" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-240,-84,-57,-68" href="#equals(long, int)" alt=""><area shape="rect" coords="-240,-68,-56,-52" href="#equals(org.ihtsdo.otf.tcc.api.coordinate.Position)" alt=""><area shape="rect" coords="-240,-52,68,-36" href="#getBarriers()" alt=""><area shape="rect" coords="-240,-36,-108,-20" href="#getDepth(int)" alt=""><area shape="rect" coords="-240,-20,100,-4" href="#getIntersections()" alt=""><area shape="rect" coords="-240,-4,62,11" href="#getOrigins()" alt=""><area shape="rect" coords="-240,11,-119,27" href="#getPath()" alt=""><area shape="rect" coords="-240,27,-120,43" href="#getTime()" alt=""><area shape="rect" coords="-240,43,-119,59" href="#hashCode()" alt=""><area shape="rect" coords="-240,59,46,75" href="#isAntecedentOrEqualTo(long, int)" alt=""><area shape="rect" coords="-240,75,47,91" href="#isAntecedentOrEqualTo(org.ihtsdo.otf.tcc.api.coordinate.Position)" alt=""><area shape="rect" coords="-240,91,48,107" href="#isSubsequentOrEqualTo(long, int)" alt=""><area shape="rect" coords="-240,107,49,123" href="#isSubsequentOrEqualTo(org.ihtsdo.otf.tcc.api.coordinate.Position)" alt=""><area shape="rect" coords="-240,123,-20,139" href="#readExternal(java.io.ObjectInput)" alt=""><area shape="rect" coords="-240,139,47,155" href="#readPosition(java.io.ObjectInputStream)" alt=""><area shape="rect" coords="-240,155,109,171" href="#readPositionSet(java.io.ObjectInputStream)" alt=""><area shape="rect" coords="-240,171,-94,186" href="#setPath(org.ihtsdo.otf.tcc.api.coordinate.Path)" alt=""><area shape="rect" coords="-240,186,-95,202" href="#setTime(long)" alt=""><area shape="rect" coords="-240,202,-111,218" href="#toString()" alt=""><area shape="rect" coords="-240,218,-6,234" href="#writeExternal(java.io.ObjectOutput)" alt=""><area shape="rect" coords="-240,234,94,250" href="#writePosition(java.io.ObjectOutputStream, org.ihtsdo.otf.tcc.api.coordinate.Position)" alt=""><area shape="rect" coords="-240,250,156,266" href="#writePositionSet(java.io.ObjectOutputStream, java.util.Set)" alt=""><area shape="rect" coords="-248,-203,-40,-185" href="package-summary.html" alt=""><area shape="rect" coords="342,61,396,84" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="342,28,399,51" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="334,2,401,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="356,239,419,262" href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html" alt=""><area shape="rect" coords="362,196,453,219" href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html" alt=""><area shape="rect" coords="367,153,478,176" href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html" alt=""><area shape="rect" coords="334,122,393,140" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="PositionW0H0.png" WIDTH="525" HEIGHT="322" USEMAP="#umlmap96W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="PositionW1H0.png" WIDTH="525" HEIGHT="322" USEMAP="#umlmap96W1H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="PositionW0H1.png" WIDTH="525" HEIGHT="321" USEMAP="#umlmap96W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="PositionW1H1.png" WIDTH="525" HEIGHT="321" USEMAP="#umlmap96W1H1" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#Position()">Position</a></strong>()</code>
+<div class="block">No arg constructor for JAXB</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#Position(long, org.ihtsdo.otf.tcc.api.coordinate.Path)">Position</a></strong>(long&nbsp;time,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Path</a>&nbsp;path)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#checkAntecedentOrEqualToOrigins(java.util.Collection)">checkAntecedentOrEqualToOrigins</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&gt;&nbsp;origins)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#equals(long, int)">equals</a></strong>(long&nbsp;time,
+      int&nbsp;pathId)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#equals(org.ihtsdo.otf.tcc.api.coordinate.Position)">equals</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&nbsp;another)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#getBarriers()">getBarriers</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#getDepth(int)">getDepth</a></strong>(int&nbsp;pathId)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>,? extends <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#getIntersections()">getIntersections</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#getOrigins()">getOrigins</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Path</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#getPath()">getPath</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#getTime()">getTime</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#hashCode()">hashCode</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#isAntecedentOrEqualTo(long, int)">isAntecedentOrEqualTo</a></strong>(long&nbsp;time,
+                     int&nbsp;pathId)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#isAntecedentOrEqualTo(org.ihtsdo.otf.tcc.api.coordinate.Position)">isAntecedentOrEqualTo</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&nbsp;another)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#isSubsequentOrEqualTo(long, int)">isSubsequentOrEqualTo</a></strong>(long&nbsp;time,
+                     int&nbsp;pathId)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#isSubsequentOrEqualTo(org.ihtsdo.otf.tcc.api.coordinate.Position)">isSubsequentOrEqualTo</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&nbsp;another)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#readExternal(java.io.ObjectInput)">readExternal</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectInput.html?is-external=true" title="class or interface in java.io">ObjectInput</a>&nbsp;in)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#readPosition(java.io.ObjectInputStream)">readPosition</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectInputStream.html?is-external=true" title="class or interface in java.io">ObjectInputStream</a>&nbsp;in)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#readPositionSet(java.io.ObjectInputStream)">readPositionSet</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectInputStream.html?is-external=true" title="class or interface in java.io">ObjectInputStream</a>&nbsp;in)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#setPath(org.ihtsdo.otf.tcc.api.coordinate.Path)">setPath</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Path</a>&nbsp;path)</code>
+<div class="block">To support jaxb unmarshalling.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#setTime(long)">setTime</a></strong>(long&nbsp;time)</code>
+<div class="block">To support jaxb unmarshalling.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#toString()">toString</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#writeExternal(java.io.ObjectOutput)">writeExternal</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectOutput.html?is-external=true" title="class or interface in java.io">ObjectOutput</a>&nbsp;out)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#writePosition(java.io.ObjectOutputStream, org.ihtsdo.otf.tcc.api.coordinate.Position)">writePosition</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectOutputStream.html?is-external=true" title="class or interface in java.io">ObjectOutputStream</a>&nbsp;out,
+             <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&nbsp;p)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html#writePositionSet(java.io.ObjectOutputStream, java.util.Set)">writePositionSet</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectOutputStream.html?is-external=true" title="class or interface in java.io">ObjectOutputStream</a>&nbsp;out,
+                <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&gt;&nbsp;viewPositions)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="Position()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Position</h4>
+<pre>public&nbsp;Position()</pre>
+<div class="block">No arg constructor for JAXB</div>
+</li>
+</ul>
+<a name="Position(long, org.ihtsdo.otf.tcc.api.coordinate.Path)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Position</h4>
+<pre>public&nbsp;Position(long&nbsp;time,
+        <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Path</a>&nbsp;path)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="writeExternal(java.io.ObjectOutput)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeExternal</h4>
+<pre>public&nbsp;void&nbsp;writeExternal(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectOutput.html?is-external=true" title="class or interface in java.io">ObjectOutput</a>&nbsp;out)
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Externalizable.html?is-external=true#writeExternal(java.io.ObjectOutput)" title="class or interface in java.io">writeExternal</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Externalizable.html?is-external=true" title="class or interface in java.io">Externalizable</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="readExternal(java.io.ObjectInput)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readExternal</h4>
+<pre>public&nbsp;void&nbsp;readExternal(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectInput.html?is-external=true" title="class or interface in java.io">ObjectInput</a>&nbsp;in)
+                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Externalizable.html?is-external=true#readExternal(java.io.ObjectInput)" title="class or interface in java.io">readExternal</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Externalizable.html?is-external=true" title="class or interface in java.io">Externalizable</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></code></dd></dl>
+</li>
+</ul>
+<a name="checkAntecedentOrEqualToOrigins(java.util.Collection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkAntecedentOrEqualToOrigins</h4>
+<pre>public&nbsp;boolean&nbsp;checkAntecedentOrEqualToOrigins(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&gt;&nbsp;origins)</pre>
+</li>
+</ul>
+<a name="equals(org.ihtsdo.otf.tcc.api.coordinate.Position)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&nbsp;another)</pre>
+</li>
+</ul>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="equals(long, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(long&nbsp;time,
+             int&nbsp;pathId)</pre>
+</li>
+</ul>
+<a name="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="readPosition(java.io.ObjectInputStream)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readPosition</h4>
+<pre>public static&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&nbsp;readPosition(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectInputStream.html?is-external=true" title="class or interface in java.io">ObjectInputStream</a>&nbsp;in)
+                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                    <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></code></dd></dl>
+</li>
+</ul>
+<a name="readPositionSet(java.io.ObjectInputStream)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readPositionSet</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&gt;&nbsp;readPositionSet(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectInputStream.html?is-external=true" title="class or interface in java.io">ObjectInputStream</a>&nbsp;in)
+                                     throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                            <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></code></dd></dl>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="writePosition(java.io.ObjectOutputStream, org.ihtsdo.otf.tcc.api.coordinate.Position)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writePosition</h4>
+<pre>public static&nbsp;void&nbsp;writePosition(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectOutputStream.html?is-external=true" title="class or interface in java.io">ObjectOutputStream</a>&nbsp;out,
+                 <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&nbsp;p)
+                          throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="writePositionSet(java.io.ObjectOutputStream, java.util.Set)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writePositionSet</h4>
+<pre>public static&nbsp;void&nbsp;writePositionSet(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectOutputStream.html?is-external=true" title="class or interface in java.io">ObjectOutputStream</a>&nbsp;out,
+                    <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&gt;&nbsp;viewPositions)
+                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getOrigins()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOrigins</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&gt;&nbsp;getOrigins()</pre>
+</li>
+</ul>
+<a name="getDepth(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDepth</h4>
+<pre>public&nbsp;int&nbsp;getDepth(int&nbsp;pathId)</pre>
+</li>
+</ul>
+<a name="getPath()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPath</h4>
+<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Path</a>&nbsp;getPath()</pre>
+</li>
+</ul>
+<a name="setPath(org.ihtsdo.otf.tcc.api.coordinate.Path)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPath</h4>
+<pre>public&nbsp;void&nbsp;setPath(<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Path</a>&nbsp;path)</pre>
+<div class="block">To support jaxb unmarshalling.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>path</code> - </dd></dl>
+</li>
+</ul>
+<a name="getTime()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTime</h4>
+<pre>public&nbsp;long&nbsp;getTime()</pre>
+</li>
+</ul>
+<a name="setTime(long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTime</h4>
+<pre>public&nbsp;void&nbsp;setTime(long&nbsp;time)</pre>
+<div class="block">To support jaxb unmarshalling.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>time</code> - </dd></dl>
+</li>
+</ul>
+<a name="isAntecedentOrEqualTo(org.ihtsdo.otf.tcc.api.coordinate.Position)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAntecedentOrEqualTo</h4>
+<pre>public&nbsp;boolean&nbsp;isAntecedentOrEqualTo(<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&nbsp;another)</pre>
+</li>
+</ul>
+<a name="isAntecedentOrEqualTo(long, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAntecedentOrEqualTo</h4>
+<pre>public&nbsp;boolean&nbsp;isAntecedentOrEqualTo(long&nbsp;time,
+                            int&nbsp;pathId)</pre>
+</li>
+</ul>
+<a name="isSubsequentOrEqualTo(org.ihtsdo.otf.tcc.api.coordinate.Position)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isSubsequentOrEqualTo</h4>
+<pre>public&nbsp;boolean&nbsp;isSubsequentOrEqualTo(<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&nbsp;another)</pre>
+</li>
+</ul>
+<a name="isSubsequentOrEqualTo(long, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isSubsequentOrEqualTo</h4>
+<pre>public&nbsp;boolean&nbsp;isSubsequentOrEqualTo(long&nbsp;time,
+                            int&nbsp;pathId)</pre>
+</li>
+</ul>
+<a name="getIntersections()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIntersections</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>,? extends <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&gt;&nbsp;getIntersections()</pre>
+</li>
+</ul>
+<a name="getBarriers()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getBarriers</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends <a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&gt;&nbsp;getBarriers()</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Position.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" title="class in org.ihtsdo.otf.tcc.api.coordinate"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Precedence.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/coordinate/Position.html" target="_top">Frames</a></li>
+<li><a href="Position.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

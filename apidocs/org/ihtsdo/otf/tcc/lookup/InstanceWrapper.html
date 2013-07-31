@@ -1,0 +1,481 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>InstanceWrapper (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="InstanceWrapper (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/InstanceWrapper.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstancePropertyBI.html" title="interface in org.ihtsdo.otf.tcc.lookup"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/ihtsdo/otf/tcc/lookup/Looker.html" title="class in org.ihtsdo.otf.tcc.lookup"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html" target="_top">Frames</a></li>
+<li><a href="InstanceWrapper.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.lookup</div>
+<h2 title="Class InstanceWrapper" class="title">Class InstanceWrapper&lt;T&gt;</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.openide.util.Lookup.Item&lt;T&gt;</li>
+<li>
+<ul class="inheritance">
+<li>org.openide.util.lookup.AbstractLookup.Pair&lt;T&gt;</li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.lookup.InstanceWrapper&lt;T&gt;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - </dd></dl>
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">InstanceWrapper&lt;T&gt;</span>
+extends org.openide.util.lookup.AbstractLookup.Pair&lt;T&gt;</pre>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>kec</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../serialized-form.html#org.ihtsdo.otf.tcc.lookup.InstanceWrapper">Serialized Form</a></dd><DT>&nbsp;</DT><DD><map name="umlmap229W0H0"><area shape="rect" coords="6,360,129,377" href="http://www.yworks.com/" alt=""><area shape="rect" coords="360,136,565,162" href="#" alt=""><area shape="rect" coords="238,180,433,196" href="#creatorOf(java.lang.Object)" alt=""><area shape="rect" coords="238,196,414,212" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="238,212,420,228" href="#getDisplayName()" alt=""><area shape="rect" coords="238,228,350,244" href="#getId()" alt=""><area shape="rect" coords="238,244,362,260" href="#getInstance()" alt=""><area shape="rect" coords="238,260,618,276" href="#getInstanceProperties()" alt=""><area shape="rect" coords="238,276,458,292" href="#getType()" alt=""><area shape="rect" coords="238,292,359,308" href="#hashCode()" alt=""><area shape="rect" coords="238,308,458,324" href="#instanceOf(java.lang.Class)" alt=""><area shape="rect" coords="238,324,367,340" href="#toString()" alt=""><area shape="rect" coords="230,110,390,127" href="package-summary.html" alt=""><area shape="rect" coords="109,136,163,159" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="100,110,167,127" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="35,227,146,251" href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html" alt=""><area shape="rect" coords="2,197,61,215" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""></map>
+<map name="umlmap229W1H0"><area shape="rect" coords="-62,136,142,162" href="#" alt=""><area shape="rect" coords="-185,180,10,196" href="#creatorOf(java.lang.Object)" alt=""><area shape="rect" coords="-185,196,-9,212" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-185,212,-3,228" href="#getDisplayName()" alt=""><area shape="rect" coords="-185,228,-73,244" href="#getId()" alt=""><area shape="rect" coords="-185,244,-61,260" href="#getInstance()" alt=""><area shape="rect" coords="-185,260,195,276" href="#getInstanceProperties()" alt=""><area shape="rect" coords="-185,276,35,292" href="#getType()" alt=""><area shape="rect" coords="-185,292,-64,308" href="#hashCode()" alt=""><area shape="rect" coords="-185,308,35,324" href="#instanceOf(java.lang.Class)" alt=""><area shape="rect" coords="-185,324,-56,340" href="#toString()" alt=""><area shape="rect" coords="-193,110,-33,127" href="package-summary.html" alt=""><area shape="rect" coords="331,169,388,192" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="332,136,410,159" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html" alt=""><area shape="rect" coords="323,110,390,127" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="InstanceWrapperW0H0.png" WIDTH="423" HEIGHT="386" USEMAP="#umlmap229W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="InstanceWrapperW1H0.png" WIDTH="422" HEIGHT="386" USEMAP="#umlmap229W1H0" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html#InstanceWrapper(T, java.lang.String, java.lang.String, java.util.Collection)">InstanceWrapper</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html" title="type parameter in InstanceWrapper">T</a>&nbsp;instance,
+               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
+               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;displayName,
+               <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstancePropertyBI.html" title="interface in org.ihtsdo.otf.tcc.lookup">InstancePropertyBI</a>&gt;&nbsp;instanceProperties)</code>
+<div class="block">Constructs ...</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html#creatorOf(java.lang.Object)">creatorOf</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html#getDisplayName()">getDisplayName</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html#getId()">getId</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html" title="type parameter in InstanceWrapper">T</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html#getInstance()">getInstance</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstancePropertyBI.html" title="interface in org.ihtsdo.otf.tcc.lookup">InstancePropertyBI</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html#getInstanceProperties()">getInstanceProperties</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html" title="type parameter in InstanceWrapper">T</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html#getType()">getType</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html#hashCode()">hashCode</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html#instanceOf(java.lang.Class)">instanceOf</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;c)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html#toString()">toString</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="InstanceWrapper(java.lang.Object,java.lang.String,java.lang.String,java.util.Collection)">
+<!--   -->
+</a><a name="InstanceWrapper(T, java.lang.String, java.lang.String, java.util.Collection)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>InstanceWrapper</h4>
+<pre>public&nbsp;InstanceWrapper(<a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html" title="type parameter in InstanceWrapper">T</a>&nbsp;instance,
+               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
+               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;displayName,
+               <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstancePropertyBI.html" title="interface in org.ihtsdo.otf.tcc.lookup">InstancePropertyBI</a>&gt;&nbsp;instanceProperties)</pre>
+<div class="block">Constructs ...</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>instance</code> - </dd><dd><code>id</code> - </dd><dd><code>displayName</code> - </dd><dd><code>instanceProperties</code> - </dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="creatorOf(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>creatorOf</h4>
+<pre>protected&nbsp;boolean&nbsp;creatorOf(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>creatorOf</code>&nbsp;in class&nbsp;<code>org.openide.util.lookup.AbstractLookup.Pair&lt;<a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html" title="type parameter in InstanceWrapper">T</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>obj</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>obj</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="instanceOf(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>instanceOf</h4>
+<pre>protected&nbsp;boolean&nbsp;instanceOf(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;c)</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>instanceOf</code>&nbsp;in class&nbsp;<code>org.openide.util.lookup.AbstractLookup.Pair&lt;<a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html" title="type parameter in InstanceWrapper">T</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code>toString</code>&nbsp;in class&nbsp;<code>org.openide.util.Lookup.Item&lt;<a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html" title="type parameter in InstanceWrapper">T</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getDisplayName()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDisplayName</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDisplayName()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>getDisplayName</code>&nbsp;in class&nbsp;<code>org.openide.util.Lookup.Item&lt;<a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html" title="type parameter in InstanceWrapper">T</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getId()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getId</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getId()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>getId</code>&nbsp;in class&nbsp;<code>org.openide.util.Lookup.Item&lt;<a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html" title="type parameter in InstanceWrapper">T</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getInstance()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInstance</h4>
+<pre>public&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html" title="type parameter in InstanceWrapper">T</a>&nbsp;getInstance()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>getInstance</code>&nbsp;in class&nbsp;<code>org.openide.util.Lookup.Item&lt;<a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html" title="type parameter in InstanceWrapper">T</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getInstanceProperties()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInstanceProperties</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstancePropertyBI.html" title="interface in org.ihtsdo.otf.tcc.lookup">InstancePropertyBI</a>&gt;&nbsp;getInstanceProperties()</pre>
+<div class="block">Method description</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getType()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getType</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html" title="type parameter in InstanceWrapper">T</a>&gt;&nbsp;getType()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>getType</code>&nbsp;in class&nbsp;<code>org.openide.util.Lookup.Item&lt;<a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html" title="type parameter in InstanceWrapper">T</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/InstanceWrapper.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/ihtsdo/otf/tcc/lookup/InstancePropertyBI.html" title="interface in org.ihtsdo.otf.tcc.lookup"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/ihtsdo/otf/tcc/lookup/Looker.html" title="class in org.ihtsdo.otf.tcc.lookup"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/ihtsdo/otf/tcc/lookup/InstanceWrapper.html" target="_top">Frames</a></li>
+<li><a href="InstanceWrapper.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

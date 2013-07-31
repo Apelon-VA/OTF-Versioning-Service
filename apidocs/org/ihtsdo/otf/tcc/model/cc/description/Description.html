@@ -1,0 +1,1028 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>Description (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Description (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Description.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.description"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/ihtsdo/otf/tcc/model/cc/description/Description.html" target="_top">Frames</a></li>
+<li><a href="Description.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.model.cc.description</div>
+<h2 title="Class Description" class="title">Class Description</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;</li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.model.cc.description.Description</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&gt;, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api">AnalogBI</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogGeneratorBI.html" title="interface in org.ihtsdo.otf.tcc.api">AnalogGeneratorBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>&gt;, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentBI</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&gt;, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentVersionBI</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/TypedComponentAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">TypedComponentAnalogBI</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/TypedComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">TypedComponentVersionBI</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/VersionPointBI.html" title="interface in org.ihtsdo.otf.tcc.api.coordinate">VersionPointBI</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionAnalogBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>&gt;, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionChronicleBI</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>&gt;, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/id/IdBI.html" title="interface in org.ihtsdo.otf.tcc.api.id">IdBI</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">Description</span>
+extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;
+implements <a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionAnalogBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>&gt;</pre>
+<dl><DT>&nbsp;</DT><DD><map name="umlmap521W0H0"><area shape="rect" coords="414,145,468,168" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="405,119,472,136" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="397,236,462,260" href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html" alt=""><area shape="rect" coords="374,206,433,224" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="17,328,470,351" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/computer/version/VersionComputer.html" alt=""><area shape="rect" coords="2,302,286,320" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/computer/version/package-summary.html" alt=""></map>
+<map name="umlmap521W1H0"><area shape="rect" coords="353,145,466,171" href="#" alt=""><area shape="rect" coords="28,172,131,188" href="#Description()" alt=""><area shape="rect" coords="28,188,321,204" href="#Description(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI, com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="28,204,404,220" href="#Description(org.ihtsdo.otf.tcc.dto.component.description.TtkDescriptionChronicle, org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="28,221,305,237" href="#addComponentNids(java.util.Set)" alt=""><area shape="rect" coords="28,237,182,253" href="#clearVersions()" alt=""><area shape="rect" coords="28,253,204,269" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="28,269,530,285" href="#fieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)" alt=""><area shape="rect" coords="28,285,254,301" href="#getConcept()" alt=""><area shape="rect" coords="28,301,180,317" href="#getConceptNid()" alt=""><area shape="rect" coords="28,317,158,333" href="#getLang()" alt=""><area shape="rect" coords="28,333,271,349" href="#getPrimordialVersion()" alt=""><area shape="rect" coords="28,349,156,365" href="#getText()" alt=""><area shape="rect" coords="28,365,158,381" href="#getTypeNid()" alt=""><area shape="rect" coords="28,381,286,397" href="#getVariableVersionNids()" alt=""><area shape="rect" coords="28,397,356,413" href="#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="28,413,306,429" href="#getVersions()" alt=""><area shape="rect" coords="28,429,770,445" href="#getVersions(java.util.EnumSet, org.ihtsdo.otf.tcc.api.nid.NidSetBI, org.ihtsdo.otf.tcc.api.coordinate.Position, org.ihtsdo.otf.tcc.api.coordinate.Precedence, org.ihtsdo.otf.tcc.api.contradiction.ContradictionManagerBI)" alt=""><area shape="rect" coords="28,445,404,461" href="#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="28,461,149,477" href="#hashCode()" alt=""><area shape="rect" coords="28,477,259,493" href="#isInitialCaseSignificant()" alt=""><area shape="rect" coords="28,493,409,508" href="#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="28,508,524,524" href="#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="28,524,221,540" href="#matches(java.util.regex.Pattern)" alt=""><area shape="rect" coords="28,540,245,556" href="#readFromBdb(com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="28,556,277,572" href="#readyToWriteComponent()" alt=""><area shape="rect" coords="28,572,295,588" href="#setInitialCaseSignificant(boolean)" alt=""><area shape="rect" coords="28,588,183,604" href="#setLang(java.lang.String)" alt=""><area shape="rect" coords="28,604,181,620" href="#setText(java.lang.String)" alt=""><area shape="rect" coords="28,620,183,636" href="#setTypeNid(int)" alt=""><area shape="rect" coords="28,636,157,652" href="#toString()" alt=""><area shape="rect" coords="28,652,186,668" href="#toUserString()" alt=""><area shape="rect" coords="28,668,228,684" href="#validate(org.ihtsdo.otf.tcc.model.cc.description.Description)" alt=""><area shape="rect" coords="28,684,265,700" href="#writeToBdb(com.sleepycat.bind.tuple.TupleOutput, int)" alt=""><area shape="rect" coords="20,119,266,136" href="package-summary.html" alt=""><area shape="rect" coords="198,37,621,61" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" alt=""><area shape="rect" coords="184,11,430,29" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/package-summary.html" alt=""></map>
+<map name="umlmap521W2H0"><area shape="rect" coords="-161,145,-48,171" href="#" alt=""><area shape="rect" coords="-487,172,-384,188" href="#Description()" alt=""><area shape="rect" coords="-487,188,-194,204" href="#Description(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI, com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="-487,204,-111,220" href="#Description(org.ihtsdo.otf.tcc.dto.component.description.TtkDescriptionChronicle, org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-487,221,-210,237" href="#addComponentNids(java.util.Set)" alt=""><area shape="rect" coords="-487,237,-333,253" href="#clearVersions()" alt=""><area shape="rect" coords="-487,253,-311,269" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-487,269,15,285" href="#fieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)" alt=""><area shape="rect" coords="-487,285,-261,301" href="#getConcept()" alt=""><area shape="rect" coords="-487,301,-335,317" href="#getConceptNid()" alt=""><area shape="rect" coords="-487,317,-357,333" href="#getLang()" alt=""><area shape="rect" coords="-487,333,-244,349" href="#getPrimordialVersion()" alt=""><area shape="rect" coords="-487,349,-359,365" href="#getText()" alt=""><area shape="rect" coords="-487,365,-357,381" href="#getTypeNid()" alt=""><area shape="rect" coords="-487,381,-229,397" href="#getVariableVersionNids()" alt=""><area shape="rect" coords="-487,397,-159,413" href="#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-487,413,-209,429" href="#getVersions()" alt=""><area shape="rect" coords="-487,429,255,445" href="#getVersions(java.util.EnumSet, org.ihtsdo.otf.tcc.api.nid.NidSetBI, org.ihtsdo.otf.tcc.api.coordinate.Position, org.ihtsdo.otf.tcc.api.coordinate.Precedence, org.ihtsdo.otf.tcc.api.contradiction.ContradictionManagerBI)" alt=""><area shape="rect" coords="-487,445,-111,461" href="#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-487,461,-366,477" href="#hashCode()" alt=""><area shape="rect" coords="-487,477,-256,493" href="#isInitialCaseSignificant()" alt=""><area shape="rect" coords="-487,493,-106,508" href="#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="-487,508,9,524" href="#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="-487,524,-294,540" href="#matches(java.util.regex.Pattern)" alt=""><area shape="rect" coords="-487,540,-270,556" href="#readFromBdb(com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="-487,556,-238,572" href="#readyToWriteComponent()" alt=""><area shape="rect" coords="-487,572,-220,588" href="#setInitialCaseSignificant(boolean)" alt=""><area shape="rect" coords="-487,588,-332,604" href="#setLang(java.lang.String)" alt=""><area shape="rect" coords="-487,604,-334,620" href="#setText(java.lang.String)" alt=""><area shape="rect" coords="-487,620,-332,636" href="#setTypeNid(int)" alt=""><area shape="rect" coords="-487,636,-358,652" href="#toString()" alt=""><area shape="rect" coords="-487,652,-329,668" href="#toUserString()" alt=""><area shape="rect" coords="-487,668,-287,684" href="#validate(org.ihtsdo.otf.tcc.model.cc.description.Description)" alt=""><area shape="rect" coords="-487,684,-250,700" href="#writeToBdb(com.sleepycat.bind.tuple.TupleOutput, int)" alt=""><area shape="rect" coords="-495,119,-249,136" href="package-summary.html" alt=""><area shape="rect" coords="-316,37,106,61" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" alt=""><area shape="rect" coords="-330,11,-84,29" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/package-summary.html" alt=""><area shape="rect" coords="232,33,554,56" href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionAnalogBI.html" alt=""><area shape="rect" coords="150,2,360,20" href="../../../../../../../org/ihtsdo/otf/tcc/api/description/package-summary.html" alt=""><area shape="rect" coords="344,265,401,288" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="335,239,402,257" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="357,390,420,413" href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html" alt=""><area shape="rect" coords="346,352,590,375" href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumSet.html" alt=""><area shape="rect" coords="335,326,394,344" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="344,482,412,505" href="http://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html" alt=""><area shape="rect" coords="335,456,433,474" href="http://docs.oracle.com/javase/7/docs/api/java/util/regex/package-summary.html" alt=""></map>
+<map name="umlmap521W3H0"><area shape="rect" coords="-281,33,40,56" href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionAnalogBI.html" alt=""><area shape="rect" coords="-363,2,-153,20" href="../../../../../../../org/ihtsdo/otf/tcc/api/description/package-summary.html" alt=""><area shape="rect" coords="-167,352,76,375" href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumSet.html" alt=""><area shape="rect" coords="-178,326,-119,344" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""></map>
+
+<map name="umlmap521W1H1"><area shape="rect" coords="353,-408,466,-381" href="#" alt=""><area shape="rect" coords="28,-380,131,-364" href="#Description()" alt=""><area shape="rect" coords="28,-364,321,-348" href="#Description(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI, com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="28,-348,404,-332" href="#Description(org.ihtsdo.otf.tcc.dto.component.description.TtkDescriptionChronicle, org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="28,-331,305,-315" href="#addComponentNids(java.util.Set)" alt=""><area shape="rect" coords="28,-315,182,-299" href="#clearVersions()" alt=""><area shape="rect" coords="28,-299,204,-283" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="28,-283,530,-267" href="#fieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)" alt=""><area shape="rect" coords="28,-267,254,-251" href="#getConcept()" alt=""><area shape="rect" coords="28,-251,180,-235" href="#getConceptNid()" alt=""><area shape="rect" coords="28,-235,158,-219" href="#getLang()" alt=""><area shape="rect" coords="28,-219,271,-203" href="#getPrimordialVersion()" alt=""><area shape="rect" coords="28,-203,156,-187" href="#getText()" alt=""><area shape="rect" coords="28,-187,158,-171" href="#getTypeNid()" alt=""><area shape="rect" coords="28,-171,286,-155" href="#getVariableVersionNids()" alt=""><area shape="rect" coords="28,-155,356,-139" href="#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="28,-139,306,-123" href="#getVersions()" alt=""><area shape="rect" coords="28,-123,770,-107" href="#getVersions(java.util.EnumSet, org.ihtsdo.otf.tcc.api.nid.NidSetBI, org.ihtsdo.otf.tcc.api.coordinate.Position, org.ihtsdo.otf.tcc.api.coordinate.Precedence, org.ihtsdo.otf.tcc.api.contradiction.ContradictionManagerBI)" alt=""><area shape="rect" coords="28,-107,404,-91" href="#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="28,-91,149,-75" href="#hashCode()" alt=""><area shape="rect" coords="28,-75,259,-59" href="#isInitialCaseSignificant()" alt=""><area shape="rect" coords="28,-59,409,-44" href="#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="28,-44,524,-28" href="#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="28,-28,221,-12" href="#matches(java.util.regex.Pattern)" alt=""><area shape="rect" coords="28,-12,245,3" href="#readFromBdb(com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="28,3,277,19" href="#readyToWriteComponent()" alt=""><area shape="rect" coords="28,19,295,35" href="#setInitialCaseSignificant(boolean)" alt=""><area shape="rect" coords="28,35,183,51" href="#setLang(java.lang.String)" alt=""><area shape="rect" coords="28,51,181,67" href="#setText(java.lang.String)" alt=""><area shape="rect" coords="28,67,183,83" href="#setTypeNid(int)" alt=""><area shape="rect" coords="28,83,157,99" href="#toString()" alt=""><area shape="rect" coords="28,99,186,115" href="#toUserString()" alt=""><area shape="rect" coords="28,115,228,131" href="#validate(org.ihtsdo.otf.tcc.model.cc.description.Description)" alt=""><area shape="rect" coords="28,131,265,147" href="#writeToBdb(com.sleepycat.bind.tuple.TupleOutput, int)" alt=""><area shape="rect" coords="20,-434,266,-416" href="package-summary.html" alt=""></map>
+<map name="umlmap521W2H1"><area shape="rect" coords="-161,-408,-48,-381" href="#" alt=""><area shape="rect" coords="-487,-380,-384,-364" href="#Description()" alt=""><area shape="rect" coords="-487,-364,-194,-348" href="#Description(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI, com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="-487,-348,-111,-332" href="#Description(org.ihtsdo.otf.tcc.dto.component.description.TtkDescriptionChronicle, org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-487,-331,-210,-315" href="#addComponentNids(java.util.Set)" alt=""><area shape="rect" coords="-487,-315,-333,-299" href="#clearVersions()" alt=""><area shape="rect" coords="-487,-299,-311,-283" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-487,-283,15,-267" href="#fieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)" alt=""><area shape="rect" coords="-487,-267,-261,-251" href="#getConcept()" alt=""><area shape="rect" coords="-487,-251,-335,-235" href="#getConceptNid()" alt=""><area shape="rect" coords="-487,-235,-357,-219" href="#getLang()" alt=""><area shape="rect" coords="-487,-219,-244,-203" href="#getPrimordialVersion()" alt=""><area shape="rect" coords="-487,-203,-359,-187" href="#getText()" alt=""><area shape="rect" coords="-487,-187,-357,-171" href="#getTypeNid()" alt=""><area shape="rect" coords="-487,-171,-229,-155" href="#getVariableVersionNids()" alt=""><area shape="rect" coords="-487,-155,-159,-139" href="#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-487,-139,-209,-123" href="#getVersions()" alt=""><area shape="rect" coords="-487,-123,255,-107" href="#getVersions(java.util.EnumSet, org.ihtsdo.otf.tcc.api.nid.NidSetBI, org.ihtsdo.otf.tcc.api.coordinate.Position, org.ihtsdo.otf.tcc.api.coordinate.Precedence, org.ihtsdo.otf.tcc.api.contradiction.ContradictionManagerBI)" alt=""><area shape="rect" coords="-487,-107,-111,-91" href="#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-487,-91,-366,-75" href="#hashCode()" alt=""><area shape="rect" coords="-487,-75,-256,-59" href="#isInitialCaseSignificant()" alt=""><area shape="rect" coords="-487,-59,-106,-44" href="#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="-487,-44,9,-28" href="#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="-487,-28,-294,-12" href="#matches(java.util.regex.Pattern)" alt=""><area shape="rect" coords="-487,-12,-270,3" href="#readFromBdb(com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="-487,3,-238,19" href="#readyToWriteComponent()" alt=""><area shape="rect" coords="-487,19,-220,35" href="#setInitialCaseSignificant(boolean)" alt=""><area shape="rect" coords="-487,35,-332,51" href="#setLang(java.lang.String)" alt=""><area shape="rect" coords="-487,51,-334,67" href="#setText(java.lang.String)" alt=""><area shape="rect" coords="-487,67,-332,83" href="#setTypeNid(int)" alt=""><area shape="rect" coords="-487,83,-358,99" href="#toString()" alt=""><area shape="rect" coords="-487,99,-329,115" href="#toUserString()" alt=""><area shape="rect" coords="-487,115,-287,131" href="#validate(org.ihtsdo.otf.tcc.model.cc.description.Description)" alt=""><area shape="rect" coords="-487,131,-250,147" href="#writeToBdb(com.sleepycat.bind.tuple.TupleOutput, int)" alt=""><area shape="rect" coords="-495,-434,-249,-416" href="package-summary.html" alt=""><area shape="rect" coords="345,169,463,192" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" alt=""><area shape="rect" coords="344,136,433,159" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" alt=""><area shape="rect" coords="345,103,470,126" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html" alt=""><area shape="rect" coords="335,77,530,95" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="377,261,528,284" href="../../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" alt=""><area shape="rect" coords="335,230,526,248" href="../../../../../../../org/ihtsdo/otf/tcc/api/concept/package-summary.html" alt=""><area shape="rect" coords="385,358,570,381" href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html" alt=""><area shape="rect" coords="335,327,557,345" href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/package-summary.html" alt=""><area shape="rect" coords="345,549,473,572" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" alt=""><area shape="rect" coords="344,516,403,539" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" alt=""><area shape="rect" coords="344,483,439,506" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Precedence.html" alt=""><area shape="rect" coords="344,450,415,473" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" alt=""><area shape="rect" coords="335,424,543,442" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""></map>
+<map name="umlmap521W3H1"><area shape="rect" coords="-178,77,16,95" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="-136,261,14,284" href="../../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" alt=""><area shape="rect" coords="-178,230,12,248" href="../../../../../../../org/ihtsdo/otf/tcc/api/concept/package-summary.html" alt=""><area shape="rect" coords="-128,358,56,381" href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html" alt=""><area shape="rect" coords="-178,327,43,345" href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/package-summary.html" alt=""><area shape="rect" coords="-178,424,29,442" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""></map>
+<map name="umlmap521W0H2"><area shape="rect" coords="6,526,129,543" href="http://www.yworks.com/" alt=""></map>
+<map name="umlmap521W1H2"><area shape="rect" coords="353,-961,466,-934" href="#" alt=""><area shape="rect" coords="28,-933,131,-917" href="#Description()" alt=""><area shape="rect" coords="28,-917,321,-901" href="#Description(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI, com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="28,-901,404,-885" href="#Description(org.ihtsdo.otf.tcc.dto.component.description.TtkDescriptionChronicle, org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="28,-884,305,-868" href="#addComponentNids(java.util.Set)" alt=""><area shape="rect" coords="28,-868,182,-852" href="#clearVersions()" alt=""><area shape="rect" coords="28,-852,204,-836" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="28,-836,530,-820" href="#fieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)" alt=""><area shape="rect" coords="28,-820,254,-804" href="#getConcept()" alt=""><area shape="rect" coords="28,-804,180,-788" href="#getConceptNid()" alt=""><area shape="rect" coords="28,-788,158,-772" href="#getLang()" alt=""><area shape="rect" coords="28,-772,271,-756" href="#getPrimordialVersion()" alt=""><area shape="rect" coords="28,-756,156,-740" href="#getText()" alt=""><area shape="rect" coords="28,-740,158,-724" href="#getTypeNid()" alt=""><area shape="rect" coords="28,-724,286,-708" href="#getVariableVersionNids()" alt=""><area shape="rect" coords="28,-708,356,-692" href="#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="28,-692,306,-676" href="#getVersions()" alt=""><area shape="rect" coords="28,-676,770,-660" href="#getVersions(java.util.EnumSet, org.ihtsdo.otf.tcc.api.nid.NidSetBI, org.ihtsdo.otf.tcc.api.coordinate.Position, org.ihtsdo.otf.tcc.api.coordinate.Precedence, org.ihtsdo.otf.tcc.api.contradiction.ContradictionManagerBI)" alt=""><area shape="rect" coords="28,-660,404,-644" href="#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="28,-644,149,-628" href="#hashCode()" alt=""><area shape="rect" coords="28,-628,259,-612" href="#isInitialCaseSignificant()" alt=""><area shape="rect" coords="28,-612,409,-597" href="#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="28,-597,524,-581" href="#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="28,-581,221,-565" href="#matches(java.util.regex.Pattern)" alt=""><area shape="rect" coords="28,-565,245,-549" href="#readFromBdb(com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="28,-549,277,-533" href="#readyToWriteComponent()" alt=""><area shape="rect" coords="28,-533,295,-517" href="#setInitialCaseSignificant(boolean)" alt=""><area shape="rect" coords="28,-517,183,-501" href="#setLang(java.lang.String)" alt=""><area shape="rect" coords="28,-501,181,-485" href="#setText(java.lang.String)" alt=""><area shape="rect" coords="28,-485,183,-469" href="#setTypeNid(int)" alt=""><area shape="rect" coords="28,-469,157,-453" href="#toString()" alt=""><area shape="rect" coords="28,-453,186,-437" href="#toUserString()" alt=""><area shape="rect" coords="28,-437,228,-421" href="#validate(org.ihtsdo.otf.tcc.model.cc.description.Description)" alt=""><area shape="rect" coords="28,-421,265,-405" href="#writeToBdb(com.sleepycat.bind.tuple.TupleOutput, int)" alt=""><area shape="rect" coords="20,-987,266,-969" href="package-summary.html" alt=""></map>
+<map name="umlmap521W2H2"><area shape="rect" coords="-161,-961,-48,-934" href="#" alt=""><area shape="rect" coords="-487,-933,-384,-917" href="#Description()" alt=""><area shape="rect" coords="-487,-917,-194,-901" href="#Description(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI, com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="-487,-901,-111,-885" href="#Description(org.ihtsdo.otf.tcc.dto.component.description.TtkDescriptionChronicle, org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-487,-884,-210,-868" href="#addComponentNids(java.util.Set)" alt=""><area shape="rect" coords="-487,-868,-333,-852" href="#clearVersions()" alt=""><area shape="rect" coords="-487,-852,-311,-836" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-487,-836,15,-820" href="#fieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)" alt=""><area shape="rect" coords="-487,-820,-261,-804" href="#getConcept()" alt=""><area shape="rect" coords="-487,-804,-335,-788" href="#getConceptNid()" alt=""><area shape="rect" coords="-487,-788,-357,-772" href="#getLang()" alt=""><area shape="rect" coords="-487,-772,-244,-756" href="#getPrimordialVersion()" alt=""><area shape="rect" coords="-487,-756,-359,-740" href="#getText()" alt=""><area shape="rect" coords="-487,-740,-357,-724" href="#getTypeNid()" alt=""><area shape="rect" coords="-487,-724,-229,-708" href="#getVariableVersionNids()" alt=""><area shape="rect" coords="-487,-708,-159,-692" href="#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-487,-692,-209,-676" href="#getVersions()" alt=""><area shape="rect" coords="-487,-676,255,-660" href="#getVersions(java.util.EnumSet, org.ihtsdo.otf.tcc.api.nid.NidSetBI, org.ihtsdo.otf.tcc.api.coordinate.Position, org.ihtsdo.otf.tcc.api.coordinate.Precedence, org.ihtsdo.otf.tcc.api.contradiction.ContradictionManagerBI)" alt=""><area shape="rect" coords="-487,-660,-111,-644" href="#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-487,-644,-366,-628" href="#hashCode()" alt=""><area shape="rect" coords="-487,-628,-256,-612" href="#isInitialCaseSignificant()" alt=""><area shape="rect" coords="-487,-612,-106,-597" href="#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="-487,-597,9,-581" href="#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="-487,-581,-294,-565" href="#matches(java.util.regex.Pattern)" alt=""><area shape="rect" coords="-487,-565,-270,-549" href="#readFromBdb(com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="-487,-549,-238,-533" href="#readyToWriteComponent()" alt=""><area shape="rect" coords="-487,-533,-220,-517" href="#setInitialCaseSignificant(boolean)" alt=""><area shape="rect" coords="-487,-517,-332,-501" href="#setLang(java.lang.String)" alt=""><area shape="rect" coords="-487,-501,-334,-485" href="#setText(java.lang.String)" alt=""><area shape="rect" coords="-487,-485,-332,-469" href="#setTypeNid(int)" alt=""><area shape="rect" coords="-487,-469,-358,-453" href="#toString()" alt=""><area shape="rect" coords="-487,-453,-329,-437" href="#toUserString()" alt=""><area shape="rect" coords="-487,-437,-287,-421" href="#validate(org.ihtsdo.otf.tcc.model.cc.description.Description)" alt=""><area shape="rect" coords="-487,-421,-250,-405" href="#writeToBdb(com.sleepycat.bind.tuple.TupleOutput, int)" alt=""><area shape="rect" coords="-495,-987,-249,-969" href="package-summary.html" alt=""><area shape="rect" coords="345,-3,473,19" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" alt=""><area shape="rect" coords="335,-128,543,-110" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="359,88,430,111" href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSetBI.html" alt=""><area shape="rect" coords="335,57,494,75" href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/package-summary.html" alt=""><area shape="rect" coords="346,180,538,203" href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/description/TtkDescriptionChronicle.html" alt=""><area shape="rect" coords="335,154,619,172" href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/description/package-summary.html" alt=""><area shape="rect" coords="353,267,1008,290" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" alt=""><area shape="rect" coords="335,241,581,259" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/package-summary.html" alt=""><area shape="rect" coords="345,354,486,377" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptChronicle.html" alt=""><area shape="rect" coords="335,328,562,346" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/package-summary.html" alt=""><area shape="rect" coords="345,474,501,498" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" alt=""><area shape="rect" coords="345,441,501,464" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.Version.html" alt=""><area shape="rect" coords="335,415,581,433" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/package-summary.html" alt=""></map>
+<map name="umlmap521W3H2"><area shape="rect" coords="-178,-128,29,-110" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="-178,57,-19,75" href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/package-summary.html" alt=""><area shape="rect" coords="-167,180,24,203" href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/description/TtkDescriptionChronicle.html" alt=""><area shape="rect" coords="-178,154,105,172" href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/description/package-summary.html" alt=""><area shape="rect" coords="-160,267,494,290" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" alt=""><area shape="rect" coords="-178,241,67,259" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/package-summary.html" alt=""><area shape="rect" coords="-178,328,48,346" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/package-summary.html" alt=""><area shape="rect" coords="-178,415,67,433" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="DescriptionW0H0.png" WIDTH="515" HEIGHT="553" USEMAP="#umlmap521W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="DescriptionW1H0.png" WIDTH="515" HEIGHT="553" USEMAP="#umlmap521W1H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="DescriptionW2H0.png" WIDTH="514" HEIGHT="553" USEMAP="#umlmap521W2H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="DescriptionW3H0.png" WIDTH="514" HEIGHT="553" USEMAP="#umlmap521W3H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="DescriptionW0H1.png" WIDTH="515" HEIGHT="553" USEMAP="#umlmap521W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="DescriptionW1H1.png" WIDTH="515" HEIGHT="553" USEMAP="#umlmap521W1H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="DescriptionW2H1.png" WIDTH="514" HEIGHT="553" USEMAP="#umlmap521W2H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="DescriptionW3H1.png" WIDTH="514" HEIGHT="553" USEMAP="#umlmap521W3H1" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="DescriptionW0H2.png" WIDTH="515" HEIGHT="552" USEMAP="#umlmap521W0H2" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="DescriptionW1H2.png" WIDTH="515" HEIGHT="552" USEMAP="#umlmap521W1H2" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="DescriptionW2H2.png" WIDTH="514" HEIGHT="552" USEMAP="#umlmap521W2H2" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="DescriptionW3H2.png" WIDTH="514" HEIGHT="552" USEMAP="#umlmap521W3H2" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested_class_summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description.Version</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="nested_classes_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from class&nbsp;org.ihtsdo.otf.tcc.model.cc.component.<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.IDENTIFIER_PART_TYPES.html" title="enum in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent.IDENTIFIER_PART_TYPES</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.ihtsdo.otf.tcc.model.cc.component.<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#additionalIdVersions">additionalIdVersions</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#annotations">annotations</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#enclosingConceptNid">enclosingConceptNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#logger">logger</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#nid">nid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#primordialLsb">primordialLsb</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#primordialMsb">primordialMsb</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#primordialStamp">primordialStamp</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#revisions">revisions</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#Description()">Description</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#Description(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI, com.sleepycat.bind.tuple.TupleInput)">Description</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;enclosingConcept,
+           com.sleepycat.bind.tuple.TupleInput&nbsp;input)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#Description(org.ihtsdo.otf.tcc.dto.component.description.TtkDescriptionChronicle, org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)">Description</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/description/TtkDescriptionChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.description">TtkDescriptionChronicle</a>&nbsp;eDesc,
+           <a href="../../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;enclosingConcept)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#addComponentNids(java.util.Set)">addComponentNids</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;allNids)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#clearVersions()">clearVersions</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#fieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)">fieldsEqual</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;&nbsp;obj)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptChronicle.html" title="class in org.ihtsdo.otf.tcc.model.cc.concept">ConceptChronicle</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#getConcept()">getConcept</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#getConceptNid()">getConceptNid</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#getLang()">getLang</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#getPrimordialVersion()">getPrimordialVersion</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#getText()">getText</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#getTypeNid()">getTypeNid</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>org.apache.mahout.math.list.IntArrayList</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#getVariableVersionNids()">getVariableVersionNids</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description.Version</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getVersion</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;c)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description.Version</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#getVersions()">getVersions</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description.Version</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#getVersions(java.util.EnumSet, org.ihtsdo.otf.tcc.api.nid.NidSetBI, org.ihtsdo.otf.tcc.api.coordinate.Position, org.ihtsdo.otf.tcc.api.coordinate.Precedence, org.ihtsdo.otf.tcc.api.contradiction.ContradictionManagerBI)">getVersions</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumSet.html?is-external=true" title="class or interface in java.util">EnumSet</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&gt;&nbsp;allowedStatus,
+           <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NidSetBI</a>&nbsp;allowedTypes,
+           <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&nbsp;viewPosition,
+           <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Precedence.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Precedence</a>&nbsp;precedence,
+           <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html" title="interface in org.ihtsdo.otf.tcc.api.contradiction">ContradictionManagerBI</a>&nbsp;contradictionMgr)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description.Version</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getVersions</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;c)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#hashCode()">hashCode</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#isInitialCaseSignificant()">isInitialCaseSignificant</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">makeAnalog</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&nbsp;status,
+          long&nbsp;time,
+          int&nbsp;authorNid,
+          int&nbsp;moduleNid,
+          int&nbsp;pathNid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">DescriptionCAB</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
+             <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+             <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#matches(java.util.regex.Pattern)">matches</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a>&nbsp;p)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#readFromBdb(com.sleepycat.bind.tuple.TupleInput)">readFromBdb</a></strong>(com.sleepycat.bind.tuple.TupleInput&nbsp;input)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#readyToWriteComponent()">readyToWriteComponent</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#setInitialCaseSignificant(boolean)">setInitialCaseSignificant</a></strong>(boolean&nbsp;initialCaseSignificant)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#setLang(java.lang.String)">setLang</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;lang)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#setText(java.lang.String)">setText</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#setTypeNid(int)">setTypeNid</a></strong>(int&nbsp;typeNid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#toString()">toString</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#toUserString()">toUserString</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#validate(org.ihtsdo.otf.tcc.model.cc.description.Description)">validate</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&nbsp;another)</code>
+<div class="block">Test method to check to see if two objects are equal in all respects.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html#writeToBdb(com.sleepycat.bind.tuple.TupleOutput, int)">writeToBdb</a></strong>(com.sleepycat.bind.tuple.TupleOutput&nbsp;output,
+          int&nbsp;maxReadOnlyStatusAtPositionNid)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.ihtsdo.otf.tcc.model.cc.component.<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addAnnotation(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)">addAnnotation</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addIdVersion(org.ihtsdo.otf.tcc.model.cc.identifier.IdentifierVersion)">addIdVersion</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addLongId(java.lang.Long, int, org.ihtsdo.otf.tcc.api.coordinate.Status, org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, long)">addLongId</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addMutablePart(R)">addMutablePart</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addNidToBuffer(java.lang.Appendable, int)">addNidToBuffer</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addRevision(R)">addRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addRevisionNoRedundancyCheck(R)">addRevisionNoRedundancyCheck</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addStringId(java.lang.String, int, org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">addStringId</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addTextToBuffer(java.lang.Appendable, int)">addTextToBuffer</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addUuidId(java.util.UUID, int, org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">addUuidId</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#assertionString()">assertionString</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#cancel()">cancel</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#clearAnnotationVersions()">clearAnnotationVersions</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#compareTo(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)">compareTo</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#conceptComponentFieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)">conceptComponentFieldsEqual</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#containsStamp(int)">containsStamp</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#convertId(java.util.List)">convertId</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAdditionalIdentifierParts()">getAdditionalIdentifierParts</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAdditionalIds()">getAdditionalIds</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAllIds()">getAllIds</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAllNidsForId()">getAllNidsForId</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAllNidsForVersion()">getAllNidsForVersion</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAllStamps()">getAllStamps</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAnnotations()">getAnnotations</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.lang.Class)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int, java.lang.Class)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAnnotationsMod()">getAnnotationsMod</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAnnotationStamps()">getAnnotationStamps</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAuthorityNid()">getAuthorityNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAuthorNid()">getAuthorNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getChronicle()">getChronicle</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getComponentStamps()">getComponentStamps</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getDenotation()">getDenotation</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getEnclosingConcept()">getEnclosingConcept</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getIdStamps()">getIdStamps</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getIdVersions()">getIdVersions</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getModuleNid()">getModuleNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getMutablePartCount()">getMutablePartCount</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getNid()">getNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getPathNid()">getPathNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getPosition()">getPosition</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getPositions()">getPositions</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getPrimordialStatusAtPositionNid()">getPrimordialStatusAtPositionNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getPrimordialUuid()">getPrimordialUuid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getRefexes()">getRefexes</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getRefexMembers(int)">getRefexMembers</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getRefexMembersActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getRefexMembersActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getRefexMembersActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">getRefexMembersActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getRefexMembersInactive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getRefexMembersInactive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getRefsetMembers()">getRefsetMembers</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getRefsetMemberSapNids()">getRefsetMemberSapNids</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getStamp()">getStamp</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getStatus()">getStatus</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getTime()">getTime</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getUUIDs()">getUUIDs</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getVersionSapMap()">getVersionSapMap</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getVersionStamps()">getVersionStamps</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#hasCurrentAnnotationMember(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">hasCurrentAnnotationMember</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#hasCurrentRefexMember(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">hasCurrentRefexMember</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#hasRevision(R)">hasRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#isActive()">isActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#isBaselineGeneration()">isBaselineGeneration</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#isCanceled(com.sleepycat.bind.tuple.TupleInput)">isCanceled</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#isUncommitted()">isUncommitted</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#makeAdjudicationAnalogs(org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">makeAdjudicationAnalogs</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#merge(C, java.util.Set)">merge</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#modified()">modified</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#readComponentFromBdb(com.sleepycat.bind.tuple.TupleInput)">readComponentFromBdb</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#readyToWrite()">readyToWrite</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#removeRevision(R)">removeRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#resetUncommitted(org.ihtsdo.otf.tcc.api.coordinate.Status, int, int, int)">resetUncommitted</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#setAuthorNid(int)">setAuthorNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#setModuleNid(int)">setModuleNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#setNid(int)">setNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#setPathNid(int)">setPathNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#setPrimordialUuid(java.util.UUID)">setPrimordialUuid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#setSTAMP(int)">setSTAMP</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#setStatus(org.ihtsdo.otf.tcc.api.coordinate.Status)">setStatus</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#setTime(long)">setTime</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#stampIsInRange(int, int)">stampIsInRange</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#toUserString(org.ihtsdo.otf.tcc.api.store.TerminologySnapshotDI)">toUserString</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#validate(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)">validate</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#versionCount()">versionCount</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#versionsEqual(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.lang.Boolean)">versionsEqual</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#writeComponentToBdb(com.sleepycat.bind.tuple.TupleOutput, int)">writeComponentToBdb</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.AnalogBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api">AnalogBI</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#addLongId(java.lang.Long, int, org.ihtsdo.otf.tcc.api.coordinate.Status, org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, long)">addLongId</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setAuthorNid(int)">setAuthorNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setModuleNid(int)">setModuleNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setNid(int)">setNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setPathNid(int)">setPathNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setStatus(org.ihtsdo.otf.tcc.api.coordinate.Status)">setStatus</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setTime(long)">setTime</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.chronicle.ComponentVersionBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.chronicle.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentVersionBI</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getAllNidsForVersion()">getAllNidsForVersion</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getAuthorNid()">getAuthorNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getChronicle()">getChronicle</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getModuleNid()">getModuleNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getPosition()">getPosition</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getStamp()">getStamp</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getStatus()">getStatus</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#isActive()">isActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#isBaselineGeneration()">isBaselineGeneration</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#isUncommitted()">isUncommitted</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#stampIsInRange(int, int)">stampIsInRange</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#toUserString(org.ihtsdo.otf.tcc.api.store.TerminologySnapshotDI)">toUserString</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#versionsEqual(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.lang.Boolean)">versionsEqual</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.coordinate.VersionPointBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.coordinate.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/VersionPointBI.html" title="interface in org.ihtsdo.otf.tcc.api.coordinate">VersionPointBI</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/VersionPointBI.html#getPathNid()">getPathNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/VersionPointBI.html#getTime()">getTime</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.chronicle.ComponentChronicleBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.chronicle.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getAllStamps()">getAllStamps</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getEnclosingConcept()">getEnclosingConcept</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getPositions()">getPositions</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#isUncommitted()">isUncommitted</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#makeAdjudicationAnalogs(org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">makeAdjudicationAnalogs</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.chronicle.ComponentBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.chronicle.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentBI</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#addAnnotation(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)">addAnnotation</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAdditionalIds()">getAdditionalIds</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAllIds()">getAllIds</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAnnotations()">getAnnotations</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.lang.Class)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int, java.lang.Class)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getNid()">getNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getPrimordialUuid()">getPrimordialUuid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getRefexes()">getRefexes</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getRefexMembers(int)">getRefexMembers</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getRefexMembersActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getRefexMembersActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getRefexMembersActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">getRefexMembersActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getRefexMembersInactive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getRefexMembersInactive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getUUIDs()">getUUIDs</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#hasCurrentAnnotationMember(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">hasCurrentAnnotationMember</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#hasCurrentRefexMember(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">hasCurrentRefexMember</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="Description()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Description</h4>
+<pre>public&nbsp;Description()</pre>
+</li>
+</ul>
+<a name="Description(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI, com.sleepycat.bind.tuple.TupleInput)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Description</h4>
+<pre>public&nbsp;Description(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;enclosingConcept,
+           com.sleepycat.bind.tuple.TupleInput&nbsp;input)
+            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="Description(org.ihtsdo.otf.tcc.dto.component.description.TtkDescriptionChronicle, org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Description</h4>
+<pre>public&nbsp;Description(<a href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/description/TtkDescriptionChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.description">TtkDescriptionChronicle</a>&nbsp;eDesc,
+           <a href="../../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;enclosingConcept)
+            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="addComponentNids(java.util.Set)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addComponentNids</h4>
+<pre>protected&nbsp;void&nbsp;addComponentNids(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;allNids)</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addComponentNids(java.util.Set)">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addComponentNids(java.util.Set)">addComponentNids</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="clearVersions()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clearVersions</h4>
+<pre>public&nbsp;void&nbsp;clearVersions()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#clearVersions()">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#clearVersions()">clearVersions</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#equals(java.lang.Object)">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#equals(java.lang.Object)">equals</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="fieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fieldsEqual</h4>
+<pre>public&nbsp;boolean&nbsp;fieldsEqual(<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;&nbsp;obj)</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#fieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#fieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)">fieldsEqual</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#hashCode()">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#hashCode()">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeAnalog</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>&nbsp;makeAnalog(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&nbsp;status,
+                             long&nbsp;time,
+                             int&nbsp;authorNid,
+                             int&nbsp;moduleNid,
+                             int&nbsp;pathNid)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogGeneratorBI.html#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">makeAnalog</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogGeneratorBI.html" title="interface in org.ihtsdo.otf.tcc.api">AnalogGeneratorBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="matches(java.util.regex.Pattern)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>matches</h4>
+<pre>public&nbsp;boolean&nbsp;matches(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex">Pattern</a>&nbsp;p)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html#matches(java.util.regex.Pattern)">DescriptionVersionBI</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html#matches(java.util.regex.Pattern)">matches</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="readFromBdb(com.sleepycat.bind.tuple.TupleInput)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readFromBdb</h4>
+<pre>public&nbsp;void&nbsp;readFromBdb(com.sleepycat.bind.tuple.TupleInput&nbsp;input)</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#readFromBdb(com.sleepycat.bind.tuple.TupleInput)">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#readFromBdb(com.sleepycat.bind.tuple.TupleInput)">readFromBdb</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="readyToWriteComponent()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readyToWriteComponent</h4>
+<pre>public&nbsp;boolean&nbsp;readyToWriteComponent()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#readyToWriteComponent()">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#readyToWriteComponent()">readyToWriteComponent</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#toString()">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#toString()">toString</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="toUserString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toUserString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toUserString()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#toUserString()">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#toUserString()">toUserString</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentBI</a></code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#toUserString()">toUserString</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="validate(org.ihtsdo.otf.tcc.model.cc.description.Description)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>validate</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;validate(<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&nbsp;another)
+                throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Test method to check to see if two objects are equal in all respects.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>another</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>either a zero length String, or a String containing a description of the
+ validation failures.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="writeToBdb(com.sleepycat.bind.tuple.TupleOutput, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeToBdb</h4>
+<pre>public&nbsp;void&nbsp;writeToBdb(com.sleepycat.bind.tuple.TupleOutput&nbsp;output,
+              int&nbsp;maxReadOnlyStatusAtPositionNid)</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#writeToBdb(com.sleepycat.bind.tuple.TupleOutput, int)">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#writeToBdb(com.sleepycat.bind.tuple.TupleOutput, int)">writeToBdb</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getConcept()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConcept</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptChronicle.html" title="class in org.ihtsdo.otf.tcc.model.cc.concept">ConceptChronicle</a>&nbsp;getConcept()</pre>
+</li>
+</ul>
+<a name="getConceptNid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConceptNid</h4>
+<pre>public&nbsp;int&nbsp;getConceptNid()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getConceptNid()">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getConceptNid()">getConceptNid</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentBI</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getConceptNid()">getConceptNid</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeBlueprint</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">DescriptionCAB</a>&nbsp;makeBlueprint(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
+                           <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+                           <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)
+                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                    <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a>,
+                                    <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">DescriptionVersionBI</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentVersionBI</a></code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>vc</code> - the view coordinate specifying which version is active or inactive</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the blueprint of the component</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a given position or view coordinate</dd>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are invalid</dd><dt><span class="strong">See Also:</span></dt><dd><code>org.ihtsdo.tk.api.blueprint.CreateOrAmendBlueprint</code></dd></dl>
+</li>
+</ul>
+<a name="getLang()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLang</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getLang()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html#getLang()">DescriptionVersionBI</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html#getLang()">getLang</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getPrimordialVersion()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPrimordialVersion</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&nbsp;getPrimordialVersion()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getPrimordialVersion()">getPrimordialVersion</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getText()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getText</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getText()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html#getText()">DescriptionVersionBI</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html#getText()">getText</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getTypeNid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTypeNid</h4>
+<pre>public&nbsp;int&nbsp;getTypeNid()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/TypedComponentVersionBI.html#getTypeNid()">getTypeNid</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/TypedComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">TypedComponentVersionBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getVariableVersionNids()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVariableVersionNids</h4>
+<pre>public&nbsp;org.apache.mahout.math.list.IntArrayList&nbsp;getVariableVersionNids()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getVariableVersionNids()">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getVariableVersionNids()">getVariableVersionNids</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVersion</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description.Version</a>&nbsp;getVersion(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;c)
+                               throws <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getVersion</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&gt;</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getVersions()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVersions</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description.Version</a>&gt;&nbsp;getVersions()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getVersions()">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getVersions()">getVersions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&gt;</code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getVersions()">getVersions</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVersions</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description.Version</a>&gt;&nbsp;getVersions(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;c)</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getVersions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&gt;</code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getVersions</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getVersions(java.util.EnumSet, org.ihtsdo.otf.tcc.api.nid.NidSetBI, org.ihtsdo.otf.tcc.api.coordinate.Position, org.ihtsdo.otf.tcc.api.coordinate.Precedence, org.ihtsdo.otf.tcc.api.contradiction.ContradictionManagerBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVersions</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">Description.Version</a>&gt;&nbsp;getVersions(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/EnumSet.html?is-external=true" title="class or interface in java.util">EnumSet</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&gt;&nbsp;allowedStatus,
+                                    <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NidSetBI</a>&nbsp;allowedTypes,
+                                    <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&nbsp;viewPosition,
+                                    <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Precedence.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Precedence</a>&nbsp;precedence,
+                                    <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionManagerBI.html" title="interface in org.ihtsdo.otf.tcc.api.contradiction">ContradictionManagerBI</a>&nbsp;contradictionMgr)</pre>
+</li>
+</ul>
+<a name="isInitialCaseSignificant()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isInitialCaseSignificant</h4>
+<pre>public&nbsp;boolean&nbsp;isInitialCaseSignificant()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html#isInitialCaseSignificant()">DescriptionVersionBI</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html#isInitialCaseSignificant()">isInitialCaseSignificant</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="setInitialCaseSignificant(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setInitialCaseSignificant</h4>
+<pre>public&nbsp;void&nbsp;setInitialCaseSignificant(boolean&nbsp;initialCaseSignificant)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionAnalogBI.html#setInitialCaseSignificant(boolean)">setInitialCaseSignificant</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionAnalogBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="setLang(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLang</h4>
+<pre>public&nbsp;void&nbsp;setLang(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;lang)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionAnalogBI.html#setLang(java.lang.String)">setLang</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionAnalogBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="setText(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setText</h4>
+<pre>public&nbsp;void&nbsp;setText(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionAnalogBI.html#setText(java.lang.String)">setText</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionAnalogBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/DescriptionRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.description">DescriptionRevision</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="setTypeNid(int)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setTypeNid</h4>
+<pre>public&nbsp;void&nbsp;setTypeNid(int&nbsp;typeNid)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/TypedComponentAnalogBI.html#setTypeNid(int)">setTypeNid</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/TypedComponentAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">TypedComponentAnalogBI</a></code></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Description.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/description/Description.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.description"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/ihtsdo/otf/tcc/model/cc/description/Description.html" target="_top">Frames</a></li>
+<li><a href="Description.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

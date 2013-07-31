@@ -1,0 +1,740 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>RefexRevision (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="RefexRevision (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/RefexRevision.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMemberFactory.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" target="_top">Frames</a></li>
+<li><a href="RefexRevision.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.component.Revision">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.model.cc.refex</div>
+<h2 title="Class RefexRevision" class="title">Class RefexRevision&lt;V extends RefexRevision&lt;V,C&gt;,C extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;V,C&gt;&gt;</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">org.ihtsdo.otf.tcc.model.cc.component.Revision</a>&lt;V,C&gt;</li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.model.cc.refex.RefexRevision&lt;V,C&gt;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api">AnalogBI</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogGeneratorBI.html" title="interface in org.ihtsdo.otf.tcc.api">AnalogGeneratorBI</a>&lt;V&gt;, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentBI</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexVersionBI</a>&lt;V&gt;&gt;, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentVersionBI</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/VersionPointBI.html" title="interface in org.ihtsdo.otf.tcc.api.coordinate">VersionPointBI</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexAnalogBI</a>&lt;V&gt;, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexChronicleBI</a>&lt;V&gt;, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexVersionBI</a>&lt;V&gt;</dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_boolean/BooleanRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_boolean">BooleanRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_int/IntRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_int">IntRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_long/LongRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_long">LongRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_membership/MembershipRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_membership">MembershipRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_nid_boolean/NidBooleanRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_nid_boolean">NidBooleanRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_nid_float/NidFloatRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_nid_float">NidFloatRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_nid_int/NidIntRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_nid_int">NidIntRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_nid_long/NidLongRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_nid_long">NidLongRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_nid_nid_nid_float/NidNidNidFloatRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_nid_nid_nid_float">NidNidNidFloatRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_nid_nid_nid_int/NidNidNidIntRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_nid_nid_nid_int">NidNidNidIntRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_nid_nid_nid_long/NidNidNidLongRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_nid_nid_nid_long">NidNidNidLongRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_nid_nid_nid/NidNidNidRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_nid_nid_nid">NidNidNidRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_nid_nid_nid_string/NidNidNidStringRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_nid_nid_nid_string">NidNidNidStringRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_nid_nid/NidNidRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_nid_nid">NidNidRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_nid_nid_string/NidNidStringRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_nid_nid_string">NidNidStringRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_nid/NidRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_nid">NidRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_nid_string/NidStringRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_nid_string">NidStringRevision</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_string/StringRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_string">StringRevision</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public abstract class <span class="strong">RefexRevision&lt;V extends RefexRevision&lt;V,C&gt;,C extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;V,C&gt;&gt;</span>
+extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a>&lt;V,C&gt;
+implements <a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexAnalogBI</a>&lt;V&gt;</pre>
+<dl><DT>&nbsp;</DT><DD><map name="umlmap437W0H0"><area shape="rect" coords="21,145,775,166" href="#" alt=""><area shape="rect" coords="10,265,287,281" href="#addComponentNids(java.util.Set)" alt=""><area shape="rect" coords="10,281,287,297" href="#addRefsetTypeNids(java.util.Set)" alt=""><area shape="rect" coords="10,297,261,313" href="#addSpecProperties(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)" alt=""><area shape="rect" coords="10,313,186,329" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="10,329,269,345" href="#getPrimordialVersion()" alt=""><area shape="rect" coords="10,345,253,361" href="#getReferencedComponentNid()" alt=""><area shape="rect" coords="10,361,205,377" href="#getRefexExtensionNid()" alt=""><area shape="rect" coords="10,377,207,393" href="#getRefexType()" alt=""><area shape="rect" coords="10,393,226,409" href="#getTkRefsetType()" alt=""><area shape="rect" coords="10,409,138,425" href="#makeAnalog()" alt=""><area shape="rect" coords="10,425,472,441" href="#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="10,441,281,457" href="#readyToWriteRefsetRevision()" alt=""><area shape="rect" coords="10,457,240,473" href="#readyToWriteRevision()" alt=""><area shape="rect" coords="10,473,298,489" href="#refexFieldsEqual(org.ihtsdo.otf.tcc.api.refex.RefexVersionBI)" alt=""><area shape="rect" coords="10,489,278,504" href="#setReferencedComponentNid(int)" alt=""><area shape="rect" coords="10,504,230,520" href="#setRefexExtensionNid(int)" alt=""><area shape="rect" coords="10,520,139,536" href="#toString()" alt=""><area shape="rect" coords="10,536,168,552" href="#toUserString()" alt=""><area shape="rect" coords="2,119,211,136" href="package-summary.html" alt=""><area shape="rect" coords="117,37,678,61" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" alt=""><area shape="rect" coords="101,11,347,29" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/package-summary.html" alt=""></map>
+<map name="umlmap437W1H0"><area shape="rect" coords="-514,145,239,166" href="#" alt=""><area shape="rect" coords="-526,265,-249,281" href="#addComponentNids(java.util.Set)" alt=""><area shape="rect" coords="-526,281,-249,297" href="#addRefsetTypeNids(java.util.Set)" alt=""><area shape="rect" coords="-526,297,-275,313" href="#addSpecProperties(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)" alt=""><area shape="rect" coords="-526,313,-350,329" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-526,329,-267,345" href="#getPrimordialVersion()" alt=""><area shape="rect" coords="-526,345,-283,361" href="#getReferencedComponentNid()" alt=""><area shape="rect" coords="-526,361,-331,377" href="#getRefexExtensionNid()" alt=""><area shape="rect" coords="-526,377,-329,393" href="#getRefexType()" alt=""><area shape="rect" coords="-526,393,-310,409" href="#getTkRefsetType()" alt=""><area shape="rect" coords="-526,409,-398,425" href="#makeAnalog()" alt=""><area shape="rect" coords="-526,425,-64,441" href="#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="-526,441,-255,457" href="#readyToWriteRefsetRevision()" alt=""><area shape="rect" coords="-526,457,-296,473" href="#readyToWriteRevision()" alt=""><area shape="rect" coords="-526,473,-238,489" href="#refexFieldsEqual(org.ihtsdo.otf.tcc.api.refex.RefexVersionBI)" alt=""><area shape="rect" coords="-526,489,-258,504" href="#setReferencedComponentNid(int)" alt=""><area shape="rect" coords="-526,504,-306,520" href="#setRefexExtensionNid(int)" alt=""><area shape="rect" coords="-526,520,-397,536" href="#toString()" alt=""><area shape="rect" coords="-526,536,-368,552" href="#toUserString()" alt=""><area shape="rect" coords="-534,119,-325,136" href="package-summary.html" alt=""><area shape="rect" coords="-418,37,142,61" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" alt=""><area shape="rect" coords="-434,11,-188,29" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/package-summary.html" alt=""><area shape="rect" coords="332,33,924,56" href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexAnalogBI.html" alt=""><area shape="rect" coords="189,2,362,20" href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/package-summary.html" alt=""><area shape="rect" coords="317,265,371,288" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="317,232,374,255" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="308,206,375,224" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="331,357,394,380" href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html" alt=""><area shape="rect" coords="308,326,367,344" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="318,515,436,538" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" alt=""><area shape="rect" coords="317,482,397,505" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" alt=""><area shape="rect" coords="317,449,406,472" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" alt=""><area shape="rect" coords="308,423,503,441" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""></map>
+<map name="umlmap437W2H0"><area shape="rect" coords="-202,33,389,56" href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexAnalogBI.html" alt=""><area shape="rect" coords="-345,2,-172,20" href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/package-summary.html" alt=""></map>
+<map name="umlmap437W0H1"><area shape="rect" coords="6,482,129,499" href="http://www.yworks.com/" alt=""><area shape="rect" coords="21,-363,775,-341" href="#" alt=""><area shape="rect" coords="10,-242,287,-226" href="#addComponentNids(java.util.Set)" alt=""><area shape="rect" coords="10,-226,287,-210" href="#addRefsetTypeNids(java.util.Set)" alt=""><area shape="rect" coords="10,-210,261,-194" href="#addSpecProperties(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)" alt=""><area shape="rect" coords="10,-194,186,-178" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="10,-178,269,-162" href="#getPrimordialVersion()" alt=""><area shape="rect" coords="10,-162,253,-146" href="#getReferencedComponentNid()" alt=""><area shape="rect" coords="10,-146,205,-130" href="#getRefexExtensionNid()" alt=""><area shape="rect" coords="10,-130,207,-114" href="#getRefexType()" alt=""><area shape="rect" coords="10,-114,226,-98" href="#getTkRefsetType()" alt=""><area shape="rect" coords="10,-98,138,-82" href="#makeAnalog()" alt=""><area shape="rect" coords="10,-82,472,-66" href="#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="10,-66,281,-50" href="#readyToWriteRefsetRevision()" alt=""><area shape="rect" coords="10,-50,240,-34" href="#readyToWriteRevision()" alt=""><area shape="rect" coords="10,-34,298,-18" href="#refexFieldsEqual(org.ihtsdo.otf.tcc.api.refex.RefexVersionBI)" alt=""><area shape="rect" coords="10,-18,278,-3" href="#setReferencedComponentNid(int)" alt=""><area shape="rect" coords="10,-3,230,12" href="#setRefexExtensionNid(int)" alt=""><area shape="rect" coords="10,12,139,28" href="#toString()" alt=""><area shape="rect" coords="10,28,168,44" href="#toUserString()" alt=""><area shape="rect" coords="2,-389,211,-371" href="package-summary.html" alt=""></map>
+<map name="umlmap437W1H1"><area shape="rect" coords="-514,-363,239,-341" href="#" alt=""><area shape="rect" coords="-526,-242,-249,-226" href="#addComponentNids(java.util.Set)" alt=""><area shape="rect" coords="-526,-226,-249,-210" href="#addRefsetTypeNids(java.util.Set)" alt=""><area shape="rect" coords="-526,-210,-275,-194" href="#addSpecProperties(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)" alt=""><area shape="rect" coords="-526,-194,-350,-178" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-526,-178,-267,-162" href="#getPrimordialVersion()" alt=""><area shape="rect" coords="-526,-162,-283,-146" href="#getReferencedComponentNid()" alt=""><area shape="rect" coords="-526,-146,-331,-130" href="#getRefexExtensionNid()" alt=""><area shape="rect" coords="-526,-130,-329,-114" href="#getRefexType()" alt=""><area shape="rect" coords="-526,-114,-310,-98" href="#getTkRefsetType()" alt=""><area shape="rect" coords="-526,-98,-398,-82" href="#makeAnalog()" alt=""><area shape="rect" coords="-526,-82,-64,-66" href="#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="-526,-66,-255,-50" href="#readyToWriteRefsetRevision()" alt=""><area shape="rect" coords="-526,-50,-296,-34" href="#readyToWriteRevision()" alt=""><area shape="rect" coords="-526,-34,-238,-18" href="#refexFieldsEqual(org.ihtsdo.otf.tcc.api.refex.RefexVersionBI)" alt=""><area shape="rect" coords="-526,-18,-258,-3" href="#setReferencedComponentNid(int)" alt=""><area shape="rect" coords="-526,-3,-306,12" href="#setRefexExtensionNid(int)" alt=""><area shape="rect" coords="-526,12,-397,28" href="#toString()" alt=""><area shape="rect" coords="-526,28,-368,44" href="#toUserString()" alt=""><area shape="rect" coords="-534,-389,-325,-371" href="package-summary.html" alt=""><area shape="rect" coords="318,7,436,30" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" alt=""><area shape="rect" coords="317,-25,397,-2" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" alt=""><area shape="rect" coords="308,-84,503,-66" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="318,127,446,150" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" alt=""><area shape="rect" coords="317,94,376,117" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" alt=""><area shape="rect" coords="308,68,516,86" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="398,252,757,275" href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" alt=""><area shape="rect" coords="317,214,404,237" href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexType.html" alt=""><area shape="rect" coords="308,188,481,206" href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/package-summary.html" alt=""><area shape="rect" coords="318,344,414,367" href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html" alt=""><area shape="rect" coords="308,318,520,336" href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/package-summary.html" alt=""><area shape="rect" coords="325,431,924,454" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" alt=""><area shape="rect" coords="308,405,517,423" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/package-summary.html" alt=""></map>
+<map name="umlmap437W2H1"><area shape="rect" coords="-226,68,-18,86" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="-136,252,222,275" href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" alt=""><area shape="rect" coords="-226,188,-53,206" href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/package-summary.html" alt=""><area shape="rect" coords="-226,318,-14,336" href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/package-summary.html" alt=""><area shape="rect" coords="-209,431,389,454" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" alt=""><area shape="rect" coords="-226,405,-17,423" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="RefexRevisionW0H0.png" WIDTH="536" HEIGHT="508" USEMAP="#umlmap437W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="RefexRevisionW1H0.png" WIDTH="535" HEIGHT="508" USEMAP="#umlmap437W1H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="RefexRevisionW2H0.png" WIDTH="535" HEIGHT="508" USEMAP="#umlmap437W2H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="RefexRevisionW0H1.png" WIDTH="536" HEIGHT="508" USEMAP="#umlmap437W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="RefexRevisionW1H1.png" WIDTH="535" HEIGHT="508" USEMAP="#umlmap437W1H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="RefexRevisionW2H1.png" WIDTH="535" HEIGHT="508" USEMAP="#umlmap437W2H1" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.component.Revision">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.ihtsdo.otf.tcc.model.cc.component.<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#fileDateFormat">fileDateFormat</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#logger">logger</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#primordialComponent">primordialComponent</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#stamp">stamp</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#RefexRevision()">RefexRevision</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#RefexRevision(int, C)">RefexRevision</a></strong>(int&nbsp;statusAtPositionNid,
+             <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&nbsp;primordialComponent)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#RefexRevision(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int, C)">RefexRevision</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&nbsp;status,
+             long&nbsp;time,
+             int&nbsp;authorNid,
+             int&nbsp;moduleNid,
+             int&nbsp;pathNid,
+             <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&nbsp;primordialComponent)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#RefexRevision(org.ihtsdo.otf.tcc.dto.component.TtkRevision, C)">RefexRevision</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component">TtkRevision</a>&nbsp;eVersion,
+             <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&nbsp;member)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#RefexRevision(com.sleepycat.bind.tuple.TupleInput, C)">RefexRevision</a></strong>(com.sleepycat.bind.tuple.TupleInput&nbsp;input,
+             <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&nbsp;primordialComponent)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#addComponentNids(java.util.Set)">addComponentNids</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;allNids)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#addRefsetTypeNids(java.util.Set)">addRefsetTypeNids</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;allNids)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#addSpecProperties(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)">addSpecProperties</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RefexCAB</a>&nbsp;rcs)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#getPrimordialVersion()">getPrimordialVersion</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#getReferencedComponentNid()">getReferencedComponentNid</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#getRefexExtensionNid()">getRefexExtensionNid</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexType.html" title="enum in org.ihtsdo.otf.tcc.api.refex">RefexType</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#getRefexType()">getRefexType</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract <a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexType.html" title="enum in org.ihtsdo.otf.tcc.api.refex">RefexType</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#getTkRefsetType()">getTkRefsetType</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#makeAnalog()">makeAnalog</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RefexCAB</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
+             <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+             <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)</code>
+<div class="block">Makes blueprint of a version of a component as specified by the given
+ <code>viewCoordinate</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#readyToWriteRefsetRevision()">readyToWriteRefsetRevision</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#readyToWriteRevision()">readyToWriteRevision</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#refexFieldsEqual(org.ihtsdo.otf.tcc.api.refex.RefexVersionBI)">refexFieldsEqual</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexVersionBI</a>&nbsp;another)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#setReferencedComponentNid(int)">setReferencedComponentNid</a></strong>(int&nbsp;componentNid)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#setRefexExtensionNid(int)">setRefexExtensionNid</a></strong>(int&nbsp;collectionNid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#toString()">toString</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#toUserString()">toUserString</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.component.Revision">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.ihtsdo.otf.tcc.model.cc.component.<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#addAnnotation(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)">addAnnotation</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#addLongId(java.lang.Long, int, org.ihtsdo.otf.tcc.api.coordinate.Status, org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, long)">addLongId</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#assertionString()">assertionString</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAdditionalIds()">getAdditionalIds</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAllIds()">getAllIds</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAllNidsForVersion()">getAllNidsForVersion</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAllStamps()">getAllStamps</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAnnotations()">getAnnotations</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.lang.Class)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int, java.lang.Class)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAuthorNid()">getAuthorNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getChronicle()">getChronicle</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getConceptNid()">getConceptNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getEnclosingConcept()">getEnclosingConcept</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getModuleNid()">getModuleNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getNid()">getNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getPathNid()">getPathNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getPosition()">getPosition</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getPositions()">getPositions</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getPrimordialUuid()">getPrimordialUuid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getRefexes()">getRefexes</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getRefexMembers(int)">getRefexMembers</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getRefexMembersActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getRefexMembersActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getRefexMembersActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">getRefexMembersActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getRefexMembersInactive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getRefexMembersInactive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getStamp()">getStamp</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getStatus()">getStatus</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getStatusAtPositionNid()">getStatusAtPositionNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getTime()">getTime</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getUUIDs()">getUUIDs</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getVariableVersionNids()">getVariableVersionNids</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getVersioned()">getVersioned</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#hasCurrentAnnotationMember(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">hasCurrentAnnotationMember</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#hasCurrentRefexMember(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">hasCurrentRefexMember</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#hashCode()">hashCode</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#isActive()">isActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#isBaselineGeneration()">isBaselineGeneration</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#isUncommitted()">isUncommitted</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#makeAdjudicationAnalogs(org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">makeAdjudicationAnalogs</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">makeAnalog</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#modified()">modified</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#readyToWrite()">readyToWrite</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#setAuthorNid(int)">setAuthorNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#setModuleNid(int)">setModuleNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#setNid(int)">setNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#setPathNid(int)">setPathNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#setStatus(org.ihtsdo.otf.tcc.api.coordinate.Status)">setStatus</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#setStatusAtPosition(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">setStatusAtPosition</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#setTime(long)">setTime</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#stampIsInRange(int, int)">stampIsInRange</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#toUserString(org.ihtsdo.otf.tcc.api.store.TerminologySnapshotDI)">toUserString</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#validate(org.ihtsdo.otf.tcc.model.cc.component.Revision)">validate</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#versionsEqual(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.lang.Boolean)">versionsEqual</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#writeFieldsToBdb(com.sleepycat.bind.tuple.TupleOutput)">writeFieldsToBdb</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#writeRevisionBdb(com.sleepycat.bind.tuple.TupleOutput)">writeRevisionBdb</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.chronicle.ComponentVersionBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.chronicle.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentVersionBI</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getAllNidsForVersion()">getAllNidsForVersion</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getAuthorNid()">getAuthorNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getChronicle()">getChronicle</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getModuleNid()">getModuleNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getPosition()">getPosition</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getStamp()">getStamp</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getStatus()">getStatus</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#isActive()">isActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#isBaselineGeneration()">isBaselineGeneration</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#isUncommitted()">isUncommitted</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#stampIsInRange(int, int)">stampIsInRange</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#toUserString(org.ihtsdo.otf.tcc.api.store.TerminologySnapshotDI)">toUserString</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#versionsEqual(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.lang.Boolean)">versionsEqual</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.coordinate.VersionPointBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.coordinate.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/VersionPointBI.html" title="interface in org.ihtsdo.otf.tcc.api.coordinate">VersionPointBI</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/VersionPointBI.html#getPathNid()">getPathNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/VersionPointBI.html#getTime()">getTime</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.chronicle.ComponentChronicleBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.chronicle.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getAllStamps()">getAllStamps</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getEnclosingConcept()">getEnclosingConcept</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getPositions()">getPositions</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getVersion</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getVersions()">getVersions</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getVersions</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#isUncommitted()">isUncommitted</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#makeAdjudicationAnalogs(org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">makeAdjudicationAnalogs</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.chronicle.ComponentBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.chronicle.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentBI</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#addAnnotation(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)">addAnnotation</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAdditionalIds()">getAdditionalIds</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAllIds()">getAllIds</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAnnotations()">getAnnotations</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.lang.Class)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int, java.lang.Class)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getConceptNid()">getConceptNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getNid()">getNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getPrimordialUuid()">getPrimordialUuid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getRefexes()">getRefexes</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getRefexMembers(int)">getRefexMembers</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getRefexMembersActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getRefexMembersActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getRefexMembersActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">getRefexMembersActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getRefexMembersInactive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getRefexMembersInactive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getUUIDs()">getUUIDs</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#hasCurrentAnnotationMember(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">hasCurrentAnnotationMember</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#hasCurrentRefexMember(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">hasCurrentRefexMember</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.AnalogGeneratorBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogGeneratorBI.html" title="interface in org.ihtsdo.otf.tcc.api">AnalogGeneratorBI</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogGeneratorBI.html#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">makeAnalog</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.AnalogBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api">AnalogBI</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#addLongId(java.lang.Long, int, org.ihtsdo.otf.tcc.api.coordinate.Status, org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, long)">addLongId</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setAuthorNid(int)">setAuthorNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setModuleNid(int)">setModuleNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setNid(int)">setNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setPathNid(int)">setPathNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setStatus(org.ihtsdo.otf.tcc.api.coordinate.Status)">setStatus</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setTime(long)">setTime</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="RefexRevision()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RefexRevision</h4>
+<pre>public&nbsp;RefexRevision()</pre>
+</li>
+</ul>
+<a name="RefexRevision(int,org.ihtsdo.otf.tcc.model.cc.refex.RefexMember)">
+<!--   -->
+</a><a name="RefexRevision(int, C)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RefexRevision</h4>
+<pre>public&nbsp;RefexRevision(int&nbsp;statusAtPositionNid,
+             <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&nbsp;primordialComponent)</pre>
+</li>
+</ul>
+<a name="RefexRevision(org.ihtsdo.otf.tcc.dto.component.TtkRevision,org.ihtsdo.otf.tcc.model.cc.refex.RefexMember)">
+<!--   -->
+</a><a name="RefexRevision(org.ihtsdo.otf.tcc.dto.component.TtkRevision, C)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RefexRevision</h4>
+<pre>public&nbsp;RefexRevision(<a href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/TtkRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component">TtkRevision</a>&nbsp;eVersion,
+             <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&nbsp;member)
+              throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="RefexRevision(com.sleepycat.bind.tuple.TupleInput,org.ihtsdo.otf.tcc.model.cc.refex.RefexMember)">
+<!--   -->
+</a><a name="RefexRevision(com.sleepycat.bind.tuple.TupleInput, C)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RefexRevision</h4>
+<pre>public&nbsp;RefexRevision(com.sleepycat.bind.tuple.TupleInput&nbsp;input,
+             <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&nbsp;primordialComponent)</pre>
+</li>
+</ul>
+<a name="RefexRevision(org.ihtsdo.otf.tcc.api.coordinate.Status,long,int,int,int,org.ihtsdo.otf.tcc.model.cc.refex.RefexMember)">
+<!--   -->
+</a><a name="RefexRevision(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int, C)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>RefexRevision</h4>
+<pre>public&nbsp;RefexRevision(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&nbsp;status,
+             long&nbsp;time,
+             int&nbsp;authorNid,
+             int&nbsp;moduleNid,
+             int&nbsp;pathNid,
+             <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&nbsp;primordialComponent)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="addComponentNids(java.util.Set)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addComponentNids</h4>
+<pre>protected&nbsp;void&nbsp;addComponentNids(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;allNids)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#addComponentNids(java.util.Set)">addComponentNids</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexRevision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="addRefsetTypeNids(java.util.Set)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addRefsetTypeNids</h4>
+<pre>protected abstract&nbsp;void&nbsp;addRefsetTypeNids(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;allNids)</pre>
+</li>
+</ul>
+<a name="addSpecProperties(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addSpecProperties</h4>
+<pre>protected abstract&nbsp;void&nbsp;addSpecProperties(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RefexCAB</a>&nbsp;rcs)</pre>
+</li>
+</ul>
+<a name="getRefexType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRefexType</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexType.html" title="enum in org.ihtsdo.otf.tcc.api.refex">RefexType</a>&nbsp;getRefexType()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html#getRefexType()">getRefexType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexChronicleBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexRevision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#equals(java.lang.Object)">equals</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexRevision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="refexFieldsEqual(org.ihtsdo.otf.tcc.api.refex.RefexVersionBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refexFieldsEqual</h4>
+<pre>public&nbsp;boolean&nbsp;refexFieldsEqual(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexVersionBI</a>&nbsp;another)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html#refexFieldsEqual(org.ihtsdo.otf.tcc.api.refex.RefexVersionBI)">RefexVersionBI</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html#refexFieldsEqual(org.ihtsdo.otf.tcc.api.refex.RefexVersionBI)">refexFieldsEqual</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexVersionBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexRevision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="makeAnalog()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeAnalog</h4>
+<pre>public abstract&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>&nbsp;makeAnalog()</pre>
+</li>
+</ul>
+<a name="readyToWriteRefsetRevision()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readyToWriteRefsetRevision</h4>
+<pre>public abstract&nbsp;boolean&nbsp;readyToWriteRefsetRevision()</pre>
+</li>
+</ul>
+<a name="readyToWriteRevision()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readyToWriteRevision</h4>
+<pre>public final&nbsp;boolean&nbsp;readyToWriteRevision()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#readyToWriteRevision()">readyToWriteRevision</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexRevision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#toString()">toString</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexRevision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="toUserString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toUserString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toUserString()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#toUserString()">toUserString</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentBI</a></code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#toUserString()">toUserString</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexRevision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getRefexExtensionNid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRefexExtensionNid</h4>
+<pre>public&nbsp;int&nbsp;getRefexExtensionNid()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html#getRefexExtensionNid()">getRefexExtensionNid</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexChronicleBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexRevision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getPrimordialVersion()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPrimordialVersion</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&nbsp;getPrimordialVersion()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getPrimordialVersion()">getPrimordialVersion</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexVersionBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexRevision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getReferencedComponentNid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getReferencedComponentNid</h4>
+<pre>public&nbsp;int&nbsp;getReferencedComponentNid()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html#getReferencedComponentNid()">getReferencedComponentNid</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexChronicleBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexRevision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeBlueprint</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RefexCAB</a>&nbsp;makeBlueprint(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
+                     <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+                     <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)
+                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a>,
+                              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">ComponentVersionBI</a></code></strong></div>
+<div class="block">Makes blueprint of a version of a component as specified by the given
+ <code>viewCoordinate</code>. The blueprint is a clone of the component
+ and is the preferred method for editing or creating a new version of a
+ component.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentVersionBI</a></code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexVersionBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexRevision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>vc</code> - the view coordinate specifying which version of the
+ description to make a blueprint of</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the refex blueprint, which can be constructed to create a <code>RefexChronicleBI</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are
+ invalid</dd>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version of the
+ description was returned for the specified view coordinate</dd><dt><span class="strong">See Also:</span></dt><dd><code>org.ihtsdo.tk.api.blueprint.CreateOrAmendBlueprint</code></dd></dl>
+</li>
+</ul>
+<a name="getTkRefsetType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTkRefsetType</h4>
+<pre>protected abstract&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexType.html" title="enum in org.ihtsdo.otf.tcc.api.refex">RefexType</a>&nbsp;getTkRefsetType()</pre>
+</li>
+</ul>
+<a name="setRefexExtensionNid(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setRefexExtensionNid</h4>
+<pre>public&nbsp;void&nbsp;setRefexExtensionNid(int&nbsp;collectionNid)
+                          throws <a href="http://docs.oracle.com/javase/7/docs/api/java/beans/PropertyVetoException.html?is-external=true" title="class or interface in java.beans">PropertyVetoException</a>,
+                                 <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexAnalogBI.html#setRefexExtensionNid(int)">setRefexExtensionNid</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexAnalogBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexRevision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/beans/PropertyVetoException.html?is-external=true" title="class or interface in java.beans">PropertyVetoException</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="setReferencedComponentNid(int)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setReferencedComponentNid</h4>
+<pre>public&nbsp;void&nbsp;setReferencedComponentNid(int&nbsp;componentNid)
+                               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/beans/PropertyVetoException.html?is-external=true" title="class or interface in java.beans">PropertyVetoException</a>,
+                                      <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexAnalogBI.html#setReferencedComponentNid(int)">setReferencedComponentNid</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexAnalogBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a> extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexRevision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">V</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" title="type parameter in RefexRevision">C</a>&gt;&gt;</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/beans/PropertyVetoException.html?is-external=true" title="class or interface in java.beans">PropertyVetoException</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/RefexRevision.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMemberFactory.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html" target="_top">Frames</a></li>
+<li><a href="RefexRevision.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.component.Revision">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

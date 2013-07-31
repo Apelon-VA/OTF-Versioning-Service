@@ -1,0 +1,450 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>ChangeSetWriterHandler (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ChangeSetWriterHandler (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ChangeSetWriterHandler.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/model/cs/ChangeSetWriter.html" title="class in org.ihtsdo.otf.tcc.model.cs"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/model/cs/ComputeEConceptForChangeSetI.html" title="interface in org.ihtsdo.otf.tcc.model.cs"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/model/cs/ChangeSetWriterHandler.html" target="_top">Frames</a></li>
+<li><a href="ChangeSetWriterHandler.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.model.cs</div>
+<h2 title="Class ChangeSetWriterHandler" class="title">Class ChangeSetWriterHandler</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.model.cs.ChangeSetWriterHandler</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ProcessUnfetchedConceptDataBI</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/ContinuationTrackerBI.html" title="interface in org.ihtsdo.otf.tcc.api">ContinuationTrackerBI</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">ChangeSetWriterHandler</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ProcessUnfetchedConceptDataBI</a></pre>
+<dl><DT>&nbsp;</DT><DD><map name="umlmap555W0H0"><area shape="rect" coords="552,145,786,171" href="#" alt=""><area shape="rect" coords="301,172,532,188" href="#changeSetWriters" alt=""><area shape="rect" coords="301,189,1017,205" href="#ChangeSetWriterHandler(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI, long, org.ihtsdo.otf.tcc.api.nid.NidSetBI, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGenerationPolicy, org.ihtsdo.otf.tcc.api.cs.ChangeSetWriterThreading)" alt=""><area shape="rect" coords="301,206,619,222" href="#addWriter(java.lang.String, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGeneratorBI)" alt=""><area shape="rect" coords="301,222,469,238" href="#allowCancel()" alt=""><area shape="rect" coords="301,238,479,254" href="#continueWork()" alt=""><area shape="rect" coords="301,254,490,270" href="#getNidSet()" alt=""><area shape="rect" coords="301,270,428,286" href="#getTitle()" alt=""><area shape="rect" coords="301,286,698,302" href="#processUnfetchedConceptData(int, org.ihtsdo.otf.tcc.api.concept.ConceptFetcherBI)" alt=""><area shape="rect" coords="301,302,492,318" href="#removeWriter(java.lang.String)" alt=""><area shape="rect" coords="301,318,390,334" href="#run()" alt=""><area shape="rect" coords="293,119,467,136" href="package-summary.html" alt=""><area shape="rect" coords="172,145,226,168" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="163,119,230,136" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="155,236,220,260" href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html" alt=""><area shape="rect" coords="132,206,191,224" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="23,328,231,351" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html" alt=""><area shape="rect" coords="12,302,140,320" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/package-summary.html" alt=""><area shape="rect" coords="54,389,227,407" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/package-summary.html" alt=""></map>
+<map name="umlmap555W1H0"><area shape="rect" coords="95,145,329,171" href="#" alt=""><area shape="rect" coords="-156,172,75,188" href="#changeSetWriters" alt=""><area shape="rect" coords="-156,189,560,205" href="#ChangeSetWriterHandler(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI, long, org.ihtsdo.otf.tcc.api.nid.NidSetBI, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGenerationPolicy, org.ihtsdo.otf.tcc.api.cs.ChangeSetWriterThreading)" alt=""><area shape="rect" coords="-156,206,162,222" href="#addWriter(java.lang.String, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGeneratorBI)" alt=""><area shape="rect" coords="-156,222,12,238" href="#allowCancel()" alt=""><area shape="rect" coords="-156,238,22,254" href="#continueWork()" alt=""><area shape="rect" coords="-156,254,33,270" href="#getNidSet()" alt=""><area shape="rect" coords="-156,270,-29,286" href="#getTitle()" alt=""><area shape="rect" coords="-156,286,241,302" href="#processUnfetchedConceptData(int, org.ihtsdo.otf.tcc.api.concept.ConceptFetcherBI)" alt=""><area shape="rect" coords="-156,302,35,318" href="#removeWriter(java.lang.String)" alt=""><area shape="rect" coords="-156,318,-67,334" href="#run()" alt=""><area shape="rect" coords="-164,119,10,136" href="package-summary.html" alt=""><area shape="rect" coords="184,37,241,61" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="175,11,242,29" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="305,33,381,56" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html" alt=""><area shape="rect" coords="280,2,347,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="502,33,754,56" href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html" alt=""><area shape="rect" coords="436,2,627,20" href="../../../../../../org/ihtsdo/otf/tcc/api/concept/package-summary.html" alt=""></map>
+<map name="umlmap555W2H0"><area shape="rect" coords="-361,145,-127,171" href="#" alt=""><area shape="rect" coords="-613,172,-382,188" href="#changeSetWriters" alt=""><area shape="rect" coords="-613,189,103,205" href="#ChangeSetWriterHandler(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI, long, org.ihtsdo.otf.tcc.api.nid.NidSetBI, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGenerationPolicy, org.ihtsdo.otf.tcc.api.cs.ChangeSetWriterThreading)" alt=""><area shape="rect" coords="-613,206,-295,222" href="#addWriter(java.lang.String, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGeneratorBI)" alt=""><area shape="rect" coords="-613,222,-445,238" href="#allowCancel()" alt=""><area shape="rect" coords="-613,238,-435,254" href="#continueWork()" alt=""><area shape="rect" coords="-613,254,-424,270" href="#getNidSet()" alt=""><area shape="rect" coords="-613,270,-486,286" href="#getTitle()" alt=""><area shape="rect" coords="-613,286,-216,302" href="#processUnfetchedConceptData(int, org.ihtsdo.otf.tcc.api.concept.ConceptFetcherBI)" alt=""><area shape="rect" coords="-613,302,-422,318" href="#removeWriter(java.lang.String)" alt=""><area shape="rect" coords="-613,318,-524,334" href="#run()" alt=""><area shape="rect" coords="-621,119,-447,136" href="package-summary.html" alt=""><area shape="rect" coords="45,33,297,56" href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html" alt=""><area shape="rect" coords="-20,2,170,20" href="../../../../../../org/ihtsdo/otf/tcc/api/concept/package-summary.html" alt=""><area shape="rect" coords="230,149,406,172" href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/ChangeSetGeneratorBI.html" alt=""><area shape="rect" coords="182,119,388,136" href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/package-summary.html" alt=""><area shape="rect" coords="222,246,361,269" href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptFetcherBI.html" alt=""><area shape="rect" coords="182,215,373,233" href="../../../../../../org/ihtsdo/otf/tcc/api/concept/package-summary.html" alt=""></map>
+<map name="umlmap555W0H1"><area shape="rect" coords="6,377,129,394" href="http://www.yworks.com/" alt=""><area shape="rect" coords="552,-258,786,-231" href="#" alt=""><area shape="rect" coords="301,-230,532,-214" href="#changeSetWriters" alt=""><area shape="rect" coords="301,-213,1017,-197" href="#ChangeSetWriterHandler(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI, long, org.ihtsdo.otf.tcc.api.nid.NidSetBI, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGenerationPolicy, org.ihtsdo.otf.tcc.api.cs.ChangeSetWriterThreading)" alt=""><area shape="rect" coords="301,-196,619,-180" href="#addWriter(java.lang.String, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGeneratorBI)" alt=""><area shape="rect" coords="301,-180,469,-164" href="#allowCancel()" alt=""><area shape="rect" coords="301,-164,479,-148" href="#continueWork()" alt=""><area shape="rect" coords="301,-148,490,-132" href="#getNidSet()" alt=""><area shape="rect" coords="301,-132,428,-116" href="#getTitle()" alt=""><area shape="rect" coords="301,-116,698,-100" href="#processUnfetchedConceptData(int, org.ihtsdo.otf.tcc.api.concept.ConceptFetcherBI)" alt=""><area shape="rect" coords="301,-100,492,-84" href="#removeWriter(java.lang.String)" alt=""><area shape="rect" coords="301,-84,390,-68" href="#run()" alt=""><area shape="rect" coords="293,-284,467,-266" href="package-summary.html" alt=""><area shape="rect" coords="64,12,181,36" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html" alt=""><area shape="rect" coords="54,-13,227,4" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/package-summary.html" alt=""><area shape="rect" coords="13,100,231,123" href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/ChangeSetGenerationPolicy.html" alt=""><area shape="rect" coords="2,74,208,92" href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/package-summary.html" alt=""><area shape="rect" coords="17,187,231,210" href="../../../../../../org/ihtsdo/otf/tcc/api/cs/ChangeSetWriterThreading.html" alt=""><area shape="rect" coords="6,161,161,179" href="../../../../../../org/ihtsdo/otf/tcc/api/cs/package-summary.html" alt=""><area shape="rect" coords="93,321,164,344" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSetBI.html" alt=""><area shape="rect" coords="101,279,209,302" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" alt=""><area shape="rect" coords="69,248,228,266" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/package-summary.html" alt=""></map>
+<map name="umlmap555W1H1"><area shape="rect" coords="95,-258,329,-231" href="#" alt=""><area shape="rect" coords="-156,-230,75,-214" href="#changeSetWriters" alt=""><area shape="rect" coords="-156,-213,560,-197" href="#ChangeSetWriterHandler(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI, long, org.ihtsdo.otf.tcc.api.nid.NidSetBI, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGenerationPolicy, org.ihtsdo.otf.tcc.api.cs.ChangeSetWriterThreading)" alt=""><area shape="rect" coords="-156,-196,162,-180" href="#addWriter(java.lang.String, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGeneratorBI)" alt=""><area shape="rect" coords="-156,-180,12,-164" href="#allowCancel()" alt=""><area shape="rect" coords="-156,-164,22,-148" href="#continueWork()" alt=""><area shape="rect" coords="-156,-148,33,-132" href="#getNidSet()" alt=""><area shape="rect" coords="-156,-132,-29,-116" href="#getTitle()" alt=""><area shape="rect" coords="-156,-116,241,-100" href="#processUnfetchedConceptData(int, org.ihtsdo.otf.tcc.api.concept.ConceptFetcherBI)" alt=""><area shape="rect" coords="-156,-100,35,-84" href="#removeWriter(java.lang.String)" alt=""><area shape="rect" coords="-156,-84,-67,-68" href="#run()" alt=""><area shape="rect" coords="-164,-284,10,-266" href="package-summary.html" alt=""></map>
+<map name="umlmap555W2H1"><area shape="rect" coords="-361,-258,-127,-231" href="#" alt=""><area shape="rect" coords="-613,-230,-382,-214" href="#changeSetWriters" alt=""><area shape="rect" coords="-613,-213,103,-197" href="#ChangeSetWriterHandler(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI, long, org.ihtsdo.otf.tcc.api.nid.NidSetBI, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGenerationPolicy, org.ihtsdo.otf.tcc.api.cs.ChangeSetWriterThreading)" alt=""><area shape="rect" coords="-613,-196,-295,-180" href="#addWriter(java.lang.String, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGeneratorBI)" alt=""><area shape="rect" coords="-613,-180,-445,-164" href="#allowCancel()" alt=""><area shape="rect" coords="-613,-164,-435,-148" href="#continueWork()" alt=""><area shape="rect" coords="-613,-148,-424,-132" href="#getNidSet()" alt=""><area shape="rect" coords="-613,-132,-486,-116" href="#getTitle()" alt=""><area shape="rect" coords="-613,-116,-216,-100" href="#processUnfetchedConceptData(int, org.ihtsdo.otf.tcc.api.concept.ConceptFetcherBI)" alt=""><area shape="rect" coords="-613,-100,-422,-84" href="#removeWriter(java.lang.String)" alt=""><area shape="rect" coords="-613,-84,-524,-68" href="#run()" alt=""><area shape="rect" coords="-621,-284,-447,-266" href="package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="ChangeSetWriterHandlerW0H0.png" WIDTH="457" HEIGHT="403" USEMAP="#umlmap555W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ChangeSetWriterHandlerW1H0.png" WIDTH="457" HEIGHT="403" USEMAP="#umlmap555W1H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ChangeSetWriterHandlerW2H0.png" WIDTH="457" HEIGHT="403" USEMAP="#umlmap555W2H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="ChangeSetWriterHandlerW0H1.png" WIDTH="457" HEIGHT="403" USEMAP="#umlmap555W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ChangeSetWriterHandlerW1H1.png" WIDTH="457" HEIGHT="403" USEMAP="#umlmap555W1H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ChangeSetWriterHandlerW2H1.png" WIDTH="457" HEIGHT="403" USEMAP="#umlmap555W2H1" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html?is-external=true" title="class or interface in java.util.concurrent.atomic">AtomicInteger</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/model/cs/ChangeSetWriterHandler.html#changeSetWriters">changeSetWriters</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/model/cs/ChangeSetWriterHandler.html#ChangeSetWriterHandler(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI, long, org.ihtsdo.otf.tcc.api.nid.NidSetBI, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGenerationPolicy, org.ihtsdo.otf.tcc.api.cs.ChangeSetWriterThreading)">ChangeSetWriterHandler</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;cNidsToWrite,
+                      long&nbsp;commitTime,
+                      <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NidSetBI</a>&nbsp;sapNidsFromCommit,
+                      <a href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/ChangeSetGenerationPolicy.html" title="enum in org.ihtsdo.otf.tcc.api.changeset">ChangeSetGenerationPolicy</a>&nbsp;changeSetPolicy,
+                      <a href="../../../../../../org/ihtsdo/otf/tcc/api/cs/ChangeSetWriterThreading.html" title="enum in org.ihtsdo.otf.tcc.api.cs">ChangeSetWriterThreading</a>&nbsp;changeSetWriterThreading)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/model/cs/ChangeSetWriterHandler.html#addWriter(java.lang.String, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGeneratorBI)">addWriter</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+         <a href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/ChangeSetGeneratorBI.html" title="interface in org.ihtsdo.otf.tcc.api.changeset">ChangeSetGeneratorBI</a>&nbsp;writer)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/model/cs/ChangeSetWriterHandler.html#allowCancel()">allowCancel</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/model/cs/ChangeSetWriterHandler.html#continueWork()">continueWork</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/model/cs/ChangeSetWriterHandler.html#getNidSet()">getNidSet</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/model/cs/ChangeSetWriterHandler.html#getTitle()">getTitle</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/model/cs/ChangeSetWriterHandler.html#processUnfetchedConceptData(int, org.ihtsdo.otf.tcc.api.concept.ConceptFetcherBI)">processUnfetchedConceptData</a></strong>(int&nbsp;cNid,
+                           <a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptFetcherBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptFetcherBI</a>&nbsp;fcfc)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/model/cs/ChangeSetWriterHandler.html#removeWriter(java.lang.String)">removeWriter</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/model/cs/ChangeSetWriterHandler.html#run()">run</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="changeSetWriters">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>changeSetWriters</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html?is-external=true" title="class or interface in java.util.concurrent.atomic">AtomicInteger</a> changeSetWriters</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="ChangeSetWriterHandler(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI, long, org.ihtsdo.otf.tcc.api.nid.NidSetBI, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGenerationPolicy, org.ihtsdo.otf.tcc.api.cs.ChangeSetWriterThreading)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ChangeSetWriterHandler</h4>
+<pre>public&nbsp;ChangeSetWriterHandler(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;cNidsToWrite,
+                      long&nbsp;commitTime,
+                      <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NidSetBI</a>&nbsp;sapNidsFromCommit,
+                      <a href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/ChangeSetGenerationPolicy.html" title="enum in org.ihtsdo.otf.tcc.api.changeset">ChangeSetGenerationPolicy</a>&nbsp;changeSetPolicy,
+                      <a href="../../../../../../org/ihtsdo/otf/tcc/api/cs/ChangeSetWriterThreading.html" title="enum in org.ihtsdo.otf.tcc.api.cs">ChangeSetWriterThreading</a>&nbsp;changeSetWriterThreading)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="run()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>run</h4>
+<pre>public&nbsp;void&nbsp;run()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html?is-external=true#run()" title="class or interface in java.lang">run</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="addWriter(java.lang.String, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGeneratorBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWriter</h4>
+<pre>public static&nbsp;void&nbsp;addWriter(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+             <a href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/ChangeSetGeneratorBI.html" title="interface in org.ihtsdo.otf.tcc.api.changeset">ChangeSetGeneratorBI</a>&nbsp;writer)</pre>
+</li>
+</ul>
+<a name="removeWriter(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeWriter</h4>
+<pre>public static&nbsp;void&nbsp;removeWriter(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+</li>
+</ul>
+<a name="processUnfetchedConceptData(int, org.ihtsdo.otf.tcc.api.concept.ConceptFetcherBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>processUnfetchedConceptData</h4>
+<pre>public&nbsp;void&nbsp;processUnfetchedConceptData(int&nbsp;cNid,
+                               <a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptFetcherBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptFetcherBI</a>&nbsp;fcfc)
+                                 throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html#processUnfetchedConceptData(int, org.ihtsdo.otf.tcc.api.concept.ConceptFetcherBI)">ProcessUnfetchedConceptDataBI</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html#processUnfetchedConceptData(int, org.ihtsdo.otf.tcc.api.concept.ConceptFetcherBI)">processUnfetchedConceptData</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ProcessUnfetchedConceptDataBI</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="continueWork()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>continueWork</h4>
+<pre>public&nbsp;boolean&nbsp;continueWork()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/ContinuationTrackerBI.html#continueWork()">continueWork</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/ContinuationTrackerBI.html" title="interface in org.ihtsdo.otf.tcc.api">ContinuationTrackerBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getNidSet()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNidSet</h4>
+<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;getNidSet()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html#getNidSet()">getNidSet</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ProcessUnfetchedConceptDataBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>NativeIdSetBI</code> of concept nids to iterate over. A null value is allowed
+ and will cause all concepts to be iterated over.</dd></dl>
+</li>
+</ul>
+<a name="allowCancel()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>allowCancel</h4>
+<pre>public&nbsp;boolean&nbsp;allowCancel()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html#allowCancel()">allowCancel</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ProcessUnfetchedConceptDataBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>True if user is allowed to cancel this process.</dd></dl>
+</li>
+</ul>
+<a name="getTitle()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getTitle</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getTitle()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html#getTitle()">getTitle</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ProcessUnfetchedConceptDataBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>Title for this processor, for display in global progress list.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ChangeSetWriterHandler.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/model/cs/ChangeSetWriter.html" title="class in org.ihtsdo.otf.tcc.model.cs"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/model/cs/ComputeEConceptForChangeSetI.html" title="interface in org.ihtsdo.otf.tcc.model.cs"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/model/cs/ChangeSetWriterHandler.html" target="_top">Frames</a></li>
+<li><a href="ChangeSetWriterHandler.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

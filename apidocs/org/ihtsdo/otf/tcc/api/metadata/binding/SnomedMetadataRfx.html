@@ -1,0 +1,736 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>SnomedMetadataRfx (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SnomedMetadataRfx (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/SnomedMetadataRfx.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html" title="class in org.ihtsdo.otf.tcc.api.metadata.binding"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedRelSpec.html" title="class in org.ihtsdo.otf.tcc.api.metadata.binding"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html" target="_top">Frames</a></li>
+<li><a href="SnomedMetadataRfx.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.api.metadata.binding</div>
+<h2 title="Class SnomedMetadataRfx" class="title">Class SnomedMetadataRfx</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.api.metadata.binding.SnomedMetadataRfx</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">SnomedMetadataRfx</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>marc</dd>
+<DT>&nbsp;</DT><DD><map name="umlmap174W0H0"><area shape="rect" coords="318,136,517,162" href="#" alt=""><area shape="rect" coords="247,163,410,179" href="#SnomedMetadataRfx()" alt=""><area shape="rect" coords="247,180,519,196" href="#getDES_FULL_SPECIFIED_NAME_NID()" alt=""><area shape="rect" coords="247,196,444,212" href="#getDES_SYNONYM_NID()" alt=""><area shape="rect" coords="247,212,562,228" href="#getDES_SYNONYM_PREFERRED_NAME_NID()" alt=""><area shape="rect" coords="247,228,511,244" href="#getDESC_ACCEPTABLE()" alt=""><area shape="rect" coords="247,244,470,260" href="#getDESC_ACCEPTABLE_NID()" alt=""><area shape="rect" coords="247,260,506,276" href="#getDESC_PREFERRED()" alt=""><area shape="rect" coords="247,276,465,292" href="#getDESC_PREFERRED_NID()" alt=""><area shape="rect" coords="247,292,471,308" href="#getGB_DIALECT_REFEX_NID()" alt=""><area shape="rect" coords="247,308,468,324" href="#getREFERS_TO_REFEX_NID()" alt=""><area shape="rect" coords="247,324,518,340" href="#getREFEX_NON_HUMAN()" alt=""><area shape="rect" coords="247,340,506,356" href="#getREFEX_SYNONYMY()" alt=""><area shape="rect" coords="247,356,465,372" href="#getREFEX_VMP()" alt=""><area shape="rect" coords="247,372,464,388" href="#getREFEX_VTM()" alt=""><area shape="rect" coords="247,388,574,404" href="#getREL_CH_DEFINING_CHARACTERISTIC_NID()" alt=""><area shape="rect" coords="247,404,559,420" href="#getREL_CH_INFERRED_RELATIONSHIP_NID()" alt=""><area shape="rect" coords="247,420,579,436" href="#getREL_CH_QUALIFIER_CHARACTERISTIC_NID()" alt=""><area shape="rect" coords="247,436,545,452" href="#getREL_CH_STATED_RELATIONSHIP_NID()" alt=""><area shape="rect" coords="247,452,499,468" href="#getREL_HISTORY_HISTORIC_NID()" alt=""><area shape="rect" coords="247,468,508,484" href="#getREL_HISTORY_MOVED_TO_NID()" alt=""><area shape="rect" coords="247,484,542,499" href="#getREL_MANDATORY_REFINABILITY_NID()" alt=""><area shape="rect" coords="247,499,478,515" href="#getREL_NOT_REFINABLE_NID()" alt=""><area shape="rect" coords="247,515,526,531" href="#getREL_OPTIONAL_REFINABILITY_NID()" alt=""><area shape="rect" coords="247,531,422,547" href="#getReleaseFormat()" alt=""><area shape="rect" coords="247,547,523,563" href="#getSTATUS_AMBIGUOUS()" alt=""><area shape="rect" coords="247,563,514,579" href="#getSTATUS_DUPLICATE()" alt=""><area shape="rect" coords="247,579,526,595" href="#getSTATUS_ERRONEOUS()" alt=""><area shape="rect" coords="247,595,493,611" href="#getSTATUS_LIMITED()" alt=""><area shape="rect" coords="247,611,514,627" href="#getSTATUS_OUTDATED()" alt=""><area shape="rect" coords="247,627,465,643" href="#getSYNONYMY_REFEX_NID()" alt=""><area shape="rect" coords="247,643,470,659" href="#getUS_DIALECT_REFEX_NID()" alt=""><area shape="rect" coords="239,110,488,127" href="package-summary.html" alt=""><area shape="rect" coords="389,28,446,52" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="380,2,447,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="12,136,118,159" href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" alt=""><area shape="rect" coords="2,110,173,127" href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/package-summary.html" alt=""></map>
+<map name="umlmap174W0H1"><area shape="rect" coords="6,326,129,343" href="http://www.yworks.com/" alt=""><area shape="rect" coords="318,-217,517,-190" href="#" alt=""><area shape="rect" coords="247,-189,410,-173" href="#SnomedMetadataRfx()" alt=""><area shape="rect" coords="247,-172,519,-156" href="#getDES_FULL_SPECIFIED_NAME_NID()" alt=""><area shape="rect" coords="247,-156,444,-140" href="#getDES_SYNONYM_NID()" alt=""><area shape="rect" coords="247,-140,562,-124" href="#getDES_SYNONYM_PREFERRED_NAME_NID()" alt=""><area shape="rect" coords="247,-124,511,-108" href="#getDESC_ACCEPTABLE()" alt=""><area shape="rect" coords="247,-108,470,-92" href="#getDESC_ACCEPTABLE_NID()" alt=""><area shape="rect" coords="247,-92,506,-76" href="#getDESC_PREFERRED()" alt=""><area shape="rect" coords="247,-76,465,-60" href="#getDESC_PREFERRED_NID()" alt=""><area shape="rect" coords="247,-60,471,-44" href="#getGB_DIALECT_REFEX_NID()" alt=""><area shape="rect" coords="247,-44,468,-28" href="#getREFERS_TO_REFEX_NID()" alt=""><area shape="rect" coords="247,-28,518,-12" href="#getREFEX_NON_HUMAN()" alt=""><area shape="rect" coords="247,-12,506,3" href="#getREFEX_SYNONYMY()" alt=""><area shape="rect" coords="247,3,465,19" href="#getREFEX_VMP()" alt=""><area shape="rect" coords="247,19,464,35" href="#getREFEX_VTM()" alt=""><area shape="rect" coords="247,35,574,51" href="#getREL_CH_DEFINING_CHARACTERISTIC_NID()" alt=""><area shape="rect" coords="247,51,559,67" href="#getREL_CH_INFERRED_RELATIONSHIP_NID()" alt=""><area shape="rect" coords="247,67,579,83" href="#getREL_CH_QUALIFIER_CHARACTERISTIC_NID()" alt=""><area shape="rect" coords="247,83,545,99" href="#getREL_CH_STATED_RELATIONSHIP_NID()" alt=""><area shape="rect" coords="247,99,499,115" href="#getREL_HISTORY_HISTORIC_NID()" alt=""><area shape="rect" coords="247,115,508,131" href="#getREL_HISTORY_MOVED_TO_NID()" alt=""><area shape="rect" coords="247,131,542,146" href="#getREL_MANDATORY_REFINABILITY_NID()" alt=""><area shape="rect" coords="247,146,478,162" href="#getREL_NOT_REFINABLE_NID()" alt=""><area shape="rect" coords="247,162,526,178" href="#getREL_OPTIONAL_REFINABILITY_NID()" alt=""><area shape="rect" coords="247,178,422,194" href="#getReleaseFormat()" alt=""><area shape="rect" coords="247,194,523,210" href="#getSTATUS_AMBIGUOUS()" alt=""><area shape="rect" coords="247,210,514,226" href="#getSTATUS_DUPLICATE()" alt=""><area shape="rect" coords="247,226,526,242" href="#getSTATUS_ERRONEOUS()" alt=""><area shape="rect" coords="247,242,493,258" href="#getSTATUS_LIMITED()" alt=""><area shape="rect" coords="247,258,514,274" href="#getSTATUS_OUTDATED()" alt=""><area shape="rect" coords="247,274,465,290" href="#getSYNONYMY_REFEX_NID()" alt=""><area shape="rect" coords="247,290,470,306" href="#getUS_DIALECT_REFEX_NID()" alt=""><area shape="rect" coords="239,-243,488,-225" href="package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="SnomedMetadataRfxW0H0.png" WIDTH="599" HEIGHT="353" USEMAP="#umlmap174W0H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="SnomedMetadataRfxW0H1.png" WIDTH="599" HEIGHT="352" USEMAP="#umlmap174W0H1" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#SnomedMetadataRfx()">SnomedMetadataRfx</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getDES_FULL_SPECIFIED_NAME_NID()">getDES_FULL_SPECIFIED_NAME_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getDES_SYNONYM_NID()">getDES_SYNONYM_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getDES_SYNONYM_PREFERRED_NAME_NID()">getDES_SYNONYM_PREFERRED_NAME_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getDESC_ACCEPTABLE_NID()">getDESC_ACCEPTABLE_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getDESC_ACCEPTABLE()">getDESC_ACCEPTABLE</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getDESC_PREFERRED_NID()">getDESC_PREFERRED_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getDESC_PREFERRED()">getDESC_PREFERRED</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getGB_DIALECT_REFEX_NID()">getGB_DIALECT_REFEX_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getREFERS_TO_REFEX_NID()">getREFERS_TO_REFEX_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getREFEX_NON_HUMAN()">getREFEX_NON_HUMAN</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getREFEX_SYNONYMY()">getREFEX_SYNONYMY</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getREFEX_VMP()">getREFEX_VMP</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getREFEX_VTM()">getREFEX_VTM</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getREL_CH_DEFINING_CHARACTERISTIC_NID()">getREL_CH_DEFINING_CHARACTERISTIC_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getREL_CH_INFERRED_RELATIONSHIP_NID()">getREL_CH_INFERRED_RELATIONSHIP_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getREL_CH_QUALIFIER_CHARACTERISTIC_NID()">getREL_CH_QUALIFIER_CHARACTERISTIC_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getREL_CH_STATED_RELATIONSHIP_NID()">getREL_CH_STATED_RELATIONSHIP_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getREL_HISTORY_HISTORIC_NID()">getREL_HISTORY_HISTORIC_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getREL_HISTORY_MOVED_TO_NID()">getREL_HISTORY_MOVED_TO_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getREL_MANDATORY_REFINABILITY_NID()">getREL_MANDATORY_REFINABILITY_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getREL_NOT_REFINABLE_NID()">getREL_NOT_REFINABLE_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getREL_OPTIONAL_REFINABILITY_NID()">getREL_OPTIONAL_REFINABILITY_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getReleaseFormat()">getReleaseFormat</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getSTATUS_AMBIGUOUS()">getSTATUS_AMBIGUOUS</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getSTATUS_DUPLICATE()">getSTATUS_DUPLICATE</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getSTATUS_ERRONEOUS()">getSTATUS_ERRONEOUS</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getSTATUS_LIMITED()">getSTATUS_LIMITED</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getSTATUS_OUTDATED()">getSTATUS_OUTDATED</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getSYNONYMY_REFEX_NID()">getSYNONYMY_REFEX_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html#getUS_DIALECT_REFEX_NID()">getUS_DIALECT_REFEX_NID</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="SnomedMetadataRfx()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SnomedMetadataRfx</h4>
+<pre>public&nbsp;SnomedMetadataRfx()</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getDES_FULL_SPECIFIED_NAME_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDES_FULL_SPECIFIED_NAME_NID</h4>
+<pre>public static&nbsp;int&nbsp;getDES_FULL_SPECIFIED_NAME_NID()
+                                          throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getDES_SYNONYM_PREFERRED_NAME_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDES_SYNONYM_PREFERRED_NAME_NID</h4>
+<pre>public static&nbsp;int&nbsp;getDES_SYNONYM_PREFERRED_NAME_NID()
+                                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getDES_SYNONYM_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDES_SYNONYM_NID</h4>
+<pre>public static&nbsp;int&nbsp;getDES_SYNONYM_NID()
+                              throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getDESC_ACCEPTABLE_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDESC_ACCEPTABLE_NID</h4>
+<pre>public static&nbsp;int&nbsp;getDESC_ACCEPTABLE_NID()
+                                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getDESC_PREFERRED_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDESC_PREFERRED_NID</h4>
+<pre>public static&nbsp;int&nbsp;getDESC_PREFERRED_NID()
+                                 throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getREL_CH_DEFINING_CHARACTERISTIC_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getREL_CH_DEFINING_CHARACTERISTIC_NID</h4>
+<pre>public static&nbsp;int&nbsp;getREL_CH_DEFINING_CHARACTERISTIC_NID()
+                                                 throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getREL_CH_INFERRED_RELATIONSHIP_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getREL_CH_INFERRED_RELATIONSHIP_NID</h4>
+<pre>public static&nbsp;int&nbsp;getREL_CH_INFERRED_RELATIONSHIP_NID()
+                                               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getREL_CH_QUALIFIER_CHARACTERISTIC_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getREL_CH_QUALIFIER_CHARACTERISTIC_NID</h4>
+<pre>public static&nbsp;int&nbsp;getREL_CH_QUALIFIER_CHARACTERISTIC_NID()
+                                                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getREL_CH_STATED_RELATIONSHIP_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getREL_CH_STATED_RELATIONSHIP_NID</h4>
+<pre>public static&nbsp;int&nbsp;getREL_CH_STATED_RELATIONSHIP_NID()
+                                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getREL_HISTORY_HISTORIC_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getREL_HISTORY_HISTORIC_NID</h4>
+<pre>public static&nbsp;int&nbsp;getREL_HISTORY_HISTORIC_NID()
+                                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getREL_HISTORY_MOVED_TO_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getREL_HISTORY_MOVED_TO_NID</h4>
+<pre>public static&nbsp;int&nbsp;getREL_HISTORY_MOVED_TO_NID()
+                                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getREL_MANDATORY_REFINABILITY_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getREL_MANDATORY_REFINABILITY_NID</h4>
+<pre>public static&nbsp;int&nbsp;getREL_MANDATORY_REFINABILITY_NID()
+                                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getREL_NOT_REFINABLE_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getREL_NOT_REFINABLE_NID</h4>
+<pre>public static&nbsp;int&nbsp;getREL_NOT_REFINABLE_NID()
+                                    throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getREL_OPTIONAL_REFINABILITY_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getREL_OPTIONAL_REFINABILITY_NID</h4>
+<pre>public static&nbsp;int&nbsp;getREL_OPTIONAL_REFINABILITY_NID()
+                                            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getReleaseFormat()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getReleaseFormat</h4>
+<pre>public static&nbsp;int&nbsp;getReleaseFormat()
+                            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getUS_DIALECT_REFEX_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUS_DIALECT_REFEX_NID</h4>
+<pre>public static&nbsp;int&nbsp;getUS_DIALECT_REFEX_NID()
+                                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getGB_DIALECT_REFEX_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getGB_DIALECT_REFEX_NID</h4>
+<pre>public static&nbsp;int&nbsp;getGB_DIALECT_REFEX_NID()
+                                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getSYNONYMY_REFEX_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSYNONYMY_REFEX_NID</h4>
+<pre>public static&nbsp;int&nbsp;getSYNONYMY_REFEX_NID()
+                                 throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getREFERS_TO_REFEX_NID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getREFERS_TO_REFEX_NID</h4>
+<pre>public static&nbsp;int&nbsp;getREFERS_TO_REFEX_NID()
+                                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getSTATUS_DUPLICATE()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSTATUS_DUPLICATE</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;getSTATUS_DUPLICATE()
+                                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getDESC_PREFERRED()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDESC_PREFERRED</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;getDESC_PREFERRED()
+                                     throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getDESC_ACCEPTABLE()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDESC_ACCEPTABLE</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;getDESC_ACCEPTABLE()
+                                      throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getSTATUS_AMBIGUOUS()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSTATUS_AMBIGUOUS</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;getSTATUS_AMBIGUOUS()
+                                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getSTATUS_ERRONEOUS()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSTATUS_ERRONEOUS</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;getSTATUS_ERRONEOUS()
+                                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getSTATUS_OUTDATED()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSTATUS_OUTDATED</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;getSTATUS_OUTDATED()
+                                      throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getSTATUS_LIMITED()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSTATUS_LIMITED</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;getSTATUS_LIMITED()
+                                     throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getREFEX_NON_HUMAN()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getREFEX_NON_HUMAN</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;getREFEX_NON_HUMAN()
+                                      throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getREFEX_VTM()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getREFEX_VTM</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;getREFEX_VTM()
+                                throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getREFEX_VMP()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getREFEX_VMP</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;getREFEX_VMP()
+                                throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getREFEX_SYNONYMY()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getREFEX_SYNONYMY</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;getREFEX_SYNONYMY()
+                                     throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/SnomedMetadataRfx.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html" title="class in org.ihtsdo.otf.tcc.api.metadata.binding"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedRelSpec.html" title="class in org.ihtsdo.otf.tcc.api.metadata.binding"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html" target="_top">Frames</a></li>
+<li><a href="SnomedMetadataRfx.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

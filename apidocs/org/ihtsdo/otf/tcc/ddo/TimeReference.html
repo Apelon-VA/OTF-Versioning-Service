@@ -1,0 +1,490 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>TimeReference (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="TimeReference (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/TimeReference.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/ihtsdo/otf/tcc/ddo/TaxonomyReferenceWithConcept.WhichConcept.html" title="enum in org.ihtsdo.otf.tcc.ddo"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/ihtsdo/otf/tcc/ddo/TimeReference.html" target="_top">Frames</a></li>
+<li><a href="TimeReference.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.ddo</div>
+<h2 title="Class TimeReference" class="title">Class TimeReference</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.ddo.TimeReference</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Externalizable.html?is-external=true" title="class or interface in java.io">Externalizable</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">TimeReference</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Externalizable.html?is-external=true" title="class or interface in java.io">Externalizable</a></pre>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>kec</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../serialized-form.html#org.ihtsdo.otf.tcc.ddo.TimeReference">Serialized Form</a></dd><DT>&nbsp;</DT><DD><map name="umlmap239W0H0"><area shape="rect" coords="6,403,129,420" href="http://www.yworks.com/" alt=""><area shape="rect" coords="483,145,630,171" href="#" alt=""><area shape="rect" coords="288,172,449,188" href="#serialVersionUID" alt=""><area shape="rect" coords="288,189,414,205" href="#TimeReference()" alt=""><area shape="rect" coords="288,205,440,221" href="#TimeReference(long)" alt=""><area shape="rect" coords="288,222,811,238" href="#formatterProperty()" alt=""><area shape="rect" coords="288,238,408,254" href="#getTime()" alt=""><area shape="rect" coords="288,254,445,270" href="#getTimeText()" alt=""><area shape="rect" coords="288,270,508,286" href="#readExternal(java.io.ObjectInput)" alt=""><area shape="rect" coords="288,286,650,302" href="#setFormatter(java.lang.ThreadLocal)" alt=""><area shape="rect" coords="288,302,433,318" href="#setTime(long)" alt=""><area shape="rect" coords="288,318,537,334" href="#timeProperty()" alt=""><area shape="rect" coords="288,334,417,350" href="#toString()" alt=""><area shape="rect" coords="288,350,522,366" href="#writeExternal(java.io.ObjectOutput)" alt=""><area shape="rect" coords="280,119,423,136" href="package-summary.html" alt=""><area shape="rect" coords="528,37,585,61" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="519,11,586,29" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="88,145,220,168" href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html" alt=""><area shape="rect" coords="78,119,145,136" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""></map>
+<map name="umlmap239W1H0"><area shape="rect" coords="-44,145,102,171" href="#" alt=""><area shape="rect" coords="-240,172,-79,188" href="#serialVersionUID" alt=""><area shape="rect" coords="-240,189,-114,205" href="#TimeReference()" alt=""><area shape="rect" coords="-240,205,-88,221" href="#TimeReference(long)" alt=""><area shape="rect" coords="-240,222,283,238" href="#formatterProperty()" alt=""><area shape="rect" coords="-240,238,-120,254" href="#getTime()" alt=""><area shape="rect" coords="-240,254,-83,270" href="#getTimeText()" alt=""><area shape="rect" coords="-240,270,-20,286" href="#readExternal(java.io.ObjectInput)" alt=""><area shape="rect" coords="-240,286,122,302" href="#setFormatter(java.lang.ThreadLocal)" alt=""><area shape="rect" coords="-240,302,-95,318" href="#setTime(long)" alt=""><area shape="rect" coords="-240,318,9,334" href="#timeProperty()" alt=""><area shape="rect" coords="-240,334,-111,350" href="#toString()" alt=""><area shape="rect" coords="-240,350,-6,366" href="#writeExternal(java.io.ObjectOutput)" alt=""><area shape="rect" coords="-248,119,-105,136" href="package-summary.html" alt=""><area shape="rect" coords="0,37,57,61" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="-8,11,58,29" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="130,33,241,56" href="http://docs.oracle.com/javase/7/docs/api/java/io/Externalizable.html" alt=""><area shape="rect" coords="96,2,148,20" href="http://docs.oracle.com/javase/7/docs/api/java/io/package-summary.html" alt=""><area shape="rect" coords="388,192,493,215" href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectOutput.html" alt=""><area shape="rect" coords="385,149,478,172" href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectInput.html" alt=""><area shape="rect" coords="356,119,408,136" href="http://docs.oracle.com/javase/7/docs/api/java/io/package-summary.html" alt=""><area shape="rect" coords="365,284,419,307" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="356,258,423,276" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="TimeReferenceW0H0.png" WIDTH="528" HEIGHT="429" USEMAP="#umlmap239W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="TimeReferenceW1H0.png" WIDTH="528" HEIGHT="429" USEMAP="#umlmap239W1H0" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== PROPERTY SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="property_summary">
+<!--   -->
+</a>
+<h3>Property Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Property Summary table, listing properties, and an explanation">
+<caption><span>Properties</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Type</th>
+<th class="colLast" scope="col">Property and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javafx.beans.property.SimpleObjectProperty&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/ddo/TimeReference.html#formatterProperty">formatter</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javafx.beans.property.SimpleLongProperty</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/ddo/TimeReference.html#timeProperty">time</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/ddo/TimeReference.html#serialVersionUID">serialVersionUID</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/ddo/TimeReference.html#TimeReference()">TimeReference</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/ddo/TimeReference.html#TimeReference(long)">TimeReference</a></strong>(long&nbsp;time)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javafx.beans.property.SimpleObjectProperty&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/ddo/TimeReference.html#formatterProperty()">formatterProperty</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/ddo/TimeReference.html#getTime()">getTime</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/ddo/TimeReference.html#getTimeText()">getTimeText</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/ddo/TimeReference.html#readExternal(java.io.ObjectInput)">readExternal</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectInput.html?is-external=true" title="class or interface in java.io">ObjectInput</a>&nbsp;in)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/ddo/TimeReference.html#setFormatter(java.lang.ThreadLocal)">setFormatter</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt;&nbsp;formatter)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/ddo/TimeReference.html#setTime(long)">setTime</a></strong>(long&nbsp;time)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javafx.beans.property.SimpleLongProperty</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/ddo/TimeReference.html#timeProperty()">timeProperty</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/ddo/TimeReference.html#toString()">toString</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/ddo/TimeReference.html#writeExternal(java.io.ObjectOutput)">writeExternal</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectOutput.html?is-external=true" title="class or interface in java.io">ObjectOutput</a>&nbsp;out)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ PROPERTY DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="property_detail">
+<!--   -->
+</a>
+<h3>Property Detail</h3>
+<a name="formatterProperty">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>formatter</h4>
+</li>
+</ul>
+<a name="timeProperty">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>time</h4>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="serialVersionUID">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>serialVersionUID</h4>
+<pre>public static final&nbsp;long serialVersionUID</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#org.ihtsdo.otf.tcc.ddo.TimeReference.serialVersionUID">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="TimeReference()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TimeReference</h4>
+<pre>public&nbsp;TimeReference()</pre>
+</li>
+</ul>
+<a name="TimeReference(long)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>TimeReference</h4>
+<pre>public&nbsp;TimeReference(long&nbsp;time)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="formatterProperty()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>formatterProperty</h4>
+<pre>public&nbsp;javafx.beans.property.SimpleObjectProperty&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt;&gt;&nbsp;formatterProperty()</pre>
+</li>
+</ul>
+<a name="readExternal(java.io.ObjectInput)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readExternal</h4>
+<pre>public&nbsp;void&nbsp;readExternal(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectInput.html?is-external=true" title="class or interface in java.io">ObjectInput</a>&nbsp;in)
+                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Externalizable.html?is-external=true#readExternal(java.io.ObjectInput)" title="class or interface in java.io">readExternal</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Externalizable.html?is-external=true" title="class or interface in java.io">Externalizable</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang">ClassNotFoundException</a></code></dd></dl>
+</li>
+</ul>
+<a name="timeProperty()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>timeProperty</h4>
+<pre>public&nbsp;javafx.beans.property.SimpleLongProperty&nbsp;timeProperty()</pre>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="writeExternal(java.io.ObjectOutput)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeExternal</h4>
+<pre>public&nbsp;void&nbsp;writeExternal(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/ObjectOutput.html?is-external=true" title="class or interface in java.io">ObjectOutput</a>&nbsp;out)
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Externalizable.html?is-external=true#writeExternal(java.io.ObjectOutput)" title="class or interface in java.io">writeExternal</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Externalizable.html?is-external=true" title="class or interface in java.io">Externalizable</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getTime()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTime</h4>
+<pre>public&nbsp;long&nbsp;getTime()</pre>
+</li>
+</ul>
+<a name="getTimeText()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTimeText</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getTimeText()</pre>
+</li>
+</ul>
+<a name="setFormatter(java.lang.ThreadLocal)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setFormatter</h4>
+<pre>public&nbsp;void&nbsp;setFormatter(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html?is-external=true" title="class or interface in java.lang">ThreadLocal</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text">SimpleDateFormat</a>&gt;&nbsp;formatter)</pre>
+</li>
+</ul>
+<a name="setTime(long)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setTime</h4>
+<pre>public&nbsp;void&nbsp;setTime(long&nbsp;time)</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/TimeReference.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/ihtsdo/otf/tcc/ddo/TaxonomyReferenceWithConcept.WhichConcept.html" title="enum in org.ihtsdo.otf.tcc.ddo"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/ihtsdo/otf/tcc/ddo/TimeReference.html" target="_top">Frames</a></li>
+<li><a href="TimeReference.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

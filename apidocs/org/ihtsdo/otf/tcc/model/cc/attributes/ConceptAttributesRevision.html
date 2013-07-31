@@ -1,0 +1,719 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>ConceptAttributesRevision (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ConceptAttributesRevision (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ConceptAttributesRevision.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesFacade.html" title="interface in org.ihtsdo.otf.tcc.model.cc.attributes"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" target="_top">Frames</a></li>
+<li><a href="ConceptAttributesRevision.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.component.Revision">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.model.cc.attributes</div>
+<h2 title="Class ConceptAttributesRevision" class="title">Class ConceptAttributesRevision</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">org.ihtsdo.otf.tcc.model.cc.component.Revision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&gt;</li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributesRevision</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api">AnalogBI</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogGeneratorBI.html" title="interface in org.ihtsdo.otf.tcc.api">AnalogGeneratorBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>&gt;, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentBI</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeVersionBI</a>&gt;, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentVersionBI</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeAnalogBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>&gt;, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeChronicleBI</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeVersionBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>&gt;, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/VersionPointBI.html" title="interface in org.ihtsdo.otf.tcc.api.coordinate">VersionPointBI</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">ConceptAttributesRevision</span>
+extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&gt;
+implements <a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeAnalogBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>&gt;</pre>
+<dl><DT>&nbsp;</DT><DD><map name="umlmap497W0H0"><area shape="rect" coords="203,145,458,171" href="#" alt=""><area shape="rect" coords="10,172,391,188" href="#ConceptAttributesRevision(com.sleepycat.bind.tuple.TupleInput, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="10,188,343,204" href="#ConceptAttributesRevision(int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="10,204,633,220" href="#ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeAnalogBI, org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="10,220,487,236" href="#ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeAnalogBI, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="10,236,467,252" href="#ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="10,252,512,268" href="#ConceptAttributesRevision(org.ihtsdo.otf.tcc.dto.component.attribute.TtkConceptAttributesRevision, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="10,269,287,285" href="#addComponentNids(java.util.Set)" alt=""><area shape="rect" coords="10,285,186,301" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="10,301,296,317" href="#getPrimordialVersion()" alt=""><area shape="rect" coords="10,317,268,333" href="#getVariableVersionNids()" alt=""><area shape="rect" coords="10,333,381,349" href="#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="10,349,371,365" href="#getVersions()" alt=""><area shape="rect" coords="10,365,469,381" href="#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="10,381,161,397" href="#isDefined()" alt=""><area shape="rect" coords="10,397,434,413" href="#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="10,413,533,429" href="#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="10,429,240,445" href="#readyToWriteRevision()" alt=""><area shape="rect" coords="10,445,197,461" href="#setDefined(boolean)" alt=""><area shape="rect" coords="10,461,139,477" href="#toString()" alt=""><area shape="rect" coords="10,477,168,493" href="#toUserString()" alt=""><area shape="rect" coords="10,493,261,508" href="#writeFieldsToBdb(com.sleepycat.bind.tuple.TupleOutput)" alt=""><area shape="rect" coords="2,119,240,136" href="package-summary.html" alt=""><area shape="rect" coords="108,37,553,61" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" alt=""><area shape="rect" coords="93,11,339,29" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/package-summary.html" alt=""></map>
+<map name="umlmap497W1H0"><area shape="rect" coords="-276,145,-21,171" href="#" alt=""><area shape="rect" coords="-470,172,-89,188" href="#ConceptAttributesRevision(com.sleepycat.bind.tuple.TupleInput, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="-470,188,-137,204" href="#ConceptAttributesRevision(int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="-470,204,153,220" href="#ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeAnalogBI, org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="-470,220,7,236" href="#ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeAnalogBI, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="-470,236,-13,252" href="#ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="-470,252,32,268" href="#ConceptAttributesRevision(org.ihtsdo.otf.tcc.dto.component.attribute.TtkConceptAttributesRevision, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="-470,269,-193,285" href="#addComponentNids(java.util.Set)" alt=""><area shape="rect" coords="-470,285,-294,301" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-470,301,-184,317" href="#getPrimordialVersion()" alt=""><area shape="rect" coords="-470,317,-212,333" href="#getVariableVersionNids()" alt=""><area shape="rect" coords="-470,333,-99,349" href="#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-470,349,-109,365" href="#getVersions()" alt=""><area shape="rect" coords="-470,365,-11,381" href="#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-470,381,-319,397" href="#isDefined()" alt=""><area shape="rect" coords="-470,397,-46,413" href="#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="-470,413,53,429" href="#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="-470,429,-240,445" href="#readyToWriteRevision()" alt=""><area shape="rect" coords="-470,445,-283,461" href="#setDefined(boolean)" alt=""><area shape="rect" coords="-470,461,-341,477" href="#toString()" alt=""><area shape="rect" coords="-470,477,-312,493" href="#toUserString()" alt=""><area shape="rect" coords="-470,493,-219,508" href="#writeFieldsToBdb(com.sleepycat.bind.tuple.TupleOutput)" alt=""><area shape="rect" coords="-478,119,-240,136" href="package-summary.html" alt=""><area shape="rect" coords="-371,37,73,61" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" alt=""><area shape="rect" coords="-386,11,-140,29" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/package-summary.html" alt=""><area shape="rect" coords="220,33,634,56" href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeAnalogBI.html" alt=""><area shape="rect" coords="118,2,304,20" href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/package-summary.html" alt=""><area shape="rect" coords="238,298,292,321" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="238,265,295,288" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="229,239,296,257" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="252,432,315,456" href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html" alt=""><area shape="rect" coords="263,390,374,413" href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html" alt=""><area shape="rect" coords="229,359,288,377" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="229,586,424,604" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""></map>
+<map name="umlmap497W2H0"><area shape="rect" coords="-259,33,154,56" href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeAnalogBI.html" alt=""><area shape="rect" coords="-361,2,-175,20" href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/package-summary.html" alt=""></map>
+<map name="umlmap497W0H1"><area shape="rect" coords="6,563,129,580" href="http://www.yworks.com/" alt=""><area shape="rect" coords="203,-445,458,-418" href="#" alt=""><area shape="rect" coords="10,-417,391,-401" href="#ConceptAttributesRevision(com.sleepycat.bind.tuple.TupleInput, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="10,-401,343,-385" href="#ConceptAttributesRevision(int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="10,-385,633,-369" href="#ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeAnalogBI, org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="10,-369,487,-353" href="#ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeAnalogBI, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="10,-353,467,-337" href="#ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="10,-337,512,-321" href="#ConceptAttributesRevision(org.ihtsdo.otf.tcc.dto.component.attribute.TtkConceptAttributesRevision, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="10,-320,287,-304" href="#addComponentNids(java.util.Set)" alt=""><area shape="rect" coords="10,-304,186,-288" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="10,-288,296,-272" href="#getPrimordialVersion()" alt=""><area shape="rect" coords="10,-272,268,-256" href="#getVariableVersionNids()" alt=""><area shape="rect" coords="10,-256,381,-240" href="#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="10,-240,371,-224" href="#getVersions()" alt=""><area shape="rect" coords="10,-224,469,-208" href="#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="10,-208,161,-192" href="#isDefined()" alt=""><area shape="rect" coords="10,-192,434,-176" href="#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="10,-176,533,-160" href="#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="10,-160,240,-144" href="#readyToWriteRevision()" alt=""><area shape="rect" coords="10,-144,197,-128" href="#setDefined(boolean)" alt=""><area shape="rect" coords="10,-128,139,-112" href="#toString()" alt=""><area shape="rect" coords="10,-112,168,-96" href="#toUserString()" alt=""><area shape="rect" coords="10,-96,261,-81" href="#writeFieldsToBdb(com.sleepycat.bind.tuple.TupleOutput)" alt=""><area shape="rect" coords="2,-471,240,-453" href="package-summary.html" alt=""></map>
+<map name="umlmap497W1H1"><area shape="rect" coords="-276,-445,-21,-418" href="#" alt=""><area shape="rect" coords="-470,-417,-89,-401" href="#ConceptAttributesRevision(com.sleepycat.bind.tuple.TupleInput, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="-470,-401,-137,-385" href="#ConceptAttributesRevision(int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="-470,-385,153,-369" href="#ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeAnalogBI, org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="-470,-369,7,-353" href="#ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeAnalogBI, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="-470,-353,-13,-337" href="#ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="-470,-337,32,-321" href="#ConceptAttributesRevision(org.ihtsdo.otf.tcc.dto.component.attribute.TtkConceptAttributesRevision, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)" alt=""><area shape="rect" coords="-470,-320,-193,-304" href="#addComponentNids(java.util.Set)" alt=""><area shape="rect" coords="-470,-304,-294,-288" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-470,-288,-184,-272" href="#getPrimordialVersion()" alt=""><area shape="rect" coords="-470,-272,-212,-256" href="#getVariableVersionNids()" alt=""><area shape="rect" coords="-470,-256,-99,-240" href="#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-470,-240,-109,-224" href="#getVersions()" alt=""><area shape="rect" coords="-470,-224,-11,-208" href="#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-470,-208,-319,-192" href="#isDefined()" alt=""><area shape="rect" coords="-470,-192,-46,-176" href="#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="-470,-176,53,-160" href="#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)" alt=""><area shape="rect" coords="-470,-160,-240,-144" href="#readyToWriteRevision()" alt=""><area shape="rect" coords="-470,-144,-283,-128" href="#setDefined(boolean)" alt=""><area shape="rect" coords="-470,-128,-341,-112" href="#toString()" alt=""><area shape="rect" coords="-470,-112,-312,-96" href="#toUserString()" alt=""><area shape="rect" coords="-470,-96,-219,-81" href="#writeFieldsToBdb(com.sleepycat.bind.tuple.TupleOutput)" alt=""><area shape="rect" coords="-478,-471,-240,-453" href="package-summary.html" alt=""><area shape="rect" coords="239,88,357,111" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" alt=""><area shape="rect" coords="239,55,328,78" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" alt=""><area shape="rect" coords="240,22,403,45" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html" alt=""><area shape="rect" coords="229,-3,424,14" href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="349,180,837,203" href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeAnalogBI.html" alt=""><area shape="rect" coords="229,149,415,167" href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/package-summary.html" alt=""><area shape="rect" coords="239,305,367,328" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" alt=""><area shape="rect" coords="238,272,297,295" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" alt=""><area shape="rect" coords="229,246,437,264" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="241,392,480,415" href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/attribute/TtkConceptAttributesRevision.html" alt=""><area shape="rect" coords="229,366,498,384" href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/attribute/package-summary.html" alt=""><area shape="rect" coords="240,512,452,535" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.Version.html" alt=""><area shape="rect" coords="239,479,390,502" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" alt=""><area shape="rect" coords="229,453,467,471" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/package-summary.html" alt=""></map>
+<map name="umlmap497W2H1"><area shape="rect" coords="-130,180,357,203" href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeAnalogBI.html" alt=""><area shape="rect" coords="-250,149,-64,167" href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/package-summary.html" alt=""><area shape="rect" coords="-238,392,0,415" href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/attribute/TtkConceptAttributesRevision.html" alt=""><area shape="rect" coords="-250,366,18,384" href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/attribute/package-summary.html" alt=""><area shape="rect" coords="-250,453,-12,471" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="ConceptAttributesRevisionW0H0.png" WIDTH="480" HEIGHT="590" USEMAP="#umlmap497W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ConceptAttributesRevisionW1H0.png" WIDTH="480" HEIGHT="590" USEMAP="#umlmap497W1H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ConceptAttributesRevisionW2H0.png" WIDTH="479" HEIGHT="590" USEMAP="#umlmap497W2H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="ConceptAttributesRevisionW0H1.png" WIDTH="480" HEIGHT="589" USEMAP="#umlmap497W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ConceptAttributesRevisionW1H1.png" WIDTH="480" HEIGHT="589" USEMAP="#umlmap497W1H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ConceptAttributesRevisionW2H1.png" WIDTH="479" HEIGHT="589" USEMAP="#umlmap497W2H1" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.component.Revision">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.ihtsdo.otf.tcc.model.cc.component.<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#fileDateFormat">fileDateFormat</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#logger">logger</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#primordialComponent">primordialComponent</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#stamp">stamp</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeAnalogBI, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)">ConceptAttributesRevision</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeAnalogBI</a>&nbsp;another,
+                         <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&nbsp;primoridalMember)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeAnalogBI, org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)">ConceptAttributesRevision</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeAnalogBI</a>&nbsp;another,
+                         <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&nbsp;status,
+                         long&nbsp;time,
+                         int&nbsp;authorNid,
+                         int&nbsp;moduleNid,
+                         int&nbsp;pathNid,
+                         <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&nbsp;primoridalMember)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#ConceptAttributesRevision(int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)">ConceptAttributesRevision</a></strong>(int&nbsp;statusAtPositionNid,
+                         <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&nbsp;primoridalMember)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)">ConceptAttributesRevision</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&nbsp;status,
+                         long&nbsp;time,
+                         int&nbsp;authorNid,
+                         int&nbsp;moduleNid,
+                         int&nbsp;pathNid,
+                         <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&nbsp;primoridalMember)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#ConceptAttributesRevision(org.ihtsdo.otf.tcc.dto.component.attribute.TtkConceptAttributesRevision, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)">ConceptAttributesRevision</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/attribute/TtkConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component.attribute">TtkConceptAttributesRevision</a>&nbsp;another,
+                         <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&nbsp;primoridalMember)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#ConceptAttributesRevision(com.sleepycat.bind.tuple.TupleInput, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)">ConceptAttributesRevision</a></strong>(com.sleepycat.bind.tuple.TupleInput&nbsp;input,
+                         <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&nbsp;primoridalMember)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#addComponentNids(java.util.Set)">addComponentNids</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;allNids)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#getPrimordialVersion()">getPrimordialVersion</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>org.apache.mahout.math.list.IntArrayList</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#getVariableVersionNids()">getVariableVersionNids</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes.Version</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getVersion</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;c)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes.Version</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#getVersions()">getVersions</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes.Version</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getVersions</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;c)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#isDefined()">isDefined</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">makeAnalog</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&nbsp;status,
+          long&nbsp;time,
+          int&nbsp;authorNid,
+          int&nbsp;moduleNid,
+          int&nbsp;pathNid)</code>
+<div class="block">1.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">ConceptAttributeAB</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
+             <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+             <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#readyToWriteRevision()">readyToWriteRevision</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#setDefined(boolean)">setDefined</a></strong>(boolean&nbsp;defined)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#toString()">toString</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#toUserString()">toUserString</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html#writeFieldsToBdb(com.sleepycat.bind.tuple.TupleOutput)">writeFieldsToBdb</a></strong>(com.sleepycat.bind.tuple.TupleOutput&nbsp;output)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.component.Revision">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.ihtsdo.otf.tcc.model.cc.component.<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#addAnnotation(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)">addAnnotation</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#addLongId(java.lang.Long, int, org.ihtsdo.otf.tcc.api.coordinate.Status, org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, long)">addLongId</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#assertionString()">assertionString</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAdditionalIds()">getAdditionalIds</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAllIds()">getAllIds</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAllNidsForVersion()">getAllNidsForVersion</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAllStamps()">getAllStamps</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAnnotations()">getAnnotations</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.lang.Class)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int, java.lang.Class)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getAuthorNid()">getAuthorNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getChronicle()">getChronicle</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getConceptNid()">getConceptNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getEnclosingConcept()">getEnclosingConcept</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getModuleNid()">getModuleNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getNid()">getNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getPathNid()">getPathNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getPosition()">getPosition</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getPositions()">getPositions</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getPrimordialUuid()">getPrimordialUuid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getRefexes()">getRefexes</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getRefexMembers(int)">getRefexMembers</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getRefexMembersActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getRefexMembersActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getRefexMembersActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">getRefexMembersActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getRefexMembersInactive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getRefexMembersInactive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getStamp()">getStamp</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getStatus()">getStatus</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getStatusAtPositionNid()">getStatusAtPositionNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getTime()">getTime</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getUUIDs()">getUUIDs</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getVersioned()">getVersioned</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#hasCurrentAnnotationMember(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">hasCurrentAnnotationMember</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#hasCurrentRefexMember(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">hasCurrentRefexMember</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#hashCode()">hashCode</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#isActive()">isActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#isBaselineGeneration()">isBaselineGeneration</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#isUncommitted()">isUncommitted</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#makeAdjudicationAnalogs(org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">makeAdjudicationAnalogs</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#modified()">modified</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#readyToWrite()">readyToWrite</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#setAuthorNid(int)">setAuthorNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#setModuleNid(int)">setModuleNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#setNid(int)">setNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#setPathNid(int)">setPathNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#setStatus(org.ihtsdo.otf.tcc.api.coordinate.Status)">setStatus</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#setStatusAtPosition(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">setStatusAtPosition</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#setTime(long)">setTime</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#stampIsInRange(int, int)">stampIsInRange</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#toUserString(org.ihtsdo.otf.tcc.api.store.TerminologySnapshotDI)">toUserString</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#validate(org.ihtsdo.otf.tcc.model.cc.component.Revision)">validate</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#versionsEqual(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.lang.Boolean)">versionsEqual</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#writeRevisionBdb(com.sleepycat.bind.tuple.TupleOutput)">writeRevisionBdb</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.AnalogBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api">AnalogBI</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#addLongId(java.lang.Long, int, org.ihtsdo.otf.tcc.api.coordinate.Status, org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, long)">addLongId</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setAuthorNid(int)">setAuthorNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setModuleNid(int)">setModuleNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setNid(int)">setNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setPathNid(int)">setPathNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setStatus(org.ihtsdo.otf.tcc.api.coordinate.Status)">setStatus</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setTime(long)">setTime</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.chronicle.ComponentVersionBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.chronicle.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentVersionBI</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getAllNidsForVersion()">getAllNidsForVersion</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getAuthorNid()">getAuthorNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getChronicle()">getChronicle</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getModuleNid()">getModuleNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getPosition()">getPosition</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getStamp()">getStamp</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getStatus()">getStatus</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#isActive()">isActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#isBaselineGeneration()">isBaselineGeneration</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#isUncommitted()">isUncommitted</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#stampIsInRange(int, int)">stampIsInRange</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#toUserString(org.ihtsdo.otf.tcc.api.store.TerminologySnapshotDI)">toUserString</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#versionsEqual(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.lang.Boolean)">versionsEqual</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.coordinate.VersionPointBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.coordinate.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/VersionPointBI.html" title="interface in org.ihtsdo.otf.tcc.api.coordinate">VersionPointBI</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/VersionPointBI.html#getPathNid()">getPathNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/VersionPointBI.html#getTime()">getTime</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.chronicle.ComponentChronicleBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.chronicle.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getAllStamps()">getAllStamps</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getEnclosingConcept()">getEnclosingConcept</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getPositions()">getPositions</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#isUncommitted()">isUncommitted</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#makeAdjudicationAnalogs(org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">makeAdjudicationAnalogs</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.chronicle.ComponentBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.chronicle.<a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentBI</a></h3>
+<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#addAnnotation(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)">addAnnotation</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAdditionalIds()">getAdditionalIds</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAllIds()">getAllIds</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAnnotations()">getAnnotations</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.lang.Class)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int, java.lang.Class)">getAnnotationsActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getConceptNid()">getConceptNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getNid()">getNid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getPrimordialUuid()">getPrimordialUuid</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getRefexes()">getRefexes</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getRefexMembers(int)">getRefexMembers</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getRefexMembersActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getRefexMembersActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getRefexMembersActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">getRefexMembersActive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getRefexMembersInactive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getRefexMembersInactive</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#getUUIDs()">getUUIDs</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#hasCurrentAnnotationMember(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">hasCurrentAnnotationMember</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#hasCurrentRefexMember(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">hasCurrentRefexMember</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeAnalogBI, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConceptAttributesRevision</h4>
+<pre>public&nbsp;ConceptAttributesRevision(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeAnalogBI</a>&nbsp;another,
+                         <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&nbsp;primoridalMember)</pre>
+</li>
+</ul>
+<a name="ConceptAttributesRevision(org.ihtsdo.otf.tcc.dto.component.attribute.TtkConceptAttributesRevision, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConceptAttributesRevision</h4>
+<pre>public&nbsp;ConceptAttributesRevision(<a href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/attribute/TtkConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.dto.component.attribute">TtkConceptAttributesRevision</a>&nbsp;another,
+                         <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&nbsp;primoridalMember)
+                          throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="ConceptAttributesRevision(int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConceptAttributesRevision</h4>
+<pre>public&nbsp;ConceptAttributesRevision(int&nbsp;statusAtPositionNid,
+                         <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&nbsp;primoridalMember)</pre>
+</li>
+</ul>
+<a name="ConceptAttributesRevision(com.sleepycat.bind.tuple.TupleInput, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConceptAttributesRevision</h4>
+<pre>public&nbsp;ConceptAttributesRevision(com.sleepycat.bind.tuple.TupleInput&nbsp;input,
+                         <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&nbsp;primoridalMember)</pre>
+</li>
+</ul>
+<a name="ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConceptAttributesRevision</h4>
+<pre>public&nbsp;ConceptAttributesRevision(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&nbsp;status,
+                         long&nbsp;time,
+                         int&nbsp;authorNid,
+                         int&nbsp;moduleNid,
+                         int&nbsp;pathNid,
+                         <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&nbsp;primoridalMember)</pre>
+</li>
+</ul>
+<a name="ConceptAttributesRevision(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeAnalogBI, org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int, org.ihtsdo.otf.tcc.model.cc.attributes.ConceptAttributes)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ConceptAttributesRevision</h4>
+<pre>public&nbsp;ConceptAttributesRevision(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeAnalogBI</a>&nbsp;another,
+                         <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&nbsp;status,
+                         long&nbsp;time,
+                         int&nbsp;authorNid,
+                         int&nbsp;moduleNid,
+                         int&nbsp;pathNid,
+                         <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&nbsp;primoridalMember)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="addComponentNids(java.util.Set)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addComponentNids</h4>
+<pre>protected&nbsp;void&nbsp;addComponentNids(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;allNids)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#addComponentNids(java.util.Set)">addComponentNids</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#equals(java.lang.Object)">equals</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeAnalog</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>&nbsp;makeAnalog(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&nbsp;status,
+                                   long&nbsp;time,
+                                   int&nbsp;authorNid,
+                                   int&nbsp;moduleNid,
+                                   int&nbsp;pathNid)</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">Revision</a></code></strong></div>
+<div class="block">1. Analog, an object, concept or situation which in some way
+    resembles a different situation
+ 2. Analogy, in language, a comparison between concepts</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogGeneratorBI.html#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">makeAnalog</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/AnalogGeneratorBI.html" title="interface in org.ihtsdo.otf.tcc.api">AnalogGeneratorBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>&gt;</code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">makeAnalog</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="readyToWriteRevision()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readyToWriteRevision</h4>
+<pre>public&nbsp;boolean&nbsp;readyToWriteRevision()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#readyToWriteRevision()">readyToWriteRevision</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#toString()">toString</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="toUserString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toUserString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toUserString()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html#toUserString()">toUserString</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentBI</a></code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#toUserString()">toUserString</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="writeFieldsToBdb(com.sleepycat.bind.tuple.TupleOutput)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeFieldsToBdb</h4>
+<pre>protected&nbsp;void&nbsp;writeFieldsToBdb(com.sleepycat.bind.tuple.TupleOutput&nbsp;output)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#writeFieldsToBdb(com.sleepycat.bind.tuple.TupleOutput)">writeFieldsToBdb</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getPrimordialVersion()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPrimordialVersion</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&nbsp;getPrimordialVersion()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getPrimordialVersion()">getPrimordialVersion</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeVersionBI</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getVariableVersionNids()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVariableVersionNids</h4>
+<pre>public&nbsp;org.apache.mahout.math.list.IntArrayList&nbsp;getVariableVersionNids()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html#getVariableVersionNids()">getVariableVersionNids</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/Revision.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">Revision</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>,<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVersion</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes.Version</a>&nbsp;getVersion(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;c)
+                                     throws <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getVersion</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeVersionBI</a>&gt;</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getVersions()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVersions</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes.Version</a>&gt;&nbsp;getVersions()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getVersions()">getVersions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeVersionBI</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVersions</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributes.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributes.Version</a>&gt;&nbsp;getVersions(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;c)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getVersions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeVersionBI</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="isDefined()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isDefined</h4>
+<pre>public&nbsp;boolean&nbsp;isDefined()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html#isDefined()">ConceptAttributeVersionBI</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html#isDefined()">isDefined</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeVersionBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="setDefined(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDefined</h4>
+<pre>public&nbsp;void&nbsp;setDefined(boolean&nbsp;defined)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeAnalogBI.html#setDefined(boolean)">setDefined</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeAnalogBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>makeBlueprint</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">ConceptAttributeAB</a>&nbsp;makeBlueprint(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
+                               <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
+                               <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)
+                                 throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                        <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a>,
+                                        <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">ConceptAttributeVersionBI</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentVersionBI</a></code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeVersionBI</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.attributes">ConceptAttributesRevision</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>vc</code> - the view coordinate specifying which version is active or inactive</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the blueprint of the component</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - signals that an I/O exception has occurred</dd>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></code> - if more than one version is found for a given position or view coordinate</dd>
+<dd><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/InvalidCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">InvalidCAB</a></code> - if the any of the values in blueprint to make are invalid</dd><dt><span class="strong">See Also:</span></dt><dd><code>org.ihtsdo.tk.api.blueprint.CreateOrAmendBlueprint</code></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ConceptAttributesRevision.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesFacade.html" title="interface in org.ihtsdo.otf.tcc.model.cc.attributes"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/ihtsdo/otf/tcc/model/cc/attributes/ConceptAttributesRevision.html" target="_top">Frames</a></li>
+<li><a href="ConceptAttributesRevision.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.component.Revision">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

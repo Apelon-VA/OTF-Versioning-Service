@@ -1,0 +1,1072 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>TerminologyDI (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="TerminologyDI (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/TerminologyDI.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TermChangeListener.html" title="class in org.ihtsdo.otf.tcc.api.store"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.CONCEPT_EVENT.html" title="enum in org.ihtsdo.otf.tcc.api.store"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/store/TerminologyDI.html" target="_top">Frames</a></li>
+<li><a href="TerminologyDI.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.api.store</div>
+<h2 title="Interface TerminologyDI" class="title">Interface TerminologyDI</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Known Subinterfaces:</dt>
+<dd><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/store/FxTerminologySnapshotDI.html" title="interface in org.ihtsdo.otf.tcc.ddo.store">FxTerminologySnapshotDI</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/ddo/store/FxTerminologyStoreDI.html" title="interface in org.ihtsdo.otf.tcc.ddo.store">FxTerminologyStoreDI</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/model/cc/termstore/PersistentStoreI.html" title="interface in org.ihtsdo.otf.tcc.model.cc.termstore">PersistentStoreI</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologySnapshotDI.html" title="interface in org.ihtsdo.otf.tcc.api.store">TerminologySnapshotDI</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyStoreDI.html" title="interface in org.ihtsdo.otf.tcc.api.store">TerminologyStoreDI</a></dd>
+</dl>
+<dl>
+<dt>All Known Implementing Classes:</dt>
+<dd><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/BdbTerminologyStore.html" title="class in org.ihtsdo.otf.tcc.datastore">BdbTerminologyStore</a>, <a href="../../../../../../org/ihtsdo/oft/tcc/rest/client/TccRestClient.html" title="class in org.ihtsdo.oft.tcc.rest.client">TccRestClient</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/model/cc/termstore/TerminologySnapshot.html" title="class in org.ihtsdo.otf.tcc.model.cc.termstore">TerminologySnapshot</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/model/cc/termstore/Termstore.html" title="class in org.ihtsdo.otf.tcc.model.cc.termstore">Termstore</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public interface <span class="strong">TerminologyDI</span></pre>
+<dl><DT>&nbsp;</DT><DD><map name="umlmap189W0H0"><area shape="rect" coords="276,44,414,66" href="#" alt=""><area shape="rect" coords="10,68,422,84" href="#addChangeSetGenerator(java.lang.String, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGeneratorBI)" alt=""><area shape="rect" coords="10,84,604,100" href="#addPropertyChangeListener(org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT, java.beans.PropertyChangeListener)" alt=""><area shape="rect" coords="10,100,358,116" href="#addTermChangeListener(org.ihtsdo.otf.tcc.api.store.TermChangeListener)" alt=""><area shape="rect" coords="10,116,306,132" href="#addUncommitted(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="10,132,295,148" href="#addUncommitted(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="10,148,368,164" href="#addUncommittedNoChecks(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="10,164,357,180" href="#addUncommittedNoChecks(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="10,180,662,196" href="#addVetoablePropertyChangeListener(org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT, java.beans.VetoableChangeListener)" alt=""><area shape="rect" coords="10,196,120,212" href="#cancel()" alt=""><area shape="rect" coords="10,212,240,228" href="#cancel(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="10,228,229,244" href="#cancel(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="10,244,125,260" href="#commit()" alt=""><area shape="rect" coords="10,260,245,276" href="#commit(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="10,276,234,292" href="#commit(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="10,292,621,308" href="#createDtoChangeSetGenerator(java.io.File, java.io.File, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGenerationPolicy)" alt=""><area shape="rect" coords="10,308,305,324" href="#forget(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI)" alt=""><area shape="rect" coords="10,324,238,340" href="#forget(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="10,340,245,356" href="#forget(org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI)" alt=""><area shape="rect" coords="10,356,222,372" href="#forget(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)" alt=""><area shape="rect" coords="10,372,251,387" href="#forget(org.ihtsdo.otf.tcc.api.relationship.RelationshipVersionBI)" alt=""><area shape="rect" coords="10,387,251,403" href="#getAllConceptNids()" alt=""><area shape="rect" coords="10,403,225,419" href="#getAuthorNidForStamp(int)" alt=""><area shape="rect" coords="10,419,438,435" href="#getComponentNidsForConceptNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="10,435,217,451" href="#getConceptNidForNid(int)" alt=""><area shape="rect" coords="10,451,438,467" href="#getConceptNidsForComponentNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="10,467,237,483" href="#getEmptyNidSet()" alt=""><area shape="rect" coords="10,483,250,499" href="#getMetadataVC()" alt=""><area shape="rect" coords="10,499,229,515" href="#getModuleNidForStamp(int)" alt=""><area shape="rect" coords="10,515,392,531" href="#getNidCollection(java.util.Collection)" alt=""><area shape="rect" coords="10,531,275,547" href="#getNidForUuids(java.util.Collection)" alt=""><area shape="rect" coords="10,547,203,563" href="#getNidForUuids(java.util.UUID...)" alt=""><area shape="rect" coords="10,563,282,579" href="#getNidFromAlternateId(java.util.UUID, java.lang.String)" alt=""><area shape="rect" coords="10,579,146,595" href="#getPath(int)" alt=""><area shape="rect" coords="10,595,213,611" href="#getPathNidForStamp(int)" alt=""><area shape="rect" coords="10,611,384,627" href="#getPathSetFromPositionSet(java.util.Set)" alt=""><area shape="rect" coords="10,627,354,643" href="#getPathSetFromSapSet(java.util.Set)" alt=""><area shape="rect" coords="10,643,320,659" href="#getPositionSet(java.util.Set)" alt=""><area shape="rect" coords="10,659,230,675" href="#getStatusForStamp(int)" alt=""><area shape="rect" coords="10,675,205,691" href="#getTimeForStamp(int)" alt=""><area shape="rect" coords="10,691,399,707" href="#getUuidCollection(java.util.Collection)" alt=""><area shape="rect" coords="10,707,270,723" href="#informAboutId(java.lang.Object)" alt=""><area shape="rect" coords="10,723,253,739" href="#informAboutNid(int)" alt=""><area shape="rect" coords="10,739,275,755" href="#informAboutUuid(java.util.UUID)" alt=""><area shape="rect" coords="10,755,466,771" href="#iterateConceptDataInParallel(org.ihtsdo.otf.tcc.api.concept.ProcessUnfetchedConceptDataBI)" alt=""><area shape="rect" coords="10,771,481,787" href="#iterateConceptDataInSequence(org.ihtsdo.otf.tcc.api.concept.ProcessUnfetchedConceptDataBI)" alt=""><area shape="rect" coords="10,787,195,803" href="#loadEconFiles(java.io.File[])" alt=""><area shape="rect" coords="10,803,210,819" href="#loadEconFiles(java.lang.String[])" alt=""><area shape="rect" coords="10,819,202,835" href="#loadEconFiles(java.nio.file.Path[])" alt=""><area shape="rect" coords="10,835,238,851" href="#newPosition(org.ihtsdo.otf.tcc.api.coordinate.Path, long)" alt=""><area shape="rect" coords="10,851,295,867" href="#removeChangeSetGenerator(java.lang.String)" alt=""><area shape="rect" coords="10,867,381,883" href="#removeTermChangeListener(org.ihtsdo.otf.tcc.api.store.TermChangeListener)" alt=""><area shape="rect" coords="10,883,250,898" href="#resumeChangeNotifications()" alt=""><area shape="rect" coords="10,898,419,914" href="#satisfiesDependencies(java.util.Collection)" alt=""><area shape="rect" coords="10,914,256,930" href="#suspendChangeNotifications()" alt=""><area shape="rect" coords="2,2,176,19" href="package-summary.html" alt=""></map>
+<map name="umlmap189W1H0"><area shape="rect" coords="-215,44,-77,66" href="#" alt=""><area shape="rect" coords="-482,68,-70,84" href="#addChangeSetGenerator(java.lang.String, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGeneratorBI)" alt=""><area shape="rect" coords="-482,84,112,100" href="#addPropertyChangeListener(org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT, java.beans.PropertyChangeListener)" alt=""><area shape="rect" coords="-482,100,-134,116" href="#addTermChangeListener(org.ihtsdo.otf.tcc.api.store.TermChangeListener)" alt=""><area shape="rect" coords="-482,116,-186,132" href="#addUncommitted(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-482,132,-197,148" href="#addUncommitted(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="-482,148,-124,164" href="#addUncommittedNoChecks(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-482,164,-135,180" href="#addUncommittedNoChecks(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="-482,180,170,196" href="#addVetoablePropertyChangeListener(org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT, java.beans.VetoableChangeListener)" alt=""><area shape="rect" coords="-482,196,-372,212" href="#cancel()" alt=""><area shape="rect" coords="-482,212,-252,228" href="#cancel(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-482,228,-263,244" href="#cancel(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="-482,244,-367,260" href="#commit()" alt=""><area shape="rect" coords="-482,260,-247,276" href="#commit(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-482,276,-258,292" href="#commit(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="-482,292,129,308" href="#createDtoChangeSetGenerator(java.io.File, java.io.File, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGenerationPolicy)" alt=""><area shape="rect" coords="-482,308,-187,324" href="#forget(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI)" alt=""><area shape="rect" coords="-482,324,-254,340" href="#forget(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-482,340,-247,356" href="#forget(org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI)" alt=""><area shape="rect" coords="-482,356,-270,372" href="#forget(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)" alt=""><area shape="rect" coords="-482,372,-241,387" href="#forget(org.ihtsdo.otf.tcc.api.relationship.RelationshipVersionBI)" alt=""><area shape="rect" coords="-482,387,-241,403" href="#getAllConceptNids()" alt=""><area shape="rect" coords="-482,403,-267,419" href="#getAuthorNidForStamp(int)" alt=""><area shape="rect" coords="-482,419,-54,435" href="#getComponentNidsForConceptNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-482,435,-275,451" href="#getConceptNidForNid(int)" alt=""><area shape="rect" coords="-482,451,-54,467" href="#getConceptNidsForComponentNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-482,467,-255,483" href="#getEmptyNidSet()" alt=""><area shape="rect" coords="-482,483,-242,499" href="#getMetadataVC()" alt=""><area shape="rect" coords="-482,499,-263,515" href="#getModuleNidForStamp(int)" alt=""><area shape="rect" coords="-482,515,-100,531" href="#getNidCollection(java.util.Collection)" alt=""><area shape="rect" coords="-482,531,-217,547" href="#getNidForUuids(java.util.Collection)" alt=""><area shape="rect" coords="-482,547,-289,563" href="#getNidForUuids(java.util.UUID...)" alt=""><area shape="rect" coords="-482,563,-210,579" href="#getNidFromAlternateId(java.util.UUID, java.lang.String)" alt=""><area shape="rect" coords="-482,579,-346,595" href="#getPath(int)" alt=""><area shape="rect" coords="-482,595,-279,611" href="#getPathNidForStamp(int)" alt=""><area shape="rect" coords="-482,611,-108,627" href="#getPathSetFromPositionSet(java.util.Set)" alt=""><area shape="rect" coords="-482,627,-138,643" href="#getPathSetFromSapSet(java.util.Set)" alt=""><area shape="rect" coords="-482,643,-172,659" href="#getPositionSet(java.util.Set)" alt=""><area shape="rect" coords="-482,659,-262,675" href="#getStatusForStamp(int)" alt=""><area shape="rect" coords="-482,675,-287,691" href="#getTimeForStamp(int)" alt=""><area shape="rect" coords="-482,691,-93,707" href="#getUuidCollection(java.util.Collection)" alt=""><area shape="rect" coords="-482,707,-222,723" href="#informAboutId(java.lang.Object)" alt=""><area shape="rect" coords="-482,723,-239,739" href="#informAboutNid(int)" alt=""><area shape="rect" coords="-482,739,-217,755" href="#informAboutUuid(java.util.UUID)" alt=""><area shape="rect" coords="-482,755,-26,771" href="#iterateConceptDataInParallel(org.ihtsdo.otf.tcc.api.concept.ProcessUnfetchedConceptDataBI)" alt=""><area shape="rect" coords="-482,771,-11,787" href="#iterateConceptDataInSequence(org.ihtsdo.otf.tcc.api.concept.ProcessUnfetchedConceptDataBI)" alt=""><area shape="rect" coords="-482,787,-297,803" href="#loadEconFiles(java.io.File[])" alt=""><area shape="rect" coords="-482,803,-282,819" href="#loadEconFiles(java.lang.String[])" alt=""><area shape="rect" coords="-482,819,-290,835" href="#loadEconFiles(java.nio.file.Path[])" alt=""><area shape="rect" coords="-482,835,-254,851" href="#newPosition(org.ihtsdo.otf.tcc.api.coordinate.Path, long)" alt=""><area shape="rect" coords="-482,851,-197,867" href="#removeChangeSetGenerator(java.lang.String)" alt=""><area shape="rect" coords="-482,867,-111,883" href="#removeTermChangeListener(org.ihtsdo.otf.tcc.api.store.TermChangeListener)" alt=""><area shape="rect" coords="-482,883,-242,898" href="#resumeChangeNotifications()" alt=""><area shape="rect" coords="-482,898,-73,914" href="#satisfiesDependencies(java.util.Collection)" alt=""><area shape="rect" coords="-482,914,-236,930" href="#suspendChangeNotifications()" alt=""><area shape="rect" coords="-490,2,-316,19" href="package-summary.html" alt=""><area shape="rect" coords="298,75,485,98" href="http://docs.oracle.com/javase/7/docs/api/java/beans/VetoableChangeListener.html" alt=""><area shape="rect" coords="297,32,482,55" href="http://docs.oracle.com/javase/7/docs/api/java/beans/PropertyChangeListener.html" alt=""><area shape="rect" coords="247,2,326,19" href="http://docs.oracle.com/javase/7/docs/api/java/beans/package-summary.html" alt=""><area shape="rect" coords="256,167,290,190" href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html" alt=""><area shape="rect" coords="247,141,299,159" href="http://docs.oracle.com/javase/7/docs/api/java/io/package-summary.html" alt=""><area shape="rect" coords="256,330,310,353" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="256,297,313,320" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="281,259,394,282" href="http://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html" alt=""><area shape="rect" coords="247,228,314,246" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="265,422,307,445" href="http://docs.oracle.com/javase/7/docs/api/java/nio/file/Path.html" alt=""><area shape="rect" coords="247,391,327,409" href="http://docs.oracle.com/javase/7/docs/api/java/nio/file/package-summary.html" alt=""><area shape="rect" coords="256,599,299,622" href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html" alt=""><area shape="rect" coords="269,561,332,584" href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html" alt=""><area shape="rect" coords="280,518,391,542" href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html" alt=""><area shape="rect" coords="247,488,306,506" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""></map>
+<map name="umlmap189W2H0"><area shape="rect" coords="-193,75,-6,98" href="http://docs.oracle.com/javase/7/docs/api/java/beans/VetoableChangeListener.html" alt=""><area shape="rect" coords="-194,32,-9,55" href="http://docs.oracle.com/javase/7/docs/api/java/beans/PropertyChangeListener.html" alt=""><area shape="rect" coords="-244,2,-165,19" href="http://docs.oracle.com/javase/7/docs/api/java/beans/package-summary.html" alt=""></map>
+<map name="umlmap189W0H1"><area shape="rect" coords="276,-548,414,-526" href="#" alt=""><area shape="rect" coords="10,-524,422,-508" href="#addChangeSetGenerator(java.lang.String, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGeneratorBI)" alt=""><area shape="rect" coords="10,-508,604,-492" href="#addPropertyChangeListener(org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT, java.beans.PropertyChangeListener)" alt=""><area shape="rect" coords="10,-492,358,-476" href="#addTermChangeListener(org.ihtsdo.otf.tcc.api.store.TermChangeListener)" alt=""><area shape="rect" coords="10,-476,306,-460" href="#addUncommitted(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="10,-460,295,-444" href="#addUncommitted(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="10,-444,368,-428" href="#addUncommittedNoChecks(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="10,-428,357,-412" href="#addUncommittedNoChecks(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="10,-412,662,-396" href="#addVetoablePropertyChangeListener(org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT, java.beans.VetoableChangeListener)" alt=""><area shape="rect" coords="10,-396,120,-380" href="#cancel()" alt=""><area shape="rect" coords="10,-380,240,-364" href="#cancel(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="10,-364,229,-348" href="#cancel(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="10,-348,125,-332" href="#commit()" alt=""><area shape="rect" coords="10,-332,245,-316" href="#commit(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="10,-316,234,-300" href="#commit(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="10,-300,621,-284" href="#createDtoChangeSetGenerator(java.io.File, java.io.File, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGenerationPolicy)" alt=""><area shape="rect" coords="10,-284,305,-268" href="#forget(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI)" alt=""><area shape="rect" coords="10,-268,238,-252" href="#forget(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="10,-252,245,-236" href="#forget(org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI)" alt=""><area shape="rect" coords="10,-236,222,-220" href="#forget(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)" alt=""><area shape="rect" coords="10,-220,251,-205" href="#forget(org.ihtsdo.otf.tcc.api.relationship.RelationshipVersionBI)" alt=""><area shape="rect" coords="10,-205,251,-189" href="#getAllConceptNids()" alt=""><area shape="rect" coords="10,-189,225,-173" href="#getAuthorNidForStamp(int)" alt=""><area shape="rect" coords="10,-173,438,-157" href="#getComponentNidsForConceptNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="10,-157,217,-141" href="#getConceptNidForNid(int)" alt=""><area shape="rect" coords="10,-141,438,-125" href="#getConceptNidsForComponentNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="10,-125,237,-109" href="#getEmptyNidSet()" alt=""><area shape="rect" coords="10,-109,250,-93" href="#getMetadataVC()" alt=""><area shape="rect" coords="10,-93,229,-77" href="#getModuleNidForStamp(int)" alt=""><area shape="rect" coords="10,-77,392,-61" href="#getNidCollection(java.util.Collection)" alt=""><area shape="rect" coords="10,-61,275,-45" href="#getNidForUuids(java.util.Collection)" alt=""><area shape="rect" coords="10,-45,203,-29" href="#getNidForUuids(java.util.UUID...)" alt=""><area shape="rect" coords="10,-29,282,-13" href="#getNidFromAlternateId(java.util.UUID, java.lang.String)" alt=""><area shape="rect" coords="10,-13,146,2" href="#getPath(int)" alt=""><area shape="rect" coords="10,2,213,18" href="#getPathNidForStamp(int)" alt=""><area shape="rect" coords="10,18,384,34" href="#getPathSetFromPositionSet(java.util.Set)" alt=""><area shape="rect" coords="10,34,354,50" href="#getPathSetFromSapSet(java.util.Set)" alt=""><area shape="rect" coords="10,50,320,66" href="#getPositionSet(java.util.Set)" alt=""><area shape="rect" coords="10,66,230,82" href="#getStatusForStamp(int)" alt=""><area shape="rect" coords="10,82,205,98" href="#getTimeForStamp(int)" alt=""><area shape="rect" coords="10,98,399,114" href="#getUuidCollection(java.util.Collection)" alt=""><area shape="rect" coords="10,114,270,130" href="#informAboutId(java.lang.Object)" alt=""><area shape="rect" coords="10,130,253,146" href="#informAboutNid(int)" alt=""><area shape="rect" coords="10,146,275,162" href="#informAboutUuid(java.util.UUID)" alt=""><area shape="rect" coords="10,162,466,178" href="#iterateConceptDataInParallel(org.ihtsdo.otf.tcc.api.concept.ProcessUnfetchedConceptDataBI)" alt=""><area shape="rect" coords="10,178,481,194" href="#iterateConceptDataInSequence(org.ihtsdo.otf.tcc.api.concept.ProcessUnfetchedConceptDataBI)" alt=""><area shape="rect" coords="10,194,195,210" href="#loadEconFiles(java.io.File[])" alt=""><area shape="rect" coords="10,210,210,226" href="#loadEconFiles(java.lang.String[])" alt=""><area shape="rect" coords="10,226,202,242" href="#loadEconFiles(java.nio.file.Path[])" alt=""><area shape="rect" coords="10,242,238,258" href="#newPosition(org.ihtsdo.otf.tcc.api.coordinate.Path, long)" alt=""><area shape="rect" coords="10,258,295,274" href="#removeChangeSetGenerator(java.lang.String)" alt=""><area shape="rect" coords="10,274,381,290" href="#removeTermChangeListener(org.ihtsdo.otf.tcc.api.store.TermChangeListener)" alt=""><area shape="rect" coords="10,290,250,305" href="#resumeChangeNotifications()" alt=""><area shape="rect" coords="10,305,419,321" href="#satisfiesDependencies(java.util.Collection)" alt=""><area shape="rect" coords="10,321,256,337" href="#suspendChangeNotifications()" alt=""><area shape="rect" coords="2,-591,176,-573" href="package-summary.html" alt=""></map>
+<map name="umlmap189W1H1"><area shape="rect" coords="-215,-548,-77,-526" href="#" alt=""><area shape="rect" coords="-482,-524,-70,-508" href="#addChangeSetGenerator(java.lang.String, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGeneratorBI)" alt=""><area shape="rect" coords="-482,-508,112,-492" href="#addPropertyChangeListener(org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT, java.beans.PropertyChangeListener)" alt=""><area shape="rect" coords="-482,-492,-134,-476" href="#addTermChangeListener(org.ihtsdo.otf.tcc.api.store.TermChangeListener)" alt=""><area shape="rect" coords="-482,-476,-186,-460" href="#addUncommitted(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-482,-460,-197,-444" href="#addUncommitted(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="-482,-444,-124,-428" href="#addUncommittedNoChecks(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-482,-428,-135,-412" href="#addUncommittedNoChecks(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="-482,-412,170,-396" href="#addVetoablePropertyChangeListener(org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT, java.beans.VetoableChangeListener)" alt=""><area shape="rect" coords="-482,-396,-372,-380" href="#cancel()" alt=""><area shape="rect" coords="-482,-380,-252,-364" href="#cancel(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-482,-364,-263,-348" href="#cancel(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="-482,-348,-367,-332" href="#commit()" alt=""><area shape="rect" coords="-482,-332,-247,-316" href="#commit(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-482,-316,-258,-300" href="#commit(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="-482,-300,129,-284" href="#createDtoChangeSetGenerator(java.io.File, java.io.File, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGenerationPolicy)" alt=""><area shape="rect" coords="-482,-284,-187,-268" href="#forget(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI)" alt=""><area shape="rect" coords="-482,-268,-254,-252" href="#forget(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-482,-252,-247,-236" href="#forget(org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI)" alt=""><area shape="rect" coords="-482,-236,-270,-220" href="#forget(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)" alt=""><area shape="rect" coords="-482,-220,-241,-205" href="#forget(org.ihtsdo.otf.tcc.api.relationship.RelationshipVersionBI)" alt=""><area shape="rect" coords="-482,-205,-241,-189" href="#getAllConceptNids()" alt=""><area shape="rect" coords="-482,-189,-267,-173" href="#getAuthorNidForStamp(int)" alt=""><area shape="rect" coords="-482,-173,-54,-157" href="#getComponentNidsForConceptNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-482,-157,-275,-141" href="#getConceptNidForNid(int)" alt=""><area shape="rect" coords="-482,-141,-54,-125" href="#getConceptNidsForComponentNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-482,-125,-255,-109" href="#getEmptyNidSet()" alt=""><area shape="rect" coords="-482,-109,-242,-93" href="#getMetadataVC()" alt=""><area shape="rect" coords="-482,-93,-263,-77" href="#getModuleNidForStamp(int)" alt=""><area shape="rect" coords="-482,-77,-100,-61" href="#getNidCollection(java.util.Collection)" alt=""><area shape="rect" coords="-482,-61,-217,-45" href="#getNidForUuids(java.util.Collection)" alt=""><area shape="rect" coords="-482,-45,-289,-29" href="#getNidForUuids(java.util.UUID...)" alt=""><area shape="rect" coords="-482,-29,-210,-13" href="#getNidFromAlternateId(java.util.UUID, java.lang.String)" alt=""><area shape="rect" coords="-482,-13,-346,2" href="#getPath(int)" alt=""><area shape="rect" coords="-482,2,-279,18" href="#getPathNidForStamp(int)" alt=""><area shape="rect" coords="-482,18,-108,34" href="#getPathSetFromPositionSet(java.util.Set)" alt=""><area shape="rect" coords="-482,34,-138,50" href="#getPathSetFromSapSet(java.util.Set)" alt=""><area shape="rect" coords="-482,50,-172,66" href="#getPositionSet(java.util.Set)" alt=""><area shape="rect" coords="-482,66,-262,82" href="#getStatusForStamp(int)" alt=""><area shape="rect" coords="-482,82,-287,98" href="#getTimeForStamp(int)" alt=""><area shape="rect" coords="-482,98,-93,114" href="#getUuidCollection(java.util.Collection)" alt=""><area shape="rect" coords="-482,114,-222,130" href="#informAboutId(java.lang.Object)" alt=""><area shape="rect" coords="-482,130,-239,146" href="#informAboutNid(int)" alt=""><area shape="rect" coords="-482,146,-217,162" href="#informAboutUuid(java.util.UUID)" alt=""><area shape="rect" coords="-482,162,-26,178" href="#iterateConceptDataInParallel(org.ihtsdo.otf.tcc.api.concept.ProcessUnfetchedConceptDataBI)" alt=""><area shape="rect" coords="-482,178,-11,194" href="#iterateConceptDataInSequence(org.ihtsdo.otf.tcc.api.concept.ProcessUnfetchedConceptDataBI)" alt=""><area shape="rect" coords="-482,194,-297,210" href="#loadEconFiles(java.io.File[])" alt=""><area shape="rect" coords="-482,210,-282,226" href="#loadEconFiles(java.lang.String[])" alt=""><area shape="rect" coords="-482,226,-290,242" href="#loadEconFiles(java.nio.file.Path[])" alt=""><area shape="rect" coords="-482,242,-254,258" href="#newPosition(org.ihtsdo.otf.tcc.api.coordinate.Path, long)" alt=""><area shape="rect" coords="-482,258,-197,274" href="#removeChangeSetGenerator(java.lang.String)" alt=""><area shape="rect" coords="-482,274,-111,290" href="#removeTermChangeListener(org.ihtsdo.otf.tcc.api.store.TermChangeListener)" alt=""><area shape="rect" coords="-482,290,-242,305" href="#resumeChangeNotifications()" alt=""><area shape="rect" coords="-482,305,-73,321" href="#satisfiesDependencies(java.util.Collection)" alt=""><area shape="rect" coords="-482,321,-236,337" href="#suspendChangeNotifications()" alt=""><area shape="rect" coords="-490,-591,-316,-573" href="package-summary.html" alt=""><area shape="rect" coords="256,6,299,29" href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html" alt=""><area shape="rect" coords="269,-31,332,-8" href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html" alt=""><area shape="rect" coords="247,-104,306,-86" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="295,131,471,154" href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/ChangeSetGeneratorBI.html" alt=""><area shape="rect" coords="258,93,476,116" href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/ChangeSetGenerationPolicy.html" alt=""><area shape="rect" coords="247,67,453,85" href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/package-summary.html" alt=""><area shape="rect" coords="368,228,861,251" href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" alt=""><area shape="rect" coords="247,197,433,215" href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/package-summary.html" alt=""><area shape="rect" coords="313,410,565,433" href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html" alt=""><area shape="rect" coords="287,367,425,390" href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptVersionBI.html" alt=""><area shape="rect" coords="290,325,441,348" href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" alt=""><area shape="rect" coords="247,294,438,312" href="../../../../../../org/ihtsdo/otf/tcc/api/concept/package-summary.html" alt=""><area shape="rect" coords="257,601,385,624" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" alt=""><area shape="rect" coords="256,568,315,591" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" alt=""><area shape="rect" coords="256,535,327,558" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" alt=""><area shape="rect" coords="256,502,300,525" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" alt=""><area shape="rect" coords="247,476,455,494" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""></map>
+<map name="umlmap189W2H1"><area shape="rect" coords="-196,131,-20,154" href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/ChangeSetGeneratorBI.html" alt=""><area shape="rect" coords="-244,67,-38,85" href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/package-summary.html" alt=""><area shape="rect" coords="-123,228,369,251" href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" alt=""><area shape="rect" coords="-244,197,-58,215" href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/package-summary.html" alt=""><area shape="rect" coords="-178,410,73,433" href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html" alt=""><area shape="rect" coords="-244,294,-53,312" href="../../../../../../org/ihtsdo/otf/tcc/api/concept/package-summary.html" alt=""></map>
+<map name="umlmap189W0H2"><area shape="rect" coords="6,566,129,583" href="http://www.yworks.com/" alt=""><area shape="rect" coords="276,-1141,414,-1119" href="#" alt=""><area shape="rect" coords="10,-1117,422,-1101" href="#addChangeSetGenerator(java.lang.String, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGeneratorBI)" alt=""><area shape="rect" coords="10,-1101,604,-1085" href="#addPropertyChangeListener(org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT, java.beans.PropertyChangeListener)" alt=""><area shape="rect" coords="10,-1085,358,-1069" href="#addTermChangeListener(org.ihtsdo.otf.tcc.api.store.TermChangeListener)" alt=""><area shape="rect" coords="10,-1069,306,-1053" href="#addUncommitted(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="10,-1053,295,-1037" href="#addUncommitted(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="10,-1037,368,-1021" href="#addUncommittedNoChecks(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="10,-1021,357,-1005" href="#addUncommittedNoChecks(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="10,-1005,662,-989" href="#addVetoablePropertyChangeListener(org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT, java.beans.VetoableChangeListener)" alt=""><area shape="rect" coords="10,-989,120,-973" href="#cancel()" alt=""><area shape="rect" coords="10,-973,240,-957" href="#cancel(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="10,-957,229,-941" href="#cancel(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="10,-941,125,-925" href="#commit()" alt=""><area shape="rect" coords="10,-925,245,-909" href="#commit(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="10,-909,234,-893" href="#commit(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="10,-893,621,-877" href="#createDtoChangeSetGenerator(java.io.File, java.io.File, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGenerationPolicy)" alt=""><area shape="rect" coords="10,-877,305,-861" href="#forget(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI)" alt=""><area shape="rect" coords="10,-861,238,-845" href="#forget(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="10,-845,245,-829" href="#forget(org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI)" alt=""><area shape="rect" coords="10,-829,222,-813" href="#forget(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)" alt=""><area shape="rect" coords="10,-813,251,-798" href="#forget(org.ihtsdo.otf.tcc.api.relationship.RelationshipVersionBI)" alt=""><area shape="rect" coords="10,-798,251,-782" href="#getAllConceptNids()" alt=""><area shape="rect" coords="10,-782,225,-766" href="#getAuthorNidForStamp(int)" alt=""><area shape="rect" coords="10,-766,438,-750" href="#getComponentNidsForConceptNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="10,-750,217,-734" href="#getConceptNidForNid(int)" alt=""><area shape="rect" coords="10,-734,438,-718" href="#getConceptNidsForComponentNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="10,-718,237,-702" href="#getEmptyNidSet()" alt=""><area shape="rect" coords="10,-702,250,-686" href="#getMetadataVC()" alt=""><area shape="rect" coords="10,-686,229,-670" href="#getModuleNidForStamp(int)" alt=""><area shape="rect" coords="10,-670,392,-654" href="#getNidCollection(java.util.Collection)" alt=""><area shape="rect" coords="10,-654,275,-638" href="#getNidForUuids(java.util.Collection)" alt=""><area shape="rect" coords="10,-638,203,-622" href="#getNidForUuids(java.util.UUID...)" alt=""><area shape="rect" coords="10,-622,282,-606" href="#getNidFromAlternateId(java.util.UUID, java.lang.String)" alt=""><area shape="rect" coords="10,-606,146,-590" href="#getPath(int)" alt=""><area shape="rect" coords="10,-590,213,-574" href="#getPathNidForStamp(int)" alt=""><area shape="rect" coords="10,-574,384,-558" href="#getPathSetFromPositionSet(java.util.Set)" alt=""><area shape="rect" coords="10,-558,354,-542" href="#getPathSetFromSapSet(java.util.Set)" alt=""><area shape="rect" coords="10,-542,320,-526" href="#getPositionSet(java.util.Set)" alt=""><area shape="rect" coords="10,-526,230,-510" href="#getStatusForStamp(int)" alt=""><area shape="rect" coords="10,-510,205,-494" href="#getTimeForStamp(int)" alt=""><area shape="rect" coords="10,-494,399,-478" href="#getUuidCollection(java.util.Collection)" alt=""><area shape="rect" coords="10,-478,270,-462" href="#informAboutId(java.lang.Object)" alt=""><area shape="rect" coords="10,-462,253,-446" href="#informAboutNid(int)" alt=""><area shape="rect" coords="10,-446,275,-430" href="#informAboutUuid(java.util.UUID)" alt=""><area shape="rect" coords="10,-430,466,-414" href="#iterateConceptDataInParallel(org.ihtsdo.otf.tcc.api.concept.ProcessUnfetchedConceptDataBI)" alt=""><area shape="rect" coords="10,-414,481,-398" href="#iterateConceptDataInSequence(org.ihtsdo.otf.tcc.api.concept.ProcessUnfetchedConceptDataBI)" alt=""><area shape="rect" coords="10,-398,195,-382" href="#loadEconFiles(java.io.File[])" alt=""><area shape="rect" coords="10,-382,210,-366" href="#loadEconFiles(java.lang.String[])" alt=""><area shape="rect" coords="10,-366,202,-350" href="#loadEconFiles(java.nio.file.Path[])" alt=""><area shape="rect" coords="10,-350,238,-334" href="#newPosition(org.ihtsdo.otf.tcc.api.coordinate.Path, long)" alt=""><area shape="rect" coords="10,-334,295,-318" href="#removeChangeSetGenerator(java.lang.String)" alt=""><area shape="rect" coords="10,-318,381,-302" href="#removeTermChangeListener(org.ihtsdo.otf.tcc.api.store.TermChangeListener)" alt=""><area shape="rect" coords="10,-302,250,-287" href="#resumeChangeNotifications()" alt=""><area shape="rect" coords="10,-287,419,-271" href="#satisfiesDependencies(java.util.Collection)" alt=""><area shape="rect" coords="10,-271,256,-255" href="#suspendChangeNotifications()" alt=""><area shape="rect" coords="2,-1184,176,-1166" href="package-summary.html" alt=""></map>
+<map name="umlmap189W1H2"><area shape="rect" coords="-215,-1141,-77,-1119" href="#" alt=""><area shape="rect" coords="-482,-1117,-70,-1101" href="#addChangeSetGenerator(java.lang.String, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGeneratorBI)" alt=""><area shape="rect" coords="-482,-1101,112,-1085" href="#addPropertyChangeListener(org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT, java.beans.PropertyChangeListener)" alt=""><area shape="rect" coords="-482,-1085,-134,-1069" href="#addTermChangeListener(org.ihtsdo.otf.tcc.api.store.TermChangeListener)" alt=""><area shape="rect" coords="-482,-1069,-186,-1053" href="#addUncommitted(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-482,-1053,-197,-1037" href="#addUncommitted(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="-482,-1037,-124,-1021" href="#addUncommittedNoChecks(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-482,-1021,-135,-1005" href="#addUncommittedNoChecks(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="-482,-1005,170,-989" href="#addVetoablePropertyChangeListener(org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT, java.beans.VetoableChangeListener)" alt=""><area shape="rect" coords="-482,-989,-372,-973" href="#cancel()" alt=""><area shape="rect" coords="-482,-973,-252,-957" href="#cancel(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-482,-957,-263,-941" href="#cancel(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="-482,-941,-367,-925" href="#commit()" alt=""><area shape="rect" coords="-482,-925,-247,-909" href="#commit(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-482,-909,-258,-893" href="#commit(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)" alt=""><area shape="rect" coords="-482,-893,129,-877" href="#createDtoChangeSetGenerator(java.io.File, java.io.File, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGenerationPolicy)" alt=""><area shape="rect" coords="-482,-877,-187,-861" href="#forget(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI)" alt=""><area shape="rect" coords="-482,-861,-254,-845" href="#forget(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-482,-845,-247,-829" href="#forget(org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI)" alt=""><area shape="rect" coords="-482,-829,-270,-813" href="#forget(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)" alt=""><area shape="rect" coords="-482,-813,-241,-798" href="#forget(org.ihtsdo.otf.tcc.api.relationship.RelationshipVersionBI)" alt=""><area shape="rect" coords="-482,-798,-241,-782" href="#getAllConceptNids()" alt=""><area shape="rect" coords="-482,-782,-267,-766" href="#getAuthorNidForStamp(int)" alt=""><area shape="rect" coords="-482,-766,-54,-750" href="#getComponentNidsForConceptNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-482,-750,-275,-734" href="#getConceptNidForNid(int)" alt=""><area shape="rect" coords="-482,-734,-54,-718" href="#getConceptNidsForComponentNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-482,-718,-255,-702" href="#getEmptyNidSet()" alt=""><area shape="rect" coords="-482,-702,-242,-686" href="#getMetadataVC()" alt=""><area shape="rect" coords="-482,-686,-263,-670" href="#getModuleNidForStamp(int)" alt=""><area shape="rect" coords="-482,-670,-100,-654" href="#getNidCollection(java.util.Collection)" alt=""><area shape="rect" coords="-482,-654,-217,-638" href="#getNidForUuids(java.util.Collection)" alt=""><area shape="rect" coords="-482,-638,-289,-622" href="#getNidForUuids(java.util.UUID...)" alt=""><area shape="rect" coords="-482,-622,-210,-606" href="#getNidFromAlternateId(java.util.UUID, java.lang.String)" alt=""><area shape="rect" coords="-482,-606,-346,-590" href="#getPath(int)" alt=""><area shape="rect" coords="-482,-590,-279,-574" href="#getPathNidForStamp(int)" alt=""><area shape="rect" coords="-482,-574,-108,-558" href="#getPathSetFromPositionSet(java.util.Set)" alt=""><area shape="rect" coords="-482,-558,-138,-542" href="#getPathSetFromSapSet(java.util.Set)" alt=""><area shape="rect" coords="-482,-542,-172,-526" href="#getPositionSet(java.util.Set)" alt=""><area shape="rect" coords="-482,-526,-262,-510" href="#getStatusForStamp(int)" alt=""><area shape="rect" coords="-482,-510,-287,-494" href="#getTimeForStamp(int)" alt=""><area shape="rect" coords="-482,-494,-93,-478" href="#getUuidCollection(java.util.Collection)" alt=""><area shape="rect" coords="-482,-478,-222,-462" href="#informAboutId(java.lang.Object)" alt=""><area shape="rect" coords="-482,-462,-239,-446" href="#informAboutNid(int)" alt=""><area shape="rect" coords="-482,-446,-217,-430" href="#informAboutUuid(java.util.UUID)" alt=""><area shape="rect" coords="-482,-430,-26,-414" href="#iterateConceptDataInParallel(org.ihtsdo.otf.tcc.api.concept.ProcessUnfetchedConceptDataBI)" alt=""><area shape="rect" coords="-482,-414,-11,-398" href="#iterateConceptDataInSequence(org.ihtsdo.otf.tcc.api.concept.ProcessUnfetchedConceptDataBI)" alt=""><area shape="rect" coords="-482,-398,-297,-382" href="#loadEconFiles(java.io.File[])" alt=""><area shape="rect" coords="-482,-382,-282,-366" href="#loadEconFiles(java.lang.String[])" alt=""><area shape="rect" coords="-482,-366,-290,-350" href="#loadEconFiles(java.nio.file.Path[])" alt=""><area shape="rect" coords="-482,-350,-254,-334" href="#newPosition(org.ihtsdo.otf.tcc.api.coordinate.Path, long)" alt=""><area shape="rect" coords="-482,-334,-197,-318" href="#removeChangeSetGenerator(java.lang.String)" alt=""><area shape="rect" coords="-482,-318,-111,-302" href="#removeTermChangeListener(org.ihtsdo.otf.tcc.api.store.TermChangeListener)" alt=""><area shape="rect" coords="-482,-302,-242,-287" href="#resumeChangeNotifications()" alt=""><area shape="rect" coords="-482,-287,-73,-271" href="#satisfiesDependencies(java.util.Collection)" alt=""><area shape="rect" coords="-482,-271,-236,-255" href="#suspendChangeNotifications()" alt=""><area shape="rect" coords="-490,-1184,-316,-1166" href="package-summary.html" alt=""><area shape="rect" coords="257,8,385,31" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" alt=""><area shape="rect" coords="256,-24,315,-1" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" alt=""><area shape="rect" coords="247,-116,455,-98" href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="348,100,757,123" href="../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" alt=""><area shape="rect" coords="247,69,457,87" href="../../../../../../org/ihtsdo/otf/tcc/api/description/package-summary.html" alt=""><area shape="rect" coords="280,197,388,220" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" alt=""><area shape="rect" coords="247,166,406,184" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/package-summary.html" alt=""><area shape="rect" coords="340,294,712,317" href="../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" alt=""><area shape="rect" coords="247,263,420,281" href="../../../../../../org/ihtsdo/otf/tcc/api/refex/package-summary.html" alt=""><area shape="rect" coords="352,390,775,413" href="../../../../../../org/ihtsdo/otf/tcc/api/relationship/RelationshipVersionBI.html" alt=""><area shape="rect" coords="247,359,460,377" href="../../../../../../org/ihtsdo/otf/tcc/api/relationship/package-summary.html" alt=""><area shape="rect" coords="259,515,508,538" href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.CONCEPT_EVENT.html" alt=""><area shape="rect" coords="258,482,424,505" href="../../../../../../org/ihtsdo/otf/tcc/api/store/TermChangeListener.html" alt=""><area shape="rect" coords="247,456,421,474" href="../../../../../../org/ihtsdo/otf/tcc/api/store/package-summary.html" alt=""></map>
+<map name="umlmap189W2H2"><area shape="rect" coords="-143,100,265,123" href="../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" alt=""><area shape="rect" coords="-244,69,-34,87" href="../../../../../../org/ihtsdo/otf/tcc/api/description/package-summary.html" alt=""><area shape="rect" coords="-151,294,220,317" href="../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" alt=""><area shape="rect" coords="-244,263,-71,281" href="../../../../../../org/ihtsdo/otf/tcc/api/refex/package-summary.html" alt=""><area shape="rect" coords="-139,390,283,413" href="../../../../../../org/ihtsdo/otf/tcc/api/relationship/RelationshipVersionBI.html" alt=""><area shape="rect" coords="-244,359,-31,377" href="../../../../../../org/ihtsdo/otf/tcc/api/relationship/package-summary.html" alt=""><area shape="rect" coords="-232,515,16,538" href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.CONCEPT_EVENT.html" alt=""><area shape="rect" coords="-244,456,-70,474" href="../../../../../../org/ihtsdo/otf/tcc/api/store/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="TerminologyDIW0H0.png" WIDTH="492" HEIGHT="593" USEMAP="#umlmap189W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="TerminologyDIW1H0.png" WIDTH="492" HEIGHT="593" USEMAP="#umlmap189W1H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="TerminologyDIW2H0.png" WIDTH="492" HEIGHT="593" USEMAP="#umlmap189W2H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="TerminologyDIW0H1.png" WIDTH="492" HEIGHT="593" USEMAP="#umlmap189W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="TerminologyDIW1H1.png" WIDTH="492" HEIGHT="593" USEMAP="#umlmap189W1H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="TerminologyDIW2H1.png" WIDTH="492" HEIGHT="593" USEMAP="#umlmap189W2H1" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="TerminologyDIW0H2.png" WIDTH="492" HEIGHT="592" USEMAP="#umlmap189W0H2" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="TerminologyDIW1H2.png" WIDTH="492" HEIGHT="592" USEMAP="#umlmap189W1H2" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="TerminologyDIW2H2.png" WIDTH="492" HEIGHT="592" USEMAP="#umlmap189W2H2" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested_class_summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Interface and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.CONCEPT_EVENT.html" title="enum in org.ihtsdo.otf.tcc.api.store">TerminologyDI.CONCEPT_EVENT</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#addChangeSetGenerator(java.lang.String, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGeneratorBI)">addChangeSetGenerator</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+                     <a href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/ChangeSetGeneratorBI.html" title="interface in org.ihtsdo.otf.tcc.api.changeset">ChangeSetGeneratorBI</a>&nbsp;writer)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#addPropertyChangeListener(org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT, java.beans.PropertyChangeListener)">addPropertyChangeListener</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.CONCEPT_EVENT.html" title="enum in org.ihtsdo.otf.tcc.api.store">TerminologyDI.CONCEPT_EVENT</a>&nbsp;pce,
+                         <a href="http://docs.oracle.com/javase/7/docs/api/java/beans/PropertyChangeListener.html?is-external=true" title="class or interface in java.beans">PropertyChangeListener</a>&nbsp;l)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#addTermChangeListener(org.ihtsdo.otf.tcc.api.store.TermChangeListener)">addTermChangeListener</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TermChangeListener.html" title="class in org.ihtsdo.otf.tcc.api.store">TermChangeListener</a>&nbsp;cl)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#addUncommitted(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)">addUncommitted</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;cc)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#addUncommitted(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)">addUncommitted</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptVersionBI</a>&nbsp;cv)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#addUncommittedNoChecks(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)">addUncommittedNoChecks</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;cc)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#addUncommittedNoChecks(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)">addUncommittedNoChecks</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptVersionBI</a>&nbsp;cv)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#addVetoablePropertyChangeListener(org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT, java.beans.VetoableChangeListener)">addVetoablePropertyChangeListener</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.CONCEPT_EVENT.html" title="enum in org.ihtsdo.otf.tcc.api.store">TerminologyDI.CONCEPT_EVENT</a>&nbsp;pce,
+                                 <a href="http://docs.oracle.com/javase/7/docs/api/java/beans/VetoableChangeListener.html?is-external=true" title="class or interface in java.beans">VetoableChangeListener</a>&nbsp;l)</code>
+<div class="block">Only CONCEPT_EVENT.PRE_COMMIT is a vetoable change</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#cancel()">cancel</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#cancel(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)">cancel</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;cc)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#cancel(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)">cancel</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptVersionBI</a>&nbsp;cv)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#commit()">commit</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#commit(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)">commit</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;cc)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#commit(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)">commit</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptVersionBI</a>&nbsp;cv)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/ChangeSetGeneratorBI.html" title="interface in org.ihtsdo.otf.tcc.api.changeset">ChangeSetGeneratorBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#createDtoChangeSetGenerator(java.io.File, java.io.File, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGenerationPolicy)">createDtoChangeSetGenerator</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;changeSetFileName,
+                           <a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;changeSetTempFileName,
+                           <a href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/ChangeSetGenerationPolicy.html" title="enum in org.ihtsdo.otf.tcc.api.changeset">ChangeSetGenerationPolicy</a>&nbsp;policy)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#forget(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI)">forget</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeVersionBI</a>&nbsp;attr)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#forget(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)">forget</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;concept)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#forget(org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI)">forget</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&nbsp;desc)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#forget(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)">forget</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexChronicleBI</a>&nbsp;extension)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#forget(org.ihtsdo.otf.tcc.api.relationship.RelationshipVersionBI)">forget</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/relationship/RelationshipVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.relationship">RelationshipVersionBI</a>&nbsp;rel)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getAllConceptNids()">getAllConceptNids</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getAuthorNidForStamp(int)">getAuthorNidForStamp</a></strong>(int&nbsp;sapNid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getComponentNidsForConceptNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">getComponentNidsForConceptNids</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;conceptNativeIds)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getConceptNidForNid(int)">getConceptNidForNid</a></strong>(int&nbsp;nid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getConceptNidsForComponentNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">getConceptNidsForComponentNids</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;componentNativeIds)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getEmptyNidSet()">getEmptyNidSet</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getMetadataVC()">getMetadataVC</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getModuleNidForStamp(int)">getModuleNidForStamp</a></strong>(int&nbsp;sapNid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getNidCollection(java.util.Collection)">getNidCollection</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&gt;&nbsp;uuids)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getNidForUuids(java.util.Collection)">getNidForUuids</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&gt;&nbsp;uuids)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getNidForUuids(java.util.UUID...)">getNidForUuids</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>...&nbsp;uuids)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getNidFromAlternateId(java.util.UUID, java.lang.String)">getNidFromAlternateId</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;authorityUuid,
+                     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;altId)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Path</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getPath(int)">getPath</a></strong>(int&nbsp;pathNid)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getPathNidForStamp(int)">getPathNidForStamp</a></strong>(int&nbsp;sapNid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Path</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getPathSetFromPositionSet(java.util.Set)">getPathSetFromPositionSet</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&gt;&nbsp;positions)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Path</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getPathSetFromSapSet(java.util.Set)">getPathSetFromSapSet</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;sapNids)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getPositionSet(java.util.Set)">getPositionSet</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;sapNids)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getStatusForStamp(int)">getStatusForStamp</a></strong>(int&nbsp;stamp)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getTimeForStamp(int)">getTimeForStamp</a></strong>(int&nbsp;sapNid)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getUuidCollection(java.util.Collection)">getUuidCollection</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;nids)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#informAboutId(java.lang.Object)">informAboutId</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;id)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#informAboutNid(int)">informAboutNid</a></strong>(int&nbsp;nid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#informAboutUuid(java.util.UUID)">informAboutUuid</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uuid)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#iterateConceptDataInParallel(org.ihtsdo.otf.tcc.api.concept.ProcessUnfetchedConceptDataBI)">iterateConceptDataInParallel</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ProcessUnfetchedConceptDataBI</a>&nbsp;processor)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#iterateConceptDataInSequence(org.ihtsdo.otf.tcc.api.concept.ProcessUnfetchedConceptDataBI)">iterateConceptDataInSequence</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ProcessUnfetchedConceptDataBI</a>&nbsp;processor)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#loadEconFiles(java.io.File[])">loadEconFiles</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>[]&nbsp;econFiles)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#loadEconFiles(java.nio.file.Path[])">loadEconFiles</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>[]&nbsp;econFiles)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#loadEconFiles(java.lang.String[])">loadEconFiles</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;econFileStrings)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#newPosition(org.ihtsdo.otf.tcc.api.coordinate.Path, long)">newPosition</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Path</a>&nbsp;path,
+           long&nbsp;time)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#removeChangeSetGenerator(java.lang.String)">removeChangeSetGenerator</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#removeTermChangeListener(org.ihtsdo.otf.tcc.api.store.TermChangeListener)">removeTermChangeListener</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TermChangeListener.html" title="class in org.ihtsdo.otf.tcc.api.store">TermChangeListener</a>&nbsp;cl)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#resumeChangeNotifications()">resumeChangeNotifications</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#satisfiesDependencies(java.util.Collection)">satisfiesDependencies</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/db/DbDependency.html" title="class in org.ihtsdo.otf.tcc.api.db">DbDependency</a>&gt;&nbsp;dependencies)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#suspendChangeNotifications()">suspendChangeNotifications</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="addChangeSetGenerator(java.lang.String, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGeneratorBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addChangeSetGenerator</h4>
+<pre>void&nbsp;addChangeSetGenerator(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+                         <a href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/ChangeSetGeneratorBI.html" title="interface in org.ihtsdo.otf.tcc.api.changeset">ChangeSetGeneratorBI</a>&nbsp;writer)</pre>
+</li>
+</ul>
+<a name="addPropertyChangeListener(org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT, java.beans.PropertyChangeListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addPropertyChangeListener</h4>
+<pre>void&nbsp;addPropertyChangeListener(<a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.CONCEPT_EVENT.html" title="enum in org.ihtsdo.otf.tcc.api.store">TerminologyDI.CONCEPT_EVENT</a>&nbsp;pce,
+                             <a href="http://docs.oracle.com/javase/7/docs/api/java/beans/PropertyChangeListener.html?is-external=true" title="class or interface in java.beans">PropertyChangeListener</a>&nbsp;l)</pre>
+</li>
+</ul>
+<a name="addTermChangeListener(org.ihtsdo.otf.tcc.api.store.TermChangeListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addTermChangeListener</h4>
+<pre>void&nbsp;addTermChangeListener(<a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TermChangeListener.html" title="class in org.ihtsdo.otf.tcc.api.store">TermChangeListener</a>&nbsp;cl)</pre>
+</li>
+</ul>
+<a name="addUncommitted(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addUncommitted</h4>
+<pre>void&nbsp;addUncommitted(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;cc)
+                    throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="addUncommitted(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addUncommitted</h4>
+<pre>void&nbsp;addUncommitted(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptVersionBI</a>&nbsp;cv)
+                    throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="addUncommittedNoChecks(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addUncommittedNoChecks</h4>
+<pre>void&nbsp;addUncommittedNoChecks(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;cc)
+                            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="addUncommittedNoChecks(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addUncommittedNoChecks</h4>
+<pre>void&nbsp;addUncommittedNoChecks(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptVersionBI</a>&nbsp;cv)
+                            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="addVetoablePropertyChangeListener(org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT, java.beans.VetoableChangeListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addVetoablePropertyChangeListener</h4>
+<pre>void&nbsp;addVetoablePropertyChangeListener(<a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.CONCEPT_EVENT.html" title="enum in org.ihtsdo.otf.tcc.api.store">TerminologyDI.CONCEPT_EVENT</a>&nbsp;pce,
+                                     <a href="http://docs.oracle.com/javase/7/docs/api/java/beans/VetoableChangeListener.html?is-external=true" title="class or interface in java.beans">VetoableChangeListener</a>&nbsp;l)</pre>
+<div class="block">Only CONCEPT_EVENT.PRE_COMMIT is a vetoable change</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>pce</code> - </dd><dd><code>l</code> - </dd></dl>
+</li>
+</ul>
+<a name="cancel()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cancel</h4>
+<pre>void&nbsp;cancel()
+            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="cancel(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cancel</h4>
+<pre>void&nbsp;cancel(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;cc)
+            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="cancel(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cancel</h4>
+<pre>void&nbsp;cancel(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptVersionBI</a>&nbsp;cv)
+            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="commit()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>commit</h4>
+<pre>void&nbsp;commit()
+            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="commit(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>commit</h4>
+<pre>void&nbsp;commit(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;cc)
+            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="commit(org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>commit</h4>
+<pre>void&nbsp;commit(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptVersionBI</a>&nbsp;cv)
+            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="createDtoChangeSetGenerator(java.io.File, java.io.File, org.ihtsdo.otf.tcc.api.changeset.ChangeSetGenerationPolicy)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createDtoChangeSetGenerator</h4>
+<pre><a href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/ChangeSetGeneratorBI.html" title="interface in org.ihtsdo.otf.tcc.api.changeset">ChangeSetGeneratorBI</a>&nbsp;createDtoChangeSetGenerator(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;changeSetFileName,
+                                               <a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;changeSetTempFileName,
+                                               <a href="../../../../../../org/ihtsdo/otf/tcc/api/changeset/ChangeSetGenerationPolicy.html" title="enum in org.ihtsdo.otf.tcc.api.changeset">ChangeSetGenerationPolicy</a>&nbsp;policy)</pre>
+</li>
+</ul>
+<a name="forget(org.ihtsdo.otf.tcc.api.conattr.ConceptAttributeVersionBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>forget</h4>
+<pre>boolean&nbsp;forget(<a href="../../../../../../org/ihtsdo/otf/tcc/api/conattr/ConceptAttributeVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.conattr">ConceptAttributeVersionBI</a>&nbsp;attr)
+               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="forget(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>forget</h4>
+<pre>void&nbsp;forget(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;concept)
+            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="forget(org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>forget</h4>
+<pre>void&nbsp;forget(<a href="../../../../../../org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&nbsp;desc)
+            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="forget(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>forget</h4>
+<pre>void&nbsp;forget(<a href="../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexChronicleBI</a>&nbsp;extension)
+            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="forget(org.ihtsdo.otf.tcc.api.relationship.RelationshipVersionBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>forget</h4>
+<pre>void&nbsp;forget(<a href="../../../../../../org/ihtsdo/otf/tcc/api/relationship/RelationshipVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.relationship">RelationshipVersionBI</a>&nbsp;rel)
+            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="iterateConceptDataInParallel(org.ihtsdo.otf.tcc.api.concept.ProcessUnfetchedConceptDataBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>iterateConceptDataInParallel</h4>
+<pre>void&nbsp;iterateConceptDataInParallel(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ProcessUnfetchedConceptDataBI</a>&nbsp;processor)
+                                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="iterateConceptDataInSequence(org.ihtsdo.otf.tcc.api.concept.ProcessUnfetchedConceptDataBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>iterateConceptDataInSequence</h4>
+<pre>void&nbsp;iterateConceptDataInSequence(<a href="../../../../../../org/ihtsdo/otf/tcc/api/concept/ProcessUnfetchedConceptDataBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ProcessUnfetchedConceptDataBI</a>&nbsp;processor)
+                                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="loadEconFiles(java.io.File[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>loadEconFiles</h4>
+<pre>void&nbsp;loadEconFiles(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>[]&nbsp;econFiles)
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="loadEconFiles(java.nio.file.Path[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>loadEconFiles</h4>
+<pre>void&nbsp;loadEconFiles(<a href="http://docs.oracle.com/javase/7/docs/api/java/nio/file/Path.html?is-external=true" title="class or interface in java.nio.file">Path</a>[]&nbsp;econFiles)
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="loadEconFiles(java.lang.String[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>loadEconFiles</h4>
+<pre>void&nbsp;loadEconFiles(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;econFileStrings)
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="newPosition(org.ihtsdo.otf.tcc.api.coordinate.Path, long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newPosition</h4>
+<pre><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&nbsp;newPosition(<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Path</a>&nbsp;path,
+                   long&nbsp;time)
+                     throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="removeChangeSetGenerator(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeChangeSetGenerator</h4>
+<pre>void&nbsp;removeChangeSetGenerator(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+</li>
+</ul>
+<a name="removeTermChangeListener(org.ihtsdo.otf.tcc.api.store.TermChangeListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeTermChangeListener</h4>
+<pre>void&nbsp;removeTermChangeListener(<a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TermChangeListener.html" title="class in org.ihtsdo.otf.tcc.api.store">TermChangeListener</a>&nbsp;cl)</pre>
+</li>
+</ul>
+<a name="resumeChangeNotifications()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>resumeChangeNotifications</h4>
+<pre>void&nbsp;resumeChangeNotifications()</pre>
+</li>
+</ul>
+<a name="satisfiesDependencies(java.util.Collection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>satisfiesDependencies</h4>
+<pre>boolean&nbsp;satisfiesDependencies(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/db/DbDependency.html" title="class in org.ihtsdo.otf.tcc.api.db">DbDependency</a>&gt;&nbsp;dependencies)</pre>
+</li>
+</ul>
+<a name="suspendChangeNotifications()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>suspendChangeNotifications</h4>
+<pre>void&nbsp;suspendChangeNotifications()</pre>
+</li>
+</ul>
+<a name="getAllConceptNids()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAllConceptNids</h4>
+<pre><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;getAllConceptNids()
+                                throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getConceptNidsForComponentNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConceptNidsForComponentNids</h4>
+<pre><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;getConceptNidsForComponentNids(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;componentNativeIds)
+                                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getComponentNidsForConceptNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getComponentNidsForConceptNids</h4>
+<pre><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;getComponentNidsForConceptNids(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;conceptNativeIds)
+                                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getAuthorNidForStamp(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAuthorNidForStamp</h4>
+<pre>int&nbsp;getAuthorNidForStamp(int&nbsp;sapNid)</pre>
+</li>
+</ul>
+<a name="getEmptyNidSet()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEmptyNidSet</h4>
+<pre><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;getEmptyNidSet()
+                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getMetadataVC()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMetadataVC</h4>
+<pre><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;getMetadataVC()
+                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getModuleNidForStamp(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getModuleNidForStamp</h4>
+<pre>int&nbsp;getModuleNidForStamp(int&nbsp;sapNid)</pre>
+</li>
+</ul>
+<a name="getPath(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPath</h4>
+<pre><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Path</a>&nbsp;getPath(int&nbsp;pathNid)
+             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getPathNidForStamp(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPathNidForStamp</h4>
+<pre>int&nbsp;getPathNidForStamp(int&nbsp;sapNid)</pre>
+</li>
+</ul>
+<a name="getPathSetFromPositionSet(java.util.Set)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPathSetFromPositionSet</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Path</a>&gt;&nbsp;getPathSetFromPositionSet(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&gt;&nbsp;positions)
+                                    throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getPathSetFromSapSet(java.util.Set)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPathSetFromSapSet</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Path.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Path</a>&gt;&nbsp;getPathSetFromSapSet(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;sapNids)
+                               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getPositionSet(java.util.Set)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPositionSet</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">Position</a>&gt;&nbsp;getPositionSet(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;sapNids)
+                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getStatusForStamp(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStatusForStamp</h4>
+<pre><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&nbsp;getStatusForStamp(int&nbsp;stamp)</pre>
+</li>
+</ul>
+<a name="getTimeForStamp(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTimeForStamp</h4>
+<pre>long&nbsp;getTimeForStamp(int&nbsp;sapNid)</pre>
+</li>
+</ul>
+<a name="getNidForUuids(java.util.Collection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNidForUuids</h4>
+<pre>int&nbsp;getNidForUuids(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&gt;&nbsp;uuids)
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getUuidCollection(java.util.Collection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUuidCollection</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&gt;&nbsp;getUuidCollection(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;nids)
+                                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getNidCollection(java.util.Collection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNidCollection</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;getNidCollection(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&gt;&nbsp;uuids)
+                                     throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getNidForUuids(java.util.UUID...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNidForUuids</h4>
+<pre>int&nbsp;getNidForUuids(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>...&nbsp;uuids)
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getConceptNidForNid(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConceptNidForNid</h4>
+<pre>int&nbsp;getConceptNidForNid(int&nbsp;nid)</pre>
+</li>
+</ul>
+<a name="getNidFromAlternateId(java.util.UUID, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNidFromAlternateId</h4>
+<pre>int&nbsp;getNidFromAlternateId(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;authorityUuid,
+                        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;altId)
+                          throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="informAboutUuid(java.util.UUID)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>informAboutUuid</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;informAboutUuid(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uuid)</pre>
+</li>
+</ul>
+<a name="informAboutNid(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>informAboutNid</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;informAboutNid(int&nbsp;nid)</pre>
+</li>
+</ul>
+<a name="informAboutId(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>informAboutId</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&nbsp;informAboutId(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;id)</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/TerminologyDI.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TermChangeListener.html" title="class in org.ihtsdo.otf.tcc.api.store"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.CONCEPT_EVENT.html" title="enum in org.ihtsdo.otf.tcc.api.store"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/store/TerminologyDI.html" target="_top">Frames</a></li>
+<li><a href="TerminologyDI.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

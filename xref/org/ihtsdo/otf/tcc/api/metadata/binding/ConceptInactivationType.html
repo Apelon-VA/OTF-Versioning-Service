@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>ConceptInactivationType xref</title>
+<link type="text/css" rel="stylesheet" href="../../../../../../../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../../../../../../../apidocs/org/ihtsdo/otf/tcc/api/metadata/binding/ConceptInactivationType.html">View Javadoc</a></div><pre>
+
+<a class="jxr_linenumber" name="1" href="#1">1</a>   <strong class="jxr_keyword">package</strong> org.ihtsdo.otf.tcc.api.metadata.binding;
+<a class="jxr_linenumber" name="2" href="#2">2</a>   
+<a class="jxr_linenumber" name="3" href="#3">3</a>   <strong class="jxr_keyword">import</strong> java.util.UUID;
+<a class="jxr_linenumber" name="4" href="#4">4</a>   
+<a class="jxr_linenumber" name="5" href="#5">5</a>   <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.spec.ConceptSpec;
+<a class="jxr_linenumber" name="6" href="#6">6</a>   
+<a class="jxr_linenumber" name="7" href="#7">7</a>   <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/ConceptInactivationType.html">ConceptInactivationType</a> {
+<a class="jxr_linenumber" name="8" href="#8">8</a>   	
+<a class="jxr_linenumber" name="9" href="#9">9</a>   	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> AMBIGUOUS_CONCEPT = 
+<a class="jxr_linenumber" name="10" href="#10">10</a>  		<strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"Ambiguous concept (inactive concept)"</span>, 
+<a class="jxr_linenumber" name="11" href="#11">11</a>  						UUID.fromString(<span class="jxr_string">"5adbed85-55d8-3304-a404-4bebab660fff"</span>));
+<a class="jxr_linenumber" name="12" href="#12">12</a>  	
+<a class="jxr_linenumber" name="13" href="#13">13</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> DUPLICATE_CONCEPT = 
+<a class="jxr_linenumber" name="14" href="#14">14</a>  		<strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"Duplicate concept (inactive concept)"</span>, 
+<a class="jxr_linenumber" name="15" href="#15">15</a>  						UUID.fromString(<span class="jxr_string">"a5db42d4-6d94-33b7-92e7-d4a1d0f0d814"</span>));
+<a class="jxr_linenumber" name="16" href="#16">16</a>  	
+<a class="jxr_linenumber" name="17" href="#17">17</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> ERRONEOUS_CONCEPT = 
+<a class="jxr_linenumber" name="18" href="#18">18</a>  		<strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"Erroneous concept (inactive concept)"</span>, 
+<a class="jxr_linenumber" name="19" href="#19">19</a>  						UUID.fromString(<span class="jxr_string">"d4227098-db7a-331e-8f00-9d1e27626fc5"</span>));
+<a class="jxr_linenumber" name="20" href="#20">20</a>  	
+<a class="jxr_linenumber" name="21" href="#21">21</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> LIMITED_STATUS_CONCEPT = 
+<a class="jxr_linenumber" name="22" href="#22">22</a>  		<strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"Limited status concept (inactive concept)"</span>, 
+<a class="jxr_linenumber" name="23" href="#23">23</a>  						UUID.fromString(<span class="jxr_string">"0c7b717a-3e41-372b-be57-621befb9b3ee"</span>));
+<a class="jxr_linenumber" name="24" href="#24">24</a>  	
+<a class="jxr_linenumber" name="25" href="#25">25</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> MOVED_ELSEWHERE = 
+<a class="jxr_linenumber" name="26" href="#26">26</a>  		<strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"Moved elsewhere (inactive concept)"</span>, 
+<a class="jxr_linenumber" name="27" href="#27">27</a>  						UUID.fromString(<span class="jxr_string">"e730d11f-e155-3482-a423-9637db3bc1a2"</span>));
+<a class="jxr_linenumber" name="28" href="#28">28</a>  	
+<a class="jxr_linenumber" name="29" href="#29">29</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> OUTDATED_CONCEPT = 
+<a class="jxr_linenumber" name="30" href="#30">30</a>  		<strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"Outdated concept (inactive concept)"</span>, 
+<a class="jxr_linenumber" name="31" href="#31">31</a>  						UUID.fromString(<span class="jxr_string">"d8a42cc5-05dd-3fcf-a1f7-62856e38874a"</span>));
+<a class="jxr_linenumber" name="32" href="#32">32</a>  	
+<a class="jxr_linenumber" name="33" href="#33">33</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> REASON_NOT_STATED_CONCEPT = 
+<a class="jxr_linenumber" name="34" href="#34">34</a>  		<strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"Reason not stated concept (inactive concept)"</span>, 
+<a class="jxr_linenumber" name="35" href="#35">35</a>  						UUID.fromString(<span class="jxr_string">"a0db7e17-c6b2-3acc-811d-8a523274e869"</span>));
+<a class="jxr_linenumber" name="36" href="#36">36</a>  }
+<a class="jxr_linenumber" name="37" href="#37">37</a>  
+</pre>
+<hr/><div id="footer">This page was automatically generated by <a href="http://maven.apache.org/">Maven</a></div></body>
+</html>

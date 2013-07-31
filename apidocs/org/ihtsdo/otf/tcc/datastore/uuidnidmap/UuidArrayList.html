@@ -1,0 +1,1072 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>UuidArrayList (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="UuidArrayList (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/UuidArrayList.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidToIntHashMap.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidComparatorBI.html" title="interface in org.ihtsdo.otf.tcc.datastore.uuidnidmap"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html" target="_top">Frames</a></li>
+<li><a href="UuidArrayList.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.datastore.uuidnidmap</div>
+<h2 title="Class UuidArrayList" class="title">Class UuidArrayList</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.mahout.math.PersistentObject</li>
+<li>
+<ul class="inheritance">
+<li>org.apache.mahout.math.list.AbstractList</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.datastore.uuidnidmap.UuidArrayList</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Cloneable.html?is-external=true" title="class or interface in java.lang">Cloneable</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">UuidArrayList</span>
+extends <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></pre>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>kec</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../serialized-form.html#org.ihtsdo.otf.tcc.datastore.uuidnidmap.UuidArrayList">Serialized Form</a></dd><DT>&nbsp;</DT><DD><map name="umlmap617W0H0"><area shape="rect" coords="144,136,274,162" href="#" alt=""><area shape="rect" coords="10,163,137,179" href="#elements" alt=""><area shape="rect" coords="10,180,124,196" href="#UuidArrayList()" alt=""><area shape="rect" coords="10,196,139,212" href="#UuidArrayList(int)" alt=""><area shape="rect" coords="10,212,160,228" href="#UuidArrayList(long[])" alt=""><area shape="rect" coords="10,229,134,245" href="#add(java.util.UUID)" alt=""><area shape="rect" coords="10,245,140,261" href="#add(long[])" alt=""><area shape="rect" coords="10,261,214,277" href="#beforeInsert(int, long[])" alt=""><area shape="rect" coords="10,277,276,293" href="#binarySearchFromTo(long[], int, int)" alt=""><area shape="rect" coords="10,293,128,309" href="#clone()" alt=""><area shape="rect" coords="10,309,165,325" href="#copy()" alt=""><area shape="rect" coords="10,325,147,341" href="#elements()" alt=""><area shape="rect" coords="10,341,248,357" href="#elements(long[])" alt=""><area shape="rect" coords="10,357,192,373" href="#ensureCapacity(int)" alt=""><area shape="rect" coords="10,373,186,389" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="10,389,241,405" href="#forEach(org.ihtsdo.otf.tcc.datastore.uuidnidmap.UuidProcedure)" alt=""><area shape="rect" coords="10,405,148,421" href="#get(int, int)" alt=""><area shape="rect" coords="10,421,145,437" href="#getCapacity()" alt=""><area shape="rect" coords="10,437,160,453" href="#getQuick(int)" alt=""><area shape="rect" coords="10,453,131,469" href="#hashCode()" alt=""><area shape="rect" coords="10,469,232,485" href="#indexOfFromTo(long, int, int)" alt=""><area shape="rect" coords="10,485,255,500" href="#lastIndexOfFromTo(long, int, int)" alt=""><area shape="rect" coords="10,500,264,516" href="#partFromTo(int, int)" alt=""><area shape="rect" coords="10,516,266,532" href="#removeAll(org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList)" alt=""><area shape="rect" coords="10,532,398,548" href="#replaceFromToWithFrom(int, int, org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList, int)" alt=""><area shape="rect" coords="10,548,255,564" href="#retainAll(org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList)" alt=""><area shape="rect" coords="10,564,128,580" href="#reverse()" alt=""><area shape="rect" coords="10,580,148,596" href="#set(int, long)" alt=""><area shape="rect" coords="10,596,182,612" href="#setQuick(int, long)" alt=""><area shape="rect" coords="10,612,192,628" href="#setQuick(int, long[])" alt=""><area shape="rect" coords="10,628,188,644" href="#sortFromTo(int, int)" alt=""><area shape="rect" coords="10,644,192,660" href="#toList()" alt=""><area shape="rect" coords="10,660,145,676" href="#trimToSize()" alt=""><area shape="rect" coords="2,110,256,127" href="package-summary.html" alt=""><area shape="rect" coords="142,28,277,52" href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" alt=""><area shape="rect" coords="79,2,333,20" href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/package-summary.html" alt=""></map>
+<map name="umlmap617W1H0"><area shape="rect" coords="-227,136,-97,162" href="#" alt=""><area shape="rect" coords="-362,163,-235,179" href="#elements" alt=""><area shape="rect" coords="-362,180,-248,196" href="#UuidArrayList()" alt=""><area shape="rect" coords="-362,196,-233,212" href="#UuidArrayList(int)" alt=""><area shape="rect" coords="-362,212,-212,228" href="#UuidArrayList(long[])" alt=""><area shape="rect" coords="-362,229,-238,245" href="#add(java.util.UUID)" alt=""><area shape="rect" coords="-362,245,-232,261" href="#add(long[])" alt=""><area shape="rect" coords="-362,261,-158,277" href="#beforeInsert(int, long[])" alt=""><area shape="rect" coords="-362,277,-96,293" href="#binarySearchFromTo(long[], int, int)" alt=""><area shape="rect" coords="-362,293,-244,309" href="#clone()" alt=""><area shape="rect" coords="-362,309,-207,325" href="#copy()" alt=""><area shape="rect" coords="-362,325,-225,341" href="#elements()" alt=""><area shape="rect" coords="-362,341,-124,357" href="#elements(long[])" alt=""><area shape="rect" coords="-362,357,-180,373" href="#ensureCapacity(int)" alt=""><area shape="rect" coords="-362,373,-186,389" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-362,389,-131,405" href="#forEach(org.ihtsdo.otf.tcc.datastore.uuidnidmap.UuidProcedure)" alt=""><area shape="rect" coords="-362,405,-224,421" href="#get(int, int)" alt=""><area shape="rect" coords="-362,421,-227,437" href="#getCapacity()" alt=""><area shape="rect" coords="-362,437,-212,453" href="#getQuick(int)" alt=""><area shape="rect" coords="-362,453,-241,469" href="#hashCode()" alt=""><area shape="rect" coords="-362,469,-140,485" href="#indexOfFromTo(long, int, int)" alt=""><area shape="rect" coords="-362,485,-117,500" href="#lastIndexOfFromTo(long, int, int)" alt=""><area shape="rect" coords="-362,500,-108,516" href="#partFromTo(int, int)" alt=""><area shape="rect" coords="-362,516,-106,532" href="#removeAll(org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList)" alt=""><area shape="rect" coords="-362,532,26,548" href="#replaceFromToWithFrom(int, int, org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList, int)" alt=""><area shape="rect" coords="-362,548,-117,564" href="#retainAll(org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList)" alt=""><area shape="rect" coords="-362,564,-244,580" href="#reverse()" alt=""><area shape="rect" coords="-362,580,-224,596" href="#set(int, long)" alt=""><area shape="rect" coords="-362,596,-190,612" href="#setQuick(int, long)" alt=""><area shape="rect" coords="-362,612,-180,628" href="#setQuick(int, long[])" alt=""><area shape="rect" coords="-362,628,-184,644" href="#sortFromTo(int, int)" alt=""><area shape="rect" coords="-362,644,-180,660" href="#toList()" alt=""><area shape="rect" coords="-362,660,-227,676" href="#trimToSize()" alt=""><area shape="rect" coords="-370,110,-116,127" href="package-summary.html" alt=""><area shape="rect" coords="104,136,161,159" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="95,110,162,127" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="104,256,147,279" href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html" alt=""><area shape="rect" coords="105,223,211,246" href="http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html" alt=""><area shape="rect" coords="95,197,154,215" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="105,343,240,366" href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" alt=""><area shape="rect" coords="95,317,349,335" href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/package-summary.html" alt=""></map>
+<map name="umlmap617W0H1"><area shape="rect" coords="6,335,129,352" href="http://www.yworks.com/" alt=""><area shape="rect" coords="144,-225,274,-198" href="#" alt=""><area shape="rect" coords="10,-197,137,-181" href="#elements" alt=""><area shape="rect" coords="10,-180,124,-164" href="#UuidArrayList()" alt=""><area shape="rect" coords="10,-164,139,-148" href="#UuidArrayList(int)" alt=""><area shape="rect" coords="10,-148,160,-132" href="#UuidArrayList(long[])" alt=""><area shape="rect" coords="10,-131,134,-115" href="#add(java.util.UUID)" alt=""><area shape="rect" coords="10,-115,140,-99" href="#add(long[])" alt=""><area shape="rect" coords="10,-99,214,-83" href="#beforeInsert(int, long[])" alt=""><area shape="rect" coords="10,-83,276,-67" href="#binarySearchFromTo(long[], int, int)" alt=""><area shape="rect" coords="10,-67,128,-51" href="#clone()" alt=""><area shape="rect" coords="10,-51,165,-35" href="#copy()" alt=""><area shape="rect" coords="10,-35,147,-19" href="#elements()" alt=""><area shape="rect" coords="10,-19,248,-3" href="#elements(long[])" alt=""><area shape="rect" coords="10,-3,192,12" href="#ensureCapacity(int)" alt=""><area shape="rect" coords="10,12,186,28" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="10,28,241,44" href="#forEach(org.ihtsdo.otf.tcc.datastore.uuidnidmap.UuidProcedure)" alt=""><area shape="rect" coords="10,44,148,60" href="#get(int, int)" alt=""><area shape="rect" coords="10,60,145,76" href="#getCapacity()" alt=""><area shape="rect" coords="10,76,160,92" href="#getQuick(int)" alt=""><area shape="rect" coords="10,92,131,108" href="#hashCode()" alt=""><area shape="rect" coords="10,108,232,124" href="#indexOfFromTo(long, int, int)" alt=""><area shape="rect" coords="10,124,255,139" href="#lastIndexOfFromTo(long, int, int)" alt=""><area shape="rect" coords="10,139,264,155" href="#partFromTo(int, int)" alt=""><area shape="rect" coords="10,155,266,171" href="#removeAll(org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList)" alt=""><area shape="rect" coords="10,171,398,187" href="#replaceFromToWithFrom(int, int, org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList, int)" alt=""><area shape="rect" coords="10,187,255,203" href="#retainAll(org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList)" alt=""><area shape="rect" coords="10,203,128,219" href="#reverse()" alt=""><area shape="rect" coords="10,219,148,235" href="#set(int, long)" alt=""><area shape="rect" coords="10,235,182,251" href="#setQuick(int, long)" alt=""><area shape="rect" coords="10,251,192,267" href="#setQuick(int, long[])" alt=""><area shape="rect" coords="10,267,188,283" href="#sortFromTo(int, int)" alt=""><area shape="rect" coords="10,283,192,299" href="#toList()" alt=""><area shape="rect" coords="10,299,145,315" href="#trimToSize()" alt=""><area shape="rect" coords="2,-251,256,-233" href="package-summary.html" alt=""></map>
+<map name="umlmap617W1H1"><area shape="rect" coords="-227,-225,-97,-198" href="#" alt=""><area shape="rect" coords="-362,-197,-235,-181" href="#elements" alt=""><area shape="rect" coords="-362,-180,-248,-164" href="#UuidArrayList()" alt=""><area shape="rect" coords="-362,-164,-233,-148" href="#UuidArrayList(int)" alt=""><area shape="rect" coords="-362,-148,-212,-132" href="#UuidArrayList(long[])" alt=""><area shape="rect" coords="-362,-131,-238,-115" href="#add(java.util.UUID)" alt=""><area shape="rect" coords="-362,-115,-232,-99" href="#add(long[])" alt=""><area shape="rect" coords="-362,-99,-158,-83" href="#beforeInsert(int, long[])" alt=""><area shape="rect" coords="-362,-83,-96,-67" href="#binarySearchFromTo(long[], int, int)" alt=""><area shape="rect" coords="-362,-67,-244,-51" href="#clone()" alt=""><area shape="rect" coords="-362,-51,-207,-35" href="#copy()" alt=""><area shape="rect" coords="-362,-35,-225,-19" href="#elements()" alt=""><area shape="rect" coords="-362,-19,-124,-3" href="#elements(long[])" alt=""><area shape="rect" coords="-362,-3,-180,12" href="#ensureCapacity(int)" alt=""><area shape="rect" coords="-362,12,-186,28" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-362,28,-131,44" href="#forEach(org.ihtsdo.otf.tcc.datastore.uuidnidmap.UuidProcedure)" alt=""><area shape="rect" coords="-362,44,-224,60" href="#get(int, int)" alt=""><area shape="rect" coords="-362,60,-227,76" href="#getCapacity()" alt=""><area shape="rect" coords="-362,76,-212,92" href="#getQuick(int)" alt=""><area shape="rect" coords="-362,92,-241,108" href="#hashCode()" alt=""><area shape="rect" coords="-362,108,-140,124" href="#indexOfFromTo(long, int, int)" alt=""><area shape="rect" coords="-362,124,-117,139" href="#lastIndexOfFromTo(long, int, int)" alt=""><area shape="rect" coords="-362,139,-108,155" href="#partFromTo(int, int)" alt=""><area shape="rect" coords="-362,155,-106,171" href="#removeAll(org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList)" alt=""><area shape="rect" coords="-362,171,26,187" href="#replaceFromToWithFrom(int, int, org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList, int)" alt=""><area shape="rect" coords="-362,187,-117,203" href="#retainAll(org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList)" alt=""><area shape="rect" coords="-362,203,-244,219" href="#reverse()" alt=""><area shape="rect" coords="-362,219,-224,235" href="#set(int, long)" alt=""><area shape="rect" coords="-362,235,-190,251" href="#setQuick(int, long)" alt=""><area shape="rect" coords="-362,251,-180,267" href="#setQuick(int, long[])" alt=""><area shape="rect" coords="-362,267,-184,283" href="#sortFromTo(int, int)" alt=""><area shape="rect" coords="-362,283,-180,299" href="#toList()" alt=""><area shape="rect" coords="-362,299,-227,315" href="#trimToSize()" alt=""><area shape="rect" coords="-370,-251,-116,-233" href="package-summary.html" alt=""><area shape="rect" coords="130,20,246,43" href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidProcedure.html" alt=""><area shape="rect" coords="105,-17,240,5" href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" alt=""><area shape="rect" coords="95,-43,349,-25" href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="UuidArrayListW0H0.png" WIDTH="372" HEIGHT="361" USEMAP="#umlmap617W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="UuidArrayListW1H0.png" WIDTH="372" HEIGHT="361" USEMAP="#umlmap617W1H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="UuidArrayListW0H1.png" WIDTH="372" HEIGHT="361" USEMAP="#umlmap617W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="UuidArrayListW1H1.png" WIDTH="372" HEIGHT="361" USEMAP="#umlmap617W1H1" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected long[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#elements">elements</a></strong></code>
+<div class="block">The array buffer into which the elements of the list are stored.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.ihtsdo.otf.tcc.datastore.uuidnidmap.<a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></h3>
+<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#size">size</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#UuidArrayList()">UuidArrayList</a></strong>()</code>
+<div class="block">Constructs an empty list.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#UuidArrayList(int)">UuidArrayList</a></strong>(int&nbsp;initialCapacity)</code>
+<div class="block">Constructs an empty list with the specified initial capacity.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#UuidArrayList(long[])">UuidArrayList</a></strong>(long[]&nbsp;elements)</code>
+<div class="block">Constructs a list containing the specified elements.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#add(long[])">add</a></strong>(long[]&nbsp;element)</code>
+<div class="block">Appends the specified element to the end of this list.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#add(java.util.UUID)">add</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;element)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#beforeInsert(int, long[])">beforeInsert</a></strong>(int&nbsp;index,
+            long[]&nbsp;element)</code>
+<div class="block">Inserts the specified element before the specified position into the
+ receiver.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#binarySearchFromTo(long[], int, int)">binarySearchFromTo</a></strong>(long[]&nbsp;key,
+                  int&nbsp;from,
+                  int&nbsp;to)</code>
+<div class="block">Searches the receiver for the specified value using the binary search
+ algorithm.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#clone()">clone</a></strong>()</code>
+<div class="block">Returns a deep copy of the receiver.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">UuidArrayList</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#copy()">copy</a></strong>()</code>
+<div class="block">Returns a deep copy of the receiver; uses <code>clone()</code> and casts
+ the result.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#elements()">elements</a></strong>()</code>
+<div class="block">Returns the elements currently stored, including invalid elements between
+ size and capacity, if any.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#elements(long[])">elements</a></strong>(long[]&nbsp;elements)</code>
+<div class="block">Sets the receiver's elements to be the specified array (not a copy of
+ it).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#ensureCapacity(int)">ensureCapacity</a></strong>(int&nbsp;minCapacity)</code>
+<div class="block">Ensures that the receiver can hold at least the specified number of
+ elements without needing to allocate new internal memory.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;otherObj)</code>
+<div class="block">Compares the specified Object with the receiver.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#forEach(org.ihtsdo.otf.tcc.datastore.uuidnidmap.UuidProcedure)">forEach</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidProcedure.html" title="interface in org.ihtsdo.otf.tcc.datastore.uuidnidmap">UuidProcedure</a>&nbsp;procedure)</code>
+<div class="block">Applies a procedure to each element of the receiver, if any.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#get(int, int)">get</a></strong>(int&nbsp;index,
+   int&nbsp;nid)</code>
+<div class="block">Returns the element at the specified position in the receiver.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#getCapacity()">getCapacity</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#getQuick(int)">getQuick</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the element at the specified position in the receiver;
+ <b>WARNING:</b> Does not check preconditions.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#hashCode()">hashCode</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#indexOfFromTo(long, int, int)">indexOfFromTo</a></strong>(long&nbsp;element,
+             int&nbsp;from,
+             int&nbsp;to)</code>
+<div class="block">Returns the index of the first occurrence of the specified element.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#lastIndexOfFromTo(long, int, int)">lastIndexOfFromTo</a></strong>(long&nbsp;element,
+                 int&nbsp;from,
+                 int&nbsp;to)</code>
+<div class="block">Returns the index of the last occurrence of the specified element.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#partFromTo(int, int)">partFromTo</a></strong>(int&nbsp;from,
+          int&nbsp;to)</code>
+<div class="block">Returns a new list of the part of the receiver between <code>from</code>,
+ inclusive, and <code>to</code>, inclusive.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#removeAll(org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList)">removeAll</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a>&nbsp;other)</code>
+<div class="block">Removes from the receiver all elements that are contained in the
+ specified list.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#replaceFromToWithFrom(int, int, org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList, int)">replaceFromToWithFrom</a></strong>(int&nbsp;from,
+                     int&nbsp;to,
+                     <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a>&nbsp;other,
+                     int&nbsp;otherFrom)</code>
+<div class="block">Replaces a number of elements in the receiver with the same number of
+ elements of another list.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#retainAll(org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList)">retainAll</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a>&nbsp;other)</code>
+<div class="block">Retains (keeps) only the elements in the receiver that are contained in
+ the specified other list.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#reverse()">reverse</a></strong>()</code>
+<div class="block">Reverses the elements of the receiver.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#set(int, long)">set</a></strong>(int&nbsp;index,
+   long&nbsp;element)</code>
+<div class="block">Replaces the element at the specified position in the receiver with the
+ specified element.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#setQuick(int, long)">setQuick</a></strong>(int&nbsp;index,
+        long&nbsp;element)</code>
+<div class="block">Replaces the element at the specified position in the receiver with the
+ specified element; <b>WARNING:</b> Does not check preconditions.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#setQuick(int, long[])">setQuick</a></strong>(int&nbsp;index,
+        long[]&nbsp;element)</code>
+<div class="block">Replaces the element at the specified position in the receiver with the specified element;
+ <b>WARNING:</b> Does not check preconditions.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#sortFromTo(int, int)">sortFromTo</a></strong>(int&nbsp;from,
+          int&nbsp;to)</code>
+<div class="block">Sorts the specified range of the receiver into ascending order.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html?is-external=true" title="class or interface in java.util">ArrayList</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#toList()">toList</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html#trimToSize()">trimToSize</a></strong>()</code>
+<div class="block">Trims the capacity of the receiver to be the receiver's current size.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.ihtsdo.otf.tcc.datastore.uuidnidmap.<a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></h3>
+<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#addAllOfFromTo(org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList, int, int)">addAllOfFromTo</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#beforeInsertAllOfFromTo(int, org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList, int, int)">beforeInsertAllOfFromTo</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#beforeInsertDummies(int, int)">beforeInsertDummies</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#binarySearch(long[])">binarySearch</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#contains(long[])">contains</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#delete(long[])">delete</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#fillFromToWith(int, int, long[])">fillFromToWith</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#get(int)">get</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#indexOf(long[])">indexOf</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#indexOfFromTo(long[], int, int)">indexOfFromTo</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#lastIndexOf(long[])">lastIndexOf</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#lastIndexOfFromTo(long[], int, int)">lastIndexOfFromTo</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#mergeSortFromTo(int, int)">mergeSortFromTo</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#mergeSortFromTo(int, int, org.ihtsdo.otf.tcc.datastore.uuidnidmap.UuidComparatorBI)">mergeSortFromTo</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#quickSortFromTo(int, int)">quickSortFromTo</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#quickSortFromTo(int, int, org.ihtsdo.otf.tcc.datastore.uuidnidmap.UuidComparatorBI)">quickSortFromTo</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#removeFromTo(int, int)">removeFromTo</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#replaceFromToWithFromTo(int, int, org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList, int, int)">replaceFromToWithFromTo</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#set(int, long[])">set</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#setSizeRaw(int)">setSizeRaw</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#size()">size</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#times(int)">times</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#toString()">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.mahout.math.list.AbstractList">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.apache.mahout.math.list.AbstractList</h3>
+<code>checkRange, checkRangeFromTo, clear, isEmpty, mergeSort, quickSort, remove, setSize, sort</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="elements">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>elements</h4>
+<pre>protected&nbsp;long[] elements</pre>
+<div class="block">The array buffer into which the elements of the list are stored. The
+ capacity of the list is the length of this array buffer.</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="UuidArrayList()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UuidArrayList</h4>
+<pre>public&nbsp;UuidArrayList()</pre>
+<div class="block">Constructs an empty list.</div>
+</li>
+</ul>
+<a name="UuidArrayList(long[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UuidArrayList</h4>
+<pre>public&nbsp;UuidArrayList(long[]&nbsp;elements)</pre>
+<div class="block">Constructs a list containing the specified elements. The initial size and
+ capacity of the list is the length of the array.
+ 
+ <b>WARNING:</b> For efficiency reasons and to keep memory usage low,
+ <b>the array is not copied</b>. So if subsequently you modify the
+ specified array directly via the [] operator, be sure you know what
+ you're doing.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>elements</code> - the array to be backed by the the constructed list</dd></dl>
+</li>
+</ul>
+<a name="UuidArrayList(int)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>UuidArrayList</h4>
+<pre>public&nbsp;UuidArrayList(int&nbsp;initialCapacity)</pre>
+<div class="block">Constructs an empty list with the specified initial capacity.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>initialCapacity</code> - the number of elements the receiver can hold without
+            auto-expanding itself by allocating new internal memory.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="add(long[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre>public&nbsp;void&nbsp;add(long[]&nbsp;element)</pre>
+<div class="block">Appends the specified element to the end of this list.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#add(long[])">add</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>element</code> - element to be appended to this list.</dd></dl>
+</li>
+</ul>
+<a name="add(java.util.UUID)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre>public&nbsp;void&nbsp;add(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;element)</pre>
+</li>
+</ul>
+<a name="beforeInsert(int, long[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>beforeInsert</h4>
+<pre>public&nbsp;void&nbsp;beforeInsert(int&nbsp;index,
+                long[]&nbsp;element)</pre>
+<div class="block">Inserts the specified element before the specified position into the
+ receiver. Shifts the element currently at that position (if any) and any
+ subsequent elements to the right.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#beforeInsert(int, long[])">beforeInsert</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - index before which the specified element is to be inserted
+            (must be in [0,size]).</dd><dd><code>element</code> - element to be inserted.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IndexOutOfBoundsException.html?is-external=true" title="class or interface in java.lang">IndexOutOfBoundsException</a></code> - index is out of range (
+                <tt>index &lt; 0 || index &gt; size()</tt>).</dd></dl>
+</li>
+</ul>
+<a name="binarySearchFromTo(long[], int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>binarySearchFromTo</h4>
+<pre>public&nbsp;int&nbsp;binarySearchFromTo(long[]&nbsp;key,
+                     int&nbsp;from,
+                     int&nbsp;to)</pre>
+<div class="block">Searches the receiver for the specified value using the binary search
+ algorithm. The receiver must <strong>must</strong> be sorted (as by the
+ sort method) prior to making this call. If it is not sorted, the results
+ are undefined: in particular, the call may enter an infinite loop. If the
+ receiver contains multiple elements equal to the specified object, there
+ is no guarantee which instance will be found.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#binarySearchFromTo(long[], int, int)">binarySearchFromTo</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>key</code> - the value to be searched for.</dd><dd><code>from</code> - the leftmost search position, inclusive.</dd><dd><code>to</code> - the rightmost search position, inclusive.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>index of the search key, if it is contained in the receiver;
+         otherwise, <tt>(-(<i>insertion point</i>) - 1)</tt>. The
+         <i>insertion point</i> is defined as the the point at which the
+         value would be inserted into the receiver: the index of the first
+         element greater than the key, or <tt>receiver.size()</tt>, if all
+         elements in the receiver are less than the specified key. Note
+         that this guarantees that the return value will be &gt;= 0 if and
+         only if the key is found.</dd><dt><span class="strong">See Also:</span></dt><dd><code>org.ihtsdo.cern.colt.Sorting</code>, 
+<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html?is-external=true" title="class or interface in java.util"><code>Arrays</code></a></dd></dl>
+</li>
+</ul>
+<a name="clone()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clone</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;clone()</pre>
+<div class="block">Returns a deep copy of the receiver.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#clone()">clone</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a deep copy of the receiver.</dd></dl>
+</li>
+</ul>
+<a name="copy()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>copy</h4>
+<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">UuidArrayList</a>&nbsp;copy()</pre>
+<div class="block">Returns a deep copy of the receiver; uses <code>clone()</code> and casts
+ the result.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a deep copy of the receiver.</dd></dl>
+</li>
+</ul>
+<a name="elements()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>elements</h4>
+<pre>public&nbsp;long[]&nbsp;elements()</pre>
+<div class="block">Returns the elements currently stored, including invalid elements between
+ size and capacity, if any.
+ 
+ <b>WARNING:</b> For efficiency reasons and to keep memory usage low,
+ <b>the array is not copied</b>. So if subsequently you modify the
+ returned array directly via the [] operator, be sure you know what you're
+ doing.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#elements()">elements</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the elements currently stored.</dd></dl>
+</li>
+</ul>
+<a name="elements(long[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>elements</h4>
+<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a>&nbsp;elements(long[]&nbsp;elements)</pre>
+<div class="block">Sets the receiver's elements to be the specified array (not a copy of
+ it).
+ 
+ The size and capacity of the list is the length of the array.
+ <b>WARNING:</b> For efficiency reasons and to keep memory usage low,
+ <b>the array is not copied</b>. So if subsequently you modify the
+ specified array directly via the [] operator, be sure you know what
+ you're doing.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#elements(long[])">elements</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>elements</code> - the new elements to be stored.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the receiver itself.</dd></dl>
+</li>
+</ul>
+<a name="ensureCapacity(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ensureCapacity</h4>
+<pre>public&nbsp;void&nbsp;ensureCapacity(int&nbsp;minCapacity)</pre>
+<div class="block">Ensures that the receiver can hold at least the specified number of
+ elements without needing to allocate new internal memory. If necessary,
+ allocates new internal memory and increases the capacity of the receiver.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#ensureCapacity(int)">ensureCapacity</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>minCapacity</code> - the desired minimum capacity.</dd></dl>
+</li>
+</ul>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;otherObj)</pre>
+<div class="block">Compares the specified Object with the receiver. Returns true if and only
+ if the specified Object is also an ArrayList of the same type, both Lists
+ have the same size, and all corresponding pairs of elements in the two
+ Lists are identical. In other words, two Lists are defined to be equal if
+ they contain the same elements in the same order.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>otherObj</code> - the Object to be compared for equality with the receiver.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if the specified Object is equal to the receiver.</dd></dl>
+</li>
+</ul>
+<a name="forEach(org.ihtsdo.otf.tcc.datastore.uuidnidmap.UuidProcedure)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>forEach</h4>
+<pre>public&nbsp;boolean&nbsp;forEach(<a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidProcedure.html" title="interface in org.ihtsdo.otf.tcc.datastore.uuidnidmap">UuidProcedure</a>&nbsp;procedure)</pre>
+<div class="block">Applies a procedure to each element of the receiver, if any. Starts at
+ index 0, moving rightwards.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#forEach(org.ihtsdo.otf.tcc.datastore.uuidnidmap.UuidProcedure)">forEach</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>procedure</code> - the procedure to be applied. Stops iteration if the procedure
+            returns <tt>false</tt>, otherwise continues.</dd>
+<dt><span class="strong">Returns:</span></dt><dd><tt>false</tt> if the procedure stopped before all elements where
+         iterated over, <tt>true</tt> otherwise.</dd></dl>
+</li>
+</ul>
+<a name="get(int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre>public&nbsp;long[]&nbsp;get(int&nbsp;index,
+         int&nbsp;nid)</pre>
+<div class="block">Returns the element at the specified position in the receiver.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - index of element to return.</dd><dd><code>nid</code> - </dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IndexOutOfBoundsException.html?is-external=true" title="class or interface in java.lang">IndexOutOfBoundsException</a></code> - index is out of range (index &lt; 0 || index &gt;=
+                size()).</dd></dl>
+</li>
+</ul>
+<a name="getQuick(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getQuick</h4>
+<pre>public&nbsp;long[]&nbsp;getQuick(int&nbsp;index)</pre>
+<div class="block">Returns the element at the specified position in the receiver;
+ <b>WARNING:</b> Does not check preconditions. Provided with invalid
+ parameters this method may return invalid elements without throwing any
+ exception! <b>You should only use this method when you are absolutely
+ sure that the index is within bounds.</b> Precondition (unchecked):
+ <tt>index &gt;= 0 && index &lt; size()</tt>.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#getQuick(int)">getQuick</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - index of element to return.</dd></dl>
+</li>
+</ul>
+<a name="indexOfFromTo(long, int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>indexOfFromTo</h4>
+<pre>public&nbsp;int&nbsp;indexOfFromTo(long&nbsp;element,
+                int&nbsp;from,
+                int&nbsp;to)</pre>
+<div class="block">Returns the index of the first occurrence of the specified element.
+ Returns <code>-1</code> if the receiver does not contain this element.
+ Searches between <code>from</code>, inclusive and <code>to</code>,
+ inclusive. Tests for identity.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>element</code> - element to search for.</dd><dd><code>from</code> - the leftmost search position, inclusive.</dd><dd><code>to</code> - the rightmost search position, inclusive.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the index of the first occurrence of the element in the receiver;
+         returns <code>-1</code> if the element is not found.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IndexOutOfBoundsException.html?is-external=true" title="class or interface in java.lang">IndexOutOfBoundsException</a></code> - index is out of range (
+                <tt>size()&gt;0 && (from&lt;0 || from&gt;to || to&gt;=size())</tt>
+                ).</dd></dl>
+</li>
+</ul>
+<a name="lastIndexOfFromTo(long, int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lastIndexOfFromTo</h4>
+<pre>public&nbsp;int&nbsp;lastIndexOfFromTo(long&nbsp;element,
+                    int&nbsp;from,
+                    int&nbsp;to)</pre>
+<div class="block">Returns the index of the last occurrence of the specified element.
+ Returns <code>-1</code> if the receiver does not contain this element.
+ Searches beginning at <code>to</code>, inclusive until <code>from</code>,
+ inclusive. Tests for identity.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>element</code> - element to search for.</dd><dd><code>from</code> - the leftmost search position, inclusive.</dd><dd><code>to</code> - the rightmost search position, inclusive.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the index of the last occurrence of the element in the receiver;
+         returns <code>-1</code> if the element is not found.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IndexOutOfBoundsException.html?is-external=true" title="class or interface in java.lang">IndexOutOfBoundsException</a></code> - index is out of range (
+                <tt>size()&gt;0 && (from&lt;0 || from&gt;to || to&gt;=size())</tt>
+                ).</dd></dl>
+</li>
+</ul>
+<a name="partFromTo(int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>partFromTo</h4>
+<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a>&nbsp;partFromTo(int&nbsp;from,
+                          int&nbsp;to)</pre>
+<div class="block">Returns a new list of the part of the receiver between <code>from</code>,
+ inclusive, and <code>to</code>, inclusive.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#partFromTo(int, int)">partFromTo</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>from</code> - the index of the first element (inclusive).</dd><dd><code>to</code> - the index of the last element (inclusive).</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new list</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IndexOutOfBoundsException.html?is-external=true" title="class or interface in java.lang">IndexOutOfBoundsException</a></code> - index is out of range (
+                <tt>size()&gt;0 && (from&lt;0 || from&gt;to || to&gt;=size())</tt>
+                ).</dd></dl>
+</li>
+</ul>
+<a name="removeAll(org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeAll</h4>
+<pre>public&nbsp;boolean&nbsp;removeAll(<a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a>&nbsp;other)</pre>
+<div class="block">Removes from the receiver all elements that are contained in the
+ specified list. Tests for identity.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#removeAll(org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList)">removeAll</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>other</code> - the other list.</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code> if the receiver changed as a result of the
+         call.</dd></dl>
+</li>
+</ul>
+<a name="replaceFromToWithFrom(int, int, org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>replaceFromToWithFrom</h4>
+<pre>public&nbsp;void&nbsp;replaceFromToWithFrom(int&nbsp;from,
+                         int&nbsp;to,
+                         <a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a>&nbsp;other,
+                         int&nbsp;otherFrom)</pre>
+<div class="block">Replaces a number of elements in the receiver with the same number of
+ elements of another list. Replaces elements in the receiver, between
+ <code>from</code> (inclusive) and <code>to</code> (inclusive), with
+ elements of <code>other</code>, starting from <code>otherFrom</code>
+ (inclusive).</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#replaceFromToWithFrom(int, int, org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList, int)">replaceFromToWithFrom</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>from</code> - the position of the first element to be replaced in the
+            receiver</dd><dd><code>to</code> - the position of the last element to be replaced in the
+            receiver</dd><dd><code>other</code> - list holding elements to be copied into the receiver.</dd><dd><code>otherFrom</code> - position of first element within other list to be copied.</dd></dl>
+</li>
+</ul>
+<a name="retainAll(org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>retainAll</h4>
+<pre>public&nbsp;boolean&nbsp;retainAll(<a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a>&nbsp;other)</pre>
+<div class="block">Retains (keeps) only the elements in the receiver that are contained in
+ the specified other list. In other words, removes from the receiver all
+ of its elements that are not contained in the specified other list.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#retainAll(org.ihtsdo.otf.tcc.datastore.uuidnidmap.AbstractUuidList)">retainAll</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>other</code> - the other list to test against.</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code> if the receiver changed as a result of the
+         call.</dd></dl>
+</li>
+</ul>
+<a name="reverse()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reverse</h4>
+<pre>public&nbsp;void&nbsp;reverse()</pre>
+<div class="block">Reverses the elements of the receiver. Last becomes first, second last
+ becomes second first, and so on.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#reverse()">reverse</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="set(int, long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>set</h4>
+<pre>public&nbsp;void&nbsp;set(int&nbsp;index,
+       long&nbsp;element)</pre>
+<div class="block">Replaces the element at the specified position in the receiver with the
+ specified element.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - index of element to replace.</dd><dd><code>element</code> - element to be stored at the specified position.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IndexOutOfBoundsException.html?is-external=true" title="class or interface in java.lang">IndexOutOfBoundsException</a></code> - index is out of range (index &lt; 0 || index &gt;=
+                size()).</dd></dl>
+</li>
+</ul>
+<a name="setQuick(int, long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setQuick</h4>
+<pre>public&nbsp;void&nbsp;setQuick(int&nbsp;index,
+            long&nbsp;element)</pre>
+<div class="block">Replaces the element at the specified position in the receiver with the
+ specified element; <b>WARNING:</b> Does not check preconditions. Provided
+ with invalid parameters this method may access invalid indexes without
+ throwing any exception! <b>You should only use this method when you are
+ absolutely sure that the index is within bounds.</b> Precondition
+ (unchecked): <tt>index &gt;= 0 && index &lt; size()</tt>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - index of element to replace.</dd><dd><code>element</code> - element to be stored at the specified position.</dd></dl>
+</li>
+</ul>
+<a name="sortFromTo(int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sortFromTo</h4>
+<pre>public&nbsp;void&nbsp;sortFromTo(int&nbsp;from,
+              int&nbsp;to)</pre>
+<div class="block">Sorts the specified range of the receiver into ascending order.
+ 
+ The sorting algorithm is dynamically chosen according to the
+ characteristics of the data set. Currently quicksort and countsort are
+ considered. Countsort is not always applicable, but if applicable, it
+ usually outperforms quicksort by a factor of 3-4.
+ 
+ <p>
+ Best case performance: O(N).
+ <dt>Worst case performance: O(N^2) (a degenerated quicksort).
+ <dt>Best case space requirements: 0 KB.
+ <dt>Worst case space requirements: 40 KB.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code>sortFromTo</code>&nbsp;in class&nbsp;<code>org.apache.mahout.math.list.AbstractList</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>from</code> - the index of the first element (inclusive) to be sorted.</dd><dd><code>to</code> - the index of the last element (inclusive) to be sorted.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IndexOutOfBoundsException.html?is-external=true" title="class or interface in java.lang">IndexOutOfBoundsException</a></code> - index is out of range (<tt>size()&gt;0 && (from&lt;0 ||
+                from&gt;to || to&gt;=size())</tt>).</dd></dl>
+</li>
+</ul>
+<a name="trimToSize()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>trimToSize</h4>
+<pre>public&nbsp;void&nbsp;trimToSize()</pre>
+<div class="block">Trims the capacity of the receiver to be the receiver's current size.
+ Releases any superfluous internal memory. An application can use this
+ operation to minimize the storage of the receiver.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code>trimToSize</code>&nbsp;in class&nbsp;<code>org.apache.mahout.math.list.AbstractList</code></dd>
+</dl>
+</li>
+</ul>
+<a name="setQuick(int, long[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setQuick</h4>
+<pre>protected&nbsp;void&nbsp;setQuick(int&nbsp;index,
+            long[]&nbsp;element)</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#setQuick(int, long[])">AbstractUuidList</a></code></strong></div>
+<div class="block">Replaces the element at the specified position in the receiver with the specified element;
+ <b>WARNING:</b> Does not check preconditions. Provided with invalid parameters this method may access
+ invalid indexes without throwing any exception! <b>You should only use this method when you are
+ absolutely sure that the index is within bounds.</b> Precondition (unchecked): <tt>index &gt;= 0 &&
+ index &lt; size()</tt>.
+
+ This method is normally only used internally in large loops where bounds are explicitly checked before
+ the loop and need no be rechecked within the loop. However, when desperately, you can give this method
+ <tt>public</tt> visibility in subclasses.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html#setQuick(int, long[])">setQuick</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidList.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">AbstractUuidList</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - index of element to replace.</dd><dd><code>element</code> - element to be stored at the specified position.</dd></dl>
+</li>
+</ul>
+<a name="toList()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toList</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html?is-external=true" title="class or interface in java.util">ArrayList</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&gt;&nbsp;toList()</pre>
+</li>
+</ul>
+<a name="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getCapacity()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getCapacity</h4>
+<pre>public&nbsp;int&nbsp;getCapacity()</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/UuidArrayList.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/AbstractUuidToIntHashMap.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidComparatorBI.html" title="interface in org.ihtsdo.otf.tcc.datastore.uuidnidmap"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidArrayList.html" target="_top">Frames</a></li>
+<li><a href="UuidArrayList.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

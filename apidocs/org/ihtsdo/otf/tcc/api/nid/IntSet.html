@@ -1,0 +1,687 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>IntSet (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="IntSet (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/IntSet.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/HybridNidSet.html" title="class in org.ihtsdo.otf.tcc.api.nid"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/nid/IntSet.html" target="_top">Frames</a></li>
+<li><a href="IntSet.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.api.nid</div>
+<h2 title="Class IntSet" class="title">Class IntSet</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.api.nid.IntSet</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">IntSet</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></pre>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>dylangrald</dd>
+<DT>&nbsp;</DT><DD><map name="umlmap84W0H0"><area shape="rect" coords="339,145,403,171" href="#" alt=""><area shape="rect" coords="264,172,333,188" href="#IntSet()" alt=""><area shape="rect" coords="264,188,358,204" href="#IntSet(int[])" alt=""><area shape="rect" coords="264,204,438,220" href="#IntSet(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="264,220,416,236" href="#IntSet(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="264,237,373,253" href="#add(int)" alt=""><area shape="rect" coords="264,253,397,269" href="#addAll(int[])" alt=""><area shape="rect" coords="264,269,440,285" href="#and(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="264,285,462,301" href="#andNot(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="264,301,365,317" href="#clear()" alt=""><area shape="rect" coords="264,317,425,333" href="#contains(int)" alt=""><area shape="rect" coords="264,333,425,349" href="#contiguous()" alt=""><area shape="rect" coords="264,349,472,365" href="#getIterator()" alt=""><area shape="rect" coords="264,365,369,381" href="#getMax()" alt=""><area shape="rect" coords="264,381,364,397" href="#getMin()" alt=""><area shape="rect" coords="264,397,416,413" href="#getSetValues()" alt=""><area shape="rect" coords="264,413,406,429" href="#isEmpty()" alt=""><area shape="rect" coords="264,429,433,445" href="#isMember(int)" alt=""><area shape="rect" coords="264,445,430,461" href="#or(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="264,461,396,477" href="#remove(int)" alt=""><area shape="rect" coords="264,477,420,493" href="#removeAll(int[])" alt=""><area shape="rect" coords="264,493,419,508" href="#setMember(int)" alt=""><area shape="rect" coords="264,508,441,524" href="#setNotMember(int)" alt=""><area shape="rect" coords="264,524,348,540" href="#size()" alt=""><area shape="rect" coords="264,540,393,556" href="#toString()" alt=""><area shape="rect" coords="264,556,449,572" href="#union(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="264,572,437,588" href="#xor(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="256,119,415,136" href="package-summary.html" alt=""><area shape="rect" coords="342,37,399,61" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="333,11,400,29" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""></map>
+<map name="umlmap84W1H0"><area shape="rect" coords="-29,145,34,171" href="#" alt=""><area shape="rect" coords="-105,172,-36,188" href="#IntSet()" alt=""><area shape="rect" coords="-105,188,-11,204" href="#IntSet(int[])" alt=""><area shape="rect" coords="-105,204,69,220" href="#IntSet(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-105,220,47,236" href="#IntSet(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-105,237,4,253" href="#add(int)" alt=""><area shape="rect" coords="-105,253,28,269" href="#addAll(int[])" alt=""><area shape="rect" coords="-105,269,71,285" href="#and(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-105,285,93,301" href="#andNot(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-105,301,-4,317" href="#clear()" alt=""><area shape="rect" coords="-105,317,56,333" href="#contains(int)" alt=""><area shape="rect" coords="-105,333,56,349" href="#contiguous()" alt=""><area shape="rect" coords="-105,349,103,365" href="#getIterator()" alt=""><area shape="rect" coords="-105,365,0,381" href="#getMax()" alt=""><area shape="rect" coords="-105,381,-5,397" href="#getMin()" alt=""><area shape="rect" coords="-105,397,47,413" href="#getSetValues()" alt=""><area shape="rect" coords="-105,413,37,429" href="#isEmpty()" alt=""><area shape="rect" coords="-105,429,64,445" href="#isMember(int)" alt=""><area shape="rect" coords="-105,445,61,461" href="#or(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-105,461,27,477" href="#remove(int)" alt=""><area shape="rect" coords="-105,477,51,493" href="#removeAll(int[])" alt=""><area shape="rect" coords="-105,493,50,508" href="#setMember(int)" alt=""><area shape="rect" coords="-105,508,72,524" href="#setNotMember(int)" alt=""><area shape="rect" coords="-105,524,-21,540" href="#size()" alt=""><area shape="rect" coords="-105,540,24,556" href="#toString()" alt=""><area shape="rect" coords="-105,556,80,572" href="#union(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-105,572,68,588" href="#xor(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-113,119,46,136" href="package-summary.html" alt=""><area shape="rect" coords="-26,37,30,61" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="-35,11,31,29" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="102,33,210,56" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" alt=""><area shape="rect" coords="69,2,228,20" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/package-summary.html" alt=""><area shape="rect" coords="176,145,230,168" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="167,119,234,136" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="203,312,328,335" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html" alt=""><area shape="rect" coords="199,270,307,293" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" alt=""><area shape="rect" coords="177,232,319,255" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html" alt=""><area shape="rect" coords="167,206,326,224" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/package-summary.html" alt=""></map>
+<map name="umlmap84W0H1"><area shape="rect" coords="6,291,129,308" href="http://www.yworks.com/" alt=""><area shape="rect" coords="339,-172,403,-145" href="#" alt=""><area shape="rect" coords="264,-144,333,-128" href="#IntSet()" alt=""><area shape="rect" coords="264,-128,358,-112" href="#IntSet(int[])" alt=""><area shape="rect" coords="264,-112,438,-96" href="#IntSet(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="264,-96,416,-80" href="#IntSet(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="264,-79,373,-63" href="#add(int)" alt=""><area shape="rect" coords="264,-63,397,-47" href="#addAll(int[])" alt=""><area shape="rect" coords="264,-47,440,-31" href="#and(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="264,-31,462,-15" href="#andNot(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="264,-15,365,0" href="#clear()" alt=""><area shape="rect" coords="264,0,425,16" href="#contains(int)" alt=""><area shape="rect" coords="264,16,425,32" href="#contiguous()" alt=""><area shape="rect" coords="264,32,472,48" href="#getIterator()" alt=""><area shape="rect" coords="264,48,369,64" href="#getMax()" alt=""><area shape="rect" coords="264,64,364,80" href="#getMin()" alt=""><area shape="rect" coords="264,80,416,96" href="#getSetValues()" alt=""><area shape="rect" coords="264,96,406,112" href="#isEmpty()" alt=""><area shape="rect" coords="264,112,433,128" href="#isMember(int)" alt=""><area shape="rect" coords="264,128,430,144" href="#or(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="264,144,396,160" href="#remove(int)" alt=""><area shape="rect" coords="264,160,420,176" href="#removeAll(int[])" alt=""><area shape="rect" coords="264,176,419,191" href="#setMember(int)" alt=""><area shape="rect" coords="264,191,441,207" href="#setNotMember(int)" alt=""><area shape="rect" coords="264,207,348,223" href="#size()" alt=""><area shape="rect" coords="264,223,393,239" href="#toString()" alt=""><area shape="rect" coords="264,239,449,255" href="#union(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="264,255,437,271" href="#xor(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="256,-198,415,-180" href="package-summary.html" alt=""></map>
+<map name="umlmap84W1H1"><area shape="rect" coords="-29,-172,34,-145" href="#" alt=""><area shape="rect" coords="-105,-144,-36,-128" href="#IntSet()" alt=""><area shape="rect" coords="-105,-128,-11,-112" href="#IntSet(int[])" alt=""><area shape="rect" coords="-105,-112,69,-96" href="#IntSet(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-105,-96,47,-80" href="#IntSet(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-105,-79,4,-63" href="#add(int)" alt=""><area shape="rect" coords="-105,-63,28,-47" href="#addAll(int[])" alt=""><area shape="rect" coords="-105,-47,71,-31" href="#and(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-105,-31,93,-15" href="#andNot(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-105,-15,-4,0" href="#clear()" alt=""><area shape="rect" coords="-105,0,56,16" href="#contains(int)" alt=""><area shape="rect" coords="-105,16,56,32" href="#contiguous()" alt=""><area shape="rect" coords="-105,32,103,48" href="#getIterator()" alt=""><area shape="rect" coords="-105,48,0,64" href="#getMax()" alt=""><area shape="rect" coords="-105,64,-5,80" href="#getMin()" alt=""><area shape="rect" coords="-105,80,47,96" href="#getSetValues()" alt=""><area shape="rect" coords="-105,96,37,112" href="#isEmpty()" alt=""><area shape="rect" coords="-105,112,64,128" href="#isMember(int)" alt=""><area shape="rect" coords="-105,128,61,144" href="#or(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-105,144,27,160" href="#remove(int)" alt=""><area shape="rect" coords="-105,160,51,176" href="#removeAll(int[])" alt=""><area shape="rect" coords="-105,176,50,191" href="#setMember(int)" alt=""><area shape="rect" coords="-105,191,72,207" href="#setNotMember(int)" alt=""><area shape="rect" coords="-105,207,-21,223" href="#size()" alt=""><area shape="rect" coords="-105,223,24,239" href="#toString()" alt=""><area shape="rect" coords="-105,239,80,255" href="#union(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-105,255,68,271" href="#xor(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-113,-198,46,-180" href="package-summary.html" alt=""><area shape="rect" coords="203,-4,328,18" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html" alt=""><area shape="rect" coords="167,-110,326,-92" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="IntSetW0H0.png" WIDTH="369" HEIGHT="317" USEMAP="#umlmap84W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="IntSetW1H0.png" WIDTH="368" HEIGHT="317" USEMAP="#umlmap84W1H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="IntSetW0H1.png" WIDTH="369" HEIGHT="317" USEMAP="#umlmap84W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="IntSetW1H1.png" WIDTH="368" HEIGHT="317" USEMAP="#umlmap84W1H1" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#IntSet()">IntSet</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#IntSet(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)">IntSet</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html" title="class in org.ihtsdo.otf.tcc.api.nid">ConcurrentBitSet</a>&nbsp;other)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#IntSet(int[])">IntSet</a></strong>(int[]&nbsp;nids)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#IntSet(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">IntSet</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;other)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#add(int)">add</a></strong>(int&nbsp;nid)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#addAll(int[])">addAll</a></strong>(int[]&nbsp;nids)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#and(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">and</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;other)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#andNot(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">andNot</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;other)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#clear()">clear</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#contains(int)">contains</a></strong>(int&nbsp;nid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#contiguous()">contiguous</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetItrBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#getIterator()">getIterator</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#getMax()">getMax</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#getMin()">getMin</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#getSetValues()">getSetValues</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#isEmpty()">isEmpty</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#isMember(int)">isMember</a></strong>(int&nbsp;nid)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#or(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">or</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;other)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#remove(int)">remove</a></strong>(int&nbsp;nid)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#removeAll(int[])">removeAll</a></strong>(int[]&nbsp;nids)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#setMember(int)">setMember</a></strong>(int&nbsp;nid)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#setNotMember(int)">setNotMember</a></strong>(int&nbsp;nid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#size()">size</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#toString()">toString</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#union(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">union</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;other)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/IntSet.html#xor(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">xor</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;other)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.nid.<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></h3>
+<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#equals(java.lang.Object)">equals</a>, <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#hashCode()">hashCode</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="IntSet()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IntSet</h4>
+<pre>public&nbsp;IntSet()</pre>
+</li>
+</ul>
+<a name="IntSet(int[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IntSet</h4>
+<pre>public&nbsp;IntSet(int[]&nbsp;nids)</pre>
+</li>
+</ul>
+<a name="IntSet(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>IntSet</h4>
+<pre>public&nbsp;IntSet(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html" title="class in org.ihtsdo.otf.tcc.api.nid">ConcurrentBitSet</a>&nbsp;other)
+       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="IntSet(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>IntSet</h4>
+<pre>public&nbsp;IntSet(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;other)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="size()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>size</h4>
+<pre>public&nbsp;int&nbsp;size()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#size()">size</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="isMember(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isMember</h4>
+<pre>public&nbsp;boolean&nbsp;isMember(int&nbsp;nid)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#isMember(int)">isMember</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setMember(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMember</h4>
+<pre>public&nbsp;void&nbsp;setMember(int&nbsp;nid)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#setMember(int)">setMember</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="and(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>and</h4>
+<pre>public&nbsp;void&nbsp;and(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;other)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#and(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">and</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="or(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>or</h4>
+<pre>public&nbsp;void&nbsp;or(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;other)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#or(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">or</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="xor(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>xor</h4>
+<pre>public&nbsp;void&nbsp;xor(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;other)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#xor(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">xor</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="contains(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>contains</h4>
+<pre>public&nbsp;boolean&nbsp;contains(int&nbsp;nid)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#contains(int)">contains</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getSetValues()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSetValues</h4>
+<pre>public&nbsp;int[]&nbsp;getSetValues()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#getSetValues()">getSetValues</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="add(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre>public&nbsp;void&nbsp;add(int&nbsp;nid)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#add(int)">add</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="addAll(int[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addAll</h4>
+<pre>public&nbsp;void&nbsp;addAll(int[]&nbsp;nids)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#addAll(int[])">addAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="remove(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>remove</h4>
+<pre>public&nbsp;void&nbsp;remove(int&nbsp;nid)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#remove(int)">remove</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="removeAll(int[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeAll</h4>
+<pre>public&nbsp;void&nbsp;removeAll(int[]&nbsp;nids)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#removeAll(int[])">removeAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="clear()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clear</h4>
+<pre>public&nbsp;void&nbsp;clear()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#clear()">clear</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getMax()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMax</h4>
+<pre>public&nbsp;int&nbsp;getMax()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#getMax()">getMax</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getMin()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMin</h4>
+<pre>public&nbsp;int&nbsp;getMin()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#getMin()">getMin</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="contiguous()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>contiguous</h4>
+<pre>public&nbsp;boolean&nbsp;contiguous()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#contiguous()">contiguous</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="union(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>union</h4>
+<pre>public&nbsp;void&nbsp;union(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;other)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#union(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">union</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setNotMember(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setNotMember</h4>
+<pre>public&nbsp;void&nbsp;setNotMember(int&nbsp;nid)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#setNotMember(int)">setNotMember</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="andNot(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>andNot</h4>
+<pre>public&nbsp;void&nbsp;andNot(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;other)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#andNot(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">andNot</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#toString()">toString</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getIterator()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIterator</h4>
+<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetItrBI</a>&nbsp;getIterator()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#getIterator()">getIterator</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="isEmpty()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isEmpty</h4>
+<pre>public&nbsp;boolean&nbsp;isEmpty()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#isEmpty()">isEmpty</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/IntSet.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/HybridNidSet.html" title="class in org.ihtsdo.otf.tcc.api.nid"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/nid/IntSet.html" target="_top">Frames</a></li>
+<li><a href="IntSet.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

@@ -1,0 +1,880 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>AggregateProgressItem (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AggregateProgressItem (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AggregateProgressItem.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateStateBinding.html" title="class in org.ihtsdo.otf.tcc.ddo.progress"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html" target="_top">Frames</a></li>
+<li><a href="AggregateProgressItem.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.ddo.progress</div>
+<h2 title="Class AggregateProgressItem" class="title">Class AggregateProgressItem</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.ddo.progress.AggregateProgressItem</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">AggregateProgressItem</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</pre>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>kec</dd>
+<DT>&nbsp;</DT><DD><map name="umlmap243W0H0"><area shape="rect" coords="398,145,625,171" href="#" alt=""><area shape="rect" coords="307,172,655,188" href="#AggregateProgressItem(java.lang.String, java.lang.String, javafx.concurrent.Worker...)" alt=""><area shape="rect" coords="307,189,441,205" href="#cancel()" alt=""><area shape="rect" coords="307,205,705,221" href="#exceptionProperty()" alt=""><area shape="rect" coords="307,221,496,237" href="#getException()" alt=""><area shape="rect" coords="307,237,464,253" href="#getMessage()" alt=""><area shape="rect" coords="307,253,470,269" href="#getProgress()" alt=""><area shape="rect" coords="307,269,488,285" href="#getState()" alt=""><area shape="rect" coords="307,285,535,301" href="#getSubordinates()" alt=""><area shape="rect" coords="307,301,434,317" href="#getTitle()" alt=""><area shape="rect" coords="307,317,477,333" href="#getTotalWork()" alt=""><area shape="rect" coords="307,333,433,349" href="#getValue()" alt=""><area shape="rect" coords="307,349,478,365" href="#getWorkDone()" alt=""><area shape="rect" coords="307,365,459,381" href="#isRunning()" alt=""><area shape="rect" coords="307,381,612,397" href="#messageProperty()" alt=""><area shape="rect" coords="307,397,618,413" href="#progressProperty()" alt=""><area shape="rect" coords="307,413,613,429" href="#runningProperty()" alt=""><area shape="rect" coords="307,429,695,445" href="#stateProperty()" alt=""><area shape="rect" coords="307,445,579,461" href="#titleProperty()" alt=""><area shape="rect" coords="307,461,623,477" href="#totalWorkProperty()" alt=""><area shape="rect" coords="307,477,640,493" href="#valueProperty()" alt=""><area shape="rect" coords="307,493,624,508" href="#workDoneProperty()" alt=""><area shape="rect" coords="299,119,501,136" href="package-summary.html" alt=""><area shape="rect" coords="483,37,540,61" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="474,11,541,29" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""></map>
+<map name="umlmap243W1H0"><area shape="rect" coords="-96,145,130,171" href="#" alt=""><area shape="rect" coords="-188,172,160,188" href="#AggregateProgressItem(java.lang.String, java.lang.String, javafx.concurrent.Worker...)" alt=""><area shape="rect" coords="-188,189,-54,205" href="#cancel()" alt=""><area shape="rect" coords="-188,205,210,221" href="#exceptionProperty()" alt=""><area shape="rect" coords="-188,221,1,237" href="#getException()" alt=""><area shape="rect" coords="-188,237,-31,253" href="#getMessage()" alt=""><area shape="rect" coords="-188,253,-25,269" href="#getProgress()" alt=""><area shape="rect" coords="-188,269,-7,285" href="#getState()" alt=""><area shape="rect" coords="-188,285,40,301" href="#getSubordinates()" alt=""><area shape="rect" coords="-188,301,-61,317" href="#getTitle()" alt=""><area shape="rect" coords="-188,317,-18,333" href="#getTotalWork()" alt=""><area shape="rect" coords="-188,333,-62,349" href="#getValue()" alt=""><area shape="rect" coords="-188,349,-17,365" href="#getWorkDone()" alt=""><area shape="rect" coords="-188,365,-36,381" href="#isRunning()" alt=""><area shape="rect" coords="-188,381,117,397" href="#messageProperty()" alt=""><area shape="rect" coords="-188,397,123,413" href="#progressProperty()" alt=""><area shape="rect" coords="-188,413,118,429" href="#runningProperty()" alt=""><area shape="rect" coords="-188,429,200,445" href="#stateProperty()" alt=""><area shape="rect" coords="-188,445,84,461" href="#titleProperty()" alt=""><area shape="rect" coords="-188,461,128,477" href="#totalWorkProperty()" alt=""><area shape="rect" coords="-188,477,145,493" href="#valueProperty()" alt=""><area shape="rect" coords="-188,493,129,508" href="#workDoneProperty()" alt=""><area shape="rect" coords="-196,119,6,136" href="package-summary.html" alt=""><area shape="rect" coords="-11,37,45,61" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="-20,11,46,29" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="288,211,329,234" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html" alt=""><area shape="rect" coords="289,178,377,201" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html" alt=""><area shape="rect" coords="288,145,342,168" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="279,119,346,136" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""></map>
+<map name="umlmap243W0H1"><area shape="rect" coords="6,353,129,370" href="http://www.yworks.com/" alt=""><area shape="rect" coords="398,-234,625,-207" href="#" alt=""><area shape="rect" coords="307,-206,655,-190" href="#AggregateProgressItem(java.lang.String, java.lang.String, javafx.concurrent.Worker...)" alt=""><area shape="rect" coords="307,-189,441,-173" href="#cancel()" alt=""><area shape="rect" coords="307,-173,705,-157" href="#exceptionProperty()" alt=""><area shape="rect" coords="307,-157,496,-141" href="#getException()" alt=""><area shape="rect" coords="307,-141,464,-125" href="#getMessage()" alt=""><area shape="rect" coords="307,-125,470,-109" href="#getProgress()" alt=""><area shape="rect" coords="307,-109,488,-93" href="#getState()" alt=""><area shape="rect" coords="307,-93,535,-77" href="#getSubordinates()" alt=""><area shape="rect" coords="307,-77,434,-61" href="#getTitle()" alt=""><area shape="rect" coords="307,-61,477,-45" href="#getTotalWork()" alt=""><area shape="rect" coords="307,-45,433,-29" href="#getValue()" alt=""><area shape="rect" coords="307,-29,478,-13" href="#getWorkDone()" alt=""><area shape="rect" coords="307,-13,459,2" href="#isRunning()" alt=""><area shape="rect" coords="307,2,612,18" href="#messageProperty()" alt=""><area shape="rect" coords="307,18,618,34" href="#progressProperty()" alt=""><area shape="rect" coords="307,34,613,50" href="#runningProperty()" alt=""><area shape="rect" coords="307,50,695,66" href="#stateProperty()" alt=""><area shape="rect" coords="307,66,579,82" href="#titleProperty()" alt=""><area shape="rect" coords="307,82,623,98" href="#totalWorkProperty()" alt=""><area shape="rect" coords="307,98,640,114" href="#valueProperty()" alt=""><area shape="rect" coords="307,114,624,129" href="#workDoneProperty()" alt=""><area shape="rect" coords="299,-260,501,-242" href="package-summary.html" alt=""><area shape="rect" coords="41,301,183,325" href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/ThrowableBinding.html" alt=""><area shape="rect" coords="41,268,182,291" href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/BooleanOrBinding.html" alt=""><area shape="rect" coords="41,235,225,258" href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateStateBinding.html" alt=""><area shape="rect" coords="30,209,232,227" href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/package-summary.html" alt=""></map>
+<map name="umlmap243W1H1"><area shape="rect" coords="-96,-234,130,-207" href="#" alt=""><area shape="rect" coords="-188,-206,160,-190" href="#AggregateProgressItem(java.lang.String, java.lang.String, javafx.concurrent.Worker...)" alt=""><area shape="rect" coords="-188,-189,-54,-173" href="#cancel()" alt=""><area shape="rect" coords="-188,-173,210,-157" href="#exceptionProperty()" alt=""><area shape="rect" coords="-188,-157,1,-141" href="#getException()" alt=""><area shape="rect" coords="-188,-141,-31,-125" href="#getMessage()" alt=""><area shape="rect" coords="-188,-125,-25,-109" href="#getProgress()" alt=""><area shape="rect" coords="-188,-109,-7,-93" href="#getState()" alt=""><area shape="rect" coords="-188,-93,40,-77" href="#getSubordinates()" alt=""><area shape="rect" coords="-188,-77,-61,-61" href="#getTitle()" alt=""><area shape="rect" coords="-188,-61,-18,-45" href="#getTotalWork()" alt=""><area shape="rect" coords="-188,-45,-62,-29" href="#getValue()" alt=""><area shape="rect" coords="-188,-29,-17,-13" href="#getWorkDone()" alt=""><area shape="rect" coords="-188,-13,-36,2" href="#isRunning()" alt=""><area shape="rect" coords="-188,2,117,18" href="#messageProperty()" alt=""><area shape="rect" coords="-188,18,123,34" href="#progressProperty()" alt=""><area shape="rect" coords="-188,34,118,50" href="#runningProperty()" alt=""><area shape="rect" coords="-188,50,200,66" href="#stateProperty()" alt=""><area shape="rect" coords="-188,66,84,82" href="#titleProperty()" alt=""><area shape="rect" coords="-188,82,128,98" href="#totalWorkProperty()" alt=""><area shape="rect" coords="-188,98,145,114" href="#valueProperty()" alt=""><area shape="rect" coords="-188,114,129,129" href="#workDoneProperty()" alt=""><area shape="rect" coords="-196,-260,6,-242" href="package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="AggregateProgressItemW0H0.png" WIDTH="495" HEIGHT="379" USEMAP="#umlmap243W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="AggregateProgressItemW1H0.png" WIDTH="494" HEIGHT="379" USEMAP="#umlmap243W1H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="AggregateProgressItemW0H1.png" WIDTH="495" HEIGHT="379" USEMAP="#umlmap243W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="AggregateProgressItemW1H1.png" WIDTH="494" HEIGHT="379" USEMAP="#umlmap243W1H1" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== PROPERTY SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="property_summary">
+<!--   -->
+</a>
+<h3>Property Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Property Summary table, listing properties, and an explanation">
+<caption><span>Properties</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Type</th>
+<th class="colLast" scope="col">Property and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyObjectProperty&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#exceptionProperty">exception</a></strong></code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyStringProperty</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#messageProperty">message</a></strong></code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyDoubleProperty</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#progressProperty">progress</a></strong></code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyBooleanProperty</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#runningProperty">running</a></strong></code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyObjectProperty&lt;javafx.concurrent.Worker.State&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#stateProperty">state</a></strong></code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyStringProperty</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#titleProperty">title</a></strong></code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyDoubleProperty</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#totalWorkProperty">totalWork</a></strong></code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyObjectProperty&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#valueProperty">value</a></strong></code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyDoubleProperty</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#workDoneProperty">workDone</a></strong></code>
+<div class="block">Method description</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested_class_summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="nested_classes_inherited_from_class_javafx.concurrent.Worker">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from interface&nbsp;javafx.concurrent.Worker</h3>
+<code>javafx.concurrent.Worker.State</code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#AggregateProgressItem(java.lang.String, java.lang.String, javafx.concurrent.Worker...)">AggregateProgressItem</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+                     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+                     javafx.concurrent.Worker&lt;?&gt;...&nbsp;subordinates)</code>
+<div class="block">Constructs ...</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#cancel()">cancel</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyObjectProperty&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#exceptionProperty()">exceptionProperty</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#getException()">getException</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#getMessage()">getMessage</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#getProgress()">getProgress</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javafx.concurrent.Worker.State</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#getState()">getState</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javafx.concurrent.Worker&lt;?&gt;[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#getSubordinates()">getSubordinates</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#getTitle()">getTitle</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#getTotalWork()">getTotalWork</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#getValue()">getValue</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#getWorkDone()">getWorkDone</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#isRunning()">isRunning</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyStringProperty</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#messageProperty()">messageProperty</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyDoubleProperty</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#progressProperty()">progressProperty</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyBooleanProperty</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#runningProperty()">runningProperty</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyObjectProperty&lt;javafx.concurrent.Worker.State&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#stateProperty()">stateProperty</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyStringProperty</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#titleProperty()">titleProperty</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyDoubleProperty</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#totalWorkProperty()">totalWorkProperty</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyObjectProperty&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#valueProperty()">valueProperty</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javafx.beans.property.ReadOnlyDoubleProperty</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html#workDoneProperty()">workDoneProperty</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ PROPERTY DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="property_detail">
+<!--   -->
+</a>
+<h3>Property Detail</h3>
+<a name="exceptionProperty">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>exception</h4>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>exceptionProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="messageProperty">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>message</h4>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>messageProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="progressProperty">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>progress</h4>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>progressProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="runningProperty">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>running</h4>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>runningProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="stateProperty">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>state</h4>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>stateProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="titleProperty">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>title</h4>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>titleProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="totalWorkProperty">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>totalWork</h4>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>totalWorkProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="valueProperty">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>value</h4>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>valueProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="workDoneProperty">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>workDone</h4>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>workDoneProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="AggregateProgressItem(java.lang.String, java.lang.String, javafx.concurrent.Worker...)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>AggregateProgressItem</h4>
+<pre>public&nbsp;AggregateProgressItem(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+                     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+                     javafx.concurrent.Worker&lt;?&gt;...&nbsp;subordinates)</pre>
+<div class="block">Constructs ...
+ TODO add ability to dynamically add subordinates...</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>title</code> - </dd><dd><code>message</code> - </dd><dd><code>subordinates</code> - </dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="cancel()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cancel</h4>
+<pre>public final&nbsp;boolean&nbsp;cancel()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>cancel</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="exceptionProperty()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>exceptionProperty</h4>
+<pre>public final&nbsp;javafx.beans.property.ReadOnlyObjectProperty&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;exceptionProperty()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>exceptionProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="messageProperty()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>messageProperty</h4>
+<pre>public final&nbsp;javafx.beans.property.ReadOnlyStringProperty&nbsp;messageProperty()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>messageProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="progressProperty()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>progressProperty</h4>
+<pre>public final&nbsp;javafx.beans.property.ReadOnlyDoubleProperty&nbsp;progressProperty()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>progressProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="runningProperty()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>runningProperty</h4>
+<pre>public final&nbsp;javafx.beans.property.ReadOnlyBooleanProperty&nbsp;runningProperty()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>runningProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="stateProperty()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>stateProperty</h4>
+<pre>public final&nbsp;javafx.beans.property.ReadOnlyObjectProperty&lt;javafx.concurrent.Worker.State&gt;&nbsp;stateProperty()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>stateProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="titleProperty()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>titleProperty</h4>
+<pre>public final&nbsp;javafx.beans.property.ReadOnlyStringProperty&nbsp;titleProperty()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>titleProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="totalWorkProperty()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>totalWorkProperty</h4>
+<pre>public final&nbsp;javafx.beans.property.ReadOnlyDoubleProperty&nbsp;totalWorkProperty()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>totalWorkProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="valueProperty()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>valueProperty</h4>
+<pre>public final&nbsp;javafx.beans.property.ReadOnlyObjectProperty&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;valueProperty()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>valueProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="workDoneProperty()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>workDoneProperty</h4>
+<pre>public final&nbsp;javafx.beans.property.ReadOnlyDoubleProperty&nbsp;workDoneProperty()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>workDoneProperty</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getException()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getException</h4>
+<pre>public final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;getException()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>getException</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getMessage()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMessage</h4>
+<pre>public final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getMessage()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>getMessage</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getProgress()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProgress</h4>
+<pre>public final&nbsp;double&nbsp;getProgress()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>getProgress</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getState()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getState</h4>
+<pre>public final&nbsp;javafx.concurrent.Worker.State&nbsp;getState()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>getState</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getSubordinates()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSubordinates</h4>
+<pre>public&nbsp;javafx.concurrent.Worker&lt;?&gt;[]&nbsp;getSubordinates()</pre>
+<div class="block">Method description</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getTitle()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTitle</h4>
+<pre>public final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getTitle()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>getTitle</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getTotalWork()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTotalWork</h4>
+<pre>public final&nbsp;double&nbsp;getTotalWork()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>getTotalWork</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getValue</h4>
+<pre>public final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&nbsp;getValue()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>getValue</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getWorkDone()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWorkDone</h4>
+<pre>public final&nbsp;double&nbsp;getWorkDone()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>getWorkDone</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="isRunning()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isRunning</h4>
+<pre>public final&nbsp;boolean&nbsp;isRunning()</pre>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>isRunning</code>&nbsp;in interface&nbsp;<code>javafx.concurrent.Worker&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AggregateProgressItem.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/ddo/progress/AggregateStateBinding.html" title="class in org.ihtsdo.otf.tcc.ddo.progress"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/ddo/progress/AggregateProgressItem.html" target="_top">Frames</a></li>
+<li><a href="AggregateProgressItem.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

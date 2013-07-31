@@ -1,0 +1,466 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>ConceptDataManager.SetModifiedWhenChangeSet (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ConceptDataManager.SetModifiedWhenChangeSet (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ConceptDataManager.SetModifiedWhenChangeSet.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataManager.AddSrcRelSet.html" title="class in org.ihtsdo.otf.tcc.model.cc.concept"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataSimpleReference.html" title="class in org.ihtsdo.otf.tcc.model.cc.concept"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataManager.SetModifiedWhenChangeSet.html" target="_top">Frames</a></li>
+<li><a href="ConceptDataManager.SetModifiedWhenChangeSet.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.model.cc.concept</div>
+<h2 title="Class ConceptDataManager.SetModifiedWhenChangeSet" class="title">Class ConceptDataManager.SetModifiedWhenChangeSet</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractCollection.html?is-external=true" title="class or interface in java.util">java.util.AbstractCollection</a>&lt;E&gt;</li>
+<li>
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractSet.html?is-external=true" title="class or interface in java.util">java.util.AbstractSet</a>&lt;E&gt;</li>
+<li>
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true" title="class or interface in java.util.concurrent">java.util.concurrent.ConcurrentSkipListSet</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.model.cc.concept.ConceptDataManager.SetModifiedWhenChangeSet</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Cloneable.html?is-external=true" title="class or interface in java.lang">Cloneable</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/NavigableSet.html?is-external=true" title="class or interface in java.util">NavigableSet</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</dd>
+</dl>
+<dl>
+<dt>Enclosing class:</dt>
+<dd><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataManager.html" title="class in org.ihtsdo.otf.tcc.model.cc.concept">ConceptDataManager</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">ConceptDataManager.SetModifiedWhenChangeSet</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true" title="class or interface in java.util.concurrent">ConcurrentSkipListSet</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../../serialized-form.html#org.ihtsdo.otf.tcc.model.cc.concept.ConceptDataManager.SetModifiedWhenChangeSet">Serialized Form</a></dd><DT>&nbsp;</DT><DD><map name="umlmap509W0H0"><area shape="rect" coords="6,370,129,387" href="http://www.yworks.com/" alt=""><area shape="rect" coords="17,136,488,162" href="#" alt=""><area shape="rect" coords="10,163,357,179" href="#ConceptDataManager.SetModifiedWhenChangeSet()" alt=""><area shape="rect" coords="10,179,482,195" href="#ConceptDataManager.SetModifiedWhenChangeSet(java.util.Collection)" alt=""><area shape="rect" coords="10,195,411,211" href="#ConceptDataManager.SetModifiedWhenChangeSet(org.ihtsdo.otf.tcc.model.cc.NidPair[])" alt=""><area shape="rect" coords="10,212,172,228" href="#add(org.ihtsdo.otf.tcc.model.cc.NidPair)" alt=""><area shape="rect" coords="10,228,331,244" href="#addAll(java.util.Collection)" alt=""><area shape="rect" coords="10,244,111,260" href="#clear()" alt=""><area shape="rect" coords="10,260,186,276" href="#forget(org.ihtsdo.otf.tcc.model.cc.NidPair)" alt=""><area shape="rect" coords="10,276,192,292" href="#remove(java.lang.Object)" alt=""><area shape="rect" coords="10,292,252,308" href="#removeAll(java.util.Collection)" alt=""><area shape="rect" coords="10,308,241,324" href="#retainAll(java.util.Collection)" alt=""><area shape="rect" coords="2,110,229,127" href="package-summary.html" alt=""><area shape="rect" coords="127,28,378,52" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html" alt=""><area shape="rect" coords="115,2,243,20" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/package-summary.html" alt=""></map>
+<map name="umlmap509W1H0"><area shape="rect" coords="-355,136,115,162" href="#" alt=""><area shape="rect" coords="-363,163,-16,179" href="#ConceptDataManager.SetModifiedWhenChangeSet()" alt=""><area shape="rect" coords="-363,179,109,195" href="#ConceptDataManager.SetModifiedWhenChangeSet(java.util.Collection)" alt=""><area shape="rect" coords="-363,195,38,211" href="#ConceptDataManager.SetModifiedWhenChangeSet(org.ihtsdo.otf.tcc.model.cc.NidPair[])" alt=""><area shape="rect" coords="-363,212,-201,228" href="#add(org.ihtsdo.otf.tcc.model.cc.NidPair)" alt=""><area shape="rect" coords="-363,228,-42,244" href="#addAll(java.util.Collection)" alt=""><area shape="rect" coords="-363,244,-262,260" href="#clear()" alt=""><area shape="rect" coords="-363,260,-187,276" href="#forget(org.ihtsdo.otf.tcc.model.cc.NidPair)" alt=""><area shape="rect" coords="-363,276,-181,292" href="#remove(java.lang.Object)" alt=""><area shape="rect" coords="-363,292,-121,308" href="#removeAll(java.util.Collection)" alt=""><area shape="rect" coords="-363,308,-132,324" href="#retainAll(java.util.Collection)" alt=""><area shape="rect" coords="-371,110,-144,127" href="package-summary.html" alt=""><area shape="rect" coords="-245,28,5,52" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html" alt=""><area shape="rect" coords="-257,2,-129,20" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/package-summary.html" alt=""><area shape="rect" coords="190,136,247,159" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="181,110,248,127" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="214,227,325,251" href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html" alt=""><area shape="rect" coords="181,197,240,215" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="190,319,251,342" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" alt=""><area shape="rect" coords="181,293,355,311" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="ConceptDataManager.SetModifiedWhenChangeSetW0H0.png" WIDTH="373" HEIGHT="396" USEMAP="#umlmap509W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ConceptDataManager.SetModifiedWhenChangeSetW1H0.png" WIDTH="372" HEIGHT="396" USEMAP="#umlmap509W1H0" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataManager.SetModifiedWhenChangeSet.html#ConceptDataManager.SetModifiedWhenChangeSet()">ConceptDataManager.SetModifiedWhenChangeSet</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataManager.SetModifiedWhenChangeSet.html#ConceptDataManager.SetModifiedWhenChangeSet(java.util.Collection)">ConceptDataManager.SetModifiedWhenChangeSet</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;&nbsp;c)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataManager.SetModifiedWhenChangeSet.html#ConceptDataManager.SetModifiedWhenChangeSet(org.ihtsdo.otf.tcc.model.cc.NidPair[])">ConceptDataManager.SetModifiedWhenChangeSet</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>[]&nbsp;toCopyIn)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataManager.SetModifiedWhenChangeSet.html#add(org.ihtsdo.otf.tcc.model.cc.NidPair)">add</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&nbsp;e)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataManager.SetModifiedWhenChangeSet.html#addAll(java.util.Collection)">addAll</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;&nbsp;c)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataManager.SetModifiedWhenChangeSet.html#clear()">clear</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataManager.SetModifiedWhenChangeSet.html#forget(org.ihtsdo.otf.tcc.model.cc.NidPair)">forget</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&nbsp;pair)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataManager.SetModifiedWhenChangeSet.html#remove(java.lang.Object)">remove</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataManager.SetModifiedWhenChangeSet.html#removeAll(java.util.Collection)">removeAll</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;?&gt;&nbsp;c)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataManager.SetModifiedWhenChangeSet.html#retainAll(java.util.Collection)">retainAll</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;?&gt;&nbsp;c)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.util.concurrent.ConcurrentSkipListSet">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.util.concurrent.<a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true" title="class or interface in java.util.concurrent">ConcurrentSkipListSet</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#ceiling(E)" title="class or interface in java.util.concurrent">ceiling</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#clone()" title="class or interface in java.util.concurrent">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#comparator()" title="class or interface in java.util.concurrent">comparator</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#contains(java.lang.Object)" title="class or interface in java.util.concurrent">contains</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#descendingIterator()" title="class or interface in java.util.concurrent">descendingIterator</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#descendingSet()" title="class or interface in java.util.concurrent">descendingSet</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.util.concurrent">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#first()" title="class or interface in java.util.concurrent">first</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#floor(E)" title="class or interface in java.util.concurrent">floor</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#headSet(E)" title="class or interface in java.util.concurrent">headSet</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#headSet(E, boolean)" title="class or interface in java.util.concurrent">headSet</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#higher(E)" title="class or interface in java.util.concurrent">higher</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#isEmpty()" title="class or interface in java.util.concurrent">isEmpty</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#iterator()" title="class or interface in java.util.concurrent">iterator</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#last()" title="class or interface in java.util.concurrent">last</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#lower(E)" title="class or interface in java.util.concurrent">lower</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#pollFirst()" title="class or interface in java.util.concurrent">pollFirst</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#pollLast()" title="class or interface in java.util.concurrent">pollLast</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#size()" title="class or interface in java.util.concurrent">size</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#subSet(E, boolean, E, boolean)" title="class or interface in java.util.concurrent">subSet</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#subSet(E, E)" title="class or interface in java.util.concurrent">subSet</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#tailSet(E)" title="class or interface in java.util.concurrent">tailSet</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#tailSet(E, boolean)" title="class or interface in java.util.concurrent">tailSet</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.util.AbstractSet">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.util.<a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractSet.html?is-external=true" title="class or interface in java.util">AbstractSet</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractSet.html?is-external=true#hashCode()" title="class or interface in java.util">hashCode</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.util.AbstractCollection">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.util.<a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractCollection.html?is-external=true" title="class or interface in java.util">AbstractCollection</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractCollection.html?is-external=true#containsAll(java.util.Collection)" title="class or interface in java.util">containsAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractCollection.html?is-external=true#toArray()" title="class or interface in java.util">toArray</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractCollection.html?is-external=true#toArray(T[])" title="class or interface in java.util">toArray</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractCollection.html?is-external=true#toString()" title="class or interface in java.util">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.util.Set">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;java.util.<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true#containsAll(java.util.Collection)" title="class or interface in java.util">containsAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true#hashCode()" title="class or interface in java.util">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true#toArray()" title="class or interface in java.util">toArray</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true#toArray(T[])" title="class or interface in java.util">toArray</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="ConceptDataManager.SetModifiedWhenChangeSet()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConceptDataManager.SetModifiedWhenChangeSet</h4>
+<pre>public&nbsp;ConceptDataManager.SetModifiedWhenChangeSet()</pre>
+</li>
+</ul>
+<a name="ConceptDataManager.SetModifiedWhenChangeSet(java.util.Collection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConceptDataManager.SetModifiedWhenChangeSet</h4>
+<pre>public&nbsp;ConceptDataManager.SetModifiedWhenChangeSet(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;&nbsp;c)</pre>
+</li>
+</ul>
+<a name="ConceptDataManager.SetModifiedWhenChangeSet(org.ihtsdo.otf.tcc.model.cc.NidPair[])">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ConceptDataManager.SetModifiedWhenChangeSet</h4>
+<pre>public&nbsp;ConceptDataManager.SetModifiedWhenChangeSet(<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>[]&nbsp;toCopyIn)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="add(org.ihtsdo.otf.tcc.model.cc.NidPair)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre>public&nbsp;boolean&nbsp;add(<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&nbsp;e)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true#add(E)" title="class or interface in java.util">add</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true#add(E)" title="class or interface in java.util">add</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#add(E)" title="class or interface in java.util.concurrent">add</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true" title="class or interface in java.util.concurrent">ConcurrentSkipListSet</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="addAll(java.util.Collection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addAll</h4>
+<pre>public&nbsp;boolean&nbsp;addAll(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;&nbsp;c)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true#addAll(java.util.Collection)" title="class or interface in java.util">addAll</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true#addAll(java.util.Collection)" title="class or interface in java.util">addAll</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractCollection.html?is-external=true#addAll(java.util.Collection)" title="class or interface in java.util">addAll</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractCollection.html?is-external=true" title="class or interface in java.util">AbstractCollection</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="clear()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clear</h4>
+<pre>public&nbsp;void&nbsp;clear()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true#clear()" title="class or interface in java.util">clear</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true#clear()" title="class or interface in java.util">clear</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#clear()" title="class or interface in java.util.concurrent">clear</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true" title="class or interface in java.util.concurrent">ConcurrentSkipListSet</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="forget(org.ihtsdo.otf.tcc.model.cc.NidPair)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>forget</h4>
+<pre>public&nbsp;boolean&nbsp;forget(<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&nbsp;pair)</pre>
+</li>
+</ul>
+<a name="remove(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>remove</h4>
+<pre>public&nbsp;boolean&nbsp;remove(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true#remove(java.lang.Object)" title="class or interface in java.util">remove</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true#remove(java.lang.Object)" title="class or interface in java.util">remove</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#remove(java.lang.Object)" title="class or interface in java.util.concurrent">remove</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true" title="class or interface in java.util.concurrent">ConcurrentSkipListSet</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="removeAll(java.util.Collection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeAll</h4>
+<pre>public&nbsp;boolean&nbsp;removeAll(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;?&gt;&nbsp;c)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true#removeAll(java.util.Collection)" title="class or interface in java.util">removeAll</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true#removeAll(java.util.Collection)" title="class or interface in java.util">removeAll</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true#removeAll(java.util.Collection)" title="class or interface in java.util.concurrent">removeAll</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html?is-external=true" title="class or interface in java.util.concurrent">ConcurrentSkipListSet</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="retainAll(java.util.Collection)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>retainAll</h4>
+<pre>public&nbsp;boolean&nbsp;retainAll(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;?&gt;&nbsp;c)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true#retainAll(java.util.Collection)" title="class or interface in java.util">retainAll</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true#retainAll(java.util.Collection)" title="class or interface in java.util">retainAll</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractCollection.html?is-external=true#retainAll(java.util.Collection)" title="class or interface in java.util">retainAll</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractCollection.html?is-external=true" title="class or interface in java.util">AbstractCollection</a>&lt;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPair.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPair</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ConceptDataManager.SetModifiedWhenChangeSet.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataManager.AddSrcRelSet.html" title="class in org.ihtsdo.otf.tcc.model.cc.concept"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataSimpleReference.html" title="class in org.ihtsdo.otf.tcc.model.cc.concept"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataManager.SetModifiedWhenChangeSet.html" target="_top">Frames</a></li>
+<li><a href="ConceptDataManager.SetModifiedWhenChangeSet.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

@@ -1,0 +1,898 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>SnomedMetadataRf2 (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SnomedMetadataRf2 (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/SnomedMetadataRf2.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf1.html" title="class in org.ihtsdo.otf.tcc.api.metadata.binding"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html" title="class in org.ihtsdo.otf.tcc.api.metadata.binding"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html" target="_top">Frames</a></li>
+<li><a href="SnomedMetadataRf2.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#methods_inherited_from_class_java.lang.Object">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Method</li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.api.metadata.binding</div>
+<h2 title="Class SnomedMetadataRf2" class="title">Class SnomedMetadataRf2</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.api.metadata.binding.SnomedMetadataRf2</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">SnomedMetadataRf2</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>marc</dd>
+<DT>&nbsp;</DT><DD><map name="umlmap173W0H0"><area shape="rect" coords="344,136,543,162" href="#" alt=""><area shape="rect" coords="247,163,470,179" href="#ACCEPTABLE_RF2" alt=""><area shape="rect" coords="247,179,479,195" href="#ACTIVE_VALUE_RF2" alt=""><area shape="rect" coords="247,195,558,211" href="#ADDITIONAL_RELATIONSHIP_RF2" alt=""><area shape="rect" coords="247,211,523,227" href="#ALTERNATIVE_REFSET_RF2" alt=""><area shape="rect" coords="247,227,553,243" href="#AMBIGUOUS_COMPONENT_RF2" alt=""><area shape="rect" coords="247,243,503,259" href="#CASE_INSENSITIVE_RF2" alt=""><area shape="rect" coords="247,259,491,275" href="#CASE_SENSITIVE_RF2" alt=""><area shape="rect" coords="247,275,600,291" href="#COMPONENT_MOVED_ELSEWHERE_RF2" alt=""><area shape="rect" coords="247,291,551,307" href="#CONCEPT_NON_CURRENT_RF2" alt=""><area shape="rect" coords="247,307,444,323" href="#DEFINED_RF2" alt=""><area shape="rect" coords="247,323,543,339" href="#DEFINING_RELATIONSHIP_RF2" alt=""><area shape="rect" coords="247,339,538,355" href="#DEGREE_OF_SYNONYMY_RF2" alt=""><area shape="rect" coords="247,355,544,371" href="#DUPLICATE_COMPONENT_RF2" alt=""><area shape="rect" coords="247,371,556,387" href="#ERRONEOUS_COMPONENT_RF2" alt=""><area shape="rect" coords="247,387,535,403" href="#FULLY_SPECIFIED_NAME_RF2" alt=""><area shape="rect" coords="247,403,520,419" href="#GB_ENGLISH_REFSET_RF2" alt=""><area shape="rect" coords="247,419,516,435" href="#HISTORICAL_REFSET_RF2" alt=""><area shape="rect" coords="247,435,566,451" href="#HISTORICAL_RELATIONSSHIP_RF2" alt=""><area shape="rect" coords="247,451,625,467" href="#ICD_9_CM_EQUIVALENCE_MAP_REFSET_RF2" alt=""><area shape="rect" coords="247,467,561,483" href="#ICD_O_SIMPLE_MAP_REFSET_RF2" alt=""><area shape="rect" coords="247,483,491,498" href="#INACTIVE_VALUE_RF2" alt=""><area shape="rect" coords="247,498,575,514" href="#INAPPROPRIATE_COMPONENT_RF2" alt=""><area shape="rect" coords="247,514,546,530" href="#INFERRED_RELATIONSHIP_RF2" alt=""><area shape="rect" coords="247,530,629,546" href="#INITIAL_CHARACTER_CASE_INSENSITIVE_RF2" alt=""><area shape="rect" coords="247,546,523,562" href="#LIMITED_COMPONENT_RF2" alt=""><area shape="rect" coords="247,562,548,578" href="#MANDATORY_REFINIBILITY_RF2" alt=""><area shape="rect" coords="247,578,530,594" href="#MOVED_FROM_REFSET_RF2" alt=""><area shape="rect" coords="247,594,511,610" href="#MOVED_TO_REFSET_RF2" alt=""><area shape="rect" coords="247,610,472,626" href="#NON_HUMAN_RF2" alt=""><area shape="rect" coords="247,626,489,642" href="#NOT_REFINABLE_RF2" alt=""><area shape="rect" coords="247,642,532,658" href="#OPTIONAL_REFINIBILITY_RF2" alt=""><area shape="rect" coords="247,658,544,674" href="#OUTDATED_COMPONENT_RF2" alt=""><area shape="rect" coords="247,674,541,690" href="#PART_OF_ATTRIBUTE_REFSET" alt=""><area shape="rect" coords="247,690,489,706" href="#PENDING_MOVE_RF2" alt=""><area shape="rect" coords="247,706,605,722" href="#POSSIBLY_EQUIVALENT_TO_REFSET_RF2" alt=""><area shape="rect" coords="247,722,465,738" href="#PREFERRED_RF2" alt=""><area shape="rect" coords="247,738,451,754" href="#PRIMITIVE_RF2" alt=""><area shape="rect" coords="247,754,566,770" href="#QUALIFYING_RELATIONSSHIP_RF2" alt=""><area shape="rect" coords="247,770,514,786" href="#REFERS_TO_REFSET_RF2" alt=""><area shape="rect" coords="247,786,528,802" href="#REPLACED_BY_REFSET_RF2" alt=""><area shape="rect" coords="247,802,519,818" href="#REPLACE_BY_REFSET_RF2" alt=""><area shape="rect" coords="247,818,499,834" href="#SAME_AS_REFSET_RF2" alt=""><area shape="rect" coords="247,834,532,850" href="#STATED_RELATIONSHIP_RF2" alt=""><area shape="rect" coords="247,850,453,866" href="#SYNONYM_RF2" alt=""><area shape="rect" coords="247,866,519,882" href="#US_ENGLISH_REFSET_RF2" alt=""><area shape="rect" coords="247,882,419,898" href="#VMP_RF2" alt=""><area shape="rect" coords="247,898,418,914" href="#VTM_RF2" alt=""><area shape="rect" coords="247,914,486,930" href="#WAS_A_REFSET_RF2" alt=""><area shape="rect" coords="247,931,410,947" href="#SnomedMetadataRf2()" alt=""><area shape="rect" coords="239,110,488,127" href="package-summary.html" alt=""><area shape="rect" coords="12,136,118,159" href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" alt=""><area shape="rect" coords="2,110,173,127" href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/package-summary.html" alt=""></map>
+<map name="umlmap173W1H0"><area shape="rect" coords="18,136,217,162" href="#" alt=""><area shape="rect" coords="-79,163,144,179" href="#ACCEPTABLE_RF2" alt=""><area shape="rect" coords="-79,179,153,195" href="#ACTIVE_VALUE_RF2" alt=""><area shape="rect" coords="-79,195,232,211" href="#ADDITIONAL_RELATIONSHIP_RF2" alt=""><area shape="rect" coords="-79,211,197,227" href="#ALTERNATIVE_REFSET_RF2" alt=""><area shape="rect" coords="-79,227,227,243" href="#AMBIGUOUS_COMPONENT_RF2" alt=""><area shape="rect" coords="-79,243,177,259" href="#CASE_INSENSITIVE_RF2" alt=""><area shape="rect" coords="-79,259,165,275" href="#CASE_SENSITIVE_RF2" alt=""><area shape="rect" coords="-79,275,274,291" href="#COMPONENT_MOVED_ELSEWHERE_RF2" alt=""><area shape="rect" coords="-79,291,225,307" href="#CONCEPT_NON_CURRENT_RF2" alt=""><area shape="rect" coords="-79,307,118,323" href="#DEFINED_RF2" alt=""><area shape="rect" coords="-79,323,217,339" href="#DEFINING_RELATIONSHIP_RF2" alt=""><area shape="rect" coords="-79,339,212,355" href="#DEGREE_OF_SYNONYMY_RF2" alt=""><area shape="rect" coords="-79,355,218,371" href="#DUPLICATE_COMPONENT_RF2" alt=""><area shape="rect" coords="-79,371,230,387" href="#ERRONEOUS_COMPONENT_RF2" alt=""><area shape="rect" coords="-79,387,209,403" href="#FULLY_SPECIFIED_NAME_RF2" alt=""><area shape="rect" coords="-79,403,194,419" href="#GB_ENGLISH_REFSET_RF2" alt=""><area shape="rect" coords="-79,419,190,435" href="#HISTORICAL_REFSET_RF2" alt=""><area shape="rect" coords="-79,435,240,451" href="#HISTORICAL_RELATIONSSHIP_RF2" alt=""><area shape="rect" coords="-79,451,299,467" href="#ICD_9_CM_EQUIVALENCE_MAP_REFSET_RF2" alt=""><area shape="rect" coords="-79,467,235,483" href="#ICD_O_SIMPLE_MAP_REFSET_RF2" alt=""><area shape="rect" coords="-79,483,165,498" href="#INACTIVE_VALUE_RF2" alt=""><area shape="rect" coords="-79,498,249,514" href="#INAPPROPRIATE_COMPONENT_RF2" alt=""><area shape="rect" coords="-79,514,220,530" href="#INFERRED_RELATIONSHIP_RF2" alt=""><area shape="rect" coords="-79,530,303,546" href="#INITIAL_CHARACTER_CASE_INSENSITIVE_RF2" alt=""><area shape="rect" coords="-79,546,197,562" href="#LIMITED_COMPONENT_RF2" alt=""><area shape="rect" coords="-79,562,222,578" href="#MANDATORY_REFINIBILITY_RF2" alt=""><area shape="rect" coords="-79,578,204,594" href="#MOVED_FROM_REFSET_RF2" alt=""><area shape="rect" coords="-79,594,185,610" href="#MOVED_TO_REFSET_RF2" alt=""><area shape="rect" coords="-79,610,146,626" href="#NON_HUMAN_RF2" alt=""><area shape="rect" coords="-79,626,163,642" href="#NOT_REFINABLE_RF2" alt=""><area shape="rect" coords="-79,642,206,658" href="#OPTIONAL_REFINIBILITY_RF2" alt=""><area shape="rect" coords="-79,658,218,674" href="#OUTDATED_COMPONENT_RF2" alt=""><area shape="rect" coords="-79,674,215,690" href="#PART_OF_ATTRIBUTE_REFSET" alt=""><area shape="rect" coords="-79,690,163,706" href="#PENDING_MOVE_RF2" alt=""><area shape="rect" coords="-79,706,279,722" href="#POSSIBLY_EQUIVALENT_TO_REFSET_RF2" alt=""><area shape="rect" coords="-79,722,139,738" href="#PREFERRED_RF2" alt=""><area shape="rect" coords="-79,738,125,754" href="#PRIMITIVE_RF2" alt=""><area shape="rect" coords="-79,754,240,770" href="#QUALIFYING_RELATIONSSHIP_RF2" alt=""><area shape="rect" coords="-79,770,188,786" href="#REFERS_TO_REFSET_RF2" alt=""><area shape="rect" coords="-79,786,202,802" href="#REPLACED_BY_REFSET_RF2" alt=""><area shape="rect" coords="-79,802,193,818" href="#REPLACE_BY_REFSET_RF2" alt=""><area shape="rect" coords="-79,818,173,834" href="#SAME_AS_REFSET_RF2" alt=""><area shape="rect" coords="-79,834,206,850" href="#STATED_RELATIONSHIP_RF2" alt=""><area shape="rect" coords="-79,850,127,866" href="#SYNONYM_RF2" alt=""><area shape="rect" coords="-79,866,193,882" href="#US_ENGLISH_REFSET_RF2" alt=""><area shape="rect" coords="-79,882,93,898" href="#VMP_RF2" alt=""><area shape="rect" coords="-79,898,92,914" href="#VTM_RF2" alt=""><area shape="rect" coords="-79,914,160,930" href="#WAS_A_REFSET_RF2" alt=""><area shape="rect" coords="-79,931,84,947" href="#SnomedMetadataRf2()" alt=""><area shape="rect" coords="-87,110,162,127" href="package-summary.html" alt=""><area shape="rect" coords="89,28,146,52" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="80,2,147,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""></map>
+<map name="umlmap173W0H1"><area shape="rect" coords="6,471,129,488" href="http://www.yworks.com/" alt=""><area shape="rect" coords="344,-361,543,-334" href="#" alt=""><area shape="rect" coords="247,-333,470,-317" href="#ACCEPTABLE_RF2" alt=""><area shape="rect" coords="247,-317,479,-301" href="#ACTIVE_VALUE_RF2" alt=""><area shape="rect" coords="247,-301,558,-285" href="#ADDITIONAL_RELATIONSHIP_RF2" alt=""><area shape="rect" coords="247,-285,523,-269" href="#ALTERNATIVE_REFSET_RF2" alt=""><area shape="rect" coords="247,-269,553,-253" href="#AMBIGUOUS_COMPONENT_RF2" alt=""><area shape="rect" coords="247,-253,503,-237" href="#CASE_INSENSITIVE_RF2" alt=""><area shape="rect" coords="247,-237,491,-221" href="#CASE_SENSITIVE_RF2" alt=""><area shape="rect" coords="247,-221,600,-205" href="#COMPONENT_MOVED_ELSEWHERE_RF2" alt=""><area shape="rect" coords="247,-205,551,-189" href="#CONCEPT_NON_CURRENT_RF2" alt=""><area shape="rect" coords="247,-189,444,-173" href="#DEFINED_RF2" alt=""><area shape="rect" coords="247,-173,543,-157" href="#DEFINING_RELATIONSHIP_RF2" alt=""><area shape="rect" coords="247,-157,538,-141" href="#DEGREE_OF_SYNONYMY_RF2" alt=""><area shape="rect" coords="247,-141,544,-125" href="#DUPLICATE_COMPONENT_RF2" alt=""><area shape="rect" coords="247,-125,556,-109" href="#ERRONEOUS_COMPONENT_RF2" alt=""><area shape="rect" coords="247,-109,535,-93" href="#FULLY_SPECIFIED_NAME_RF2" alt=""><area shape="rect" coords="247,-93,520,-77" href="#GB_ENGLISH_REFSET_RF2" alt=""><area shape="rect" coords="247,-77,516,-61" href="#HISTORICAL_REFSET_RF2" alt=""><area shape="rect" coords="247,-61,566,-45" href="#HISTORICAL_RELATIONSSHIP_RF2" alt=""><area shape="rect" coords="247,-45,625,-29" href="#ICD_9_CM_EQUIVALENCE_MAP_REFSET_RF2" alt=""><area shape="rect" coords="247,-29,561,-13" href="#ICD_O_SIMPLE_MAP_REFSET_RF2" alt=""><area shape="rect" coords="247,-13,491,1" href="#INACTIVE_VALUE_RF2" alt=""><area shape="rect" coords="247,1,575,17" href="#INAPPROPRIATE_COMPONENT_RF2" alt=""><area shape="rect" coords="247,17,546,33" href="#INFERRED_RELATIONSHIP_RF2" alt=""><area shape="rect" coords="247,33,629,49" href="#INITIAL_CHARACTER_CASE_INSENSITIVE_RF2" alt=""><area shape="rect" coords="247,49,523,65" href="#LIMITED_COMPONENT_RF2" alt=""><area shape="rect" coords="247,65,548,81" href="#MANDATORY_REFINIBILITY_RF2" alt=""><area shape="rect" coords="247,81,530,97" href="#MOVED_FROM_REFSET_RF2" alt=""><area shape="rect" coords="247,97,511,113" href="#MOVED_TO_REFSET_RF2" alt=""><area shape="rect" coords="247,113,472,129" href="#NON_HUMAN_RF2" alt=""><area shape="rect" coords="247,129,489,145" href="#NOT_REFINABLE_RF2" alt=""><area shape="rect" coords="247,145,532,161" href="#OPTIONAL_REFINIBILITY_RF2" alt=""><area shape="rect" coords="247,161,544,177" href="#OUTDATED_COMPONENT_RF2" alt=""><area shape="rect" coords="247,177,541,193" href="#PART_OF_ATTRIBUTE_REFSET" alt=""><area shape="rect" coords="247,193,489,209" href="#PENDING_MOVE_RF2" alt=""><area shape="rect" coords="247,209,605,225" href="#POSSIBLY_EQUIVALENT_TO_REFSET_RF2" alt=""><area shape="rect" coords="247,225,465,241" href="#PREFERRED_RF2" alt=""><area shape="rect" coords="247,241,451,257" href="#PRIMITIVE_RF2" alt=""><area shape="rect" coords="247,257,566,273" href="#QUALIFYING_RELATIONSSHIP_RF2" alt=""><area shape="rect" coords="247,273,514,289" href="#REFERS_TO_REFSET_RF2" alt=""><area shape="rect" coords="247,289,528,305" href="#REPLACED_BY_REFSET_RF2" alt=""><area shape="rect" coords="247,305,519,321" href="#REPLACE_BY_REFSET_RF2" alt=""><area shape="rect" coords="247,321,499,337" href="#SAME_AS_REFSET_RF2" alt=""><area shape="rect" coords="247,337,532,353" href="#STATED_RELATIONSHIP_RF2" alt=""><area shape="rect" coords="247,353,453,369" href="#SYNONYM_RF2" alt=""><area shape="rect" coords="247,369,519,385" href="#US_ENGLISH_REFSET_RF2" alt=""><area shape="rect" coords="247,385,419,401" href="#VMP_RF2" alt=""><area shape="rect" coords="247,401,418,417" href="#VTM_RF2" alt=""><area shape="rect" coords="247,417,486,433" href="#WAS_A_REFSET_RF2" alt=""><area shape="rect" coords="247,434,410,450" href="#SnomedMetadataRf2()" alt=""><area shape="rect" coords="239,-387,488,-369" href="package-summary.html" alt=""></map>
+<map name="umlmap173W1H1"><area shape="rect" coords="18,-361,217,-334" href="#" alt=""><area shape="rect" coords="-79,-333,144,-317" href="#ACCEPTABLE_RF2" alt=""><area shape="rect" coords="-79,-317,153,-301" href="#ACTIVE_VALUE_RF2" alt=""><area shape="rect" coords="-79,-301,232,-285" href="#ADDITIONAL_RELATIONSHIP_RF2" alt=""><area shape="rect" coords="-79,-285,197,-269" href="#ALTERNATIVE_REFSET_RF2" alt=""><area shape="rect" coords="-79,-269,227,-253" href="#AMBIGUOUS_COMPONENT_RF2" alt=""><area shape="rect" coords="-79,-253,177,-237" href="#CASE_INSENSITIVE_RF2" alt=""><area shape="rect" coords="-79,-237,165,-221" href="#CASE_SENSITIVE_RF2" alt=""><area shape="rect" coords="-79,-221,274,-205" href="#COMPONENT_MOVED_ELSEWHERE_RF2" alt=""><area shape="rect" coords="-79,-205,225,-189" href="#CONCEPT_NON_CURRENT_RF2" alt=""><area shape="rect" coords="-79,-189,118,-173" href="#DEFINED_RF2" alt=""><area shape="rect" coords="-79,-173,217,-157" href="#DEFINING_RELATIONSHIP_RF2" alt=""><area shape="rect" coords="-79,-157,212,-141" href="#DEGREE_OF_SYNONYMY_RF2" alt=""><area shape="rect" coords="-79,-141,218,-125" href="#DUPLICATE_COMPONENT_RF2" alt=""><area shape="rect" coords="-79,-125,230,-109" href="#ERRONEOUS_COMPONENT_RF2" alt=""><area shape="rect" coords="-79,-109,209,-93" href="#FULLY_SPECIFIED_NAME_RF2" alt=""><area shape="rect" coords="-79,-93,194,-77" href="#GB_ENGLISH_REFSET_RF2" alt=""><area shape="rect" coords="-79,-77,190,-61" href="#HISTORICAL_REFSET_RF2" alt=""><area shape="rect" coords="-79,-61,240,-45" href="#HISTORICAL_RELATIONSSHIP_RF2" alt=""><area shape="rect" coords="-79,-45,299,-29" href="#ICD_9_CM_EQUIVALENCE_MAP_REFSET_RF2" alt=""><area shape="rect" coords="-79,-29,235,-13" href="#ICD_O_SIMPLE_MAP_REFSET_RF2" alt=""><area shape="rect" coords="-79,-13,165,1" href="#INACTIVE_VALUE_RF2" alt=""><area shape="rect" coords="-79,1,249,17" href="#INAPPROPRIATE_COMPONENT_RF2" alt=""><area shape="rect" coords="-79,17,220,33" href="#INFERRED_RELATIONSHIP_RF2" alt=""><area shape="rect" coords="-79,33,303,49" href="#INITIAL_CHARACTER_CASE_INSENSITIVE_RF2" alt=""><area shape="rect" coords="-79,49,197,65" href="#LIMITED_COMPONENT_RF2" alt=""><area shape="rect" coords="-79,65,222,81" href="#MANDATORY_REFINIBILITY_RF2" alt=""><area shape="rect" coords="-79,81,204,97" href="#MOVED_FROM_REFSET_RF2" alt=""><area shape="rect" coords="-79,97,185,113" href="#MOVED_TO_REFSET_RF2" alt=""><area shape="rect" coords="-79,113,146,129" href="#NON_HUMAN_RF2" alt=""><area shape="rect" coords="-79,129,163,145" href="#NOT_REFINABLE_RF2" alt=""><area shape="rect" coords="-79,145,206,161" href="#OPTIONAL_REFINIBILITY_RF2" alt=""><area shape="rect" coords="-79,161,218,177" href="#OUTDATED_COMPONENT_RF2" alt=""><area shape="rect" coords="-79,177,215,193" href="#PART_OF_ATTRIBUTE_REFSET" alt=""><area shape="rect" coords="-79,193,163,209" href="#PENDING_MOVE_RF2" alt=""><area shape="rect" coords="-79,209,279,225" href="#POSSIBLY_EQUIVALENT_TO_REFSET_RF2" alt=""><area shape="rect" coords="-79,225,139,241" href="#PREFERRED_RF2" alt=""><area shape="rect" coords="-79,241,125,257" href="#PRIMITIVE_RF2" alt=""><area shape="rect" coords="-79,257,240,273" href="#QUALIFYING_RELATIONSSHIP_RF2" alt=""><area shape="rect" coords="-79,273,188,289" href="#REFERS_TO_REFSET_RF2" alt=""><area shape="rect" coords="-79,289,202,305" href="#REPLACED_BY_REFSET_RF2" alt=""><area shape="rect" coords="-79,305,193,321" href="#REPLACE_BY_REFSET_RF2" alt=""><area shape="rect" coords="-79,321,173,337" href="#SAME_AS_REFSET_RF2" alt=""><area shape="rect" coords="-79,337,206,353" href="#STATED_RELATIONSHIP_RF2" alt=""><area shape="rect" coords="-79,353,127,369" href="#SYNONYM_RF2" alt=""><area shape="rect" coords="-79,369,193,385" href="#US_ENGLISH_REFSET_RF2" alt=""><area shape="rect" coords="-79,385,93,401" href="#VMP_RF2" alt=""><area shape="rect" coords="-79,401,92,417" href="#VTM_RF2" alt=""><area shape="rect" coords="-79,417,160,433" href="#WAS_A_REFSET_RF2" alt=""><area shape="rect" coords="-79,434,84,450" href="#SnomedMetadataRf2()" alt=""><area shape="rect" coords="-87,-387,162,-369" href="package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="SnomedMetadataRf2W0H0.png" WIDTH="326" HEIGHT="497" USEMAP="#umlmap173W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="SnomedMetadataRf2W1H0.png" WIDTH="325" HEIGHT="497" USEMAP="#umlmap173W1H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="SnomedMetadataRf2W0H1.png" WIDTH="326" HEIGHT="497" USEMAP="#umlmap173W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="SnomedMetadataRf2W1H1.png" WIDTH="325" HEIGHT="497" USEMAP="#umlmap173W1H1" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#ACCEPTABLE_RF2">ACCEPTABLE_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#ACTIVE_VALUE_RF2">ACTIVE_VALUE_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#ADDITIONAL_RELATIONSHIP_RF2">ADDITIONAL_RELATIONSHIP_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#ALTERNATIVE_REFSET_RF2">ALTERNATIVE_REFSET_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#AMBIGUOUS_COMPONENT_RF2">AMBIGUOUS_COMPONENT_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#CASE_INSENSITIVE_RF2">CASE_INSENSITIVE_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#CASE_SENSITIVE_RF2">CASE_SENSITIVE_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#COMPONENT_MOVED_ELSEWHERE_RF2">COMPONENT_MOVED_ELSEWHERE_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#CONCEPT_NON_CURRENT_RF2">CONCEPT_NON_CURRENT_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#DEFINED_RF2">DEFINED_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#DEFINING_RELATIONSHIP_RF2">DEFINING_RELATIONSHIP_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#DEGREE_OF_SYNONYMY_RF2">DEGREE_OF_SYNONYMY_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#DUPLICATE_COMPONENT_RF2">DUPLICATE_COMPONENT_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#ERRONEOUS_COMPONENT_RF2">ERRONEOUS_COMPONENT_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#FULLY_SPECIFIED_NAME_RF2">FULLY_SPECIFIED_NAME_RF2</a></strong></code>
+<div class="block">DEFINITIONS</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#GB_ENGLISH_REFSET_RF2">GB_ENGLISH_REFSET_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#HISTORICAL_REFSET_RF2">HISTORICAL_REFSET_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#HISTORICAL_RELATIONSSHIP_RF2">HISTORICAL_RELATIONSSHIP_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#ICD_9_CM_EQUIVALENCE_MAP_REFSET_RF2">ICD_9_CM_EQUIVALENCE_MAP_REFSET_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#ICD_O_SIMPLE_MAP_REFSET_RF2">ICD_O_SIMPLE_MAP_REFSET_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#INACTIVE_VALUE_RF2">INACTIVE_VALUE_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#INAPPROPRIATE_COMPONENT_RF2">INAPPROPRIATE_COMPONENT_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#INFERRED_RELATIONSHIP_RF2">INFERRED_RELATIONSHIP_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#INITIAL_CHARACTER_CASE_INSENSITIVE_RF2">INITIAL_CHARACTER_CASE_INSENSITIVE_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#LIMITED_COMPONENT_RF2">LIMITED_COMPONENT_RF2</a></strong></code>
+<div class="block">STATUS</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#MANDATORY_REFINIBILITY_RF2">MANDATORY_REFINIBILITY_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#MOVED_FROM_REFSET_RF2">MOVED_FROM_REFSET_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#MOVED_TO_REFSET_RF2">MOVED_TO_REFSET_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#NON_HUMAN_RF2">NON_HUMAN_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#NOT_REFINABLE_RF2">NOT_REFINABLE_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#OPTIONAL_REFINIBILITY_RF2">OPTIONAL_REFINIBILITY_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#OUTDATED_COMPONENT_RF2">OUTDATED_COMPONENT_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#PART_OF_ATTRIBUTE_REFSET">PART_OF_ATTRIBUTE_REFSET</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#PENDING_MOVE_RF2">PENDING_MOVE_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#POSSIBLY_EQUIVALENT_TO_REFSET_RF2">POSSIBLY_EQUIVALENT_TO_REFSET_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#PREFERRED_RF2">PREFERRED_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#PRIMITIVE_RF2">PRIMITIVE_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#QUALIFYING_RELATIONSSHIP_RF2">QUALIFYING_RELATIONSSHIP_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#REFERS_TO_REFSET_RF2">REFERS_TO_REFSET_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#REPLACE_BY_REFSET_RF2">REPLACE_BY_REFSET_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#REPLACED_BY_REFSET_RF2">REPLACED_BY_REFSET_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#SAME_AS_REFSET_RF2">SAME_AS_REFSET_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#STATED_RELATIONSHIP_RF2">STATED_RELATIONSHIP_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#SYNONYM_RF2">SYNONYM_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#US_ENGLISH_REFSET_RF2">US_ENGLISH_REFSET_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#VMP_RF2">VMP_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#VTM_RF2">VTM_RF2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#WAS_A_REFSET_RF2">WAS_A_REFSET_RF2</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html#SnomedMetadataRf2()">SnomedMetadataRf2</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="FULLY_SPECIFIED_NAME_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FULLY_SPECIFIED_NAME_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> FULLY_SPECIFIED_NAME_RF2</pre>
+<div class="block">DEFINITIONS</div>
+</li>
+</ul>
+<a name="SYNONYM_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SYNONYM_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> SYNONYM_RF2</pre>
+</li>
+</ul>
+<a name="PREFERRED_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PREFERRED_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> PREFERRED_RF2</pre>
+</li>
+</ul>
+<a name="ACCEPTABLE_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ACCEPTABLE_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> ACCEPTABLE_RF2</pre>
+</li>
+</ul>
+<a name="US_ENGLISH_REFSET_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>US_ENGLISH_REFSET_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> US_ENGLISH_REFSET_RF2</pre>
+</li>
+</ul>
+<a name="GB_ENGLISH_REFSET_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GB_ENGLISH_REFSET_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> GB_ENGLISH_REFSET_RF2</pre>
+</li>
+</ul>
+<a name="CASE_SENSITIVE_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CASE_SENSITIVE_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> CASE_SENSITIVE_RF2</pre>
+</li>
+</ul>
+<a name="INITIAL_CHARACTER_CASE_INSENSITIVE_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INITIAL_CHARACTER_CASE_INSENSITIVE_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> INITIAL_CHARACTER_CASE_INSENSITIVE_RF2</pre>
+</li>
+</ul>
+<a name="CASE_INSENSITIVE_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CASE_INSENSITIVE_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> CASE_INSENSITIVE_RF2</pre>
+</li>
+</ul>
+<a name="PRIMITIVE_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PRIMITIVE_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> PRIMITIVE_RF2</pre>
+</li>
+</ul>
+<a name="DEFINED_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DEFINED_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> DEFINED_RF2</pre>
+</li>
+</ul>
+<a name="ICD_9_CM_EQUIVALENCE_MAP_REFSET_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ICD_9_CM_EQUIVALENCE_MAP_REFSET_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> ICD_9_CM_EQUIVALENCE_MAP_REFSET_RF2</pre>
+</li>
+</ul>
+<a name="ICD_O_SIMPLE_MAP_REFSET_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ICD_O_SIMPLE_MAP_REFSET_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> ICD_O_SIMPLE_MAP_REFSET_RF2</pre>
+</li>
+</ul>
+<a name="NOT_REFINABLE_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>NOT_REFINABLE_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> NOT_REFINABLE_RF2</pre>
+</li>
+</ul>
+<a name="OPTIONAL_REFINIBILITY_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>OPTIONAL_REFINIBILITY_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> OPTIONAL_REFINIBILITY_RF2</pre>
+</li>
+</ul>
+<a name="MANDATORY_REFINIBILITY_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MANDATORY_REFINIBILITY_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> MANDATORY_REFINIBILITY_RF2</pre>
+</li>
+</ul>
+<a name="ADDITIONAL_RELATIONSHIP_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ADDITIONAL_RELATIONSHIP_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> ADDITIONAL_RELATIONSHIP_RF2</pre>
+</li>
+</ul>
+<a name="DEFINING_RELATIONSHIP_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DEFINING_RELATIONSHIP_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> DEFINING_RELATIONSHIP_RF2</pre>
+</li>
+</ul>
+<a name="INFERRED_RELATIONSHIP_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INFERRED_RELATIONSHIP_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> INFERRED_RELATIONSHIP_RF2</pre>
+</li>
+</ul>
+<a name="STATED_RELATIONSHIP_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>STATED_RELATIONSHIP_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> STATED_RELATIONSHIP_RF2</pre>
+</li>
+</ul>
+<a name="QUALIFYING_RELATIONSSHIP_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>QUALIFYING_RELATIONSSHIP_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> QUALIFYING_RELATIONSSHIP_RF2</pre>
+</li>
+</ul>
+<a name="HISTORICAL_RELATIONSSHIP_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>HISTORICAL_RELATIONSSHIP_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> HISTORICAL_RELATIONSSHIP_RF2</pre>
+</li>
+</ul>
+<a name="HISTORICAL_REFSET_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>HISTORICAL_REFSET_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> HISTORICAL_REFSET_RF2</pre>
+</li>
+</ul>
+<a name="LIMITED_COMPONENT_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LIMITED_COMPONENT_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> LIMITED_COMPONENT_RF2</pre>
+<div class="block">STATUS</div>
+</li>
+</ul>
+<a name="DUPLICATE_COMPONENT_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DUPLICATE_COMPONENT_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> DUPLICATE_COMPONENT_RF2</pre>
+</li>
+</ul>
+<a name="PENDING_MOVE_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PENDING_MOVE_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> PENDING_MOVE_RF2</pre>
+</li>
+</ul>
+<a name="AMBIGUOUS_COMPONENT_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AMBIGUOUS_COMPONENT_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> AMBIGUOUS_COMPONENT_RF2</pre>
+</li>
+</ul>
+<a name="COMPONENT_MOVED_ELSEWHERE_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>COMPONENT_MOVED_ELSEWHERE_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> COMPONENT_MOVED_ELSEWHERE_RF2</pre>
+</li>
+</ul>
+<a name="CONCEPT_NON_CURRENT_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CONCEPT_NON_CURRENT_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> CONCEPT_NON_CURRENT_RF2</pre>
+</li>
+</ul>
+<a name="OUTDATED_COMPONENT_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>OUTDATED_COMPONENT_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> OUTDATED_COMPONENT_RF2</pre>
+</li>
+</ul>
+<a name="INAPPROPRIATE_COMPONENT_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INAPPROPRIATE_COMPONENT_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> INAPPROPRIATE_COMPONENT_RF2</pre>
+</li>
+</ul>
+<a name="ERRONEOUS_COMPONENT_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ERRONEOUS_COMPONENT_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> ERRONEOUS_COMPONENT_RF2</pre>
+</li>
+</ul>
+<a name="INACTIVE_VALUE_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INACTIVE_VALUE_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> INACTIVE_VALUE_RF2</pre>
+</li>
+</ul>
+<a name="ACTIVE_VALUE_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ACTIVE_VALUE_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> ACTIVE_VALUE_RF2</pre>
+</li>
+</ul>
+<a name="PART_OF_ATTRIBUTE_REFSET">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PART_OF_ATTRIBUTE_REFSET</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> PART_OF_ATTRIBUTE_REFSET</pre>
+</li>
+</ul>
+<a name="POSSIBLY_EQUIVALENT_TO_REFSET_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>POSSIBLY_EQUIVALENT_TO_REFSET_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> POSSIBLY_EQUIVALENT_TO_REFSET_RF2</pre>
+</li>
+</ul>
+<a name="WAS_A_REFSET_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WAS_A_REFSET_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> WAS_A_REFSET_RF2</pre>
+</li>
+</ul>
+<a name="SAME_AS_REFSET_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SAME_AS_REFSET_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> SAME_AS_REFSET_RF2</pre>
+</li>
+</ul>
+<a name="REPLACED_BY_REFSET_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>REPLACED_BY_REFSET_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> REPLACED_BY_REFSET_RF2</pre>
+</li>
+</ul>
+<a name="MOVED_TO_REFSET_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MOVED_TO_REFSET_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> MOVED_TO_REFSET_RF2</pre>
+</li>
+</ul>
+<a name="MOVED_FROM_REFSET_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MOVED_FROM_REFSET_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> MOVED_FROM_REFSET_RF2</pre>
+</li>
+</ul>
+<a name="REPLACE_BY_REFSET_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>REPLACE_BY_REFSET_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> REPLACE_BY_REFSET_RF2</pre>
+</li>
+</ul>
+<a name="ALTERNATIVE_REFSET_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ALTERNATIVE_REFSET_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> ALTERNATIVE_REFSET_RF2</pre>
+</li>
+</ul>
+<a name="REFERS_TO_REFSET_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>REFERS_TO_REFSET_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> REFERS_TO_REFSET_RF2</pre>
+</li>
+</ul>
+<a name="DEGREE_OF_SYNONYMY_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DEGREE_OF_SYNONYMY_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> DEGREE_OF_SYNONYMY_RF2</pre>
+</li>
+</ul>
+<a name="VMP_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>VMP_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> VMP_RF2</pre>
+</li>
+</ul>
+<a name="VTM_RF2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>VTM_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> VTM_RF2</pre>
+</li>
+</ul>
+<a name="NON_HUMAN_RF2">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>NON_HUMAN_RF2</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a> NON_HUMAN_RF2</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="SnomedMetadataRf2()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SnomedMetadataRf2</h4>
+<pre>public&nbsp;SnomedMetadataRf2()</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/SnomedMetadataRf2.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf1.html" title="class in org.ihtsdo.otf.tcc.api.metadata.binding"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRfx.html" title="class in org.ihtsdo.otf.tcc.api.metadata.binding"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/ihtsdo/otf/tcc/api/metadata/binding/SnomedMetadataRf2.html" target="_top">Frames</a></li>
+<li><a href="SnomedMetadataRf2.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#methods_inherited_from_class_java.lang.Object">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Method</li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

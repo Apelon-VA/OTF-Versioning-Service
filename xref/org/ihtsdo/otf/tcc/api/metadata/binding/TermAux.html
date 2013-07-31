@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>TermAux xref</title>
+<link type="text/css" rel="stylesheet" href="../../../../../../../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../../../../../../../apidocs/org/ihtsdo/otf/tcc/api/metadata/binding/TermAux.html">View Javadoc</a></div><pre>
+
+<a class="jxr_linenumber" name="1" href="#1">1</a>   <strong class="jxr_keyword">package</strong> org.ihtsdo.otf.tcc.api.metadata.binding;
+<a class="jxr_linenumber" name="2" href="#2">2</a>   
+<a class="jxr_linenumber" name="3" href="#3">3</a>   <strong class="jxr_keyword">import</strong> java.util.UUID;
+<a class="jxr_linenumber" name="4" href="#4">4</a>   
+<a class="jxr_linenumber" name="5" href="#5">5</a>   <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.spec.ConceptSpec;
+<a class="jxr_linenumber" name="6" href="#6">6</a>   
+<a class="jxr_linenumber" name="7" href="#7">7</a>   <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/metadata/binding/TermAux.html">TermAux</a> {
+<a class="jxr_linenumber" name="8" href="#8">8</a>   
+<a class="jxr_linenumber" name="9" href="#9">9</a>       <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> USER =
+<a class="jxr_linenumber" name="10" href="#10">10</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"user"</span>,
+<a class="jxr_linenumber" name="11" href="#11">11</a>              UUID.fromString(<span class="jxr_string">"f7495b58-6630-3499-a44e-2052b5fcf06c"</span>));
+<a class="jxr_linenumber" name="12" href="#12">12</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> IS_A =
+<a class="jxr_linenumber" name="13" href="#13">13</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"is a (relationship type)"</span>,
+<a class="jxr_linenumber" name="14" href="#14">14</a>              UUID.fromString(<span class="jxr_string">"46bccdc4-8fb6-11db-b606-0800200c9a66"</span>));
+<a class="jxr_linenumber" name="15" href="#15">15</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> CURRENT =
+<a class="jxr_linenumber" name="16" href="#16">16</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"current (active status type)"</span>,
+<a class="jxr_linenumber" name="17" href="#17">17</a>              UUID.fromString(<span class="jxr_string">"2faa9261-8fb2-11db-b606-0800200c9a66"</span>));
+<a class="jxr_linenumber" name="18" href="#18">18</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> RETIRED =
+<a class="jxr_linenumber" name="19" href="#19">19</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"retired (inactive status type)"</span>,
+<a class="jxr_linenumber" name="20" href="#20">20</a>              UUID.fromString(<span class="jxr_string">"e1956e7b-08b4-3ad0-ab02-b411869f1c09"</span>));
+<a class="jxr_linenumber" name="21" href="#21">21</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> INACTIVE_STATUS =
+<a class="jxr_linenumber" name="22" href="#22">22</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"inactive (inactive status type)"</span>,
+<a class="jxr_linenumber" name="23" href="#23">23</a>              UUID.fromString(<span class="jxr_string">"1464ec56-7118-3051-9d21-0f95c1a39080"</span>));
+<a class="jxr_linenumber" name="24" href="#24">24</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> MOVED_TO =
+<a class="jxr_linenumber" name="25" href="#25">25</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"moved elsewhere (inactive status type)"</span>,
+<a class="jxr_linenumber" name="26" href="#26">26</a>              UUID.fromString(<span class="jxr_string">"76367831-522f-3250-83a4-8609ab298436"</span>));
+<a class="jxr_linenumber" name="27" href="#27">27</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> REL_QUALIFIER_CHAR =
+<a class="jxr_linenumber" name="28" href="#28">28</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"qualifier (characteristic type)"</span>,
+<a class="jxr_linenumber" name="29" href="#29">29</a>              UUID.fromString(<span class="jxr_string">"416ad0e4-b6bc-386c-900e-121c58b20f55"</span>));
+<a class="jxr_linenumber" name="30" href="#30">30</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> REL_HISTORIC =
+<a class="jxr_linenumber" name="31" href="#31">31</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"historical (characteristic type)"</span>,
+<a class="jxr_linenumber" name="32" href="#32">32</a>              UUID.fromString(<span class="jxr_string">"1d054ca3-2b32-3004-b7af-2701276059d5"</span>));
+<a class="jxr_linenumber" name="33" href="#33">33</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> REL_STATED_CHAR =
+<a class="jxr_linenumber" name="34" href="#34">34</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"stated (defining characteristic type)"</span>,
+<a class="jxr_linenumber" name="35" href="#35">35</a>              UUID.fromString(<span class="jxr_string">"3fde38f6-e079-3cdc-a819-eda3ec74732d"</span>));
+<a class="jxr_linenumber" name="36" href="#36">36</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> REL_INFERED_CHAR =
+<a class="jxr_linenumber" name="37" href="#37">37</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"defining"</span>,
+<a class="jxr_linenumber" name="38" href="#38">38</a>              UUID.fromString(<span class="jxr_string">"a4c6bf72-8fb6-11db-b606-0800200c9a66"</span>));
+<a class="jxr_linenumber" name="39" href="#39">39</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> REL_NOT_REFINABLE =
+<a class="jxr_linenumber" name="40" href="#40">40</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"not refinable (refinability type)"</span>,
+<a class="jxr_linenumber" name="41" href="#41">41</a>              UUID.fromString(<span class="jxr_string">"e4cde443-8fb6-11db-b606-0800200c9a66"</span>));
+<a class="jxr_linenumber" name="42" href="#42">42</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> REL_OPTIONALLY_REFINABLE =
+<a class="jxr_linenumber" name="43" href="#43">43</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"optional (refinability type)"</span>,
+<a class="jxr_linenumber" name="44" href="#44">44</a>              UUID.fromString(<span class="jxr_string">"c3d997d3-b0a4-31f8-846f-03fa874f5479"</span>));
+<a class="jxr_linenumber" name="45" href="#45">45</a>       <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> WB_AUX_PATH =
+<a class="jxr_linenumber" name="46" href="#46">46</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"Workbench Auxiliary"</span>,
+<a class="jxr_linenumber" name="47" href="#47">47</a>              UUID.fromString(<span class="jxr_string">"2faa9260-8fb2-11db-b606-0800200c9a66"</span>));
+<a class="jxr_linenumber" name="48" href="#48">48</a>       <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> IHTSDO_CLASSIFIER  =
+<a class="jxr_linenumber" name="49" href="#49">49</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"IHTSDO Classifier"</span>,
+<a class="jxr_linenumber" name="50" href="#50">50</a>              UUID.fromString(<span class="jxr_string">"7e87cc5b-e85f-3860-99eb-7a44f2b9e6f9"</span>));
+<a class="jxr_linenumber" name="51" href="#51">51</a>       <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> PATH  =
+<a class="jxr_linenumber" name="52" href="#52">52</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"path"</span>,
+<a class="jxr_linenumber" name="53" href="#53">53</a>              UUID.fromString(<span class="jxr_string">"4459d8cf-5a6f-3952-9458-6d64324b27b7"</span>));
+<a class="jxr_linenumber" name="54" href="#54">54</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> PATH_ORIGIN_REFSET  =
+<a class="jxr_linenumber" name="55" href="#55">55</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"Path origin reference set"</span>,
+<a class="jxr_linenumber" name="56" href="#56">56</a>              UUID.fromString(<span class="jxr_string">"1239b874-41b4-32a1-981f-88b448829b4b"</span>));
+<a class="jxr_linenumber" name="57" href="#57">57</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> PATH_REFSET  =
+<a class="jxr_linenumber" name="58" href="#58">58</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"Path reference set"</span>,
+<a class="jxr_linenumber" name="59" href="#59">59</a>              UUID.fromString(<span class="jxr_string">"fd9d47b7-c0a4-3eea-b3ab-2b5a3f9e888f"</span>));
+<a class="jxr_linenumber" name="60" href="#60">60</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> GENERATED_UUID  =
+<a class="jxr_linenumber" name="61" href="#61">61</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"generated UUID"</span>,
+<a class="jxr_linenumber" name="62" href="#62">62</a>              UUID.fromString(<span class="jxr_string">"2faa9262-8fb2-11db-b606-0800200c9a66"</span>));
+<a class="jxr_linenumber" name="63" href="#63">63</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a> SNOMED_IDENTIFIER  =
+<a class="jxr_linenumber" name="64" href="#64">64</a>              <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html">ConceptSpec</a>(<span class="jxr_string">"SNOMED integer id"</span>,
+<a class="jxr_linenumber" name="65" href="#65">65</a>              UUID.fromString(<span class="jxr_string">"0418a591-f75b-39ad-be2c-3ab849326da9"</span>));
+<a class="jxr_linenumber" name="66" href="#66">66</a>  }
+</pre>
+<hr/><div id="footer">This page was automatically generated by <a href="http://maven.apache.org/">Maven</a></div></body>
+</html>

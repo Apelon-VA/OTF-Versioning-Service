@@ -1,0 +1,436 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>EditCoordinate (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="EditCoordinate (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/EditCoordinate.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ExternalStampBI.html" title="interface in org.ihtsdo.otf.tcc.api.coordinate"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html" target="_top">Frames</a></li>
+<li><a href="EditCoordinate.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.api.coordinate</div>
+<h2 title="Class EditCoordinate" class="title">Class EditCoordinate</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">EditCoordinate</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<dl><DT>&nbsp;</DT><DD><map name="umlmap93W0H0"><area shape="rect" coords="6,392,129,409" href="http://www.yworks.com/" alt=""><area shape="rect" coords="328,136,473,162" href="#" alt=""><area shape="rect" coords="234,163,359,179" href="#EditCoordinate()" alt=""><area shape="rect" coords="234,179,427,195" href="#EditCoordinate(int, int, int...)" alt=""><area shape="rect" coords="234,195,455,211" href="#EditCoordinate(int, int, org.ihtsdo.otf.tcc.api.nid.NidSetBI)" alt=""><area shape="rect" coords="234,212,374,228" href="#getAuthorNid()" alt=""><area shape="rect" coords="234,228,453,244" href="#getAuthorSpec()" alt=""><area shape="rect" coords="234,244,533,260" href="#getEditPathListSpecs()" alt=""><area shape="rect" coords="234,260,409,276" href="#getEditPaths()" alt=""><area shape="rect" coords="234,276,378,292" href="#getModuleNid()" alt=""><area shape="rect" coords="234,292,457,308" href="#getModuleSpec()" alt=""><area shape="rect" coords="234,308,478,324" href="#setAuthorSpec(org.ihtsdo.otf.tcc.api.spec.ConceptSpec)" alt=""><area shape="rect" coords="234,324,558,340" href="#setEditPathListSpecs(java.util.List)" alt=""><area shape="rect" coords="234,340,482,356" href="#setModuleSpec(org.ihtsdo.otf.tcc.api.spec.ConceptSpec)" alt=""><area shape="rect" coords="234,356,363,372" href="#toString()" alt=""><area shape="rect" coords="226,110,434,127" href="package-summary.html" alt=""><area shape="rect" coords="372,28,429,52" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="363,2,430,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="26,140,97,163" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSetBI.html" alt=""><area shape="rect" coords="2,110,161,127" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/package-summary.html" alt=""></map>
+<map name="umlmap93W1H0"><area shape="rect" coords="-78,136,66,162" href="#" alt=""><area shape="rect" coords="-173,163,-48,179" href="#EditCoordinate()" alt=""><area shape="rect" coords="-173,179,20,195" href="#EditCoordinate(int, int, int...)" alt=""><area shape="rect" coords="-173,195,48,211" href="#EditCoordinate(int, int, org.ihtsdo.otf.tcc.api.nid.NidSetBI)" alt=""><area shape="rect" coords="-173,212,-33,228" href="#getAuthorNid()" alt=""><area shape="rect" coords="-173,228,46,244" href="#getAuthorSpec()" alt=""><area shape="rect" coords="-173,244,126,260" href="#getEditPathListSpecs()" alt=""><area shape="rect" coords="-173,260,2,276" href="#getEditPaths()" alt=""><area shape="rect" coords="-173,276,-29,292" href="#getModuleNid()" alt=""><area shape="rect" coords="-173,292,50,308" href="#getModuleSpec()" alt=""><area shape="rect" coords="-173,308,71,324" href="#setAuthorSpec(org.ihtsdo.otf.tcc.api.spec.ConceptSpec)" alt=""><area shape="rect" coords="-173,324,151,340" href="#setEditPathListSpecs(java.util.List)" alt=""><area shape="rect" coords="-173,340,75,356" href="#setModuleSpec(org.ihtsdo.otf.tcc.api.spec.ConceptSpec)" alt=""><area shape="rect" coords="-173,356,-44,372" href="#toString()" alt=""><area shape="rect" coords="-181,110,27,127" href="package-summary.html" alt=""><area shape="rect" coords="-34,28,22,52" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="-43,2,23,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="227,136,281,159" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="218,110,285,127" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="241,227,306,251" href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html" alt=""><area shape="rect" coords="218,197,277,215" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="228,319,334,342" href="../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" alt=""><area shape="rect" coords="218,293,389,311" href="../../../../../../org/ihtsdo/otf/tcc/api/spec/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="EditCoordinateW0H0.png" WIDTH="407" HEIGHT="418" USEMAP="#umlmap93W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="EditCoordinateW1H0.png" WIDTH="407" HEIGHT="418" USEMAP="#umlmap93W1H0" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html#EditCoordinate()">EditCoordinate</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html#EditCoordinate(int, int, int...)">EditCoordinate</a></strong>(int&nbsp;authorNid,
+              int&nbsp;moduleNid,
+              int...&nbsp;editPathNids)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html#EditCoordinate(int, int, org.ihtsdo.otf.tcc.api.nid.NidSetBI)">EditCoordinate</a></strong>(int&nbsp;authorNid,
+              int&nbsp;moduleNid,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NidSetBI</a>&nbsp;editPaths)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html#getAuthorNid()">getAuthorNid</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html#getAuthorSpec()">getAuthorSpec</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html#getEditPathListSpecs()">getEditPathListSpecs</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NidSetBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html#getEditPaths()">getEditPaths</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html#getModuleNid()">getModuleNid</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html#getModuleSpec()">getModuleSpec</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html#setAuthorSpec(org.ihtsdo.otf.tcc.api.spec.ConceptSpec)">setAuthorSpec</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;spec)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html#setEditPathListSpecs(java.util.List)">setEditPathListSpecs</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&gt;&nbsp;specs)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html#setModuleSpec(org.ihtsdo.otf.tcc.api.spec.ConceptSpec)">setModuleSpec</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;spec)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html#toString()">toString</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="EditCoordinate()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EditCoordinate</h4>
+<pre>public&nbsp;EditCoordinate()</pre>
+</li>
+</ul>
+<a name="EditCoordinate(int, int, org.ihtsdo.otf.tcc.api.nid.NidSetBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EditCoordinate</h4>
+<pre>public&nbsp;EditCoordinate(int&nbsp;authorNid,
+              int&nbsp;moduleNid,
+              <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NidSetBI</a>&nbsp;editPaths)</pre>
+</li>
+</ul>
+<a name="EditCoordinate(int, int, int...)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>EditCoordinate</h4>
+<pre>public&nbsp;EditCoordinate(int&nbsp;authorNid,
+              int&nbsp;moduleNid,
+              int...&nbsp;editPathNids)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getAuthorSpec()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAuthorSpec</h4>
+<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;getAuthorSpec()
+                          throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="setAuthorSpec(org.ihtsdo.otf.tcc.api.spec.ConceptSpec)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAuthorSpec</h4>
+<pre>public&nbsp;void&nbsp;setAuthorSpec(<a href="../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;spec)
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getModuleSpec()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getModuleSpec</h4>
+<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;getModuleSpec()
+                          throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="setModuleSpec(org.ihtsdo.otf.tcc.api.spec.ConceptSpec)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setModuleSpec</h4>
+<pre>public&nbsp;void&nbsp;setModuleSpec(<a href="../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&nbsp;spec)
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getEditPathListSpecs()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEditPathListSpecs</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&gt;&nbsp;getEditPathListSpecs()
+                                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="setEditPathListSpecs(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEditPathListSpecs</h4>
+<pre>public&nbsp;void&nbsp;setEditPathListSpecs(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/ihtsdo/otf/tcc/api/spec/ConceptSpec.html" title="class in org.ihtsdo.otf.tcc.api.spec">ConceptSpec</a>&gt;&nbsp;specs)
+                          throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getAuthorNid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAuthorNid</h4>
+<pre>public&nbsp;int&nbsp;getAuthorNid()</pre>
+</li>
+</ul>
+<a name="getModuleNid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getModuleNid</h4>
+<pre>public&nbsp;int&nbsp;getModuleNid()</pre>
+</li>
+</ul>
+<a name="getEditPaths()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEditPaths</h4>
+<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NidSetBI</a>&nbsp;getEditPaths()</pre>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/EditCoordinate.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ExternalStampBI.html" title="interface in org.ihtsdo.otf.tcc.api.coordinate"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/api/coordinate/EditCoordinate.html" target="_top">Frames</a></li>
+<li><a href="EditCoordinate.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

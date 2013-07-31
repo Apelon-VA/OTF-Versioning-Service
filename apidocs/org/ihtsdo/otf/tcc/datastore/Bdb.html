@@ -1,0 +1,967 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>Bdb (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Bdb (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Bdb.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/ihtsdo/otf/tcc/datastore/AnnotationAdder.html" title="class in org.ihtsdo.otf.tcc.datastore"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbCommitManager.html" title="class in org.ihtsdo.otf.tcc.datastore"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/ihtsdo/otf/tcc/datastore/Bdb.html" target="_top">Frames</a></li>
+<li><a href="Bdb.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.datastore</div>
+<h2 title="Class Bdb" class="title">Class Bdb</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.datastore.Bdb</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">Bdb</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<dl><DT>&nbsp;</DT><DD><map name="umlmap564W0H0"><area shape="rect" coords="583,136,625,162" href="#" alt=""><area shape="rect" coords="332,163,552,179" href="#dbdThreadGroup" alt=""><area shape="rect" coords="332,179,491,195" href="#gVersion" alt=""><area shape="rect" coords="332,195,546,211" href="#nidCidMapDb" alt=""><area shape="rect" coords="332,211,486,227" href="#bdbEnv" alt=""><area shape="rect" coords="332,229,796,245" href="#addAsAnnotations(java.util.List)" alt=""><area shape="rect" coords="332,245,838,261" href="#addMemoryMonitorListener(org.ihtsdo.otf.tcc.datastore.BdbMemoryMonitor.LowMemoryListener)" alt=""><area shape="rect" coords="332,261,597,277" href="#addXrefPair(int, org.ihtsdo.otf.tcc.model.cc.NidPairForRefex)" alt=""><area shape="rect" coords="332,277,435,293" href="#close()" alt=""><area shape="rect" coords="332,293,447,309" href="#commit()" alt=""><area shape="rect" coords="332,309,478,325" href="#compress(int)" alt=""><area shape="rect" coords="332,325,448,341" href="#fastExit()" alt=""><area shape="rect" coords="332,341,611,357" href="#forgetXrefPair(int, org.ihtsdo.otf.tcc.model.cc.NidPairForRefex)" alt=""><area shape="rect" coords="332,357,499,373" href="#getCachePercent()" alt=""><area shape="rect" coords="332,373,488,389" href="#getCacheSize()" alt=""><area shape="rect" coords="332,389,565,405" href="#getComponent(int)" alt=""><area shape="rect" coords="332,405,573,421" href="#getConcept(int)" alt=""><area shape="rect" coords="332,421,542,437" href="#getConceptDb()" alt=""><area shape="rect" coords="332,437,664,453" href="#getConceptForComponent(int)" alt=""><area shape="rect" coords="332,453,499,469" href="#getConceptNid(int)" alt=""><area shape="rect" coords="332,469,571,485" href="#getNidCNidMap()" alt=""><area shape="rect" coords="332,485,585,500" href="#getPathManager()" alt=""><area shape="rect" coords="332,500,587,516" href="#getPrimUuidForComponent(int)" alt=""><area shape="rect" coords="332,516,568,532" href="#getPrimUuidForConcept(int)" alt=""><area shape="rect" coords="332,532,587,548" href="#getProperties()" alt=""><area shape="rect" coords="332,548,523,564" href="#getProperty(java.lang.String)" alt=""><area shape="rect" coords="332,564,625,580" href="#getRefsetPairs(int)" alt=""><area shape="rect" coords="332,580,553,596" href="#getStamp(org.ihtsdo.otf.tcc.api.coordinate.ExternalStampBI)" alt=""><area shape="rect" coords="332,596,591,612" href="#getStamp(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="332,612,518,628" href="#getStampDb()" alt=""><area shape="rect" coords="332,628,466,644" href="#getStats()" alt=""><area shape="rect" coords="332,644,604,660" href="#getUuidsToNidMap()" alt=""><area shape="rect" coords="332,660,505,676" href="#hasUuid(java.util.UUID)" alt=""><area shape="rect" coords="332,676,479,692" href="#isClosed()" alt=""><area shape="rect" coords="332,692,503,708" href="#isConcept(int)" alt=""><area shape="rect" coords="332,708,861,724" href="#removeMemoryMonitorListener(org.ihtsdo.otf.tcc.datastore.BdbMemoryMonitor.LowMemoryListener)" alt=""><area shape="rect" coords="332,724,565,740" href="#selectJeProperties(java.io.File, java.io.File)" alt=""><area shape="rect" coords="332,740,545,756" href="#setCachePercent(java.lang.String)" alt=""><area shape="rect" coords="332,756,523,772" href="#setCacheSize(java.lang.String)" alt=""><area shape="rect" coords="332,772,555,788" href="#setProperty(java.lang.String, java.lang.String)" alt=""><area shape="rect" coords="332,788,437,804" href="#setup()" alt=""><area shape="rect" coords="332,804,473,820" href="#setup(java.lang.String)" alt=""><area shape="rect" coords="332,820,530,836" href="#setup(java.lang.String, boolean)" alt=""><area shape="rect" coords="332,836,657,852" href="#setupDatabase(boolean, java.lang.String, org.ihtsdo.otf.tcc.datastore.Bdb)" alt=""><area shape="rect" coords="332,852,430,868" href="#sync()" alt=""><area shape="rect" coords="332,868,569,884" href="#uuidsToNid(java.util.Collection)" alt=""><area shape="rect" coords="332,884,481,900" href="#uuidToNid(java.util.UUID)" alt=""><area shape="rect" coords="332,900,490,916" href="#uuidToNid(java.util.UUID...)" alt=""><area shape="rect" coords="332,916,596,932" href="#xrefAnnotation(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)" alt=""><area shape="rect" coords="324,110,505,127" href="package-summary.html" alt=""><area shape="rect" coords="218,223,252,246" href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html" alt=""><area shape="rect" coords="210,197,262,215" href="http://docs.oracle.com/javase/7/docs/api/java/io/package-summary.html" alt=""><area shape="rect" coords="156,343,264,366" href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadGroup.html" alt=""><area shape="rect" coords="155,310,209,333" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="146,284,213,302" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="43,404,171,422" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/package-summary.html" alt=""></map>
+<map name="umlmap564W1H0"><area shape="rect" coords="84,136,126,162" href="#" alt=""><area shape="rect" coords="-167,163,53,179" href="#dbdThreadGroup" alt=""><area shape="rect" coords="-167,179,-8,195" href="#gVersion" alt=""><area shape="rect" coords="-167,195,47,211" href="#nidCidMapDb" alt=""><area shape="rect" coords="-167,211,-13,227" href="#bdbEnv" alt=""><area shape="rect" coords="-167,229,297,245" href="#addAsAnnotations(java.util.List)" alt=""><area shape="rect" coords="-167,245,339,261" href="#addMemoryMonitorListener(org.ihtsdo.otf.tcc.datastore.BdbMemoryMonitor.LowMemoryListener)" alt=""><area shape="rect" coords="-167,261,98,277" href="#addXrefPair(int, org.ihtsdo.otf.tcc.model.cc.NidPairForRefex)" alt=""><area shape="rect" coords="-167,277,-64,293" href="#close()" alt=""><area shape="rect" coords="-167,293,-52,309" href="#commit()" alt=""><area shape="rect" coords="-167,309,-21,325" href="#compress(int)" alt=""><area shape="rect" coords="-167,325,-51,341" href="#fastExit()" alt=""><area shape="rect" coords="-167,341,112,357" href="#forgetXrefPair(int, org.ihtsdo.otf.tcc.model.cc.NidPairForRefex)" alt=""><area shape="rect" coords="-167,357,0,373" href="#getCachePercent()" alt=""><area shape="rect" coords="-167,373,-11,389" href="#getCacheSize()" alt=""><area shape="rect" coords="-167,389,66,405" href="#getComponent(int)" alt=""><area shape="rect" coords="-167,405,74,421" href="#getConcept(int)" alt=""><area shape="rect" coords="-167,421,43,437" href="#getConceptDb()" alt=""><area shape="rect" coords="-167,437,165,453" href="#getConceptForComponent(int)" alt=""><area shape="rect" coords="-167,453,0,469" href="#getConceptNid(int)" alt=""><area shape="rect" coords="-167,469,72,485" href="#getNidCNidMap()" alt=""><area shape="rect" coords="-167,485,86,500" href="#getPathManager()" alt=""><area shape="rect" coords="-167,500,88,516" href="#getPrimUuidForComponent(int)" alt=""><area shape="rect" coords="-167,516,69,532" href="#getPrimUuidForConcept(int)" alt=""><area shape="rect" coords="-167,532,88,548" href="#getProperties()" alt=""><area shape="rect" coords="-167,548,24,564" href="#getProperty(java.lang.String)" alt=""><area shape="rect" coords="-167,564,126,580" href="#getRefsetPairs(int)" alt=""><area shape="rect" coords="-167,580,54,596" href="#getStamp(org.ihtsdo.otf.tcc.api.coordinate.ExternalStampBI)" alt=""><area shape="rect" coords="-167,596,92,612" href="#getStamp(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="-167,612,19,628" href="#getStampDb()" alt=""><area shape="rect" coords="-167,628,-33,644" href="#getStats()" alt=""><area shape="rect" coords="-167,644,105,660" href="#getUuidsToNidMap()" alt=""><area shape="rect" coords="-167,660,6,676" href="#hasUuid(java.util.UUID)" alt=""><area shape="rect" coords="-167,676,-20,692" href="#isClosed()" alt=""><area shape="rect" coords="-167,692,4,708" href="#isConcept(int)" alt=""><area shape="rect" coords="-167,708,362,724" href="#removeMemoryMonitorListener(org.ihtsdo.otf.tcc.datastore.BdbMemoryMonitor.LowMemoryListener)" alt=""><area shape="rect" coords="-167,724,66,740" href="#selectJeProperties(java.io.File, java.io.File)" alt=""><area shape="rect" coords="-167,740,46,756" href="#setCachePercent(java.lang.String)" alt=""><area shape="rect" coords="-167,756,24,772" href="#setCacheSize(java.lang.String)" alt=""><area shape="rect" coords="-167,772,56,788" href="#setProperty(java.lang.String, java.lang.String)" alt=""><area shape="rect" coords="-167,788,-62,804" href="#setup()" alt=""><area shape="rect" coords="-167,804,-26,820" href="#setup(java.lang.String)" alt=""><area shape="rect" coords="-167,820,31,836" href="#setup(java.lang.String, boolean)" alt=""><area shape="rect" coords="-167,836,158,852" href="#setupDatabase(boolean, java.lang.String, org.ihtsdo.otf.tcc.datastore.Bdb)" alt=""><area shape="rect" coords="-167,852,-69,868" href="#sync()" alt=""><area shape="rect" coords="-167,868,70,884" href="#uuidsToNid(java.util.Collection)" alt=""><area shape="rect" coords="-167,884,-18,900" href="#uuidToNid(java.util.UUID)" alt=""><area shape="rect" coords="-167,900,-9,916" href="#uuidToNid(java.util.UUID...)" alt=""><area shape="rect" coords="-167,916,97,932" href="#xrefAnnotation(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)" alt=""><area shape="rect" coords="-175,110,6,127" href="package-summary.html" alt=""><area shape="rect" coords="76,28,133,52" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="68,2,135,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="444,351,487,374" href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html" alt=""><area shape="rect" coords="464,313,555,336" href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html" alt=""><area shape="rect" coords="458,270,523,293" href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html" alt=""><area shape="rect" coords="469,227,580,251" href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html" alt=""><area shape="rect" coords="435,197,494,215" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""></map>
+<map name="umlmap564W2H0"><area shape="rect" coords="-53,351,-10,374" href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html" alt=""><area shape="rect" coords="-33,313,57,336" href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html" alt=""><area shape="rect" coords="-39,270,25,293" href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html" alt=""><area shape="rect" coords="-28,227,82,251" href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html" alt=""><area shape="rect" coords="-62,197,-3,215" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""></map>
+<map name="umlmap564W0H1"><area shape="rect" coords="583,-266,625,-239" href="#" alt=""><area shape="rect" coords="332,-238,552,-222" href="#dbdThreadGroup" alt=""><area shape="rect" coords="332,-222,491,-206" href="#gVersion" alt=""><area shape="rect" coords="332,-206,546,-190" href="#nidCidMapDb" alt=""><area shape="rect" coords="332,-190,486,-174" href="#bdbEnv" alt=""><area shape="rect" coords="332,-172,796,-156" href="#addAsAnnotations(java.util.List)" alt=""><area shape="rect" coords="332,-156,838,-140" href="#addMemoryMonitorListener(org.ihtsdo.otf.tcc.datastore.BdbMemoryMonitor.LowMemoryListener)" alt=""><area shape="rect" coords="332,-140,597,-124" href="#addXrefPair(int, org.ihtsdo.otf.tcc.model.cc.NidPairForRefex)" alt=""><area shape="rect" coords="332,-124,435,-108" href="#close()" alt=""><area shape="rect" coords="332,-108,447,-92" href="#commit()" alt=""><area shape="rect" coords="332,-92,478,-76" href="#compress(int)" alt=""><area shape="rect" coords="332,-76,448,-60" href="#fastExit()" alt=""><area shape="rect" coords="332,-60,611,-44" href="#forgetXrefPair(int, org.ihtsdo.otf.tcc.model.cc.NidPairForRefex)" alt=""><area shape="rect" coords="332,-44,499,-28" href="#getCachePercent()" alt=""><area shape="rect" coords="332,-28,488,-12" href="#getCacheSize()" alt=""><area shape="rect" coords="332,-12,565,3" href="#getComponent(int)" alt=""><area shape="rect" coords="332,3,573,19" href="#getConcept(int)" alt=""><area shape="rect" coords="332,19,542,35" href="#getConceptDb()" alt=""><area shape="rect" coords="332,35,664,51" href="#getConceptForComponent(int)" alt=""><area shape="rect" coords="332,51,499,67" href="#getConceptNid(int)" alt=""><area shape="rect" coords="332,67,571,83" href="#getNidCNidMap()" alt=""><area shape="rect" coords="332,83,585,98" href="#getPathManager()" alt=""><area shape="rect" coords="332,98,587,114" href="#getPrimUuidForComponent(int)" alt=""><area shape="rect" coords="332,114,568,130" href="#getPrimUuidForConcept(int)" alt=""><area shape="rect" coords="332,130,587,146" href="#getProperties()" alt=""><area shape="rect" coords="332,146,523,162" href="#getProperty(java.lang.String)" alt=""><area shape="rect" coords="332,162,625,178" href="#getRefsetPairs(int)" alt=""><area shape="rect" coords="332,178,553,194" href="#getStamp(org.ihtsdo.otf.tcc.api.coordinate.ExternalStampBI)" alt=""><area shape="rect" coords="332,194,591,210" href="#getStamp(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="332,210,518,226" href="#getStampDb()" alt=""><area shape="rect" coords="332,226,466,242" href="#getStats()" alt=""><area shape="rect" coords="332,242,604,258" href="#getUuidsToNidMap()" alt=""><area shape="rect" coords="332,258,505,274" href="#hasUuid(java.util.UUID)" alt=""><area shape="rect" coords="332,274,479,290" href="#isClosed()" alt=""><area shape="rect" coords="332,290,503,306" href="#isConcept(int)" alt=""><area shape="rect" coords="332,306,861,322" href="#removeMemoryMonitorListener(org.ihtsdo.otf.tcc.datastore.BdbMemoryMonitor.LowMemoryListener)" alt=""><area shape="rect" coords="332,322,565,338" href="#selectJeProperties(java.io.File, java.io.File)" alt=""><area shape="rect" coords="332,338,545,354" href="#setCachePercent(java.lang.String)" alt=""><area shape="rect" coords="332,354,523,370" href="#setCacheSize(java.lang.String)" alt=""><area shape="rect" coords="332,370,555,386" href="#setProperty(java.lang.String, java.lang.String)" alt=""><area shape="rect" coords="332,386,437,402" href="#setup()" alt=""><area shape="rect" coords="332,402,473,418" href="#setup(java.lang.String)" alt=""><area shape="rect" coords="332,418,530,434" href="#setup(java.lang.String, boolean)" alt=""><area shape="rect" coords="332,434,657,450" href="#setupDatabase(boolean, java.lang.String, org.ihtsdo.otf.tcc.datastore.Bdb)" alt=""><area shape="rect" coords="332,450,430,466" href="#sync()" alt=""><area shape="rect" coords="332,466,569,482" href="#uuidsToNid(java.util.Collection)" alt=""><area shape="rect" coords="332,482,481,498" href="#uuidToNid(java.util.UUID)" alt=""><area shape="rect" coords="332,498,490,514" href="#uuidToNid(java.util.UUID...)" alt=""><area shape="rect" coords="332,514,596,530" href="#xrefAnnotation(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)" alt=""><area shape="rect" coords="324,-292,505,-274" href="package-summary.html" alt=""><area shape="rect" coords="80,132,205,155" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutorService.html" alt=""><area shape="rect" coords="53,94,191,117" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CountDownLatch.html" alt=""><area shape="rect" coords="54,61,261,84" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html" alt=""><area shape="rect" coords="54,28,262,51" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html" alt=""><area shape="rect" coords="43,2,171,20" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/package-summary.html" alt=""><area shape="rect" coords="95,224,193,247" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicLong.html" alt=""><area shape="rect" coords="85,198,258,216" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/package-summary.html" alt=""><area shape="rect" coords="87,377,204,401" href="../../../../../org/ihtsdo/otf/tcc/datastore/PropertiesBdb.html" alt=""><area shape="rect" coords="87,344,223,367" href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbPathManager.html" alt=""><area shape="rect" coords="87,311,243,334" href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbMemoryMonitor.html" alt=""><area shape="rect" coords="77,285,258,303" href="../../../../../org/ihtsdo/otf/tcc/datastore/package-summary.html" alt=""></map>
+<map name="umlmap564W1H1"><area shape="rect" coords="84,-266,126,-239" href="#" alt=""><area shape="rect" coords="-167,-238,53,-222" href="#dbdThreadGroup" alt=""><area shape="rect" coords="-167,-222,-8,-206" href="#gVersion" alt=""><area shape="rect" coords="-167,-206,47,-190" href="#nidCidMapDb" alt=""><area shape="rect" coords="-167,-190,-13,-174" href="#bdbEnv" alt=""><area shape="rect" coords="-167,-172,297,-156" href="#addAsAnnotations(java.util.List)" alt=""><area shape="rect" coords="-167,-156,339,-140" href="#addMemoryMonitorListener(org.ihtsdo.otf.tcc.datastore.BdbMemoryMonitor.LowMemoryListener)" alt=""><area shape="rect" coords="-167,-140,98,-124" href="#addXrefPair(int, org.ihtsdo.otf.tcc.model.cc.NidPairForRefex)" alt=""><area shape="rect" coords="-167,-124,-64,-108" href="#close()" alt=""><area shape="rect" coords="-167,-108,-52,-92" href="#commit()" alt=""><area shape="rect" coords="-167,-92,-21,-76" href="#compress(int)" alt=""><area shape="rect" coords="-167,-76,-51,-60" href="#fastExit()" alt=""><area shape="rect" coords="-167,-60,112,-44" href="#forgetXrefPair(int, org.ihtsdo.otf.tcc.model.cc.NidPairForRefex)" alt=""><area shape="rect" coords="-167,-44,0,-28" href="#getCachePercent()" alt=""><area shape="rect" coords="-167,-28,-11,-12" href="#getCacheSize()" alt=""><area shape="rect" coords="-167,-12,66,3" href="#getComponent(int)" alt=""><area shape="rect" coords="-167,3,74,19" href="#getConcept(int)" alt=""><area shape="rect" coords="-167,19,43,35" href="#getConceptDb()" alt=""><area shape="rect" coords="-167,35,165,51" href="#getConceptForComponent(int)" alt=""><area shape="rect" coords="-167,51,0,67" href="#getConceptNid(int)" alt=""><area shape="rect" coords="-167,67,72,83" href="#getNidCNidMap()" alt=""><area shape="rect" coords="-167,83,86,98" href="#getPathManager()" alt=""><area shape="rect" coords="-167,98,88,114" href="#getPrimUuidForComponent(int)" alt=""><area shape="rect" coords="-167,114,69,130" href="#getPrimUuidForConcept(int)" alt=""><area shape="rect" coords="-167,130,88,146" href="#getProperties()" alt=""><area shape="rect" coords="-167,146,24,162" href="#getProperty(java.lang.String)" alt=""><area shape="rect" coords="-167,162,126,178" href="#getRefsetPairs(int)" alt=""><area shape="rect" coords="-167,178,54,194" href="#getStamp(org.ihtsdo.otf.tcc.api.coordinate.ExternalStampBI)" alt=""><area shape="rect" coords="-167,194,92,210" href="#getStamp(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="-167,210,19,226" href="#getStampDb()" alt=""><area shape="rect" coords="-167,226,-33,242" href="#getStats()" alt=""><area shape="rect" coords="-167,242,105,258" href="#getUuidsToNidMap()" alt=""><area shape="rect" coords="-167,258,6,274" href="#hasUuid(java.util.UUID)" alt=""><area shape="rect" coords="-167,274,-20,290" href="#isClosed()" alt=""><area shape="rect" coords="-167,290,4,306" href="#isConcept(int)" alt=""><area shape="rect" coords="-167,306,362,322" href="#removeMemoryMonitorListener(org.ihtsdo.otf.tcc.datastore.BdbMemoryMonitor.LowMemoryListener)" alt=""><area shape="rect" coords="-167,322,66,338" href="#selectJeProperties(java.io.File, java.io.File)" alt=""><area shape="rect" coords="-167,338,46,354" href="#setCachePercent(java.lang.String)" alt=""><area shape="rect" coords="-167,354,24,370" href="#setCacheSize(java.lang.String)" alt=""><area shape="rect" coords="-167,370,56,386" href="#setProperty(java.lang.String, java.lang.String)" alt=""><area shape="rect" coords="-167,386,-62,402" href="#setup()" alt=""><area shape="rect" coords="-167,402,-26,418" href="#setup(java.lang.String)" alt=""><area shape="rect" coords="-167,418,31,434" href="#setup(java.lang.String, boolean)" alt=""><area shape="rect" coords="-167,434,158,450" href="#setupDatabase(boolean, java.lang.String, org.ihtsdo.otf.tcc.datastore.Bdb)" alt=""><area shape="rect" coords="-167,450,-69,466" href="#sync()" alt=""><area shape="rect" coords="-167,466,70,482" href="#uuidsToNid(java.util.Collection)" alt=""><area shape="rect" coords="-167,482,-18,498" href="#uuidToNid(java.util.UUID)" alt=""><area shape="rect" coords="-167,498,-9,514" href="#uuidToNid(java.util.UUID...)" alt=""><area shape="rect" coords="-167,514,97,530" href="#xrefAnnotation(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)" alt=""><area shape="rect" coords="-175,-292,6,-274" href="package-summary.html" alt=""><area shape="rect" coords="468,41,575,64" href="../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html" alt=""><area shape="rect" coords="435,10,631,28" href="../../../../../org/ihtsdo/otf/tcc/api/chronicle/package-summary.html" alt=""><area shape="rect" coords="444,175,503,198" href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" alt=""><area shape="rect" coords="473,137,603,160" href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/ExternalStampBI.html" alt=""><area shape="rect" coords="435,107,643,125" href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="528,267,900,290" href="../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" alt=""><area shape="rect" coords="435,236,608,254" href="../../../../../org/ihtsdo/otf/tcc/api/refex/package-summary.html" alt=""><area shape="rect" coords="513,364,816,387" href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbMemoryMonitor.LowMemoryListener.html" alt=""><area shape="rect" coords="435,333,616,351" href="../../../../../org/ihtsdo/otf/tcc/datastore/package-summary.html" alt=""></map>
+<map name="umlmap564W2H1"><area shape="rect" coords="-29,41,77,64" href="../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html" alt=""><area shape="rect" coords="-62,10,133,28" href="../../../../../org/ihtsdo/otf/tcc/api/chronicle/package-summary.html" alt=""><area shape="rect" coords="-53,175,5,198" href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" alt=""><area shape="rect" coords="-24,137,105,160" href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/ExternalStampBI.html" alt=""><area shape="rect" coords="-62,107,145,125" href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="30,267,402,290" href="../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" alt=""><area shape="rect" coords="-62,236,110,254" href="../../../../../org/ihtsdo/otf/tcc/api/refex/package-summary.html" alt=""><area shape="rect" coords="15,364,318,387" href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbMemoryMonitor.LowMemoryListener.html" alt=""><area shape="rect" coords="-62,333,118,351" href="../../../../../org/ihtsdo/otf/tcc/datastore/package-summary.html" alt=""></map>
+<map name="umlmap564W0H2"><area shape="rect" coords="6,375,129,392" href="http://www.yworks.com/" alt=""><area shape="rect" coords="583,-668,625,-641" href="#" alt=""><area shape="rect" coords="332,-640,552,-624" href="#dbdThreadGroup" alt=""><area shape="rect" coords="332,-624,491,-608" href="#gVersion" alt=""><area shape="rect" coords="332,-608,546,-592" href="#nidCidMapDb" alt=""><area shape="rect" coords="332,-592,486,-576" href="#bdbEnv" alt=""><area shape="rect" coords="332,-574,796,-558" href="#addAsAnnotations(java.util.List)" alt=""><area shape="rect" coords="332,-558,838,-542" href="#addMemoryMonitorListener(org.ihtsdo.otf.tcc.datastore.BdbMemoryMonitor.LowMemoryListener)" alt=""><area shape="rect" coords="332,-542,597,-526" href="#addXrefPair(int, org.ihtsdo.otf.tcc.model.cc.NidPairForRefex)" alt=""><area shape="rect" coords="332,-526,435,-510" href="#close()" alt=""><area shape="rect" coords="332,-510,447,-494" href="#commit()" alt=""><area shape="rect" coords="332,-494,478,-478" href="#compress(int)" alt=""><area shape="rect" coords="332,-478,448,-462" href="#fastExit()" alt=""><area shape="rect" coords="332,-462,611,-446" href="#forgetXrefPair(int, org.ihtsdo.otf.tcc.model.cc.NidPairForRefex)" alt=""><area shape="rect" coords="332,-446,499,-430" href="#getCachePercent()" alt=""><area shape="rect" coords="332,-430,488,-414" href="#getCacheSize()" alt=""><area shape="rect" coords="332,-414,565,-398" href="#getComponent(int)" alt=""><area shape="rect" coords="332,-398,573,-382" href="#getConcept(int)" alt=""><area shape="rect" coords="332,-382,542,-366" href="#getConceptDb()" alt=""><area shape="rect" coords="332,-366,664,-350" href="#getConceptForComponent(int)" alt=""><area shape="rect" coords="332,-350,499,-334" href="#getConceptNid(int)" alt=""><area shape="rect" coords="332,-334,571,-318" href="#getNidCNidMap()" alt=""><area shape="rect" coords="332,-318,585,-303" href="#getPathManager()" alt=""><area shape="rect" coords="332,-303,587,-287" href="#getPrimUuidForComponent(int)" alt=""><area shape="rect" coords="332,-287,568,-271" href="#getPrimUuidForConcept(int)" alt=""><area shape="rect" coords="332,-271,587,-255" href="#getProperties()" alt=""><area shape="rect" coords="332,-255,523,-239" href="#getProperty(java.lang.String)" alt=""><area shape="rect" coords="332,-239,625,-223" href="#getRefsetPairs(int)" alt=""><area shape="rect" coords="332,-223,553,-207" href="#getStamp(org.ihtsdo.otf.tcc.api.coordinate.ExternalStampBI)" alt=""><area shape="rect" coords="332,-207,591,-191" href="#getStamp(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="332,-191,518,-175" href="#getStampDb()" alt=""><area shape="rect" coords="332,-175,466,-159" href="#getStats()" alt=""><area shape="rect" coords="332,-159,604,-143" href="#getUuidsToNidMap()" alt=""><area shape="rect" coords="332,-143,505,-127" href="#hasUuid(java.util.UUID)" alt=""><area shape="rect" coords="332,-127,479,-111" href="#isClosed()" alt=""><area shape="rect" coords="332,-111,503,-95" href="#isConcept(int)" alt=""><area shape="rect" coords="332,-95,861,-79" href="#removeMemoryMonitorListener(org.ihtsdo.otf.tcc.datastore.BdbMemoryMonitor.LowMemoryListener)" alt=""><area shape="rect" coords="332,-79,565,-63" href="#selectJeProperties(java.io.File, java.io.File)" alt=""><area shape="rect" coords="332,-63,545,-47" href="#setCachePercent(java.lang.String)" alt=""><area shape="rect" coords="332,-47,523,-31" href="#setCacheSize(java.lang.String)" alt=""><area shape="rect" coords="332,-31,555,-15" href="#setProperty(java.lang.String, java.lang.String)" alt=""><area shape="rect" coords="332,-15,437,0" href="#setup()" alt=""><area shape="rect" coords="332,0,473,16" href="#setup(java.lang.String)" alt=""><area shape="rect" coords="332,16,530,32" href="#setup(java.lang.String, boolean)" alt=""><area shape="rect" coords="332,32,657,48" href="#setupDatabase(boolean, java.lang.String, org.ihtsdo.otf.tcc.datastore.Bdb)" alt=""><area shape="rect" coords="332,48,430,64" href="#sync()" alt=""><area shape="rect" coords="332,64,569,80" href="#uuidsToNid(java.util.Collection)" alt=""><area shape="rect" coords="332,80,481,96" href="#uuidToNid(java.util.UUID)" alt=""><area shape="rect" coords="332,96,490,112" href="#uuidToNid(java.util.UUID...)" alt=""><area shape="rect" coords="332,112,596,128" href="#xrefAnnotation(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)" alt=""><area shape="rect" coords="324,-694,505,-676" href="package-summary.html" alt=""><area shape="rect" coords="87,-24,204,0" href="../../../../../org/ihtsdo/otf/tcc/datastore/PropertiesBdb.html" alt=""><area shape="rect" coords="77,-116,258,-98" href="../../../../../org/ihtsdo/otf/tcc/datastore/package-summary.html" alt=""><area shape="rect" coords="32,63,131,86" href="../../../../../org/ihtsdo/otf/tcc/datastore/concept/ConceptBdb.html" alt=""><area shape="rect" coords="22,37,256,55" href="../../../../../org/ihtsdo/otf/tcc/datastore/concept/package-summary.html" alt=""><area shape="rect" coords="72,150,194,173" href="../../../../../org/ihtsdo/otf/tcc/datastore/id/NidCNidMapBdb.html" alt=""><area shape="rect" coords="63,124,258,142" href="../../../../../org/ihtsdo/otf/tcc/datastore/id/package-summary.html" alt=""><area shape="rect" coords="43,237,128,260" href="../../../../../org/ihtsdo/otf/tcc/datastore/stamp/StampBdb.html" alt=""><area shape="rect" coords="34,211,257,229" href="../../../../../org/ihtsdo/otf/tcc/datastore/stamp/package-summary.html" alt=""><area shape="rect" coords="12,324,154,347" href="../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidToNidMapBdb.html" alt=""><area shape="rect" coords="2,298,256,316" href="../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/package-summary.html" alt=""></map>
+<map name="umlmap564W1H2"><area shape="rect" coords="84,-668,126,-641" href="#" alt=""><area shape="rect" coords="-167,-640,53,-624" href="#dbdThreadGroup" alt=""><area shape="rect" coords="-167,-624,-8,-608" href="#gVersion" alt=""><area shape="rect" coords="-167,-608,47,-592" href="#nidCidMapDb" alt=""><area shape="rect" coords="-167,-592,-13,-576" href="#bdbEnv" alt=""><area shape="rect" coords="-167,-574,297,-558" href="#addAsAnnotations(java.util.List)" alt=""><area shape="rect" coords="-167,-558,339,-542" href="#addMemoryMonitorListener(org.ihtsdo.otf.tcc.datastore.BdbMemoryMonitor.LowMemoryListener)" alt=""><area shape="rect" coords="-167,-542,98,-526" href="#addXrefPair(int, org.ihtsdo.otf.tcc.model.cc.NidPairForRefex)" alt=""><area shape="rect" coords="-167,-526,-64,-510" href="#close()" alt=""><area shape="rect" coords="-167,-510,-52,-494" href="#commit()" alt=""><area shape="rect" coords="-167,-494,-21,-478" href="#compress(int)" alt=""><area shape="rect" coords="-167,-478,-51,-462" href="#fastExit()" alt=""><area shape="rect" coords="-167,-462,112,-446" href="#forgetXrefPair(int, org.ihtsdo.otf.tcc.model.cc.NidPairForRefex)" alt=""><area shape="rect" coords="-167,-446,0,-430" href="#getCachePercent()" alt=""><area shape="rect" coords="-167,-430,-11,-414" href="#getCacheSize()" alt=""><area shape="rect" coords="-167,-414,66,-398" href="#getComponent(int)" alt=""><area shape="rect" coords="-167,-398,74,-382" href="#getConcept(int)" alt=""><area shape="rect" coords="-167,-382,43,-366" href="#getConceptDb()" alt=""><area shape="rect" coords="-167,-366,165,-350" href="#getConceptForComponent(int)" alt=""><area shape="rect" coords="-167,-350,0,-334" href="#getConceptNid(int)" alt=""><area shape="rect" coords="-167,-334,72,-318" href="#getNidCNidMap()" alt=""><area shape="rect" coords="-167,-318,86,-303" href="#getPathManager()" alt=""><area shape="rect" coords="-167,-303,88,-287" href="#getPrimUuidForComponent(int)" alt=""><area shape="rect" coords="-167,-287,69,-271" href="#getPrimUuidForConcept(int)" alt=""><area shape="rect" coords="-167,-271,88,-255" href="#getProperties()" alt=""><area shape="rect" coords="-167,-255,24,-239" href="#getProperty(java.lang.String)" alt=""><area shape="rect" coords="-167,-239,126,-223" href="#getRefsetPairs(int)" alt=""><area shape="rect" coords="-167,-223,54,-207" href="#getStamp(org.ihtsdo.otf.tcc.api.coordinate.ExternalStampBI)" alt=""><area shape="rect" coords="-167,-207,92,-191" href="#getStamp(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="-167,-191,19,-175" href="#getStampDb()" alt=""><area shape="rect" coords="-167,-175,-33,-159" href="#getStats()" alt=""><area shape="rect" coords="-167,-159,105,-143" href="#getUuidsToNidMap()" alt=""><area shape="rect" coords="-167,-143,6,-127" href="#hasUuid(java.util.UUID)" alt=""><area shape="rect" coords="-167,-127,-20,-111" href="#isClosed()" alt=""><area shape="rect" coords="-167,-111,4,-95" href="#isConcept(int)" alt=""><area shape="rect" coords="-167,-95,362,-79" href="#removeMemoryMonitorListener(org.ihtsdo.otf.tcc.datastore.BdbMemoryMonitor.LowMemoryListener)" alt=""><area shape="rect" coords="-167,-79,66,-63" href="#selectJeProperties(java.io.File, java.io.File)" alt=""><area shape="rect" coords="-167,-63,46,-47" href="#setCachePercent(java.lang.String)" alt=""><area shape="rect" coords="-167,-47,24,-31" href="#setCacheSize(java.lang.String)" alt=""><area shape="rect" coords="-167,-31,56,-15" href="#setProperty(java.lang.String, java.lang.String)" alt=""><area shape="rect" coords="-167,-15,-62,0" href="#setup()" alt=""><area shape="rect" coords="-167,0,-26,16" href="#setup(java.lang.String)" alt=""><area shape="rect" coords="-167,16,31,32" href="#setup(java.lang.String, boolean)" alt=""><area shape="rect" coords="-167,32,158,48" href="#setupDatabase(boolean, java.lang.String, org.ihtsdo.otf.tcc.datastore.Bdb)" alt=""><area shape="rect" coords="-167,48,-69,64" href="#sync()" alt=""><area shape="rect" coords="-167,64,70,80" href="#uuidsToNid(java.util.Collection)" alt=""><area shape="rect" coords="-167,80,-18,96" href="#uuidToNid(java.util.UUID)" alt=""><area shape="rect" coords="-167,96,-9,112" href="#uuidToNid(java.util.UUID...)" alt=""><area shape="rect" coords="-167,112,97,128" href="#xrefAnnotation(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)" alt=""><area shape="rect" coords="-175,-694,6,-676" href="package-summary.html" alt=""><area shape="rect" coords="513,-37,816,-14" href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbMemoryMonitor.LowMemoryListener.html" alt=""><area shape="rect" coords="435,-68,616,-50" href="../../../../../org/ihtsdo/otf/tcc/datastore/package-summary.html" alt=""><area shape="rect" coords="445,54,574,77" href="../../../../../org/ihtsdo/otf/tcc/model/cc/NidPairForRefex.html" alt=""><area shape="rect" coords="435,28,609,46" href="../../../../../org/ihtsdo/otf/tcc/model/cc/package-summary.html" alt=""><area shape="rect" coords="445,141,586,164" href="../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptChronicle.html" alt=""><area shape="rect" coords="435,115,662,133" href="../../../../../org/ihtsdo/otf/tcc/model/cc/concept/package-summary.html" alt=""></map>
+<map name="umlmap564W2H2"><area shape="rect" coords="15,-37,318,-14" href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbMemoryMonitor.LowMemoryListener.html" alt=""><area shape="rect" coords="-62,-68,118,-50" href="../../../../../org/ihtsdo/otf/tcc/datastore/package-summary.html" alt=""><area shape="rect" coords="-52,54,76,77" href="../../../../../org/ihtsdo/otf/tcc/model/cc/NidPairForRefex.html" alt=""><area shape="rect" coords="-62,28,111,46" href="../../../../../org/ihtsdo/otf/tcc/model/cc/package-summary.html" alt=""><area shape="rect" coords="-52,141,88,164" href="../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptChronicle.html" alt=""><area shape="rect" coords="-62,115,164,133" href="../../../../../org/ihtsdo/otf/tcc/model/cc/concept/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="BdbW0H0.png" WIDTH="499" HEIGHT="402" USEMAP="#umlmap564W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="BdbW1H0.png" WIDTH="498" HEIGHT="402" USEMAP="#umlmap564W1H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="BdbW2H0.png" WIDTH="498" HEIGHT="402" USEMAP="#umlmap564W2H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="BdbW0H1.png" WIDTH="499" HEIGHT="402" USEMAP="#umlmap564W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="BdbW1H1.png" WIDTH="498" HEIGHT="402" USEMAP="#umlmap564W1H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="BdbW2H1.png" WIDTH="498" HEIGHT="402" USEMAP="#umlmap564W2H1" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="BdbW0H2.png" WIDTH="499" HEIGHT="401" USEMAP="#umlmap564W0H2" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="BdbW1H2.png" WIDTH="498" HEIGHT="401" USEMAP="#umlmap564W1H2" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="BdbW2H2.png" WIDTH="498" HEIGHT="401" USEMAP="#umlmap564W2H2" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected com.sleepycat.je.Environment</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#bdbEnv">bdbEnv</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadGroup.html?is-external=true" title="class or interface in java.lang">ThreadGroup</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#dbdThreadGroup">dbdThreadGroup</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicLong.html?is-external=true" title="class or interface in java.util.concurrent.atomic">AtomicLong</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#gVersion">gVersion</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/ihtsdo/otf/tcc/datastore/id/NidCNidMapBdb.html" title="class in org.ihtsdo.otf.tcc.datastore.id">NidCNidMapBdb</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#nidCidMapDb">nidCidMapDb</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#addAsAnnotations(java.util.List)">addAsAnnotations</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex">TtkRefexAbstractMemberChronicle</a>&lt;?&gt;&gt;&nbsp;members)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#addMemoryMonitorListener(org.ihtsdo.otf.tcc.datastore.BdbMemoryMonitor.LowMemoryListener)">addMemoryMonitorListener</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbMemoryMonitor.LowMemoryListener.html" title="interface in org.ihtsdo.otf.tcc.datastore">BdbMemoryMonitor.LowMemoryListener</a>&nbsp;listener)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#addXrefPair(int, org.ihtsdo.otf.tcc.model.cc.NidPairForRefex)">addXrefPair</a></strong>(int&nbsp;nid,
+           <a href="../../../../../org/ihtsdo/otf/tcc/model/cc/NidPairForRefex.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPairForRefex</a>&nbsp;pair)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#close()">close</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#commit()">commit</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#compress(int)">compress</a></strong>(int&nbsp;utilization)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#fastExit()">fastExit</a></strong>()</code>
+<div class="block">For unit test teardown.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#forgetXrefPair(int, org.ihtsdo.otf.tcc.model.cc.NidPairForRefex)">forgetXrefPair</a></strong>(int&nbsp;nid,
+              <a href="../../../../../org/ihtsdo/otf/tcc/model/cc/NidPairForRefex.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPairForRefex</a>&nbsp;pair)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getCachePercent()">getCachePercent</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getCacheSize()">getCacheSize</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getComponent(int)">getComponent</a></strong>(int&nbsp;nid)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptChronicle.html" title="class in org.ihtsdo.otf.tcc.model.cc.concept">ConceptChronicle</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getConcept(int)">getConcept</a></strong>(int&nbsp;cNid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/ihtsdo/otf/tcc/datastore/concept/ConceptBdb.html" title="class in org.ihtsdo.otf.tcc.datastore.concept">ConceptBdb</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getConceptDb()">getConceptDb</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptChronicle.html" title="class in org.ihtsdo.otf.tcc.model.cc.concept">ConceptChronicle</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getConceptForComponent(int)">getConceptForComponent</a></strong>(int&nbsp;componentNid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getConceptNid(int)">getConceptNid</a></strong>(int&nbsp;componentNid)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/ihtsdo/otf/tcc/datastore/id/NidCNidMapBdb.html" title="class in org.ihtsdo.otf.tcc.datastore.id">NidCNidMapBdb</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getNidCNidMap()">getNidCNidMap</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbPathManager.html" title="class in org.ihtsdo.otf.tcc.datastore">BdbPathManager</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getPathManager()">getPathManager</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getPrimUuidForComponent(int)">getPrimUuidForComponent</a></strong>(int&nbsp;nid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getPrimUuidForConcept(int)">getPrimUuidForConcept</a></strong>(int&nbsp;cNid)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getProperties()">getProperties</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getProperty(java.lang.String)">getProperty</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/ihtsdo/otf/tcc/model/cc/NidPairForRefex.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPairForRefex</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getRefsetPairs(int)">getRefsetPairs</a></strong>(int&nbsp;nid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getStamp(org.ihtsdo.otf.tcc.api.coordinate.ExternalStampBI)">getStamp</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/ExternalStampBI.html" title="interface in org.ihtsdo.otf.tcc.api.coordinate">ExternalStampBI</a>&nbsp;version)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getStamp(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">getStamp</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&nbsp;status,
+        long&nbsp;time,
+        int&nbsp;authorNid,
+        int&nbsp;moduleNid,
+        int&nbsp;pathNid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/ihtsdo/otf/tcc/datastore/stamp/StampBdb.html" title="class in org.ihtsdo.otf.tcc.datastore.stamp">StampBdb</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getStampDb()">getStampDb</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getStats()">getStats</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidToNidMapBdb.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">UuidToNidMapBdb</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#getUuidsToNidMap()">getUuidsToNidMap</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#hasUuid(java.util.UUID)">hasUuid</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uuid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#isClosed()">isClosed</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#isConcept(int)">isConcept</a></strong>(int&nbsp;cNid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#removeMemoryMonitorListener(org.ihtsdo.otf.tcc.datastore.BdbMemoryMonitor.LowMemoryListener)">removeMemoryMonitorListener</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbMemoryMonitor.LowMemoryListener.html" title="interface in org.ihtsdo.otf.tcc.datastore">BdbMemoryMonitor.LowMemoryListener</a>&nbsp;listener)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#selectJeProperties(java.io.File, java.io.File)">selectJeProperties</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;configDir,
+                  <a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;dbDir)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#setCachePercent(java.lang.String)">setCachePercent</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cachePercent)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#setCacheSize(java.lang.String)">setCacheSize</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cacheSize)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#setProperty(java.lang.String, java.lang.String)">setProperty</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#setup()">setup</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#setup(java.lang.String)">setup</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dbRoot)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#setup(java.lang.String, boolean)">setup</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dbRoot,
+     boolean&nbsp;staticPublish)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static com.sleepycat.je.Database</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#setupDatabase(boolean, java.lang.String, org.ihtsdo.otf.tcc.datastore.Bdb)">setupDatabase</a></strong>(boolean&nbsp;readOnly,
+             <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dbName,
+             <a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html" title="class in org.ihtsdo.otf.tcc.datastore">Bdb</a>&nbsp;bdb)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#sync()">sync</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#uuidsToNid(java.util.Collection)">uuidsToNid</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&gt;&nbsp;uuids)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#uuidToNid(java.util.UUID...)">uuidToNid</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>...&nbsp;uuids)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#uuidToNid(java.util.UUID)">uuidToNid</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uuid)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html#xrefAnnotation(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)">xrefAnnotation</a></strong>(<a href="../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexChronicleBI</a>&nbsp;annotation)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="gVersion">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>gVersion</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicLong.html?is-external=true" title="class or interface in java.util.concurrent.atomic">AtomicLong</a> gVersion</pre>
+</li>
+</ul>
+<a name="nidCidMapDb">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nidCidMapDb</h4>
+<pre>public static&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/datastore/id/NidCNidMapBdb.html" title="class in org.ihtsdo.otf.tcc.datastore.id">NidCNidMapBdb</a> nidCidMapDb</pre>
+</li>
+</ul>
+<a name="dbdThreadGroup">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dbdThreadGroup</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadGroup.html?is-external=true" title="class or interface in java.lang">ThreadGroup</a> dbdThreadGroup</pre>
+</li>
+</ul>
+<a name="bdbEnv">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>bdbEnv</h4>
+<pre>protected&nbsp;com.sleepycat.je.Environment bdbEnv</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="removeMemoryMonitorListener(org.ihtsdo.otf.tcc.datastore.BdbMemoryMonitor.LowMemoryListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeMemoryMonitorListener</h4>
+<pre>public static&nbsp;boolean&nbsp;removeMemoryMonitorListener(<a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbMemoryMonitor.LowMemoryListener.html" title="interface in org.ihtsdo.otf.tcc.datastore">BdbMemoryMonitor.LowMemoryListener</a>&nbsp;listener)</pre>
+</li>
+</ul>
+<a name="addMemoryMonitorListener(org.ihtsdo.otf.tcc.datastore.BdbMemoryMonitor.LowMemoryListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addMemoryMonitorListener</h4>
+<pre>public static&nbsp;boolean&nbsp;addMemoryMonitorListener(<a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbMemoryMonitor.LowMemoryListener.html" title="interface in org.ihtsdo.otf.tcc.datastore">BdbMemoryMonitor.LowMemoryListener</a>&nbsp;listener)</pre>
+</li>
+</ul>
+<a name="isClosed()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isClosed</h4>
+<pre>public static&nbsp;boolean&nbsp;isClosed()</pre>
+</li>
+</ul>
+<a name="commit()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>commit</h4>
+<pre>public static&nbsp;void&nbsp;commit()
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="setup()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setup</h4>
+<pre>public static&nbsp;void&nbsp;setup()</pre>
+</li>
+</ul>
+<a name="setCacheSize(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setCacheSize</h4>
+<pre>public static&nbsp;void&nbsp;setCacheSize(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cacheSize)</pre>
+</li>
+</ul>
+<a name="getCacheSize()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCacheSize</h4>
+<pre>public static&nbsp;long&nbsp;getCacheSize()</pre>
+</li>
+</ul>
+<a name="setCachePercent(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setCachePercent</h4>
+<pre>public static&nbsp;void&nbsp;setCachePercent(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cachePercent)</pre>
+</li>
+</ul>
+<a name="getCachePercent()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCachePercent</h4>
+<pre>public static&nbsp;int&nbsp;getCachePercent()</pre>
+</li>
+</ul>
+<a name="xrefAnnotation(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>xrefAnnotation</h4>
+<pre>public static&nbsp;void&nbsp;xrefAnnotation(<a href="../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexChronicleBI</a>&nbsp;annotation)
+                           throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="selectJeProperties(java.io.File, java.io.File)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>selectJeProperties</h4>
+<pre>public static&nbsp;void&nbsp;selectJeProperties(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;configDir,
+                      <a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;dbDir)
+                               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="setup(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setup</h4>
+<pre>public static&nbsp;void&nbsp;setup(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dbRoot)</pre>
+</li>
+</ul>
+<a name="setup(java.lang.String, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setup</h4>
+<pre>public static&nbsp;void&nbsp;setup(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dbRoot,
+         boolean&nbsp;staticPublish)</pre>
+</li>
+</ul>
+<a name="setupDatabase(boolean, java.lang.String, org.ihtsdo.otf.tcc.datastore.Bdb)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setupDatabase</h4>
+<pre>public static&nbsp;com.sleepycat.je.Database&nbsp;setupDatabase(boolean&nbsp;readOnly,
+                                      <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dbName,
+                                      <a href="../../../../../org/ihtsdo/otf/tcc/datastore/Bdb.html" title="class in org.ihtsdo.otf.tcc.datastore">Bdb</a>&nbsp;bdb)
+                                               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                                      com.sleepycat.je.DatabaseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code>com.sleepycat.je.DatabaseException</code></dd></dl>
+</li>
+</ul>
+<a name="getStamp(org.ihtsdo.otf.tcc.api.coordinate.ExternalStampBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStamp</h4>
+<pre>public static&nbsp;int&nbsp;getStamp(<a href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/ExternalStampBI.html" title="interface in org.ihtsdo.otf.tcc.api.coordinate">ExternalStampBI</a>&nbsp;version)</pre>
+</li>
+</ul>
+<a name="getStamp(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStamp</h4>
+<pre>public static&nbsp;int&nbsp;getStamp(<a href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&nbsp;status,
+           long&nbsp;time,
+           int&nbsp;authorNid,
+           int&nbsp;moduleNid,
+           int&nbsp;pathNid)</pre>
+</li>
+</ul>
+<a name="getStampDb()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStampDb</h4>
+<pre>public static&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/datastore/stamp/StampBdb.html" title="class in org.ihtsdo.otf.tcc.datastore.stamp">StampBdb</a>&nbsp;getStampDb()</pre>
+</li>
+</ul>
+<a name="getConceptDb()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConceptDb</h4>
+<pre>public static&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/datastore/concept/ConceptBdb.html" title="class in org.ihtsdo.otf.tcc.datastore.concept">ConceptBdb</a>&nbsp;getConceptDb()</pre>
+</li>
+</ul>
+<a name="addAsAnnotations(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addAsAnnotations</h4>
+<pre>public static&nbsp;void&nbsp;addAsAnnotations(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex">TtkRefexAbstractMemberChronicle</a>&lt;?&gt;&gt;&nbsp;members)
+                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="getConceptNid(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConceptNid</h4>
+<pre>public static&nbsp;int&nbsp;getConceptNid(int&nbsp;componentNid)</pre>
+</li>
+</ul>
+<a name="getConceptForComponent(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConceptForComponent</h4>
+<pre>public static&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptChronicle.html" title="class in org.ihtsdo.otf.tcc.model.cc.concept">ConceptChronicle</a>&nbsp;getConceptForComponent(int&nbsp;componentNid)
+                                               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getUuidsToNidMap()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUuidsToNidMap</h4>
+<pre>public static&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/datastore/uuidnidmap/UuidToNidMapBdb.html" title="class in org.ihtsdo.otf.tcc.datastore.uuidnidmap">UuidToNidMapBdb</a>&nbsp;getUuidsToNidMap()</pre>
+</li>
+</ul>
+<a name="sync()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sync</h4>
+<pre>public static&nbsp;void&nbsp;sync()
+                 throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/InterruptedException.html?is-external=true" title="class or interface in java.lang">InterruptedException</a>,
+                        <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutionException.html?is-external=true" title="class or interface in java.util.concurrent">ExecutionException</a>,
+                        <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/InterruptedException.html?is-external=true" title="class or interface in java.lang">InterruptedException</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutionException.html?is-external=true" title="class or interface in java.util.concurrent">ExecutionException</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="fastExit()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fastExit</h4>
+<pre>public static&nbsp;void&nbsp;fastExit()</pre>
+<div class="block">For unit test teardown. May corrupt database.</div>
+</li>
+</ul>
+<a name="close()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>close</h4>
+<pre>public static&nbsp;void&nbsp;close()
+                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/InterruptedException.html?is-external=true" title="class or interface in java.lang">InterruptedException</a>,
+                         <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutionException.html?is-external=true" title="class or interface in java.util.concurrent">ExecutionException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/InterruptedException.html?is-external=true" title="class or interface in java.lang">InterruptedException</a></code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutionException.html?is-external=true" title="class or interface in java.util.concurrent">ExecutionException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getNidCNidMap()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNidCNidMap</h4>
+<pre>public static&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/datastore/id/NidCNidMapBdb.html" title="class in org.ihtsdo.otf.tcc.datastore.id">NidCNidMapBdb</a>&nbsp;getNidCNidMap()</pre>
+</li>
+</ul>
+<a name="uuidsToNid(java.util.Collection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>uuidsToNid</h4>
+<pre>public static&nbsp;int&nbsp;uuidsToNid(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&gt;&nbsp;uuids)</pre>
+</li>
+</ul>
+<a name="uuidToNid(java.util.UUID)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>uuidToNid</h4>
+<pre>public static&nbsp;int&nbsp;uuidToNid(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uuid)</pre>
+</li>
+</ul>
+<a name="uuidToNid(java.util.UUID...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>uuidToNid</h4>
+<pre>public static&nbsp;int&nbsp;uuidToNid(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>...&nbsp;uuids)</pre>
+</li>
+</ul>
+<a name="getComponent(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getComponent</h4>
+<pre>public static&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentBI</a>&nbsp;getComponent(int&nbsp;nid)
+                                throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getPathManager()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPathManager</h4>
+<pre>public static&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbPathManager.html" title="class in org.ihtsdo.otf.tcc.datastore">BdbPathManager</a>&nbsp;getPathManager()</pre>
+</li>
+</ul>
+<a name="getProperties()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProperties</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getProperties()
+                                        throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getProperty(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProperty</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getProperty(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)
+                          throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="setProperty(java.lang.String, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setProperty</h4>
+<pre>public static&nbsp;void&nbsp;setProperty(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)
+                        throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="compress(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>compress</h4>
+<pre>public static&nbsp;void&nbsp;compress(int&nbsp;utilization)
+                     throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getPrimUuidForConcept(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPrimUuidForConcept</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;getPrimUuidForConcept(int&nbsp;cNid)
+                                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getPrimUuidForComponent(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPrimUuidForComponent</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;getPrimUuidForComponent(int&nbsp;nid)
+                                    throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="isConcept(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isConcept</h4>
+<pre>public static&nbsp;boolean&nbsp;isConcept(int&nbsp;cNid)</pre>
+</li>
+</ul>
+<a name="getConcept(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConcept</h4>
+<pre>public static&nbsp;<a href="../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptChronicle.html" title="class in org.ihtsdo.otf.tcc.model.cc.concept">ConceptChronicle</a>&nbsp;getConcept(int&nbsp;cNid)
+                                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="hasUuid(java.util.UUID)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hasUuid</h4>
+<pre>public static&nbsp;boolean&nbsp;hasUuid(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uuid)</pre>
+</li>
+</ul>
+<a name="getStats()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStats</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getStats()</pre>
+</li>
+</ul>
+<a name="addXrefPair(int, org.ihtsdo.otf.tcc.model.cc.NidPairForRefex)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addXrefPair</h4>
+<pre>public static&nbsp;void&nbsp;addXrefPair(int&nbsp;nid,
+               <a href="../../../../../org/ihtsdo/otf/tcc/model/cc/NidPairForRefex.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPairForRefex</a>&nbsp;pair)
+                        throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="forgetXrefPair(int, org.ihtsdo.otf.tcc.model.cc.NidPairForRefex)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>forgetXrefPair</h4>
+<pre>public static&nbsp;void&nbsp;forgetXrefPair(int&nbsp;nid,
+                  <a href="../../../../../org/ihtsdo/otf/tcc/model/cc/NidPairForRefex.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPairForRefex</a>&nbsp;pair)</pre>
+</li>
+</ul>
+<a name="getRefsetPairs(int)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getRefsetPairs</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/ihtsdo/otf/tcc/model/cc/NidPairForRefex.html" title="class in org.ihtsdo.otf.tcc.model.cc">NidPairForRefex</a>&gt;&nbsp;getRefsetPairs(int&nbsp;nid)</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Bdb.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/ihtsdo/otf/tcc/datastore/AnnotationAdder.html" title="class in org.ihtsdo.otf.tcc.datastore"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbCommitManager.html" title="class in org.ihtsdo.otf.tcc.datastore"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/ihtsdo/otf/tcc/datastore/Bdb.html" target="_top">Frames</a></li>
+<li><a href="Bdb.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>

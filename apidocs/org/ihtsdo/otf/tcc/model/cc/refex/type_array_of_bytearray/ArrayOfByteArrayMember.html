@@ -1,0 +1,814 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>ArrayOfByteArrayMember (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ArrayOfByteArrayMember (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ArrayOfByteArrayMember.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../../index.html?org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" target="_top">Frames</a></li>
+<li><a href="ArrayOfByteArrayMember.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.refex.RefexMember">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray</div>
+<h2 title="Class ArrayOfByteArrayMember" class="title">Class ArrayOfByteArrayMember</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent</a>&lt;R,C&gt;</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">org.ihtsdo.otf.tcc.model.cc.refex.RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</li>
+<li>
+<ul class="inheritance">
+<li>org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray.ArrayOfByteArrayMember</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&gt;, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api">AnalogBI</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/AnalogGeneratorBI.html" title="interface in org.ihtsdo.otf.tcc.api">AnalogGeneratorBI</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>&gt;, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentBI</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexVersionBI</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>&gt;&gt;, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentVersionBI</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/VersionPointBI.html" title="interface in org.ihtsdo.otf.tcc.api.coordinate">VersionPointBI</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/id/IdBI.html" title="interface in org.ihtsdo.otf.tcc.api.id">IdBI</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexAnalogBI</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>&gt;, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexChronicleBI</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>&gt;, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexVersionBI</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>&gt;, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/type_array_of_bytearray/RefexArrayOfBytearrayAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex.type_array_of_bytearray">RefexArrayOfBytearrayAnalogBI</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>&gt;, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/type_array_of_bytearray/RefexArrayOfBytearrayVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex.type_array_of_bytearray">RefexArrayOfBytearrayVersionBI</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>&gt;</dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">ArrayOfByteArrayMember</span>
+extends <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;
+implements <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/type_array_of_bytearray/RefexArrayOfBytearrayAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex.type_array_of_bytearray">RefexArrayOfBytearrayAnalogBI</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>&gt;</pre>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>kec</dd>
+<DT>&nbsp;</DT><DD><map name="umlmap450W0H0"><area shape="rect" coords="17,145,470,168" href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/computer/version/VersionComputer.html" alt=""><area shape="rect" coords="2,119,286,136" href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/computer/version/package-summary.html" alt=""></map>
+<map name="umlmap450W1H0"><area shape="rect" coords="267,145,510,171" href="#" alt=""><area shape="rect" coords="48,172,239,188" href="#ArrayOfByteArrayMember()" alt=""><area shape="rect" coords="48,188,324,204" href="#ArrayOfByteArrayMember(int, com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="48,204,531,220" href="#ArrayOfByteArrayMember(org.ihtsdo.otf.tcc.dto.component.refex.type_array_of_bytearray.TtkRefexArrayOfByteArrayMemberChronicle, int)" alt=""><area shape="rect" coords="48,221,325,237" href="#addRefsetTypeNids(java.util.Set)" alt=""><area shape="rect" coords="48,237,299,253" href="#addSpecProperties(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)" alt=""><area shape="rect" coords="48,253,224,269" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="48,269,269,285" href="#getArrayOfByteArray()" alt=""><area shape="rect" coords="48,285,264,301" href="#getTkRefsetType()" alt=""><area shape="rect" coords="48,301,178,317" href="#getTypeNid()" alt=""><area shape="rect" coords="48,317,306,333" href="#getVariableVersionNids()" alt=""><area shape="rect" coords="48,333,482,349" href="#getVersionComputer()" alt=""><area shape="rect" coords="48,349,414,365" href="#getVersions()" alt=""><area shape="rect" coords="48,365,169,381" href="#hashCode()" alt=""><area shape="rect" coords="48,381,328,397" href="#makeAnalog()" alt=""><area shape="rect" coords="48,397,467,413" href="#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="48,413,296,429" href="#readMemberFields(com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="48,429,446,445" href="#readMemberRevision(com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="48,445,317,461" href="#readyToWriteRefsetMember()" alt=""><area shape="rect" coords="48,461,336,477" href="#refexFieldsEqual(org.ihtsdo.otf.tcc.api.refex.RefexVersionBI)" alt=""><area shape="rect" coords="48,477,711,493" href="#refexFieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)" alt=""><area shape="rect" coords="48,493,294,508" href="#setArrayOfByteArray(byte[][])" alt=""><area shape="rect" coords="48,508,177,524" href="#toString()" alt=""><area shape="rect" coords="48,524,274,540" href="#writeMember(com.sleepycat.bind.tuple.TupleOutput)" alt=""><area shape="rect" coords="40,119,404,136" href="package-summary.html" alt=""><area shape="rect" coords="124,37,654,61" href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" alt=""><area shape="rect" coords="108,11,317,29" href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/package-summary.html" alt=""></map>
+<map name="umlmap450W2H0"><area shape="rect" coords="-226,145,16,171" href="#" alt=""><area shape="rect" coords="-446,172,-255,188" href="#ArrayOfByteArrayMember()" alt=""><area shape="rect" coords="-446,188,-170,204" href="#ArrayOfByteArrayMember(int, com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="-446,204,37,220" href="#ArrayOfByteArrayMember(org.ihtsdo.otf.tcc.dto.component.refex.type_array_of_bytearray.TtkRefexArrayOfByteArrayMemberChronicle, int)" alt=""><area shape="rect" coords="-446,221,-169,237" href="#addRefsetTypeNids(java.util.Set)" alt=""><area shape="rect" coords="-446,237,-195,253" href="#addSpecProperties(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)" alt=""><area shape="rect" coords="-446,253,-270,269" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-446,269,-225,285" href="#getArrayOfByteArray()" alt=""><area shape="rect" coords="-446,285,-230,301" href="#getTkRefsetType()" alt=""><area shape="rect" coords="-446,301,-316,317" href="#getTypeNid()" alt=""><area shape="rect" coords="-446,317,-188,333" href="#getVariableVersionNids()" alt=""><area shape="rect" coords="-446,333,-12,349" href="#getVersionComputer()" alt=""><area shape="rect" coords="-446,349,-80,365" href="#getVersions()" alt=""><area shape="rect" coords="-446,365,-325,381" href="#hashCode()" alt=""><area shape="rect" coords="-446,381,-166,397" href="#makeAnalog()" alt=""><area shape="rect" coords="-446,397,-27,413" href="#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="-446,413,-198,429" href="#readMemberFields(com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="-446,429,-48,445" href="#readMemberRevision(com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="-446,445,-177,461" href="#readyToWriteRefsetMember()" alt=""><area shape="rect" coords="-446,461,-158,477" href="#refexFieldsEqual(org.ihtsdo.otf.tcc.api.refex.RefexVersionBI)" alt=""><area shape="rect" coords="-446,477,217,493" href="#refexFieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)" alt=""><area shape="rect" coords="-446,493,-200,508" href="#setArrayOfByteArray(byte[][])" alt=""><area shape="rect" coords="-446,508,-317,524" href="#toString()" alt=""><area shape="rect" coords="-446,524,-220,540" href="#writeMember(com.sleepycat.bind.tuple.TupleOutput)" alt=""><area shape="rect" coords="-454,119,-90,136" href="package-summary.html" alt=""><area shape="rect" coords="-369,37,160,61" href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" alt=""><area shape="rect" coords="-385,11,-176,29" href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/package-summary.html" alt=""><area shape="rect" coords="317,33,770,56" href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/type_array_of_bytearray/RefexArrayOfBytearrayAnalogBI.html" alt=""><area shape="rect" coords="206,2,534,20" href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/type_array_of_bytearray/package-summary.html" alt=""><area shape="rect" coords="303,298,357,321" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="303,265,360,288" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="294,239,361,257" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="317,432,380,456" href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html" alt=""><area shape="rect" coords="317,390,382,413" href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html" alt=""><area shape="rect" coords="294,359,353,377" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="294,586,489,604" href="../../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""></map>
+<map name="umlmap450W3H0"><area shape="rect" coords="-176,33,276,56" href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/type_array_of_bytearray/RefexArrayOfBytearrayAnalogBI.html" alt=""><area shape="rect" coords="-287,2,40,20" href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/type_array_of_bytearray/package-summary.html" alt=""><area shape="rect" coords="-199,586,-4,604" href="../../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""></map>
+<map name="umlmap450W0H1"><area shape="rect" coords="6,557,129,574" href="http://www.yworks.com/" alt=""></map>
+<map name="umlmap450W1H1"><area shape="rect" coords="267,-439,510,-412" href="#" alt=""><area shape="rect" coords="48,-411,239,-395" href="#ArrayOfByteArrayMember()" alt=""><area shape="rect" coords="48,-395,324,-379" href="#ArrayOfByteArrayMember(int, com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="48,-379,531,-363" href="#ArrayOfByteArrayMember(org.ihtsdo.otf.tcc.dto.component.refex.type_array_of_bytearray.TtkRefexArrayOfByteArrayMemberChronicle, int)" alt=""><area shape="rect" coords="48,-362,325,-346" href="#addRefsetTypeNids(java.util.Set)" alt=""><area shape="rect" coords="48,-346,299,-330" href="#addSpecProperties(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)" alt=""><area shape="rect" coords="48,-330,224,-314" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="48,-314,269,-298" href="#getArrayOfByteArray()" alt=""><area shape="rect" coords="48,-298,264,-282" href="#getTkRefsetType()" alt=""><area shape="rect" coords="48,-282,178,-266" href="#getTypeNid()" alt=""><area shape="rect" coords="48,-266,306,-250" href="#getVariableVersionNids()" alt=""><area shape="rect" coords="48,-250,482,-234" href="#getVersionComputer()" alt=""><area shape="rect" coords="48,-234,414,-218" href="#getVersions()" alt=""><area shape="rect" coords="48,-218,169,-202" href="#hashCode()" alt=""><area shape="rect" coords="48,-202,328,-186" href="#makeAnalog()" alt=""><area shape="rect" coords="48,-186,467,-170" href="#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="48,-170,296,-154" href="#readMemberFields(com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="48,-154,446,-138" href="#readMemberRevision(com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="48,-138,317,-122" href="#readyToWriteRefsetMember()" alt=""><area shape="rect" coords="48,-122,336,-106" href="#refexFieldsEqual(org.ihtsdo.otf.tcc.api.refex.RefexVersionBI)" alt=""><area shape="rect" coords="48,-106,711,-90" href="#refexFieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)" alt=""><area shape="rect" coords="48,-90,294,-75" href="#setArrayOfByteArray(byte[][])" alt=""><area shape="rect" coords="48,-75,177,-59" href="#toString()" alt=""><area shape="rect" coords="48,-59,274,-43" href="#writeMember(com.sleepycat.bind.tuple.TupleOutput)" alt=""><area shape="rect" coords="40,-465,404,-447" href="package-summary.html" alt=""></map>
+<map name="umlmap450W2H1"><area shape="rect" coords="-226,-439,16,-412" href="#" alt=""><area shape="rect" coords="-446,-411,-255,-395" href="#ArrayOfByteArrayMember()" alt=""><area shape="rect" coords="-446,-395,-170,-379" href="#ArrayOfByteArrayMember(int, com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="-446,-379,37,-363" href="#ArrayOfByteArrayMember(org.ihtsdo.otf.tcc.dto.component.refex.type_array_of_bytearray.TtkRefexArrayOfByteArrayMemberChronicle, int)" alt=""><area shape="rect" coords="-446,-362,-169,-346" href="#addRefsetTypeNids(java.util.Set)" alt=""><area shape="rect" coords="-446,-346,-195,-330" href="#addSpecProperties(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)" alt=""><area shape="rect" coords="-446,-330,-270,-314" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-446,-314,-225,-298" href="#getArrayOfByteArray()" alt=""><area shape="rect" coords="-446,-298,-230,-282" href="#getTkRefsetType()" alt=""><area shape="rect" coords="-446,-282,-316,-266" href="#getTypeNid()" alt=""><area shape="rect" coords="-446,-266,-188,-250" href="#getVariableVersionNids()" alt=""><area shape="rect" coords="-446,-250,-12,-234" href="#getVersionComputer()" alt=""><area shape="rect" coords="-446,-234,-80,-218" href="#getVersions()" alt=""><area shape="rect" coords="-446,-218,-325,-202" href="#hashCode()" alt=""><area shape="rect" coords="-446,-202,-166,-186" href="#makeAnalog()" alt=""><area shape="rect" coords="-446,-186,-27,-170" href="#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)" alt=""><area shape="rect" coords="-446,-170,-198,-154" href="#readMemberFields(com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="-446,-154,-48,-138" href="#readMemberRevision(com.sleepycat.bind.tuple.TupleInput)" alt=""><area shape="rect" coords="-446,-138,-177,-122" href="#readyToWriteRefsetMember()" alt=""><area shape="rect" coords="-446,-122,-158,-106" href="#refexFieldsEqual(org.ihtsdo.otf.tcc.api.refex.RefexVersionBI)" alt=""><area shape="rect" coords="-446,-106,217,-90" href="#refexFieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)" alt=""><area shape="rect" coords="-446,-90,-200,-75" href="#setArrayOfByteArray(byte[][])" alt=""><area shape="rect" coords="-446,-75,-317,-59" href="#toString()" alt=""><area shape="rect" coords="-446,-59,-220,-43" href="#writeMember(com.sleepycat.bind.tuple.TupleOutput)" alt=""><area shape="rect" coords="-454,-465,-90,-447" href="package-summary.html" alt=""><area shape="rect" coords="304,28,384,51" href="../../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" alt=""><area shape="rect" coords="294,2,489,20" href="../../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="303,115,362,138" href="../../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" alt=""><area shape="rect" coords="294,89,502,107" href="../../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="384,240,743,263" href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" alt=""><area shape="rect" coords="304,202,391,225" href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexType.html" alt=""><area shape="rect" coords="294,176,467,194" href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/package-summary.html" alt=""><area shape="rect" coords="308,332,650,355" href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_array_of_bytearray/TtkRefexArrayOfByteArrayMemberChronicle.html" alt=""><area shape="rect" coords="294,306,696,324" href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_array_of_bytearray/package-summary.html" alt=""><area shape="rect" coords="312,419,967,442" href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" alt=""><area shape="rect" coords="294,393,540,411" href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/package-summary.html" alt=""><area shape="rect" coords="305,506,509,529" href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" alt=""><area shape="rect" coords="294,480,658,498" href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/package-summary.html" alt=""></map>
+<map name="umlmap450W3H1"><area shape="rect" coords="-199,2,-4,20" href="../../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/package-summary.html" alt=""><area shape="rect" coords="-199,89,8,107" href="../../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="-109,240,249,263" href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" alt=""><area shape="rect" coords="-199,176,-26,194" href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/package-summary.html" alt=""><area shape="rect" coords="-185,332,156,355" href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_array_of_bytearray/TtkRefexArrayOfByteArrayMemberChronicle.html" alt=""><area shape="rect" coords="-199,306,202,324" href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_array_of_bytearray/package-summary.html" alt=""><area shape="rect" coords="-181,419,473,442" href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" alt=""><area shape="rect" coords="-199,393,46,411" href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/package-summary.html" alt=""><area shape="rect" coords="-188,506,15,529" href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" alt=""><area shape="rect" coords="-199,480,164,498" href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="ArrayOfByteArrayMemberW0H0.png" WIDTH="495" HEIGHT="584" USEMAP="#umlmap450W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ArrayOfByteArrayMemberW1H0.png" WIDTH="494" HEIGHT="584" USEMAP="#umlmap450W1H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ArrayOfByteArrayMemberW2H0.png" WIDTH="494" HEIGHT="584" USEMAP="#umlmap450W2H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ArrayOfByteArrayMemberW3H0.png" WIDTH="494" HEIGHT="584" USEMAP="#umlmap450W3H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="ArrayOfByteArrayMemberW0H1.png" WIDTH="495" HEIGHT="583" USEMAP="#umlmap450W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ArrayOfByteArrayMemberW1H1.png" WIDTH="494" HEIGHT="583" USEMAP="#umlmap450W1H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ArrayOfByteArrayMemberW2H1.png" WIDTH="494" HEIGHT="583" USEMAP="#umlmap450W2H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ArrayOfByteArrayMemberW3H1.png" WIDTH="494" HEIGHT="583" USEMAP="#umlmap450W3H1" BORDER="0"></TD>
+</TR>
+</TABLE></CENTER></DD>
+<!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested_class_summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember.Version</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="nested_classes_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from class&nbsp;org.ihtsdo.otf.tcc.model.cc.component.<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.IDENTIFIER_PART_TYPES.html" title="enum in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent.IDENTIFIER_PART_TYPES</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.refex.RefexMember">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.ihtsdo.otf.tcc.model.cc.refex.<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#referencedComponentNid">referencedComponentNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#refexExtensionNid">refexExtensionNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#versions">versions</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.ihtsdo.otf.tcc.model.cc.component.<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#additionalIdVersions">additionalIdVersions</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#annotations">annotations</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#enclosingConceptNid">enclosingConceptNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#logger">logger</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#nid">nid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#primordialLsb">primordialLsb</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#primordialMsb">primordialMsb</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#primordialStamp">primordialStamp</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#revisions">revisions</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#ArrayOfByteArrayMember()">ArrayOfByteArrayMember</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#ArrayOfByteArrayMember(int, com.sleepycat.bind.tuple.TupleInput)">ArrayOfByteArrayMember</a></strong>(int&nbsp;enclosingConceptNid,
+                      com.sleepycat.bind.tuple.TupleInput&nbsp;input)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#ArrayOfByteArrayMember(org.ihtsdo.otf.tcc.dto.component.refex.type_array_of_bytearray.TtkRefexArrayOfByteArrayMemberChronicle, int)">ArrayOfByteArrayMember</a></strong>(<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_array_of_bytearray/TtkRefexArrayOfByteArrayMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_array_of_bytearray">TtkRefexArrayOfByteArrayMemberChronicle</a>&nbsp;refsetMember,
+                      int&nbsp;enclosingConceptNid)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#addRefsetTypeNids(java.util.Set)">addRefsetTypeNids</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;allNids)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#addSpecProperties(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)">addSpecProperties</a></strong>(<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RefexCAB</a>&nbsp;rcs)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>byte[][]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#getArrayOfByteArray()">getArrayOfByteArray</a></strong>()</code>
+<div class="block">Gets the array of byte array associated with this version of an array of
+ byte array refex member.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexType.html" title="enum in org.ihtsdo.otf.tcc.api.refex">RefexType</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#getTkRefsetType()">getTkRefsetType</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#getTypeNid()">getTypeNid</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected org.apache.mahout.math.list.IntArrayList</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#getVariableVersionNids()">getVariableVersionNids</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/computer/version/VersionComputer.html" title="class in org.ihtsdo.otf.tcc.model.cc.computer.version">VersionComputer</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember.Version</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#getVersionComputer()">getVersionComputer</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember.Version</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#getVersions()">getVersions</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#hashCode()">hashCode</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#makeAnalog()">makeAnalog</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">makeAnalog</a></strong>(<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&nbsp;status,
+          long&nbsp;time,
+          int&nbsp;authorNid,
+          int&nbsp;moduleNid,
+          int&nbsp;pathNid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#readMemberFields(com.sleepycat.bind.tuple.TupleInput)">readMemberFields</a></strong>(com.sleepycat.bind.tuple.TupleInput&nbsp;in)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#readMemberRevision(com.sleepycat.bind.tuple.TupleInput)">readMemberRevision</a></strong>(com.sleepycat.bind.tuple.TupleInput&nbsp;input)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#readyToWriteRefsetMember()">readyToWriteRefsetMember</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#refexFieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)">refexFieldsEqual</a></strong>(<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;&nbsp;obj)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#refexFieldsEqual(org.ihtsdo.otf.tcc.api.refex.RefexVersionBI)">refexFieldsEqual</a></strong>(<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexVersionBI</a>&nbsp;another)</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#setArrayOfByteArray(byte[][])">setArrayOfByteArray</a></strong>(byte[][]&nbsp;byteArray)</code>
+<div class="block">Sets the array of byte array based on the given
+ <code>arrayOfByteArray</code> for this array of byte array refex.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#toString()">toString</a></strong>()</code>
+<div class="block">Method description</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html#writeMember(com.sleepycat.bind.tuple.TupleOutput)">writeMember</a></strong>(com.sleepycat.bind.tuple.TupleOutput&nbsp;out)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.refex.RefexMember">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.ihtsdo.otf.tcc.model.cc.refex.<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#addComponentNids(java.util.Set)">addComponentNids</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#clearVersions()">clearVersions</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#fieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)">fieldsEqual</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#getPrimordialVersion()">getPrimordialVersion</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#getReferencedComponentNid()">getReferencedComponentNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#getRefexExtensionNid()">getRefexExtensionNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#getRefexType()">getRefexType</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getVersion</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getVersions</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, long)">getVersions</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#merge(org.ihtsdo.otf.tcc.model.cc.refex.RefexMember, java.util.Set)">merge</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#readFromBdb(com.sleepycat.bind.tuple.TupleInput)">readFromBdb</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#readyToWriteComponent()">readyToWriteComponent</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#setReferencedComponentNid(int)">setReferencedComponentNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#setRefexExtensionNid(int)">setRefexExtensionNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#toUserString()">toUserString</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#toUserString(org.ihtsdo.otf.tcc.api.store.TerminologySnapshotDI)">toUserString</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#validate(org.ihtsdo.otf.tcc.model.cc.refex.RefexMember)">validate</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#writeToBdb(com.sleepycat.bind.tuple.TupleOutput, int)">writeToBdb</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.ihtsdo.otf.tcc.model.cc.component.<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addAnnotation(org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI)">addAnnotation</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addIdVersion(org.ihtsdo.otf.tcc.model.cc.identifier.IdentifierVersion)">addIdVersion</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addLongId(java.lang.Long, int, org.ihtsdo.otf.tcc.api.coordinate.Status, org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, long)">addLongId</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addMutablePart(R)">addMutablePart</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addNidToBuffer(java.lang.Appendable, int)">addNidToBuffer</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addRevision(R)">addRevision</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addRevisionNoRedundancyCheck(R)">addRevisionNoRedundancyCheck</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addStringId(java.lang.String, int, org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">addStringId</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addTextToBuffer(java.lang.Appendable, int)">addTextToBuffer</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#addUuidId(java.util.UUID, int, org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">addUuidId</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#assertionString()">assertionString</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#cancel()">cancel</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#clearAnnotationVersions()">clearAnnotationVersions</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#compareTo(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)">compareTo</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#conceptComponentFieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)">conceptComponentFieldsEqual</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#containsStamp(int)">containsStamp</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#convertId(java.util.List)">convertId</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAdditionalIdentifierParts()">getAdditionalIdentifierParts</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAdditionalIds()">getAdditionalIds</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAllIds()">getAllIds</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAllNidsForId()">getAllNidsForId</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAllNidsForVersion()">getAllNidsForVersion</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAllStamps()">getAllStamps</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAnnotations()">getAnnotations</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getAnnotationsActive</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.lang.Class)">getAnnotationsActive</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">getAnnotationsActive</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAnnotationsActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int, java.lang.Class)">getAnnotationsActive</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAnnotationsMod()">getAnnotationsMod</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAnnotationStamps()">getAnnotationStamps</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAuthorityNid()">getAuthorityNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getAuthorNid()">getAuthorNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getChronicle()">getChronicle</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getComponentStamps()">getComponentStamps</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getConceptNid()">getConceptNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getDenotation()">getDenotation</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getEnclosingConcept()">getEnclosingConcept</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getIdStamps()">getIdStamps</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getIdVersions()">getIdVersions</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getModuleNid()">getModuleNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getMutablePartCount()">getMutablePartCount</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getNid()">getNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getPathNid()">getPathNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getPosition()">getPosition</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getPositions()">getPositions</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getPrimordialStatusAtPositionNid()">getPrimordialStatusAtPositionNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getPrimordialUuid()">getPrimordialUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getRefexes()">getRefexes</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getRefexMembers(int)">getRefexMembers</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getRefexMembersActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getRefexMembersActive</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getRefexMembersActive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">getRefexMembersActive</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getRefexMembersInactive(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getRefexMembersInactive</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getRefsetMembers()">getRefsetMembers</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getRefsetMemberSapNids()">getRefsetMemberSapNids</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getStamp()">getStamp</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getStatus()">getStatus</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getTime()">getTime</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getUUIDs()">getUUIDs</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getVersionSapMap()">getVersionSapMap</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getVersionStamps()">getVersionStamps</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#hasCurrentAnnotationMember(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">hasCurrentAnnotationMember</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#hasCurrentRefexMember(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int)">hasCurrentRefexMember</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#hasRevision(R)">hasRevision</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#isActive()">isActive</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#isBaselineGeneration()">isBaselineGeneration</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#isCanceled(com.sleepycat.bind.tuple.TupleInput)">isCanceled</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#isUncommitted()">isUncommitted</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#makeAdjudicationAnalogs(org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">makeAdjudicationAnalogs</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#merge(C, java.util.Set)">merge</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#modified()">modified</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#readComponentFromBdb(com.sleepycat.bind.tuple.TupleInput)">readComponentFromBdb</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#readyToWrite()">readyToWrite</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#removeRevision(R)">removeRevision</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#resetUncommitted(org.ihtsdo.otf.tcc.api.coordinate.Status, int, int, int)">resetUncommitted</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#setAuthorNid(int)">setAuthorNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#setModuleNid(int)">setModuleNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#setNid(int)">setNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#setPathNid(int)">setPathNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#setPrimordialUuid(java.util.UUID)">setPrimordialUuid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#setSTAMP(int)">setSTAMP</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#setStatus(org.ihtsdo.otf.tcc.api.coordinate.Status)">setStatus</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#setTime(long)">setTime</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#stampIsInRange(int, int)">stampIsInRange</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#validate(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)">validate</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#versionCount()">versionCount</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#versionsEqual(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.lang.Boolean)">versionsEqual</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#writeComponentToBdb(com.sleepycat.bind.tuple.TupleOutput, int)">writeComponentToBdb</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.refex.RefexAnalogBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.refex.<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexAnalogBI</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexAnalogBI.html#setReferencedComponentNid(int)">setReferencedComponentNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexAnalogBI.html#setRefexExtensionNid(int)">setRefexExtensionNid</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.AnalogBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api">AnalogBI</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#addLongId(java.lang.Long, int, org.ihtsdo.otf.tcc.api.coordinate.Status, org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, long)">addLongId</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setAuthorNid(int)">setAuthorNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setModuleNid(int)">setModuleNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setNid(int)">setNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setPathNid(int)">setPathNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setStatus(org.ihtsdo.otf.tcc.api.coordinate.Status)">setStatus</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/AnalogBI.html#setTime(long)">setTime</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.refex.RefexVersionBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.refex.<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexVersionBI</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.chronicle.ComponentVersionBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.chronicle.<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentVersionBI</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getAllNidsForVersion()">getAllNidsForVersion</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getAuthorNid()">getAuthorNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getChronicle()">getChronicle</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getModuleNid()">getModuleNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getPosition()">getPosition</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getStamp()">getStamp</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#getStatus()">getStatus</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#isActive()">isActive</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#isBaselineGeneration()">isBaselineGeneration</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#isUncommitted()">isUncommitted</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#stampIsInRange(int, int)">stampIsInRange</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#toUserString(org.ihtsdo.otf.tcc.api.store.TerminologySnapshotDI)">toUserString</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentVersionBI.html#versionsEqual(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.lang.Boolean)">versionsEqual</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.coordinate.VersionPointBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.coordinate.<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/VersionPointBI.html" title="interface in org.ihtsdo.otf.tcc.api.coordinate">VersionPointBI</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/VersionPointBI.html#getPathNid()">getPathNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/VersionPointBI.html#getTime()">getTime</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.refex.<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexChronicleBI</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html#getReferencedComponentNid()">getReferencedComponentNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html#getRefexExtensionNid()">getRefexExtensionNid</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html#getRefexType()">getRefexType</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.ihtsdo.otf.tcc.api.chronicle.ComponentChronicleBI">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;org.ihtsdo.otf.tcc.api.chronicle.<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a></h3>
+<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getAllStamps()">getAllStamps</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getEnclosingConcept()">getEnclosingConcept</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getPositions()">getPositions</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getPrimordialVersion()">getPrimordialVersion</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getVersion(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getVersion</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getVersions(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getVersions</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#isUncommitted()">isUncommitted</a>, <a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#makeAdjudicationAnalogs(org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">makeAdjudicationAnalogs</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="ArrayOfByteArrayMember()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayOfByteArrayMember</h4>
+<pre>public&nbsp;ArrayOfByteArrayMember()</pre>
+</li>
+</ul>
+<a name="ArrayOfByteArrayMember(int, com.sleepycat.bind.tuple.TupleInput)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ArrayOfByteArrayMember</h4>
+<pre>public&nbsp;ArrayOfByteArrayMember(int&nbsp;enclosingConceptNid,
+                      com.sleepycat.bind.tuple.TupleInput&nbsp;input)
+                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="ArrayOfByteArrayMember(org.ihtsdo.otf.tcc.dto.component.refex.type_array_of_bytearray.TtkRefexArrayOfByteArrayMemberChronicle, int)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ArrayOfByteArrayMember</h4>
+<pre>public&nbsp;ArrayOfByteArrayMember(<a href="../../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/type_array_of_bytearray/TtkRefexArrayOfByteArrayMemberChronicle.html" title="class in org.ihtsdo.otf.tcc.dto.component.refex.type_array_of_bytearray">TtkRefexArrayOfByteArrayMemberChronicle</a>&nbsp;refsetMember,
+                      int&nbsp;enclosingConceptNid)
+                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getArrayOfByteArray()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getArrayOfByteArray</h4>
+<pre>public&nbsp;byte[][]&nbsp;getArrayOfByteArray()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/type_array_of_bytearray/RefexArrayOfBytearrayVersionBI.html#getArrayOfByteArray()">RefexArrayOfBytearrayVersionBI</a></code></strong></div>
+<div class="block">Gets the array of byte array associated with this version of an array of
+ byte array refex member.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/type_array_of_bytearray/RefexArrayOfBytearrayVersionBI.html#getArrayOfByteArray()">getArrayOfByteArray</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/type_array_of_bytearray/RefexArrayOfBytearrayVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex.type_array_of_bytearray">RefexArrayOfBytearrayVersionBI</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the array of byte array with this refex member version</dd></dl>
+</li>
+</ul>
+<a name="setArrayOfByteArray(byte[][])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setArrayOfByteArray</h4>
+<pre>public&nbsp;void&nbsp;setArrayOfByteArray(byte[][]&nbsp;byteArray)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/type_array_of_bytearray/RefexArrayOfBytearrayAnalogBI.html#setArrayOfByteArray(byte[][])">RefexArrayOfBytearrayAnalogBI</a></code></strong></div>
+<div class="block">Sets the array of byte array based on the given
+ <code>arrayOfByteArray</code> for this array of byte array refex.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/type_array_of_bytearray/RefexArrayOfBytearrayAnalogBI.html#setArrayOfByteArray(byte[][])">setArrayOfByteArray</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/type_array_of_bytearray/RefexArrayOfBytearrayAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex.type_array_of_bytearray">RefexArrayOfBytearrayAnalogBI</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>byteArray</code> - the array of byte array to be associated with this refex member</dd></dl>
+</li>
+</ul>
+<a name="addRefsetTypeNids(java.util.Set)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addRefsetTypeNids</h4>
+<pre>protected&nbsp;void&nbsp;addRefsetTypeNids(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;allNids)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#addRefsetTypeNids(java.util.Set)">addRefsetTypeNids</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="addSpecProperties(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addSpecProperties</h4>
+<pre>protected&nbsp;void&nbsp;addSpecProperties(<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RefexCAB</a>&nbsp;rcs)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#addSpecProperties(org.ihtsdo.otf.tcc.api.blueprint.RefexCAB)">addSpecProperties</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#equals(java.lang.Object)">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#equals(java.lang.Object)">equals</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getVariableVersionNids()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVariableVersionNids</h4>
+<pre>protected&nbsp;org.apache.mahout.math.list.IntArrayList&nbsp;getVariableVersionNids()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getVariableVersionNids()">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getVariableVersionNids()">getVariableVersionNids</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#hashCode()">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#hashCode()">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="makeAnalog()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeAnalog</h4>
+<pre>public&nbsp;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>&nbsp;makeAnalog()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#makeAnalog()">makeAnalog</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>makeAnalog</h4>
+<pre>public&nbsp;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>&nbsp;makeAnalog(<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html" title="enum in org.ihtsdo.otf.tcc.api.coordinate">Status</a>&nbsp;status,
+                                  long&nbsp;time,
+                                  int&nbsp;authorNid,
+                                  int&nbsp;moduleNid,
+                                  int&nbsp;pathNid)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/AnalogGeneratorBI.html#makeAnalog(org.ihtsdo.otf.tcc.api.coordinate.Status, long, int, int, int)">makeAnalog</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/AnalogGeneratorBI.html" title="interface in org.ihtsdo.otf.tcc.api">AnalogGeneratorBI</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="refexFieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refexFieldsEqual</h4>
+<pre>protected&nbsp;boolean&nbsp;refexFieldsEqual(<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html" title="class in org.ihtsdo.otf.tcc.model.cc.component">ConceptComponent</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;&nbsp;obj)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#refexFieldsEqual(org.ihtsdo.otf.tcc.model.cc.component.ConceptComponent)">refexFieldsEqual</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="refexFieldsEqual(org.ihtsdo.otf.tcc.api.refex.RefexVersionBI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refexFieldsEqual</h4>
+<pre>public&nbsp;boolean&nbsp;refexFieldsEqual(<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexVersionBI</a>&nbsp;another)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html#refexFieldsEqual(org.ihtsdo.otf.tcc.api.refex.RefexVersionBI)">RefexVersionBI</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html#refexFieldsEqual(org.ihtsdo.otf.tcc.api.refex.RefexVersionBI)">refexFieldsEqual</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexVersionBI</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>&gt;</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="readMemberFields(com.sleepycat.bind.tuple.TupleInput)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readMemberFields</h4>
+<pre>protected&nbsp;void&nbsp;readMemberFields(com.sleepycat.bind.tuple.TupleInput&nbsp;in)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#readMemberFields(com.sleepycat.bind.tuple.TupleInput)">readMemberFields</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="readMemberRevision(com.sleepycat.bind.tuple.TupleInput)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readMemberRevision</h4>
+<pre>protected final&nbsp;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>&nbsp;readMemberRevision(com.sleepycat.bind.tuple.TupleInput&nbsp;input)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#readMemberRevision(com.sleepycat.bind.tuple.TupleInput)">readMemberRevision</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="readyToWriteRefsetMember()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readyToWriteRefsetMember</h4>
+<pre>public&nbsp;boolean&nbsp;readyToWriteRefsetMember()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#readyToWriteRefsetMember()">readyToWriteRefsetMember</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#toString()">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#toString()">toString</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="writeMember(com.sleepycat.bind.tuple.TupleOutput)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeMember</h4>
+<pre>protected&nbsp;void&nbsp;writeMember(com.sleepycat.bind.tuple.TupleOutput&nbsp;out)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#writeMember(com.sleepycat.bind.tuple.TupleOutput)">writeMember</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTkRefsetType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTkRefsetType</h4>
+<pre>protected&nbsp;<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexType.html" title="enum in org.ihtsdo.otf.tcc.api.refex">RefexType</a>&nbsp;getTkRefsetType()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#getTkRefsetType()">getTkRefsetType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTypeNid()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTypeNid</h4>
+<pre>public&nbsp;int&nbsp;getTypeNid()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#getTypeNid()">getTypeNid</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getVersionComputer()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVersionComputer</h4>
+<pre>protected&nbsp;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/computer/version/VersionComputer.html" title="class in org.ihtsdo.otf.tcc.model.cc.computer.version">VersionComputer</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember.Version</a>&gt;&nbsp;getVersionComputer()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#getVersionComputer()">getVersionComputer</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getVersions()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getVersions</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember.Version</a>&gt;&nbsp;getVersions()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html#getVersions()">ConceptComponent</a></code></strong></div>
+<div class="block">Method description</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html#getVersions()">getVersions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/api/chronicle/ComponentChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.chronicle">ComponentChronicleBI</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.refex">RefexVersionBI</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>&gt;&gt;</code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#getVersions()">getVersions</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex">RefexMember</a>&lt;<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayRevision.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayRevision</a>,<a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray">ArrayOfByteArrayMember</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ArrayOfByteArrayMember.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.Version.html" title="class in org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../../index.html?org/ihtsdo/otf/tcc/model/cc/refex/type_array_of_bytearray/ArrayOfByteArrayMember.html" target="_top">Frames</a></li>
+<li><a href="ArrayOfByteArrayMember.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_org.ihtsdo.otf.tcc.model.cc.refex.RefexMember">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2013 <a href="http://www.ihtsdo.org">International Health Terminology Standards Development Organisation</a>. All rights reserved.</small></p>
+</body>
+</html>
