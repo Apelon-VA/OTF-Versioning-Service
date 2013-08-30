@@ -30,76 +30,85 @@
 <a class="jxr_linenumber" name="20" href="#20">20</a>  <strong class="jxr_keyword">import</strong> java.util.List;
 <a class="jxr_linenumber" name="21" href="#21">21</a>  <strong class="jxr_keyword">import</strong> java.util.Map;
 <a class="jxr_linenumber" name="22" href="#22">22</a>  <strong class="jxr_keyword">import</strong> java.util.UUID;
-<a class="jxr_linenumber" name="23" href="#23">23</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.model.cc.NidPairForRefex;
-<a class="jxr_linenumber" name="24" href="#24">24</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.model.cc.concept.ConceptDataFetcherI;
-<a class="jxr_linenumber" name="25" href="#25">25</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.model.cc.relationship.Relationship;
-<a class="jxr_linenumber" name="26" href="#26">26</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.ddo.store.FxTerminologyStoreDI;
-<a class="jxr_linenumber" name="27" href="#27">27</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.nid.NidSetBI;
-<a class="jxr_linenumber" name="28" href="#28">28</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.coordinate.Status;
-<a class="jxr_linenumber" name="29" href="#29">29</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.store.TerminologyStoreDI;
-<a class="jxr_linenumber" name="30" href="#30">30</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI;
-<a class="jxr_linenumber" name="31" href="#31">31</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.cs.ChangeSetPolicy;
-<a class="jxr_linenumber" name="32" href="#32">32</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.cs.ChangeSetWriterThreading;
-<a class="jxr_linenumber" name="33" href="#33">33</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI;
-<a class="jxr_linenumber" name="34" href="#34">34</a>  
-<a class="jxr_linenumber" name="35" href="#35">35</a>  <em class="jxr_javadoccomment">/**</em>
-<a class="jxr_linenumber" name="36" href="#36">36</a>  <em class="jxr_javadoccomment"> *</em>
-<a class="jxr_linenumber" name="37" href="#37">37</a>  <em class="jxr_javadoccomment"> * @author kec</em>
-<a class="jxr_linenumber" name="38" href="#38">38</a>  <em class="jxr_javadoccomment"> */</em>
-<a class="jxr_linenumber" name="39" href="#39">39</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">interface</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/termstore/PersistentStoreI.html">PersistentStoreI</a> <strong class="jxr_keyword">extends</strong> TerminologyStoreDI, <a href="../../../../../../../org/ihtsdo/otf/tcc/ddo/store/FxTerminologyStoreDI.html">FxTerminologyStoreDI</a> {
-<a class="jxr_linenumber" name="40" href="#40">40</a>  
-<a class="jxr_linenumber" name="41" href="#41">41</a>      <strong class="jxr_keyword">int</strong> getStamp(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html">Status</a> status, <strong class="jxr_keyword">long</strong> time, <strong class="jxr_keyword">int</strong> authorNid, <strong class="jxr_keyword">int</strong> moduleNid, <strong class="jxr_keyword">int</strong> pathNid);
-<a class="jxr_linenumber" name="42" href="#42">42</a>  
-<a class="jxr_linenumber" name="43" href="#43">43</a>      <strong class="jxr_keyword">int</strong> getMaxReadOnlyStamp();
-<a class="jxr_linenumber" name="44" href="#44">44</a>  
-<a class="jxr_linenumber" name="45" href="#45">45</a>      <strong class="jxr_keyword">void</strong> xrefAnnotation(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html">RefexChronicleBI</a> annotation) <strong class="jxr_keyword">throws</strong> IOException;
-<a class="jxr_linenumber" name="46" href="#46">46</a>  
-<a class="jxr_linenumber" name="47" href="#47">47</a>      <strong class="jxr_keyword">boolean</strong> hasConcept(<strong class="jxr_keyword">int</strong> cNid) <strong class="jxr_keyword">throws</strong> IOException;
-<a class="jxr_linenumber" name="48" href="#48">48</a>  
-<a class="jxr_linenumber" name="49" href="#49">49</a>      <strong class="jxr_keyword">long</strong> getLastCancel();
-<a class="jxr_linenumber" name="50" href="#50">50</a>  
-<a class="jxr_linenumber" name="51" href="#51">51</a>      <strong class="jxr_keyword">long</strong> getLastCommit();
-<a class="jxr_linenumber" name="52" href="#52">52</a>  
-<a class="jxr_linenumber" name="53" href="#53">53</a>      <strong class="jxr_keyword">long</strong> incrementAndGetSequence();
-<a class="jxr_linenumber" name="54" href="#54">54</a>  
-<a class="jxr_linenumber" name="55" href="#55">55</a>      <strong class="jxr_keyword">void</strong> waitTillWritesFinished();
-<a class="jxr_linenumber" name="56" href="#56">56</a>  
-<a class="jxr_linenumber" name="57" href="#57">57</a>      <strong class="jxr_keyword">boolean</strong> commit(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html">ConceptChronicleBI</a> cc, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/cs/ChangeSetPolicy.html">ChangeSetPolicy</a> changeSetPolicy,
-<a class="jxr_linenumber" name="58" href="#58">58</a>              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/cs/ChangeSetWriterThreading.html">ChangeSetWriterThreading</a> changeSetWriterThreading) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="23" href="#23">23</a>  <strong class="jxr_keyword">import</strong> org.apache.lucene.queryparser.classic.ParseException;
+<a class="jxr_linenumber" name="24" href="#24">24</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.model.cc.NidPairForRefex;
+<a class="jxr_linenumber" name="25" href="#25">25</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.model.cc.concept.ConceptDataFetcherI;
+<a class="jxr_linenumber" name="26" href="#26">26</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.model.cc.relationship.Relationship;
+<a class="jxr_linenumber" name="27" href="#27">27</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.ddo.store.FxTerminologyStoreDI;
+<a class="jxr_linenumber" name="28" href="#28">28</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.nid.NidSetBI;
+<a class="jxr_linenumber" name="29" href="#29">29</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.coordinate.Status;
+<a class="jxr_linenumber" name="30" href="#30">30</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.store.TerminologyStoreDI;
+<a class="jxr_linenumber" name="31" href="#31">31</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI;
+<a class="jxr_linenumber" name="32" href="#32">32</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.cs.ChangeSetPolicy;
+<a class="jxr_linenumber" name="33" href="#33">33</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.cs.ChangeSetWriterThreading;
+<a class="jxr_linenumber" name="34" href="#34">34</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI;
+<a class="jxr_linenumber" name="35" href="#35">35</a>  <strong class="jxr_keyword">import</strong> org.jvnet.hk2.annotations.Contract;
+<a class="jxr_linenumber" name="36" href="#36">36</a>  
+<a class="jxr_linenumber" name="37" href="#37">37</a>  <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="38" href="#38">38</a>  <em class="jxr_javadoccomment"> *</em>
+<a class="jxr_linenumber" name="39" href="#39">39</a>  <em class="jxr_javadoccomment"> * @author kec</em>
+<a class="jxr_linenumber" name="40" href="#40">40</a>  <em class="jxr_javadoccomment"> */</em>
+<a class="jxr_linenumber" name="41" href="#41">41</a>  @Contract
+<a class="jxr_linenumber" name="42" href="#42">42</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">interface</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/termstore/PersistentStoreI.html">PersistentStoreI</a> <strong class="jxr_keyword">extends</strong> TerminologyStoreDI, <a href="../../../../../../../org/ihtsdo/otf/tcc/ddo/store/FxTerminologyStoreDI.html">FxTerminologyStoreDI</a> {
+<a class="jxr_linenumber" name="43" href="#43">43</a>  
+<a class="jxr_linenumber" name="44" href="#44">44</a>      <strong class="jxr_keyword">int</strong> getStamp(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/Status.html">Status</a> status, <strong class="jxr_keyword">long</strong> time, <strong class="jxr_keyword">int</strong> authorNid, <strong class="jxr_keyword">int</strong> moduleNid, <strong class="jxr_keyword">int</strong> pathNid);
+<a class="jxr_linenumber" name="45" href="#45">45</a>  
+<a class="jxr_linenumber" name="46" href="#46">46</a>      <strong class="jxr_keyword">int</strong> getMaxReadOnlyStamp();
+<a class="jxr_linenumber" name="47" href="#47">47</a>  
+<a class="jxr_linenumber" name="48" href="#48">48</a>      <strong class="jxr_keyword">void</strong> xrefAnnotation(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html">RefexChronicleBI</a> annotation) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="49" href="#49">49</a>  
+<a class="jxr_linenumber" name="50" href="#50">50</a>      <strong class="jxr_keyword">boolean</strong> hasConcept(<strong class="jxr_keyword">int</strong> cNid) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="51" href="#51">51</a>  
+<a class="jxr_linenumber" name="52" href="#52">52</a>      <strong class="jxr_keyword">long</strong> getLastCancel();
+<a class="jxr_linenumber" name="53" href="#53">53</a>  
+<a class="jxr_linenumber" name="54" href="#54">54</a>      <strong class="jxr_keyword">long</strong> getLastCommit();
+<a class="jxr_linenumber" name="55" href="#55">55</a>  
+<a class="jxr_linenumber" name="56" href="#56">56</a>      <strong class="jxr_keyword">long</strong> incrementAndGetSequence();
+<a class="jxr_linenumber" name="57" href="#57">57</a>  
+<a class="jxr_linenumber" name="58" href="#58">58</a>      <strong class="jxr_keyword">void</strong> waitTillWritesFinished();
 <a class="jxr_linenumber" name="59" href="#59">59</a>  
-<a class="jxr_linenumber" name="60" href="#60">60</a>      Map&lt;String, String&gt; getProperties() <strong class="jxr_keyword">throws</strong> IOException;
-<a class="jxr_linenumber" name="61" href="#61">61</a>  
-<a class="jxr_linenumber" name="62" href="#62">62</a>      String getProperty(String key) <strong class="jxr_keyword">throws</strong> IOException;
-<a class="jxr_linenumber" name="63" href="#63">63</a>  
-<a class="jxr_linenumber" name="64" href="#64">64</a>      <strong class="jxr_keyword">void</strong> setProperty(String key, String value) <strong class="jxr_keyword">throws</strong> IOException;
-<a class="jxr_linenumber" name="65" href="#65">65</a>  
-<a class="jxr_linenumber" name="66" href="#66">66</a>      <strong class="jxr_keyword">void</strong> cancelAfterCommit(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSetBI.html">NidSetBI</a> commitSapNids) <strong class="jxr_keyword">throws</strong> IOException;
-<a class="jxr_linenumber" name="67" href="#67">67</a>  
-<a class="jxr_linenumber" name="68" href="#68">68</a>      <em class="jxr_comment">// Method to wrap for client...</em>
-<a class="jxr_linenumber" name="69" href="#69">69</a>      <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataFetcherI.html">ConceptDataFetcherI</a> getConceptDataFetcher(<strong class="jxr_keyword">int</strong> cNid) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="60" href="#60">60</a>      <strong class="jxr_keyword">boolean</strong> commit(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html">ConceptChronicleBI</a> cc, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/cs/ChangeSetPolicy.html">ChangeSetPolicy</a> changeSetPolicy,
+<a class="jxr_linenumber" name="61" href="#61">61</a>              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/cs/ChangeSetWriterThreading.html">ChangeSetWriterThreading</a> changeSetWriterThreading) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="62" href="#62">62</a>  
+<a class="jxr_linenumber" name="63" href="#63">63</a>      Map&lt;String, String&gt; getProperties() <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="64" href="#64">64</a>  
+<a class="jxr_linenumber" name="65" href="#65">65</a>      String getProperty(String key) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="66" href="#66">66</a>  
+<a class="jxr_linenumber" name="67" href="#67">67</a>      <strong class="jxr_keyword">void</strong> setProperty(String key, String value) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="68" href="#68">68</a>  
+<a class="jxr_linenumber" name="69" href="#69">69</a>      <strong class="jxr_keyword">void</strong> cancelAfterCommit(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSetBI.html">NidSetBI</a> commitSapNids) <strong class="jxr_keyword">throws</strong> IOException;
 <a class="jxr_linenumber" name="70" href="#70">70</a>  
-<a class="jxr_linenumber" name="71" href="#71">71</a>      <em class="jxr_comment">// Methods to remove from this interface...</em>
-<a class="jxr_linenumber" name="72" href="#72">72</a>      <strong class="jxr_keyword">void</strong> addXrefPair(<strong class="jxr_keyword">int</strong> nid, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPairForRefex.html">NidPairForRefex</a> pair) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="71" href="#71">71</a>      <em class="jxr_comment">// Method to wrap for client...</em>
+<a class="jxr_linenumber" name="72" href="#72">72</a>      <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptDataFetcherI.html">ConceptDataFetcherI</a> getConceptDataFetcher(<strong class="jxr_keyword">int</strong> cNid) <strong class="jxr_keyword">throws</strong> IOException;
 <a class="jxr_linenumber" name="73" href="#73">73</a>  
-<a class="jxr_linenumber" name="74" href="#74">74</a>      <strong class="jxr_keyword">void</strong> forgetXrefPair(<strong class="jxr_keyword">int</strong> nid, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPairForRefex.html">NidPairForRefex</a> pair) <strong class="jxr_keyword">throws</strong> IOException;
-<a class="jxr_linenumber" name="75" href="#75">75</a>  
-<a class="jxr_linenumber" name="76" href="#76">76</a>      <em class="jxr_javadoccomment">/**</em>
-<a class="jxr_linenumber" name="77" href="#77">77</a>  <em class="jxr_javadoccomment">     * @TODO modify the write concept routine to update the identifiers map (UUIDs, etc) Possibly remove</em>
-<a class="jxr_linenumber" name="78" href="#78">78</a>  <em class="jxr_javadoccomment">     * identifiers from Lucene?</em>
-<a class="jxr_linenumber" name="79" href="#79">79</a>  <em class="jxr_javadoccomment">     */</em>
-<a class="jxr_linenumber" name="80" href="#80">80</a>      List&lt;NidPairForRefex&gt; getRefexPairs(<strong class="jxr_keyword">int</strong> nid) <strong class="jxr_keyword">throws</strong> IOException;
-<a class="jxr_linenumber" name="81" href="#81">81</a>  
-<a class="jxr_linenumber" name="82" href="#82">82</a>      <strong class="jxr_keyword">int</strong>[] getDestRelOriginNids(<strong class="jxr_keyword">int</strong> cNid, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSetBI.html">NidSetBI</a> relTypes) <strong class="jxr_keyword">throws</strong> IOException;
-<a class="jxr_linenumber" name="83" href="#83">83</a>      <strong class="jxr_keyword">int</strong>[] getDestRelOriginNids(<strong class="jxr_keyword">int</strong> cNid) <strong class="jxr_keyword">throws</strong> IOException;
-<a class="jxr_linenumber" name="84" href="#84">84</a>      Collection&lt;Relationship&gt; getDestRels(<strong class="jxr_keyword">int</strong> cNid) <strong class="jxr_keyword">throws</strong> IOException;
-<a class="jxr_linenumber" name="85" href="#85">85</a>      <strong class="jxr_keyword">void</strong> setConceptNidForNid(<strong class="jxr_keyword">int</strong> cNid, <strong class="jxr_keyword">int</strong> nid) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="74" href="#74">74</a>      <em class="jxr_comment">// Methods to remove from this interface...</em>
+<a class="jxr_linenumber" name="75" href="#75">75</a>      <strong class="jxr_keyword">void</strong> addXrefPair(<strong class="jxr_keyword">int</strong> nid, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPairForRefex.html">NidPairForRefex</a> pair) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="76" href="#76">76</a>  
+<a class="jxr_linenumber" name="77" href="#77">77</a>      <strong class="jxr_keyword">void</strong> forgetXrefPair(<strong class="jxr_keyword">int</strong> nid, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/NidPairForRefex.html">NidPairForRefex</a> pair) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="78" href="#78">78</a>  
+<a class="jxr_linenumber" name="79" href="#79">79</a>      <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="80" href="#80">80</a>  <em class="jxr_javadoccomment">     * @TODO modify the write concept routine to update the identifiers map</em>
+<a class="jxr_linenumber" name="81" href="#81">81</a>  <em class="jxr_javadoccomment">     * (UUIDs, etc) Possibly remove identifiers from Lucene?</em>
+<a class="jxr_linenumber" name="82" href="#82">82</a>  <em class="jxr_javadoccomment">     */</em>
+<a class="jxr_linenumber" name="83" href="#83">83</a>      List&lt;NidPairForRefex&gt; getRefexPairs(<strong class="jxr_keyword">int</strong> nid) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="84" href="#84">84</a>  
+<a class="jxr_linenumber" name="85" href="#85">85</a>      <strong class="jxr_keyword">int</strong>[] getDestRelOriginNids(<strong class="jxr_keyword">int</strong> cNid, <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSetBI.html">NidSetBI</a> relTypes) <strong class="jxr_keyword">throws</strong> IOException;
 <a class="jxr_linenumber" name="86" href="#86">86</a>  
-<a class="jxr_linenumber" name="87" href="#87">87</a>      <strong class="jxr_keyword">void</strong> resetConceptNidForNid(<strong class="jxr_keyword">int</strong> cNid, <strong class="jxr_keyword">int</strong> nid) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="87" href="#87">87</a>      <strong class="jxr_keyword">int</strong>[] getDestRelOriginNids(<strong class="jxr_keyword">int</strong> cNid) <strong class="jxr_keyword">throws</strong> IOException;
 <a class="jxr_linenumber" name="88" href="#88">88</a>  
-<a class="jxr_linenumber" name="89" href="#89">89</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> addRelOrigin(<strong class="jxr_keyword">int</strong> destinationCNid, <strong class="jxr_keyword">int</strong> originCNid) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="89" href="#89">89</a>      Collection&lt;Relationship&gt; getDestRels(<strong class="jxr_keyword">int</strong> cNid) <strong class="jxr_keyword">throws</strong> IOException;
 <a class="jxr_linenumber" name="90" href="#90">90</a>  
-<a class="jxr_linenumber" name="91" href="#91">91</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> put(UUID uuid, <strong class="jxr_keyword">int</strong> nid);
-<a class="jxr_linenumber" name="92" href="#92">92</a>  }
+<a class="jxr_linenumber" name="91" href="#91">91</a>      <strong class="jxr_keyword">void</strong> setConceptNidForNid(<strong class="jxr_keyword">int</strong> cNid, <strong class="jxr_keyword">int</strong> nid) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="92" href="#92">92</a>  
+<a class="jxr_linenumber" name="93" href="#93">93</a>      <strong class="jxr_keyword">void</strong> resetConceptNidForNid(<strong class="jxr_keyword">int</strong> cNid, <strong class="jxr_keyword">int</strong> nid) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="94" href="#94">94</a>  
+<a class="jxr_linenumber" name="95" href="#95">95</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> addRelOrigin(<strong class="jxr_keyword">int</strong> destinationCNid, <strong class="jxr_keyword">int</strong> originCNid) <strong class="jxr_keyword">throws</strong> IOException;
+<a class="jxr_linenumber" name="96" href="#96">96</a>  
+<a class="jxr_linenumber" name="97" href="#97">97</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> put(UUID uuid, <strong class="jxr_keyword">int</strong> nid);
+<a class="jxr_linenumber" name="98" href="#98">98</a>  
+<a class="jxr_linenumber" name="99" href="#99">99</a>      <strong class="jxr_keyword">public</strong> Collection&lt;Integer&gt; searchLucene(String query, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/termstore/SearchType.html">SearchType</a> searchType)
+<a class="jxr_linenumber" name="100" href="#100">100</a>             <strong class="jxr_keyword">throws</strong> IOException, ParseException;
+<a class="jxr_linenumber" name="101" href="#101">101</a> }
 </pre>
 <hr/><div id="footer">This page was automatically generated by <a href="http://maven.apache.org/">Maven</a></div></body>
 </html>

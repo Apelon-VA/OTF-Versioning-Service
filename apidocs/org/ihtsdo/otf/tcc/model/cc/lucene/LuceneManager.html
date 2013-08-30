@@ -3,13 +3,13 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-<title>LuceneManager (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<title>LuceneManager (TCC sprint2: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
 <link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
 </head>
 <body>
 <script type="text/javascript"><!--
     if (location.href.indexOf('is-external=true') == -1) {
-        parent.document.title="LuceneManager (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+        parent.document.title="LuceneManager (TCC sprint2: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
     }
 //-->
 </script>
@@ -95,24 +95,24 @@
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/DescriptionLuceneManager.html" title="class in org.ihtsdo.otf.tcc.model.cc.lucene">DescriptionLuceneManager</a></dd>
+<dd><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/DescriptionLuceneManager.html" title="class in org.ihtsdo.otf.tcc.model.cc.lucene">DescriptionLuceneManager</a>, <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/RefsetLuceneManager.html" title="class in org.ihtsdo.otf.tcc.model.cc.lucene">RefsetLuceneManager</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public abstract class <span class="strong">LuceneManager</span>
 extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<dl><DT>&nbsp;</DT><DD><map name="umlmap417W0H0"><area shape="rect" coords="405,136,555,157" href="#" alt=""><area shape="rect" coords="296,175,526,191" href="#descLuceneMutableDir" alt=""><area shape="rect" coords="296,191,537,207" href="#descLuceneReadOnlyDir" alt=""><area shape="rect" coords="296,207,421,223" href="#version" alt=""><area shape="rect" coords="296,223,573,239" href="#descIndexer" alt=""><area shape="rect" coords="296,239,545,255" href="#descReadOnlyReader" alt=""><area shape="rect" coords="296,255,469,271" href="#descWriter" alt=""><area shape="rect" coords="296,271,413,287" href="#logger" alt=""><area shape="rect" coords="296,287,539,303" href="#mutableSearcher" alt=""><area shape="rect" coords="296,304,426,320" href="#LuceneManager()" alt=""><area shape="rect" coords="296,321,538,337" href="#addUncommittedDescNid(int)" alt=""><area shape="rect" coords="296,337,399,353" href="#close()" alt=""><area shape="rect" coords="296,353,411,369" href="#commit()" alt=""><area shape="rect" coords="296,369,546,385" href="#commitDescriptionsToLucene()" alt=""><area shape="rect" coords="296,385,655,401" href="#commitDescriptionsToLucene(org.ihtsdo.otf.tcc.model.cc.concept.ConceptChronicle)" alt=""><area shape="rect" coords="296,401,483,417" href="#createLuceneIndex()" alt=""><area shape="rect" coords="296,417,581,433" href="#createLuceneIndex(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="296,433,441,449" href="#getMatchLimit()" alt=""><area shape="rect" coords="296,449,459,465" href="#indexExists()" alt=""><area shape="rect" coords="296,465,384,481" href="#init()" alt=""><area shape="rect" coords="296,481,501,496" href="#search(org.apache.lucene.search.Query)" alt=""><area shape="rect" coords="296,496,497,512" href="#setLuceneRootDir(java.io.File)" alt=""><area shape="rect" coords="296,512,466,528" href="#setMatchLimit(int)" alt=""><area shape="rect" coords="296,528,555,544" href="#setupWriter(java.io.File, org.apache.lucene.store.Directory)" alt=""><area shape="rect" coords="296,544,516,560" href="#writeToLucene(java.util.Collection)" alt=""><area shape="rect" coords="296,560,621,576" href="#writeToLucene(java.util.Collection, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="288,110,505,127" href="package-summary.html" alt=""><area shape="rect" coords="452,28,509,52" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="443,2,510,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="49,178,142,201" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Semaphore.html" alt=""><area shape="rect" coords="76,140,201,163" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutorService.html" alt=""><area shape="rect" coords="39,110,167,127" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/package-summary.html" alt=""><area shape="rect" coords="126,265,186,288" href="http://docs.oracle.com/javase/7/docs/api/java/util/logging/Logger.html" alt=""><area shape="rect" coords="117,239,224,257" href="http://docs.oracle.com/javase/7/docs/api/java/util/logging/package-summary.html" alt=""></map>
-<map name="umlmap417W1H0"><area shape="rect" coords="-80,136,69,157" href="#" alt=""><area shape="rect" coords="-190,175,40,191" href="#descLuceneMutableDir" alt=""><area shape="rect" coords="-190,191,51,207" href="#descLuceneReadOnlyDir" alt=""><area shape="rect" coords="-190,207,-65,223" href="#version" alt=""><area shape="rect" coords="-190,223,87,239" href="#descIndexer" alt=""><area shape="rect" coords="-190,239,59,255" href="#descReadOnlyReader" alt=""><area shape="rect" coords="-190,255,-17,271" href="#descWriter" alt=""><area shape="rect" coords="-190,271,-73,287" href="#logger" alt=""><area shape="rect" coords="-190,287,53,303" href="#mutableSearcher" alt=""><area shape="rect" coords="-190,304,-60,320" href="#LuceneManager()" alt=""><area shape="rect" coords="-190,321,52,337" href="#addUncommittedDescNid(int)" alt=""><area shape="rect" coords="-190,337,-87,353" href="#close()" alt=""><area shape="rect" coords="-190,353,-75,369" href="#commit()" alt=""><area shape="rect" coords="-190,369,60,385" href="#commitDescriptionsToLucene()" alt=""><area shape="rect" coords="-190,385,169,401" href="#commitDescriptionsToLucene(org.ihtsdo.otf.tcc.model.cc.concept.ConceptChronicle)" alt=""><area shape="rect" coords="-190,401,-3,417" href="#createLuceneIndex()" alt=""><area shape="rect" coords="-190,417,95,433" href="#createLuceneIndex(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-190,433,-45,449" href="#getMatchLimit()" alt=""><area shape="rect" coords="-190,449,-27,465" href="#indexExists()" alt=""><area shape="rect" coords="-190,465,-102,481" href="#init()" alt=""><area shape="rect" coords="-190,481,15,496" href="#search(org.apache.lucene.search.Query)" alt=""><area shape="rect" coords="-190,496,11,512" href="#setLuceneRootDir(java.io.File)" alt=""><area shape="rect" coords="-190,512,-20,528" href="#setMatchLimit(int)" alt=""><area shape="rect" coords="-190,528,69,544" href="#setupWriter(java.io.File, org.apache.lucene.store.Directory)" alt=""><area shape="rect" coords="-190,544,30,560" href="#writeToLucene(java.util.Collection)" alt=""><area shape="rect" coords="-190,560,135,576" href="#writeToLucene(java.util.Collection, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-198,110,19,127" href="package-summary.html" alt=""><area shape="rect" coords="-33,28,23,52" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="-42,2,24,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="246,136,280,159" href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html" alt=""><area shape="rect" coords="237,110,289,127" href="http://docs.oracle.com/javase/7/docs/api/java/io/package-summary.html" alt=""><area shape="rect" coords="271,227,382,251" href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html" alt=""><area shape="rect" coords="237,197,296,215" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="247,406,375,430" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" alt=""><area shape="rect" coords="237,380,445,398" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""></map>
-<map name="umlmap417W0H1"><area shape="rect" coords="6,401,129,418" href="http://www.yworks.com/" alt=""><area shape="rect" coords="405,-291,555,-269" href="#" alt=""><area shape="rect" coords="296,-251,526,-235" href="#descLuceneMutableDir" alt=""><area shape="rect" coords="296,-235,537,-219" href="#descLuceneReadOnlyDir" alt=""><area shape="rect" coords="296,-219,421,-203" href="#version" alt=""><area shape="rect" coords="296,-203,573,-187" href="#descIndexer" alt=""><area shape="rect" coords="296,-187,545,-171" href="#descReadOnlyReader" alt=""><area shape="rect" coords="296,-171,469,-155" href="#descWriter" alt=""><area shape="rect" coords="296,-155,413,-139" href="#logger" alt=""><area shape="rect" coords="296,-139,539,-123" href="#mutableSearcher" alt=""><area shape="rect" coords="296,-122,426,-106" href="#LuceneManager()" alt=""><area shape="rect" coords="296,-105,538,-89" href="#addUncommittedDescNid(int)" alt=""><area shape="rect" coords="296,-89,399,-73" href="#close()" alt=""><area shape="rect" coords="296,-73,411,-57" href="#commit()" alt=""><area shape="rect" coords="296,-57,546,-41" href="#commitDescriptionsToLucene()" alt=""><area shape="rect" coords="296,-41,655,-25" href="#commitDescriptionsToLucene(org.ihtsdo.otf.tcc.model.cc.concept.ConceptChronicle)" alt=""><area shape="rect" coords="296,-25,483,-9" href="#createLuceneIndex()" alt=""><area shape="rect" coords="296,-9,581,6" href="#createLuceneIndex(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="296,6,441,22" href="#getMatchLimit()" alt=""><area shape="rect" coords="296,22,459,38" href="#indexExists()" alt=""><area shape="rect" coords="296,38,384,54" href="#init()" alt=""><area shape="rect" coords="296,54,501,69" href="#search(org.apache.lucene.search.Query)" alt=""><area shape="rect" coords="296,69,497,85" href="#setLuceneRootDir(java.io.File)" alt=""><area shape="rect" coords="296,85,466,101" href="#setMatchLimit(int)" alt=""><area shape="rect" coords="296,101,555,117" href="#setupWriter(java.io.File, org.apache.lucene.store.Directory)" alt=""><area shape="rect" coords="296,117,516,133" href="#writeToLucene(java.util.Collection)" alt=""><area shape="rect" coords="296,133,621,149" href="#writeToLucene(java.util.Collection, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="288,-317,505,-299" href="package-summary.html" alt=""><area shape="rect" coords="96,258,204,281" href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" alt=""><area shape="rect" coords="64,227,223,245" href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/package-summary.html" alt=""><area shape="rect" coords="13,350,226,373" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/DescriptionIndexGenerator.html" alt=""><area shape="rect" coords="2,324,219,342" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/package-summary.html" alt=""></map>
-<map name="umlmap417W1H1"><area shape="rect" coords="-80,-291,69,-269" href="#" alt=""><area shape="rect" coords="-190,-251,40,-235" href="#descLuceneMutableDir" alt=""><area shape="rect" coords="-190,-235,51,-219" href="#descLuceneReadOnlyDir" alt=""><area shape="rect" coords="-190,-219,-65,-203" href="#version" alt=""><area shape="rect" coords="-190,-203,87,-187" href="#descIndexer" alt=""><area shape="rect" coords="-190,-187,59,-171" href="#descReadOnlyReader" alt=""><area shape="rect" coords="-190,-171,-17,-155" href="#descWriter" alt=""><area shape="rect" coords="-190,-155,-73,-139" href="#logger" alt=""><area shape="rect" coords="-190,-139,53,-123" href="#mutableSearcher" alt=""><area shape="rect" coords="-190,-122,-60,-106" href="#LuceneManager()" alt=""><area shape="rect" coords="-190,-105,52,-89" href="#addUncommittedDescNid(int)" alt=""><area shape="rect" coords="-190,-89,-87,-73" href="#close()" alt=""><area shape="rect" coords="-190,-73,-75,-57" href="#commit()" alt=""><area shape="rect" coords="-190,-57,60,-41" href="#commitDescriptionsToLucene()" alt=""><area shape="rect" coords="-190,-41,169,-25" href="#commitDescriptionsToLucene(org.ihtsdo.otf.tcc.model.cc.concept.ConceptChronicle)" alt=""><area shape="rect" coords="-190,-25,-3,-9" href="#createLuceneIndex()" alt=""><area shape="rect" coords="-190,-9,95,6" href="#createLuceneIndex(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-190,6,-45,22" href="#getMatchLimit()" alt=""><area shape="rect" coords="-190,22,-27,38" href="#indexExists()" alt=""><area shape="rect" coords="-190,38,-102,54" href="#init()" alt=""><area shape="rect" coords="-190,54,15,69" href="#search(org.apache.lucene.search.Query)" alt=""><area shape="rect" coords="-190,69,11,85" href="#setLuceneRootDir(java.io.File)" alt=""><area shape="rect" coords="-190,85,-20,101" href="#setMatchLimit(int)" alt=""><area shape="rect" coords="-190,101,69,117" href="#setupWriter(java.io.File, org.apache.lucene.store.Directory)" alt=""><area shape="rect" coords="-190,117,30,133" href="#writeToLucene(java.util.Collection)" alt=""><area shape="rect" coords="-190,133,135,149" href="#writeToLucene(java.util.Collection, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-198,-317,19,-299" href="package-summary.html" alt=""><area shape="rect" coords="247,-20,375,3" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" alt=""><area shape="rect" coords="237,-46,445,-28" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="247,67,388,90" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptChronicle.html" alt=""><area shape="rect" coords="237,41,464,59" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/package-summary.html" alt=""><area shape="rect" coords="247,154,353,177" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/SearchResult.html" alt=""><area shape="rect" coords="237,128,454,146" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/package-summary.html" alt=""></map>
+<dl><DT>&nbsp;</DT><DD><map name="umlmap393W0H0"><area shape="rect" coords="411,136,561,157" href="#" alt=""><area shape="rect" coords="296,175,526,191" href="#descLuceneMutableDir" alt=""><area shape="rect" coords="296,191,537,207" href="#descLuceneReadOnlyDir" alt=""><area shape="rect" coords="296,207,469,223" href="#descWriter" alt=""><area shape="rect" coords="296,223,533,239" href="#refsetLuceneMutableDir" alt=""><area shape="rect" coords="296,239,544,255" href="#refsetLuceneReadOnlyDir" alt=""><area shape="rect" coords="296,255,476,271" href="#refsetWriter" alt=""><area shape="rect" coords="296,271,421,287" href="#version" alt=""><area shape="rect" coords="296,287,573,303" href="#descIndexer" alt=""><area shape="rect" coords="296,303,545,319" href="#descReadOnlyReader" alt=""><area shape="rect" coords="296,319,413,335" href="#logger" alt=""><area shape="rect" coords="296,335,539,351" href="#mutableSearcher" alt=""><area shape="rect" coords="296,351,546,367" href="#mutableSearcher2" alt=""><area shape="rect" coords="296,367,551,383" href="#refsetIndexer" alt=""><area shape="rect" coords="296,383,552,399" href="#refsetReadOnlyReader" alt=""><area shape="rect" coords="296,400,426,416" href="#LuceneManager()" alt=""><area shape="rect" coords="296,417,538,433" href="#addUncommittedDescNid(int)" alt=""><area shape="rect" coords="296,433,399,449" href="#close()" alt=""><area shape="rect" coords="296,449,440,465" href="#closeRefset()" alt=""><area shape="rect" coords="296,465,411,481" href="#commit()" alt=""><area shape="rect" coords="296,481,546,496" href="#commitDescriptionsToLucene()" alt=""><area shape="rect" coords="296,496,666,512" href="#commitDescriptionsToLucene(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="296,512,517,528" href="#commitRefsetsToLucene()" alt=""><area shape="rect" coords="296,528,483,544" href="#createLuceneIndex()" alt=""><area shape="rect" coords="296,544,581,560" href="#createLuceneIndex(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="296,560,524,576" href="#createRefsetLuceneIndex()" alt=""><area shape="rect" coords="296,576,622,592" href="#createRefsetLuceneIndex(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="296,592,441,608" href="#getMatchLimit()" alt=""><area shape="rect" coords="296,608,459,624" href="#indexExists()" alt=""><area shape="rect" coords="296,624,384,640" href="#init()" alt=""><area shape="rect" coords="296,640,425,656" href="#initRefset()" alt=""><area shape="rect" coords="296,656,539,672" href="#refsetSearch(org.apache.lucene.search.Query)" alt=""><area shape="rect" coords="296,672,555,688" href="#refsetWriteToLucene(java.util.Collection)" alt=""><area shape="rect" coords="296,688,660,704" href="#refsetWriteToLucene(java.util.Collection, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="296,704,581,720" href="#search(org.apache.lucene.search.Query, org.ihtsdo.otf.tcc.model.cc.termstore.SearchType)" alt=""><area shape="rect" coords="296,720,497,736" href="#setLuceneRootDir(java.io.File)" alt=""><area shape="rect" coords="296,736,466,752" href="#setMatchLimit(int)" alt=""><area shape="rect" coords="296,752,538,768" href="#setRefsetLuceneRootDir(java.io.File)" alt=""><area shape="rect" coords="296,768,596,784" href="#setupRefsetWriter(java.io.File, org.apache.lucene.store.Directory)" alt=""><area shape="rect" coords="296,784,635,800" href="#setupWriter(java.io.File, org.apache.lucene.store.Directory, org.ihtsdo.otf.tcc.model.cc.termstore.SearchType)" alt=""><area shape="rect" coords="296,800,516,816" href="#writeToLucene(java.util.Collection)" alt=""><area shape="rect" coords="296,816,621,832" href="#writeToLucene(java.util.Collection, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="288,110,505,127" href="package-summary.html" alt=""><area shape="rect" coords="458,28,515,52" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="449,2,516,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="49,178,142,201" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Semaphore.html" alt=""><area shape="rect" coords="76,140,201,163" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutorService.html" alt=""><area shape="rect" coords="39,110,167,127" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/package-summary.html" alt=""><area shape="rect" coords="126,265,186,288" href="http://docs.oracle.com/javase/7/docs/api/java/util/logging/Logger.html" alt=""><area shape="rect" coords="117,239,224,257" href="http://docs.oracle.com/javase/7/docs/api/java/util/logging/package-summary.html" alt=""></map>
+<map name="umlmap393W1H0"><area shape="rect" coords="-86,136,63,157" href="#" alt=""><area shape="rect" coords="-202,175,28,191" href="#descLuceneMutableDir" alt=""><area shape="rect" coords="-202,191,39,207" href="#descLuceneReadOnlyDir" alt=""><area shape="rect" coords="-202,207,-29,223" href="#descWriter" alt=""><area shape="rect" coords="-202,223,35,239" href="#refsetLuceneMutableDir" alt=""><area shape="rect" coords="-202,239,46,255" href="#refsetLuceneReadOnlyDir" alt=""><area shape="rect" coords="-202,255,-22,271" href="#refsetWriter" alt=""><area shape="rect" coords="-202,271,-77,287" href="#version" alt=""><area shape="rect" coords="-202,287,75,303" href="#descIndexer" alt=""><area shape="rect" coords="-202,303,47,319" href="#descReadOnlyReader" alt=""><area shape="rect" coords="-202,319,-85,335" href="#logger" alt=""><area shape="rect" coords="-202,335,41,351" href="#mutableSearcher" alt=""><area shape="rect" coords="-202,351,48,367" href="#mutableSearcher2" alt=""><area shape="rect" coords="-202,367,53,383" href="#refsetIndexer" alt=""><area shape="rect" coords="-202,383,54,399" href="#refsetReadOnlyReader" alt=""><area shape="rect" coords="-202,400,-72,416" href="#LuceneManager()" alt=""><area shape="rect" coords="-202,417,40,433" href="#addUncommittedDescNid(int)" alt=""><area shape="rect" coords="-202,433,-99,449" href="#close()" alt=""><area shape="rect" coords="-202,449,-58,465" href="#closeRefset()" alt=""><area shape="rect" coords="-202,465,-87,481" href="#commit()" alt=""><area shape="rect" coords="-202,481,48,496" href="#commitDescriptionsToLucene()" alt=""><area shape="rect" coords="-202,496,168,512" href="#commitDescriptionsToLucene(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-202,512,19,528" href="#commitRefsetsToLucene()" alt=""><area shape="rect" coords="-202,528,-15,544" href="#createLuceneIndex()" alt=""><area shape="rect" coords="-202,544,83,560" href="#createLuceneIndex(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-202,560,26,576" href="#createRefsetLuceneIndex()" alt=""><area shape="rect" coords="-202,576,124,592" href="#createRefsetLuceneIndex(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-202,592,-57,608" href="#getMatchLimit()" alt=""><area shape="rect" coords="-202,608,-39,624" href="#indexExists()" alt=""><area shape="rect" coords="-202,624,-114,640" href="#init()" alt=""><area shape="rect" coords="-202,640,-73,656" href="#initRefset()" alt=""><area shape="rect" coords="-202,656,41,672" href="#refsetSearch(org.apache.lucene.search.Query)" alt=""><area shape="rect" coords="-202,672,57,688" href="#refsetWriteToLucene(java.util.Collection)" alt=""><area shape="rect" coords="-202,688,162,704" href="#refsetWriteToLucene(java.util.Collection, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-202,704,83,720" href="#search(org.apache.lucene.search.Query, org.ihtsdo.otf.tcc.model.cc.termstore.SearchType)" alt=""><area shape="rect" coords="-202,720,-1,736" href="#setLuceneRootDir(java.io.File)" alt=""><area shape="rect" coords="-202,736,-32,752" href="#setMatchLimit(int)" alt=""><area shape="rect" coords="-202,752,40,768" href="#setRefsetLuceneRootDir(java.io.File)" alt=""><area shape="rect" coords="-202,768,98,784" href="#setupRefsetWriter(java.io.File, org.apache.lucene.store.Directory)" alt=""><area shape="rect" coords="-202,784,137,800" href="#setupWriter(java.io.File, org.apache.lucene.store.Directory, org.ihtsdo.otf.tcc.model.cc.termstore.SearchType)" alt=""><area shape="rect" coords="-202,800,18,816" href="#writeToLucene(java.util.Collection)" alt=""><area shape="rect" coords="-202,816,123,832" href="#writeToLucene(java.util.Collection, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-210,110,7,127" href="package-summary.html" alt=""><area shape="rect" coords="-39,28,17,52" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="-48,2,18,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="245,136,279,159" href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html" alt=""><area shape="rect" coords="237,110,289,127" href="http://docs.oracle.com/javase/7/docs/api/java/io/package-summary.html" alt=""><area shape="rect" coords="270,227,381,251" href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html" alt=""><area shape="rect" coords="237,197,296,215" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="279,411,430,434" href="../../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" alt=""><area shape="rect" coords="237,380,428,398" href="../../../../../../../org/ihtsdo/otf/tcc/api/concept/package-summary.html" alt=""></map>
+<map name="umlmap393W0H1"><area shape="rect" coords="6,417,129,434" href="http://www.yworks.com/" alt=""><area shape="rect" coords="411,-308,561,-286" href="#" alt=""><area shape="rect" coords="296,-268,526,-252" href="#descLuceneMutableDir" alt=""><area shape="rect" coords="296,-252,537,-236" href="#descLuceneReadOnlyDir" alt=""><area shape="rect" coords="296,-236,469,-220" href="#descWriter" alt=""><area shape="rect" coords="296,-220,533,-204" href="#refsetLuceneMutableDir" alt=""><area shape="rect" coords="296,-204,544,-188" href="#refsetLuceneReadOnlyDir" alt=""><area shape="rect" coords="296,-188,476,-172" href="#refsetWriter" alt=""><area shape="rect" coords="296,-172,421,-156" href="#version" alt=""><area shape="rect" coords="296,-156,573,-140" href="#descIndexer" alt=""><area shape="rect" coords="296,-140,545,-124" href="#descReadOnlyReader" alt=""><area shape="rect" coords="296,-124,413,-108" href="#logger" alt=""><area shape="rect" coords="296,-108,539,-92" href="#mutableSearcher" alt=""><area shape="rect" coords="296,-92,546,-76" href="#mutableSearcher2" alt=""><area shape="rect" coords="296,-76,551,-60" href="#refsetIndexer" alt=""><area shape="rect" coords="296,-60,552,-44" href="#refsetReadOnlyReader" alt=""><area shape="rect" coords="296,-43,426,-27" href="#LuceneManager()" alt=""><area shape="rect" coords="296,-26,538,-10" href="#addUncommittedDescNid(int)" alt=""><area shape="rect" coords="296,-10,399,5" href="#close()" alt=""><area shape="rect" coords="296,5,440,21" href="#closeRefset()" alt=""><area shape="rect" coords="296,21,411,37" href="#commit()" alt=""><area shape="rect" coords="296,37,546,52" href="#commitDescriptionsToLucene()" alt=""><area shape="rect" coords="296,52,666,68" href="#commitDescriptionsToLucene(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="296,68,517,84" href="#commitRefsetsToLucene()" alt=""><area shape="rect" coords="296,84,483,100" href="#createLuceneIndex()" alt=""><area shape="rect" coords="296,100,581,116" href="#createLuceneIndex(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="296,116,524,132" href="#createRefsetLuceneIndex()" alt=""><area shape="rect" coords="296,132,622,148" href="#createRefsetLuceneIndex(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="296,148,441,164" href="#getMatchLimit()" alt=""><area shape="rect" coords="296,164,459,180" href="#indexExists()" alt=""><area shape="rect" coords="296,180,384,196" href="#init()" alt=""><area shape="rect" coords="296,196,425,212" href="#initRefset()" alt=""><area shape="rect" coords="296,212,539,228" href="#refsetSearch(org.apache.lucene.search.Query)" alt=""><area shape="rect" coords="296,228,555,244" href="#refsetWriteToLucene(java.util.Collection)" alt=""><area shape="rect" coords="296,244,660,260" href="#refsetWriteToLucene(java.util.Collection, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="296,260,581,276" href="#search(org.apache.lucene.search.Query, org.ihtsdo.otf.tcc.model.cc.termstore.SearchType)" alt=""><area shape="rect" coords="296,276,497,292" href="#setLuceneRootDir(java.io.File)" alt=""><area shape="rect" coords="296,292,466,308" href="#setMatchLimit(int)" alt=""><area shape="rect" coords="296,308,538,324" href="#setRefsetLuceneRootDir(java.io.File)" alt=""><area shape="rect" coords="296,324,596,340" href="#setupRefsetWriter(java.io.File, org.apache.lucene.store.Directory)" alt=""><area shape="rect" coords="296,340,635,356" href="#setupWriter(java.io.File, org.apache.lucene.store.Directory, org.ihtsdo.otf.tcc.model.cc.termstore.SearchType)" alt=""><area shape="rect" coords="296,356,516,372" href="#writeToLucene(java.util.Collection)" alt=""><area shape="rect" coords="296,372,621,388" href="#writeToLucene(java.util.Collection, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="288,-334,505,-316" href="package-summary.html" alt=""><area shape="rect" coords="96,241,204,264" href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" alt=""><area shape="rect" coords="64,210,223,228" href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/package-summary.html" alt=""><area shape="rect" coords="13,366,189,389" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/RefsetIndexGenerator.html" alt=""><area shape="rect" coords="13,333,226,356" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/DescriptionIndexGenerator.html" alt=""><area shape="rect" coords="2,307,219,325" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/package-summary.html" alt=""></map>
+<map name="umlmap393W1H1"><area shape="rect" coords="-86,-308,63,-286" href="#" alt=""><area shape="rect" coords="-202,-268,28,-252" href="#descLuceneMutableDir" alt=""><area shape="rect" coords="-202,-252,39,-236" href="#descLuceneReadOnlyDir" alt=""><area shape="rect" coords="-202,-236,-29,-220" href="#descWriter" alt=""><area shape="rect" coords="-202,-220,35,-204" href="#refsetLuceneMutableDir" alt=""><area shape="rect" coords="-202,-204,46,-188" href="#refsetLuceneReadOnlyDir" alt=""><area shape="rect" coords="-202,-188,-22,-172" href="#refsetWriter" alt=""><area shape="rect" coords="-202,-172,-77,-156" href="#version" alt=""><area shape="rect" coords="-202,-156,75,-140" href="#descIndexer" alt=""><area shape="rect" coords="-202,-140,47,-124" href="#descReadOnlyReader" alt=""><area shape="rect" coords="-202,-124,-85,-108" href="#logger" alt=""><area shape="rect" coords="-202,-108,41,-92" href="#mutableSearcher" alt=""><area shape="rect" coords="-202,-92,48,-76" href="#mutableSearcher2" alt=""><area shape="rect" coords="-202,-76,53,-60" href="#refsetIndexer" alt=""><area shape="rect" coords="-202,-60,54,-44" href="#refsetReadOnlyReader" alt=""><area shape="rect" coords="-202,-43,-72,-27" href="#LuceneManager()" alt=""><area shape="rect" coords="-202,-26,40,-10" href="#addUncommittedDescNid(int)" alt=""><area shape="rect" coords="-202,-10,-99,5" href="#close()" alt=""><area shape="rect" coords="-202,5,-58,21" href="#closeRefset()" alt=""><area shape="rect" coords="-202,21,-87,37" href="#commit()" alt=""><area shape="rect" coords="-202,37,48,52" href="#commitDescriptionsToLucene()" alt=""><area shape="rect" coords="-202,52,168,68" href="#commitDescriptionsToLucene(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)" alt=""><area shape="rect" coords="-202,68,19,84" href="#commitRefsetsToLucene()" alt=""><area shape="rect" coords="-202,84,-15,100" href="#createLuceneIndex()" alt=""><area shape="rect" coords="-202,100,83,116" href="#createLuceneIndex(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-202,116,26,132" href="#createRefsetLuceneIndex()" alt=""><area shape="rect" coords="-202,132,124,148" href="#createRefsetLuceneIndex(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-202,148,-57,164" href="#getMatchLimit()" alt=""><area shape="rect" coords="-202,164,-39,180" href="#indexExists()" alt=""><area shape="rect" coords="-202,180,-114,196" href="#init()" alt=""><area shape="rect" coords="-202,196,-73,212" href="#initRefset()" alt=""><area shape="rect" coords="-202,212,41,228" href="#refsetSearch(org.apache.lucene.search.Query)" alt=""><area shape="rect" coords="-202,228,57,244" href="#refsetWriteToLucene(java.util.Collection)" alt=""><area shape="rect" coords="-202,244,162,260" href="#refsetWriteToLucene(java.util.Collection, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-202,260,83,276" href="#search(org.apache.lucene.search.Query, org.ihtsdo.otf.tcc.model.cc.termstore.SearchType)" alt=""><area shape="rect" coords="-202,276,-1,292" href="#setLuceneRootDir(java.io.File)" alt=""><area shape="rect" coords="-202,292,-32,308" href="#setMatchLimit(int)" alt=""><area shape="rect" coords="-202,308,40,324" href="#setRefsetLuceneRootDir(java.io.File)" alt=""><area shape="rect" coords="-202,324,98,340" href="#setupRefsetWriter(java.io.File, org.apache.lucene.store.Directory)" alt=""><area shape="rect" coords="-202,340,137,356" href="#setupWriter(java.io.File, org.apache.lucene.store.Directory, org.ihtsdo.otf.tcc.model.cc.termstore.SearchType)" alt=""><area shape="rect" coords="-202,356,18,372" href="#writeToLucene(java.util.Collection)" alt=""><area shape="rect" coords="-202,372,123,388" href="#writeToLucene(java.util.Collection, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)" alt=""><area shape="rect" coords="-210,-334,7,-316" href="package-summary.html" alt=""><area shape="rect" coords="279,-32,430,-9" href="../../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" alt=""><area shape="rect" coords="237,-63,428,-45" href="../../../../../../../org/ihtsdo/otf/tcc/api/concept/package-summary.html" alt=""><area shape="rect" coords="247,59,375,82" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" alt=""><area shape="rect" coords="237,33,445,51" href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/package-summary.html" alt=""><area shape="rect" coords="246,146,352,169" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/SearchResult.html" alt=""><area shape="rect" coords="237,120,454,138" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/package-summary.html" alt=""><area shape="rect" coords="246,233,342,257" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/termstore/SearchType.html" alt=""><area shape="rect" coords="237,207,476,225" href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/termstore/package-summary.html" alt=""></map>
 <A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
 <TR CLASS="UmlTableRow">
-<TD CLASS="UmlTableCell"><IMG SRC="LuceneManagerW0H0.png" WIDTH="486" HEIGHT="427" USEMAP="#umlmap417W0H0" BORDER="0"></TD>
-<TD CLASS="UmlTableCell"><IMG SRC="LuceneManagerW1H0.png" WIDTH="485" HEIGHT="427" USEMAP="#umlmap417W1H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="LuceneManagerW0H0.png" WIDTH="498" HEIGHT="444" USEMAP="#umlmap393W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="LuceneManagerW1H0.png" WIDTH="497" HEIGHT="444" USEMAP="#umlmap393W1H0" BORDER="0"></TD>
 </TR>
 <TR CLASS="UmlTableRow">
-<TD CLASS="UmlTableCell"><IMG SRC="LuceneManagerW0H1.png" WIDTH="486" HEIGHT="427" USEMAP="#umlmap417W0H1" BORDER="0"></TD>
-<TD CLASS="UmlTableCell"><IMG SRC="LuceneManagerW1H1.png" WIDTH="485" HEIGHT="427" USEMAP="#umlmap417W1H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="LuceneManagerW0H1.png" WIDTH="498" HEIGHT="443" USEMAP="#umlmap393W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="LuceneManagerW1H1.png" WIDTH="497" HEIGHT="443" USEMAP="#umlmap393W1H1" BORDER="0"></TD>
 </TR>
 </TABLE></CENTER></DD>
 <!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
@@ -170,7 +170,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#descReadOnlyReader">descReadOnlyReader</a></strong></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected static org.apache.lucene.index.IndexWriter</code></td>
+<td class="colFirst"><code>static org.apache.lucene.index.IndexWriter</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#descWriter">descWriter</a></strong></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -180,6 +180,30 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <tr class="altColor">
 <td class="colFirst"><code>protected static org.apache.lucene.index.DirectoryReader</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#mutableSearcher">mutableSearcher</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected static org.apache.lucene.index.DirectoryReader</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#mutableSearcher2">mutableSearcher2</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected static <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/RefsetIndexGenerator.html" title="class in org.ihtsdo.otf.tcc.model.cc.lucene">RefsetIndexGenerator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#refsetIndexer">refsetIndexer</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static org.apache.lucene.store.Directory</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#refsetLuceneMutableDir">refsetLuceneMutableDir</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static org.apache.lucene.store.Directory</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#refsetLuceneReadOnlyDir">refsetLuceneReadOnlyDir</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected static org.apache.lucene.index.IndexReader</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#refsetReadOnlyReader">refsetReadOnlyReader</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static org.apache.lucene.index.IndexWriter</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#refsetWriter">refsetWriter</a></strong></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static org.apache.lucene.util.Version</code></td>
@@ -227,15 +251,23 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#commit()">commit</a></strong>()</code>&nbsp;</td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#closeRefset()">closeRefset</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#commitDescriptionsToLucene()">commitDescriptionsToLucene</a></strong>()</code>&nbsp;</td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#commit()">commit</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#commitDescriptionsToLucene(org.ihtsdo.otf.tcc.model.cc.concept.ConceptChronicle)">commitDescriptionsToLucene</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptChronicle.html" title="class in org.ihtsdo.otf.tcc.model.cc.concept">ConceptChronicle</a>&nbsp;c)</code>&nbsp;</td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#commitDescriptionsToLucene()">commitDescriptionsToLucene</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#commitDescriptionsToLucene(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)">commitDescriptionsToLucene</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;c)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#commitRefsetsToLucene()">commitRefsetsToLucene</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static void</code></td>
@@ -244,6 +276,14 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <tr class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#createLuceneIndex(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">createLuceneIndex</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoord)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#createRefsetLuceneIndex()">createRefsetLuceneIndex</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#createRefsetLuceneIndex(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">createRefsetLuceneIndex</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoord)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
@@ -258,8 +298,26 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#init()">init</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#initRefset()">initRefset</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/SearchResult.html" title="class in org.ihtsdo.otf.tcc.model.cc.lucene">SearchResult</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#search(org.apache.lucene.search.Query)">search</a></strong>(org.apache.lucene.search.Query&nbsp;q)</code>&nbsp;</td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#refsetSearch(org.apache.lucene.search.Query)">refsetSearch</a></strong>(org.apache.lucene.search.Query&nbsp;q)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#refsetWriteToLucene(java.util.Collection)">refsetWriteToLucene</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;items)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#refsetWriteToLucene(java.util.Collection, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">refsetWriteToLucene</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;items,
+                   <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoord)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/SearchResult.html" title="class in org.ihtsdo.otf.tcc.model.cc.lucene">SearchResult</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#search(org.apache.lucene.search.Query, org.ihtsdo.otf.tcc.model.cc.termstore.SearchType)">search</a></strong>(org.apache.lucene.search.Query&nbsp;q,
+      <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/termstore/SearchType.html" title="enum in org.ihtsdo.otf.tcc.model.cc.termstore">SearchType</a>&nbsp;type)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static void</code></td>
@@ -270,9 +328,19 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#setMatchLimit(int)">setMatchLimit</a></strong>(int&nbsp;limit)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#setRefsetLuceneRootDir(java.io.File)">setRefsetLuceneRootDir</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;root)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected static org.apache.lucene.store.Directory</code></td>
-<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#setupWriter(java.io.File, org.apache.lucene.store.Directory)">setupWriter</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;luceneDirFile,
-           org.apache.lucene.store.Directory&nbsp;luceneDir)</code>&nbsp;</td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#setupRefsetWriter(java.io.File, org.apache.lucene.store.Directory)">setupRefsetWriter</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;luceneDirFile,
+                 org.apache.lucene.store.Directory&nbsp;luceneDir)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected static org.apache.lucene.store.Directory</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/LuceneManager.html#setupWriter(java.io.File, org.apache.lucene.store.Directory, org.ihtsdo.otf.tcc.model.cc.termstore.SearchType)">setupWriter</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;luceneDirFile,
+           org.apache.lucene.store.Directory&nbsp;luceneDir,
+           <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/termstore/SearchType.html" title="enum in org.ihtsdo.otf.tcc.model.cc.termstore">SearchType</a>&nbsp;type)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static void</code></td>
@@ -365,16 +433,70 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>descWriter</h4>
-<pre>protected static&nbsp;org.apache.lucene.index.IndexWriter descWriter</pre>
+<pre>public static&nbsp;org.apache.lucene.index.IndexWriter descWriter</pre>
 </li>
 </ul>
 <a name="mutableSearcher">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>mutableSearcher</h4>
 <pre>protected static&nbsp;org.apache.lucene.index.DirectoryReader mutableSearcher</pre>
+</li>
+</ul>
+<a name="mutableSearcher2">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mutableSearcher2</h4>
+<pre>protected static&nbsp;org.apache.lucene.index.DirectoryReader mutableSearcher2</pre>
+</li>
+</ul>
+<a name="refsetReadOnlyReader">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refsetReadOnlyReader</h4>
+<pre>protected static&nbsp;org.apache.lucene.index.IndexReader refsetReadOnlyReader</pre>
+</li>
+</ul>
+<a name="refsetWriter">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refsetWriter</h4>
+<pre>public static&nbsp;org.apache.lucene.index.IndexWriter refsetWriter</pre>
+</li>
+</ul>
+<a name="refsetLuceneMutableDir">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refsetLuceneMutableDir</h4>
+<pre>public static&nbsp;org.apache.lucene.store.Directory refsetLuceneMutableDir</pre>
+</li>
+</ul>
+<a name="refsetLuceneReadOnlyDir">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refsetLuceneReadOnlyDir</h4>
+<pre>public static&nbsp;org.apache.lucene.store.Directory refsetLuceneReadOnlyDir</pre>
+</li>
+</ul>
+<a name="refsetIndexer">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>refsetIndexer</h4>
+<pre>protected static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/RefsetIndexGenerator.html" title="class in org.ihtsdo.otf.tcc.model.cc.lucene">RefsetIndexGenerator</a> refsetIndexer</pre>
 </li>
 </ul>
 </li>
@@ -414,13 +536,25 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/InterruptedException.html?is-external=true" title="class or interface in java.lang">InterruptedException</a></code></dd></dl>
 </li>
 </ul>
-<a name="commitDescriptionsToLucene(org.ihtsdo.otf.tcc.model.cc.concept.ConceptChronicle)">
+<a name="commitRefsetsToLucene()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>commitRefsetsToLucene</h4>
+<pre>public static&nbsp;void&nbsp;commitRefsetsToLucene()
+                                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/InterruptedException.html?is-external=true" title="class or interface in java.lang">InterruptedException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/InterruptedException.html?is-external=true" title="class or interface in java.lang">InterruptedException</a></code></dd></dl>
+</li>
+</ul>
+<a name="commitDescriptionsToLucene(org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>commitDescriptionsToLucene</h4>
-<pre>public static&nbsp;void&nbsp;commitDescriptionsToLucene(<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/concept/ConceptChronicle.html" title="class in org.ihtsdo.otf.tcc.model.cc.concept">ConceptChronicle</a>&nbsp;c)
+<pre>public static&nbsp;void&nbsp;commitDescriptionsToLucene(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/concept/ConceptChronicleBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptChronicleBI</a>&nbsp;c)
                                        throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/InterruptedException.html?is-external=true" title="class or interface in java.lang">InterruptedException</a>,
                                               <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
@@ -435,6 +569,15 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>addUncommittedDescNid</h4>
 <pre>public static&nbsp;void&nbsp;addUncommittedDescNid(int&nbsp;dNid)</pre>
+</li>
+</ul>
+<a name="closeRefset()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>closeRefset</h4>
+<pre>public static&nbsp;void&nbsp;closeRefset()</pre>
 </li>
 </ul>
 <a name="close()">
@@ -470,6 +613,30 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
 </li>
 </ul>
+<a name="createRefsetLuceneIndex()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createRefsetLuceneIndex</h4>
+<pre>public static&nbsp;void&nbsp;createRefsetLuceneIndex()
+                                    throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="createRefsetLuceneIndex(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createRefsetLuceneIndex</h4>
+<pre>public static&nbsp;void&nbsp;createRefsetLuceneIndex(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoord)
+                                    throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
 <a name="indexExists()">
 <!--   -->
 </a>
@@ -477,6 +644,18 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>indexExists</h4>
 <pre>public static&nbsp;boolean&nbsp;indexExists()</pre>
+</li>
+</ul>
+<a name="initRefset()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>initRefset</h4>
+<pre>public static&nbsp;void&nbsp;initRefset()
+                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
 </li>
 </ul>
 <a name="init()">
@@ -491,13 +670,14 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
 </li>
 </ul>
-<a name="search(org.apache.lucene.search.Query)">
+<a name="search(org.apache.lucene.search.Query, org.ihtsdo.otf.tcc.model.cc.termstore.SearchType)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>search</h4>
-<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/SearchResult.html" title="class in org.ihtsdo.otf.tcc.model.cc.lucene">SearchResult</a>&nbsp;search(org.apache.lucene.search.Query&nbsp;q)
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/SearchResult.html" title="class in org.ihtsdo.otf.tcc.model.cc.lucene">SearchResult</a>&nbsp;search(org.apache.lucene.search.Query&nbsp;q,
+                  <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/termstore/SearchType.html" title="enum in org.ihtsdo.otf.tcc.model.cc.termstore">SearchType</a>&nbsp;type)
                            throws org.apache.lucene.index.CorruptIndexException,
                                   <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
@@ -505,14 +685,27 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
 </li>
 </ul>
-<a name="setupWriter(java.io.File, org.apache.lucene.store.Directory)">
+<a name="refsetSearch(org.apache.lucene.search.Query)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refsetSearch</h4>
+<pre>public static&nbsp;<a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/lucene/SearchResult.html" title="class in org.ihtsdo.otf.tcc.model.cc.lucene">SearchResult</a>&nbsp;refsetSearch(org.apache.lucene.search.Query&nbsp;q)
+                                 throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="setupWriter(java.io.File, org.apache.lucene.store.Directory, org.ihtsdo.otf.tcc.model.cc.termstore.SearchType)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setupWriter</h4>
 <pre>protected static&nbsp;org.apache.lucene.store.Directory&nbsp;setupWriter(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;luceneDirFile,
-                                            org.apache.lucene.store.Directory&nbsp;luceneDir)
+                                            org.apache.lucene.store.Directory&nbsp;luceneDir,
+                                            <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/termstore/SearchType.html" title="enum in org.ihtsdo.otf.tcc.model.cc.termstore">SearchType</a>&nbsp;type)
                                                         throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
                                                                org.apache.lucene.index.CorruptIndexException,
                                                                org.apache.lucene.store.LockObtainFailedException</pre>
@@ -520,6 +713,19 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 <dd><code>org.apache.lucene.index.CorruptIndexException</code></dd>
 <dd><code>org.apache.lucene.store.LockObtainFailedException</code></dd></dl>
+</li>
+</ul>
+<a name="setupRefsetWriter(java.io.File, org.apache.lucene.store.Directory)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setupRefsetWriter</h4>
+<pre>protected static&nbsp;org.apache.lucene.store.Directory&nbsp;setupRefsetWriter(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;luceneDirFile,
+                                                  org.apache.lucene.store.Directory&nbsp;luceneDir)
+                                                              throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
 </li>
 </ul>
 <a name="writeToLucene(java.util.Collection)">
@@ -530,6 +736,31 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <h4>writeToLucene</h4>
 <pre>public static&nbsp;void&nbsp;writeToLucene(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;items)
                           throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="refsetWriteToLucene(java.util.Collection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refsetWriteToLucene</h4>
+<pre>public static&nbsp;void&nbsp;refsetWriteToLucene(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;items)
+                                throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="refsetWriteToLucene(java.util.Collection, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refsetWriteToLucene</h4>
+<pre>public static&nbsp;void&nbsp;refsetWriteToLucene(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;items,
+                       <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoord)
+                                throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
 </li>
@@ -554,6 +785,18 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>getMatchLimit</h4>
 <pre>public static&nbsp;int&nbsp;getMatchLimit()</pre>
+</li>
+</ul>
+<a name="setRefsetLuceneRootDir(java.io.File)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setRefsetLuceneRootDir</h4>
+<pre>public static&nbsp;void&nbsp;setRefsetLuceneRootDir(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;root)
+                                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
 </li>
 </ul>
 <a name="setLuceneRootDir(java.io.File)">

@@ -243,7 +243,7 @@
 <a class="jxr_linenumber" name="233" href="#233">233</a> <em class="jxr_javadoccomment">     * Enum description</em>
 <a class="jxr_linenumber" name="234" href="#234">234</a> <em class="jxr_javadoccomment">     *</em>
 <a class="jxr_linenumber" name="235" href="#235">235</a> <em class="jxr_javadoccomment">     */</em>
-<a class="jxr_linenumber" name="236" href="#236">236</a>     <strong class="jxr_keyword">public</strong> enum <a href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/identifier/IDENTIFIER_PART_TYPES.html">IDENTIFIER_PART_TYPES</a> {
+<a class="jxr_linenumber" name="236" href="#236">236</a>     <strong class="jxr_keyword">public</strong> enum <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html">IDENTIFIER_PART_TYPES</a> {
 <a class="jxr_linenumber" name="237" href="#237">237</a> 
 <a class="jxr_linenumber" name="238" href="#238">238</a>         LONG(1), STRING(2), UUID(3);
 <a class="jxr_linenumber" name="239" href="#239">239</a>         <em class="jxr_javadoccomment">/**</em>
@@ -257,7 +257,7 @@
 <a class="jxr_linenumber" name="247" href="#247">247</a> <em class="jxr_javadoccomment">         *</em>
 <a class="jxr_linenumber" name="248" href="#248">248</a> <em class="jxr_javadoccomment">         * @param partTypeId</em>
 <a class="jxr_linenumber" name="249" href="#249">249</a> <em class="jxr_javadoccomment">         */</em>
-<a class="jxr_linenumber" name="250" href="#250">250</a>         <a href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/identifier/IDENTIFIER_PART_TYPES.html">IDENTIFIER_PART_TYPES</a>(<strong class="jxr_keyword">int</strong> partTypeId) {
+<a class="jxr_linenumber" name="250" href="#250">250</a>         <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html">IDENTIFIER_PART_TYPES</a>(<strong class="jxr_keyword">int</strong> partTypeId) {
 <a class="jxr_linenumber" name="251" href="#251">251</a>             <strong class="jxr_keyword">this</strong>.partTypeId = partTypeId;
 <a class="jxr_linenumber" name="252" href="#252">252</a>         }
 <a class="jxr_linenumber" name="253" href="#253">253</a> 
@@ -269,7 +269,7 @@
 <a class="jxr_linenumber" name="259" href="#259">259</a> <em class="jxr_javadoccomment">         *</em>
 <a class="jxr_linenumber" name="260" href="#260">260</a> <em class="jxr_javadoccomment">         * @return</em>
 <a class="jxr_linenumber" name="261" href="#261">261</a> <em class="jxr_javadoccomment">         */</em>
-<a class="jxr_linenumber" name="262" href="#262">262</a>         <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/identifier/IDENTIFIER_PART_TYPES.html">IDENTIFIER_PART_TYPES</a> readType(TupleInput input) {
+<a class="jxr_linenumber" name="262" href="#262">262</a>         <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html">IDENTIFIER_PART_TYPES</a> readType(TupleInput input) {
 <a class="jxr_linenumber" name="263" href="#263">263</a>             <strong class="jxr_keyword">int</strong> partTypeId = input.readByte();
 <a class="jxr_linenumber" name="264" href="#264">264</a>             
 <a class="jxr_linenumber" name="265" href="#265">265</a>             <strong class="jxr_keyword">switch</strong> (partTypeId) {
@@ -304,7 +304,7 @@
 <a class="jxr_linenumber" name="294" href="#294">294</a> <em class="jxr_javadoccomment">         *</em>
 <a class="jxr_linenumber" name="295" href="#295">295</a> <em class="jxr_javadoccomment">         * @return</em>
 <a class="jxr_linenumber" name="296" href="#296">296</a> <em class="jxr_javadoccomment">         */</em>
-<a class="jxr_linenumber" name="297" href="#297">297</a>         <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/identifier/IDENTIFIER_PART_TYPES.html">IDENTIFIER_PART_TYPES</a> getType(Class&lt;?&gt; denotationClass) {
+<a class="jxr_linenumber" name="297" href="#297">297</a>         <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/component/ConceptComponent.html">IDENTIFIER_PART_TYPES</a> getType(Class&lt;?&gt; denotationClass) {
 <a class="jxr_linenumber" name="298" href="#298">298</a>             <strong class="jxr_keyword">if</strong> (UUID.<strong class="jxr_keyword">class</strong>.isAssignableFrom(denotationClass)) {
 <a class="jxr_linenumber" name="299" href="#299">299</a>                 <strong class="jxr_keyword">return</strong> UUID;
 <a class="jxr_linenumber" name="300" href="#300">300</a>             } <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (Long.<strong class="jxr_keyword">class</strong>.isAssignableFrom(denotationClass)) {

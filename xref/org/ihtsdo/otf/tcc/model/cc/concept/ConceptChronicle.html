@@ -63,7 +63,7 @@
 <a class="jxr_linenumber" name="53" href="#53">53</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.contradiction.strategy.IdentifyAllConflict;
 <a class="jxr_linenumber" name="54" href="#54">54</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.coordinate.EditCoordinate;
 <a class="jxr_linenumber" name="55" href="#55">55</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate;
-<a class="jxr_linenumber" name="56" href="#56">56</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate.LANGUAGE_SORT;
+<a class="jxr_linenumber" name="56" href="#56">56</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.coordinate.LanguageSort;
 <a class="jxr_linenumber" name="57" href="#57">57</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.cs.ChangeSetPolicy;
 <a class="jxr_linenumber" name="58" href="#58">58</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.cs.ChangeSetWriterThreading;
 <a class="jxr_linenumber" name="59" href="#59">59</a>  <strong class="jxr_keyword">import</strong> org.ihtsdo.otf.tcc.api.id.IdBI;
@@ -1307,7 +1307,7 @@
 <a class="jxr_linenumber" name="1297" href="#1297">1297</a>         <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html">ViewCoordinate</a> vc = <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html">ViewCoordinate</a>(UUID.randomUUID(), <span class="jxr_string">"getRefexSpecifiedDesc"</span>, Precedence.PATH,
 <a class="jxr_linenumber" name="1298" href="#1298">1298</a>                 viewPosition, allowedStatus, <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/IdentifyAllConflict.html">IdentifyAllConflict</a>(),
 <a class="jxr_linenumber" name="1299" href="#1299">1299</a>                 Integer.MIN_VALUE, Integer.MIN_VALUE, RelAssertionType.STATED, langRefexOrder,
-<a class="jxr_linenumber" name="1300" href="#1300">1300</a>                 LANGUAGE_SORT.LANG_REFEX);
+<a class="jxr_linenumber" name="1300" href="#1300">1300</a>                 LanguageSort.LANG_REFEX);
 <a class="jxr_linenumber" name="1301" href="#1301">1301</a> 
 <a class="jxr_linenumber" name="1302" href="#1302">1302</a>         <strong class="jxr_keyword">if</strong> (descriptions.size() &gt; 0) {
 <a class="jxr_linenumber" name="1303" href="#1303">1303</a>             <strong class="jxr_keyword">if</strong> (descriptions.size() &gt; 1) {
@@ -1446,7 +1446,7 @@
 <a class="jxr_linenumber" name="1436" href="#1436">1436</a>         <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html">ViewCoordinate</a> vc = <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html">ViewCoordinate</a>(UUID.randomUUID(), <span class="jxr_string">"getRf2RefexSpecifiedDesc"</span>, Precedence.PATH,
 <a class="jxr_linenumber" name="1437" href="#1437">1437</a>                 viewPosition, allowedStatus, <strong class="jxr_keyword">new</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/api/contradiction/strategy/IdentifyAllConflict.html">IdentifyAllConflict</a>(),
 <a class="jxr_linenumber" name="1438" href="#1438">1438</a>                 Integer.MIN_VALUE, Integer.MIN_VALUE, RelAssertionType.STATED, langRefexOrder,
-<a class="jxr_linenumber" name="1439" href="#1439">1439</a>                 LANGUAGE_SORT.RF2_LANG_REFEX);
+<a class="jxr_linenumber" name="1439" href="#1439">1439</a>                 LanguageSort.RF2_LANG_REFEX);
 <a class="jxr_linenumber" name="1440" href="#1440">1440</a> 
 <a class="jxr_linenumber" name="1441" href="#1441">1441</a>         <strong class="jxr_keyword">if</strong> (descriptions.size() &gt; 0) {
 <a class="jxr_linenumber" name="1442" href="#1442">1442</a>             <strong class="jxr_keyword">if</strong> (descriptions.size() &gt; 1) {

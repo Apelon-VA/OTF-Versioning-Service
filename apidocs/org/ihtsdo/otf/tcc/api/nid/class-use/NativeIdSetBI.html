@@ -3,13 +3,13 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-<title>Uses of Interface org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<title>Uses of Interface org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI (TCC sprint2: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
 <link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
 </head>
 <body>
 <script type="text/javascript"><!--
     if (location.href.indexOf('is-external=true') == -1) {
-        parent.document.title="Uses of Interface org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI (TCC trunk: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+        parent.document.title="Uses of Interface org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI (TCC sprint2: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
     }
 //-->
 </script>
@@ -87,14 +87,6 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#org.ihtsdo.otf.tcc.api.query">org.ihtsdo.otf.tcc.api.query</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="#org.ihtsdo.otf.tcc.api.query.clauses">org.ihtsdo.otf.tcc.api.query.clauses</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><a href="#org.ihtsdo.otf.tcc.api.store">org.ihtsdo.otf.tcc.api.store</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -157,6 +149,21 @@
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
 <td class="colLast"><span class="strong">TccRestClient.</span><code><strong><a href="../../../../../../../org/ihtsdo/oft/tcc/rest/client/TccRestClient.html#getEmptyNidSet()">getEmptyNidSet</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">TccRestClient.</span><code><strong><a href="../../../../../../../org/ihtsdo/oft/tcc/rest/client/TccRestClient.html#isChildOfSet(int, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">isChildOfSet</a></strong>(int&nbsp;parentNid,
+            <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">TccRestClient.</span><code><strong><a href="../../../../../../../org/ihtsdo/oft/tcc/rest/client/TccRestClient.html#isKindOfSet(int, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">isKindOfSet</a></strong>(int&nbsp;parentNid,
+           <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">TccRestClient.</span><code><strong><a href="../../../../../../../org/ihtsdo/oft/tcc/rest/client/TccRestClient.html#relationshipSet(int, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">relationshipSet</a></strong>(int&nbsp;parentNid,
+               <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -365,216 +372,6 @@
 </tbody>
 </table>
 </li>
-<li class="blockList"><a name="org.ihtsdo.otf.tcc.api.query">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a> in <a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/package-summary.html">org.ihtsdo.otf.tcc.api.query</a></h3>
-<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/package-summary.html">org.ihtsdo.otf.tcc.api.query</a> that return <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">Query.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#compute()">compute</a></strong>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">LeafClause.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/LeafClause.html#computeComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computeComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingComponents)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">ParentClause.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/ParentClause.html#computeComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computeComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingComponents)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>abstract <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">Clause.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html#computeComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computeComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingComponents)</code>
-<div class="block">Compute final results based on possible components, 
-  and any cached query matches.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">Not.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/Not.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">And.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/And.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">Or.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/Or.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;searchSpace)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>abstract <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">Clause.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>
-<div class="block">Compute components that meet the where clause criterion without using 
- iteration.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected abstract <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">Query.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#For()">For</a></strong>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">QueryFromJaxb.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/QueryFromJaxb.html#For()">For</a></strong>()</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">ForCollection.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/ForCollection.html#getCollection()">getCollection</a></strong>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">Query.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/Query.html#getForSet()">getForSet</a></strong>()</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">LeafClause.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/LeafClause.html#getResultsCache()">getResultsCache</a></strong>()</code>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/package-summary.html">org.ihtsdo.otf.tcc.api.query</a> with parameters of type <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">LeafClause.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/LeafClause.html#computeComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computeComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingComponents)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">ParentClause.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/ParentClause.html#computeComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computeComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingComponents)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>abstract <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">Clause.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html#computeComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computeComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingComponents)</code>
-<div class="block">Compute final results based on possible components, 
-  and any cached query matches.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">Not.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/Not.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">And.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/And.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">Or.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/Or.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;searchSpace)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>abstract <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">Clause.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/Clause.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>
-<div class="block">Compute components that meet the where clause criterion without using 
- iteration.</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li class="blockList"><a name="org.ihtsdo.otf.tcc.api.query.clauses">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a> in <a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/package-summary.html">org.ihtsdo.otf.tcc.api.query.clauses</a></h3>
-<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/package-summary.html">org.ihtsdo.otf.tcc.api.query.clauses</a> that return <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">ConceptIsChildOf.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptIsChildOf.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">ComponentIsMemberOfRefset.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ComponentIsMemberOfRefset.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">DescriptionRegexMatch.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionRegexMatch.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">ConceptForComponent.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptForComponent.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleConcepNids)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">ChangedFromPreviousVersion.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ChangedFromPreviousVersion.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">DescriptionLuceneMatch.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionLuceneMatch.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">DescriptionActiveRegexMatch.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionActiveRegexMatch.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">ConceptIsDescendentOf.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptIsDescendentOf.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">ConceptIsKindOf.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptIsKindOf.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/package-summary.html">org.ihtsdo.otf.tcc.api.query.clauses</a> with parameters of type <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">ConceptIsChildOf.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptIsChildOf.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">ComponentIsMemberOfRefset.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ComponentIsMemberOfRefset.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">DescriptionRegexMatch.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionRegexMatch.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">ConceptForComponent.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptForComponent.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleConcepNids)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">ChangedFromPreviousVersion.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ChangedFromPreviousVersion.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">DescriptionLuceneMatch.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionLuceneMatch.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">DescriptionActiveRegexMatch.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/DescriptionActiveRegexMatch.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">ConceptIsDescendentOf.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptIsDescendentOf.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">ConceptIsKindOf.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/query/clauses/ConceptIsKindOf.html#computePossibleComponents(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">computePossibleComponents</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;incomingPossibleComponents)</code>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-</li>
 <li class="blockList"><a name="org.ihtsdo.otf.tcc.api.store">
 <!--   -->
 </a>
@@ -592,7 +389,9 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">TerminologyDI.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getComponentNidsForConceptNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">getComponentNidsForConceptNids</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;conceptNativeIds)</code>&nbsp;</td>
+<td class="colLast"><span class="strong">TerminologyDI.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getComponentNidsForConceptNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">getComponentNidsForConceptNids</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;conceptNativeIds)</code>
+<div class="block">Retrieves the components nids from the input concept nids</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
@@ -601,6 +400,25 @@
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
 <td class="colLast"><span class="strong">TerminologyDI.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getEmptyNidSet()">getEmptyNidSet</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">TerminologyStoreDI.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyStoreDI.html#isChildOfSet(int, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">isChildOfSet</a></strong>(int&nbsp;parentNid,
+            <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate)</code>
+<div class="block">Retrieves the components nids that are children of the input parent nid</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">TerminologyStoreDI.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyStoreDI.html#isKindOfSet(int, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">isKindOfSet</a></strong>(int&nbsp;parentNid,
+           <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc)</code>
+<div class="block">Calculates the set of concepts that are a kind of parentNid</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">TerminologyStoreDI.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyStoreDI.html#relationshipSet(int, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">relationshipSet</a></strong>(int&nbsp;parentNid,
+               <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -613,7 +431,9 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
-<td class="colLast"><span class="strong">TerminologyDI.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getComponentNidsForConceptNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">getComponentNidsForConceptNids</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;conceptNativeIds)</code>&nbsp;</td>
+<td class="colLast"><span class="strong">TerminologyDI.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/store/TerminologyDI.html#getComponentNidsForConceptNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">getComponentNidsForConceptNids</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;conceptNativeIds)</code>
+<div class="block">Retrieves the components nids from the input concept nids</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
@@ -667,6 +487,21 @@
 <td class="colLast"><span class="strong">AnnotationAdder.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/AnnotationAdder.html#getNidSet()">getNidSet</a></strong>()</code>
 <div class="block">Method description</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">BdbTerminologyStore.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/BdbTerminologyStore.html#isChildOfSet(int, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">isChildOfSet</a></strong>(int&nbsp;parentNid,
+            <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">BdbTerminologyStore.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/BdbTerminologyStore.html#isKindOfSet(int, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">isKindOfSet</a></strong>(int&nbsp;parentNid,
+           <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">BdbTerminologyStore.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/BdbTerminologyStore.html#relationshipSet(int, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">relationshipSet</a></strong>(int&nbsp;parentNid,
+               <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;viewCoordinate)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -725,8 +560,107 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">NidCNidMapBdb.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/id/NidCNidMapBdb.html#getComponentNidsForConceptNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">getComponentNidsForConceptNids</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;conceptNids)</code>
+<div class="block">Retrieves the components nids enclosed by the input conceptNids.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">NidCNidMapBdb.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/id/NidCNidMapBdb.html#getDestRelNids(int, org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getDestRelNids</a></strong>(int&nbsp;cNid,
+              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;relTypes,
+              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">IndexCacheRecord.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/id/IndexCacheRecord.html#getDestRelNidsSet(int, int, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getDestRelNidsSet</a></strong>(int&nbsp;cNid,
+                 int&nbsp;relType,
+                 <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc)</code>
+<div class="block">Computes the
+ <code>NativeIdSetBI</code> of .</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">IndexCacheRecord.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/id/IndexCacheRecord.html#getDestRelNidsSet(int, org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getDestRelNidsSet</a></strong>(int&nbsp;cNid,
+                 <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;relTypes,
+                 <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
 <td class="colLast"><span class="strong">NidCNidMapBdb.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/id/NidCNidMapBdb.html#getKindOfNids(int, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getKindOfNids</a></strong>(int&nbsp;conceptNid,
-             <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc)</code>&nbsp;</td>
+             <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc)</code>
+<div class="block">Obtains concept nids that are a kind of conceptNid.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">NidCNidMapBdb.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/id/NidCNidMapBdb.html#getOutgoingRelNids(int, org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">getOutgoingRelNids</a></strong>(int&nbsp;cNid,
+                  <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;relTypes)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">IndexCacheRecord.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/id/IndexCacheRecord.html#getOutgoingRelNidSet(int, org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">getOutgoingRelNidSet</a></strong>(int&nbsp;cNid,
+                    <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;relTypes)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">NidCNidMapBdb.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/id/NidCNidMapBdb.html#isChildOfSet(int, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">isChildOfSet</a></strong>(int&nbsp;conceptNid,
+            <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc)</code>
+<div class="block">Computes the set of concept nids that are children of given concept nid.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">NidCNidMapBdb.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/id/NidCNidMapBdb.html#isKindOfSet(int, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">isKindOfSet</a></strong>(int&nbsp;parentNid,
+           <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc)</code>
+<div class="block">Computes the concepts that are a kind of parentNid and returns the set as
+ a
+ <code>NativeIdSetBI</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/id/package-summary.html">org.ihtsdo.otf.tcc.datastore.id</a> with parameters of type <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">NidCNidMapBdb.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/id/NidCNidMapBdb.html#getChildOfNids(int, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI, java.util.HashSet)">getChildOfNids</a></strong>(int&nbsp;conceptNid,
+              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
+              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;childOfSet,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html?is-external=true" title="class or interface in java.util">HashSet</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&gt;&nbsp;testedSet)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">NidCNidMapBdb.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/id/NidCNidMapBdb.html#getComponentNidsForConceptNids(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">getComponentNidsForConceptNids</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;conceptNids)</code>
+<div class="block">Retrieves the components nids enclosed by the input conceptNids.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">NidCNidMapBdb.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/id/NidCNidMapBdb.html#getDestRelNids(int, org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getDestRelNids</a></strong>(int&nbsp;cNid,
+              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;relTypes,
+              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">IndexCacheRecord.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/id/IndexCacheRecord.html#getDestRelNidsSet(int, org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI, org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate)">getDestRelNidsSet</a></strong>(int&nbsp;cNid,
+                 <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;relTypes,
+                 <a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">NidCNidMapBdb.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/id/NidCNidMapBdb.html#getOutgoingRelNids(int, org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">getOutgoingRelNids</a></strong>(int&nbsp;cNid,
+                  <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;relTypes)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></td>
+<td class="colLast"><span class="strong">IndexCacheRecord.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/datastore/id/IndexCacheRecord.html#getOutgoingRelNidSet(int, org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">getOutgoingRelNidSet</a></strong>(int&nbsp;cNid,
+                    <a href="../../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;relTypes)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

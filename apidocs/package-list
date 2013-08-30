@@ -22,8 +22,6 @@ org.ihtsdo.otf.tcc.api.lang
 org.ihtsdo.otf.tcc.api.media
 org.ihtsdo.otf.tcc.api.metadata.binding
 org.ihtsdo.otf.tcc.api.nid
-org.ihtsdo.otf.tcc.api.query
-org.ihtsdo.otf.tcc.api.query.clauses
 org.ihtsdo.otf.tcc.api.refex
 org.ihtsdo.otf.tcc.api.refex.type_array_of_bytearray
 org.ihtsdo.otf.tcc.api.refex.type_boolean
