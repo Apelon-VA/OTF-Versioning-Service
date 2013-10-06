@@ -48,7 +48,7 @@
 <a class="jxr_linenumber" name="38" href="#38">38</a>     <strong class="jxr_keyword">public</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html">TtkRefexAbstractMemberChronicle</a>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/refex/RefexVersionBI.html">RefexVersionBI</a> another) <strong class="jxr_keyword">throws</strong> IOException {
 <a class="jxr_linenumber" name="39" href="#39">39</a>        <strong class="jxr_keyword">super</strong>(another);
 <a class="jxr_linenumber" name="40" href="#40">40</a>        <strong class="jxr_keyword">this</strong>.componentUuid = Ts.get().getComponent(another.getReferencedComponentNid()).getPrimordialUuid();
-<a class="jxr_linenumber" name="41" href="#41">41</a>        <strong class="jxr_keyword">this</strong>.refexExtensionUuid    = Ts.get().getComponent(another.getRefexExtensionNid()).getPrimordialUuid();
+<a class="jxr_linenumber" name="41" href="#41">41</a>        <strong class="jxr_keyword">this</strong>.refexExtensionUuid    = Ts.get().getComponent(another.getAssemblageNid()).getPrimordialUuid();
 <a class="jxr_linenumber" name="42" href="#42">42</a>     }
 <a class="jxr_linenumber" name="43" href="#43">43</a>  
 <a class="jxr_linenumber" name="44" href="#44">44</a>     <strong class="jxr_keyword">public</strong> <a href="../../../../../../../org/ihtsdo/otf/tcc/dto/component/refex/TtkRefexAbstractMemberChronicle.html">TtkRefexAbstractMemberChronicle</a>(DataInput in, <strong class="jxr_keyword">int</strong> dataVersion) <strong class="jxr_keyword">throws</strong> IOException, ClassNotFoundException {

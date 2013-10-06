@@ -3,13 +3,13 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-<title>Deprecated List (TCC sprint2: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<title>Deprecated List (TCC sprint2: (MMP) Component chronicle service 1.1-SNAPSHOT API)</title>
 <link rel="stylesheet" type="text/css" href="stylesheet.css" title="Style">
 </head>
 <body>
 <script type="text/javascript"><!--
     if (location.href.indexOf('is-external=true') == -1) {
-        parent.document.title="Deprecated List (TCC sprint2: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+        parent.document.title="Deprecated List (TCC sprint2: (MMP) Component chronicle service 1.1-SNAPSHOT API)";
     }
 //-->
 </script>
@@ -67,6 +67,7 @@
 <ul>
 <li><a href="#interface">Deprecated Interfaces</a></li>
 <li><a href="#class">Deprecated Classes</a></li>
+<li><a href="#field">Deprecated Fields</a></li>
 <li><a href="#method">Deprecated Methods</a></li>
 <li><a href="#enum_constant">Deprecated Enum Constants</a></li>
 </ul>
@@ -104,28 +105,40 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colOne"><a href="org/ihtsdo/otf/tcc/rest/server/BdbSingleton.html" title="class in org.ihtsdo.otf.tcc.rest.server">org.ihtsdo.otf.tcc.rest.server.BdbSingleton</a>
-<div class="block"><i>This class will be removed in a future sprint, 
- replaced by HK2 dependency injection</i></div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colOne"><a href="org/ihtsdo/otf/tcc/ddo/store/FxTs.html" title="class in org.ihtsdo.otf.tcc.ddo.store">org.ihtsdo.otf.tcc.ddo.store.FxTs</a>
 <div class="block"><i>This class will be removed in a future sprint, 
  replaced by HK2 dependency injection</i></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="org/ihtsdo/otf/tcc/model/cc/P.html" title="class in org.ihtsdo.otf.tcc.model.cc">org.ihtsdo.otf.tcc.model.cc.P</a>
 <div class="block"><i>This class will be removed in a future sprint, 
  replaced by HK2 dependency injection</i></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="org/ihtsdo/otf/tcc/api/store/Ts.html" title="class in org.ihtsdo.otf.tcc.api.store">org.ihtsdo.otf.tcc.api.store.Ts</a>
 <div class="block"><i>This class will be removed in a future sprint, 
  replaced by HK2 dependency injection</i></div>
 </td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<a name="field">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<table border="0" cellpadding="3" cellspacing="0" summary="Deprecated Fields table, listing deprecated fields, and an explanation">
+<caption><span>Deprecated Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Field and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/dto/TtkConceptChronicle.html#annotationIndexStyleRefex">org.ihtsdo.otf.tcc.dto.TtkConceptChronicle.annotationIndexStyleRefex</a></td>
 </tr>
 </tbody>
 </table>
@@ -143,12 +156,89 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colOne"><a href="org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#getTypeNid()">org.ihtsdo.otf.tcc.model.cc.refex.RefexMember.getTypeNid()</a></td>
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/api/store/TerminologyStoreDI.html#getComponentFromAlternateId(int, java.lang.String)">org.ihtsdo.otf.tcc.api.store.TerminologyStoreDI.getComponentFromAlternateId(int, String)</a>
+<div class="block"><i>use query service for alternative ids.</i></div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><a href="org/ihtsdo/otf/tcc/model/cc/concept/I_ManageConceptData.html#isAnnotationStyleSet()">org.ihtsdo.otf.tcc.model.cc.concept.I_ManageConceptData.isAnnotationStyleSet()</a>
-<div class="block"><i>use isAnnotationStyleRefex</i></div>
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/api/store/TerminologyStoreDI.html#getComponentVersionFromAlternateId(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int, java.lang.String)">org.ihtsdo.otf.tcc.api.store.TerminologyStoreDI.getComponentVersionFromAlternateId(ViewCoordinate, int, String)</a>
+<div class="block"><i>use query service for alternative ids.</i></div>
 </td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/api/store/TerminologyStoreDI.html#getComponentVersionFromAlternateId(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.util.UUID, java.lang.String)">org.ihtsdo.otf.tcc.api.store.TerminologyStoreDI.getComponentVersionFromAlternateId(ViewCoordinate, UUID, String)</a>
+<div class="block"><i>use query service for alternative ids.</i></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/api/store/TerminologyStoreDI.html#getConceptFromAlternateId(int, java.lang.String)">org.ihtsdo.otf.tcc.api.store.TerminologyStoreDI.getConceptFromAlternateId(int, String)</a>
+<div class="block"><i>use query service for alternative ids.</i></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/api/store/TerminologyStoreDI.html#getConceptFromAlternateId(java.util.UUID, java.lang.String)">org.ihtsdo.otf.tcc.api.store.TerminologyStoreDI.getConceptFromAlternateId(UUID, String)</a>
+<div class="block"><i>use query service for alternative ids.</i></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/api/store/TerminologyStoreDI.html#getConceptVersionFromAlternateId(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, int, java.lang.String)">org.ihtsdo.otf.tcc.api.store.TerminologyStoreDI.getConceptVersionFromAlternateId(ViewCoordinate, int, String)</a>
+<div class="block"><i>use query service for alternative ids.</i></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/api/store/TerminologyStoreDI.html#getConceptVersionFromAlternateId(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, java.util.UUID, java.lang.String)">org.ihtsdo.otf.tcc.api.store.TerminologyStoreDI.getConceptVersionFromAlternateId(ViewCoordinate, UUID, String)</a>
+<div class="block"><i>use query service for alternative ids.</i></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/api/refex/RefexChronicleBI.html#getRefexExtensionNid()">org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI.getRefexExtensionNid()</a>
+<div class="block"><i>use getAssemblageNid()</i></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#getRefexExtensionNid()">org.ihtsdo.otf.tcc.model.cc.refex.RefexMember.getRefexExtensionNid()</a></td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.Version.html#getRefexExtensionNid()">org.ihtsdo.otf.tcc.model.cc.refex.RefexMember.Version.getRefexExtensionNid()</a></td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#getRefexExtensionNid()">org.ihtsdo.otf.tcc.model.cc.refex.RefexRevision.getRefexExtensionNid()</a></td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#getTypeNid()">org.ihtsdo.otf.tcc.model.cc.refex.RefexMember.getTypeNid()</a></td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/dto/TtkConceptChronicle.html#isAnnotationIndexStyleRefex()">org.ihtsdo.otf.tcc.dto.TtkConceptChronicle.isAnnotationIndexStyleRefex()</a>
+<div class="block"><i>no longer supported.</i></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/dto/TtkConceptChronicle.html#setAnnotationIndexStyleRefex(boolean)">org.ihtsdo.otf.tcc.dto.TtkConceptChronicle.setAnnotationIndexStyleRefex(boolean)</a>
+<div class="block"><i>No longer used.</i></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/api/refex/RefexAnalogBI.html#setRefexExtensionNid(int)">org.ihtsdo.otf.tcc.api.refex.RefexAnalogBI.setRefexExtensionNid(int)</a>
+<div class="block"><i>use setAssemblageNid instead.</i></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#setRefexExtensionNid(int)">org.ihtsdo.otf.tcc.model.cc.refex.RefexMember.setRefexExtensionNid(int)</a></td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.Version.html#setRefexExtensionNid(int)">org.ihtsdo.otf.tcc.model.cc.refex.RefexMember.Version.setRefexExtensionNid(int)</a></td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#setRefexExtensionNid(int)">org.ihtsdo.otf.tcc.model.cc.refex.RefexRevision.setRefexExtensionNid(int)</a></td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/api/store/Ts.html#setup(java.lang.String, java.lang.String)">org.ihtsdo.otf.tcc.api.store.Ts.setup(String, String)</a></td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/api/store/Ts.html#setupClient()">org.ihtsdo.otf.tcc.api.store.Ts.setupClient()</a></td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="org/ihtsdo/otf/tcc/api/store/Ts.html#setupEmbedded()">org.ihtsdo.otf.tcc.api.store.Ts.setupEmbedded()</a></td>
 </tr>
 </tbody>
 </table>

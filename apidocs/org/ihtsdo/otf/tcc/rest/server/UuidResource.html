@@ -3,13 +3,13 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-<title>UuidResource (TCC sprint2: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<title>UuidResource (TCC sprint2: (MMP) Component chronicle service 1.1-SNAPSHOT API)</title>
 <link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
 </head>
 <body>
 <script type="text/javascript"><!--
     if (location.href.indexOf('is-external=true') == -1) {
-        parent.document.title="UuidResource (TCC sprint2: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+        parent.document.title="UuidResource (TCC sprint2: (MMP) Component chronicle service 1.1-SNAPSHOT API)";
     }
 //-->
 </script>
@@ -95,13 +95,12 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>@Path(value="/uuid")
-public class <span class="strong">UuidResource</span>
+<pre>public class <span class="strong">UuidResource</span>
 extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <dl><dt><span class="strong">Author:</span></dt>
   <dd>kec</dd>
-<DT>&nbsp;</DT><DD><map name="umlmap621"><area shape="rect" coords="6,232,129,249" href="http://www.yworks.com/" alt=""><area shape="rect" coords="24,136,156,162" href="#" alt=""><area shape="rect" coords="10,163,129,179" href="#UuidResource()" alt=""><area shape="rect" coords="10,180,146,196" href="#getNid(int)" alt=""><area shape="rect" coords="10,196,167,212" href="#getNid(java.lang.String)" alt=""><area shape="rect" coords="2,110,189,127" href="package-summary.html" alt=""><area shape="rect" coords="62,28,119,52" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="53,2,120,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="253,136,307,159" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="244,110,311,127" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""></map>
-<A NAME="UmlDiagram"></A><CENTER><IMG SRC="UuidResource.png" WIDTH="326" HEIGHT="258" USEMAP="#umlmap621" BORDER="0"></CENTER></DD>
+<DT>&nbsp;</DT><DD><map name="umlmap616"><area shape="rect" coords="6,232,129,249" href="http://www.yworks.com/" alt=""><area shape="rect" coords="24,136,156,162" href="#" alt=""><area shape="rect" coords="10,163,129,179" href="#UuidResource()" alt=""><area shape="rect" coords="10,180,146,196" href="#getNid(int)" alt=""><area shape="rect" coords="10,196,167,212" href="#getNid(java.lang.String)" alt=""><area shape="rect" coords="2,110,189,127" href="package-summary.html" alt=""><area shape="rect" coords="62,28,119,52" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="53,2,120,20" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="253,136,307,159" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="244,110,311,127" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><IMG SRC="UuidResource.png" WIDTH="326" HEIGHT="258" USEMAP="#umlmap616" BORDER="0"></CENTER></DD>
 <!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
 </li>
 </ul>
@@ -191,11 +190,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getNid</h4>
-<pre>@GET
-@Path(value="{uuid}")
-@Produces(value="text/plain")
-public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getNid(@PathParam(value="uuid")
-                              <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uuidStr)
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getNid(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uuidStr)
               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
@@ -207,11 +202,7 @@ public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.h
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getNid</h4>
-<pre>@GET
-@Path(value="primordial/{nid}")
-@Produces(value="text/plain")
-public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getNid(@PathParam(value="nid")
-                              int&nbsp;nid)
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getNid(int&nbsp;nid)
               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>

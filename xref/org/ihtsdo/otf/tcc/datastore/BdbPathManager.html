@@ -322,7 +322,7 @@
 <a class="jxr_linenumber" name="312" href="#312">312</a>                                             <span class="jxr_string">"\n\n****************************************\nDepth limit exceeded. Path concept: \n"</span>
 <a class="jxr_linenumber" name="313" href="#313">313</a>                                             + pathConcept.toLongString() + <span class="jxr_string">"\n\n extensionPart: \n\n"</span>
 <a class="jxr_linenumber" name="314" href="#314">314</a>                                             + extPart.toString() + <span class="jxr_string">"\n\n origin refset: \n\n"</span>
-<a class="jxr_linenumber" name="315" href="#315">315</a>                                             + ConceptChronicle.get(extPart.getRefexExtensionNid()).toLongString()
+<a class="jxr_linenumber" name="315" href="#315">315</a>                                             + ConceptChronicle.get(extPart.getAssemblageNid()).toLongString()
 <a class="jxr_linenumber" name="316" href="#316">316</a>                                             + <span class="jxr_string">"\n-------------------------------------------\n\n"</span>));
 <a class="jxr_linenumber" name="317" href="#317">317</a>                                 } <strong class="jxr_keyword">else</strong> {
 <a class="jxr_linenumber" name="318" href="#318">318</a>                                     result.add(<strong class="jxr_keyword">new</strong> <a href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html">Position</a>(conceptExtension.getLong1(),
@@ -352,7 +352,7 @@
 <a class="jxr_linenumber" name="342" href="#342">342</a>                                             <span class="jxr_string">"\n\n****************************************\nDepth limit exceeded. Path concept: \n"</span>
 <a class="jxr_linenumber" name="343" href="#343">343</a>                                             + pathConcept.toLongString() + <span class="jxr_string">"\n\n extensionPart: \n\n"</span>
 <a class="jxr_linenumber" name="344" href="#344">344</a>                                             + extPart.toString() + <span class="jxr_string">"\n\n origin refset: \n\n"</span>
-<a class="jxr_linenumber" name="345" href="#345">345</a>                                             + ConceptChronicle.get(extPart.getRefexExtensionNid()).toLongString()
+<a class="jxr_linenumber" name="345" href="#345">345</a>                                             + ConceptChronicle.get(extPart.getAssemblageNid()).toLongString()
 <a class="jxr_linenumber" name="346" href="#346">346</a>                                             + <span class="jxr_string">"\n-------------------------------------------\n\n"</span>));
 <a class="jxr_linenumber" name="347" href="#347">347</a>                                 } <strong class="jxr_keyword">else</strong> {
 <a class="jxr_linenumber" name="348" href="#348">348</a>                                     result.add(<strong class="jxr_keyword">new</strong> <a href="../../../../../org/ihtsdo/otf/tcc/api/coordinate/Position.html">Position</a>(ThinVersionHelper.convert(conceptExtension.getInt1()),

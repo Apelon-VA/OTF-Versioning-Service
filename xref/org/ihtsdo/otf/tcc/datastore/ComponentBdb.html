@@ -67,7 +67,7 @@
 <a class="jxr_linenumber" name="57" href="#57">57</a>  
 <a class="jxr_linenumber" name="58" href="#58">58</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">void</strong> preload(Database db) {
 <a class="jxr_linenumber" name="59" href="#59">59</a>          PreloadConfig plConfig = <strong class="jxr_keyword">new</strong> PreloadConfig();
-<a class="jxr_linenumber" name="60" href="#60">60</a>          plConfig.setLoadLNs(<strong class="jxr_keyword">true</strong>);
+<a class="jxr_linenumber" name="60" href="#60">60</a>          plConfig.setLoadLNs(false);
 <a class="jxr_linenumber" name="61" href="#61">61</a>          db.preload(plConfig);
 <a class="jxr_linenumber" name="62" href="#62">62</a>      }
 <a class="jxr_linenumber" name="63" href="#63">63</a>  
@@ -79,11 +79,11 @@
 <a class="jxr_linenumber" name="69" href="#69">69</a>              }
 <a class="jxr_linenumber" name="70" href="#70">70</a>              mutable.close();
 <a class="jxr_linenumber" name="71" href="#71">71</a>          } <strong class="jxr_keyword">catch</strong> (IllegalStateException ex) {
-<a class="jxr_linenumber" name="72" href="#72">72</a>              <strong class="jxr_keyword">if</strong> (AceLog.getAppLog().isLoggable(Level.FINE)) {
+<a class="jxr_linenumber" name="72" href="#72">72</a>              <strong class="jxr_keyword">if</strong> (AceLog.getAppLog().isLoggable(Level.INFO)) {
 <a class="jxr_linenumber" name="73" href="#73">73</a>                  AceLog.getAppLog().warning(ex.toString());
 <a class="jxr_linenumber" name="74" href="#74">74</a>              }
 <a class="jxr_linenumber" name="75" href="#75">75</a>          } <strong class="jxr_keyword">catch</strong> (IOException e) {
-<a class="jxr_linenumber" name="76" href="#76">76</a>              <strong class="jxr_keyword">if</strong> (AceLog.getAppLog().isLoggable(Level.FINE)) {
+<a class="jxr_linenumber" name="76" href="#76">76</a>              <strong class="jxr_keyword">if</strong> (AceLog.getAppLog().isLoggable(Level.INFO)) {
 <a class="jxr_linenumber" name="77" href="#77">77</a>                  AceLog.getAppLog().severe(e.toString());
 <a class="jxr_linenumber" name="78" href="#78">78</a>              }
 <a class="jxr_linenumber" name="79" href="#79">79</a>          }

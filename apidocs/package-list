@@ -134,7 +134,6 @@ org.ihtsdo.otf.tcc.model.cc.concept
 org.ihtsdo.otf.tcc.model.cc.concept.processor
 org.ihtsdo.otf.tcc.model.cc.description
 org.ihtsdo.otf.tcc.model.cc.identifier
-org.ihtsdo.otf.tcc.model.cc.lucene
 org.ihtsdo.otf.tcc.model.cc.media
 org.ihtsdo.otf.tcc.model.cc.refex
 org.ihtsdo.otf.tcc.model.cc.refex.type_array_of_bytearray
@@ -162,6 +161,7 @@ org.ihtsdo.otf.tcc.model.cc.termstore
 org.ihtsdo.otf.tcc.model.cs
 org.ihtsdo.otf.tcc.model.econcept
 org.ihtsdo.otf.tcc.model.econcept.transfrom
+org.ihtsdo.otf.tcc.model.index.service
 org.ihtsdo.otf.tcc.model.jsr166y
 org.ihtsdo.otf.tcc.model.version
 org.ihtsdo.otf.tcc.rest.server

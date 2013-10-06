@@ -3,13 +3,13 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-<title>org.ihtsdo.otf.tcc.rest.server (TCC sprint2: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)</title>
+<title>org.ihtsdo.otf.tcc.rest.server (TCC sprint2: (MMP) Component chronicle service 1.1-SNAPSHOT API)</title>
 <link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
 </head>
 <body>
 <script type="text/javascript"><!--
     if (location.href.indexOf('is-external=true') == -1) {
-        parent.document.title="org.ihtsdo.otf.tcc.rest.server (TCC sprint2: (MMP) Terminology Component Chronicle Service 1.1-SNAPSHOT API)";
+        parent.document.title="org.ihtsdo.otf.tcc.rest.server (TCC sprint2: (MMP) Component chronicle service 1.1-SNAPSHOT API)";
     }
 //-->
 </script>
@@ -75,10 +75,11 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/BdbSingleton.html" title="class in org.ihtsdo.otf.tcc.rest.server">BdbSingleton</a></td>
-<td class="colLast">Deprecated
-<div class="block"><i>This class will be removed in a future sprint, 
- replaced by HK2 dependency injection</i></div>
+<td class="colFirst"><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/ChronicleServletContainer.html" title="class in org.ihtsdo.otf.tcc.rest.server">ChronicleServletContainer</a></td>
+<td class="colLast">
+<div class="block">Overriding ServletContainer to enable access to
+ <code>init()</code> and
+ <code>destroy()</code> methods.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -90,42 +91,49 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/HelloResource.html" title="class in org.ihtsdo.otf.tcc.rest.server">HelloResource</a></td>
+<td class="colLast">
+<div class="block">This resource is deliberately simple, to demonstrate proper
+ connectivity and service availability.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/NidResource.html" title="class in org.ihtsdo.otf.tcc.rest.server">NidResource</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/PathResource.html" title="class in org.ihtsdo.otf.tcc.rest.server">PathResource</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/PropertyResource.html" title="class in org.ihtsdo.otf.tcc.rest.server">PropertyResource</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/RefexPairResource.html" title="class in org.ihtsdo.otf.tcc.rest.server">RefexPairResource</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/RelationshipPairResource.html" title="class in org.ihtsdo.otf.tcc.rest.server">RelationshipPairResource</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/SequenceResource.html" title="class in org.ihtsdo.otf.tcc.rest.server">SequenceResource</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/StampResource.html" title="class in org.ihtsdo.otf.tcc.rest.server">StampResource</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/TermStore.html" title="class in org.ihtsdo.otf.tcc.rest.server">TermStore</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/UuidResource.html" title="class in org.ihtsdo.otf.tcc.rest.server">UuidResource</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/ViewCoordinateResource.html" title="class in org.ihtsdo.otf.tcc.rest.server">ViewCoordinateResource</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -133,8 +141,8 @@
 </table>
 </li>
 </ul>
-<dl><DT>&nbsp;</DT><DD><map name="umlmap791"><area shape="rect" coords="6,547,129,564" href="http://www.yworks.com/" alt=""><area shape="rect" coords="12,504,209,528" href="ViewCoordinateResource.html" alt=""><area shape="rect" coords="151,436,260,459" href="UuidResource.html" alt=""><area shape="rect" coords="11,436,103,459" href="TermStore.html" alt=""><area shape="rect" coords="209,368,335,391" href="StampResource.html" alt=""><area shape="rect" coords="12,368,160,391" href="SequenceResource.html" alt=""><area shape="rect" coords="12,300,211,323" href="RelationshipPairResource.html" alt=""><area shape="rect" coords="12,232,161,255" href="RefexPairResource.html" alt=""><area shape="rect" coords="173,164,318,187" href="PropertyResource.html" alt=""><area shape="rect" coords="11,164,124,187" href="PathResource.html" alt=""><area shape="rect" coords="218,96,318,119" href="NidResource.html" alt=""><area shape="rect" coords="12,96,169,119" href="FxConceptResource.html" alt=""><area shape="rect" coords="167,28,307,51" href="ConceptResource.html" alt=""><area shape="rect" coords="11,28,118,51" href="BdbSingleton.html" alt=""><area shape="rect" coords="2,2,189,19" href="#" alt=""></map>
-<A NAME="UmlDiagram"></A><CENTER><IMG SRC="package.png" WIDTH="348" HEIGHT="573" USEMAP="#umlmap791" BORDER="0"></CENTER></DD>
+<dl><DT>&nbsp;</DT><DD><map name="umlmap786"><area shape="rect" coords="6,411,129,428" href="http://www.yworks.com/" alt=""><area shape="rect" coords="170,368,367,391" href="ViewCoordinateResource.html" alt=""><area shape="rect" coords="11,368,120,391" href="UuidResource.html" alt=""><area shape="rect" coords="383,300,475,323" href="TermStore.html" alt=""><area shape="rect" coords="209,300,335,323" href="StampResource.html" alt=""><area shape="rect" coords="12,300,160,323" href="SequenceResource.html" alt=""><area shape="rect" coords="211,232,410,255" href="RelationshipPairResource.html" alt=""><area shape="rect" coords="12,232,161,255" href="RefexPairResource.html" alt=""><area shape="rect" coords="321,164,466,187" href="PropertyResource.html" alt=""><area shape="rect" coords="159,164,272,187" href="PathResource.html" alt=""><area shape="rect" coords="11,164,111,187" href="NidResource.html" alt=""><area shape="rect" coords="218,96,332,119" href="HelloResource.html" alt=""><area shape="rect" coords="12,96,169,119" href="FxConceptResource.html" alt=""><area shape="rect" coords="270,28,410,51" href="ConceptResource.html" alt=""><area shape="rect" coords="13,28,220,51" href="ChronicleServletContainer.html" alt=""><area shape="rect" coords="2,2,189,19" href="#" alt=""></map>
+<A NAME="UmlDiagram"></A><CENTER><IMG SRC="package.png" WIDTH="487" HEIGHT="437" USEMAP="#umlmap786" BORDER="0"></CENTER></DD>
 <!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
 </div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
