@@ -106,20 +106,23 @@
 <pre>public class <span class="strong">ConcurrentBitSet</span>
 extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></pre>
+<div class="block">TODO with Java 8 lambdas, or even without lambda, many of the operations such
+ as and, or, xor, can be done in parallel. Need to do some performance testing
+ and consider making many operations parallel.</div>
 <dl><dt><span class="strong">Author:</span></dt>
   <dd>dylangrald</dd>
-<DT>&nbsp;</DT><DD><map name="umlmap92W0H0"><area shape="rect" coords="278,145,446,171" href="#" alt=""><area shape="rect" coords="249,172,387,188" href="#ConcurrentBitSet()" alt=""><area shape="rect" coords="249,188,402,204" href="#ConcurrentBitSet(int)" alt=""><area shape="rect" coords="249,204,423,220" href="#ConcurrentBitSet(java.lang.String)" alt=""><area shape="rect" coords="249,220,424,236" href="#ConcurrentBitSet(java.util.BitSet)" alt=""><area shape="rect" coords="249,236,470,252" href="#ConcurrentBitSet(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="249,253,358,269" href="#add(int)" alt=""><area shape="rect" coords="249,269,382,285" href="#addAll(int[])" alt=""><area shape="rect" coords="249,285,447,301" href="#and(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="249,301,425,317" href="#and(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="249,317,469,333" href="#andNot(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="249,333,447,349" href="#andNot(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="249,349,372,365" href="#cardinality()" alt=""><area shape="rect" coords="249,365,350,381" href="#clear()" alt=""><area shape="rect" coords="249,381,365,397" href="#clear(int)" alt=""><area shape="rect" coords="249,397,364,413" href="#clearAll()" alt=""><area shape="rect" coords="249,413,410,429" href="#contains(int)" alt=""><area shape="rect" coords="249,429,410,445" href="#contiguous()" alt=""><area shape="rect" coords="249,445,425,461" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="249,461,379,477" href="#get(int)" alt=""><area shape="rect" coords="249,477,457,493" href="#getIterator()" alt=""><area shape="rect" coords="249,493,354,508" href="#getMax()" alt=""><area shape="rect" coords="249,508,349,524" href="#getMin()" alt=""><area shape="rect" coords="249,524,368,540" href="#getOffSet()" alt=""><area shape="rect" coords="249,540,401,556" href="#getSetValues()" alt=""><area shape="rect" coords="249,556,449,572" href="#getUnits()" alt=""><area shape="rect" coords="249,572,370,588" href="#hashCode()" alt=""><area shape="rect" coords="249,588,391,604" href="#isEmpty()" alt=""><area shape="rect" coords="249,604,418,620" href="#isMember(int)" alt=""><area shape="rect" coords="249,620,346,636" href="#length()" alt=""><area shape="rect" coords="249,636,387,652" href="#nextSetBit(int)" alt=""><area shape="rect" coords="249,652,437,668" href="#or(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="249,668,415,684" href="#or(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="249,684,381,700" href="#remove(int)" alt=""><area shape="rect" coords="249,700,405,716" href="#removeAll(int[])" alt=""><area shape="rect" coords="249,716,354,732" href="#set(int)" alt=""><area shape="rect" coords="249,732,411,748" href="#set(int, boolean)" alt=""><area shape="rect" coords="249,748,368,764" href="#setAll(int)" alt=""><area shape="rect" coords="249,764,404,780" href="#setMember(int)" alt=""><area shape="rect" coords="249,780,426,796" href="#setNotMember(int)" alt=""><area shape="rect" coords="249,796,333,812" href="#size()" alt=""><area shape="rect" coords="249,812,379,828" href="#toIntArray()" alt=""><area shape="rect" coords="249,828,378,844" href="#toString()" alt=""><area shape="rect" coords="249,844,434,860" href="#union(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="249,860,444,876" href="#xor(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="249,876,422,892" href="#xor(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="241,119,400,136" href="package-summary.html" alt=""><area shape="rect" coords="334,37,391,61" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="325,11,392,29" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="12,145,151,168" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicLongArray.html" alt=""><area shape="rect" coords="2,119,175,136" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/package-summary.html" alt=""><area shape="rect" coords="38,236,156,260" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/locks/ReadWriteLock.html" alt=""><area shape="rect" coords="3,206,166,224" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/locks/package-summary.html" alt=""></map>
-<map name="umlmap92W1H0"><area shape="rect" coords="-89,145,78,171" href="#" alt=""><area shape="rect" coords="-119,172,19,188" href="#ConcurrentBitSet()" alt=""><area shape="rect" coords="-119,188,34,204" href="#ConcurrentBitSet(int)" alt=""><area shape="rect" coords="-119,204,55,220" href="#ConcurrentBitSet(java.lang.String)" alt=""><area shape="rect" coords="-119,220,56,236" href="#ConcurrentBitSet(java.util.BitSet)" alt=""><area shape="rect" coords="-119,236,102,252" href="#ConcurrentBitSet(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-119,253,-10,269" href="#add(int)" alt=""><area shape="rect" coords="-119,269,14,285" href="#addAll(int[])" alt=""><area shape="rect" coords="-119,285,79,301" href="#and(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-119,301,57,317" href="#and(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-119,317,101,333" href="#andNot(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-119,333,79,349" href="#andNot(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-119,349,4,365" href="#cardinality()" alt=""><area shape="rect" coords="-119,365,-18,381" href="#clear()" alt=""><area shape="rect" coords="-119,381,-3,397" href="#clear(int)" alt=""><area shape="rect" coords="-119,397,-4,413" href="#clearAll()" alt=""><area shape="rect" coords="-119,413,42,429" href="#contains(int)" alt=""><area shape="rect" coords="-119,429,42,445" href="#contiguous()" alt=""><area shape="rect" coords="-119,445,57,461" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-119,461,11,477" href="#get(int)" alt=""><area shape="rect" coords="-119,477,89,493" href="#getIterator()" alt=""><area shape="rect" coords="-119,493,-14,508" href="#getMax()" alt=""><area shape="rect" coords="-119,508,-19,524" href="#getMin()" alt=""><area shape="rect" coords="-119,524,0,540" href="#getOffSet()" alt=""><area shape="rect" coords="-119,540,33,556" href="#getSetValues()" alt=""><area shape="rect" coords="-119,556,81,572" href="#getUnits()" alt=""><area shape="rect" coords="-119,572,2,588" href="#hashCode()" alt=""><area shape="rect" coords="-119,588,23,604" href="#isEmpty()" alt=""><area shape="rect" coords="-119,604,50,620" href="#isMember(int)" alt=""><area shape="rect" coords="-119,620,-22,636" href="#length()" alt=""><area shape="rect" coords="-119,636,19,652" href="#nextSetBit(int)" alt=""><area shape="rect" coords="-119,652,69,668" href="#or(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-119,668,47,684" href="#or(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-119,684,13,700" href="#remove(int)" alt=""><area shape="rect" coords="-119,700,37,716" href="#removeAll(int[])" alt=""><area shape="rect" coords="-119,716,-14,732" href="#set(int)" alt=""><area shape="rect" coords="-119,732,43,748" href="#set(int, boolean)" alt=""><area shape="rect" coords="-119,748,0,764" href="#setAll(int)" alt=""><area shape="rect" coords="-119,764,36,780" href="#setMember(int)" alt=""><area shape="rect" coords="-119,780,58,796" href="#setNotMember(int)" alt=""><area shape="rect" coords="-119,796,-35,812" href="#size()" alt=""><area shape="rect" coords="-119,812,11,828" href="#toIntArray()" alt=""><area shape="rect" coords="-119,828,10,844" href="#toString()" alt=""><area shape="rect" coords="-119,844,66,860" href="#union(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-119,860,76,876" href="#xor(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-119,876,54,892" href="#xor(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-127,119,32,136" href="package-summary.html" alt=""><area shape="rect" coords="-33,37,23,61" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="-42,11,24,29" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="94,33,202,56" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" alt=""><area shape="rect" coords="62,2,221,20" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/package-summary.html" alt=""><area shape="rect" coords="175,178,229,201" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="175,145,232,168" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="166,119,233,136" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="175,265,231,288" href="http://docs.oracle.com/javase/7/docs/api/java/util/BitSet.html" alt=""><area shape="rect" coords="166,239,225,257" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""><area shape="rect" coords="203,399,328,422" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html" alt=""><area shape="rect" coords="199,357,307,380" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" alt=""><area shape="rect" coords="166,326,325,344" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/package-summary.html" alt=""></map>
-<map name="umlmap92W0H1"><area shape="rect" coords="6,443,129,460" href="http://www.yworks.com/" alt=""><area shape="rect" coords="278,-324,446,-297" href="#" alt=""><area shape="rect" coords="249,-296,387,-280" href="#ConcurrentBitSet()" alt=""><area shape="rect" coords="249,-280,402,-264" href="#ConcurrentBitSet(int)" alt=""><area shape="rect" coords="249,-264,423,-248" href="#ConcurrentBitSet(java.lang.String)" alt=""><area shape="rect" coords="249,-248,424,-232" href="#ConcurrentBitSet(java.util.BitSet)" alt=""><area shape="rect" coords="249,-232,470,-216" href="#ConcurrentBitSet(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="249,-215,358,-199" href="#add(int)" alt=""><area shape="rect" coords="249,-199,382,-183" href="#addAll(int[])" alt=""><area shape="rect" coords="249,-183,447,-167" href="#and(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="249,-167,425,-151" href="#and(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="249,-151,469,-135" href="#andNot(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="249,-135,447,-119" href="#andNot(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="249,-119,372,-103" href="#cardinality()" alt=""><area shape="rect" coords="249,-103,350,-87" href="#clear()" alt=""><area shape="rect" coords="249,-87,365,-71" href="#clear(int)" alt=""><area shape="rect" coords="249,-71,364,-55" href="#clearAll()" alt=""><area shape="rect" coords="249,-55,410,-39" href="#contains(int)" alt=""><area shape="rect" coords="249,-39,410,-23" href="#contiguous()" alt=""><area shape="rect" coords="249,-23,425,-7" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="249,-7,379,8" href="#get(int)" alt=""><area shape="rect" coords="249,8,457,24" href="#getIterator()" alt=""><area shape="rect" coords="249,24,354,39" href="#getMax()" alt=""><area shape="rect" coords="249,39,349,55" href="#getMin()" alt=""><area shape="rect" coords="249,55,368,71" href="#getOffSet()" alt=""><area shape="rect" coords="249,71,401,87" href="#getSetValues()" alt=""><area shape="rect" coords="249,87,449,103" href="#getUnits()" alt=""><area shape="rect" coords="249,103,370,119" href="#hashCode()" alt=""><area shape="rect" coords="249,119,391,135" href="#isEmpty()" alt=""><area shape="rect" coords="249,135,418,151" href="#isMember(int)" alt=""><area shape="rect" coords="249,151,346,167" href="#length()" alt=""><area shape="rect" coords="249,167,387,183" href="#nextSetBit(int)" alt=""><area shape="rect" coords="249,183,437,199" href="#or(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="249,199,415,215" href="#or(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="249,215,381,231" href="#remove(int)" alt=""><area shape="rect" coords="249,231,405,247" href="#removeAll(int[])" alt=""><area shape="rect" coords="249,247,354,263" href="#set(int)" alt=""><area shape="rect" coords="249,263,411,279" href="#set(int, boolean)" alt=""><area shape="rect" coords="249,279,368,295" href="#setAll(int)" alt=""><area shape="rect" coords="249,295,404,311" href="#setMember(int)" alt=""><area shape="rect" coords="249,311,426,327" href="#setNotMember(int)" alt=""><area shape="rect" coords="249,327,333,343" href="#size()" alt=""><area shape="rect" coords="249,343,379,359" href="#toIntArray()" alt=""><area shape="rect" coords="249,359,378,375" href="#toString()" alt=""><area shape="rect" coords="249,375,434,391" href="#union(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="249,391,444,407" href="#xor(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="249,407,422,423" href="#xor(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="241,-350,400,-332" href="package-summary.html" alt=""></map>
-<map name="umlmap92W1H1"><area shape="rect" coords="-89,-324,78,-297" href="#" alt=""><area shape="rect" coords="-119,-296,19,-280" href="#ConcurrentBitSet()" alt=""><area shape="rect" coords="-119,-280,34,-264" href="#ConcurrentBitSet(int)" alt=""><area shape="rect" coords="-119,-264,55,-248" href="#ConcurrentBitSet(java.lang.String)" alt=""><area shape="rect" coords="-119,-248,56,-232" href="#ConcurrentBitSet(java.util.BitSet)" alt=""><area shape="rect" coords="-119,-232,102,-216" href="#ConcurrentBitSet(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-119,-215,-10,-199" href="#add(int)" alt=""><area shape="rect" coords="-119,-199,14,-183" href="#addAll(int[])" alt=""><area shape="rect" coords="-119,-183,79,-167" href="#and(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-119,-167,57,-151" href="#and(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-119,-151,101,-135" href="#andNot(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-119,-135,79,-119" href="#andNot(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-119,-119,4,-103" href="#cardinality()" alt=""><area shape="rect" coords="-119,-103,-18,-87" href="#clear()" alt=""><area shape="rect" coords="-119,-87,-3,-71" href="#clear(int)" alt=""><area shape="rect" coords="-119,-71,-4,-55" href="#clearAll()" alt=""><area shape="rect" coords="-119,-55,42,-39" href="#contains(int)" alt=""><area shape="rect" coords="-119,-39,42,-23" href="#contiguous()" alt=""><area shape="rect" coords="-119,-23,57,-7" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-119,-7,11,8" href="#get(int)" alt=""><area shape="rect" coords="-119,8,89,24" href="#getIterator()" alt=""><area shape="rect" coords="-119,24,-14,39" href="#getMax()" alt=""><area shape="rect" coords="-119,39,-19,55" href="#getMin()" alt=""><area shape="rect" coords="-119,55,0,71" href="#getOffSet()" alt=""><area shape="rect" coords="-119,71,33,87" href="#getSetValues()" alt=""><area shape="rect" coords="-119,87,81,103" href="#getUnits()" alt=""><area shape="rect" coords="-119,103,2,119" href="#hashCode()" alt=""><area shape="rect" coords="-119,119,23,135" href="#isEmpty()" alt=""><area shape="rect" coords="-119,135,50,151" href="#isMember(int)" alt=""><area shape="rect" coords="-119,151,-22,167" href="#length()" alt=""><area shape="rect" coords="-119,167,19,183" href="#nextSetBit(int)" alt=""><area shape="rect" coords="-119,183,69,199" href="#or(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-119,199,47,215" href="#or(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-119,215,13,231" href="#remove(int)" alt=""><area shape="rect" coords="-119,231,37,247" href="#removeAll(int[])" alt=""><area shape="rect" coords="-119,247,-14,263" href="#set(int)" alt=""><area shape="rect" coords="-119,263,43,279" href="#set(int, boolean)" alt=""><area shape="rect" coords="-119,279,0,295" href="#setAll(int)" alt=""><area shape="rect" coords="-119,295,36,311" href="#setMember(int)" alt=""><area shape="rect" coords="-119,311,58,327" href="#setNotMember(int)" alt=""><area shape="rect" coords="-119,327,-35,343" href="#size()" alt=""><area shape="rect" coords="-119,343,11,359" href="#toIntArray()" alt=""><area shape="rect" coords="-119,359,10,375" href="#toString()" alt=""><area shape="rect" coords="-119,375,66,391" href="#union(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-119,391,76,407" href="#xor(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-119,407,54,423" href="#xor(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-127,-350,32,-332" href="package-summary.html" alt=""></map>
+<DT>&nbsp;</DT><DD><map name="umlmap92W0H0"><area shape="rect" coords="330,145,498,171" href="#" alt=""><area shape="rect" coords="288,172,426,188" href="#ConcurrentBitSet()" alt=""><area shape="rect" coords="288,188,441,204" href="#ConcurrentBitSet(int)" alt=""><area shape="rect" coords="288,204,462,220" href="#ConcurrentBitSet(java.lang.String)" alt=""><area shape="rect" coords="288,220,509,236" href="#ConcurrentBitSet(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="288,237,397,253" href="#add(int)" alt=""><area shape="rect" coords="288,253,421,269" href="#addAll(int[])" alt=""><area shape="rect" coords="288,269,486,285" href="#and(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="288,285,464,301" href="#and(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="288,301,508,317" href="#andNot(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="288,317,486,333" href="#andNot(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="288,333,411,349" href="#cardinality()" alt=""><area shape="rect" coords="288,349,389,365" href="#clear()" alt=""><area shape="rect" coords="288,365,404,381" href="#clear(int)" alt=""><area shape="rect" coords="288,381,403,397" href="#clearAll()" alt=""><area shape="rect" coords="288,397,449,413" href="#contains(int)" alt=""><area shape="rect" coords="288,413,449,429" href="#contiguous()" alt=""><area shape="rect" coords="288,429,464,445" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="288,445,418,461" href="#get(int)" alt=""><area shape="rect" coords="288,461,526,477" href="#getAllBitIterator()" alt=""><area shape="rect" coords="288,477,393,493" href="#getMax()" alt=""><area shape="rect" coords="288,493,456,508" href="#getMaxPossibleId()" alt=""><area shape="rect" coords="288,508,388,524" href="#getMin()" alt=""><area shape="rect" coords="288,524,451,540" href="#getMinPossibleId()" alt=""><area shape="rect" coords="288,540,407,556" href="#getOffSet()" alt=""><area shape="rect" coords="288,556,533,572" href="#getSetBitIterator()" alt=""><area shape="rect" coords="288,572,440,588" href="#getSetValues()" alt=""><area shape="rect" coords="288,588,409,604" href="#hashCode()" alt=""><area shape="rect" coords="288,604,430,620" href="#isEmpty()" alt=""><area shape="rect" coords="288,620,457,636" href="#isMember(int)" alt=""><area shape="rect" coords="288,636,385,652" href="#length()" alt=""><area shape="rect" coords="288,652,426,668" href="#nextSetBit(int)" alt=""><area shape="rect" coords="288,668,476,684" href="#or(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="288,684,454,700" href="#or(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="288,700,420,716" href="#remove(int)" alt=""><area shape="rect" coords="288,716,444,732" href="#removeAll(int[])" alt=""><area shape="rect" coords="288,732,393,748" href="#set(int)" alt=""><area shape="rect" coords="288,748,450,764" href="#set(int, boolean)" alt=""><area shape="rect" coords="288,764,407,780" href="#setAll(int)" alt=""><area shape="rect" coords="288,780,481,796" href="#setMaxPossibleId(int)" alt=""><area shape="rect" coords="288,796,443,812" href="#setMember(int)" alt=""><area shape="rect" coords="288,812,465,828" href="#setNotMember(int)" alt=""><area shape="rect" coords="288,828,372,844" href="#size()" alt=""><area shape="rect" coords="288,844,418,860" href="#toIntArray()" alt=""><area shape="rect" coords="288,860,417,876" href="#toString()" alt=""><area shape="rect" coords="288,876,473,892" href="#union(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="288,892,483,908" href="#xor(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="288,908,461,924" href="#xor(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="280,119,439,136" href="package-summary.html" alt=""><area shape="rect" coords="385,37,442,61" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="376,11,443,29" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="151,145,220,168" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Boolean.html" alt=""><area shape="rect" coords="142,119,209,136" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="13,232,218,255" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CopyOnWriteArrayList.html" alt=""><area shape="rect" coords="2,206,130,224" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/package-summary.html" alt=""><area shape="rect" coords="51,319,168,342" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html" alt=""><area shape="rect" coords="41,293,214,311" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/package-summary.html" alt=""><area shape="rect" coords="61,406,180,429" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/locks/ReentrantLock.html" alt=""><area shape="rect" coords="52,380,215,398" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/locks/package-summary.html" alt=""></map>
+<map name="umlmap92W1H0"><area shape="rect" coords="-69,145,98,171" href="#" alt=""><area shape="rect" coords="-112,172,26,188" href="#ConcurrentBitSet()" alt=""><area shape="rect" coords="-112,188,41,204" href="#ConcurrentBitSet(int)" alt=""><area shape="rect" coords="-112,204,62,220" href="#ConcurrentBitSet(java.lang.String)" alt=""><area shape="rect" coords="-112,220,109,236" href="#ConcurrentBitSet(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-112,237,-3,253" href="#add(int)" alt=""><area shape="rect" coords="-112,253,21,269" href="#addAll(int[])" alt=""><area shape="rect" coords="-112,269,86,285" href="#and(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-112,285,64,301" href="#and(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-112,301,108,317" href="#andNot(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-112,317,86,333" href="#andNot(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-112,333,11,349" href="#cardinality()" alt=""><area shape="rect" coords="-112,349,-11,365" href="#clear()" alt=""><area shape="rect" coords="-112,365,4,381" href="#clear(int)" alt=""><area shape="rect" coords="-112,381,3,397" href="#clearAll()" alt=""><area shape="rect" coords="-112,397,49,413" href="#contains(int)" alt=""><area shape="rect" coords="-112,413,49,429" href="#contiguous()" alt=""><area shape="rect" coords="-112,429,64,445" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-112,445,18,461" href="#get(int)" alt=""><area shape="rect" coords="-112,461,126,477" href="#getAllBitIterator()" alt=""><area shape="rect" coords="-112,477,-7,493" href="#getMax()" alt=""><area shape="rect" coords="-112,493,56,508" href="#getMaxPossibleId()" alt=""><area shape="rect" coords="-112,508,-12,524" href="#getMin()" alt=""><area shape="rect" coords="-112,524,51,540" href="#getMinPossibleId()" alt=""><area shape="rect" coords="-112,540,7,556" href="#getOffSet()" alt=""><area shape="rect" coords="-112,556,133,572" href="#getSetBitIterator()" alt=""><area shape="rect" coords="-112,572,40,588" href="#getSetValues()" alt=""><area shape="rect" coords="-112,588,9,604" href="#hashCode()" alt=""><area shape="rect" coords="-112,604,30,620" href="#isEmpty()" alt=""><area shape="rect" coords="-112,620,57,636" href="#isMember(int)" alt=""><area shape="rect" coords="-112,636,-15,652" href="#length()" alt=""><area shape="rect" coords="-112,652,26,668" href="#nextSetBit(int)" alt=""><area shape="rect" coords="-112,668,76,684" href="#or(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-112,684,54,700" href="#or(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-112,700,20,716" href="#remove(int)" alt=""><area shape="rect" coords="-112,716,44,732" href="#removeAll(int[])" alt=""><area shape="rect" coords="-112,732,-7,748" href="#set(int)" alt=""><area shape="rect" coords="-112,748,50,764" href="#set(int, boolean)" alt=""><area shape="rect" coords="-112,764,7,780" href="#setAll(int)" alt=""><area shape="rect" coords="-112,780,81,796" href="#setMaxPossibleId(int)" alt=""><area shape="rect" coords="-112,796,43,812" href="#setMember(int)" alt=""><area shape="rect" coords="-112,812,65,828" href="#setNotMember(int)" alt=""><area shape="rect" coords="-112,828,-28,844" href="#size()" alt=""><area shape="rect" coords="-112,844,18,860" href="#toIntArray()" alt=""><area shape="rect" coords="-112,860,17,876" href="#toString()" alt=""><area shape="rect" coords="-112,876,73,892" href="#union(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-112,892,83,908" href="#xor(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-112,908,61,924" href="#xor(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-120,119,39,136" href="package-summary.html" alt=""><area shape="rect" coords="-14,37,42,61" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="-23,11,43,29" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="114,33,222,56" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" alt=""><area shape="rect" coords="81,2,240,20" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/package-summary.html" alt=""><area shape="rect" coords="207,178,261,201" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="207,145,264,168" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html" alt=""><area shape="rect" coords="198,119,265,136" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="234,312,359,335" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html" alt=""><area shape="rect" coords="231,270,339,293" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" alt=""><area shape="rect" coords="198,239,357,257" href="../../../../../../org/ihtsdo/otf/tcc/api/nid/package-summary.html" alt=""></map>
+<map name="umlmap92W0H1"><area shape="rect" coords="6,459,129,476" href="http://www.yworks.com/" alt=""><area shape="rect" coords="330,-340,498,-313" href="#" alt=""><area shape="rect" coords="288,-312,426,-296" href="#ConcurrentBitSet()" alt=""><area shape="rect" coords="288,-296,441,-280" href="#ConcurrentBitSet(int)" alt=""><area shape="rect" coords="288,-280,462,-264" href="#ConcurrentBitSet(java.lang.String)" alt=""><area shape="rect" coords="288,-264,509,-248" href="#ConcurrentBitSet(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="288,-247,397,-231" href="#add(int)" alt=""><area shape="rect" coords="288,-231,421,-215" href="#addAll(int[])" alt=""><area shape="rect" coords="288,-215,486,-199" href="#and(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="288,-199,464,-183" href="#and(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="288,-183,508,-167" href="#andNot(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="288,-167,486,-151" href="#andNot(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="288,-151,411,-135" href="#cardinality()" alt=""><area shape="rect" coords="288,-135,389,-119" href="#clear()" alt=""><area shape="rect" coords="288,-119,404,-103" href="#clear(int)" alt=""><area shape="rect" coords="288,-103,403,-87" href="#clearAll()" alt=""><area shape="rect" coords="288,-87,449,-71" href="#contains(int)" alt=""><area shape="rect" coords="288,-71,449,-55" href="#contiguous()" alt=""><area shape="rect" coords="288,-55,464,-39" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="288,-39,418,-23" href="#get(int)" alt=""><area shape="rect" coords="288,-23,526,-7" href="#getAllBitIterator()" alt=""><area shape="rect" coords="288,-7,393,8" href="#getMax()" alt=""><area shape="rect" coords="288,8,456,23" href="#getMaxPossibleId()" alt=""><area shape="rect" coords="288,23,388,39" href="#getMin()" alt=""><area shape="rect" coords="288,39,451,55" href="#getMinPossibleId()" alt=""><area shape="rect" coords="288,55,407,71" href="#getOffSet()" alt=""><area shape="rect" coords="288,71,533,87" href="#getSetBitIterator()" alt=""><area shape="rect" coords="288,87,440,103" href="#getSetValues()" alt=""><area shape="rect" coords="288,103,409,119" href="#hashCode()" alt=""><area shape="rect" coords="288,119,430,135" href="#isEmpty()" alt=""><area shape="rect" coords="288,135,457,151" href="#isMember(int)" alt=""><area shape="rect" coords="288,151,385,167" href="#length()" alt=""><area shape="rect" coords="288,167,426,183" href="#nextSetBit(int)" alt=""><area shape="rect" coords="288,183,476,199" href="#or(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="288,199,454,215" href="#or(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="288,215,420,231" href="#remove(int)" alt=""><area shape="rect" coords="288,231,444,247" href="#removeAll(int[])" alt=""><area shape="rect" coords="288,247,393,263" href="#set(int)" alt=""><area shape="rect" coords="288,263,450,279" href="#set(int, boolean)" alt=""><area shape="rect" coords="288,279,407,295" href="#setAll(int)" alt=""><area shape="rect" coords="288,295,481,311" href="#setMaxPossibleId(int)" alt=""><area shape="rect" coords="288,311,443,327" href="#setMember(int)" alt=""><area shape="rect" coords="288,327,465,343" href="#setNotMember(int)" alt=""><area shape="rect" coords="288,343,372,359" href="#size()" alt=""><area shape="rect" coords="288,359,418,375" href="#toIntArray()" alt=""><area shape="rect" coords="288,375,417,391" href="#toString()" alt=""><area shape="rect" coords="288,391,473,407" href="#union(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="288,407,483,423" href="#xor(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="288,423,461,439" href="#xor(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="280,-366,439,-348" href="package-summary.html" alt=""></map>
+<map name="umlmap92W1H1"><area shape="rect" coords="-69,-340,98,-313" href="#" alt=""><area shape="rect" coords="-112,-312,26,-296" href="#ConcurrentBitSet()" alt=""><area shape="rect" coords="-112,-296,41,-280" href="#ConcurrentBitSet(int)" alt=""><area shape="rect" coords="-112,-280,62,-264" href="#ConcurrentBitSet(java.lang.String)" alt=""><area shape="rect" coords="-112,-264,109,-248" href="#ConcurrentBitSet(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-112,-247,-3,-231" href="#add(int)" alt=""><area shape="rect" coords="-112,-231,21,-215" href="#addAll(int[])" alt=""><area shape="rect" coords="-112,-215,86,-199" href="#and(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-112,-199,64,-183" href="#and(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-112,-183,108,-167" href="#andNot(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-112,-167,86,-151" href="#andNot(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-112,-151,11,-135" href="#cardinality()" alt=""><area shape="rect" coords="-112,-135,-11,-119" href="#clear()" alt=""><area shape="rect" coords="-112,-119,4,-103" href="#clear(int)" alt=""><area shape="rect" coords="-112,-103,3,-87" href="#clearAll()" alt=""><area shape="rect" coords="-112,-87,49,-71" href="#contains(int)" alt=""><area shape="rect" coords="-112,-71,49,-55" href="#contiguous()" alt=""><area shape="rect" coords="-112,-55,64,-39" href="#equals(java.lang.Object)" alt=""><area shape="rect" coords="-112,-39,18,-23" href="#get(int)" alt=""><area shape="rect" coords="-112,-23,126,-7" href="#getAllBitIterator()" alt=""><area shape="rect" coords="-112,-7,-7,8" href="#getMax()" alt=""><area shape="rect" coords="-112,8,56,23" href="#getMaxPossibleId()" alt=""><area shape="rect" coords="-112,23,-12,39" href="#getMin()" alt=""><area shape="rect" coords="-112,39,51,55" href="#getMinPossibleId()" alt=""><area shape="rect" coords="-112,55,7,71" href="#getOffSet()" alt=""><area shape="rect" coords="-112,71,133,87" href="#getSetBitIterator()" alt=""><area shape="rect" coords="-112,87,40,103" href="#getSetValues()" alt=""><area shape="rect" coords="-112,103,9,119" href="#hashCode()" alt=""><area shape="rect" coords="-112,119,30,135" href="#isEmpty()" alt=""><area shape="rect" coords="-112,135,57,151" href="#isMember(int)" alt=""><area shape="rect" coords="-112,151,-15,167" href="#length()" alt=""><area shape="rect" coords="-112,167,26,183" href="#nextSetBit(int)" alt=""><area shape="rect" coords="-112,183,76,199" href="#or(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-112,199,54,215" href="#or(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-112,215,20,231" href="#remove(int)" alt=""><area shape="rect" coords="-112,231,44,247" href="#removeAll(int[])" alt=""><area shape="rect" coords="-112,247,-7,263" href="#set(int)" alt=""><area shape="rect" coords="-112,263,50,279" href="#set(int, boolean)" alt=""><area shape="rect" coords="-112,279,7,295" href="#setAll(int)" alt=""><area shape="rect" coords="-112,295,81,311" href="#setMaxPossibleId(int)" alt=""><area shape="rect" coords="-112,311,43,327" href="#setMember(int)" alt=""><area shape="rect" coords="-112,327,65,343" href="#setNotMember(int)" alt=""><area shape="rect" coords="-112,343,-28,359" href="#size()" alt=""><area shape="rect" coords="-112,359,18,375" href="#toIntArray()" alt=""><area shape="rect" coords="-112,375,17,391" href="#toString()" alt=""><area shape="rect" coords="-112,391,73,407" href="#union(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-112,407,83,423" href="#xor(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)" alt=""><area shape="rect" coords="-112,423,61,439" href="#xor(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)" alt=""><area shape="rect" coords="-120,-366,39,-348" href="package-summary.html" alt=""></map>
 <A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
 <TR CLASS="UmlTableRow">
-<TD CLASS="UmlTableCell"><IMG SRC="ConcurrentBitSetW0H0.png" WIDTH="368" HEIGHT="469" USEMAP="#umlmap92W0H0" BORDER="0"></TD>
-<TD CLASS="UmlTableCell"><IMG SRC="ConcurrentBitSetW1H0.png" WIDTH="367" HEIGHT="469" USEMAP="#umlmap92W1H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ConcurrentBitSetW0H0.png" WIDTH="400" HEIGHT="485" USEMAP="#umlmap92W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ConcurrentBitSetW1H0.png" WIDTH="399" HEIGHT="485" USEMAP="#umlmap92W1H0" BORDER="0"></TD>
 </TR>
 <TR CLASS="UmlTableRow">
-<TD CLASS="UmlTableCell"><IMG SRC="ConcurrentBitSetW0H1.png" WIDTH="368" HEIGHT="469" USEMAP="#umlmap92W0H1" BORDER="0"></TD>
-<TD CLASS="UmlTableCell"><IMG SRC="ConcurrentBitSetW1H1.png" WIDTH="367" HEIGHT="469" USEMAP="#umlmap92W1H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ConcurrentBitSetW0H1.png" WIDTH="400" HEIGHT="485" USEMAP="#umlmap92W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ConcurrentBitSetW1H1.png" WIDTH="399" HEIGHT="485" USEMAP="#umlmap92W1H1" BORDER="0"></TD>
 </TR>
 </TABLE></CENTER></DD>
 <!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
@@ -144,15 +147,12 @@ implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.h
 <td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#ConcurrentBitSet()">ConcurrentBitSet</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#ConcurrentBitSet(java.util.BitSet)">ConcurrentBitSet</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/BitSet.html?is-external=true" title="class or interface in java.util">BitSet</a>&nbsp;bitSet)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#ConcurrentBitSet(int)">ConcurrentBitSet</a></strong>(int&nbsp;bitCapacity)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#ConcurrentBitSet(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">ConcurrentBitSet</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;nativeIdSet)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#ConcurrentBitSet(java.lang.String)">ConcurrentBitSet</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;bitString)</code>&nbsp;</td>
 </tr>
 </table>
@@ -189,7 +189,7 @@ implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.h
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#andNot(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)">andNot</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html" title="class in org.ihtsdo.otf.tcc.api.nid">ConcurrentBitSet</a>&nbsp;with)</code>
-<div class="block">This set becomes this & not with</div>
+<div class="block">This setIndex becomes this & not with</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -230,7 +230,9 @@ implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.h
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetItrBI</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#getIterator()">getIterator</a></strong>()</code>&nbsp;</td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#getAllBitIterator()">getAllBitIterator</a></strong>()</code>
+<div class="block">For iteration over all bits in the set (member or not).</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>int</code></td>
@@ -238,19 +240,29 @@ implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.h
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#getMaxPossibleId()">getMaxPossibleId</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#getMin()">getMin</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#getMinPossibleId()">getMinPossibleId</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#getOffSet()">getOffSet</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>int[]</code></td>
-<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#getSetValues()">getSetValues</a></strong>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetItrBI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#getSetBitIterator()">getSetBitIterator</a></strong>()</code>
+<div class="block">For iteration over only the member bits in the set.</div>
+</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicLongArray.html?is-external=true" title="class or interface in java.util.concurrent.atomic">AtomicLongArray</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#getUnits()">getUnits</a></strong>()</code>&nbsp;</td>
+<td class="colFirst"><code>int[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#getSetValues()">getSetValues</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>int</code></td>
@@ -299,54 +311,45 @@ implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.h
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#setAll(int)">setAll</a></strong>(int&nbsp;max)</code>&nbsp;</td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#setAll(int)">setAll</a></strong>(int&nbsp;max)</code>
+<div class="block">Adds all of the
+ <code>int</code> values from Integer.MIN_VALUE + 1 to (Integer.MIN_VALUE
+ + max) to the set</div>
+</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#setMaxPossibleId(int)">setMaxPossibleId</a></strong>(int&nbsp;maxPossibleId)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#setMember(int)">setMember</a></strong>(int&nbsp;nid)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#setNotMember(int)">setNotMember</a></strong>(int&nbsp;nid)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#size()">size</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>int[]</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#toIntArray()">toIntArray</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#toString()">toString</a></strong>()</code>
-<div class="block">public I_IterateIds iterator() { return new
- NidIterator(bitSet.iterator()); }
-
- private class NidIterator implements I_IterateIds {
-
- private DocIdSetIterator docIterator;
-
- //~--- constructors
- ----------------------------------------------------- private
- NidIterator(DocIdSetIterator docIterator) { super(); this.docIterator =
- docIterator; }
-
- //~--- methods
- ----------------------------------------------------------</div>
-</td>
-</tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#toString()">toString</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#union(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">union</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#xor(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)">xor</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html" title="class in org.ihtsdo.otf.tcc.api.nid">ConcurrentBitSet</a>&nbsp;with)</code>
-<div class="block">347 * This set becomes this ^ with 348</div>
-</td>
-</tr>
 <tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#xor(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)">xor</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html" title="class in org.ihtsdo.otf.tcc.api.nid">ConcurrentBitSet</a>&nbsp;other)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html#xor(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">xor</a></strong>(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
@@ -390,15 +393,6 @@ implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.h
 <pre>public&nbsp;ConcurrentBitSet(int&nbsp;bitCapacity)</pre>
 </li>
 </ul>
-<a name="ConcurrentBitSet(java.util.BitSet)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>ConcurrentBitSet</h4>
-<pre>public&nbsp;ConcurrentBitSet(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/BitSet.html?is-external=true" title="class or interface in java.util">BitSet</a>&nbsp;bitSet)</pre>
-</li>
-</ul>
 <a name="ConcurrentBitSet(org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI)">
 <!--   -->
 </a>
@@ -425,15 +419,6 @@ implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.h
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getUnits()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getUnits</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicLongArray.html?is-external=true" title="class or interface in java.util.concurrent.atomic">AtomicLongArray</a>&nbsp;getUnits()</pre>
-</li>
-</ul>
 <a name="hashCode()">
 <!--   -->
 </a>
@@ -552,8 +537,7 @@ implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.h
 <ul class="blockList">
 <li class="blockList">
 <h4>xor</h4>
-<pre>public&nbsp;void&nbsp;xor(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html" title="class in org.ihtsdo.otf.tcc.api.nid">ConcurrentBitSet</a>&nbsp;with)</pre>
-<div class="block">347 * This set becomes this ^ with 348</div>
+<pre>public&nbsp;void&nbsp;xor(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html" title="class in org.ihtsdo.otf.tcc.api.nid">ConcurrentBitSet</a>&nbsp;other)</pre>
 </li>
 </ul>
 <a name="andNot(org.ihtsdo.otf.tcc.api.nid.ConcurrentBitSet)">
@@ -563,7 +547,7 @@ implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.h
 <li class="blockList">
 <h4>andNot</h4>
 <pre>public&nbsp;void&nbsp;andNot(<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/ConcurrentBitSet.html" title="class in org.ihtsdo.otf.tcc.api.nid">ConcurrentBitSet</a>&nbsp;with)</pre>
-<div class="block">This set becomes this & not with</div>
+<div class="block">This setIndex becomes this & not with</div>
 </li>
 </ul>
 <a name="toIntArray()">
@@ -591,20 +575,6 @@ implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.h
 <li class="blockList">
 <h4>toString</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
-<div class="block">public I_IterateIds iterator() { return new
- NidIterator(bitSet.iterator()); }
-
- private class NidIterator implements I_IterateIds {
-
- private DocIdSetIterator docIterator;
-
- //~--- constructors
- ----------------------------------------------------- private
- NidIterator(DocIdSetIterator docIterator) { super(); this.docIterator =
- docIterator; }
-
- //~--- methods
- ----------------------------------------------------------</div>
 <dl>
 <dt><strong>Specified by:</strong></dt>
 <dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#toString()">toString</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
@@ -620,23 +590,44 @@ implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.h
 <li class="blockList">
 <h4>setAll</h4>
 <pre>public&nbsp;void&nbsp;setAll(int&nbsp;max)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#setAll(int)">NativeIdSetBI</a></code></strong></div>
+<div class="block">Adds all of the
+ <code>int</code> values from Integer.MIN_VALUE + 1 to (Integer.MIN_VALUE
+ + max) to the set</div>
 <dl>
 <dt><strong>Specified by:</strong></dt>
 <dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#setAll(int)">setAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="getIterator()">
+<a name="getSetBitIterator()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getIterator</h4>
-<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetItrBI</a>&nbsp;getIterator()</pre>
+<h4>getSetBitIterator</h4>
+<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetItrBI</a>&nbsp;getSetBitIterator()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#getSetBitIterator()">NativeIdSetBI</a></code></strong></div>
+<div class="block">For iteration over only the member bits in the set.</div>
 <dl>
 <dt><strong>Specified by:</strong></dt>
-<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#getIterator()">getIterator</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
-</dl>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#getSetBitIterator()">getSetBitIterator</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getAllBitIterator()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAllBitIterator</h4>
+<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetItrBI</a>&nbsp;getAllBitIterator()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#getAllBitIterator()">NativeIdSetBI</a></code></strong></div>
+<div class="block">For iteration over all bits in the set (member or not).</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#getAllBitIterator()">getAllBitIterator</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
 </li>
 </ul>
 <a name="size()">
@@ -649,7 +640,8 @@ implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.h
 <dl>
 <dt><strong>Specified by:</strong></dt>
 <dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#size()">size</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
-</dl>
+<dt><span class="strong">Returns:</span></dt><dd>the number of members in the set. Sometimes referred to as
+ cardinality.</dd></dl>
 </li>
 </ul>
 <a name="isMember(int)">
@@ -827,7 +819,7 @@ implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.h
 <dl>
 <dt><strong>Specified by:</strong></dt>
 <dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#getMax()">getMax</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
-</dl>
+<dt><span class="strong">Returns:</span></dt><dd>the largest nid that is a member of the set.</dd></dl>
 </li>
 </ul>
 <a name="getMin()">
@@ -898,7 +890,7 @@ implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.h
 <a name="isEmpty()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>isEmpty</h4>
 <pre>public&nbsp;boolean&nbsp;isEmpty()</pre>
@@ -906,6 +898,52 @@ implements <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.h
 <dt><strong>Specified by:</strong></dt>
 <dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#isEmpty()">isEmpty</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="getMaxPossibleId()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMaxPossibleId</h4>
+<pre>public&nbsp;int&nbsp;getMaxPossibleId()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#getMaxPossibleId()">getMaxPossibleId</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the largest possible id in this set,      * or <code>Integer.MAX_VALUE</code> if the largest possible id is
+ unknown. Knowing the span of identifiers is required to
+ support <code>not</code> operations and <code>xor</code> operations.</dd></dl>
+</li>
+</ul>
+<a name="getMinPossibleId()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMinPossibleId</h4>
+<pre>public&nbsp;int&nbsp;getMinPossibleId()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#getMinPossibleId()">getMinPossibleId</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the smallest possible id in this set,      * or <code>Integer.MIN_VALUE</code> if the smallest possible id is
+ unknown. Knowing the span of identifiers is required to
+ support <code>not</code> operations and <code>xor</code> operations.</dd></dl>
+</li>
+</ul>
+<a name="setMaxPossibleId(int)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setMaxPossibleId</h4>
+<pre>public&nbsp;void&nbsp;setMaxPossibleId(int&nbsp;maxPossibleId)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html#setMaxPossibleId(int)">setMaxPossibleId</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html" title="interface in org.ihtsdo.otf.tcc.api.nid">NativeIdSetBI</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>maxPossibleId</code> - the largest possible id in this set, or Integer.MAX_VALUE if
+ the largest possible id is unknown. Knowing the span of identifiers is
+ required to support <code>not</code> operations and <code>xor</code>
+ operations.</dd></dl>
 </li>
 </ul>
 </li>

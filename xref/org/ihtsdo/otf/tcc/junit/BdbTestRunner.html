@@ -63,24 +63,24 @@
 <a class="jxr_linenumber" name="53" href="#53">53</a>          }
 <a class="jxr_linenumber" name="54" href="#54">54</a>  
 <a class="jxr_linenumber" name="55" href="#55">55</a>          File dbDir = <strong class="jxr_keyword">new</strong> File(buildDirFile, annotation.bdbLocation());
-<a class="jxr_linenumber" name="56" href="#56">56</a>  
-<a class="jxr_linenumber" name="57" href="#57">57</a>          <strong class="jxr_keyword">if</strong> ((bdbLocation != <strong class="jxr_keyword">null</strong>) &amp;&amp;!bdbLocation.equals(dbDir.getAbsolutePath())) {
-<a class="jxr_linenumber" name="58" href="#58">58</a>              <strong class="jxr_keyword">try</strong> {
-<a class="jxr_linenumber" name="59" href="#59">59</a>                  Bdb.close();
-<a class="jxr_linenumber" name="60" href="#60">60</a>                  bdbLocation = <strong class="jxr_keyword">null</strong>;
-<a class="jxr_linenumber" name="61" href="#61">61</a>              } <strong class="jxr_keyword">catch</strong> (InterruptedException | ExecutionException ex) {
-<a class="jxr_linenumber" name="62" href="#62">62</a>                  <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> InitializationError(ex);
-<a class="jxr_linenumber" name="63" href="#63">63</a>              }
-<a class="jxr_linenumber" name="64" href="#64">64</a>          }
-<a class="jxr_linenumber" name="65" href="#65">65</a>  
-<a class="jxr_linenumber" name="66" href="#66">66</a>          <strong class="jxr_keyword">if</strong> (bdbLocation == <strong class="jxr_keyword">null</strong>) {
-<a class="jxr_linenumber" name="67" href="#67">67</a>              <strong class="jxr_keyword">try</strong> {
-<a class="jxr_linenumber" name="68" href="#68">68</a>                  Bdb.selectJeProperties(dbDir, dbDir);
-<a class="jxr_linenumber" name="69" href="#69">69</a>              } <strong class="jxr_keyword">catch</strong> (IOException ex) {
-<a class="jxr_linenumber" name="70" href="#70">70</a>                  <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> InitializationError(ex);
-<a class="jxr_linenumber" name="71" href="#71">71</a>              }
-<a class="jxr_linenumber" name="72" href="#72">72</a>  
-<a class="jxr_linenumber" name="73" href="#73">73</a>              System.setProperty(BdbTerminologyStore.BDB_LOCATION_PROPERTY, dbDir.getAbsolutePath());
+<a class="jxr_linenumber" name="56" href="#56">56</a>          System.setProperty(BdbTerminologyStore.BDB_LOCATION_PROPERTY, dbDir.getAbsolutePath());
+<a class="jxr_linenumber" name="57" href="#57">57</a>  
+<a class="jxr_linenumber" name="58" href="#58">58</a>          <strong class="jxr_keyword">if</strong> ((bdbLocation != <strong class="jxr_keyword">null</strong>) &amp;&amp;!bdbLocation.equals(dbDir.getAbsolutePath())) {
+<a class="jxr_linenumber" name="59" href="#59">59</a>              <strong class="jxr_keyword">try</strong> {
+<a class="jxr_linenumber" name="60" href="#60">60</a>                  Bdb.close();
+<a class="jxr_linenumber" name="61" href="#61">61</a>                  bdbLocation = <strong class="jxr_keyword">null</strong>;
+<a class="jxr_linenumber" name="62" href="#62">62</a>              } <strong class="jxr_keyword">catch</strong> (InterruptedException | ExecutionException ex) {
+<a class="jxr_linenumber" name="63" href="#63">63</a>                  <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> InitializationError(ex);
+<a class="jxr_linenumber" name="64" href="#64">64</a>              }
+<a class="jxr_linenumber" name="65" href="#65">65</a>          }
+<a class="jxr_linenumber" name="66" href="#66">66</a>  
+<a class="jxr_linenumber" name="67" href="#67">67</a>          <strong class="jxr_keyword">if</strong> (bdbLocation == <strong class="jxr_keyword">null</strong>) {
+<a class="jxr_linenumber" name="68" href="#68">68</a>              <strong class="jxr_keyword">try</strong> {
+<a class="jxr_linenumber" name="69" href="#69">69</a>                  Bdb.selectJeProperties(dbDir, dbDir);
+<a class="jxr_linenumber" name="70" href="#70">70</a>              } <strong class="jxr_keyword">catch</strong> (IOException ex) {
+<a class="jxr_linenumber" name="71" href="#71">71</a>                  <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> InitializationError(ex);
+<a class="jxr_linenumber" name="72" href="#72">72</a>              }
+<a class="jxr_linenumber" name="73" href="#73">73</a>  
 <a class="jxr_linenumber" name="74" href="#74">74</a>  
 <a class="jxr_linenumber" name="75" href="#75">75</a>              <a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTerminologyStore.html">BdbTerminologyStore</a> store = <strong class="jxr_keyword">new</strong> <a href="../../../../../org/ihtsdo/otf/tcc/datastore/BdbTerminologyStore.html">BdbTerminologyStore</a>();
 <a class="jxr_linenumber" name="76" href="#76">76</a>  

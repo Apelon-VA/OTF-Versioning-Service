@@ -95,7 +95,8 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="strong">RelationshipPairResource</span>
+<pre>@Path(value="chronicle/relationship")
+public class <span class="strong">RelationshipPairResource</span>
 extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <dl><dt><span class="strong">Author:</span></dt>
   <dd>kec</dd>
@@ -197,7 +198,11 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getDestinationRelOriginNids</h4>
-<pre>public&nbsp;javax.ws.rs.core.StreamingOutput&nbsp;getDestinationRelOriginNids(int&nbsp;nid)
+<pre>@GET
+@Path(value="origin/{nid}")
+@Produces(value="application/bdb")
+public&nbsp;javax.ws.rs.core.StreamingOutput&nbsp;getDestinationRelOriginNids(@PathParam(value="nid")
+                                                                             int&nbsp;nid)
                                                              throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
@@ -209,8 +214,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getDestinationRelOriginNidsOfType</h4>
-<pre>public&nbsp;javax.ws.rs.core.StreamingOutput&nbsp;getDestinationRelOriginNidsOfType(int&nbsp;nid,
-                                                                 <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSet.html" title="class in org.ihtsdo.otf.tcc.api.nid">NidSet</a>&nbsp;relTypes)
+<pre>@GET
+@Path(value="origin/{nid}/typed")
+@Produces(value="application/bdb")
+public&nbsp;javax.ws.rs.core.StreamingOutput&nbsp;getDestinationRelOriginNidsOfType(@PathParam(value="nid")
+                                                                                   int&nbsp;nid,
+                                                                                   @QueryParam(value="start")
+                                                                                   <a href="../../../../../../org/ihtsdo/otf/tcc/api/nid/NidSet.html" title="class in org.ihtsdo.otf.tcc.api.nid">NidSet</a>&nbsp;relTypes)
                                                                    throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>

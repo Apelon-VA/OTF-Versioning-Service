@@ -1,4 +1,5 @@
 org.ihtsdo.oft.tcc.rest.client
+org.ihtsdo.otf.query.maven
 org.ihtsdo.otf.tcc.api
 org.ihtsdo.otf.tcc.api.blueprint
 org.ihtsdo.otf.tcc.api.changeset

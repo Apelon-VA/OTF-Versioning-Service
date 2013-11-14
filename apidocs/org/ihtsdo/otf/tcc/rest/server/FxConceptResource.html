@@ -95,7 +95,8 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="strong">FxConceptResource</span>
+<pre>@Path(value="chronicle/fx-concept")
+public class <span class="strong">FxConceptResource</span>
 extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <dl><dt><span class="strong">Author:</span></dt>
   <dd>kec</dd>
@@ -221,8 +222,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getConceptByteArray</h4>
-<pre>public&nbsp;javax.ws.rs.core.StreamingOutput&nbsp;getConceptByteArray(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
-                                                   <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vcUuid)
+<pre>@GET
+@Path(value="{id}/{vcUuid}")
+@Produces(value="application/bdb")
+public&nbsp;javax.ws.rs.core.StreamingOutput&nbsp;getConceptByteArray(@PathParam(value="id")
+                                                                     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
+                                                                     @PathParam(value="vcUuid")
+                                                                     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vcUuid)
                                                      throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
@@ -234,8 +240,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getConceptHtml</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getConceptHtml(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
-                    <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vcUuid)
+<pre>@GET
+@Path(value="{id}/{vcUuid}")
+@Produces(value="text/html")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getConceptHtml(@PathParam(value="id")
+                                      <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
+                                      @PathParam(value="vcUuid")
+                                      <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vcUuid)
                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
@@ -247,8 +258,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getConceptPlain</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getConceptPlain(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
-                     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vcUuid)
+<pre>@GET
+@Path(value="{id}/{vcUuid}")
+@Produces(value="text/plain")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getConceptPlain(@PathParam(value="id")
+                                       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
+                                       @PathParam(value="vcUuid")
+                                       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vcUuid)
                        throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
@@ -260,8 +276,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getConceptXml</h4>
-<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/ddo/concept/ConceptChronicleDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept">ConceptChronicleDdo</a>&nbsp;getConceptXml(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
-                                <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vcUuid)
+<pre>@GET
+@Path(value="{id}/{vcUuid}")
+@Produces(value="application/xml")
+public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/ddo/concept/ConceptChronicleDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept">ConceptChronicleDdo</a>&nbsp;getConceptXml(@PathParam(value="id")
+                                                  <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
+                                                  @PathParam(value="vcUuid")
+                                                  <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vcUuid)
                                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
                                          <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
@@ -275,11 +296,19 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getConceptXmlPerPolicy</h4>
-<pre>public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/ddo/concept/ConceptChronicleDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept">ConceptChronicleDdo</a>&nbsp;getConceptXmlPerPolicy(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
-                                         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vcUuid,
-                                         <a href="../../../../../../org/ihtsdo/otf/tcc/ddo/fetchpolicy/VersionPolicy.html" title="enum in org.ihtsdo.otf.tcc.ddo.fetchpolicy">VersionPolicy</a>&nbsp;versionPolicy,
-                                         <a href="../../../../../../org/ihtsdo/otf/tcc/ddo/fetchpolicy/RefexPolicy.html" title="enum in org.ihtsdo.otf.tcc.ddo.fetchpolicy">RefexPolicy</a>&nbsp;refexPolicy,
-                                         <a href="../../../../../../org/ihtsdo/otf/tcc/ddo/fetchpolicy/RelationshipPolicy.html" title="enum in org.ihtsdo.otf.tcc.ddo.fetchpolicy">RelationshipPolicy</a>&nbsp;relationshipPolicy)
+<pre>@GET
+@Path(value="{id}/{vcUuid}/{versionPolicy}/{refexPolicy}/{relationshipPolicy}")
+@Produces(value="application/xml")
+public&nbsp;<a href="../../../../../../org/ihtsdo/otf/tcc/ddo/concept/ConceptChronicleDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept">ConceptChronicleDdo</a>&nbsp;getConceptXmlPerPolicy(@PathParam(value="id")
+                                                           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
+                                                           @PathParam(value="vcUuid")
+                                                           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vcUuid,
+                                                           @PathParam(value="versionPolicy")
+                                                           <a href="../../../../../../org/ihtsdo/otf/tcc/ddo/fetchpolicy/VersionPolicy.html" title="enum in org.ihtsdo.otf.tcc.ddo.fetchpolicy">VersionPolicy</a>&nbsp;versionPolicy,
+                                                           @PathParam(value="refexPolicy")
+                                                           <a href="../../../../../../org/ihtsdo/otf/tcc/ddo/fetchpolicy/RefexPolicy.html" title="enum in org.ihtsdo.otf.tcc.ddo.fetchpolicy">RefexPolicy</a>&nbsp;refexPolicy,
+                                                           @PathParam(value="relationshipPolicy")
+                                                           <a href="../../../../../../org/ihtsdo/otf/tcc/ddo/fetchpolicy/RelationshipPolicy.html" title="enum in org.ihtsdo.otf.tcc.ddo.fetchpolicy">RelationshipPolicy</a>&nbsp;relationshipPolicy)
                                            throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
                                                   <a href="../../../../../../org/ihtsdo/otf/tcc/api/contradiction/ContradictionException.html" title="class in org.ihtsdo.otf.tcc.api.contradiction">ContradictionException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
@@ -293,8 +322,13 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getEConceptByteArray</h4>
-<pre>public&nbsp;javax.ws.rs.core.StreamingOutput&nbsp;getEConceptByteArray(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
-                                                    <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vcUuid)
+<pre>@GET
+@Path(value="{id}/{vcUuid}")
+@Produces(value="application/econ")
+public&nbsp;javax.ws.rs.core.StreamingOutput&nbsp;getEConceptByteArray(@PathParam(value="id")
+                                                                      <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
+                                                                      @PathParam(value="vcUuid")
+                                                                      <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;vcUuid)
                                                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>

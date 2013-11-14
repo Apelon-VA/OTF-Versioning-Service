@@ -36,7 +36,7 @@
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/RelationshipPairResource.html" title="class in org.ihtsdo.otf.tcc.rest.server"><span class="strong">Prev Class</span></a></li>
-<li><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/StampResource.html" title="class in org.ihtsdo.otf.tcc.rest.server"><span class="strong">Next Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/SetupServerDependencies.html" title="class in org.ihtsdo.otf.tcc.rest.server"><span class="strong">Next Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/rest/server/SequenceResource.html" target="_top">Frames</a></li>
@@ -95,7 +95,8 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="strong">SequenceResource</span>
+<pre>@Path(value="chronicle/sequence")
+public class <span class="strong">SequenceResource</span>
 extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <dl><dt><span class="strong">Author:</span></dt>
   <dd>kec</dd>
@@ -198,7 +199,9 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getSequence</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSequence()
+<pre>@GET
+@Produces(value="text/plain")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSequence()
                    throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
@@ -210,7 +213,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getLastCancel</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getLastCancel()
+<pre>@GET
+@Path(value="/last-cancel")
+@Produces(value="text/plain")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getLastCancel()
                      throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
@@ -222,7 +228,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getLastCommit</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getLastCommit()
+<pre>@GET
+@Path(value="/last-commit")
+@Produces(value="text/plain")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getLastCommit()
                      throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
@@ -234,7 +243,10 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getNextSequence</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getNextSequence()
+<pre>@GET
+@Path(value="/next")
+@Produces(value="text/plain")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getNextSequence()
                        throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl><dt><span class="strong">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
@@ -267,7 +279,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/RelationshipPairResource.html" title="class in org.ihtsdo.otf.tcc.rest.server"><span class="strong">Prev Class</span></a></li>
-<li><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/StampResource.html" title="class in org.ihtsdo.otf.tcc.rest.server"><span class="strong">Next Class</span></a></li>
+<li><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/SetupServerDependencies.html" title="class in org.ihtsdo.otf.tcc.rest.server"><span class="strong">Next Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?org/ihtsdo/otf/tcc/rest/server/SequenceResource.html" target="_top">Frames</a></li>

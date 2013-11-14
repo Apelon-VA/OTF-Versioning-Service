@@ -156,8 +156,8 @@
 <a class="jxr_linenumber" name="146" href="#146">146</a>         <strong class="jxr_keyword">synchronized</strong> (uncommittedCNids) {
 <a class="jxr_linenumber" name="147" href="#147">147</a>             <strong class="jxr_keyword">synchronized</strong> (uncommittedCNidsNoChecks) {
 <a class="jxr_linenumber" name="148" href="#148">148</a>                     <strong class="jxr_keyword">try</strong> {
-<a class="jxr_linenumber" name="149" href="#149">149</a>                         <a href="../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html">NativeIdSetItrBI</a> uncommittedCNidsItr = uncommittedCNids.getIterator();
-<a class="jxr_linenumber" name="150" href="#150">150</a>                         <a href="../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html">NativeIdSetItrBI</a> uncommittedCNidsNoChecksItr = uncommittedCNidsNoChecks.getIterator();
+<a class="jxr_linenumber" name="149" href="#149">149</a>                         <a href="../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html">NativeIdSetItrBI</a> uncommittedCNidsItr = uncommittedCNids.getSetBitIterator();
+<a class="jxr_linenumber" name="150" href="#150">150</a>                         <a href="../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html">NativeIdSetItrBI</a> uncommittedCNidsNoChecksItr = uncommittedCNidsNoChecks.getSetBitIterator();
 <a class="jxr_linenumber" name="151" href="#151">151</a>                         Set&lt;Integer&gt; cNidSet = <strong class="jxr_keyword">new</strong> HashSet&lt;&gt;();
 <a class="jxr_linenumber" name="152" href="#152">152</a> 
 <a class="jxr_linenumber" name="153" href="#153">153</a>                         <strong class="jxr_keyword">while</strong> (uncommittedCNidsItr.next()) {
@@ -217,7 +217,7 @@
 <a class="jxr_linenumber" name="207" href="#207">207</a>                         }
 <a class="jxr_linenumber" name="208" href="#208">208</a> 
 <a class="jxr_linenumber" name="209" href="#209">209</a>                         <strong class="jxr_keyword">if</strong> (performCreationTests) {
-<a class="jxr_linenumber" name="210" href="#210">210</a>                             <a href="../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html">NativeIdSetItrBI</a> uncommittedCNidItr = uncommittedCNids.getIterator();
+<a class="jxr_linenumber" name="210" href="#210">210</a>                             <a href="../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html">NativeIdSetItrBI</a> uncommittedCNidItr = uncommittedCNids.getSetBitIterator();
 <a class="jxr_linenumber" name="211" href="#211">211</a> 
 <a class="jxr_linenumber" name="212" href="#212">212</a>                         <strong class="jxr_keyword">if</strong> (performCommit) {
 <a class="jxr_linenumber" name="213" href="#213">213</a>                             lastCommit = Bdb.gVersion.incrementAndGet();
@@ -233,7 +233,7 @@
 <a class="jxr_linenumber" name="223" href="#223">223</a>                                 
 <a class="jxr_linenumber" name="224" href="#224">224</a>                             }
 <a class="jxr_linenumber" name="225" href="#225">225</a> 
-<a class="jxr_linenumber" name="226" href="#226">226</a>                             <a href="../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html">NativeIdSetItrBI</a> uncommittedCNidItrNoChecks = uncommittedCNidsNoChecks.getIterator();
+<a class="jxr_linenumber" name="226" href="#226">226</a>                             <a href="../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html">NativeIdSetItrBI</a> uncommittedCNidItrNoChecks = uncommittedCNidsNoChecks.getSetBitIterator();
 <a class="jxr_linenumber" name="227" href="#227">227</a> 
 <a class="jxr_linenumber" name="228" href="#228">228</a>                             <strong class="jxr_keyword">long</strong> commitTime = System.currentTimeMillis();
 <a class="jxr_linenumber" name="229" href="#229">229</a>                             <a href="../../../../../org/ihtsdo/otf/tcc/api/nid/NidSetBI.html">NidSetBI</a> sapNidsFromCommit = Bdb.getStampDb().commit(commitTime);
@@ -573,7 +573,7 @@
 <a class="jxr_linenumber" name="563" href="#563">563</a>     }
 <a class="jxr_linenumber" name="564" href="#564">564</a> 
 <a class="jxr_linenumber" name="565" href="#565">565</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">void</strong> handleCanceledConcepts(<a href="../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetBI.html">NativeIdSetBI</a> uncommittedCNids2) <strong class="jxr_keyword">throws</strong> IOException {
-<a class="jxr_linenumber" name="566" href="#566">566</a>         <a href="../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html">NativeIdSetItrBI</a> idItr = uncommittedCNids2.getIterator();
+<a class="jxr_linenumber" name="566" href="#566">566</a>         <a href="../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html">NativeIdSetItrBI</a> idItr = uncommittedCNids2.getSetBitIterator();
 <a class="jxr_linenumber" name="567" href="#567">567</a> 
 <a class="jxr_linenumber" name="568" href="#568">568</a>         <strong class="jxr_keyword">while</strong> (idItr.next()) {
 <a class="jxr_linenumber" name="569" href="#569">569</a>             <strong class="jxr_keyword">try</strong> {
@@ -694,13 +694,13 @@
 <a class="jxr_linenumber" name="684" href="#684">684</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> Set&lt;ConceptChronicle&gt; getUncommitted() {
 <a class="jxr_linenumber" name="685" href="#685">685</a>         <strong class="jxr_keyword">try</strong> {
 <a class="jxr_linenumber" name="686" href="#686">686</a>             Set&lt;ConceptChronicle&gt; returnSet = <strong class="jxr_keyword">new</strong> HashSet&lt;&gt;();
-<a class="jxr_linenumber" name="687" href="#687">687</a>             <a href="../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html">NativeIdSetItrBI</a> cNidItr = uncommittedCNids.getIterator();
+<a class="jxr_linenumber" name="687" href="#687">687</a>             <a href="../../../../../org/ihtsdo/otf/tcc/api/nid/NativeIdSetItrBI.html">NativeIdSetItrBI</a> cNidItr = uncommittedCNids.getSetBitIterator();
 <a class="jxr_linenumber" name="688" href="#688">688</a> 
 <a class="jxr_linenumber" name="689" href="#689">689</a>             <strong class="jxr_keyword">while</strong> (cNidItr.next()) {
 <a class="jxr_linenumber" name="690" href="#690">690</a>                 returnSet.add(ConceptChronicle.get(cNidItr.nid()));
 <a class="jxr_linenumber" name="691" href="#691">691</a>             }
 <a class="jxr_linenumber" name="692" href="#692">692</a> 
-<a class="jxr_linenumber" name="693" href="#693">693</a>             cNidItr = uncommittedCNidsNoChecks.getIterator();
+<a class="jxr_linenumber" name="693" href="#693">693</a>             cNidItr = uncommittedCNidsNoChecks.getSetBitIterator();
 <a class="jxr_linenumber" name="694" href="#694">694</a> 
 <a class="jxr_linenumber" name="695" href="#695">695</a>             <strong class="jxr_keyword">while</strong> (cNidItr.next()) {
 <a class="jxr_linenumber" name="696" href="#696">696</a>                 returnSet.add(ConceptChronicle.get(cNidItr.nid()));
@@ -791,7 +791,7 @@
 <a class="jxr_linenumber" name="781" href="#781">781</a>         <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> run() {
 <a class="jxr_linenumber" name="782" href="#782">782</a>             <strong class="jxr_keyword">try</strong> {
 <a class="jxr_linenumber" name="783" href="#783">783</a>                 Collection&lt;Integer&gt; nids = concept.getAllNids();
-<a class="jxr_linenumber" name="784" href="#784">784</a>                 <a href="../../../../../org/ihtsdo/otf/tcc/datastore/id/MemoryCacheBdb.html">MemoryCacheBdb</a> nidCidMap = Bdb.getNidCNidMap();
+<a class="jxr_linenumber" name="784" href="#784">784</a>                 <a href="../../../../../org/ihtsdo/otf/tcc/datastore/id/MemoryCacheBdb.html">MemoryCacheBdb</a> nidCidMap = Bdb.getMemoryCache();
 <a class="jxr_linenumber" name="785" href="#785">785</a> 
 <a class="jxr_linenumber" name="786" href="#786">786</a>                 <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">int</strong> nid : nids) {
 <a class="jxr_linenumber" name="787" href="#787">787</a>                     nidCidMap.setCNidForNid(concept.getNid(), nid);
