@@ -1437,6 +1437,28 @@
 </li>
 </ul>
 </li>
+<li class="blockList"><a name="org.ihtsdo.otf.tcc.ddo.concept.component.SimpleVersionDdo">
+<!--   -->
+</a>
+<h3>Class <a href="org/ihtsdo/otf/tcc/ddo/concept/component/SimpleVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component">org.ihtsdo.otf.tcc.ddo.concept.component.SimpleVersionDdo</a> extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockListLast">
+<h4>fxTime</h4>
+<pre><a href="org/ihtsdo/otf/tcc/ddo/TimeReference.html" title="class in org.ihtsdo.otf.tcc.ddo">TimeReference</a> fxTime</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="blockList"><a name="org.ihtsdo.otf.tcc.ddo.concept.component.TypedComponentVersionDdo">
 <!--   -->
 </a>
@@ -1592,6 +1614,52 @@
 <li class="blockListLast">
 <h4>textProperty</h4>
 <pre>javafx.beans.property.SimpleStringProperty textProperty</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a name="org.ihtsdo.otf.tcc.ddo.concept.component.description.SimpleDescriptionVersionDdo">
+<!--   -->
+</a>
+<h3>Class <a href="org/ihtsdo/otf/tcc/ddo/concept/component/description/SimpleDescriptionVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component.description">org.ihtsdo.otf.tcc.ddo.concept.component.description.SimpleDescriptionVersionDdo</a> extends <a href="org/ihtsdo/otf/tcc/ddo/concept/component/SimpleVersionDdo.html" title="class in org.ihtsdo.otf.tcc.ddo.concept.component">SimpleVersionDdo</a> implements Serializable</h3>
+<dl class="nameValue">
+<dt>serialVersionUID:</dt>
+<dd>1L</dd>
+</dl>
+<ul class="blockList">
+<li class="blockList"><a name="serializedForm">
+<!--   -->
+</a>
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>textProperty</h4>
+<pre>javafx.beans.property.SimpleStringProperty textProperty</pre>
+</li>
+<li class="blockList">
+<h4>languageProperty</h4>
+<pre>javafx.beans.property.SimpleStringProperty languageProperty</pre>
+</li>
+<li class="blockList">
+<h4>timeProperty</h4>
+<pre>javafx.beans.property.SimpleStringProperty timeProperty</pre>
+</li>
+<li class="blockList">
+<h4>typeProperty</h4>
+<pre>javafx.beans.property.SimpleStringProperty typeProperty</pre>
+</li>
+<li class="blockList">
+<h4>typeNid</h4>
+<pre>int typeNid</pre>
+</li>
+<li class="blockList">
+<h4>cv</h4>
+<pre><a href="org/ihtsdo/otf/tcc/api/concept/ConceptVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.concept">ConceptVersionBI</a> cv</pre>
+</li>
+<li class="blockListLast">
+<h4>dv</h4>
+<pre><a href="org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionVersionBI</a>&lt;<a href="org/ihtsdo/otf/tcc/api/description/DescriptionVersionBI.html" title="type parameter in DescriptionVersionBI">A</a> extends <a href="org/ihtsdo/otf/tcc/api/description/DescriptionAnalogBI.html" title="interface in org.ihtsdo.otf.tcc.api.description">DescriptionAnalogBI</a>&gt; dv</pre>
 </li>
 </ul>
 </li>
@@ -2836,9 +2904,17 @@
 <h4>tryCount</h4>
 <pre>int tryCount</pre>
 </li>
-<li class="blockListLast">
+<li class="blockList">
+<h4>dbSetupCount</h4>
+<pre>int dbSetupCount</pre>
+</li>
+<li class="blockList">
 <h4>setupThread</h4>
 <pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html?is-external=true" title="class or interface in java.lang">Thread</a> setupThread</pre>
+</li>
+<li class="blockListLast">
+<h4>deleteBdb</h4>
+<pre>boolean deleteBdb</pre>
 </li>
 </ul>
 </li>

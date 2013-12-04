@@ -116,17 +116,22 @@
 <br>
 <pre>public class <span class="strong">ChronicleServletContainer</span>
 extends org.glassfish.jersey.servlet.ServletContainer</pre>
-<div class="block">Overriding ServletContainer to enable access to
- <code>init()</code> and
+<div class="block">Overriding ServletContainer to enable access to <code>init()</code> and
  <code>destroy()</code> methods.</div>
 <dl><dt><span class="strong">Author:</span></dt>
   <dd>kec</dd>
-<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../serialized-form.html#org.ihtsdo.otf.tcc.rest.server.ChronicleServletContainer">Serialized Form</a></dd><DT>&nbsp;</DT><DD><map name="umlmap604W0H0"><area shape="rect" coords="6,519,129,536" href="http://www.yworks.com/" alt=""><area shape="rect" coords="399,136,647,162" href="#" alt=""><area shape="rect" coords="263,163,439,179" href="#maxHeaderSize" alt=""><area shape="rect" coords="263,179,412,195" href="#status" alt=""><area shape="rect" coords="263,196,457,212" href="#ChronicleServletContainer()" alt=""><area shape="rect" coords="263,213,381,229" href="#destroy()" alt=""><area shape="rect" coords="263,229,514,245" href="#getServletContext()" alt=""><area shape="rect" coords="263,245,351,261" href="#init()" alt=""><area shape="rect" coords="263,261,769,277" href="#service(java.net.URI, java.net.URI, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)" alt=""><area shape="rect" coords="263,277,641,293" href="#service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)" alt=""><area shape="rect" coords="255,110,442,127" href="package-summary.html" alt=""><area shape="rect" coords="133,169,195,192" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html" alt=""><area shape="rect" coords="133,136,196,159" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html" alt=""><area shape="rect" coords="124,110,191,127" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="26,256,143,279" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html" alt=""><area shape="rect" coords="16,230,189,248" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/package-summary.html" alt=""><area shape="rect" coords="19,343,193,366" href="../../../../../../org/ihtsdo/otf/tcc/datastore/BdbTerminologyStore.html" alt=""><area shape="rect" coords="8,317,189,335" href="../../../../../../org/ihtsdo/otf/tcc/datastore/package-summary.html" alt=""><area shape="rect" coords="11,430,114,453" href="../../../../../../org/ihtsdo/otf/tcc/rest/server/SetupStatus.html" alt=""><area shape="rect" coords="2,404,189,422" href="../../../../../../org/ihtsdo/otf/tcc/rest/server/package-summary.html" alt=""></map>
-<map name="umlmap604W1H0"><area shape="rect" coords="-164,136,83,162" href="#" alt=""><area shape="rect" coords="-301,163,-125,179" href="#maxHeaderSize" alt=""><area shape="rect" coords="-301,179,-152,195" href="#status" alt=""><area shape="rect" coords="-301,196,-107,212" href="#ChronicleServletContainer()" alt=""><area shape="rect" coords="-301,213,-183,229" href="#destroy()" alt=""><area shape="rect" coords="-301,229,-50,245" href="#getServletContext()" alt=""><area shape="rect" coords="-301,245,-213,261" href="#init()" alt=""><area shape="rect" coords="-301,261,205,277" href="#service(java.net.URI, java.net.URI, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)" alt=""><area shape="rect" coords="-301,277,77,293" href="#service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)" alt=""><area shape="rect" coords="-309,110,-122,127" href="package-summary.html" alt=""><area shape="rect" coords="286,136,317,159" href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html" alt=""><area shape="rect" coords="278,110,339,127" href="http://docs.oracle.com/javase/7/docs/api/java/net/package-summary.html" alt=""></map>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../serialized-form.html#org.ihtsdo.otf.tcc.rest.server.ChronicleServletContainer">Serialized Form</a></dd><DT>&nbsp;</DT><DD><map name="umlmap606W0H0"><area shape="rect" coords="399,136,647,162" href="#" alt=""><area shape="rect" coords="263,163,439,179" href="#maxHeaderSize" alt=""><area shape="rect" coords="263,179,412,195" href="#status" alt=""><area shape="rect" coords="263,196,457,212" href="#ChronicleServletContainer()" alt=""><area shape="rect" coords="263,213,381,229" href="#destroy()" alt=""><area shape="rect" coords="263,229,449,245" href="#getFolderSize(java.io.File...)" alt=""><area shape="rect" coords="263,245,514,261" href="#getServletContext()" alt=""><area shape="rect" coords="263,261,351,277" href="#init()" alt=""><area shape="rect" coords="263,277,451,293" href="#listFiles(java.lang.String)" alt=""><area shape="rect" coords="263,293,427,309" href="#outputFileSizes()" alt=""><area shape="rect" coords="263,309,769,325" href="#service(java.net.URI, java.net.URI, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)" alt=""><area shape="rect" coords="263,325,641,341" href="#service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)" alt=""><area shape="rect" coords="255,110,442,127" href="package-summary.html" alt=""><area shape="rect" coords="133,169,195,192" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html" alt=""><area shape="rect" coords="133,136,196,159" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html" alt=""><area shape="rect" coords="124,110,191,127" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="26,256,143,279" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html" alt=""><area shape="rect" coords="16,230,189,248" href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/package-summary.html" alt=""><area shape="rect" coords="19,343,193,366" href="../../../../../../org/ihtsdo/otf/tcc/datastore/BdbTerminologyStore.html" alt=""><area shape="rect" coords="8,317,189,335" href="../../../../../../org/ihtsdo/otf/tcc/datastore/package-summary.html" alt=""><area shape="rect" coords="2,404,189,422" href="../../../../../../org/ihtsdo/otf/tcc/rest/server/package-summary.html" alt=""></map>
+<map name="umlmap606W1H0"><area shape="rect" coords="-164,136,83,162" href="#" alt=""><area shape="rect" coords="-301,163,-125,179" href="#maxHeaderSize" alt=""><area shape="rect" coords="-301,179,-152,195" href="#status" alt=""><area shape="rect" coords="-301,196,-107,212" href="#ChronicleServletContainer()" alt=""><area shape="rect" coords="-301,213,-183,229" href="#destroy()" alt=""><area shape="rect" coords="-301,229,-115,245" href="#getFolderSize(java.io.File...)" alt=""><area shape="rect" coords="-301,245,-50,261" href="#getServletContext()" alt=""><area shape="rect" coords="-301,261,-213,277" href="#init()" alt=""><area shape="rect" coords="-301,277,-113,293" href="#listFiles(java.lang.String)" alt=""><area shape="rect" coords="-301,293,-137,309" href="#outputFileSizes()" alt=""><area shape="rect" coords="-301,309,205,325" href="#service(java.net.URI, java.net.URI, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)" alt=""><area shape="rect" coords="-301,325,77,341" href="#service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)" alt=""><area shape="rect" coords="-309,110,-122,127" href="package-summary.html" alt=""><area shape="rect" coords="286,136,320,159" href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html" alt=""><area shape="rect" coords="278,110,330,127" href="http://docs.oracle.com/javase/7/docs/api/java/io/package-summary.html" alt=""><area shape="rect" coords="286,223,340,246" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" alt=""><area shape="rect" coords="278,197,345,215" href="http://docs.oracle.com/javase/7/docs/api/java/lang/package-summary.html" alt=""><area shape="rect" coords="286,310,317,333" href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html" alt=""><area shape="rect" coords="278,284,339,302" href="http://docs.oracle.com/javase/7/docs/api/java/net/package-summary.html" alt=""><area shape="rect" coords="301,402,366,425" href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html" alt=""><area shape="rect" coords="278,371,337,389" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""></map>
+<map name="umlmap606W0H1"><area shape="rect" coords="6,382,129,399" href="http://www.yworks.com/" alt=""><area shape="rect" coords="399,-272,647,-245" href="#" alt=""><area shape="rect" coords="263,-244,439,-228" href="#maxHeaderSize" alt=""><area shape="rect" coords="263,-228,412,-212" href="#status" alt=""><area shape="rect" coords="263,-211,457,-195" href="#ChronicleServletContainer()" alt=""><area shape="rect" coords="263,-194,381,-178" href="#destroy()" alt=""><area shape="rect" coords="263,-178,449,-162" href="#getFolderSize(java.io.File...)" alt=""><area shape="rect" coords="263,-162,514,-146" href="#getServletContext()" alt=""><area shape="rect" coords="263,-146,351,-130" href="#init()" alt=""><area shape="rect" coords="263,-130,451,-114" href="#listFiles(java.lang.String)" alt=""><area shape="rect" coords="263,-114,427,-98" href="#outputFileSizes()" alt=""><area shape="rect" coords="263,-98,769,-82" href="#service(java.net.URI, java.net.URI, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)" alt=""><area shape="rect" coords="263,-82,641,-66" href="#service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)" alt=""><area shape="rect" coords="255,-298,442,-280" href="package-summary.html" alt=""><area shape="rect" coords="11,22,114,45" href="../../../../../../org/ihtsdo/otf/tcc/rest/server/SetupStatus.html" alt=""><area shape="rect" coords="2,-3,189,14" href="../../../../../../org/ihtsdo/otf/tcc/rest/server/package-summary.html" alt=""></map>
+<map name="umlmap606W1H1"><area shape="rect" coords="-164,-272,83,-245" href="#" alt=""><area shape="rect" coords="-301,-244,-125,-228" href="#maxHeaderSize" alt=""><area shape="rect" coords="-301,-228,-152,-212" href="#status" alt=""><area shape="rect" coords="-301,-211,-107,-195" href="#ChronicleServletContainer()" alt=""><area shape="rect" coords="-301,-194,-183,-178" href="#destroy()" alt=""><area shape="rect" coords="-301,-178,-115,-162" href="#getFolderSize(java.io.File...)" alt=""><area shape="rect" coords="-301,-162,-50,-146" href="#getServletContext()" alt=""><area shape="rect" coords="-301,-146,-213,-130" href="#init()" alt=""><area shape="rect" coords="-301,-130,-113,-114" href="#listFiles(java.lang.String)" alt=""><area shape="rect" coords="-301,-114,-137,-98" href="#outputFileSizes()" alt=""><area shape="rect" coords="-301,-98,205,-82" href="#service(java.net.URI, java.net.URI, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)" alt=""><area shape="rect" coords="-301,-82,77,-66" href="#service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)" alt=""><area shape="rect" coords="-309,-298,-122,-280" href="package-summary.html" alt=""><area shape="rect" coords="301,-5,366,17" href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html" alt=""><area shape="rect" coords="278,-36,337,-18" href="http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html" alt=""></map>
 <A NAME="UmlDiagram"></A><CENTER><TABLE CLASS="UmlTable" BORDER="0" CELLSPACING="0" CELLPADDING="0">
 <TR CLASS="UmlTableRow">
-<TD CLASS="UmlTableCell"><IMG SRC="ChronicleServletContainerW0H0.png" WIDTH="564" HEIGHT="545" USEMAP="#umlmap604W0H0" BORDER="0"></TD>
-<TD CLASS="UmlTableCell"><IMG SRC="ChronicleServletContainerW1H0.png" WIDTH="564" HEIGHT="545" USEMAP="#umlmap604W1H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ChronicleServletContainerW0H0.png" WIDTH="564" HEIGHT="408" USEMAP="#umlmap606W0H0" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ChronicleServletContainerW1H0.png" WIDTH="564" HEIGHT="408" USEMAP="#umlmap606W1H0" BORDER="0"></TD>
+</TR>
+<TR CLASS="UmlTableRow">
+<TD CLASS="UmlTableCell"><IMG SRC="ChronicleServletContainerW0H1.png" WIDTH="564" HEIGHT="408" USEMAP="#umlmap606W0H1" BORDER="0"></TD>
+<TD CLASS="UmlTableCell"><IMG SRC="ChronicleServletContainerW1H1.png" WIDTH="564" HEIGHT="408" USEMAP="#umlmap606W1H1" BORDER="0"></TD>
 </TR>
 </TABLE></CENTER></DD>
 <!-- yWorks UML Doclet   http://www.yworks.com/   b0ac8294d3f86ae0003f3a3a002ea3cf577df824efc6f2... --></dl>
@@ -193,19 +198,31 @@ extends org.glassfish.jersey.servlet.ServletContainer</pre>
 <td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/ChronicleServletContainer.html#destroy()">destroy</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/ChronicleServletContainer.html#getFolderSize(java.io.File...)">getFolderSize</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>...&nbsp;selectedDirectories)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>javax.servlet.ServletContext</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/ChronicleServletContainer.html#getServletContext()">getServletContext</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/ChronicleServletContainer.html#init()">init</a></strong>()</code>&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/ChronicleServletContainer.html#listFiles(java.lang.String)">listFiles</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;directoryName)</code>&nbsp;</td>
+</tr>
 <tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/ChronicleServletContainer.html#outputFileSizes()">outputFileSizes</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/ChronicleServletContainer.html#service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)">service</a></strong>(javax.servlet.http.HttpServletRequest&nbsp;request,
        javax.servlet.http.HttpServletResponse&nbsp;response)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>org.glassfish.jersey.internal.util.collection.Value&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/ihtsdo/otf/tcc/rest/server/ChronicleServletContainer.html#service(java.net.URI, java.net.URI, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)">service</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;baseUri,
        <a href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;requestUri,
@@ -366,7 +383,7 @@ extends org.glassfish.jersey.servlet.ServletContainer</pre>
 <a name="service(java.net.URI, java.net.URI, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>service</h4>
 <pre>public&nbsp;org.glassfish.jersey.internal.util.collection.Value&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;service(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;baseUri,
@@ -381,6 +398,33 @@ extends org.glassfish.jersey.servlet.ServletContainer</pre>
 <dt><span class="strong">Throws:</span></dt>
 <dd><code>javax.servlet.ServletException</code></dd>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="outputFileSizes()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>outputFileSizes</h4>
+<pre>public&nbsp;void&nbsp;outputFileSizes()</pre>
+</li>
+</ul>
+<a name="getFolderSize(java.io.File...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFolderSize</h4>
+<pre>public static&nbsp;long&nbsp;getFolderSize(<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>...&nbsp;selectedDirectories)</pre>
+</li>
+</ul>
+<a name="listFiles(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>listFiles</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&gt;&nbsp;listFiles(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;directoryName)</pre>
 </li>
 </ul>
 </li>
