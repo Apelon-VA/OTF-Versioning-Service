@@ -298,6 +298,31 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">ConceptCB.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptCB.html#recomputeUuid()">recomputeUuid</a></strong>()</code>
+<div class="block">Resets the enclosing or source concepts for the components on this concept.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">DescriptionCAB.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#recomputeUuid()">recomputeUuid</a></strong>()</code>
+<div class="block">Computes the uuid for this description based on the enclosing concept
+ uuid, description type uuid, language, and description text.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract void</code></td>
+<td class="colLast"><span class="strong">CreateOrAmendBlueprint.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#recomputeUuid()">recomputeUuid</a></strong>()</code>
+<div class="block">This method is implemented by the other component blueprint classes.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">ConceptAttributeAB.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html#recomputeUuid()">recomputeUuid</a></strong>()</code>
+<div class="block">The UUID for ConAttrAB is set when the enclosing concept is created.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="strong">RefexCAB.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html#recomputeUuid()">recomputeUuid</a></strong>()</code>
 <div class="block">Recomputes the refex member uuid.</div>
 </td>
@@ -307,31 +332,6 @@
 <td class="colLast"><span class="strong">MediaCAB.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html#recomputeUuid()">recomputeUuid</a></strong>()</code>
 <div class="block">Computes the uuid for this media based on the enclosing concept uuid and
  the data bytes.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="strong">DescriptionCAB.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/DescriptionCAB.html#recomputeUuid()">recomputeUuid</a></strong>()</code>
-<div class="block">Computes the uuid for this description based on the enclosing concept
- uuid, description type uuid, language, and description text.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>abstract void</code></td>
-<td class="colLast"><span class="strong">CreateOrAmendBlueprint.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/CreateOrAmendBlueprint.html#recomputeUuid()">recomputeUuid</a></strong>()</code>
-<div class="block">This method is implemented by the other component blueprint classes.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="strong">ConceptCB.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptCB.html#recomputeUuid()">recomputeUuid</a></strong>()</code>
-<div class="block">Resets the enclosing or source concepts for the components on this concept.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="strong">ConceptAttributeAB.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/ConceptAttributeAB.html#recomputeUuid()">recomputeUuid</a></strong>()</code>
-<div class="block">The UUID for ConAttrAB is set when the enclosing concept is created.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -1026,19 +1026,19 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">MediaCAB</a></code></td>
-<td class="colLast"><span class="strong">MediaRevision.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/media/MediaRevision.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
+<td class="colLast"><span class="strong">Media.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/media/Media.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">MediaCAB</a></code></td>
-<td class="colLast"><span class="strong">Media.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/media/Media.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
+<td class="colLast"><span class="strong">Media.Version.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/media/Media.Version.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/MediaCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">MediaCAB</a></code></td>
-<td class="colLast"><span class="strong">Media.Version.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/media/Media.Version.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
+<td class="colLast"><span class="strong">MediaRevision.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/media/MediaRevision.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)</code>&nbsp;</td>
 </tr>
@@ -1065,19 +1065,19 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RefexCAB</a></code></td>
-<td class="colLast"><span class="strong">RefexRevision.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
+<td class="colLast"><span class="strong">RefexMember.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RefexCAB</a></code></td>
-<td class="colLast"><span class="strong">RefexMember.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
+<td class="colLast"><span class="strong">RefexMember.Version.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.Version.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexCAB.html" title="class in org.ihtsdo.otf.tcc.api.blueprint">RefexCAB</a></code></td>
-<td class="colLast"><span class="strong">RefexMember.Version.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexMember.Version.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
+<td class="colLast"><span class="strong">RefexRevision.</span><code><strong><a href="../../../../../../../org/ihtsdo/otf/tcc/model/cc/refex/RefexRevision.html#makeBlueprint(org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate, org.ihtsdo.otf.tcc.api.blueprint.IdDirective, org.ihtsdo.otf.tcc.api.blueprint.RefexDirective)">makeBlueprint</a></strong>(<a href="../../../../../../../org/ihtsdo/otf/tcc/api/coordinate/ViewCoordinate.html" title="class in org.ihtsdo.otf.tcc.api.coordinate">ViewCoordinate</a>&nbsp;vc,
              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/IdDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">IdDirective</a>&nbsp;idDirective,
              <a href="../../../../../../../org/ihtsdo/otf/tcc/api/blueprint/RefexDirective.html" title="enum in org.ihtsdo.otf.tcc.api.blueprint">RefexDirective</a>&nbsp;refexDirective)</code>&nbsp;</td>
 </tr>
