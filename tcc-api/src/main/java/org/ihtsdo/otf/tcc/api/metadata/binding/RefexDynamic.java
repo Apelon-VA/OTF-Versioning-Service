@@ -58,7 +58,7 @@ public class RefexDynamic
 	//an organizational concept for all of the new concepts being added to the Refset Auxiliary Concept tree
 	public static ConceptSpecWithDescriptions REFEX_DYNAMIC_TYPES = new ConceptSpecWithDescriptions("dynamic refex types", 
 			UUID.fromString("647b6283-7c5f-53ff-a5f7-a40c865b1ef0"), 
-			new String[] {"dynamic sememe types", "dynamic refex types"},
+			new String[] {"sememe dynamic types", "refex dynamic types"},
 			new String[] {},
 			Taxonomies.REFSET_AUX);
 	
@@ -66,7 +66,7 @@ public class RefexDynamic
 	//within the system.
 	public static ConceptSpecWithDescriptions REFEX_DYNAMIC_COLUMNS = new ConceptSpecWithDescriptions("dynamic refex columns", 
 			UUID.fromString("a6767545-14d4-50f7-9522-2ddc37c2f676"),
-			new String[] {"dynamic sememe columns", "dynamic refex columns"},
+			new String[] {"sememe dynamic columns", "refex dynamic columns"},
 			new String[] {},
 			REFEX_DYNAMIC_TYPES);
 
@@ -127,7 +127,7 @@ public class RefexDynamic
 	//using the concept containing the description as an assemblage concept.
 	public static DynamicRefexConceptSpec REFEX_DYNAMIC_DEFINITION_DESCRIPTION = new DynamicRefexConceptSpec("dynamic refex definition description", 
 			UUID.fromString("21d300f2-b2d8-5586-916b-0e7ac88d5bea"),
-			new String[] {"dynamic sememe definition description", "dynamic refex definition description"},
+			new String[] {"sememe dynamic definition description", "refex dynamic definition description"},
 			new String[0],
 			true, 
 			"This is the extended description type that must be attached to a description within a concept to make the concept valid for use as an "
@@ -141,7 +141,7 @@ public class RefexDynamic
 	//no data to attach.
 	public static DynamicRefexConceptSpec REFEX_DYNAMIC_DEFINITION = new DynamicRefexConceptSpec("dynamic refex definition", 
 			UUID.fromString("a40fb48c-d755-5eaa-a725-4c4ebc9b9e6e"),
-			new String[] {"dynamic sememe definition", "dynamic refex definition"},
+			new String[] {"sememe dynamic definition", "refex dynamic definition"},
 			new String[0],
 			true, 
 			"This concept is used as an assemblage for defining new Sememe extensions.  "
@@ -162,7 +162,7 @@ public class RefexDynamic
 	//because I don't have any of the implementations on the classpath here.  something else to rethink?
 	public static DynamicRefexConceptSpec REFEX_DYNAMIC_REFERENCED_COMPONENT_RESTRICTION = new DynamicRefexConceptSpec("dynamic sememe referenced component restriction", 
 			UUID.fromString("0d94ceeb-e24f-5f1a-84b2-1ac35f671db5"),
-			new String[] {"dynamic sememe referenced component restriction"},
+			new String[] {"sememe dynamic referenced component restriction"},
 			new String[0],
 			true, 
 			"This concept is used as an assemblage for defining new Sememe extensions.  "
@@ -176,7 +176,7 @@ public class RefexDynamic
 	//dynamic refexes should be indexed within the system. 
 	public static DynamicRefexConceptSpec REFEX_DYNAMIC_INDEX_CONFIGURATION = new DynamicRefexConceptSpec("dynamic refex index configuration", 
 			UUID.fromString("980e092e-6df4-593f-a756-3d31b4f21a6c"),
-			new String[] {"dynamic sememe index configuration", "dynamic refex index configuration"},
+			new String[] {"sememe dynamic index configuration", "refex dynamic index configuration"},
 			new String[0],
 			false, 
 			"A Dynamic Sememe which contains the indexer configuration for Dynamic Sememes within ISAAC.  "
@@ -196,7 +196,7 @@ public class RefexDynamic
 	//(unless they choose to put them some where else, this isn't required, is only for convenience)
 	public static ConceptSpecWithDescriptions REFEX_DYNAMIC_IDENTITY = new ConceptSpecWithDescriptions("Dynamic Refexes", 
 			UUID.fromString("c946a9ad-4bb4-5041-8be3-c3977812ae8e"),
-			new String[] {"Dynamic Sememes", "Dynamic Refexes"},
+			new String[] {"Sememes Dynamic", "Refexes Dynamic"},
 			new String[] {},
 			TermAux.REFSET_IDENTITY);
 
