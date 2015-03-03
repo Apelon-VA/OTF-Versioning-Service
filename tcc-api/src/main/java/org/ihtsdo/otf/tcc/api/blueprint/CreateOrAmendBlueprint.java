@@ -492,6 +492,7 @@ public abstract class CreateOrAmendBlueprint implements PropertyChangeListener {
      *
      * @return a map of IDs as <code>Objects</code> and their associated authority nids
      */
+    //TODO Dan notes - this code is never used anywhere... so calling any method associated with this idMap is a noop... no idea how it is supposed to work.
     public HashMap<Object, Integer> getIdMap() {
         return idMap;
     }
