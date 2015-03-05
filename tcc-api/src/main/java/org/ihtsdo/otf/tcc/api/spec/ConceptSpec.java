@@ -581,6 +581,24 @@ next:
 
       return returnVal;
    }
+   
+   /**
+    * added as an alternative way to get the primary UUID - since most users of a concept spec
+    * only have one UUID, and only care about one UUID.
+    *
+    * @return the first UUID in the UUID list, or null, if not present
+    */
+   @XmlTransient
+   public UUID getPrimodialUuid() {
+      if (uuids == null || uuids.length < 1)
+      {
+          return null;
+      }
+      else
+      {
+          return uuids[0];
+      }
+   }
 
    /**
     * Method description
