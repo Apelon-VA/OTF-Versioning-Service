@@ -16,6 +16,7 @@
 package org.ihtsdo.otf.tcc.api.metadata.binding;
 
 import java.util.UUID;
+import org.ihtsdo.otf.tcc.api.metadata.ComponentType;
 import org.ihtsdo.otf.tcc.api.refexDynamic.data.RefexDynamicColumnInfo;
 import org.ihtsdo.otf.tcc.api.refexDynamic.data.RefexDynamicDataType;
 import org.ihtsdo.otf.tcc.api.refexDynamic.data.RefexDynamicUsageDescription;
@@ -135,7 +136,7 @@ public class RefexDynamic
 				+ "using the concept containing the description as an assemblage concept.", 
 			new RefexDynamicColumnInfo[0],
 			REFEX_DYNAMIC_TYPES, 
-			null, 
+			ComponentType.DESCRIPTION, 
 			new Integer[] {});  //Require an index on this
 	
 	//This is the assemblage type that is usually present on a concept when it is used as an assemblage itself to describe the attached data - the attached
