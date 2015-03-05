@@ -22,14 +22,12 @@ import java.util.UUID;
 import org.ihtsdo.otf.tcc.api.metadata.ComponentType;
 import org.ihtsdo.otf.tcc.api.metadata.binding.Snomed;
 import org.ihtsdo.otf.tcc.api.refexDynamic.data.RefexDynamicColumnInfo;
-import org.jvnet.hk2.annotations.Service;
 
 /**
  * {@link DynamicRefexConceptSpec}
  *
  * @author <a href="mailto:daniel.armbrust.list@gmail.com">Dan Armbrust</a>
  */
-@Service
 public class DynamicRefexConceptSpec extends ConceptSpecWithDescriptions
 {
 	private static final long serialVersionUID = 1L;
