@@ -134,7 +134,9 @@ public class RefexDynamic
 				+ "assemblage concept for RefexDynamic sememe.  The description annotated with this type describes the intent of "
 				+ "using the concept containing the description as an assemblage concept.", 
 			new RefexDynamicColumnInfo[0],
-			REFEX_DYNAMIC_TYPES);
+			REFEX_DYNAMIC_TYPES, 
+			null, 
+			new Integer[] {});  //Require an index on this
 	
 	//This is the assemblage type that is usually present on a concept when it is used as an assemblage itself to describe the attached data - the attached
 	//refex using this for an assemblage will describe a data column that is to be attached with the refex.  This assemblage type wouldn't be used if there was 
@@ -147,13 +149,13 @@ public class RefexDynamic
 			"This concept is used as an assemblage for defining new Sememe extensions.  "
 				+ "The attached data columns describe what columns are required to define a new Sememe.",
 			new RefexDynamicColumnInfo[] {
-				new RefexDynamicColumnInfo(0, RefexDynamic.REFEX_COLUMN_ORDER.getUuids()[0], RefexDynamicDataType.INTEGER, null, true, null, null),
-				new RefexDynamicColumnInfo(1, RefexDynamic.REFEX_COLUMN_NAME.getUuids()[0], RefexDynamicDataType.UUID, null, true, null, null),
-				new RefexDynamicColumnInfo(2, RefexDynamic.REFEX_COLUMN_TYPE.getUuids()[0], RefexDynamicDataType.STRING, null, true, null, null),
-				new RefexDynamicColumnInfo(3, RefexDynamic.REFEX_COLUMN_DEFAULT_VALUE.getUuids()[0], RefexDynamicDataType.POLYMORPHIC, null, false, null, null),
-				new RefexDynamicColumnInfo(4, RefexDynamic.REFEX_COLUMN_REQUIRED.getUuids()[0], RefexDynamicDataType.BOOLEAN, null, false, null, null),
-				new RefexDynamicColumnInfo(5, RefexDynamic.REFEX_COLUMN_VALIDATOR.getUuids()[0], RefexDynamicDataType.STRING, null, false, null, null),
-				new RefexDynamicColumnInfo(6, RefexDynamic.REFEX_COLUMN_VALIDATOR_DATA.getUuids()[0], RefexDynamicDataType.POLYMORPHIC, null, false, null, null)},
+				new RefexDynamicColumnInfo(0, RefexDynamic.REFEX_COLUMN_ORDER.getPrimodialUuid(), RefexDynamicDataType.INTEGER, null, true, null, null),
+				new RefexDynamicColumnInfo(1, RefexDynamic.REFEX_COLUMN_NAME.getPrimodialUuid(), RefexDynamicDataType.UUID, null, true, null, null),
+				new RefexDynamicColumnInfo(2, RefexDynamic.REFEX_COLUMN_TYPE.getPrimodialUuid(), RefexDynamicDataType.STRING, null, true, null, null),
+				new RefexDynamicColumnInfo(3, RefexDynamic.REFEX_COLUMN_DEFAULT_VALUE.getPrimodialUuid(), RefexDynamicDataType.POLYMORPHIC, null, false, null, null),
+				new RefexDynamicColumnInfo(4, RefexDynamic.REFEX_COLUMN_REQUIRED.getPrimodialUuid(), RefexDynamicDataType.BOOLEAN, null, false, null, null),
+				new RefexDynamicColumnInfo(5, RefexDynamic.REFEX_COLUMN_VALIDATOR.getPrimodialUuid(), RefexDynamicDataType.STRING, null, false, null, null),
+				new RefexDynamicColumnInfo(6, RefexDynamic.REFEX_COLUMN_VALIDATOR_DATA.getPrimodialUuid(), RefexDynamicDataType.POLYMORPHIC, null, false, null, null)},
 			REFEX_DYNAMIC_TYPES);
 	
 	//This is the assemblage type that is optionally attached to an assemblage itself, to declare type restrictions on the referenced component
@@ -165,10 +167,10 @@ public class RefexDynamic
 			new String[] {"sememe dynamic referenced component restriction"},
 			new String[0],
 			true, 
-			"This concept is used as an assemblage for defining new Sememe extensions.  "
-				+ "The attached data column describes limits restriction(s) placed on the referenced component type.",
+			"This concept is used as an assemblage for defining new Sememe extensions.  It annotates other sememe extensions to restrict the usage of a "
+				+ " sememe to a particular Component Type (Concept, Description, etc).  The attached data column specifies the allowed Component Type",
 			new RefexDynamicColumnInfo[] {
-				new RefexDynamicColumnInfo(0, RefexDynamic.REFEX_COLUMN_REFERENCED_COMPONENT_TYPE.getUuids()[0], RefexDynamicDataType.STRING, null, true, null, null)},
+				new RefexDynamicColumnInfo(0, RefexDynamic.REFEX_COLUMN_REFERENCED_COMPONENT_TYPE.getPrimodialUuid(), RefexDynamicDataType.STRING, null, true, null, null)},
 			REFEX_DYNAMIC_TYPES);
 	
 	//This is the assemblage type that is used to record the current configuration of the Indexer for Dynamic Refexes.
@@ -182,7 +184,7 @@ public class RefexDynamic
 			"A Dynamic Sememe which contains the indexer configuration for Dynamic Sememes within ISAAC.  "
 				+ "The referenced component ID will be the assemblage being configured for indexing.", 
 			new RefexDynamicColumnInfo[] {
-				new RefexDynamicColumnInfo(0, RefexDynamic.REFEX_COLUMN_COLUMNS_TO_INDEX.getUuids()[0], RefexDynamicDataType.STRING, null, false, null, null)},
+				new RefexDynamicColumnInfo(0, RefexDynamic.REFEX_COLUMN_COLUMNS_TO_INDEX.getPrimodialUuid(), RefexDynamicDataType.STRING, null, false, null, null)},
 			REFEX_DYNAMIC_TYPES);
 	
 	//An organizational concept which serves as a parent concept for the allowed types of data columns
