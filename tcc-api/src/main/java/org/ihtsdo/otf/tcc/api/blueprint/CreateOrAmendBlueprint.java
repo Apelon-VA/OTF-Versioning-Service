@@ -559,6 +559,10 @@ public abstract class CreateOrAmendBlueprint implements PropertyChangeListener {
 
     /**
      * Sets the uuid of the component specified by this blueprint.
+     * 
+     * Note that unless you set the IdGenerate directive to a variation of 
+     * PRESERVE - calling this method is pointless, as it will regenerate
+     * as a result of the call.
      *
      * @param componentUuid the uuid of the component specified by this blueprint
      */
