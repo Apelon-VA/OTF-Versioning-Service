@@ -105,8 +105,8 @@ public class RefexDynamicCAB extends CreateOrAmendBlueprint
 				{
 					if (data != null)
 					{
-						sb.append(data.getRefexDataType());
-						sb.append(data.getData());
+						sb.append(data.getRefexDataType().getDisplayName());
+						sb.append(new String(data.getData()));
 					}
 					else
 					{

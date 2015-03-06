@@ -90,7 +90,7 @@ public abstract class TtkRevision implements ExternalStampBI {
     @SuppressWarnings("unused")
 	private static final long serialVersionUID      = 1;
     public static UUID        unspecifiedUserUuid   = TermAux.USER.getUuids()[0];
-    public static UUID        unspecifiedModuleUuid = UUID.fromString("40d1c869-b509-32f8-b735-836eac577a67");
+    public static UUID        unspecifiedModuleUuid = TermAux.UNSPECIFIED_MODULE.getUuids()[0];
     @XmlAttribute
     public long               time                  = Long.MIN_VALUE;
     @XmlAttribute

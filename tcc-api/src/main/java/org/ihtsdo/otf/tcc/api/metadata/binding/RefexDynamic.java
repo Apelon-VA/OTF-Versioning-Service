@@ -16,6 +16,7 @@
 package org.ihtsdo.otf.tcc.api.metadata.binding;
 
 import java.util.UUID;
+import org.ihtsdo.otf.tcc.api.metadata.ComponentType;
 import org.ihtsdo.otf.tcc.api.refexDynamic.data.RefexDynamicColumnInfo;
 import org.ihtsdo.otf.tcc.api.refexDynamic.data.RefexDynamicDataType;
 import org.ihtsdo.otf.tcc.api.refexDynamic.data.RefexDynamicUsageDescription;
@@ -58,7 +59,7 @@ public class RefexDynamic
 	//an organizational concept for all of the new concepts being added to the Refset Auxiliary Concept tree
 	public static ConceptSpecWithDescriptions REFEX_DYNAMIC_TYPES = new ConceptSpecWithDescriptions("dynamic refex types", 
 			UUID.fromString("647b6283-7c5f-53ff-a5f7-a40c865b1ef0"), 
-			new String[] {"dynamic sememe types", "dynamic refex types"},
+			new String[] {"sememe dynamic types", "refex dynamic types"},
 			new String[] {},
 			Taxonomies.REFSET_AUX);
 	
@@ -66,7 +67,7 @@ public class RefexDynamic
 	//within the system.
 	public static ConceptSpecWithDescriptions REFEX_DYNAMIC_COLUMNS = new ConceptSpecWithDescriptions("dynamic refex columns", 
 			UUID.fromString("a6767545-14d4-50f7-9522-2ddc37c2f676"),
-			new String[] {"dynamic sememe columns", "dynamic refex columns"},
+			new String[] {"sememe dynamic columns", "refex dynamic columns"},
 			new String[] {},
 			REFEX_DYNAMIC_TYPES);
 
@@ -127,33 +128,35 @@ public class RefexDynamic
 	//using the concept containing the description as an assemblage concept.
 	public static DynamicRefexConceptSpec REFEX_DYNAMIC_DEFINITION_DESCRIPTION = new DynamicRefexConceptSpec("dynamic refex definition description", 
 			UUID.fromString("21d300f2-b2d8-5586-916b-0e7ac88d5bea"),
-			new String[] {"dynamic sememe definition description", "dynamic refex definition description"},
+			new String[] {"sememe dynamic definition description", "refex dynamic definition description"},
 			new String[0],
 			true, 
 			"This is the extended description type that must be attached to a description within a concept to make the concept valid for use as an "
 				+ "assemblage concept for RefexDynamic sememe.  The description annotated with this type describes the intent of "
 				+ "using the concept containing the description as an assemblage concept.", 
 			new RefexDynamicColumnInfo[0],
-			REFEX_DYNAMIC_TYPES);
+			REFEX_DYNAMIC_TYPES, 
+			ComponentType.DESCRIPTION, 
+			new Integer[] {});  //Require an index on this
 	
 	//This is the assemblage type that is usually present on a concept when it is used as an assemblage itself to describe the attached data - the attached
 	//refex using this for an assemblage will describe a data column that is to be attached with the refex.  This assemblage type wouldn't be used if there was 
 	//no data to attach.
 	public static DynamicRefexConceptSpec REFEX_DYNAMIC_DEFINITION = new DynamicRefexConceptSpec("dynamic refex definition", 
 			UUID.fromString("a40fb48c-d755-5eaa-a725-4c4ebc9b9e6e"),
-			new String[] {"dynamic sememe definition", "dynamic refex definition"},
+			new String[] {"sememe dynamic definition", "refex dynamic definition"},
 			new String[0],
 			true, 
 			"This concept is used as an assemblage for defining new Sememe extensions.  "
 				+ "The attached data columns describe what columns are required to define a new Sememe.",
 			new RefexDynamicColumnInfo[] {
-				new RefexDynamicColumnInfo(0, RefexDynamic.REFEX_COLUMN_ORDER.getUuids()[0], RefexDynamicDataType.INTEGER, null, true, null, null),
-				new RefexDynamicColumnInfo(1, RefexDynamic.REFEX_COLUMN_NAME.getUuids()[0], RefexDynamicDataType.UUID, null, true, null, null),
-				new RefexDynamicColumnInfo(2, RefexDynamic.REFEX_COLUMN_TYPE.getUuids()[0], RefexDynamicDataType.STRING, null, true, null, null),
-				new RefexDynamicColumnInfo(3, RefexDynamic.REFEX_COLUMN_DEFAULT_VALUE.getUuids()[0], RefexDynamicDataType.POLYMORPHIC, null, false, null, null),
-				new RefexDynamicColumnInfo(4, RefexDynamic.REFEX_COLUMN_REQUIRED.getUuids()[0], RefexDynamicDataType.BOOLEAN, null, false, null, null),
-				new RefexDynamicColumnInfo(5, RefexDynamic.REFEX_COLUMN_VALIDATOR.getUuids()[0], RefexDynamicDataType.STRING, null, false, null, null),
-				new RefexDynamicColumnInfo(6, RefexDynamic.REFEX_COLUMN_VALIDATOR_DATA.getUuids()[0], RefexDynamicDataType.POLYMORPHIC, null, false, null, null)},
+				new RefexDynamicColumnInfo(0, RefexDynamic.REFEX_COLUMN_ORDER.getPrimodialUuid(), RefexDynamicDataType.INTEGER, null, true, null, null),
+				new RefexDynamicColumnInfo(1, RefexDynamic.REFEX_COLUMN_NAME.getPrimodialUuid(), RefexDynamicDataType.UUID, null, true, null, null),
+				new RefexDynamicColumnInfo(2, RefexDynamic.REFEX_COLUMN_TYPE.getPrimodialUuid(), RefexDynamicDataType.STRING, null, true, null, null),
+				new RefexDynamicColumnInfo(3, RefexDynamic.REFEX_COLUMN_DEFAULT_VALUE.getPrimodialUuid(), RefexDynamicDataType.POLYMORPHIC, null, false, null, null),
+				new RefexDynamicColumnInfo(4, RefexDynamic.REFEX_COLUMN_REQUIRED.getPrimodialUuid(), RefexDynamicDataType.BOOLEAN, null, false, null, null),
+				new RefexDynamicColumnInfo(5, RefexDynamic.REFEX_COLUMN_VALIDATOR.getPrimodialUuid(), RefexDynamicDataType.STRING, null, false, null, null),
+				new RefexDynamicColumnInfo(6, RefexDynamic.REFEX_COLUMN_VALIDATOR_DATA.getPrimodialUuid(), RefexDynamicDataType.POLYMORPHIC, null, false, null, null)},
 			REFEX_DYNAMIC_TYPES);
 	
 	//This is the assemblage type that is optionally attached to an assemblage itself, to declare type restrictions on the referenced component
@@ -162,13 +165,13 @@ public class RefexDynamic
 	//because I don't have any of the implementations on the classpath here.  something else to rethink?
 	public static DynamicRefexConceptSpec REFEX_DYNAMIC_REFERENCED_COMPONENT_RESTRICTION = new DynamicRefexConceptSpec("dynamic sememe referenced component restriction", 
 			UUID.fromString("0d94ceeb-e24f-5f1a-84b2-1ac35f671db5"),
-			new String[] {"dynamic sememe referenced component restriction"},
+			new String[] {"sememe dynamic referenced component restriction"},
 			new String[0],
 			true, 
-			"This concept is used as an assemblage for defining new Sememe extensions.  "
-				+ "The attached data column describes limits restriction(s) placed on the referenced component type.",
+			"This concept is used as an assemblage for defining new Sememe extensions.  It annotates other sememe extensions to restrict the usage of a "
+				+ " sememe to a particular Component Type (Concept, Description, etc).  The attached data column specifies the allowed Component Type",
 			new RefexDynamicColumnInfo[] {
-				new RefexDynamicColumnInfo(0, RefexDynamic.REFEX_COLUMN_REFERENCED_COMPONENT_TYPE.getUuids()[0], RefexDynamicDataType.STRING, null, true, null, null)},
+				new RefexDynamicColumnInfo(0, RefexDynamic.REFEX_COLUMN_REFERENCED_COMPONENT_TYPE.getPrimodialUuid(), RefexDynamicDataType.STRING, null, true, null, null)},
 			REFEX_DYNAMIC_TYPES);
 	
 	//This is the assemblage type that is used to record the current configuration of the Indexer for Dynamic Refexes.
@@ -176,13 +179,13 @@ public class RefexDynamic
 	//dynamic refexes should be indexed within the system. 
 	public static DynamicRefexConceptSpec REFEX_DYNAMIC_INDEX_CONFIGURATION = new DynamicRefexConceptSpec("dynamic refex index configuration", 
 			UUID.fromString("980e092e-6df4-593f-a756-3d31b4f21a6c"),
-			new String[] {"dynamic sememe index configuration", "dynamic refex index configuration"},
+			new String[] {"sememe dynamic index configuration", "refex dynamic index configuration"},
 			new String[0],
 			false, 
 			"A Dynamic Sememe which contains the indexer configuration for Dynamic Sememes within ISAAC.  "
 				+ "The referenced component ID will be the assemblage being configured for indexing.", 
 			new RefexDynamicColumnInfo[] {
-				new RefexDynamicColumnInfo(0, RefexDynamic.REFEX_COLUMN_COLUMNS_TO_INDEX.getUuids()[0], RefexDynamicDataType.STRING, null, false, null, null)},
+				new RefexDynamicColumnInfo(0, RefexDynamic.REFEX_COLUMN_COLUMNS_TO_INDEX.getPrimodialUuid(), RefexDynamicDataType.STRING, null, false, null, null)},
 			REFEX_DYNAMIC_TYPES);
 	
 	//An organizational concept which serves as a parent concept for the allowed types of data columns
@@ -196,7 +199,7 @@ public class RefexDynamic
 	//(unless they choose to put them some where else, this isn't required, is only for convenience)
 	public static ConceptSpecWithDescriptions REFEX_DYNAMIC_IDENTITY = new ConceptSpecWithDescriptions("Dynamic Refexes", 
 			UUID.fromString("c946a9ad-4bb4-5041-8be3-c3977812ae8e"),
-			new String[] {"Dynamic Sememes", "Dynamic Refexes"},
+			new String[] {"Sememes Dynamic", "Refexes Dynamic"},
 			new String[] {},
 			TermAux.REFSET_IDENTITY);
 

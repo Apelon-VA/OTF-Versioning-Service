@@ -35,17 +35,39 @@ public class DynamicRefexConceptSpec extends ConceptSpecWithDescriptions
 	private String refexDescription_;
 	private RefexDynamicColumnInfo[] refexColumns_;
 	private ComponentType referencedComponentRestriction_;
+	private Integer[] requiresIndex_;
 
 	/**
 	 * 
 	 * @param fsn - Used as the fsn and preferred synonym
 	 * @param uuid
+	 * @param annotationStyle
+	 * @param refexDescription
+	 * @param columns
 	 * @param parentConcept - used as the destination in a relspec, with a type of {@link Snomed#IS_A} and a source of this spec being created.
 	 */
 	public DynamicRefexConceptSpec(String fsn, UUID uuid, boolean annotationStyle, String refexDescription,
 			RefexDynamicColumnInfo[] columns, ConceptSpec parentConcept)
 	{
 		this(fsn, uuid, new String[] {fsn}, null, annotationStyle, refexDescription, columns, parentConcept);
+	}
+	
+	/**
+	 * 
+	 * @param fsn - Used as the fsn and preferred synonym
+	 * @param uuid
+	 * @param annotationStyle
+	 * @param refexDescription
+	 * @param columns
+	 * @param parentConcept - used as the destination in a relspec, with a type of {@link Snomed#IS_A} and a source of this spec being created.
+	 * @param requiresIndex - optional - used to specify that this particular DynamicRefex should always be indexed.  If null - no indexing will 
+	 * be performed.  If passed as an empty set, then the refex WILL be indexed - but no columns of the refex will be indexed.  Otherwise, the Integer 
+	 * array should be something like "new Integer[]{0, 2, 3}" - where the 0 indexed values correspond to the columns that should also be indexed.
+	 */
+	public DynamicRefexConceptSpec(String fsn, UUID uuid, boolean annotationStyle, String refexDescription,
+			RefexDynamicColumnInfo[] columns, ConceptSpec parentConcept, Integer[] requiresIndex)
+	{
+		this(fsn, uuid, new String[] {fsn}, null, annotationStyle, refexDescription, columns, parentConcept, null, requiresIndex);
 	}
 	
 	/**
@@ -61,7 +83,7 @@ public class DynamicRefexConceptSpec extends ConceptSpecWithDescriptions
 	public DynamicRefexConceptSpec(String fsn, UUID uuid, String[] synonyms, String[] definitions, boolean annotationStyle, String refexDescription,
 			RefexDynamicColumnInfo[] columns, ConceptSpec parentConcept)
 	{
-		this(fsn, uuid, synonyms, definitions, annotationStyle, refexDescription, columns, parentConcept, null);
+		this(fsn, uuid, synonyms, definitions, annotationStyle, refexDescription, columns, parentConcept, null, null);
 	}
 	
 	/**
@@ -75,15 +97,19 @@ public class DynamicRefexConceptSpec extends ConceptSpecWithDescriptions
 	 * @param parentConcept - used as the destination in a relspec, with a type of {@link Snomed#IS_A} and a source of this spec being created.
 	 * @param referencedComponentRestriction - optional - used to limit the type of nid that can be used as the referenced component in an instance
 	 * of this sememe.
+	 * @param requiresIndex - optional - used to specify that this particular DynamicRefex should always be indexed.  If null - no indexing will 
+	 * be performed.  If passed as an empty set, then the refex WILL be indexed - but no columns of the refex will be indexed.  Otherwise, the Integer 
+	 * array should be something like "new Integer[]{0, 2, 3}" - where the 0 indexed values correspond to the columns that should also be indexed.
 	 */
 	public DynamicRefexConceptSpec(String fsn, UUID uuid, String[] synonyms, String[] definitions, boolean annotationStyle, String refexDescription,
-			RefexDynamicColumnInfo[] columns, ConceptSpec parentConcept, ComponentType referencedComponentRestriction)
+			RefexDynamicColumnInfo[] columns, ConceptSpec parentConcept, ComponentType referencedComponentRestriction, Integer[] requiresIndex)
 	{
 		super(fsn, uuid, synonyms, definitions, parentConcept);
 		annotationStyle_ = annotationStyle;
 		refexDescription_ = refexDescription;
 		refexColumns_ = columns;
 		referencedComponentRestriction_ = referencedComponentRestriction;
+		requiresIndex_ = requiresIndex;
 	}
 
 	/**
@@ -110,8 +136,20 @@ public class DynamicRefexConceptSpec extends ConceptSpecWithDescriptions
 		return refexColumns_;
 	}
 	
+	/**
+	 * @return The limit (if any) on which {@link ComponentType} this refex is restricted to.
+	 */
 	public ComponentType getReferencedComponentTypeRestriction()
 	{
 		return referencedComponentRestriction_;
+	}
+	
+	/**
+	 * @return null if no index is required, an empty set if an index is required (but no columns are required) otherwise an array 
+	 * that describes which columns should be indexed
+	 */
+	public Integer[] getRequiredIndexes()
+	{
+		return requiresIndex_;
 	}
 }

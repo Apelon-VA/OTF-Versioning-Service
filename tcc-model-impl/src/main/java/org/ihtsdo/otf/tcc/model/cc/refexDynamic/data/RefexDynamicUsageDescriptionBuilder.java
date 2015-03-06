@@ -84,14 +84,14 @@ public class RefexDynamicUsageDescriptionBuilder
 	 * 
 	 * Does all the work to create a new concept that is suitable for use as an Assemblage Concept for a new style Dynamic Refex.
 	 * 
-	 * The concept will be created under the concept {@link RefexDynamic#REFEX_DYNAMIC_TYPES} if a parent is not specified
+	 * The concept will be created under the concept {@link RefexDynamic#REFEX_DYNAMIC_IDENTITY} if a parent is not specified
 	 * 
 	 * //TODO (artf231856) [REFEX] figure out language details (how we know what language to put on the name/description
 	 * @param refexFSN - The FSN for this refex concept that will be created.
 	 * @param refexPreferredTerm - The preferred term for this refex concept that will be created.
 	 * @param refexDescription - A user friendly string the explains the overall intended purpose of this refex (what it means, what it stores)
 	 * @param columns - The column information for this new refex.  May be an empty list or null.
-	 * @param parentConcept  - optional - if null, uses {@link RefexDynamic#REFEX_DYNAMIC_TYPES}
+	 * @param parentConcept  - optional - if null, uses {@link RefexDynamic#REFEX_DYNAMIC_IDENTITY}
 	 * @param annotationStyle - true for annotation style storage, false for memberset storage
 	 * @param referencedComponentRestriction - optional - may be null - if provided - this restricts the type of object referenced by the nid or 
 	 * UUID that is set for the referenced component in an instance of this refex.  If {@link ComponentType#UNKNOWN} is passed, it is ignored, as 

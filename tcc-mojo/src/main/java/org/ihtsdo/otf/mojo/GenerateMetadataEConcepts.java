@@ -213,6 +213,10 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 				}
 			}
 			
+			List<UUID> refexesToIndex = new ArrayList<>();
+			List<Integer[]> columnsToIndex = new ArrayList<>();
+			TtkConceptChronicle indexConfigConcept = null;
+			
 			int count = 0;
 			for (ConceptSpec cs : conceptSpecsToProcess)
 			{
@@ -223,28 +227,38 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 					DynamicRefexConceptSpec drcs = (DynamicRefexConceptSpec)cs;
 					turnConceptIntoDynamicRefexAssemblageConcept(converted, drcs.isAnnotationStyle(), drcs.getRefexDescription(), drcs.getRefexColumns(), 
 							drcs.getReferencedComponentTypeRestriction());
+					
+					if (drcs.getRequiredIndexes() != null)
+					{
+						//Here, we preconfigure any of the Dynamic Refexes that we are specifying, so that they get indexed during the DB build.
+						refexesToIndex.add(drcs.getPrimodialUuid());
+						columnsToIndex.add(drcs.getRequiredIndexes());
+					}
 				}
 				
 				if (RefexDynamic.REFEX_DYNAMIC_INDEX_CONFIGURATION.getUuids()[0].equals(cs.getUuids()[0]))
 				{
-					//This concept also serves the special purpose of holding the Dynamic Refex Indexer configuration.
-					//Here, we preconfigure any of the Dynamic Refexes that we are specifying, so that they get indexed during the DB build.
-					//At the moment, only one refex is indexed by default, (the refex that contains the dynamic refexes)
-					
-					List<UUID> refexesToIndex = new ArrayList<>();
-					List<Integer[]> columnsToIndex = new ArrayList<>();
-					
-					refexesToIndex.add(RefexDynamic.REFEX_DYNAMIC_DEFINITION_DESCRIPTION.getUuids()[0]);
-					columnsToIndex.add(new Integer[] {});
-					
-					configureDynamicRefexIndexes(converted, refexesToIndex, columnsToIndex);
+					//Need to delay writing this concept
+					indexConfigConcept = converted;
 				}
-				
+				else
+				{
+					if (writeAsChangeSetFormat)
+					{
+						dos.writeLong(System.currentTimeMillis());
+					}
+					converted.writeExternal(dos);
+					count++;
+				}
+			}
+			if (indexConfigConcept != null)
+			{
 				if (writeAsChangeSetFormat)
 				{
 					dos.writeLong(System.currentTimeMillis());
 				}
-				converted.writeExternal(dos);
+				configureDynamicRefexIndexes(indexConfigConcept, refexesToIndex, columnsToIndex);
+				indexConfigConcept.writeExternal(dos);
 				count++;
 			}
 			dos.flush();

@@ -296,8 +296,8 @@ public class RefexDynamicColumnInfo implements Comparable<RefexDynamicColumnInfo
 		String acceptableDefinition = null;
 		try
 		{
-			
-			ConceptVersionBI cv = Ts.get().getConceptVersion(StandardViewCoordinates.getWbAuxiliary(), columnDescriptionConceptUUID_);
+			//TODO [REFEX] Figure out how to handle path on this
+			ConceptVersionBI cv = Ts.get().getConceptVersion(StandardViewCoordinates.getSnomedStatedLatest(), columnDescriptionConceptUUID_);
 			if (cv.getDescriptionsActive() != null)
 			{
 				for (DescriptionVersionBI<?> d : cv.getDescriptionsActive())
