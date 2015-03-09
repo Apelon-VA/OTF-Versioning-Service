@@ -87,14 +87,16 @@ public class UuidToNidSoftMapSegment {
         if (mapHardReference != null) {
             lock.lock();
             try {
-                DatabaseEntry valueEntry = new DatabaseEntry();
-                uuidIntMapBinder.objectToEntry(mapHardReference, valueEntry);
-                DatabaseEntry theKey = new DatabaseEntry();
-
-                ByteBinding.byteToEntry(segment, theKey);
-                database.put(null, theKey, valueEntry);
-                //System.out.println("For segment: " + segment + " wrote: " + mapHardReference.size() + " uuid maps.");
-                mapHardReference = null;
+                if (mapHardReference != null) {
+                    DatabaseEntry valueEntry = new DatabaseEntry();
+                    uuidIntMapBinder.objectToEntry(mapHardReference, valueEntry);
+                    DatabaseEntry theKey = new DatabaseEntry();
+    
+                    ByteBinding.byteToEntry(segment, theKey);
+                    database.put(null, theKey, valueEntry);
+                    //System.out.println("For segment: " + segment + " wrote: " + mapHardReference.size() + " uuid maps.");
+                    mapHardReference = null;
+                }
             } finally {
                 lock.unlock();
             }
