@@ -118,7 +118,7 @@ public abstract class RefexDynamicData implements RefexDynamicDataBI
 		{
 			name = getName();
 		}
-		catch (IOException | ContradictionException e)
+		catch (Exception e)
 		{
 			Logger.getLogger(this.getClass().getName()).log(Level.WARNING, "Error reading name", e);
 			name = "???";
