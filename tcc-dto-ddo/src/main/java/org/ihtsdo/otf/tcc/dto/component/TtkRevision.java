@@ -343,13 +343,13 @@ public abstract class TtkRevision implements ExternalStampBI {
             throw new IllegalArgumentException("pathUuid must not be null - failed in " + this.toString());
         }
         if (authorUuid == null) {
-            throw new IllegalArgumentException("authorUuid must not be null - failed in " + this.toString());
+            authorUuid = unspecifiedUserUuid;
         }
         if (status == null) {
             throw new IllegalArgumentException("status must not be null - failed in " + this.toString());
         }
         if (moduleUuid == null) {
-            throw new IllegalArgumentException("moduleUuid must not be null - failed in " + this.toString());
+            moduleUuid = unspecifiedModuleUuid;
         }
 
         out.writeLong(pathUuid.getMostSignificantBits());
