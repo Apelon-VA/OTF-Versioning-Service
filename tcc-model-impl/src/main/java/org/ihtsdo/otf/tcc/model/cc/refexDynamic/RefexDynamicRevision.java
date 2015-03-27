@@ -362,6 +362,7 @@ public class RefexDynamicRevision extends Revision<RefexDynamicRevision, RefexDy
         {
             data_ = data;
         }
+        modified();
     }
 
     /**
@@ -376,5 +377,6 @@ public class RefexDynamicRevision extends Revision<RefexDynamicRevision, RefexDy
             throw new IndexOutOfBoundsException("Data size is " + temp.length + " columns.  Can't set column " + columnNumber);
         }
         temp[columnNumber] = data;
+        modified();
     }
 }

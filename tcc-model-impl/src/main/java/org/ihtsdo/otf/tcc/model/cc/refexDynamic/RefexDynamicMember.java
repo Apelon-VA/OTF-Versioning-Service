@@ -804,6 +804,7 @@ public class RefexDynamicMember extends ConceptComponent<RefexDynamicRevision, R
         {
             data_ = data;
         }
+        modified();
     }
 
     /**
@@ -818,5 +819,6 @@ public class RefexDynamicMember extends ConceptComponent<RefexDynamicRevision, R
             throw new IndexOutOfBoundsException("Data size is " + temp.length + " columns.  Can't set column " + columnNumber);
         }
         temp[columnNumber] = data;
+        modified();
     }
 }
