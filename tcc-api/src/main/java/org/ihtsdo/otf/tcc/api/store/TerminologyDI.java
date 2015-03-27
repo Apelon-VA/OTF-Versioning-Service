@@ -20,6 +20,7 @@ import org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI;
 import org.ihtsdo.otf.tcc.api.coordinate.ViewCoordinate;
 import org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI;
 import org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI;
+import org.ihtsdo.otf.tcc.api.refexDynamic.RefexDynamicChronicleBI;
 import org.ihtsdo.otf.tcc.api.relationship.RelationshipVersionBI;
 import org.ihtsdo.otf.tcc.api.db.DbDependency;
 
@@ -77,6 +78,8 @@ public interface TerminologyDI {
     void forget(DescriptionVersionBI desc) throws IOException;
 
     void forget(RefexChronicleBI extension) throws IOException;
+    
+    void forget(RefexDynamicChronicleBI extension) throws IOException;
 
     void forget(RelationshipVersionBI rel) throws IOException;
     

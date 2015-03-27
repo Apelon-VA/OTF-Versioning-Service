@@ -39,6 +39,7 @@ import org.ihtsdo.otf.tcc.api.cs.ChangeSetWriterThreading;
 import org.ihtsdo.otf.tcc.api.db.DbDependency;
 import org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI;
 import org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI;
+import org.ihtsdo.otf.tcc.api.refexDynamic.RefexDynamicChronicleBI;
 import org.ihtsdo.otf.tcc.api.relationship.RelationshipVersionBI;
 import org.ihtsdo.otf.tcc.model.cc.NidPairForRefex;
 import org.ihtsdo.otf.tcc.model.cc.P;
@@ -594,6 +595,11 @@ public class TccRestClient extends Termstore {
       throw new UnsupportedOperationException("Not supported yet.");
    }
 
+   @Override
+   public void forget(RefexDynamicChronicleBI extension) throws IOException {
+      throw new UnsupportedOperationException("Not supported yet.");
+   }
+   
    @Override
    public void forget(RelationshipVersionBI rel) throws IOException {
       throw new UnsupportedOperationException("Not supported yet.");
