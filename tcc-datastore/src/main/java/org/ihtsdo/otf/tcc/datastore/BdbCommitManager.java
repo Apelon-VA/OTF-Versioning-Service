@@ -572,7 +572,7 @@ public class BdbCommitManager {
 
             // have to forget "all" references to component...
             if (c.isAnnotationStyleRefex()) {
-                comp.getAnnotationsMod().remove(m);
+                comp.getAnnotationsDynamicMod().remove(m);
             } else {
                 c.getRefsetMembers().remove(m);
                 c.getData().getMemberNids().remove(m.getNid());

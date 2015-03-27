@@ -1761,6 +1761,10 @@ public abstract class ConceptComponent<R extends Revision<R, C>, C extends Conce
     public ConcurrentSkipListSet<? extends RefexChronicleBI<?>> getAnnotationsMod() {
         return annotations;
     }
+    
+    public ConcurrentSkipListSet<RefexDynamicMember> getAnnotationsDynamicMod() {
+        return annotationsDynamic;
+    }
 
     /**
      * Method description
