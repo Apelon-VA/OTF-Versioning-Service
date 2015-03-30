@@ -24,6 +24,7 @@ import org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI;
 import org.ihtsdo.otf.tcc.api.nid.NativeIdSetItrBI;
 import org.ihtsdo.otf.tcc.api.nid.NidSetBI;
 import org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI;
+import org.ihtsdo.otf.tcc.api.refexDynamic.RefexDynamicChronicleBI;
 import org.ihtsdo.otf.tcc.api.relationship.RelationshipVersionBI;
 import org.ihtsdo.otf.tcc.api.store.TerminologyDI.CONCEPT_EVENT;
 import org.ihtsdo.otf.tcc.api.store.TerminologySnapshotDI;
@@ -233,6 +234,11 @@ public class BdbTerminologyStore extends Termstore {
 
     @Override
     public void forget(RefexChronicleBI extension) throws IOException {
+        BdbCommitManager.forget(extension);
+    }
+    
+    @Override
+    public void forget(RefexDynamicChronicleBI extension) throws IOException {
         BdbCommitManager.forget(extension);
     }
 

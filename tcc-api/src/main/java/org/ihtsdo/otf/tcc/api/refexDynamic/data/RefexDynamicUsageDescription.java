@@ -19,15 +19,15 @@
 package org.ihtsdo.otf.tcc.api.refexDynamic.data;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.TreeMap;
 import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.apache.commons.lang.StringUtils;
 import org.ihtsdo.otf.tcc.api.concept.ConceptChronicleBI;
-import org.ihtsdo.otf.tcc.api.concept.ConceptVersionBI;
 import org.ihtsdo.otf.tcc.api.contradiction.ContradictionException;
-import org.ihtsdo.otf.tcc.api.coordinate.StandardViewCoordinates;
+import org.ihtsdo.otf.tcc.api.description.DescriptionChronicleBI;
 import org.ihtsdo.otf.tcc.api.description.DescriptionVersionBI;
 import org.ihtsdo.otf.tcc.api.metadata.ComponentType;
 import org.ihtsdo.otf.tcc.api.metadata.binding.RefexDynamic;
@@ -97,7 +97,6 @@ import org.ihtsdo.otf.tcc.api.store.Ts;
 public class RefexDynamicUsageDescription
 {
 	int refexUsageDescriptorNid_;
-	private transient int stampNid_;
 	String refexUsageDescription_;
 	String name_;
 	boolean annotationStyle_;
@@ -111,10 +110,11 @@ public class RefexDynamicUsageDescription
 
 	public static RefexDynamicUsageDescription read(int assemblageNid) throws IOException, ContradictionException
 	{
-		//TODO (artf231860) [REFEX] test and see if my cache mechanism is working right (especially stamp check)
+		//TODO (artf231860) [REFEX] maybe? implement a mechanism to allow the cache to be updated... for now
+		//cache is uneditable, and may be wrong, if the user changes the definition of a dynamic refex.  Perhaps
+		//implement a callback to clear the cache when we know a change of  a certain type happened instead?
 		RefexDynamicUsageDescription temp = cache_.get(assemblageNid);
-		if (temp == null || 
-				Ts.get().getConceptVersion(StandardViewCoordinates.getWbAuxiliary(), assemblageNid).getConceptAttributesActive().getStamp() != temp.stampNid_)
+		if (temp == null)
 		{
 			logger.log(Level.FINEST, "Cache miss on RefexDynamicUsageDescription Cache");
 			temp = new RefexDynamicUsageDescription(assemblageNid);
@@ -136,34 +136,39 @@ public class RefexDynamicUsageDescription
 	public RefexDynamicUsageDescription(int refexUsageDescriptorNid) throws IOException, ContradictionException
 	{
 		refexUsageDescriptorNid_ = refexUsageDescriptorNid;
-		
 		TreeMap<Integer, RefexDynamicColumnInfo> allowedColumnInfo = new TreeMap<>();
-		ConceptVersionBI assemblageConcept = Ts.get().getConceptVersion(StandardViewCoordinates.getWbAuxiliary(), refexUsageDescriptorNid);
-		stampNid_ = assemblageConcept.getConceptAttributesActive().getStamp();
+		ConceptChronicleBI assemblageConcept = Ts.get().getConcept(refexUsageDescriptorNid);
 		
 		annotationStyle_ = assemblageConcept.isAnnotationStyleRefex();
 		
-		for (DescriptionVersionBI<?> d : assemblageConcept.getDescriptionsActive())
+		for (DescriptionChronicleBI dc : assemblageConcept.getDescriptions())
 		{
-			if (d.getTypeNid() == Snomed.DEFINITION_DESCRIPTION_TYPE.getNid())
+			for (DescriptionVersionBI<?> d : getAllActive(dc))
 			{
-				boolean hasCorrectAnnotation = false;
-				for (RefexDynamicChronicleBI<?> descriptionAnnotation : d.getRefexesDynamic())
+				if (d.getTypeNid() == Snomed.DEFINITION_DESCRIPTION_TYPE.getNid())
 				{
-					if (descriptionAnnotation.getAssemblageNid() == RefexDynamic.REFEX_DYNAMIC_DEFINITION_DESCRIPTION.getNid())
+					boolean hasCorrectAnnotation = false;
+					for (RefexDynamicChronicleBI<?> descriptionAnnotation : d.getRefexesDynamic())
 					{
-						hasCorrectAnnotation = true;
-					}
-					if (hasCorrectAnnotation)
-					{
-						refexUsageDescription_ = d.getText();
-						break;
+						if (descriptionAnnotation.getAssemblageNid() == RefexDynamic.REFEX_DYNAMIC_DEFINITION_DESCRIPTION.getNid())
+						{
+							hasCorrectAnnotation = true;
+						}
+						if (hasCorrectAnnotation)
+						{
+							refexUsageDescription_ = d.getText();
+							break;
+						}
 					}
 				}
-			}
-			if (d.getTypeNid() == SnomedMetadataRf2.FULLY_SPECIFIED_NAME_RF2.getNid())
-			{
-				name_ = d.getText();
+				if (d.getTypeNid() == SnomedMetadataRf2.FULLY_SPECIFIED_NAME_RF2.getNid())
+				{
+					name_ = d.getText();
+				}
+				if (refexUsageDescription_ != null && name_ != null)
+				{
+					break;
+				}
 			}
 			if (refexUsageDescription_ != null && name_ != null)
 			{
@@ -177,95 +182,98 @@ public class RefexDynamicUsageDescription
 					"RefexDynamic.REFEX_DYNAMIC_DEFINITION_DESCRIPTION");
 		}
 		
-		for (RefexDynamicVersionBI<?> rd : assemblageConcept.getRefexesDynamicActive(StandardViewCoordinates.getWbAuxiliary()))
+		for (RefexDynamicChronicleBI<?> rdc : assemblageConcept.getRefexesDynamic())
 		{
-			if (rd.getAssemblageNid() == RefexDynamic.REFEX_DYNAMIC_DEFINITION.getNid())
+			for (RefexDynamicVersionBI<?> rd : getAllActive(rdc))
 			{
-				RefexDynamicDataBI[] refexDefinitionData = rd.getData();
-				if (refexDefinitionData == null || refexDefinitionData.length < 3 || refexDefinitionData.length > 7)
+				if (rd.getAssemblageNid() == RefexDynamic.REFEX_DYNAMIC_DEFINITION.getNid())
 				{
-					throw new IOException("The Assemblage concept: " + assemblageConcept + " is not correctly assembled for use as an Assemblage for " 
-							+ "a RefexDynamicData Refex Type.  It must contain at least 3 columns in the RefexDynamicDataBI attachment, and no more than 7.");
-				}
-				
-				//col 0 is the column number, 
-				//col 1 is the concept with col name 
-				//col 2 is the column data type, stored as a string.
-				//col 3 (if present) is the default column data, stored as a subtype of RefexDynamicDataBI
-				//col 4 (if present) is a boolean field noting whether the column is required (true) or optional (false or null)
-				//col 5 (if present) is the validator {@link RefexDynamicValidatorType}, stored as a string.
-				//col 6 (if present) is the validatorData for the validator in column 5, stored as a subtype of RefexDynamicDataBI
-				try
-				{
-					int column = (Integer)refexDefinitionData[0].getDataObject();
-					UUID descriptionUUID = (UUID)refexDefinitionData[1].getDataObject();
-					RefexDynamicDataType type = RefexDynamicDataType.valueOf((String)refexDefinitionData[2].getDataObject());
-					RefexDynamicDataBI defaultData = null;
-					if (refexDefinitionData.length > 3)
-					{
-						defaultData = (refexDefinitionData[3] == null ? null : refexDefinitionData[3]);
-					}
-					
-					if (defaultData != null && type.getRefexMemberClass() != refexDefinitionData[3].getRefexDataType().getRefexMemberClass())
+					RefexDynamicDataBI[] refexDefinitionData = rd.getData();
+					if (refexDefinitionData == null || refexDefinitionData.length < 3 || refexDefinitionData.length > 7)
 					{
 						throw new IOException("The Assemblage concept: " + assemblageConcept + " is not correctly assembled for use as an Assemblage for " 
-							+ "a RefexDynamicData Refex Type.  The type of the column (column 3) must match the type of the defaultData (column 4)");
+								+ "a RefexDynamicData Refex Type.  It must contain at least 3 columns in the RefexDynamicDataBI attachment, and no more than 7.");
 					}
 					
-					Boolean columnRequired = null;
-					if (refexDefinitionData.length > 4)
+					//col 0 is the column number, 
+					//col 1 is the concept with col name 
+					//col 2 is the column data type, stored as a string.
+					//col 3 (if present) is the default column data, stored as a subtype of RefexDynamicDataBI
+					//col 4 (if present) is a boolean field noting whether the column is required (true) or optional (false or null)
+					//col 5 (if present) is the validator {@link RefexDynamicValidatorType}, stored as a string.
+					//col 6 (if present) is the validatorData for the validator in column 5, stored as a subtype of RefexDynamicDataBI
+					try
 					{
-						columnRequired = (refexDefinitionData[4] == null ? null : (Boolean)refexDefinitionData[4].getDataObject());
-					}
-					
-					RefexDynamicValidatorType validator = null;
-					RefexDynamicDataBI validatorData = null;
-					if (refexDefinitionData.length > 5)
-					{
-						validator = (refexDefinitionData[5] == null ? null : RefexDynamicValidatorType.valueOf((String)refexDefinitionData[5].getDataObject()));
-						if (refexDefinitionData.length > 6)
+						int column = (Integer)refexDefinitionData[0].getDataObject();
+						UUID descriptionUUID = (UUID)refexDefinitionData[1].getDataObject();
+						RefexDynamicDataType type = RefexDynamicDataType.valueOf((String)refexDefinitionData[2].getDataObject());
+						RefexDynamicDataBI defaultData = null;
+						if (refexDefinitionData.length > 3)
 						{
-							validatorData = (refexDefinitionData[6] == null ? null : refexDefinitionData[6]);
+							defaultData = (refexDefinitionData[3] == null ? null : refexDefinitionData[3]);
+						}
+						
+						if (defaultData != null && type.getRefexMemberClass() != refexDefinitionData[3].getRefexDataType().getRefexMemberClass())
+						{
+							throw new IOException("The Assemblage concept: " + assemblageConcept + " is not correctly assembled for use as an Assemblage for " 
+								+ "a RefexDynamicData Refex Type.  The type of the column (column 3) must match the type of the defaultData (column 4)");
+						}
+						
+						Boolean columnRequired = null;
+						if (refexDefinitionData.length > 4)
+						{
+							columnRequired = (refexDefinitionData[4] == null ? null : (Boolean)refexDefinitionData[4].getDataObject());
+						}
+						
+						RefexDynamicValidatorType validator = null;
+						RefexDynamicDataBI validatorData = null;
+						if (refexDefinitionData.length > 5)
+						{
+							validator = (refexDefinitionData[5] == null ? null : RefexDynamicValidatorType.valueOf((String)refexDefinitionData[5].getDataObject()));
+							if (refexDefinitionData.length > 6)
+							{
+								validatorData = (refexDefinitionData[6] == null ? null : refexDefinitionData[6]);
+							}
+						}
+						
+						allowedColumnInfo.put(column, new RefexDynamicColumnInfo(assemblageConcept.getPrimordialUuid(), column, descriptionUUID, type, 
+								defaultData, columnRequired, validator, validatorData));
+					}
+					catch (Exception e)
+					{
+						throw new IOException("The Assemblage concept: " + assemblageConcept + " is not correctly assembled for use as an Assemblage for " 
+								+ "a RefexDynamicData Refex Type.  The first column must have a data type of integer, and the third column must be a string "
+								+ "that is parseable as a RefexDynamicDataType");
+					}
+				}
+				else if (rd.getAssemblageNid() == RefexDynamic.REFEX_DYNAMIC_REFERENCED_COMPONENT_RESTRICTION.getNid())
+				{
+					RefexDynamicDataBI[] refexDefinitionData = rd.getData();
+					if (refexDefinitionData == null || refexDefinitionData.length < 1)
+					{
+						throw new IOException("The Assemblage concept: " + assemblageConcept + " is not correctly assembled for use as an Assemblage for " 
+								+ "a RefexDynamicData Refex Type.  If it contains a " + RefexDynamic.REFEX_DYNAMIC_REFERENCED_COMPONENT_RESTRICTION.getFsn()
+								+ " then it must contain a single column of data, of type string, parseable as a " + ComponentType.class.getName());
+					}
+					
+					//col 0 is Referenced component restriction information - as a string. 
+					try
+					{
+						ComponentType type = ComponentType.parse(refexDefinitionData[0].getDataObject().toString());
+						if (type == ComponentType.UNKNOWN)
+						{
+							//just ignore - it shouldn't have been saved that way anyway.
+						}
+						else
+						{
+							referencedComponentTypeRestriction_ = type;
 						}
 					}
-					
-					allowedColumnInfo.put(column, new RefexDynamicColumnInfo(assemblageConcept.getPrimordialUuid(), column, descriptionUUID, type, 
-							defaultData, columnRequired, validator, validatorData));
-				}
-				catch (Exception e)
-				{
-					throw new IOException("The Assemblage concept: " + assemblageConcept + " is not correctly assembled for use as an Assemblage for " 
-							+ "a RefexDynamicData Refex Type.  The first column must have a data type of integer, and the third column must be a string "
-							+ "that is parseable as a RefexDynamicDataType");
-				}
-			}
-			else if (rd.getAssemblageNid() == RefexDynamic.REFEX_DYNAMIC_REFERENCED_COMPONENT_RESTRICTION.getNid())
-			{
-				RefexDynamicDataBI[] refexDefinitionData = rd.getData();
-				if (refexDefinitionData == null || refexDefinitionData.length < 1)
-				{
-					throw new IOException("The Assemblage concept: " + assemblageConcept + " is not correctly assembled for use as an Assemblage for " 
-							+ "a RefexDynamicData Refex Type.  If it contains a " + RefexDynamic.REFEX_DYNAMIC_REFERENCED_COMPONENT_RESTRICTION.getFsn()
-							+ " then it must contain a single column of data, of type string, parseable as a " + ComponentType.class.getName());
-				}
-				
-				//col 0 is Referenced component restriction information - as a string. 
-				try
-				{
-					ComponentType type = ComponentType.parse(refexDefinitionData[0].getDataObject().toString());
-					if (type == ComponentType.UNKNOWN)
+					catch (Exception e)
 					{
-						//just ignore - it shouldn't have been saved that way anyway.
+						throw new IOException("The Assemblage concept: " + assemblageConcept + " is not correctly assembled for use as an Assemblage for " 
+								+ "a RefexDynamicData Refex Type.  The component type restriction annotation has an invalid value");
 					}
-					else
-					{
-						referencedComponentTypeRestriction_ = type;
-					}
-				}
-				catch (Exception e)
-				{
-					throw new IOException("The Assemblage concept: " + assemblageConcept + " is not correctly assembled for use as an Assemblage for " 
-							+ "a RefexDynamicData Refex Type.  The component type restriction annotation has an invalid value");
 				}
 			}
 		}
@@ -371,5 +379,37 @@ public class RefexDynamicUsageDescription
 		if (refexUsageDescriptorNid_ != other.refexUsageDescriptorNid_)
 			return false;
 		return true;
+	}
+	
+	protected static ArrayList<DescriptionVersionBI<?>> getAllActive(DescriptionChronicleBI descriptionChronicle) throws IOException
+	{
+		ArrayList<DescriptionVersionBI<?>> result = new ArrayList<>();
+		if (descriptionChronicle.getVersions() != null)
+		{
+			for (DescriptionVersionBI<?> rdv : descriptionChronicle.getVersions())
+			{
+				if (rdv.isActive())
+				{
+					result.add(rdv);
+				}
+			}
+		}
+		return result;
+	}
+	
+	protected static ArrayList<RefexDynamicVersionBI<?>> getAllActive(RefexDynamicChronicleBI<?> refexDynamicChronicle) throws IOException
+	{
+		ArrayList<RefexDynamicVersionBI<?>> result = new ArrayList<>();
+		if (refexDynamicChronicle.getVersions() != null)
+		{
+			for (RefexDynamicVersionBI<?> rdv : refexDynamicChronicle.getVersions())
+			{
+				if (rdv.isActive())
+				{
+					result.add(rdv);
+				}
+			}
+		}
+		return result;
 	}
 }

@@ -30,6 +30,7 @@ import org.ihtsdo.otf.tcc.api.nid.NativeIdSetBI;
 import org.ihtsdo.otf.tcc.api.nid.NativeIdSetItrBI;
 import org.ihtsdo.otf.tcc.api.nid.NidSetBI;
 import org.ihtsdo.otf.tcc.api.refex.RefexChronicleBI;
+import org.ihtsdo.otf.tcc.api.refexDynamic.RefexDynamicChronicleBI;
 import org.ihtsdo.otf.tcc.api.relationship.RelationshipVersionBI;
 import org.ihtsdo.otf.tcc.api.store.TerminologyStoreDI;
 import org.ihtsdo.otf.tcc.api.thread.NamedThreadFactory;
@@ -47,6 +48,8 @@ import org.ihtsdo.otf.tcc.model.cc.description.Description;
 import org.ihtsdo.otf.tcc.model.cc.description.DescriptionRevision;
 import org.ihtsdo.otf.tcc.model.cc.refex.RefexMember;
 import org.ihtsdo.otf.tcc.model.cc.refex.RefexRevision;
+import org.ihtsdo.otf.tcc.model.cc.refexDynamic.RefexDynamicMember;
+import org.ihtsdo.otf.tcc.model.cc.refexDynamic.RefexDynamicRevision;
 import org.ihtsdo.otf.tcc.model.cc.relationship.Relationship;
 import org.ihtsdo.otf.tcc.model.cc.relationship.RelationshipRevision;
 import org.ihtsdo.otf.tcc.model.cs.ChangeSetWriterHandler;
@@ -517,6 +520,59 @@ public class BdbCommitManager {
             // have to forget "all" references to component...
             if (c.isAnnotationStyleRefex()) {
                 comp.getAnnotationsMod().remove(m);
+            } else {
+                c.getRefsetMembers().remove(m);
+                c.getData().getMemberNids().remove(m.getNid());
+            }
+
+            m.setSTAMP(-1);
+        }
+
+
+        c.modified();
+        addUncommittedNoChecks(c);
+    }
+   
+   public static void forget(RefexDynamicChronicleBI extension) throws IOException {
+      RefexDynamicMember m = ((RefexDynamicMember.Version) extension).getPrimordialVersion();
+      ConceptChronicle      c         = Bdb.getConcept(m.getAssemblageNid());
+      ComponentBI  component = Bdb.getComponent(m.getReferencedComponentNid());
+
+        if (component instanceof ConceptChronicle) {
+            component = ((ConceptChronicle) component).getConceptAttributes();
+        }
+
+        ConceptComponent comp = (ConceptComponent) component;
+
+        if (m.getTime() != Long.MAX_VALUE) {
+
+            // Only need to forget additional versions;
+            if (m.revisions == null) {
+                throw new UnsupportedOperationException("Cannot forget a committed component.");
+            } else {
+                synchronized (m.revisions) {
+                    List<RefexDynamicRevision> toRemove = new ArrayList<>();
+                    Iterator<RefexDynamicRevision> mi = m.revisions.iterator();
+
+                    while (mi.hasNext()) {
+                    	RefexDynamicRevision mr = mi.next();
+
+                        if (mr.getTime() == Long.MAX_VALUE) {
+                            toRemove.add(mr);
+                        }
+                    }
+
+                    for (RefexDynamicRevision tr : toRemove) {
+                        m.removeRevision(tr);
+                        tr.stamp = -1;
+                    }
+                }
+            }
+        } else {
+
+            // have to forget "all" references to component...
+            if (c.isAnnotationStyleRefex()) {
+                comp.getAnnotationsDynamicMod().remove(m);
             } else {
                 c.getRefsetMembers().remove(m);
                 c.getData().getMemberNids().remove(m.getNid());

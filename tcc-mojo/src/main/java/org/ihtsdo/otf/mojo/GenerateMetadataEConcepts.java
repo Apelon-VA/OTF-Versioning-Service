@@ -87,18 +87,17 @@ import org.ihtsdo.otf.tcc.dto.component.relationship.TtkRelationshipChronicle;
  */
 public class GenerateMetadataEConcepts extends AbstractMojo
 {
-	private final UUID authorUuid_ = TermAux.USER.getUuids()[0];
-	private final UUID pathUUID_ = TermAux.WB_AUX_PATH.getUuids()[0];
-	private final UUID moduleUuid_ = TtkRevision.unspecifiedModuleUuid;
-	private final long defaultTime_ = System.currentTimeMillis();
-	private final LanguageCode lang_ = LanguageCode.EN;
-	private final UUID isARelUuid_ = Snomed.IS_A.getUuids()[0];
-	private final UUID definingCharacteristicStatedUuid_ = SnomedMetadataRf2.STATED_RELATIONSHIP_RF2.getUuids()[0];
-	private final UUID notRefinableUuid = SnomedMetadataRf2.NOT_REFINABLE_RF2.getUuids()[0];
-	private final UUID descriptionAcceptableUuid_ = SnomedMetadataRf2.ACCEPTABLE_RF2.getUuids()[0];
-	private final UUID descriptionPreferredUuid_ = SnomedMetadataRf2.PREFERRED_RF2.getUuids()[0];
-	private final UUID usEnRefsetUuid_ = SnomedMetadataRf2.US_ENGLISH_REFSET_RF2.getUuids()[0];
-	private final UUID refsetMemberTypeNormalMemberUuid_ = UUID.fromString("cc624429-b17d-4ac5-a69e-0b32448aaf3c"); //normal member
+	private static final UUID authorUuid_ = TermAux.USER.getPrimodialUuid();
+	private static final UUID pathUUID_ = TermAux.WB_AUX_PATH.getPrimodialUuid();
+	private static final UUID moduleUuid_ = TtkRevision.unspecifiedModuleUuid;
+	private static final LanguageCode lang_ = LanguageCode.EN;
+	private static final UUID isARelUuid_ = Snomed.IS_A.getPrimodialUuid();
+	private static final UUID definingCharacteristicStatedUuid_ = SnomedMetadataRf2.STATED_RELATIONSHIP_RF2.getPrimodialUuid();
+	private static final UUID notRefinableUuid = SnomedMetadataRf2.NOT_REFINABLE_RF2.getPrimodialUuid();
+	private static final UUID descriptionAcceptableUuid_ = SnomedMetadataRf2.ACCEPTABLE_RF2.getPrimodialUuid();
+	private static final UUID descriptionPreferredUuid_ = SnomedMetadataRf2.PREFERRED_RF2.getPrimodialUuid();
+	private static final UUID usEnRefsetUuid_ = SnomedMetadataRf2.US_ENGLISH_REFSET_RF2.getPrimodialUuid();
+	private static final UUID refsetMemberTypeNormalMemberUuid_ = UUID.fromString("cc624429-b17d-4ac5-a69e-0b32448aaf3c"); //normal member
 
 	private static enum DescriptionType
 	{
@@ -108,15 +107,15 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 		{
 			if (this == FSN)
 			{
-				return Snomed.FULLY_SPECIFIED_DESCRIPTION_TYPE.getUuids()[0];
+				return Snomed.FULLY_SPECIFIED_DESCRIPTION_TYPE.getPrimodialUuid();
 			}
 			else if (this == SYNONYM)
 			{
-				return Snomed.SYNONYM_DESCRIPTION_TYPE.getUuids()[0];
+				return Snomed.SYNONYM_DESCRIPTION_TYPE.getPrimodialUuid();
 			}
 			else if (this == DEFINITION)
 			{
-				return Snomed.DEFINITION_DESCRIPTION_TYPE.getUuids()[0];
+				return Snomed.DEFINITION_DESCRIPTION_TYPE.getPrimodialUuid();
 			}
 			throw new RuntimeException("impossible");
 		}
@@ -236,7 +235,7 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 					}
 				}
 				
-				if (RefexDynamic.REFEX_DYNAMIC_INDEX_CONFIGURATION.getUuids()[0].equals(cs.getUuids()[0]))
+				if (RefexDynamic.REFEX_DYNAMIC_INDEX_CONFIGURATION.getPrimodialUuid().equals(cs.getPrimodialUuid()))
 				{
 					//Need to delay writing this concept
 					indexConfigConcept = converted;
@@ -271,15 +270,16 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 		}
 	}
 	
-	private TtkRefexDynamicMemberChronicle addDynamicAnnotation(TtkComponentChronicle<?> component, UUID assemblageID, TtkRefexDynamicData[] data) 
+	public static TtkRefexDynamicMemberChronicle addDynamicAnnotation(TtkComponentChronicle<?> component, UUID assemblageID, TtkRefexDynamicData[] data) 
 			throws NoSuchAlgorithmException, UnsupportedEncodingException
 	{
+		//TODO this should have a validator for data columns aligning with the refex description
 		TtkRefexDynamicMemberChronicle refexDynamic = new TtkRefexDynamicMemberChronicle();
 		refexDynamic.setComponentUuid(component.getPrimordialComponentUuid());
 		refexDynamic.setRefexAssemblageUuid(assemblageID);
 		refexDynamic.setData(data);
-		setUUIDForRefex(refexDynamic, data);
-		setRevisionAttributes(refexDynamic, null, null);
+		setUUIDForRefex(refexDynamic, data, null);
+		setRevisionAttributes(refexDynamic, null, component.getTime());
 
 		if (component.getAnnotationsDynamic() == null)
 		{
@@ -289,7 +289,12 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 		return refexDynamic;
 	}
 	
-	private void setUUIDForRefex(TtkRefexDynamicMemberChronicle refexDynamic, TtkRefexDynamicData[] data) throws NoSuchAlgorithmException, UnsupportedEncodingException
+	/**
+	 * @param namespace - optional - uses {@link RefexDynamic#REFEX_DYNAMIC_NAMESPACE} if not specified
+	 * @return - the generated string used for refex creation 
+	 */
+	public static String setUUIDForRefex(TtkRefexDynamicMemberChronicle refexDynamic, TtkRefexDynamicData[] data, UUID namespace) throws NoSuchAlgorithmException, 
+		UnsupportedEncodingException
 	{
 		StringBuilder sb = new StringBuilder();
 		sb.append(refexDynamic.getRefexAssemblageUuid().toString()); 
@@ -304,12 +309,13 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 				}
 				else
 				{
-					sb.append(d.getRefexDataType());
-					sb.append(d.getData());
+					sb.append(d.getRefexDataType().getDisplayName());
+					sb.append(new String(d.getData()));
 				}
 			}
 		}
-		refexDynamic.setPrimordialComponentUuid(UuidT5Generator.get(RefexDynamicCAB.refexDynamicNamespace, sb.toString()));
+		refexDynamic.setPrimordialComponentUuid(UuidT5Generator.get((namespace == null ? RefexDynamicCAB.refexDynamicNamespace : namespace), sb.toString()));
+		return sb.toString();
 	}
 	
 	private List<ConceptSpec> getSpecsFromClass(String className) throws IllegalArgumentException, IllegalAccessException, ClassNotFoundException
@@ -330,7 +336,7 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 		return results;
 	}
 
-	private TtkConceptChronicle convert(ConceptSpec cs) throws IOException
+	public static TtkConceptChronicle convert(ConceptSpec cs) throws IOException
 	{
 		TtkConceptChronicle cc = new TtkConceptChronicle();
 
@@ -339,12 +345,12 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 			throw new IOException("Concept Spec " + cs + " does not have a UUID");
 		}
 
-		cc.setPrimordialUuid(cs.getUuids()[0]);
+		cc.setPrimordialUuid(cs.getPrimodialUuid());
 
 		TtkConceptAttributesChronicle conceptAttributes = new TtkConceptAttributesChronicle();
 		conceptAttributes.setDefined(false);
-		conceptAttributes.setPrimordialComponentUuid(cs.getUuids()[0]);
-		setRevisionAttributes(conceptAttributes, null, null);
+		conceptAttributes.setPrimordialComponentUuid(cs.getPrimodialUuid());
+		setRevisionAttributes(conceptAttributes, null, System.currentTimeMillis());
 		cc.setConceptAttributes(conceptAttributes);
 
 		for (int i = 1; i < cs.getUuids().length; i++)
@@ -379,8 +385,8 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 
 		for (RelSpec rs : cs.getRelSpecs())
 		{
-			addRelationship(cc, rs.getDestinationSpec().getUuids()[0], rs.getRelTypeSpec().getUuids()[0], 
-					(rs.getCharacteristicSpec() == null ? null : rs.getCharacteristicSpec().getUuids()[0]), null);
+			addRelationship(cc, rs.getDestinationSpec().getPrimodialUuid(), rs.getRelTypeSpec().getPrimodialUuid(), 
+					(rs.getCharacteristicSpec() == null ? null : rs.getCharacteristicSpec().getPrimodialUuid()), null);
 		}
 		return cc;
 	}
@@ -392,13 +398,13 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 	 * @param statusUuid - Uuid or null (for current)
 	 * @param time - time or null (for global default value - essentially 'now')
 	 */
-	private void setRevisionAttributes(TtkRevision object, Status status, Long time)
+	public static void setRevisionAttributes(TtkRevision object, Status status, long time)
 	{
 		object.setAuthorUuid(authorUuid_);
 		object.setModuleUuid(moduleUuid_);
 		object.setPathUuid(pathUUID_);
 		object.setStatus(status == null ? Status.ACTIVE : status);
-		object.setTime(time == null ? defaultTime_ : time.longValue());
+		object.setTime(time);
 	}
 
 	/**
@@ -408,7 +414,7 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 	 * @throws UnsupportedEncodingException
 	 * @throws NoSuchAlgorithmException
 	 */
-	private TtkDescriptionChronicle addDescription(TtkConceptChronicle eConcept, String descriptionValue, DescriptionType wbDescriptionType, boolean preferred)
+	public static TtkDescriptionChronicle addDescription(TtkConceptChronicle eConcept, String descriptionValue, DescriptionType wbDescriptionType, boolean preferred)
 	{
 		try
 		{
@@ -447,7 +453,7 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 	 * @throws UnsupportedEncodingException
 	 * @throws NoSuchAlgorithmException
 	 */
-	private TtkRefexUuidMemberChronicle addUuidAnnotation(TtkComponentChronicle<?> component, UUID valueConcept, UUID refsetUuid)
+	public static TtkRefexUuidMemberChronicle addUuidAnnotation(TtkComponentChronicle<?> component, UUID valueConcept, UUID refsetUuid)
 	{
 		try
 		{
@@ -485,7 +491,7 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 	 * @param relTypeUuid - is optional - if not provided, the default value of IS_A_REL is used.
 	 * @param time - if null, source concept time is used
 	 */
-	private TtkRelationshipChronicle addRelationship(TtkConceptChronicle eConcept, UUID targetUuid, UUID relTypeUuid, UUID relCharacteristicUUID, Long time)
+	public static TtkRelationshipChronicle addRelationship(TtkConceptChronicle eConcept, UUID targetUuid, UUID relTypeUuid, UUID relCharacteristicUUID, Long time)
 	{
 		try
 		{
@@ -510,7 +516,7 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 			rel.setC2Uuid(targetUuid);
 			rel.setRefinabilityUuid(notRefinableUuid);
 			
-			setRevisionAttributes(rel, null, time == null ? eConcept.getConceptAttributes().getTime() : time);
+			setRevisionAttributes(rel, null, time == null ? eConcept.getConceptAttributes().getTime() : time.longValue());
 
 			relationships.add(rel);
 			return rel;
@@ -521,7 +527,27 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 		}
 	}
 	
-	private void configureDynamicRefexIndexes(TtkConceptChronicle storageConcept, List<UUID> refexesToIndex, List<Integer[]> columnConfiguration) 
+	/**
+	 * Create the 'special' TtkConceptChronicle that carries the index configuration - return it as a TtkConcept that would need to be 
+	 * written out, if you were writing an eConcept file, for example.  This snippit concept should be automatically merged into the 
+	 * main concept with the rest of the index config.
+	 * @param refexToIndex
+	 * @param columnsToIndex
+	 * @return
+	 * @throws IOException 
+	 * @throws PropertyVetoException 
+	 * @throws NoSuchAlgorithmException 
+	 */
+	public static TtkConceptChronicle indexRefex( List<UUID> refexesToIndex, List<Integer[]> columnConfiguration) throws IOException, NoSuchAlgorithmException, PropertyVetoException
+	{
+		TtkConceptChronicle result = convert(RefexDynamic.REFEX_DYNAMIC_INDEX_CONFIGURATION);
+		
+		configureDynamicRefexIndexes(result, refexesToIndex, columnConfiguration);
+		return result;
+		
+	}
+	
+	private static void configureDynamicRefexIndexes(TtkConceptChronicle storageConcept, List<UUID> refexesToIndex, List<Integer[]> columnConfiguration) 
 			throws NoSuchAlgorithmException, UnsupportedEncodingException, PropertyVetoException
 	{
 		//In TTK land, this is done by adding a new dynamic refex to the member list refex that keeps track of index rules.
@@ -551,8 +577,8 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 				data[0] = new TtkRefexDynamicString(buf.toString());
 				refexDynamic.setData(data);
 			}
-			setUUIDForRefex(refexDynamic, data);
-			setRevisionAttributes(refexDynamic, null, null);
+			setUUIDForRefex(refexDynamic, data, null);
+			setRevisionAttributes(refexDynamic, null, storageConcept.getConceptAttributes().getTime());
 			storageConcept.getRefsetMembersDynamic().add(refexDynamic);
 		}
 	}
@@ -560,7 +586,7 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 	/**
 	 * See {@link RefexDynamicUsageDescription} class for more details on this format.
 	 */
-	private void turnConceptIntoDynamicRefexAssemblageConcept(TtkConceptChronicle concept, boolean annotationStyle, String refexDescription,
+	public static void turnConceptIntoDynamicRefexAssemblageConcept(TtkConceptChronicle concept, boolean annotationStyle, String refexDescription,
 			RefexDynamicColumnInfo[] columns, ComponentType referencedComponentTypeRestriction) throws PropertyVetoException, NoSuchAlgorithmException, UnsupportedEncodingException
 	{
 		concept.setAnnotationStyleRefex(annotationStyle);
@@ -568,7 +594,7 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 		TtkDescriptionChronicle description = addDescription(concept, refexDescription, DescriptionType.DEFINITION, true);
 		
 		//Annotate the description as the 'special' type that means this concept is suitable for use as an assemblage concept
-		addDynamicAnnotation(description, RefexDynamic.REFEX_DYNAMIC_DEFINITION_DESCRIPTION.getUuids()[0], new TtkRefexDynamicData[0]);
+		addDynamicAnnotation(description, RefexDynamic.REFEX_DYNAMIC_DEFINITION_DESCRIPTION.getPrimodialUuid(), new TtkRefexDynamicData[0]);
 		
 		if (columns != null)
 		{
@@ -582,7 +608,7 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 				data[4] = new TtkRefexDynamicBoolean(col.isColumnRequired());
 				data[5] = (col.getValidator() == null ? null : new TtkRefexDynamicString(col.getValidator().name()));
 				data[6] = (col.getValidatorData() == null ? null : convertPolymorphicDataColumn(col.getValidatorData(), col.getValidatorData().getRefexDataType()));
-				addDynamicAnnotation(concept.getConceptAttributes(), RefexDynamic.REFEX_DYNAMIC_DEFINITION.getUuids()[0], data);
+				addDynamicAnnotation(concept.getConceptAttributes(), RefexDynamic.REFEX_DYNAMIC_DEFINITION.getPrimodialUuid(), data);
 			}
 		}
 		
@@ -590,11 +616,11 @@ public class GenerateMetadataEConcepts extends AbstractMojo
 		{
 			TtkRefexDynamicData[] data = new TtkRefexDynamicData[1];
 			data[0] = new TtkRefexDynamicString(referencedComponentTypeRestriction.name());
-			addDynamicAnnotation(concept.getConceptAttributes(), RefexDynamic.REFEX_DYNAMIC_REFERENCED_COMPONENT_RESTRICTION.getUuids()[0], data);
+			addDynamicAnnotation(concept.getConceptAttributes(), RefexDynamic.REFEX_DYNAMIC_REFERENCED_COMPONENT_RESTRICTION.getPrimodialUuid(), data);
 		}
 	}
 	
-	private static TtkRefexDynamicData convertPolymorphicDataColumn(RefexDynamicDataBI defaultValue, RefexDynamicDataType columnType) throws PropertyVetoException 
+	public static TtkRefexDynamicData convertPolymorphicDataColumn(RefexDynamicDataBI defaultValue, RefexDynamicDataType columnType) throws PropertyVetoException 
 	{
 		TtkRefexDynamicData result;
 		

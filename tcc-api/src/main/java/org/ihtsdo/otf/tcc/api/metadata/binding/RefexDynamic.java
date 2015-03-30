@@ -123,6 +123,15 @@ public class RefexDynamic
 					+ "referenced component when creating an instance of a dynamic sememe"},
 			REFEX_DYNAMIC_COLUMNS);
 	
+	//Convenience column type for refex instances that just wish to attach a single column of data, and don't want to create another concept
+	//to represent the column name.  Typically only used when defining refexes where there is a single column of attached data (typically - attaching an attribute,
+	//the column represents the value, while the type of the attribute is represented by the refex type itself - so the column name isn't really necessary)
+	public static ConceptSpecWithDescriptions REFEX_COLUMN_VALUE = new ConceptSpecWithDescriptions("value", 
+			UUID.fromString("d94e271f-0e9b-5159-8691-6c29c7689ffb"),
+			new String[] {"value"},
+			new String[] {"The attached value of the sememe"},
+			REFEX_DYNAMIC_COLUMNS);
+	
 	//This is the extended description type that must be attached to a description within a concept to make the concept valid for use as an 
 	//assemblage concept for RefexDynamic refexes.  The description annotated with this type describes the intent of 
 	//using the concept containing the description as an assemblage concept.
