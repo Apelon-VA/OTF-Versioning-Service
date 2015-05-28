@@ -999,8 +999,29 @@ public class TtkConceptChronicle {
    }
    
    public String toXml() {
+	   
        StringWriter sw = new StringWriter();
        JAXB.marshal(this, sw);
        return sw.toString().substring("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>".length());
    }
+   
+   /**
+    * Export this TtkConceptChronicle to XML
+    * 
+    * @param firsValue if this is the first value to export, set true for XML header
+    * @return the xml of the concept
+    */
+   public String toXml(boolean firsValue) {
+	   
+	   StringWriter sw = new StringWriter();
+       JAXB.marshal(this, sw);
+       
+	   if(firsValue) {
+		   return sw.toString().substring("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>".length());
+	   } else {
+		   return sw.toString();
+	   }
+   }
+   
+   
 }
